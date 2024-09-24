@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.7.7</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.7.8</span>
    </div>
   </td>
  </tr>
@@ -246,10 +246,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_fast_l_e_d.html">CFastLED</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">High level controller interface for FastLED.  <a href="class_c_fast_l_e_d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_fast_l_e_d_1_1_clocked_chipset_helper.html">CFastLED::ClockedChipsetHelper&lt; CHIPSET, DATA_PIN, CLOCK_PIN &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a2f9de4cfbd302323305a4ad0e99167f4" id="r_a2f9de4cfbd302323305a4ad0e99167f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f9de4cfbd302323305a4ad0e99167f4">FASTLED_VERSION</a>&#160;&#160;&#160;3007007</td></tr>
+<tr class="memitem:a2f9de4cfbd302323305a4ad0e99167f4" id="r_a2f9de4cfbd302323305a4ad0e99167f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f9de4cfbd302323305a4ad0e99167f4">FASTLED_VERSION</a>&#160;&#160;&#160;3007008</td></tr>
 <tr class="memdesc:a2f9de4cfbd302323305a4ad0e99167f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current FastLED version number, as an integer.  <br /></td></tr>
 <tr class="separator:a2f9de4cfbd302323305a4ad0e99167f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00167d1f0bf80faa62c6d8952f540f82" id="r_a00167d1f0bf80faa62c6d8952f540f82"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00167d1f0bf80faa62c6d8952f540f82">__PROG_TYPES_COMPAT__</a></td></tr>
@@ -267,6 +269,31 @@ Macros</h2></td></tr>
 <tr class="memitem:ad745fb280b8fb379961f6520f18f775a" id="r_ad745fb280b8fb379961f6520f18f775a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad745fb280b8fb379961f6520f18f775a">NO_HARDWARE_PIN_SUPPORT</a></td></tr>
 <tr class="memdesc:ad745fb280b8fb379961f6520f18f775a"><td class="mdescLeft">&#160;</td><td class="mdescRight">If no pin/port mappings are found, sends a warning message to the user during compilation.  <br /></td></tr>
 <tr class="separator:ad745fb280b8fb379961f6520f18f775a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Adding SPI-based controllers</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>Add an SPI based <a class="el" href="class_c_l_e_d_controller.html" title="Base definition for an LED controller.">CLEDController</a> instance to the world.</p>
+<p>There are two ways to call this method (as well as the other addLeds() variations). The first is with 2 arguments, in which case the arguments are a pointer to led data, and the number of leds used by this controller. The second is with 3 arguments, in which case the first argument is the same, the second argument is an offset into the <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> data where this controller's <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> data begins, and the third argument is the number of leds for this controller object.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>base pointer to an array of <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> data structures </td></tr>
+    <tr><td class="paramname">nLedsOrOffset</td><td>number of leds (3 argument version) or offset into the data array </td></tr>
+    <tr><td class="paramname">nLedsIfOffset</td><td>number of leds (4 argument version) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">CHIPSET</td><td>the chipset type </td></tr>
+    <tr><td class="paramname">DATA_PIN</td><td>the optional data pin for the leds (if omitted, will default to the first hardware SPI MOSI pin) </td></tr>
+    <tr><td class="paramname">CLOCK_PIN</td><td>the optional clock pin for the leds (if omitted, will default to the first hardware SPI clock pin) </td></tr>
+    <tr><td class="paramname">RGB_ORDER</td><td>the rgb ordering for the leds (e.g. what order red, green, and blue data is written out in) </td></tr>
+    <tr><td class="paramname">SPI_DATA_RATE</td><td>the data rate to drive the SPI clock at, defined using DATA_RATE_MHZ or DATA_RATE_KHZ macros </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to the added controller </dd></dl>
+</div></td></tr>
+<tr class="memitem:a0f7ec59f76e5b6e949268f112f93c412" id="r_a0f7ec59f76e5b6e949268f112f93c412"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f7ec59f76e5b6e949268f112f93c412">_FL_MAP_CLOCKED_CHIPSET</a>(CHIPSET_ENUM,  CONTROLLER_CLASS)</td></tr>
+<tr class="separator:a0f7ec59f76e5b6e949268f112f93c412"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -336,7 +363,45 @@ Variables</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>These typedefs are now deprecated! </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a href="https://www.nongnu.org/avr-libc/user-manual/group__avr__pgmspace.html">https://www.nongnu.org/avr-libc/user-manual/group__avr__pgmspace.html</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00031">31</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00032">32</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+
+</div>
+</div>
+<a id="a0f7ec59f76e5b6e949268f112f93c412" name="a0f7ec59f76e5b6e949268f112f93c412"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f7ec59f76e5b6e949268f112f93c412">&#9670;&#160;</a></span>_FL_MAP_CLOCKED_CHIPSET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _FL_MAP_CLOCKED_CHIPSET</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CHIPSET_ENUM</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CONTROLLER_CLASS</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">        <span class="keyword">template</span>&lt;u<span class="keywordtype">int</span>8_t DATA_PIN, u<span class="keywordtype">int</span>8_t CLOCK_PIN&gt;                                              \</div>
+<div class="line">        <span class="keyword">struct </span>ClockedChipsetHelper&lt;CHIPSET_ENUM, DATA_PIN, CLOCK_PIN&gt; {                           \</div>
+<div class="line">            <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> IS_VALID = <span class="keyword">true</span>;                                                     \</div>
+<div class="line">            <span class="keyword">typedef</span> CONTROLLER_CLASS&lt;DATA_PIN, CLOCK_PIN&gt; ControllerType;                          \</div>
+<div class="line">            <span class="comment">/* Controller type with RGB_ORDER specified */</span>                                         \</div>
+<div class="line">            <span class="keyword">template</span>&lt;EOrder RGB_ORDER&gt;                                                             \</div>
+<div class="line">            <span class="keyword">struct </span>CONTROLLER_CLASS_WITH_ORDER {                                                   \</div>
+<div class="line">                <span class="keyword">typedef</span> CONTROLLER_CLASS&lt;DATA_PIN, CLOCK_PIN, RGB_ORDER&gt; ControllerType;           \</div>
+<div class="line">            };                                                                                     \</div>
+<div class="line">            <span class="comment">/* Controller type with RGB_ORDER and spi frequency specified */</span>                       \</div>
+<div class="line">            <span class="keyword">template</span>&lt;EOrder RGB_ORDER, u<span class="keywordtype">int</span>32_t FREQ&gt;                                              \</div>
+<div class="line">            <span class="keyword">struct </span>CONTROLLER_CLASS_WITH_ORDER_AND_FREQ {                                          \</div>
+<div class="line">                <span class="keyword">typedef</span> CONTROLLER_CLASS&lt;DATA_PIN, CLOCK_PIN, RGB_ORDER, FREQ&gt; ControllerType;     \</div>
+<div class="line">            };                                                                                     \</div>
+<div class="line">        };</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00405">405</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -347,7 +412,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define FASTLED_VERSION&#160;&#160;&#160;3007007</td>
+          <td class="memname">#define FASTLED_VERSION&#160;&#160;&#160;3007008</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -359,7 +424,7 @@ Variables</h2></td></tr>
 <li>3 digits for the patch version </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00016">16</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00017">17</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -377,7 +442,7 @@ Variables</h2></td></tr>
 
 <p>Alias of the FastLED instance for legacy purposes. </p>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00784">784</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00812">812</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -395,7 +460,7 @@ Variables</h2></td></tr>
 
 <p>Alias of the FastLED instance for legacy purposes. </p>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00786">786</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00814">814</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -414,7 +479,7 @@ Variables</h2></td></tr>
 <p>If no pin/port mappings are found, sends a warning message to the user during compilation. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="fastpin_8h.html" title="Class base definitions for defining fast pin access.">fastpin.h</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00800">800</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00828">828</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -433,7 +498,7 @@ Variables</h2></td></tr>
 <p>Unknown NUM_CONTROLLERS definition. </p>
 <p>Unused elsewhere in the library? </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo</a></b></dt><dd>Remove? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00329">329</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00333">333</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -460,7 +525,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the brightness scale, limited to max power </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00338">338</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00342">342</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -479,7 +544,7 @@ Variables</h2></td></tr>
 
 <p>Blockless output port enum. </p>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00286">286</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00290">290</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -498,7 +563,7 @@ Variables</h2></td></tr>
 <p>Smart Matrix Library controller type. </p>
 <dl class="section see"><dt>See also</dt><dd><a href="https://github.com/pixelmatix/SmartMatrix">https://github.com/pixelmatix/SmartMatrix</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00103">103</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00107">107</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -542,7 +607,7 @@ Variables</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00086">86</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00090">90</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -563,7 +628,7 @@ Variables</h2></td></tr>
 <dd>
 <a href="https://github.com/PaulStoffregen/OctoWS2811">https://github.com/PaulStoffregen/OctoWS2811</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00108">108</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00112">112</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -584,7 +649,7 @@ Variables</h2></td></tr>
 <dd>
 <a href="https://github.com/PaulStoffregen/WS2812Serial">https://github.com/PaulStoffregen/WS2812Serial</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00113">113</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00117">117</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -622,7 +687,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_fast_l_e_d_8h.html">FastLED.h</a></li>
-    <li class="footer">Generated on Mon Sep 16 2024 05:47:25 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Sep 24 2024 03:42:48 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

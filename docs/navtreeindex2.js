@@ -156,9 +156,8 @@ var NAVTREEINDEX2 =
 "controller_8h.html":[16,0,1,10],
 "controller_8h_source.html":[16,0,1,10],
 "cpp__compat_8h.html":[16,0,1,11],
-"cpp__compat_8h.html#a1daa598467bdfaa27c878f3782885c2e":[16,0,1,11,1],
 "cpp__compat_8h.html#a72f0657181cca64b44eb186b707eb380":[16,0,1,11,0],
-"cpp__compat_8h.html#a92da053d05db23c922b5f4184f22bff3":[16,0,1,11,2],
+"cpp__compat_8h.html#a92da053d05db23c922b5f4184f22bff3":[16,0,1,11,1],
 "cpp__compat_8h_source.html":[16,0,1,11],
 "crgb_8h_source.html":[16,0,1,12],
 "crgb_8hpp_source.html":[16,0,1,13],
@@ -249,5 +248,6 @@ var NAVTREEINDEX2 =
 "fastspi_8h.html":[16,0,1,23],
 "fastspi_8h.html#a4bcb592d94b1f9d3a99afec742513efc":[16,0,1,23,3],
 "fastspi_8h.html#aa8d916cc870eee608d52f3576b5338a7":[16,0,1,23,2],
-"fastspi_8h_source.html":[16,0,1,23]
+"fastspi_8h_source.html":[16,0,1,23],
+"fastspi__bitbang_8h.html":[16,0,1,24]
 };

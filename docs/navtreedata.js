@@ -28,22 +28,22 @@ var NAVTREE =
     [ "About", "index.html#autotoc_md0", null ],
     [ "Example", "index.html#autotoc_md1", null ],
     [ "Supported Platforms", "index.html#autotoc_md2", null ],
-    [ "x86", "index.html#autotoc_md8", null ],
-    [ "Compiled Library Size Check", "index.html#autotoc_md9", null ],
-    [ "Getting Started", "index.html#autotoc_md10", [
-      [ "Arduino IDE / PlatformIO Dual Repo", "index.html#autotoc_md11", null ],
-      [ "ArduinoIDE", "index.html#autotoc_md12", null ]
+    [ "x86", "index.html#autotoc_md9", null ],
+    [ "Compiled Library Size Check", "index.html#autotoc_md10", null ],
+    [ "Getting Started", "index.html#autotoc_md11", [
+      [ "Arduino IDE / PlatformIO Dual Repo", "index.html#autotoc_md12", null ],
+      [ "ArduinoIDE", "index.html#autotoc_md13", null ]
     ] ],
-    [ "Development", "index.html#autotoc_md13", [
-      [ "Testing other devices", "index.html#autotoc_md14", null ]
+    [ "Development", "index.html#autotoc_md14", [
+      [ "Testing other devices", "index.html#autotoc_md15", null ]
     ] ],
-    [ "Help and Support", "index.html#autotoc_md15", null ],
-    [ "Supported LED Chipsets", "index.html#autotoc_md16", null ],
-    [ "Supported Platforms", "index.html#autotoc_md17", [
-      [ "Porting FastLED to a new platform", "index.html#autotoc_md18", null ]
+    [ "Help and Support", "index.html#autotoc_md16", null ],
+    [ "Supported LED Chipsets", "index.html#autotoc_md17", null ],
+    [ "Supported Platforms", "index.html#autotoc_md18", [
+      [ "Porting FastLED to a new platform", "index.html#autotoc_md19", null ]
     ] ],
-    [ "What about that name?", "index.html#autotoc_md19", null ],
-    [ "For more information", "index.html#autotoc_md20", null ],
+    [ "What about that name?", "index.html#autotoc_md20", null ],
+    [ "For more information", "index.html#autotoc_md21", null ],
     [ "Todo List", "todo.html", null ],
     [ "Deprecated List", "deprecated.html", null ],
     [ "Topics", "topics.html", "topics" ],
@@ -81,11 +81,11 @@ var NAVTREEINDEX =
 "1653___s3___apa102___hardware___pins_8ino_source.html",
 "class_c_h_s_v_palette32.html#a1214c57e9ae5ecc58d25897f4d435847",
 "class_fast_pin.html",
-"fastspi__bitbang_8h.html",
-"group___gamma_funcs.html#ga0af2b547872e9a707d5dfa016f30445a",
-"group___pixel_types.html#ggaeb40a08b7cb90c1e21bd408261558b99a21927430e53394c5261fa4b86da5833e",
-"group___power.html#ga8db01f418cbff03a8d51caa528e44e0d",
-"structsub4.html#a7ecbd68603a75da0bd98609c30c037cc"
+"fastspi__bitbang_8h.html#a5a8b2278f5fc259357a9da1bf8fd13ae",
+"group___gamma_funcs.html#ga39c1068518d7697230930504e57c4d91",
+"group___pixel_types.html#ggaeb40a08b7cb90c1e21bd408261558b99a2193f3f090afd8f92b933b84bf550d5a",
+"group___power.html#gab519e78baab1cfbaf62663c48c1c2f35",
+"structsub4.html#a76b8ba906d7eb00ebe2806a38a9c91f2"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

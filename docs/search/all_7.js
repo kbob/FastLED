@@ -29,7 +29,7 @@ var searchData=
   ['getscale2_26',['getScale2',['../struct_pixel_controller.html#a6ac29f180ad5429301cb6e3ac3966616',1,'PixelController']]],
   ['gettemperature_27',['getTemperature',['../class_c_l_e_d_controller.html#afc94e9d029d7e59f56a4ab845f3de32d',1,'CLEDController']]],
   ['gettime_28',['getTime',['../class_c_every_n_time.html#a9e72ce7dcf1e5b321ec9fa61f6c4fbd5',1,'CEveryNTime']]],
-  ['getting_20started_29',['Getting Started',['../index.html#autotoc_md10',1,'']]],
+  ['getting_20started_29',['Getting Started',['../index.html#autotoc_md11',1,'']]],
   ['ghostwhite_30',['GhostWhite',['../group___pixel_types.html#ggaeb40a08b7cb90c1e21bd408261558b99a04855e1321cabbde202abbf4f37c00ed',1,'CRGB']]],
   ['gold_31',['Gold',['../group___pixel_types.html#ggaeb40a08b7cb90c1e21bd408261558b99a063e44e3135a047a866ce8b84af900d2',1,'CRGB']]],
   ['goldenrod_32',['Goldenrod',['../group___pixel_types.html#ggaeb40a08b7cb90c1e21bd408261558b99a24ba4acdfddf022178a7ed56877e7a1e',1,'CRGB']]],

@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.7.7</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.7.8</span>
    </div>
   </td>
  </tr>
@@ -160,9 +160,9 @@ $(function(){initNavTree('struct_pixel_controller.html',''); initResizable(true)
   <tr class="odd"><td class="entry"><a class="el" href="struct_pixel_controller.html#a9c8fa28fd867a4048796b4f88146d332">mScale</a></td><td class="entry"><a class="el" href="struct_pixel_controller.html">PixelController&lt; RGB_ORDER, LANES, MASK &gt;</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="struct_pixel_controller.html#ae44229e20fb4ba4473b057dcda87122e">PixelController</a>(const PixelController &amp;other)</td><td class="entry"><a class="el" href="struct_pixel_controller.html">PixelController&lt; RGB_ORDER, LANES, MASK &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>PixelController</b>(const PixelController&lt; RGB_ORDER_OTHER, LANES, MASK &gt; &amp;other) (defined in <a class="el" href="struct_pixel_controller.html">PixelController&lt; RGB_ORDER, LANES, MASK &gt;</a>)</td><td class="entry"><a class="el" href="struct_pixel_controller.html">PixelController&lt; RGB_ORDER, LANES, MASK &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="struct_pixel_controller.html#a85acf3ef47eaeaa6723b7cf5ea4f071d">PixelController</a>(const uint8_t *d, int len, CRGB &amp;s, EDitherMode dither=BINARY_DITHER, bool advance=true, uint8_t skip=0)</td><td class="entry"><a class="el" href="struct_pixel_controller.html">PixelController&lt; RGB_ORDER, LANES, MASK &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="struct_pixel_controller.html#a5631b8132087ca68008d85a891c82d2b">PixelController</a>(const CRGB *d, int len, CRGB &amp;s, EDitherMode dither=BINARY_DITHER)</td><td class="entry"><a class="el" href="struct_pixel_controller.html">PixelController&lt; RGB_ORDER, LANES, MASK &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="struct_pixel_controller.html#a802a3dadccd652a9f1db490f7ba64655">PixelController</a>(const CRGB &amp;d, int len, CRGB &amp;s, EDitherMode dither=BINARY_DITHER)</td><td class="entry"><a class="el" href="struct_pixel_controller.html">PixelController&lt; RGB_ORDER, LANES, MASK &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="struct_pixel_controller.html#ae18da760fe20d9bd9d0be593a4191607">PixelController</a>(const uint8_t *d, int len, CRGB &amp;pre_mixed, EDitherMode dither, bool advance, uint8_t skip)</td><td class="entry"><a class="el" href="struct_pixel_controller.html">PixelController&lt; RGB_ORDER, LANES, MASK &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="struct_pixel_controller.html#aff23aeae4b67372b82b5225ccd66632e">PixelController</a>(const CRGB *d, int len, CRGB &amp;pre_mixed, EDitherMode dither)</td><td class="entry"><a class="el" href="struct_pixel_controller.html">PixelController&lt; RGB_ORDER, LANES, MASK &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="struct_pixel_controller.html#aad52cdc177840aee3a0ef9087a551e8a">PixelController</a>(const CRGB &amp;d, int len, CRGB &amp;pre_mixed, EDitherMode dither)</td><td class="entry"><a class="el" href="struct_pixel_controller.html">PixelController&lt; RGB_ORDER, LANES, MASK &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="struct_pixel_controller.html#a4339ebd06d211b9affb17343ae2eefe0">preStepFirstByteDithering</a>()</td><td class="entry"><a class="el" href="struct_pixel_controller.html">PixelController&lt; RGB_ORDER, LANES, MASK &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="struct_pixel_controller.html#a060678fc5a4cf518e155ed3a6145b8d4">scale</a>(PixelController &amp;pc, uint8_t b)</td><td class="entry"><a class="el" href="struct_pixel_controller.html">PixelController&lt; RGB_ORDER, LANES, MASK &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="struct_pixel_controller.html#aad6f8ce8a3aa9429025e67050e312929">scale</a>(PixelController &amp;, uint8_t b, uint8_t scale)</td><td class="entry"><a class="el" href="struct_pixel_controller.html">PixelController&lt; RGB_ORDER, LANES, MASK &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
@@ -177,7 +177,7 @@ $(function(){initNavTree('struct_pixel_controller.html',''); initResizable(true)
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Sep 16 2024 05:47:25 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Sep 24 2024 03:42:49 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

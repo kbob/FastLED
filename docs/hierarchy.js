@@ -54,6 +54,7 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "CFastLED::ClockedChipsetHelper< CHIPSET, DATA_PIN, CLOCK_PIN >", "struct_c_fast_l_e_d_1_1_clocked_chipset_helper.html", null ],
     [ "ClocklessController", null, [
       [ "GE8822Controller800Khz< DATA_PIN, RGB_ORDER >", "class_g_e8822_controller800_khz.html", [
         [ "GE8822< DATA_PIN, RGB_ORDER >", "class_g_e8822.html", null ]

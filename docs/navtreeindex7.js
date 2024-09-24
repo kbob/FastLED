@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"structsub4.html#a76b8ba906d7eb00ebe2806a38a9c91f2":[15,0,75,9],
 "structsub4.html#a7ecbd68603a75da0bd98609c30c037cc":[15,0,75,13],
 "structsub4.html#a7fd6345e61292153ff4c7fae931ca384":[15,0,75,24],
 "structsub4.html#a8ecfb8a25a14c7bedd272c11beeb90b9":[15,0,75,15],
@@ -14,14 +15,14 @@ var NAVTREEINDEX7 =
 "structsub4.html#af19bf78fa32695ff3266f7817144d534":[15,0,75,16],
 "structsub4.html#af59d256057cfb1c1f18ef34e602755c1":[15,0,75,28],
 "structsub4.html#af62353204ff783dca725ecb17e1be6ef":[15,0,75,18],
-"stub__main_8cpp_source.html":[16,0,1,51],
+"stub__main_8cpp_source.html":[16,0,1,52],
 "todo.html":[12],
 "topics.html":[14],
-"transpose8x1__noinline_8cpp_source.html":[16,0,1,52],
-"transpose8x1__noinline_8h_source.html":[16,0,1,53],
+"transpose8x1__noinline_8cpp_source.html":[16,0,1,53],
+"transpose8x1__noinline_8h_source.html":[16,0,1,54],
 "trig8_8h.html":[16,0,1,0,3],
 "trig8_8h_source.html":[16,0,1,0,3],
-"types_8h_source.html":[16,0,1,54],
+"types_8h_source.html":[16,0,1,55],
 "union_i_e_e_e754binary32__t.html":[14,3,6,1],
 "union_i_e_e_e754binary32__t.html#a2275cfe0cacae08983ad44cdf074a7a6":[14,3,6,1,8],
 "union_i_e_e_e754binary32__t.html#a37bee81c74782e027d67199f81074bd3":[14,3,6,1,11],
@@ -57,6 +58,6 @@ var NAVTREEINDEX7 =
 "unionjust8bits.html#acda11b6492d3f6f39ed252bfdbc5293f":[15,0,40,2],
 "unionjust8bits.html#ad67c956d73da25b76e389fa617306b04":[15,0,40,7],
 "unionjust8bits.html#ae4f5c1652bd536727fd481c140d7c3df":[15,0,40,1],
-"wiring_8cpp.html":[16,0,1,55],
-"wiring_8cpp_source.html":[16,0,1,55]
+"wiring_8cpp.html":[16,0,1,56],
+"wiring_8cpp_source.html":[16,0,1,56]
 };

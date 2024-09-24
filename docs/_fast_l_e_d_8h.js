@@ -1,6 +1,7 @@
 var _fast_l_e_d_8h =
 [
     [ "CFastLED", "class_c_fast_l_e_d.html", "class_c_fast_l_e_d" ],
+    [ "CFastLED::ClockedChipsetHelper< CHIPSET, DATA_PIN, CLOCK_PIN >", "struct_c_fast_l_e_d_1_1_clocked_chipset_helper.html", null ],
     [ "__PROG_TYPES_COMPAT__", "_fast_l_e_d_8h.html#a00167d1f0bf80faa62c6d8952f540f82", null ],
     [ "FASTLED_VERSION", "_fast_l_e_d_8h.html#a2f9de4cfbd302323305a4ad0e99167f4", null ],
     [ "FastSPI_LED", "_fast_l_e_d_8h.html#a142a708c2ff8d157a967309a781ac815", null ],

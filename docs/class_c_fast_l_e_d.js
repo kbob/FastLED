@@ -1,5 +1,6 @@
 var class_c_fast_l_e_d =
 [
+    [ "ClockedChipsetHelper", "struct_c_fast_l_e_d_1_1_clocked_chipset_helper.html", null ],
     [ "addLeds", "class_c_fast_l_e_d.html#adbf5461419278571b6be724313cdfcf9", null ],
     [ "clear", "class_c_fast_l_e_d.html#aeb7bd3e8f2dbced6284a2182191d5fcb", null ],
     [ "clearData", "class_c_fast_l_e_d.html#ac4f613f1b3e618528dca3189df88ce80", null ],

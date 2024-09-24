@@ -1,6 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"fastspi__bitbang_8h.html":[16,0,1,24],
 "fastspi__bitbang_8h.html#a5a8b2278f5fc259357a9da1bf8fd13ae":[16,0,1,24,1],
 "fastspi__bitbang_8h.html#a5c3d2c88661d9ad465d82bb6e9402af0":[16,0,1,24,2],
 "fastspi__bitbang_8h.html#ad3b51637a39a4ff75bd979b917cb89ef":[16,0,1,24,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX3 =
 "group___fractional_types.html#gab0dd52829a2880f9d94a370216f17f90":[14,3,6,10],
 "group___fractional_types.html#gad2dad84f67c8a4cc6d4c92e2c7d3e89f":[14,3,6,12],
 "group___fractional_types.html#gae3ac7def25ef5ddea2da1a3bc0c00f44":[14,3,6,3],
-"group___gamma_funcs.html":[14,4]
+"group___gamma_funcs.html":[14,4],
+"group___gamma_funcs.html#ga0af2b547872e9a707d5dfa016f30445a":[14,4,3]
 };

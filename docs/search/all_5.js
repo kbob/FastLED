@@ -12,7 +12,7 @@ var searchData=
   ['end_5fpos_9',['end_pos',['../class_c_pixel_view.html#abfcab2974a78f644d27f2ba39bcd40f1',1,'CPixelView']]],
   ['entries_10',['entries',['../class_c_h_s_v_palette16.html#a6cc1334bd85a67500f9e21829754f073',1,'CHSVPalette16::entries'],['../class_c_h_s_v_palette256.html#a8c55e80085389ffd61a39cffd3dcba00',1,'CHSVPalette256::entries'],['../class_c_r_g_b_palette16.html#a0e7240b7d3dc5c79deceae9ff1d44f42',1,'CRGBPalette16::entries'],['../class_c_h_s_v_palette32.html#a193cf8f611b63e58a19623d5be1bc196',1,'CHSVPalette32::entries'],['../class_c_r_g_b_palette32.html#ae1d3ab8f56db6053889235afac4ed354',1,'CRGBPalette32::entries'],['../class_c_r_g_b_palette256.html#a3279636490301d45a05adfcbc8a7b4da',1,'CRGBPalette256::entries']]],
   ['esm_11',['ESM',['../_fast_l_e_d_8h.html#ac8839f06bbcecd0dc5bde0a94510a657',1,'FastLED.h']]],
-  ['esp_12',['Esp',['../index.html#autotoc_md7',1,'']]],
+  ['esp_12',['Esp',['../index.html#autotoc_md8',1,'']]],
   ['espichipsets_13',['ESPIChipsets',['../_fast_l_e_d_8h.html#ac06549dc4a351e2c8f1dda8ae81f7926',1,'FastLED.h']]],
   ['every_5fn_5fbseconds_14',['EVERY_N_BSECONDS',['../group___timekeeping.html#ga860bac35464e2c83c313e92a59e0e39a',1,'lib8tion.h']]],
   ['every_5fn_5fbseconds_5fi_15',['EVERY_N_BSECONDS_I',['../group___timekeeping.html#ga8057578b51f0a5cff337fb2fd5521de7',1,'lib8tion.h']]],

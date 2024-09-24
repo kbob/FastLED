@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.7.7</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.7.8</span>
    </div>
   </td>
  </tr>
@@ -253,7 +253,7 @@ $(function(){initNavTree('chipsets_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    <span class="keyword">class </span>LPD8806_ADJUST {</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        <span class="comment">// LPD8806 spec wants the high bit of every rgb data byte sent out to be set.</span></div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        FASTLED_FORCE_INLINE <span class="keyword">static</span> uint8_t adjust(<a class="code hl_define" href="cpp__compat_8h.html#a1daa598467bdfaa27c878f3782885c2e">FASTLED_REGISTER</a> uint8_t data) { <span class="keywordflow">return</span> ((data&gt;&gt;1) | 0x80) + ((data &amp;&amp; (data&lt;254)) &amp; 0x01); }</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        FASTLED_FORCE_INLINE <span class="keyword">static</span> uint8_t adjust(FASTLED_REGISTER uint8_t data) { <span class="keywordflow">return</span> ((data&gt;&gt;1) | 0x80) + ((data &amp;&amp; (data&lt;254)) &amp; 0x01); }</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        FASTLED_FORCE_INLINE <span class="keyword">static</span> <span class="keywordtype">void</span> postBlock(<span class="keywordtype">int</span> len, <span class="keywordtype">void</span>* context = NULL) {</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>            <a class="code hl_class" href="class_s_p_i_output.html">SPI</a>* pSPI = <span class="keyword">static_cast&lt;</span><a class="code hl_class" href="class_s_p_i_output.html">SPI</a>*<span class="keyword">&gt;</span>(context);</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            pSPI-&gt;<a class="code hl_function" href="class_a_v_r_software_s_p_i_output.html#abada62794ed922c2798bf462a98b57f0">writeBytesValueRaw</a>(0, ((len*3+63)&gt;&gt;6));</div>
@@ -343,7 +343,7 @@ $(function(){initNavTree('chipsets_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>        startBoundary();</div>
 <div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        <span class="keywordflow">while</span>(pixels.<a class="code hl_function" href="struct_pixel_controller.html#ac13f3e00855fcf6125ea27543c2fb48c">has</a>(1)) {</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>            <a class="code hl_define" href="cpp__compat_8h.html#a1daa598467bdfaa27c878f3782885c2e">FASTLED_REGISTER</a> uint16_t command;</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>            FASTLED_REGISTER uint16_t command;</div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>            command = 0x8000;</div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>            command |= (pixels.<a class="code hl_function" href="struct_pixel_controller.html#a4984f158bbc3b6c79ca16dd847fe67e1">loadAndScale0</a>() &amp; 0xF8) &lt;&lt; 7; <span class="comment">// red is the high 5 bits</span></div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>            command |= (pixels.<a class="code hl_function" href="struct_pixel_controller.html#a11f9b50f738c6d57d08d6776b3d8eb43">loadAndScale1</a>() &amp; 0xF8) &lt;&lt; 2; <span class="comment">// green is the middle 5 bits</span></div>
@@ -592,7 +592,7 @@ $(function(){initNavTree('chipsets_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>    <span class="keywordtype">void</span> writeBoundary() { mSPI.<a class="code hl_function" href="class_a_v_r_software_s_p_i_output.html#a34421832d232a692d08d39d87733acd8">writeWord</a>(0); mSPI.<a class="code hl_function" href="class_a_v_r_software_s_p_i_output.html#a34421832d232a692d08d39d87733acd8">writeWord</a>(0); }</div>
 <div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span> </div>
 <div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>    <span class="keyword">inline</span> <span class="keywordtype">void</span> writeLed(uint8_t r, uint8_t g, uint8_t b) __attribute__((always_inline)) {</div>
-<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>        <a class="code hl_define" href="cpp__compat_8h.html#a1daa598467bdfaa27c878f3782885c2e">FASTLED_REGISTER</a> uint8_t top = 0xC0 | ((~b &amp; 0xC0) &gt;&gt; 2) | ((~g &amp; 0xC0) &gt;&gt; 4) | ((~r &amp; 0xC0) &gt;&gt; 6);</div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>        FASTLED_REGISTER uint8_t top = 0xC0 | ((~b &amp; 0xC0) &gt;&gt; 2) | ((~g &amp; 0xC0) &gt;&gt; 4) | ((~r &amp; 0xC0) &gt;&gt; 6);</div>
 <div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>        mSPI.<a class="code hl_function" href="class_a_v_r_software_s_p_i_output.html#a58393081ec8c54bd6968642b89e8bd43">writeByte</a>(top); mSPI.<a class="code hl_function" href="class_a_v_r_software_s_p_i_output.html#a58393081ec8c54bd6968642b89e8bd43">writeByte</a>(b); mSPI.<a class="code hl_function" href="class_a_v_r_software_s_p_i_output.html#a58393081ec8c54bd6968642b89e8bd43">writeByte</a>(g); mSPI.<a class="code hl_function" href="class_a_v_r_software_s_p_i_output.html#a58393081ec8c54bd6968642b89e8bd43">writeByte</a>(r);</div>
 <div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>    }</div>
 <div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span> </div>
@@ -958,7 +958,6 @@ $(function(){initNavTree('chipsets_8h_source.html',''); initResizable(true); });
 <div class="ttc" id="aclass_w_s2812_controller800_khz_html"><div class="ttname"><a href="class_w_s2812_controller800_khz.html">WS2812Controller800Khz</a></div><div class="ttdoc">WS2812 controller class @ 800 KHz.</div><div class="ttdef"><b>Definition</b> <a href="#l00668">chipsets.h:668</a></div></div>
 <div class="ttc" id="aclass_w_s2813_controller_html"><div class="ttname"><a href="class_w_s2813_controller.html">WS2813Controller</a></div><div class="ttdoc">WS2813 controller class.</div><div class="ttdef"><b>Definition</b> <a href="#l00693">chipsets.h:693</a></div></div>
 <div class="ttc" id="aclass_w_s2815_controller_html"><div class="ttname"><a href="class_w_s2815_controller.html">WS2815Controller</a></div><div class="ttdoc">WS2815 controller class @ 400 KHz.</div><div class="ttdef"><b>Definition</b> <a href="#l00673">chipsets.h:673</a></div></div>
-<div class="ttc" id="acpp__compat_8h_html_a1daa598467bdfaa27c878f3782885c2e"><div class="ttname"><a href="cpp__compat_8h.html#a1daa598467bdfaa27c878f3782885c2e">FASTLED_REGISTER</a></div><div class="ttdeci">#define FASTLED_REGISTER</div><div class="ttdoc">Helper macro to replace the deprecated 'register' keyword if we're using modern C++ where it's been r...</div><div class="ttdef"><b>Definition</b> <a href="cpp__compat_8h_source.html#l00029">cpp_compat.h:29</a></div></div>
 <div class="ttc" id="afastspi_8h_html_a4bcb592d94b1f9d3a99afec742513efc"><div class="ttname"><a href="fastspi_8h.html#a4bcb592d94b1f9d3a99afec742513efc">DATA_RATE_MHZ</a></div><div class="ttdeci">#define DATA_RATE_MHZ(X)</div><div class="ttdoc">Convert data rate from megahertz (MHz) to clock cycles per bit.</div><div class="ttdef"><b>Definition</b> <a href="fastspi_8h_source.html#l00025">fastspi.h:25</a></div></div>
 <div class="ttc" id="astruct_c_r_g_b_html"><div class="ttname"><a href="struct_c_r_g_b.html">CRGB</a></div><div class="ttdoc">Representation of an RGB pixel (Red, Green, Blue)</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00025">crgb.h:25</a></div></div>
 <div class="ttc" id="astruct_pixel_controller_html"><div class="ttname"><a href="struct_pixel_controller.html">PixelController</a></div><div class="ttdoc">Pixel controller class.</div><div class="ttdef"><b>Definition</b> <a href="pixel__controller_8h_source.html#l00062">pixel_controller.h:62</a></div></div>
@@ -973,8 +972,8 @@ $(function(){initNavTree('chipsets_8h_source.html',''); initResizable(true); });
 <div class="ttc" id="astruct_pixel_controller_html_ab44f62f166d162bd1e3b095b368feef2"><div class="ttname"><a href="struct_pixel_controller.html#ab44f62f166d162bd1e3b095b368feef2">PixelController::advanceData</a></div><div class="ttdeci">FASTLED_FORCE_INLINE void advanceData()</div><div class="ttdoc">Advance the data pointer forward, adjust position counter.</div><div class="ttdef"><b>Definition</b> <a href="pixel__controller_8h_source.html#l00282">pixel_controller.h:282</a></div></div>
 <div class="ttc" id="astruct_pixel_controller_html_ac13f3e00855fcf6125ea27543c2fb48c"><div class="ttname"><a href="struct_pixel_controller.html#ac13f3e00855fcf6125ea27543c2fb48c">PixelController::has</a></div><div class="ttdeci">FASTLED_FORCE_INLINE bool has(int n)</div><div class="ttdoc">Do we have n pixels left to process?</div><div class="ttdef"><b>Definition</b> <a href="pixel__controller_8h_source.html#l00253">pixel_controller.h:253</a></div></div>
 <div class="ttc" id="astruct_pixel_controller_html_ac7cb7840989882cce60218ac43dbe8ef"><div class="ttname"><a href="struct_pixel_controller.html#ac7cb7840989882cce60218ac43dbe8ef">PixelController::stepDithering</a></div><div class="ttdeci">FASTLED_FORCE_INLINE void stepDithering()</div><div class="ttdoc">Step the dithering forward.</div><div class="ttdef"><b>Definition</b> <a href="pixel__controller_8h_source.html#l00286">pixel_controller.h:286</a></div></div>
-<div class="ttc" id="astruct_rgbw_default_html"><div class="ttname"><a href="struct_rgbw_default.html">RgbwDefault</a></div><div class="ttdef"><b>Definition</b> <a href="rgbw_8h_source.html#l00052">rgbw.h:52</a></div></div>
-<div class="ttc" id="astruct_rgbw_html"><div class="ttname"><a href="struct_rgbw.html">Rgbw</a></div><div class="ttdef"><b>Definition</b> <a href="rgbw_8h_source.html#l00027">rgbw.h:27</a></div></div>
+<div class="ttc" id="astruct_rgbw_default_html"><div class="ttname"><a href="struct_rgbw_default.html">RgbwDefault</a></div><div class="ttdef"><b>Definition</b> <a href="rgbw_8h_source.html#l00050">rgbw.h:50</a></div></div>
+<div class="ttc" id="astruct_rgbw_html"><div class="ttname"><a href="struct_rgbw.html">Rgbw</a></div><div class="ttdef"><b>Definition</b> <a href="rgbw_8h_source.html#l00025">rgbw.h:25</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.3-->
@@ -982,7 +981,7 @@ $(function(){initNavTree('chipsets_8h_source.html',''); initResizable(true); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="chipsets_8h.html">chipsets.h</a></li>
-    <li class="footer">Generated on Mon Sep 16 2024 05:47:25 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Sep 24 2024 03:42:48 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

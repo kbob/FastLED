@@ -5,7 +5,7 @@ var searchData=
   ['warmfluorescent_2',['WarmFluorescent',['../group___color_enums.html#gga251e9e8dc2c7b981786b71706522b2a9aa66cc3f3950f9d712cf9dceca39a1ba5',1,'color.h']]],
   ['waveform_20beat_20generators_3',['Waveform Beat Generators',['../group___beat_generators.html',1,'']]],
   ['waveform_20generators_4',['Waveform Generators',['../group___waveform_generators.html',1,'']]],
-  ['what_20about_20that_20name_5',['What about that name?',['../index.html#autotoc_md19',1,'']]],
+  ['what_20about_20that_20name_5',['What about that name?',['../index.html#autotoc_md20',1,'']]],
   ['wheat_6',['Wheat',['../group___pixel_types.html#ggaeb40a08b7cb90c1e21bd408261558b99a22541bf68ff7246e103661cb614d1fa0',1,'CRGB']]],
   ['white_7',['White',['../group___pixel_types.html#ggaeb40a08b7cb90c1e21bd408261558b99a1c48628099183e2c82e11d5f2a3ce3ce',1,'CRGB']]],
   ['whitesmoke_8',['WhiteSmoke',['../group___pixel_types.html#ggaeb40a08b7cb90c1e21bd408261558b99af7e5db27c43bbbcc12fecc4c5c266242',1,'CRGB']]],

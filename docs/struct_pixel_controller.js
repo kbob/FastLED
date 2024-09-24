@@ -1,9 +1,9 @@
 var struct_pixel_controller =
 [
     [ "PixelController", "struct_pixel_controller.html#ae44229e20fb4ba4473b057dcda87122e", null ],
-    [ "PixelController", "struct_pixel_controller.html#a85acf3ef47eaeaa6723b7cf5ea4f071d", null ],
-    [ "PixelController", "struct_pixel_controller.html#a5631b8132087ca68008d85a891c82d2b", null ],
-    [ "PixelController", "struct_pixel_controller.html#a802a3dadccd652a9f1db490f7ba64655", null ],
+    [ "PixelController", "struct_pixel_controller.html#ae18da760fe20d9bd9d0be593a4191607", null ],
+    [ "PixelController", "struct_pixel_controller.html#aff23aeae4b67372b82b5225ccd66632e", null ],
+    [ "PixelController", "struct_pixel_controller.html#aad52cdc177840aee3a0ef9087a551e8a", null ],
     [ "advanceAndLoadAndScale0", "struct_pixel_controller.html#aa6a77bc5cd442a95a4f36b3c39d09f6e", null ],
     [ "advanceAndLoadAndScale0", "struct_pixel_controller.html#a9b3aad7f0649ea0d87e2ac243a6ede89", null ],
     [ "advanceAndLoadAndScale0", "struct_pixel_controller.html#a5ed1cdb992788946f8aa585e014491fa", null ],

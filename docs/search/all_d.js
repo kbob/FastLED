@@ -55,7 +55,7 @@ var searchData=
   ['moccasin_52',['Moccasin',['../group___pixel_types.html#ggaeb40a08b7cb90c1e21bd408261558b99a1cd587f3a235fce04d15c5115c63f291',1,'CRGB']]],
   ['mod8_53',['mod8',['../group___math.html#gaa3beb6c31141a13c1a047b926d065ca2',1,'math8.h']]],
   ['moffsets_54',['mOffsets',['../struct_pixel_controller.html#a5ea77404f9ea28134291af923a79c82f',1,'PixelController']]],
-  ['more_20information_55',['For more information',['../index.html#autotoc_md20',1,'']]],
+  ['more_20information_55',['For more information',['../index.html#autotoc_md21',1,'']]],
   ['mperiod_56',['mPeriod',['../class_c_every_n_time.html#a27fdededaf37417018f079336feabbf7',1,'CEveryNTime']]],
   ['mprevtrigger_57',['mPrevTrigger',['../class_c_every_n_time.html#af886ee09b27d68263dfa1e40d6137ce8',1,'CEveryNTime']]],
   ['mscale_58',['mScale',['../struct_pixel_controller.html#a9c8fa28fd867a4048796b4f88146d332',1,'PixelController']]],

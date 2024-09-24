@@ -80,6 +80,5 @@ var group___pixel_set =
       [ "operator=", "class_c_r_g_b_array.html#a4f18d2253ae4da9dfe07ebdc1bd10756", null ],
       [ "operator=", "class_c_r_g_b_array.html#a5994c3c0cd408a23e75d48169fdb1061", null ]
     ] ],
-    [ "CRGBSet", "group___pixel_set.html#gaf5de5d996b3399837264a10ba96df667", null ],
-    [ "operator+", "group___pixel_set.html#ga9c49c300777c753458464b96ee8cc537", null ]
+    [ "operator+", "group___pixel_set.html#ga07378b5cb6c73b8e56e8e3d445422af8", null ]
 ];

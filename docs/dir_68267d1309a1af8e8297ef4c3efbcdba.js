@@ -48,6 +48,7 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "platforms.h", "platforms_8h.html", null ],
     [ "power_mgt.cpp", "power__mgt_8cpp.html", "power__mgt_8cpp" ],
     [ "power_mgt.h", "power__mgt_8h.html", "power__mgt_8h" ],
+    [ "register.h", "register_8h_source.html", null ],
     [ "rgbw.cpp", "rgbw_8cpp_source.html", null ],
     [ "rgbw.h", "rgbw_8h_source.html", null ],
     [ "simplex.cpp", "simplex_8cpp_source.html", null ],
