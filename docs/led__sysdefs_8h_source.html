@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.7.8</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.0</span>
    </div>
   </td>
  </tr>
@@ -155,7 +155,7 @@ $(function(){initNavTree('led__sysdefs_8h_source.html',''); initResizable(true);
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#include &quot;platforms/apollo3/led_sysdefs_apollo3.h&quot;</span></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#elif defined(ARDUINO_ARCH_RENESAS) || defined(ARDUINO_ARCH_RENESAS_UNO) || defined(ARDUINO_ARCH_RENESAS_PORTENTA)</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#include &quot;platforms/arm/renesas/led_sysdef_arm_renesas.h&quot;</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#elif defined(__x86_64__) || defined(FASTLED_STUB_IMPL)</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#elif defined(__x86_64__) || defined(FASTLED_STUB_IMPL) || defined(__APPLE__) || defined(__linux__) || defined(__unix__) || defined(__EMSCRIPTEN__)</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">// Not on a microcontroller</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">//#    ifdef FASTLED_HAS_PRAGMA_MESSAGE</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">//#      pragma message &quot;Using stub, no data will be written to pins&quot;</span></div>
@@ -182,7 +182,7 @@ $(function(){initNavTree('led__sysdefs_8h_source.html',''); initResizable(true);
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">// Arduino.h needed for convenience functions digitalPinToPort/BitMask/portOutputRegister and the pinMode methods.</span></div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">#ifdef ARDUINO</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="preprocessor">#include &lt;Arduino.h&gt;</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="preprocessor">#include &lt;Arduino.h&gt;</span>  <span class="comment">// ok include</span></div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="led__sysdefs_8h.html#ad469b729e752d3920e3cd5bfaf9febe9">   83</a></span><span class="preprocessor">#define CLKS_PER_US (F_CPU/1000000)</span></div>
@@ -197,7 +197,7 @@ $(function(){initNavTree('led__sysdefs_8h_source.html',''); initResizable(true);
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="led__sysdefs_8h.html">led_sysdefs.h</a></li>
-    <li class="footer">Generated on Tue Sep 24 2024 03:42:48 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sun Oct 27 2024 23:51:50 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

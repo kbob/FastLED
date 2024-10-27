@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.7.8</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.0</span>
    </div>
   </td>
  </tr>
@@ -126,7 +126,7 @@ $(function(){initNavTree('wiring_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">volatile</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> FastLED_timer0_overflow_count=0;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">volatile</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> FastLED_timer0_millis = 0;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><a class="code hl_define" href="lib8tion_8h.html#ac735bdef91ee1e80778434336a622138">LIB8STATIC</a> <span class="keywordtype">void</span>  __attribute__((always_inline)) fastinc32 (<span class="keyword">volatile</span> uint32_t &amp; _long) {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>LIB8STATIC <span class="keywordtype">void</span>  __attribute__((always_inline)) fastinc32 (<span class="keyword">volatile</span> uint32_t &amp; _long) {</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  uint8_t b = ++((tBytesForLong&amp;)_long).raw[0];</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keywordflow">if</span>(!b) {</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    b = ++((tBytesForLong&amp;)_long).raw[1];</div>
@@ -347,7 +347,6 @@ $(function(){initNavTree('wiring_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
 <div class="ttc" id="a_fast_l_e_d_8h_html"><div class="ttname"><a href="_fast_l_e_d_8h.html">FastLED.h</a></div><div class="ttdoc">central include file for FastLED, defines the CFastLED class/object</div></div>
-<div class="ttc" id="alib8tion_8h_html_ac735bdef91ee1e80778434336a622138"><div class="ttname"><a href="lib8tion_8h.html#ac735bdef91ee1e80778434336a622138">LIB8STATIC</a></div><div class="ttdeci">#define LIB8STATIC</div><div class="ttdoc">Define a LIB8TION member function as static inline with an &quot;unused&quot; attribute.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_8h_source.html#l00022">lib8tion.h:22</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.3-->
@@ -355,7 +354,7 @@ $(function(){initNavTree('wiring_8cpp_source.html',''); initResizable(true); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="wiring_8cpp.html">wiring.cpp</a></li>
-    <li class="footer">Generated on Tue Sep 24 2024 03:42:48 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sun Oct 27 2024 23:51:50 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

@@ -20,6 +20,5 @@ var searchData=
   ['mlenremaining_17',['mLenRemaining',['../struct_pixel_controller.html#a329cebe498f2d119cf10e0e6a7b5f7c5',1,'PixelController']]],
   ['moffsets_18',['mOffsets',['../struct_pixel_controller.html#a5ea77404f9ea28134291af923a79c82f',1,'PixelController']]],
   ['mperiod_19',['mPeriod',['../class_c_every_n_time.html#a27fdededaf37417018f079336feabbf7',1,'CEveryNTime']]],
-  ['mprevtrigger_20',['mPrevTrigger',['../class_c_every_n_time.html#af886ee09b27d68263dfa1e40d6137ce8',1,'CEveryNTime']]],
-  ['mscale_21',['mScale',['../struct_pixel_controller.html#a9c8fa28fd867a4048796b4f88146d332',1,'PixelController']]]
+  ['mprevtrigger_20',['mPrevTrigger',['../class_c_every_n_time.html#af886ee09b27d68263dfa1e40d6137ce8',1,'CEveryNTime']]]
 ];

@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.7.8</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.0</span>
    </div>
   </td>
  </tr>
@@ -117,6 +117,7 @@ $(function(){initNavTree('colorutils_8cpp.html',''); initResizable(true); });
 </div><div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>&quot;</code><br />
+<code>#include &quot;xymap.h&quot;</code><br />
 </div>
 <p><a href="colorutils_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -200,21 +201,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ga7b2413e9940cad26227c41d222aecd94" id="r_ga7b2413e9940cad26227c41d222aecd94"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_c_h_s_v.html">CHSV</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___color_blends.html#ga7b2413e9940cad26227c41d222aecd94">blend</a> (const <a class="el" href="struct_c_h_s_v.html">CHSV</a> *src1, const <a class="el" href="struct_c_h_s_v.html">CHSV</a> *src2, <a class="el" href="struct_c_h_s_v.html">CHSV</a> *dest, uint16_t count, <a class="el" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> amountOfsrc2, <a class="el" href="group___color_fills.html#ga097bfc6a8459d95e8afa8a16b9e6476a">TGradientDirectionCode</a> directionCode)</td></tr>
 <tr class="memdesc:ga7b2413e9940cad26227c41d222aecd94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a new blended array of colors, each some fraction of the way between corresponding elements of two source arrays of colors.     <br /></td></tr>
 <tr class="separator:ga7b2413e9940cad26227c41d222aecd94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a698af75b3683f489a1f04d376e8e20dc" id="r_a698af75b3683f489a1f04d376e8e20dc"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a698af75b3683f489a1f04d376e8e20dc">XY</a> (uint8_t, uint8_t)</td></tr>
-<tr class="memdesc:a698af75b3683f489a1f04d376e8e20dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declaration of the function "XY" which must be provided by the application for use in two-dimensional filter functions.  <br /></td></tr>
-<tr class="separator:a698af75b3683f489a1f04d376e8e20dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaacf0416f9e0438f23f92d0df6c338ea3" id="r_gaacf0416f9e0438f23f92d0df6c338ea3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___color_blurs.html#gaacf0416f9e0438f23f92d0df6c338ea3">blur1d</a> (<a class="el" href="struct_c_r_g_b.html">CRGB</a> *leds, uint16_t numLeds, <a class="el" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> blur_amount)</td></tr>
 <tr class="memdesc:gaacf0416f9e0438f23f92d0df6c338ea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">One-dimensional blur filter.  <br /></td></tr>
 <tr class="separator:gaacf0416f9e0438f23f92d0df6c338ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae97f9574ca4fa1a7ab65782b2a804fba" id="r_gae97f9574ca4fa1a7ab65782b2a804fba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___color_blurs.html#gae97f9574ca4fa1a7ab65782b2a804fba">blur2d</a> (<a class="el" href="struct_c_r_g_b.html">CRGB</a> *leds, uint8_t width, uint8_t height, <a class="el" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> blur_amount)</td></tr>
-<tr class="memdesc:gae97f9574ca4fa1a7ab65782b2a804fba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Two-dimensional blur filter.  <br /></td></tr>
-<tr class="separator:gae97f9574ca4fa1a7ab65782b2a804fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3dbf22d8f71f7a0b54bbfaaf1ef7b44b" id="r_ga3dbf22d8f71f7a0b54bbfaaf1ef7b44b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___color_blurs.html#ga3dbf22d8f71f7a0b54bbfaaf1ef7b44b">blurRows</a> (<a class="el" href="struct_c_r_g_b.html">CRGB</a> *leds, uint8_t width, uint8_t height, <a class="el" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> blur_amount)</td></tr>
-<tr class="memdesc:ga3dbf22d8f71f7a0b54bbfaaf1ef7b44b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a <a class="el" href="group___color_blurs.html#gaacf0416f9e0438f23f92d0df6c338ea3" title="One-dimensional blur filter.">blur1d()</a> on every row of a rectangular matrix.  <br /></td></tr>
-<tr class="separator:ga3dbf22d8f71f7a0b54bbfaaf1ef7b44b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacb40363ff285a5d816a1cf3096e27c14" id="r_gacb40363ff285a5d816a1cf3096e27c14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___color_blurs.html#gacb40363ff285a5d816a1cf3096e27c14">blurColumns</a> (<a class="el" href="struct_c_r_g_b.html">CRGB</a> *leds, uint8_t width, uint8_t height, <a class="el" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> blur_amount)</td></tr>
-<tr class="memdesc:gacb40363ff285a5d816a1cf3096e27c14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a <a class="el" href="group___color_blurs.html#gaacf0416f9e0438f23f92d0df6c338ea3" title="One-dimensional blur filter.">blur1d()</a> on every column of a rectangular matrix.  <br /></td></tr>
-<tr class="separator:gacb40363ff285a5d816a1cf3096e27c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad5f8e4b75f2a3f0f720351a4f8ff1d7a" id="r_gad5f8e4b75f2a3f0f720351a4f8ff1d7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___color_blurs.html#gad5f8e4b75f2a3f0f720351a4f8ff1d7a">blur2d</a> (<a class="el" href="struct_c_r_g_b.html">CRGB</a> *leds, uint8_t width, uint8_t height, <a class="el" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> blur_amount, const <a class="el" href="class_x_y_map.html">XYMap</a> &amp;xymap)</td></tr>
+<tr class="memdesc:gad5f8e4b75f2a3f0f720351a4f8ff1d7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Two-dimensional blur filter.  <br /></td></tr>
+<tr class="separator:gad5f8e4b75f2a3f0f720351a4f8ff1d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2132dd1a719cd6b812e2560f5860138f" id="r_ga2132dd1a719cd6b812e2560f5860138f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___color_blurs.html#ga2132dd1a719cd6b812e2560f5860138f">blurRows</a> (<a class="el" href="struct_c_r_g_b.html">CRGB</a> *leds, uint8_t width, uint8_t height, <a class="el" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> blur_amount, const <a class="el" href="class_x_y_map.html">XYMap</a> &amp;xyMap)</td></tr>
+<tr class="memdesc:ga2132dd1a719cd6b812e2560f5860138f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a <a class="el" href="group___color_blurs.html#gaacf0416f9e0438f23f92d0df6c338ea3" title="One-dimensional blur filter.">blur1d()</a> on every row of a rectangular matrix.  <br /></td></tr>
+<tr class="separator:ga2132dd1a719cd6b812e2560f5860138f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3f3f09f8b67b14d7fe7c14e4387025b3" id="r_ga3f3f09f8b67b14d7fe7c14e4387025b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___color_blurs.html#ga3f3f09f8b67b14d7fe7c14e4387025b3">blurColumns</a> (<a class="el" href="struct_c_r_g_b.html">CRGB</a> *leds, uint8_t width, uint8_t height, <a class="el" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> blur_amount, const <a class="el" href="class_x_y_map.html">XYMap</a> &amp;xyMap)</td></tr>
+<tr class="memdesc:ga3f3f09f8b67b14d7fe7c14e4387025b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a <a class="el" href="group___color_blurs.html#gaacf0416f9e0438f23f92d0df6c338ea3" title="One-dimensional blur filter.">blur1d()</a> on every column of a rectangular matrix.  <br /></td></tr>
+<tr class="separator:ga3f3f09f8b67b14d7fe7c14e4387025b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac5c6b83ec07d310385a430f9f0336530" id="r_gac5c6b83ec07d310385a430f9f0336530"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_c_r_g_b.html">CRGB</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___color_fills.html#gac5c6b83ec07d310385a430f9f0336530">HeatColor</a> (uint8_t temperature)</td></tr>
 <tr class="memdesc:gac5c6b83ec07d310385a430f9f0336530"><td class="mdescLeft">&#160;</td><td class="mdescRight">Approximates a "black body radiation" spectrum for a given "heat" level.  <br /></td></tr>
 <tr class="separator:gac5c6b83ec07d310385a430f9f0336530"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -251,24 +249,21 @@ Functions</h2></td></tr>
 <tr class="memitem:ga79c94ea554455e72eabab172cc15456f" id="r_ga79c94ea554455e72eabab172cc15456f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_c_h_s_v.html">CHSV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___palette_colors.html#ga79c94ea554455e72eabab172cc15456f">ColorFromPalette</a> (const <a class="el" href="class_c_h_s_v_palette256.html">CHSVPalette256</a> &amp;pal, uint8_t index, uint8_t brightness, <a class="el" href="group___palette_colors.html#ga565c04e626af4a3ec44bf97edc607b4e">TBlendType</a>)</td></tr>
 <tr class="memdesc:ga79c94ea554455e72eabab172cc15456f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a color from a palette.     <br /></td></tr>
 <tr class="separator:ga79c94ea554455e72eabab172cc15456f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaea18108bf50282f20a0ecd4213b5ac8c" id="r_gaea18108bf50282f20a0ecd4213b5ac8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___palette_upscale.html#gaea18108bf50282f20a0ecd4213b5ac8c">UpscalePalette</a> (const struct <a class="el" href="class_c_r_g_b_palette16.html">CRGBPalette16</a> &amp;srcpal16, struct <a class="el" href="class_c_r_g_b_palette256.html">CRGBPalette256</a> &amp;destpal256)</td></tr>
-<tr class="memdesc:gaea18108bf50282f20a0ecd4213b5ac8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a 16-entry palette to a 256-entry palette.  <br /></td></tr>
-<tr class="separator:gaea18108bf50282f20a0ecd4213b5ac8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae2a0641902f28723263666a128995fef" id="r_gae2a0641902f28723263666a128995fef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___palette_upscale.html#gae2a0641902f28723263666a128995fef">UpscalePalette</a> (const struct <a class="el" href="class_c_h_s_v_palette16.html">CHSVPalette16</a> &amp;srcpal16, struct <a class="el" href="class_c_h_s_v_palette256.html">CHSVPalette256</a> &amp;destpal256)</td></tr>
-<tr class="memdesc:gae2a0641902f28723263666a128995fef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a 16-entry palette to a 256-entry palette.     <br /></td></tr>
-<tr class="separator:gae2a0641902f28723263666a128995fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1916d32f04256f662ecb0f4d7cff6062" id="r_ga1916d32f04256f662ecb0f4d7cff6062"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___palette_upscale.html#ga1916d32f04256f662ecb0f4d7cff6062">UpscalePalette</a> (const struct <a class="el" href="class_c_r_g_b_palette16.html">CRGBPalette16</a> &amp;srcpal16, struct <a class="el" href="class_c_r_g_b_palette32.html">CRGBPalette32</a> &amp;destpal32)</td></tr>
-<tr class="memdesc:ga1916d32f04256f662ecb0f4d7cff6062"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a 16-entry palette to a 32-entry palette.  <br /></td></tr>
-<tr class="separator:ga1916d32f04256f662ecb0f4d7cff6062"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab247fdb68a0ed37779c7bc11b83f6f8a" id="r_gab247fdb68a0ed37779c7bc11b83f6f8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___palette_upscale.html#gab247fdb68a0ed37779c7bc11b83f6f8a">UpscalePalette</a> (const struct <a class="el" href="class_c_h_s_v_palette16.html">CHSVPalette16</a> &amp;srcpal16, struct <a class="el" href="class_c_h_s_v_palette32.html">CHSVPalette32</a> &amp;destpal32)</td></tr>
-<tr class="memdesc:gab247fdb68a0ed37779c7bc11b83f6f8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a 16-entry palette to a 32-entry palette.     <br /></td></tr>
-<tr class="separator:gab247fdb68a0ed37779c7bc11b83f6f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa91cec87978562a2b22709b47d02cdd7" id="r_gaa91cec87978562a2b22709b47d02cdd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___palette_upscale.html#gaa91cec87978562a2b22709b47d02cdd7">UpscalePalette</a> (const struct <a class="el" href="class_c_r_g_b_palette32.html">CRGBPalette32</a> &amp;srcpal32, struct <a class="el" href="class_c_r_g_b_palette256.html">CRGBPalette256</a> &amp;destpal256)</td></tr>
-<tr class="memdesc:gaa91cec87978562a2b22709b47d02cdd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a 32-entry palette to a 256-entry palette.  <br /></td></tr>
-<tr class="separator:gaa91cec87978562a2b22709b47d02cdd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaeac1e2dbb61ff4b9f21dbed9cb0a1350" id="r_gaeac1e2dbb61ff4b9f21dbed9cb0a1350"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___palette_upscale.html#gaeac1e2dbb61ff4b9f21dbed9cb0a1350">UpscalePalette</a> (const struct <a class="el" href="class_c_h_s_v_palette32.html">CHSVPalette32</a> &amp;srcpal32, struct <a class="el" href="class_c_h_s_v_palette256.html">CHSVPalette256</a> &amp;destpal256)</td></tr>
-<tr class="memdesc:gaeac1e2dbb61ff4b9f21dbed9cb0a1350"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a 32-entry palette to a 256-entry palette.     <br /></td></tr>
-<tr class="separator:gaeac1e2dbb61ff4b9f21dbed9cb0a1350"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa88523d1afb29cf3f75b9b2725ba55d3" id="r_gaa88523d1afb29cf3f75b9b2725ba55d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___palette_upscale.html#gaa88523d1afb29cf3f75b9b2725ba55d3">UpscalePalette</a> (const class <a class="el" href="class_c_r_g_b_palette16.html">CRGBPalette16</a> &amp;srcpal16, class <a class="el" href="class_c_r_g_b_palette256.html">CRGBPalette256</a> &amp;destpal256)</td></tr>
+<tr class="memdesc:gaa88523d1afb29cf3f75b9b2725ba55d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a 16-entry palette to a 256-entry palette.  <br /></td></tr>
+<tr class="separator:gaa88523d1afb29cf3f75b9b2725ba55d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab25990089da4e6e2179c52bf84371ef6" id="r_gab25990089da4e6e2179c52bf84371ef6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___palette_upscale.html#gab25990089da4e6e2179c52bf84371ef6">UpscalePalette</a> (const class <a class="el" href="class_c_h_s_v_palette16.html">CHSVPalette16</a> &amp;srcpal16, class <a class="el" href="class_c_h_s_v_palette256.html">CHSVPalette256</a> &amp;destpal256)</td></tr>
+<tr class="separator:gab25990089da4e6e2179c52bf84371ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab719ebc3565c6d7e32cc5d9735938cd2" id="r_gab719ebc3565c6d7e32cc5d9735938cd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___palette_upscale.html#gab719ebc3565c6d7e32cc5d9735938cd2">UpscalePalette</a> (const class <a class="el" href="class_c_r_g_b_palette16.html">CRGBPalette16</a> &amp;srcpal16, class <a class="el" href="class_c_r_g_b_palette32.html">CRGBPalette32</a> &amp;destpal32)</td></tr>
+<tr class="memdesc:gab719ebc3565c6d7e32cc5d9735938cd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a 16-entry palette to a 32-entry palette.  <br /></td></tr>
+<tr class="separator:gab719ebc3565c6d7e32cc5d9735938cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e993e90ae254bd0ae4e2b3ec30793e8" id="r_ga9e993e90ae254bd0ae4e2b3ec30793e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___palette_upscale.html#ga9e993e90ae254bd0ae4e2b3ec30793e8">UpscalePalette</a> (const class <a class="el" href="class_c_h_s_v_palette16.html">CHSVPalette16</a> &amp;srcpal16, class <a class="el" href="class_c_h_s_v_palette32.html">CHSVPalette32</a> &amp;destpal32)</td></tr>
+<tr class="separator:ga9e993e90ae254bd0ae4e2b3ec30793e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd78065e7fb5f0f0997610b67eab968c" id="r_gacd78065e7fb5f0f0997610b67eab968c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___palette_upscale.html#gacd78065e7fb5f0f0997610b67eab968c">UpscalePalette</a> (const class <a class="el" href="class_c_r_g_b_palette32.html">CRGBPalette32</a> &amp;srcpal32, class <a class="el" href="class_c_r_g_b_palette256.html">CRGBPalette256</a> &amp;destpal256)</td></tr>
+<tr class="memdesc:gacd78065e7fb5f0f0997610b67eab968c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a 32-entry palette to a 256-entry palette.  <br /></td></tr>
+<tr class="separator:gacd78065e7fb5f0f0997610b67eab968c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7ece2048e58a7d25a494d9856b2218bd" id="r_ga7ece2048e58a7d25a494d9856b2218bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___palette_upscale.html#ga7ece2048e58a7d25a494d9856b2218bd">UpscalePalette</a> (const class <a class="el" href="class_c_h_s_v_palette32.html">CHSVPalette32</a> &amp;srcpal32, class <a class="el" href="class_c_h_s_v_palette256.html">CHSVPalette256</a> &amp;destpal256)</td></tr>
+<tr class="separator:ga7ece2048e58a7d25a494d9856b2218bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga361799a4ba193694ad974079c980430c" id="r_ga361799a4ba193694ad974079c980430c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___palette_colors.html#ga361799a4ba193694ad974079c980430c">nblendPaletteTowardPalette</a> (<a class="el" href="class_c_r_g_b_palette16.html">CRGBPalette16</a> &amp;current, <a class="el" href="class_c_r_g_b_palette16.html">CRGBPalette16</a> &amp;target, uint8_t maxChanges)</td></tr>
 <tr class="memdesc:ga361799a4ba193694ad974079c980430c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alter one palette by making it slightly more like a "target palette".  <br /></td></tr>
 <tr class="separator:ga361799a4ba193694ad974079c980430c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -354,7 +349,7 @@ Functions</h2></td></tr>
 <p>Helper function to divide a number by 16, aka four logical shift right (LSR)'s. </p>
 <p>On avr-gcc, "u8 &gt;&gt; 4" generates a loop, which is big, and slow. merely forcing it to be four /=2's causes avr-gcc to emit a SWAP instruction followed by an AND 0x0F, which is faster, and smaller. </p>
 
-<p class="definition">Definition at line <a class="el" href="colorutils_8cpp_source.html#l00554">554</a> of file <a class="el" href="colorutils_8cpp_source.html">colorutils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="colorutils_8cpp_source.html#l00550">550</a> of file <a class="el" href="colorutils_8cpp_source.html">colorutils.cpp</a>.</p>
 
 </div>
 </div>
@@ -389,33 +384,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a698af75b3683f489a1f04d376e8e20dc" name="a698af75b3683f489a1f04d376e8e20dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a698af75b3683f489a1f04d376e8e20dc">&#9670;&#160;</a></span>XY()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t XY </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Forward declaration of the function "XY" which must be provided by the application for use in two-dimensional filter functions. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_noise_8ino-example.html#a0">Noise.ino</a>, <a class="el" href="_noise_plus_palette_8ino-example.html#a13">NoisePlusPalette.ino</a>, <a class="el" href="_smart_matrix_8ino-example.html#a1">SmartMatrix.ino</a>, and <a class="el" href="_x_y_matrix_8ino-example.html#a0">XYMatrix.ino</a>.</dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="_noise_8ino_source.html#l00022">22</a> of file <a class="el" href="_noise_8ino_source.html">Noise.ino</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.3-->
@@ -423,7 +391,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="colorutils_8cpp.html">colorutils.cpp</a></li>
-    <li class="footer">Generated on Tue Sep 24 2024 03:42:48 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sun Oct 27 2024 23:51:50 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

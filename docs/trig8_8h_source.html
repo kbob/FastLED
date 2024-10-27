@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.7.8</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.0</span>
    </div>
   </td>
  </tr>
@@ -117,7 +117,7 @@ $(function(){initNavTree('trig8_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#define sin16 sin16_avr</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><a class="code hl_define" href="lib8tion_8h.html#ac735bdef91ee1e80778434336a622138">LIB8STATIC</a> int16_t sin16_avr(uint16_t theta) {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>LIB8STATIC int16_t sin16_avr(uint16_t theta) {</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">static</span> <span class="keyword">const</span> uint8_t data[] = {</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        0,           0,           49, 0, 6393 % 256,  6393 / 256,  48, 0,</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        12539 % 256, 12539 / 256, 44, 0, 18204 % 256, 18204 / 256, 38, 0,</div>
@@ -174,7 +174,7 @@ $(function(){initNavTree('trig8_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="group___trig.html#gace4cc675280eecec1eeb83da47406409">   91</a></span><span class="preprocessor">#define sin16 sin16_C</span></div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
 <div class="foldopen" id="foldopen00101" data-start="{" data-end="}">
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="group___trig.html#ga0890962cb06b267617f4b06d7e9be5eb">  101</a></span><a class="code hl_define" href="lib8tion_8h.html#ac735bdef91ee1e80778434336a622138">LIB8STATIC</a> int16_t <a class="code hl_function" href="group___trig.html#ga0890962cb06b267617f4b06d7e9be5eb">sin16_C</a>(uint16_t theta) {</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="group___trig.html#ga0890962cb06b267617f4b06d7e9be5eb">  101</a></span>LIB8STATIC int16_t <a class="code hl_function" href="group___trig.html#ga0890962cb06b267617f4b06d7e9be5eb">sin16_C</a>(uint16_t theta) {</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keyword">static</span> <span class="keyword">const</span> uint16_t base[] = {0,     6393,  12539, 18204,</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                                    23170, 27245, 30273, 32137};</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keyword">static</span> <span class="keyword">const</span> uint8_t slope[] = {49, 48, 44, 38, 31, 23, 14, 4};</div>
@@ -201,7 +201,7 @@ $(function(){initNavTree('trig8_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="group___trig.html#ga056952ebed39f55880bb353857b47075">  135</a></span><a class="code hl_define" href="lib8tion_8h.html#ac735bdef91ee1e80778434336a622138">LIB8STATIC</a> int16_t <a class="code hl_function" href="group___trig.html#ga056952ebed39f55880bb353857b47075">cos16</a>(uint16_t theta) { <span class="keywordflow">return</span> <a class="code hl_define" href="group___trig.html#gace4cc675280eecec1eeb83da47406409">sin16</a>(theta + 16384); }</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="group___trig.html#ga056952ebed39f55880bb353857b47075">  135</a></span>LIB8STATIC int16_t <a class="code hl_function" href="group___trig.html#ga056952ebed39f55880bb353857b47075">cos16</a>(uint16_t theta) { <span class="keywordflow">return</span> <a class="code hl_define" href="group___trig.html#gace4cc675280eecec1eeb83da47406409">sin16</a>(theta + 16384); }</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment">// sin8() and cos8()</span></div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment">// Fast 8-bit approximations of sin(x) &amp; cos(x).</span></div>
@@ -211,7 +211,7 @@ $(function(){initNavTree('trig8_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="preprocessor">#if defined(__AVR__) &amp;&amp; !defined(LIB8_ATTINY)</span></div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="preprocessor">#define sin8 sin8_avr</span></div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><a class="code hl_define" href="lib8tion_8h.html#ac735bdef91ee1e80778434336a622138">LIB8STATIC</a> uint8_t sin8_avr(uint8_t theta) {</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>LIB8STATIC uint8_t sin8_avr(uint8_t theta) {</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    uint8_t offset = theta;</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;sbrc %[theta],6         \n\t&quot;</span></div>
@@ -264,7 +264,7 @@ $(function(){initNavTree('trig8_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno"><a class="line" href="group___trig.html#gaec8c5c0ed079727baa3b40184354ce41">  207</a></span><span class="preprocessor">#define sin8 sin8_C</span></div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
 <div class="foldopen" id="foldopen00217" data-start="{" data-end="}">
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="group___trig.html#ga46933a9b42921c6605588268d11f7c1e">  217</a></span><a class="code hl_define" href="lib8tion_8h.html#ac735bdef91ee1e80778434336a622138">LIB8STATIC</a> uint8_t <a class="code hl_function" href="group___trig.html#ga46933a9b42921c6605588268d11f7c1e">sin8_C</a>(uint8_t theta) {</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="group___trig.html#ga46933a9b42921c6605588268d11f7c1e">  217</a></span>LIB8STATIC uint8_t <a class="code hl_function" href="group___trig.html#ga46933a9b42921c6605588268d11f7c1e">sin8_C</a>(uint8_t theta) {</div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    uint8_t offset = theta;</div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    <span class="keywordflow">if</span> (theta &amp; 0x40) {</div>
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        offset = (uint8_t)255 - offset;</div>
@@ -297,7 +297,7 @@ $(function(){initNavTree('trig8_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno"><a class="line" href="group___trig.html#ga4432f985c94f5bff715db402d767b0e8">  257</a></span><a class="code hl_define" href="lib8tion_8h.html#ac735bdef91ee1e80778434336a622138">LIB8STATIC</a> uint8_t <a class="code hl_function" href="group___trig.html#ga4432f985c94f5bff715db402d767b0e8">cos8</a>(uint8_t theta) { <span class="keywordflow">return</span> <a class="code hl_define" href="group___trig.html#gaec8c5c0ed079727baa3b40184354ce41">sin8</a>(theta + 64); }</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno"><a class="line" href="group___trig.html#ga4432f985c94f5bff715db402d767b0e8">  257</a></span>LIB8STATIC uint8_t <a class="code hl_function" href="group___trig.html#ga4432f985c94f5bff715db402d767b0e8">cos8</a>(uint8_t theta) { <span class="keywordflow">return</span> <a class="code hl_define" href="group___trig.html#gaec8c5c0ed079727baa3b40184354ce41">sin8</a>(theta + 64); }</div>
 <div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span> </div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span><span class="preprocessor">#endif</span></div>
@@ -308,7 +308,6 @@ $(function(){initNavTree('trig8_8h_source.html',''); initResizable(true); });
 <div class="ttc" id="agroup___trig_html_gace4cc675280eecec1eeb83da47406409"><div class="ttname"><a href="group___trig.html#gace4cc675280eecec1eeb83da47406409">sin16</a></div><div class="ttdeci">#define sin16</div><div class="ttdoc">Platform-independent alias of the fast sin implementation.</div><div class="ttdef"><b>Definition</b> <a href="#l00091">trig8.h:91</a></div></div>
 <div class="ttc" id="agroup___trig_html_gadc654138105ff193df0fbc7a0c21806c"><div class="ttname"><a href="group___trig.html#gadc654138105ff193df0fbc7a0c21806c">b_m16_interleave</a></div><div class="ttdeci">const uint8_t b_m16_interleave[]</div><div class="ttdoc">Pre-calculated lookup table used in sin8() and cos8() functions.</div><div class="ttdef"><b>Definition</b> <a href="#l00142">trig8.h:142</a></div></div>
 <div class="ttc" id="agroup___trig_html_gaec8c5c0ed079727baa3b40184354ce41"><div class="ttname"><a href="group___trig.html#gaec8c5c0ed079727baa3b40184354ce41">sin8</a></div><div class="ttdeci">#define sin8</div><div class="ttdoc">Platform-independent alias of the fast sin implementation.</div><div class="ttdef"><b>Definition</b> <a href="#l00207">trig8.h:207</a></div></div>
-<div class="ttc" id="alib8tion_8h_html_ac735bdef91ee1e80778434336a622138"><div class="ttname"><a href="lib8tion_8h.html#ac735bdef91ee1e80778434336a622138">LIB8STATIC</a></div><div class="ttdeci">#define LIB8STATIC</div><div class="ttdoc">Define a LIB8TION member function as static inline with an &quot;unused&quot; attribute.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_8h_source.html#l00022">lib8tion.h:22</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.3-->
@@ -316,7 +315,7 @@ $(function(){initNavTree('trig8_8h_source.html',''); initResizable(true); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_d91669bda445047ed1892ac77a05ddb9.html">lib8tion</a></li><li class="navelem"><a class="el" href="trig8_8h.html">trig8.h</a></li>
-    <li class="footer">Generated on Tue Sep 24 2024 03:42:48 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sun Oct 27 2024 23:51:50 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

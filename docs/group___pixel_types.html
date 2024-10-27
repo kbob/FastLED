@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.7.8</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.0</span>
    </div>
   </td>
  </tr>
@@ -322,6 +322,8 @@ Functions</h2></td></tr>
 <tr class="memitem:ga06ee0f21e1bf430ea547244f6ed4add8" id="r_ga06ee0f21e1bf430ea547244f6ed4add8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga06ee0f21e1bf430ea547244f6ed4add8">hsv2rgb_rainbow</a> (const <a class="el" href="struct_c_h_s_v.html">CHSV</a> &amp;hsv, <a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp;rgb)</td></tr>
 <tr class="memdesc:ga06ee0f21e1bf430ea547244f6ed4add8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declaration of hsv2rgb_rainbow here, to avoid circular dependencies.  <br /></td></tr>
 <tr class="separator:ga06ee0f21e1bf430ea547244f6ed4add8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6348cb098a0b27f443bd1af290dafa94" id="r_ga6348cb098a0b27f443bd1af290dafa94"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_c_r_g_b.html">CRGB</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6348cb098a0b27f443bd1af290dafa94">CRGB::blend</a> (const <a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp;p1, const <a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp;p2, <a class="el" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> amountOfP2)</td></tr>
+<tr class="separator:ga6348cb098a0b27f443bd1af290dafa94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9034bcd46b319777e268e4cc1dff3ca8" id="r_ga9034bcd46b319777e268e4cc1dff3ca8"><td class="memItemLeft" align="right" valign="top">FASTLED_FORCE_INLINE uint8_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9034bcd46b319777e268e4cc1dff3ca8">CRGB::operator[]</a> (uint8_t x)</td></tr>
 <tr class="memdesc:ga9034bcd46b319777e268e4cc1dff3ca8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array access operator to index into the <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> object.  <br /></td></tr>
 <tr class="separator:ga9034bcd46b319777e268e4cc1dff3ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -331,18 +333,20 @@ Functions</h2></td></tr>
 <tr class="memitem:ga08d8e05a3fcdb88dedb886cad9cbd3fa" id="r_ga08d8e05a3fcdb88dedb886cad9cbd3fa"><td class="memItemLeft" align="right" valign="top">FASTLED_FORCE_INLINE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga08d8e05a3fcdb88dedb886cad9cbd3fa">CRGB::CRGB</a> ()=default</td></tr>
 <tr class="memdesc:ga08d8e05a3fcdb88dedb886cad9cbd3fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <br /></td></tr>
 <tr class="separator:ga08d8e05a3fcdb88dedb886cad9cbd3fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga234430ac0a9836b36747ea7df4bbce96" id="r_ga234430ac0a9836b36747ea7df4bbce96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpp__compat_8h.html#a72f0657181cca64b44eb186b707eb380">constexpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga234430ac0a9836b36747ea7df4bbce96">CRGB::CRGB</a> (uint8_t ir, uint8_t ig, uint8_t ib)</td></tr>
-<tr class="memdesc:ga234430ac0a9836b36747ea7df4bbce96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow construction from red, green, and blue.  <br /></td></tr>
-<tr class="separator:ga234430ac0a9836b36747ea7df4bbce96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga30ce76ab8bccd1f241f80c846a007b4a" id="r_ga30ce76ab8bccd1f241f80c846a007b4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpp__compat_8h.html#a72f0657181cca64b44eb186b707eb380">constexpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga30ce76ab8bccd1f241f80c846a007b4a">CRGB::CRGB</a> (uint32_t colorcode)</td></tr>
-<tr class="memdesc:ga30ce76ab8bccd1f241f80c846a007b4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow construction from 32-bit (really 24-bit) bit 0xRRGGBB color code.  <br /></td></tr>
-<tr class="separator:ga30ce76ab8bccd1f241f80c846a007b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac0c37a0b5ad93877525ba041a431be81" id="r_gac0c37a0b5ad93877525ba041a431be81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpp__compat_8h.html#a72f0657181cca64b44eb186b707eb380">constexpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac0c37a0b5ad93877525ba041a431be81">CRGB::CRGB</a> (<a class="el" href="group___color_enums.html#gadf6bcba67c9573665af20788c4431ae8">LEDColorCorrection</a> colorcode)</td></tr>
-<tr class="memdesc:gac0c37a0b5ad93877525ba041a431be81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow construction from a LEDColorCorrection enum.  <br /></td></tr>
-<tr class="separator:gac0c37a0b5ad93877525ba041a431be81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad1bf996d3014fd73cbca4b9d67086ebc" id="r_gad1bf996d3014fd73cbca4b9d67086ebc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpp__compat_8h.html#a72f0657181cca64b44eb186b707eb380">constexpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad1bf996d3014fd73cbca4b9d67086ebc">CRGB::CRGB</a> (<a class="el" href="group___color_enums.html#ga251e9e8dc2c7b981786b71706522b2a9">ColorTemperature</a> colorcode)</td></tr>
-<tr class="memdesc:gad1bf996d3014fd73cbca4b9d67086ebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow construction from a ColorTemperature enum.  <br /></td></tr>
-<tr class="separator:gad1bf996d3014fd73cbca4b9d67086ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9a64d0bee600b949fabad2efcfd0b547" id="r_ga9a64d0bee600b949fabad2efcfd0b547"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpp__compat_8h.html#a72f0657181cca64b44eb186b707eb380">constexpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9a64d0bee600b949fabad2efcfd0b547">CRGB::CRGB</a> (uint8_t ir, uint8_t ig, uint8_t ib) noexcept</td></tr>
+<tr class="memdesc:ga9a64d0bee600b949fabad2efcfd0b547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow construction from red, green, and blue.  <br /></td></tr>
+<tr class="separator:ga9a64d0bee600b949fabad2efcfd0b547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c2aa224f756806c30e0609f9984c141" id="r_ga4c2aa224f756806c30e0609f9984c141"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpp__compat_8h.html#a72f0657181cca64b44eb186b707eb380">constexpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga4c2aa224f756806c30e0609f9984c141">CRGB::CRGB</a> (uint32_t colorcode) noexcept</td></tr>
+<tr class="memdesc:ga4c2aa224f756806c30e0609f9984c141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow construction from 32-bit (really 24-bit) bit 0xRRGGBB color code.  <br /></td></tr>
+<tr class="separator:ga4c2aa224f756806c30e0609f9984c141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4340fb67053d65790e49aa7afb92651c" id="r_ga4340fb67053d65790e49aa7afb92651c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpp__compat_8h.html#a72f0657181cca64b44eb186b707eb380">constexpr</a> uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga4340fb67053d65790e49aa7afb92651c">CRGB::as_uint32_t</a> () const noexcept</td></tr>
+<tr class="separator:ga4340fb67053d65790e49aa7afb92651c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeac347209cc0e84c4768d6e611b0a02d" id="r_gaeac347209cc0e84c4768d6e611b0a02d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpp__compat_8h.html#a72f0657181cca64b44eb186b707eb380">constexpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaeac347209cc0e84c4768d6e611b0a02d">CRGB::CRGB</a> (<a class="el" href="group___color_enums.html#gadf6bcba67c9573665af20788c4431ae8">LEDColorCorrection</a> colorcode) noexcept</td></tr>
+<tr class="memdesc:gaeac347209cc0e84c4768d6e611b0a02d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow construction from a LEDColorCorrection enum.  <br /></td></tr>
+<tr class="separator:gaeac347209cc0e84c4768d6e611b0a02d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3b96dc7b062f42c53f11ca27e4c5adfd" id="r_ga3b96dc7b062f42c53f11ca27e4c5adfd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpp__compat_8h.html#a72f0657181cca64b44eb186b707eb380">constexpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3b96dc7b062f42c53f11ca27e4c5adfd">CRGB::CRGB</a> (<a class="el" href="group___color_enums.html#ga251e9e8dc2c7b981786b71706522b2a9">ColorTemperature</a> colorcode) noexcept</td></tr>
+<tr class="memdesc:ga3b96dc7b062f42c53f11ca27e4c5adfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow construction from a ColorTemperature enum.  <br /></td></tr>
+<tr class="separator:ga3b96dc7b062f42c53f11ca27e4c5adfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3f79c35c9cbf7b6c96326c77a494336b" id="r_ga3f79c35c9cbf7b6c96326c77a494336b"><td class="memItemLeft" align="right" valign="top"><a id="ga3f79c35c9cbf7b6c96326c77a494336b" name="ga3f79c35c9cbf7b6c96326c77a494336b"></a>
 FASTLED_FORCE_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>CRGB::CRGB</b> (const <a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp;rhs)=default</td></tr>
 <tr class="memdesc:ga3f79c35c9cbf7b6c96326c77a494336b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow copy construction. <br /></td></tr>
@@ -420,6 +424,8 @@ FASTLED_FORCE_INLINE <a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp;&#16
 <tr class="memitem:gaf4de5b08570506c68faae82dce96aa85" id="r_gaf4de5b08570506c68faae82dce96aa85"><td class="memItemLeft" align="right" valign="top">FASTLED_FORCE_INLINE <a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf4de5b08570506c68faae82dce96aa85">CRGB::nscale8</a> (const <a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp;scaledown)</td></tr>
 <tr class="memdesc:gaf4de5b08570506c68faae82dce96aa85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale down a RGB to N/256ths of its current brightness, using "plain math" dimming rules.  <br /></td></tr>
 <tr class="separator:gaf4de5b08570506c68faae82dce96aa85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaffe221c4c140e08cdc359d9651958bb2" id="r_gaffe221c4c140e08cdc359d9651958bb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpp__compat_8h.html#a72f0657181cca64b44eb186b707eb380">constexpr</a> <a class="el" href="struct_c_r_g_b.html">CRGB</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaffe221c4c140e08cdc359d9651958bb2">CRGB::nscale8_constexpr</a> (const <a class="el" href="struct_c_r_g_b.html">CRGB</a> scaledown) const</td></tr>
+<tr class="separator:gaffe221c4c140e08cdc359d9651958bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa9c54727cd2a2145a126220ecd802ffc" id="r_gaa9c54727cd2a2145a126220ecd802ffc"><td class="memItemLeft" align="right" valign="top">FASTLED_FORCE_INLINE <a class="el" href="struct_c_r_g_b.html">CRGB</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa9c54727cd2a2145a126220ecd802ffc">CRGB::scale8</a> (uint8_t scaledown) const</td></tr>
 <tr class="memdesc:gaa9c54727cd2a2145a126220ecd802ffc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> object that is a scaled down version of this object.  <br /></td></tr>
 <tr class="separator:gaa9c54727cd2a2145a126220ecd802ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -441,12 +447,15 @@ FASTLED_FORCE_INLINE <a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp;&#16
 <tr class="memitem:ga9dffc0be8059fa24b87fd619e47ca267" id="r_ga9dffc0be8059fa24b87fd619e47ca267"><td class="memItemLeft" align="right" valign="top">FASTLED_FORCE_INLINE <a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9dffc0be8059fa24b87fd619e47ca267">CRGB::operator&amp;=</a> (uint8_t d)</td></tr>
 <tr class="memdesc:ga9dffc0be8059fa24b87fd619e47ca267"><td class="mdescLeft">&#160;</td><td class="mdescRight">"and" operator brings each channel down to the lower of the two values     <br /></td></tr>
 <tr class="separator:ga9dffc0be8059fa24b87fd619e47ca267"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5401b8df05038d85c6d45def50247c82" id="r_ga5401b8df05038d85c6d45def50247c82"><td class="memItemLeft" align="right" valign="top">FASTLED_FORCE_INLINE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga5401b8df05038d85c6d45def50247c82">CRGB::operator bool</a> () const</td></tr>
-<tr class="memdesc:ga5401b8df05038d85c6d45def50247c82"><td class="mdescLeft">&#160;</td><td class="mdescRight">This allows testing a <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> for zero-ness.  <br /></td></tr>
-<tr class="separator:ga5401b8df05038d85c6d45def50247c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2b3bcdccebe0e3c385289f86253ff36c" id="r_ga2b3bcdccebe0e3c385289f86253ff36c"><td class="memItemLeft" align="right" valign="top">FASTLED_FORCE_INLINE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga2b3bcdccebe0e3c385289f86253ff36c">CRGB::operator uint32_t</a> () const</td></tr>
-<tr class="memdesc:ga2b3bcdccebe0e3c385289f86253ff36c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> to a 32-bit color having an alpha of 255.  <br /></td></tr>
-<tr class="separator:ga2b3bcdccebe0e3c385289f86253ff36c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafd43a8ab327204186b5826b3261d3f13" id="r_gafd43a8ab327204186b5826b3261d3f13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpp__compat_8h.html#a72f0657181cca64b44eb186b707eb380">constexpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gafd43a8ab327204186b5826b3261d3f13">CRGB::operator bool</a> () const noexcept</td></tr>
+<tr class="memdesc:gafd43a8ab327204186b5826b3261d3f13"><td class="mdescLeft">&#160;</td><td class="mdescRight">This allows testing a <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> for zero-ness.  <br /></td></tr>
+<tr class="separator:gafd43a8ab327204186b5826b3261d3f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga18b5051f6d3cbeaf31e60a3845301946" id="r_ga18b5051f6d3cbeaf31e60a3845301946"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpp__compat_8h.html#a72f0657181cca64b44eb186b707eb380">constexpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga18b5051f6d3cbeaf31e60a3845301946">CRGB::operator uint32_t</a> () const noexcept</td></tr>
+<tr class="memdesc:ga18b5051f6d3cbeaf31e60a3845301946"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> to a 32-bit color having an alpha of 255.  <br /></td></tr>
+<tr class="separator:ga18b5051f6d3cbeaf31e60a3845301946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga282cffce49c47afff220c5d3e03dba7a" id="r_ga282cffce49c47afff220c5d3e03dba7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpp__compat_8h.html#a72f0657181cca64b44eb186b707eb380">constexpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga282cffce49c47afff220c5d3e03dba7a">CRGB::operator const uint32_t</a> () const noexcept</td></tr>
+<tr class="memdesc:ga282cffce49c47afff220c5d3e03dba7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> to a 32-bit color having an alpha of 255.  <br /></td></tr>
+<tr class="separator:ga282cffce49c47afff220c5d3e03dba7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga52b323a2f938ded9a80c556117c22122" id="r_ga52b323a2f938ded9a80c556117c22122"><td class="memItemLeft" align="right" valign="top">FASTLED_FORCE_INLINE <a class="el" href="struct_c_r_g_b.html">CRGB</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga52b323a2f938ded9a80c556117c22122">CRGB::operator-</a> () const</td></tr>
 <tr class="memdesc:ga52b323a2f938ded9a80c556117c22122"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invert each channel.  <br /></td></tr>
 <tr class="separator:ga52b323a2f938ded9a80c556117c22122"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -462,6 +471,9 @@ FASTLED_FORCE_INLINE <a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp;&#16
 <tr class="memitem:gae830bc1aa13586a2cc64111682d00716" id="r_gae830bc1aa13586a2cc64111682d00716"><td class="memItemLeft" align="right" valign="top">FASTLED_FORCE_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae830bc1aa13586a2cc64111682d00716">CRGB::maximizeBrightness</a> (uint8_t limit=255)</td></tr>
 <tr class="memdesc:gae830bc1aa13586a2cc64111682d00716"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximize the brightness of this <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> object.  <br /></td></tr>
 <tr class="separator:gae830bc1aa13586a2cc64111682d00716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga65e166b90fb7b4aecd2b26a987e312e3" id="r_ga65e166b90fb7b4aecd2b26a987e312e3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_c_r_g_b.html">CRGB</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga65e166b90fb7b4aecd2b26a987e312e3">CRGB::computeAdjustment</a> (uint8_t scale, const <a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp;colorCorrection, const <a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp;colorTemperature)</td></tr>
+<tr class="memdesc:ga65e166b90fb7b4aecd2b26a987e312e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the combined color adjustment to the LEDs at a given scale, color correction, and color temperature.  <br /></td></tr>
+<tr class="separator:ga65e166b90fb7b4aecd2b26a987e312e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga858435ed102057edaa676bd6d3d1e9cf" id="r_ga858435ed102057edaa676bd6d3d1e9cf"><td class="memItemLeft" align="right" valign="top">FASTLED_FORCE_INLINE <a class="el" href="struct_c_r_g_b.html">CRGB</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga858435ed102057edaa676bd6d3d1e9cf">CRGB::lerp8</a> (const <a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp;other, <a class="el" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> frac) const</td></tr>
 <tr class="memdesc:ga858435ed102057edaa676bd6d3d1e9cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a new <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> object after performing a linear interpolation between this object and the passed in object.  <br /></td></tr>
 <tr class="separator:ga858435ed102057edaa676bd6d3d1e9cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -519,6 +531,10 @@ FASTLED_FORCE_INLINE <a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp;&#16
 <tr class="memitem:ga3dab64b7dfff8c31e3ec8c3c20eec465" id="r_ga3dab64b7dfff8c31e3ec8c3c20eec465"><td class="memItemLeft" align="right" valign="top">FASTLED_FORCE_INLINE <a class="el" href="struct_c_r_g_b.html">CRGB</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3dab64b7dfff8c31e3ec8c3c20eec465">operator%</a> (const <a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp;p1, uint8_t d)</td></tr>
 <tr class="memdesc:ga3dab64b7dfff8c31e3ec8c3c20eec465"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale using <a class="el" href="#ga0441d6094ab8f98d800ec789c36b4461" title="Scale down a RGB to N/256ths of it&#39;s current brightness using &quot;video&quot; dimming rules.">CRGB::nscale8_video()</a>  <br /></td></tr>
 <tr class="separator:ga3dab64b7dfff8c31e3ec8c3c20eec465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8329bae59ba485ef862f8a08d066408c" id="r_ga8329bae59ba485ef862f8a08d066408c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga8329bae59ba485ef862f8a08d066408c"><td class="memTemplItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga8329bae59ba485ef862f8a08d066408c">operator&lt;&lt;</a> (T &amp;os, const <a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp;rgb)</td></tr>
+<tr class="memdesc:ga8329bae59ba485ef862f8a08d066408c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic template for ostream operator to print <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> objects.  <br /></td></tr>
+<tr class="separator:ga8329bae59ba485ef862f8a08d066408c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -828,7 +844,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr><td class="fieldname"><a id="ggaeb40a08b7cb90c1e21bd408261558b99acd2ba216aa85e224f537fd699d2c5f9a" name="ggaeb40a08b7cb90c1e21bd408261558b99acd2ba216aa85e224f537fd699d2c5f9a"></a>FairyLightNCC&#160;</td><td class="fielddoc"><div style="background:#FFE42D;width:4em;height:4em;"></div> </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00459">459</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00479">479</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -852,6 +868,116 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <dl class="section note"><dt>Note</dt><dd>This is NOT an operator+= overload because the compiler can't usefully decide when it's being passed a 32-bit constant (e.g. <a class="el" href="#ggaeb40a08b7cb90c1e21bd408261558b99ab35114af96aa24d28e7901b1318cc43a">CRGB::Red</a>) and an 8-bit one (<a class="el" href="#ggaeb40a08b7cb90c1e21bd408261558b99ab16fc35a3771b58550363f15d2003976">CRGB::Blue</a>) </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00022">22</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ga4340fb67053d65790e49aa7afb92651c" name="ga4340fb67053d65790e49aa7afb92651c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4340fb67053d65790e49aa7afb92651c">&#9670;&#160;</a></span>as_uint32_t()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t CRGB::as_uint32_t </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00097">97</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+
+</div>
+</div>
+<a id="ga6348cb098a0b27f443bd1af290dafa94" name="ga6348cb098a0b27f443bd1af290dafa94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6348cb098a0b27f443bd1af290dafa94">&#9670;&#160;</a></span>blend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_c_r_g_b.html">CRGB</a> CRGB::blend </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a></td>          <td class="paramname"><span class="paramname"><em>amountOfP2</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="crgb_8cpp_source.html#l00031">31</a> of file <a class="el" href="crgb_8cpp_source.html">crgb.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ga65e166b90fb7b4aecd2b26a987e312e3" name="ga65e166b90fb7b4aecd2b26a987e312e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga65e166b90fb7b4aecd2b26a987e312e3">&#9670;&#160;</a></span>computeAdjustment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_c_r_g_b.html">CRGB</a> CRGB::computeAdjustment </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>scale</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>colorCorrection</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>colorTemperature</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the combined color adjustment to the LEDs at a given scale, color correction, and color temperature. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scale</td><td>the scale value for the RGB data (i.e. brightness) </td></tr>
+    <tr><td class="paramname">colorCorrection</td><td>color correction to apply </td></tr>
+    <tr><td class="paramname">colorTemperature</td><td>color temperature to apply </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> object representing the adjustment, including color correction and color temperature </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="crgb_8cpp_source.html#l00006">6</a> of file <a class="el" href="crgb_8cpp_source.html">crgb.cpp</a>.</p>
 
 </div>
 </div>
@@ -883,8 +1009,8 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 </div>
 </div>
-<a id="gad1bf996d3014fd73cbca4b9d67086ebc" name="gad1bf996d3014fd73cbca4b9d67086ebc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad1bf996d3014fd73cbca4b9d67086ebc">&#9670;&#160;</a></span>CRGB() <span class="overload">[2/6]</span></h2>
+<a id="ga3b96dc7b062f42c53f11ca27e4c5adfd" name="ga3b96dc7b062f42c53f11ca27e4c5adfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3b96dc7b062f42c53f11ca27e4c5adfd">&#9670;&#160;</a></span>CRGB() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -901,7 +1027,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -914,7 +1040,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00094">94</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00113">113</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -943,12 +1069,12 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Allow construction from a <a class="el" href="struct_c_h_s_v.html" title="Representation of an HSV pixel (hue, saturation, value (aka brightness)).">CHSV</a> color. </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00103">103</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00122">122</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
-<a id="gac0c37a0b5ad93877525ba041a431be81" name="gac0c37a0b5ad93877525ba041a431be81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac0c37a0b5ad93877525ba041a431be81">&#9670;&#160;</a></span>CRGB() <span class="overload">[4/6]</span></h2>
+<a id="gaeac347209cc0e84c4768d6e611b0a02d" name="gaeac347209cc0e84c4768d6e611b0a02d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeac347209cc0e84c4768d6e611b0a02d">&#9670;&#160;</a></span>CRGB() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -965,7 +1091,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -978,12 +1104,12 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00087">87</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00106">106</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
-<a id="ga30ce76ab8bccd1f241f80c846a007b4a" name="ga30ce76ab8bccd1f241f80c846a007b4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga30ce76ab8bccd1f241f80c846a007b4a">&#9670;&#160;</a></span>CRGB() <span class="overload">[5/6]</span></h2>
+<a id="ga4c2aa224f756806c30e0609f9984c141" name="ga4c2aa224f756806c30e0609f9984c141"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4c2aa224f756806c30e0609f9984c141">&#9670;&#160;</a></span>CRGB() <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1000,7 +1126,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1013,12 +1139,12 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00080">80</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00092">92</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
-<a id="ga234430ac0a9836b36747ea7df4bbce96" name="ga234430ac0a9836b36747ea7df4bbce96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga234430ac0a9836b36747ea7df4bbce96">&#9670;&#160;</a></span>CRGB() <span class="overload">[6/6]</span></h2>
+<a id="ga9a64d0bee600b949fabad2efcfd0b547" name="ga9a64d0bee600b949fabad2efcfd0b547"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9a64d0bee600b949fabad2efcfd0b547">&#9670;&#160;</a></span>CRGB() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1044,7 +1170,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1059,7 +1185,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00073">73</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00085">85</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -1086,7 +1212,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00066">66</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00081">81</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -1123,7 +1249,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_r_g_b_set_demo_8ino-example.html#a4">RGBSetDemo.ino</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00102">102</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00142">142</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -1143,10 +1269,8 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 </div><div class="memdoc">
 
 <p>Get the average of the R, G, and B values. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_pacifica_8ino-example.html#a21">Pacifica.ino</a>, and <a class="el" href="_twinkle_fox_8ino-example.html#a13">TwinkleFox.ino</a>.</dd>
-</dl>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00119">119</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00159">159</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -1168,7 +1292,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <p>Get the "luma" of a <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> object. </p>
 <p>In other words, roughly how much light the <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> pixel is putting out (from 0 to 255). </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00108">108</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00148">148</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -1197,7 +1321,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Returns 0 or 1, depending on the lowest bit of the sum of the color components. </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00383">383</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00403">403</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -1255,7 +1379,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Return a new <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> object after performing a linear interpolation between this object and the passed in object.    </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00143">143</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00183">183</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -1280,7 +1404,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Return a new <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> object after performing a linear interpolation between this object and the passed in object. </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00132">132</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00172">172</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -1310,7 +1434,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <p>Maximize the brightness of this <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> object. </p>
 <p>This makes the individual color channels as bright as possible while keeping the same value differences between channels. </p><dl class="section note"><dt>Note</dt><dd>This does not keep the same ratios between channels, just the same difference in absolute values. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00363">363</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00376">376</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -1332,7 +1456,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <p>Scale down a RGB to N/256ths of its current brightness, using "plain math" dimming rules. </p>
 <p>"Plain math" dimming rules means that the low light levels may dim all the way to 100% black. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#gaa9c54727cd2a2145a126220ecd802ffc" title="Return a CRGB object that is a scaled down version of this object.">scale8</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00078">78</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00118">118</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -1353,10 +1477,35 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Scale down a RGB to N/256ths of its current brightness, using "plain math" dimming rules. </p>
 <p>"Plain math" dimming rules means that the low light levels may dim all the way to 100% black. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group___scaling.html#ga39bf87e5526120889086cab19ac749b1" title="Scale three one-byte values by a fourth one, which is treated as the numerator of a fraction whose de...">nscale8x3</a> </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_cylon_8ino-example.html#a5">Cylon.ino</a>.</dd>
-</dl>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00072">72</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00102">102</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
+
+</div>
+</div>
+<a id="gaffe221c4c140e08cdc359d9651958bb2" name="gaffe221c4c140e08cdc359d9651958bb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaffe221c4c140e08cdc359d9651958bb2">&#9670;&#160;</a></span>nscale8_constexpr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_c_r_g_b.html">CRGB</a> CRGB::nscale8_constexpr </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_c_r_g_b.html">CRGB</a></td>          <td class="paramname"><span class="paramname"><em>scaledown</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00108">108</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -1377,15 +1526,13 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Scale down a RGB to N/256ths of it's current brightness using "video" dimming rules. </p>
 <p>"Video" dimming rules means that unless the scale factor is ZERO each channel is guaranteed NOT to dim down to zero. If it's already nonzero, it'll stay nonzero, even if that means the hue shifts a little at low brightness levels. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group___scaling.html#ga700b7f510f32e8c91385093c436c27d9" title="Scale three one-byte values by a fourth one, which is treated as the numerator of a fraction whose de...">nscale8x3_video</a> </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_twinkle_fox_8ino-example.html#a14">TwinkleFox.ino</a>.</dd>
-</dl>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00054">54</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00069">69</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
 
 </div>
 </div>
-<a id="ga5401b8df05038d85c6d45def50247c82" name="ga5401b8df05038d85c6d45def50247c82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5401b8df05038d85c6d45def50247c82">&#9670;&#160;</a></span>operator bool()</h2>
+<a id="gafd43a8ab327204186b5826b3261d3f13" name="gafd43a8ab327204186b5826b3261d3f13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafd43a8ab327204186b5826b3261d3f13">&#9670;&#160;</a></span>operator bool()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1394,7 +1541,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">FASTLED_FORCE_INLINE CRGB::operator bool </td>
+          <td class="memname">CRGB::operator bool </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -1402,14 +1549,43 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>This allows testing a <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> for zero-ness. </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00315">315</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00319">319</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+
+</div>
+</div>
+<a id="ga282cffce49c47afff220c5d3e03dba7a" name="ga282cffce49c47afff220c5d3e03dba7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga282cffce49c47afff220c5d3e03dba7a">&#9670;&#160;</a></span>operator const uint32_t()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CRGB::operator const uint32_t </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts a <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> to a 32-bit color having an alpha of 255. </p>
+
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00334">334</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -1439,12 +1615,12 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <p>Convert to an rgb24 object, used with the SmartMatrix library. </p>
 <dl class="section see"><dt>See also</dt><dd><a href="https://github.com/pixelmatix/SmartMatrix">https://github.com/pixelmatix/SmartMatrix</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00342">342</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00355">355</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
-<a id="ga2b3bcdccebe0e3c385289f86253ff36c" name="ga2b3bcdccebe0e3c385289f86253ff36c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2b3bcdccebe0e3c385289f86253ff36c">&#9670;&#160;</a></span>operator uint32_t()</h2>
+<a id="ga18b5051f6d3cbeaf31e60a3845301946" name="ga18b5051f6d3cbeaf31e60a3845301946"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga18b5051f6d3cbeaf31e60a3845301946">&#9670;&#160;</a></span>operator uint32_t()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1453,7 +1629,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">FASTLED_FORCE_INLINE CRGB::operator uint32_t </td>
+          <td class="memname">CRGB::operator uint32_t </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -1461,14 +1637,14 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Converts a <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> to a 32-bit color having an alpha of 255. </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00321">321</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00325">325</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -1493,7 +1669,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Check if two <a class="el" href="struct_c_h_s_v.html" title="Representation of an HSV pixel (hue, saturation, value (aka brightness)).">CHSV</a> objects do <em>not</em> have the same color data. </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00641">641</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00661">661</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -1518,7 +1694,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Check if two <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> objects do <em>not</em> have the same color data. </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00629">629</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00649">649</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -1543,7 +1719,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Scale using <a class="el" href="#ga0441d6094ab8f98d800ec789c36b4461" title="Scale down a RGB to N/256ths of it&#39;s current brightness using &quot;video&quot; dimming rules.">CRGB::nscale8_video()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00180">180</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00220">220</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -1565,7 +1741,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <p>%= is a synonym for <a class="el" href="#ga0441d6094ab8f98d800ec789c36b4461" title="Scale down a RGB to N/256ths of it&#39;s current brightness using &quot;video&quot; dimming rules.">nscale8_video()</a>. </p>
 <p>Think of it is scaling down by "a percentage" </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00060">60</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00075">75</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -1590,7 +1766,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Combine two <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> objects, taking the smallest value of each channel. </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00692">692</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00712">712</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -1619,7 +1795,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>"and" operator brings each channel down to the lower of the two values </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00297">297</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00301">301</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -1648,7 +1824,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>"and" operator brings each channel down to the lower of the two values    </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00306">306</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00310">310</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -1673,7 +1849,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Multiply each of the channels by a constant, saturating each channel at 0xFF.    </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00172">172</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00212">212</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -1694,7 +1870,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Multiply each of the channels by a constant, saturating each channel at 0xFF. </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00046">46</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00061">61</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -1719,7 +1895,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Add one <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> to another, saturating at 0xFF for each channel.    </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00156">156</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00196">196</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -1728,9 +1904,6 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">FASTLED_FORCE_INLINE <a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp; CRGB::operator++ </td>
@@ -1739,16 +1912,11 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Add a constant of '1' from each channel, saturating at 0xFF. </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00204">204</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00039">39</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -1757,9 +1925,6 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">FASTLED_FORCE_INLINE <a class="el" href="struct_c_r_g_b.html">CRGB</a> CRGB::operator++ </td>
@@ -1768,16 +1933,11 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Add a constant of '1' from each channel, saturating at 0xFF.    </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00211">211</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00046">46</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -1827,7 +1987,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Invert each channel. </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00330">330</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00343">343</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -1852,7 +2012,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Subtract one <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> from another, saturating at 0x00 for each channel.    </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00164">164</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00204">204</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -1861,9 +2021,6 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">FASTLED_FORCE_INLINE <a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp; CRGB::operator-- </td>
@@ -1872,16 +2029,11 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Subtract a constant of '1' from each channel, saturating at 0x00. </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00189">189</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00088">88</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -1890,9 +2042,6 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">FASTLED_FORCE_INLINE <a class="el" href="struct_c_r_g_b.html">CRGB</a> CRGB::operator-- </td>
@@ -1901,16 +2050,11 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Subtract a constant of '1' from each channel, saturating at 0x00.    </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00196">196</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00095">95</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -1956,7 +2100,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Divide each of the channels by a constant.    </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00685">685</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00705">705</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -1985,7 +2129,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Divide each of the channels by a constant. </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00219">219</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00220">220</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -2010,7 +2154,35 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Check if the sum of the color channels in one <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> object is less than another. </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00647">647</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00667">667</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+
+</div>
+</div>
+<a id="ga8329bae59ba485ef862f8a08d066408c" name="ga8329bae59ba485ef862f8a08d066408c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8329bae59ba485ef862f8a08d066408c">&#9670;&#160;</a></span>operator&lt;&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;</td>          <td class="paramname"><span class="paramname"><em>os</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rgb</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generic template for ostream operator to print <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> objects. </p>
+<p>Usefull for the unit_tests. </p>
+
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00742">742</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -2035,7 +2207,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Check if the sum of the color channels in one <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> object is less than or equal to another. </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00674">674</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00694">694</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -2064,7 +2236,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Allow assignment from HSV color. </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00153">153</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00172">172</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -2099,7 +2271,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00113">113</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00132">132</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -2124,7 +2296,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Check if two <a class="el" href="struct_c_h_s_v.html" title="Representation of an HSV pixel (hue, saturation, value (aka brightness)).">CHSV</a> objects have the same color data. </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00635">635</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00655">655</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -2149,7 +2321,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Check if two <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> objects have the same color data. </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00623">623</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00643">643</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -2174,7 +2346,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Check if the sum of the color channels in one <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> object is greater than another. </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00656">656</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00676">676</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -2199,7 +2371,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Check if the sum of the color channels in one <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> object is greater than or equal to another. </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00665">665</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00685">685</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -2228,7 +2400,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Right shift each of the channels by a constant. </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00228">228</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00229">229</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -2264,7 +2436,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the <a class="el" href="#ga2b232c5686b0f150273a230ff53665ea" title="Access the red, green, and blue data as an array.">CRGB::raw</a> value for the given index </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00052">52</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00064">64</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -2300,7 +2472,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the <a class="el" href="#ga2b232c5686b0f150273a230ff53665ea" title="Access the red, green, and blue data as an array.">CRGB::raw</a> value for the given index </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00060">60</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00072">72</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -2325,7 +2497,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Combine two <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> objects, taking the largest value of each channel. </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00700">700</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00720">720</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -2354,7 +2526,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>"or" operator brings each channel up to the higher of the two values </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00279">279</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00283">283</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -2383,7 +2555,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>"or" operator brings each channel up to the higher of the two values    </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00288">288</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00292">292</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -2404,7 +2576,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Return a <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> object that is a scaled down version of this object. </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00093">93</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00133">133</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -2425,7 +2597,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Return a <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> object that is a scaled down version of this object. </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00086">86</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00126">126</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -2460,7 +2632,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00161">161</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00180">180</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -2506,7 +2678,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00137">137</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00156">156</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -2541,7 +2713,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00146">146</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00165">165</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -2574,7 +2746,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <p>There's no such thing as a free lunch; in many cases this "hidden bit" may actually be visible, but this code makes reasonable efforts to hide it as much as is reasonably possible.</p>
 <p>Also, an effort is made to make it such that repeatedly setting the parity to different values will not cause the color to "drift". Toggling the parity twice should generally result in the original color again. </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00411">411</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00431">431</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -2620,7 +2792,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00125">125</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00144">144</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -2642,7 +2814,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <p>Subtract a constant from each channel, saturating at 0x00. </p>
 <dl class="section note"><dt>Note</dt><dd>This is NOT an operator+= overload because the compiler can't usefully decide when it's being passed a 32-bit constant (e.g. <a class="el" href="#ggaeb40a08b7cb90c1e21bd408261558b99ab35114af96aa24d28e7901b1318cc43a">CRGB::Red</a>) and an 8-bit one (<a class="el" href="#ggaeb40a08b7cb90c1e21bd408261558b99ab16fc35a3771b58550363f15d2003976">CRGB::Blue</a>) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00038">38</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8hpp_source.html#l00053">53</a> of file <a class="el" href="crgb_8hpp_source.html">crgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -2661,7 +2833,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Blue channel value. </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00037">37</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00047">47</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -2678,10 +2850,10 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 </div><div class="memdoc">
 
 <p>Blue channel value. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_analog_output_8ino-example.html#a3">AnalogOutput.ino</a>, and <a class="el" href="_twinkle_fox_8ino-example.html#a21">TwinkleFox.ino</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_analog_output_8ino-example.html#a3">AnalogOutput.ino</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00037">37</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00047">47</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -2699,7 +2871,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Blue channel value.    </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00038">38</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00048">48</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -2716,10 +2888,8 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 </div><div class="memdoc">
 
 <p>Blue channel value.    </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_pacifica_8ino-example.html#a23">Pacifica.ino</a>.</dd>
-</dl>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00038">38</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00048">48</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -2737,7 +2907,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Green channel value. </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00033">33</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00043">43</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -2754,10 +2924,10 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 </div><div class="memdoc">
 
 <p>Green channel value. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_analog_output_8ino-example.html#a2">AnalogOutput.ino</a>, and <a class="el" href="_twinkle_fox_8ino-example.html#a19">TwinkleFox.ino</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_analog_output_8ino-example.html#a2">AnalogOutput.ino</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00033">33</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00043">43</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -2775,7 +2945,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Green channel value.    </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00034">34</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00044">44</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -2792,10 +2962,8 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 </div><div class="memdoc">
 
 <p>Green channel value.    </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_pacifica_8ino-example.html#a24">Pacifica.ino</a>.</dd>
-</dl>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00034">34</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00044">44</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -2813,7 +2981,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Red channel value. </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00029">29</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00039">39</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -2833,7 +3001,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_analog_output_8ino-example.html#a1">AnalogOutput.ino</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00029">29</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00039">39</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -2856,7 +3024,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <li><code>raw[2]</code> is the blue value </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00046">46</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00056">56</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -2879,7 +3047,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <li><code>raw[2]</code> is the blue value </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00046">46</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00056">56</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -2897,7 +3065,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Red channel value.    </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00030">30</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00040">40</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -2915,7 +3083,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 
 <p>Red channel value.    </p>
 
-<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00030">30</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="crgb_8h_source.html#l00040">40</a> of file <a class="el" href="crgb_8h_source.html">crgb.h</a>.</p>
 
 </div>
 </div>
@@ -2925,7 +3093,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Sep 24 2024 03:42:48 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sun Oct 27 2024 23:51:50 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

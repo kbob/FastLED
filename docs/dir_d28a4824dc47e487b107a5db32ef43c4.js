@@ -2,9 +2,11 @@ var dir_d28a4824dc47e487b107a5db32ef43c4 =
 [
     [ "_bugs", "dir_a28f5fea2b8786ae6755ff1fe11c7e25.html", "dir_a28f5fea2b8786ae6755ff1fe11c7e25" ],
     [ "AnalogOutput", "dir_8bb4b718726ef6bb146f349e752b8dbd.html", "dir_8bb4b718726ef6bb146f349e752b8dbd" ],
+    [ "Apa102", "dir_4af27665149ddc88916f90164a94ed56.html", "dir_4af27665149ddc88916f90164a94ed56" ],
     [ "Apa102HD", "dir_444f6549ff4d6964f399c8619651b3db.html", "dir_444f6549ff4d6964f399c8619651b3db" ],
     [ "Apa102HDOverride", "dir_f0d66018db171d7886189b7326773e15.html", "dir_f0d66018db171d7886189b7326773e15" ],
     [ "Blink", "dir_05dd8b05715c4ed4a1c3d13c1176049b.html", "dir_05dd8b05715c4ed4a1c3d13c1176049b" ],
+    [ "Chromancer", "dir_63a7680d6f3f38816504e5ce30b76a13.html", "dir_63a7680d6f3f38816504e5ce30b76a13" ],
     [ "ColorPalette", "dir_3e530362afb4b56ed6ea6cf0a9ae71af.html", "dir_3e530362afb4b56ed6ea6cf0a9ae71af" ],
     [ "ColorTemperature", "dir_f14b3bf61e57ddcd04abb3082cceefb6.html", "dir_f14b3bf61e57ddcd04abb3082cceefb6" ],
     [ "Cylon", "dir_28f79ea112b9e3d7e6ff42754a4ce07c.html", "dir_28f79ea112b9e3d7e6ff42754a4ce07c" ],
@@ -14,6 +16,7 @@ var dir_d28a4824dc47e487b107a5db32ef43c4 =
     [ "Fire2012", "dir_a5438c32bb8a8ac18387223a3f06b103.html", "dir_a5438c32bb8a8ac18387223a3f06b103" ],
     [ "Fire2012WithPalette", "dir_251c36837ef2b5132d93dde41ef3cbc8.html", "dir_251c36837ef2b5132d93dde41ef3cbc8" ],
     [ "FirstLight", "dir_98ca105c125a65040d83d7608744422a.html", "dir_98ca105c125a65040d83d7608744422a" ],
+    [ "FxEngine", "dir_f90c3eb6ccd77e48b7d1ff6955c7dfe1.html", "dir_f90c3eb6ccd77e48b7d1ff6955c7dfe1" ],
     [ "Multiple", "dir_b0ccd010afae1b6736eeed36b0121387.html", "dir_b0ccd010afae1b6736eeed36b0121387" ],
     [ "Noise", "dir_6ce71dca734103421d7f880fafdc58c0.html", "dir_6ce71dca734103421d7f880fafdc58c0" ],
     [ "NoisePlayground", "dir_8b10bafa6e455a6cfdd7da84bc339d80.html", "dir_8b10bafa6e455a6cfdd7da84bc339d80" ],
@@ -27,7 +30,12 @@ var dir_d28a4824dc47e487b107a5db32ef43c4 =
     [ "RGBSetDemo", "dir_844684ab047c67886fc8f43bc7ebdae7.html", "dir_844684ab047c67886fc8f43bc7ebdae7" ],
     [ "RGBW", "dir_7f0b57471d0c9fa17da22e17cfd53ab8.html", "dir_7f0b57471d0c9fa17da22e17cfd53ab8" ],
     [ "RGBWEmulated", "dir_95706ba2bc27dcedba12f10841db5171.html", "dir_95706ba2bc27dcedba12f10841db5171" ],
+    [ "SdCard", "dir_aaeb0023ab9319ca2a9d892378b0f1fd.html", "dir_aaeb0023ab9319ca2a9d892378b0f1fd" ],
     [ "SmartMatrix", "dir_1bdc26e3376ec64d7901d7f7d36b78fc.html", "dir_1bdc26e3376ec64d7901d7f7d36b78fc" ],
     [ "TwinkleFox", "dir_3d7f0dd01d50ae27368def194e8e7b46.html", "dir_3d7f0dd01d50ae27368def194e8e7b46" ],
+    [ "Video", "dir_73b03b289d25869d71c4bcdecfd8cf0c.html", "dir_73b03b289d25869d71c4bcdecfd8cf0c" ],
+    [ "wasm", "dir_a5f15344905e1cdba3f0cc6e4b36e105.html", "dir_a5f15344905e1cdba3f0cc6e4b36e105" ],
+    [ "WasmScreenCoords", "dir_75afe82a44c9d3274eef9e58c545822a.html", "dir_75afe82a44c9d3274eef9e58c545822a" ],
+    [ "Water", "dir_20b51b3b32eabcbf50318184a474ad7e.html", "dir_20b51b3b32eabcbf50318184a474ad7e" ],
     [ "XYMatrix", "dir_a1f73a1624754db6b6179d3280e34825.html", "dir_a1f73a1624754db6b6179d3280e34825" ]
 ];

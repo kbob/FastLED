@@ -36,10 +36,10 @@ var searchData=
   ['blue_33',['blue',['../group___pixel_types.html#ga90bc5170416c8e09fcd468675a319718',1,'CRGB::blue'],['../group___pixel_types.html#ga722b674ed21f071ee5e596784288dd17',1,'CRGB::@16::@18::@24::blue']]],
   ['blueviolet_34',['BlueViolet',['../group___pixel_types.html#ggaeb40a08b7cb90c1e21bd408261558b99aac1ffcb23f7abd0ae8e7021e86adcbc9',1,'CRGB']]],
   ['blur1d_35',['blur1d',['../class_c_pixel_view.html#a80dcb95f38b6b84797986e6dd8105a6b',1,'CPixelView::blur1d()'],['../group___color_blurs.html#gaacf0416f9e0438f23f92d0df6c338ea3',1,'blur1d(CRGB *leds, uint16_t numLeds, fract8 blur_amount):&#160;colorutils.cpp'],['../group___color_blurs.html#gaacf0416f9e0438f23f92d0df6c338ea3',1,'blur1d(CRGB *leds, uint16_t numLeds, fract8 blur_amount):&#160;colorutils.cpp']]],
-  ['blur2d_36',['blur2d',['../group___color_blurs.html#gae97f9574ca4fa1a7ab65782b2a804fba',1,'blur2d(CRGB *leds, uint8_t width, uint8_t height, fract8 blur_amount):&#160;colorutils.cpp'],['../group___color_blurs.html#gae97f9574ca4fa1a7ab65782b2a804fba',1,'blur2d(CRGB *leds, uint8_t width, uint8_t height, fract8 blur_amount):&#160;colorutils.cpp']]],
-  ['blurcolumns_37',['blurColumns',['../group___color_blurs.html#gacb40363ff285a5d816a1cf3096e27c14',1,'blurColumns(CRGB *leds, uint8_t width, uint8_t height, fract8 blur_amount):&#160;colorutils.cpp'],['../group___color_blurs.html#gacb40363ff285a5d816a1cf3096e27c14',1,'blurColumns(CRGB *leds, uint8_t width, uint8_t height, fract8 blur_amount):&#160;colorutils.cpp']]],
+  ['blur2d_36',['blur2d',['../group___color_blurs.html#gad5f8e4b75f2a3f0f720351a4f8ff1d7a',1,'blur2d(CRGB *leds, uint8_t width, uint8_t height, fract8 blur_amount, const XYMap &amp;xymap):&#160;colorutils.cpp'],['../group___color_blurs.html#gad5f8e4b75f2a3f0f720351a4f8ff1d7a',1,'blur2d(CRGB *leds, uint8_t width, uint8_t height, fract8 blur_amount, const XYMap &amp;xymap):&#160;colorutils.cpp']]],
+  ['blurcolumns_37',['blurColumns',['../group___color_blurs.html#ga3f3f09f8b67b14d7fe7c14e4387025b3',1,'blurColumns(CRGB *leds, uint8_t width, uint8_t height, fract8 blur_amount, const XYMap &amp;xyMap):&#160;colorutils.cpp'],['../group___color_blurs.html#ga3f3f09f8b67b14d7fe7c14e4387025b3',1,'blurColumns(CRGB *leds, uint8_t width, uint8_t height, fract8 blur_amount, const XYMap &amp;xymap):&#160;colorutils.cpp']]],
   ['blurring_20functions_38',['Color Blurring Functions',['../group___color_blurs.html',1,'']]],
-  ['blurrows_39',['blurRows',['../group___color_blurs.html#ga3dbf22d8f71f7a0b54bbfaaf1ef7b44b',1,'blurRows(CRGB *leds, uint8_t width, uint8_t height, fract8 blur_amount):&#160;colorutils.cpp'],['../group___color_blurs.html#ga3dbf22d8f71f7a0b54bbfaaf1ef7b44b',1,'blurRows(CRGB *leds, uint8_t width, uint8_t height, fract8 blur_amount):&#160;colorutils.cpp']]],
+  ['blurrows_39',['blurRows',['../group___color_blurs.html#ga2132dd1a719cd6b812e2560f5860138f',1,'blurRows(CRGB *leds, uint8_t width, uint8_t height, fract8 blur_amount, const XYMap &amp;xyMap):&#160;colorutils.cpp'],['../group___color_blurs.html#ga2132dd1a719cd6b812e2560f5860138f',1,'blurRows(CRGB *leds, uint8_t width, uint8_t height, fract8 blur_amount, const XYMap &amp;xymap):&#160;colorutils.cpp']]],
   ['brighten8_5flin_40',['brighten8_lin',['../group___dimming.html#ga094bda002b416c66e57521fc93878830',1,'scale8.h']]],
   ['brighten8_5fraw_41',['brighten8_raw',['../group___dimming.html#gae8e36472a70f3016595048532d6c3a2d',1,'scale8.h']]],
   ['brighten8_5fvideo_42',['brighten8_video',['../group___dimming.html#gad21876a676bcf26c47f957faed23f9bb',1,'scale8.h']]],
@@ -47,5 +47,8 @@ var searchData=
   ['brown_44',['Brown',['../group___pixel_types.html#ggaeb40a08b7cb90c1e21bd408261558b99a54d9c4c1ca1c7b47825046e3f0fb09db',1,'CRGB']]],
   ['bseconds16_45',['bseconds16',['../group___timekeeping.html#ga52659d1994f2f21eb05080c97417e93b',1,'lib8tion.h']]],
   ['burlywood_46',['BurlyWood',['../group___pixel_types.html#ggaeb40a08b7cb90c1e21bd408261558b99a7ef32fb720c92b6cca965ba81de3d094',1,'CRGB']]],
-  ['bytes_47',['bytes',['../unionbitswap__type.html#aabab33af46370b5de438c01670d0e2cb',1,'bitswap_type::bytes'],['../union_t_r_g_b_gradient_palette_entry_union.html#a8f3ee1dde5a25ab7cb3455b343f0ee45',1,'TRGBGradientPaletteEntryUnion::bytes']]]
+  ['button_47',['Button',['../class_button.html',1,'']]],
+  ['bytes_48',['bytes',['../unionbitswap__type.html#aabab33af46370b5de438c01670d0e2cb',1,'bitswap_type::bytes'],['../union_t_r_g_b_gradient_palette_entry_union.html#a8f3ee1dde5a25ab7cb3455b343f0ee45',1,'TRGBGradientPaletteEntryUnion::bytes']]],
+  ['bytestream_49',['ByteStream',['../class_byte_stream.html',1,'']]],
+  ['bytestreammemory_50',['ByteStreamMemory',['../class_byte_stream_memory.html',1,'']]]
 ];

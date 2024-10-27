@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.7.8</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.0</span>
    </div>
   </td>
  </tr>
@@ -116,6 +116,8 @@ $(function(){initNavTree('_fast_l_e_d_8cpp.html',''); initResizable(true); });
 
 <p class="definition">Definition in file <a class="el" href="_fast_l_e_d_8cpp_source.html">FastLED.cpp</a>.</p>
 </div><div class="textblock"><code>#include &quot;<a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>&quot;</code><br />
+<code>#include &quot;singleton.h&quot;</code><br />
+<code>#include &quot;engine_events.h&quot;</code><br />
 </div>
 <p><a href="_fast_l_e_d_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -128,9 +130,15 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a15980203e8793eda5a670adf504b54b9" id="r_a15980203e8793eda5a670adf504b54b9"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15980203e8793eda5a670adf504b54b9">cled_contoller_size</a> ()</td></tr>
+<tr class="separator:a15980203e8793eda5a670adf504b54b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cd538ac10b316f4b05048a4fa912d75" id="r_a8cd538ac10b316f4b05048a4fa912d75"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8cd538ac10b316f4b05048a4fa912d75">get_brightness</a> ()</td></tr>
+<tr class="separator:a8cd538ac10b316f4b05048a4fa912d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a485781a43898e8594302dc3be9abbf" id="r_a5a485781a43898e8594302dc3be9abbf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a485781a43898e8594302dc3be9abbf">atexit</a> (void(*)())</td></tr>
 <tr class="memdesc:a5a485781a43898e8594302dc3be9abbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called at program exit when run in a desktop environment.  <br /></td></tr>
 <tr class="separator:a5a485781a43898e8594302dc3be9abbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cb51f5c2b5cad3766f19eb69c92793b" id="r_a7cb51f5c2b5cad3766f19eb69c92793b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7cb51f5c2b5cad3766f19eb69c92793b">yield</a> (void)</td></tr>
+<tr class="separator:a7cb51f5c2b5cad3766f19eb69c92793b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -182,7 +190,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8cpp_source.html#l00008">8</a> of file <a class="el" href="_fast_l_e_d_8cpp_source.html">FastLED.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8cpp_source.html#l00013">13</a> of file <a class="el" href="_fast_l_e_d_8cpp_source.html">FastLED.cpp</a>.</p>
 
 </div>
 </div>
@@ -205,7 +213,64 @@ Variables</h2></td></tr>
 <p>Called at program exit when run in a desktop environment. </p>
 <p>Extra C definition that some environments may need. </p><dl class="section return"><dt>Returns</dt><dd>0 to indicate success </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8cpp_source.html#l00277">277</a> of file <a class="el" href="_fast_l_e_d_8cpp_source.html">FastLED.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8cpp_source.html#l00297">297</a> of file <a class="el" href="_fast_l_e_d_8cpp_source.html">FastLED.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a15980203e8793eda5a670adf504b54b9" name="a15980203e8793eda5a670adf504b54b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15980203e8793eda5a670adf504b54b9">&#9670;&#160;</a></span>cled_contoller_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t cled_contoller_size </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8cpp_source.html#l00023">23</a> of file <a class="el" href="_fast_l_e_d_8cpp_source.html">FastLED.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8cd538ac10b316f4b05048a4fa912d75" name="a8cd538ac10b316f4b05048a4fa912d75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cd538ac10b316f4b05048a4fa912d75">&#9670;&#160;</a></span>get_brightness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t get_brightness </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8cpp_source.html#l00290">290</a> of file <a class="el" href="_fast_l_e_d_8cpp_source.html">FastLED.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7cb51f5c2b5cad3766f19eb69c92793b" name="a7cb51f5c2b5cad3766f19eb69c92793b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cb51f5c2b5cad3766f19eb69c92793b">&#9670;&#160;</a></span>yield()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void yield </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8cpp_source.html#l00298">298</a> of file <a class="el" href="_fast_l_e_d_8cpp_source.html">FastLED.cpp</a>.</p>
 
 </div>
 </div>
@@ -225,7 +290,7 @@ Variables</h2></td></tr>
 <p>Global frame counter, used for debugging ESP implementations. </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo</a></b></dt><dd>Include in FASTLED_DEBUG_COUNT_FRAME_RETRIES block? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8cpp_source.html#l00029">29</a> of file <a class="el" href="_fast_l_e_d_8cpp_source.html">FastLED.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8cpp_source.html#l00041">41</a> of file <a class="el" href="_fast_l_e_d_8cpp_source.html">FastLED.cpp</a>.</p>
 
 </div>
 </div>
@@ -244,7 +309,7 @@ Variables</h2></td></tr>
 <p>Global frame retry counter, used for debugging ESP implementations. </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo</a></b></dt><dd>Include in FASTLED_DEBUG_COUNT_FRAME_RETRIES block? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8cpp_source.html#l00033">33</a> of file <a class="el" href="_fast_l_e_d_8cpp_source.html">FastLED.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8cpp_source.html#l00045">45</a> of file <a class="el" href="_fast_l_e_d_8cpp_source.html">FastLED.cpp</a>.</p>
 
 </div>
 </div>
@@ -261,10 +326,10 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Global LED strip management instance. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_array_of_led_arrays_8ino-example.html#a1">ArrayOfLedArrays.ino</a>, <a class="el" href="_blink_8ino-example.html#a1">Blink.ino</a>, <a class="el" href="_color_palette_8ino-example.html#a3">ColorPalette.ino</a>, <a class="el" href="_color_temperature_8ino-example.html#a2">ColorTemperature.ino</a>, <a class="el" href="_cylon_8ino-example.html#a1">Cylon.ino</a>, <a class="el" href="_demo_reel100_8ino-example.html#a1">DemoReel100.ino</a>, <a class="el" href="_fire2012_8ino-example.html#a1">Fire2012.ino</a>, <a class="el" href="_fire2012_with_palette_8ino-example.html#a2">Fire2012WithPalette.ino</a>, <a class="el" href="_first_light_8ino-example.html#a1">FirstLight.ino</a>, <a class="el" href="_mirroring_sample_8ino-example.html#a1">MirroringSample.ino</a>, <a class="el" href="_multi_arrays_8ino-example.html#a1">MultiArrays.ino</a>, <a class="el" href="_multiple_strips_in_one_array_8ino-example.html#a1">MultipleStripsInOneArray.ino</a>, <a class="el" href="_noise_8ino-example.html#a2">Noise.ino</a>, <a class="el" href="_noise_playground_8ino-example.html#a2">NoisePlayground.ino</a>, <a class="el" href="_noise_plus_palette_8ino-example.html#a3">NoisePlusPalette.ino</a>, <a class="el" href="_octo_w_s2811_demo_8ino-example.html#a1">OctoWS2811Demo.ino</a>, <a class="el" href="_p_j_r_c_spectrum_analyzer_8ino-example.html#a1">PJRCSpectrumAnalyzer.ino</a>, <a class="el" href="_pacifica_8ino-example.html#a1">Pacifica.ino</a>, <a class="el" href="_parallel_output_demo_8ino-example.html#a1">ParallelOutputDemo.ino</a>, <a class="el" href="_pride2015_8ino-example.html#a1">Pride2015.ino</a>, <a class="el" href="_r_g_b_calibrate_8ino-example.html#a1">RGBCalibrate.ino</a>, <a class="el" href="_r_g_b_set_demo_8ino-example.html#a1">RGBSetDemo.ino</a>, <a class="el" href="_smart_matrix_8ino-example.html#a2">SmartMatrix.ino</a>, <a class="el" href="_twinkle_fox_8ino-example.html#a4">TwinkleFox.ino</a>, and <a class="el" href="_x_y_matrix_8ino-example.html#a3">XYMatrix.ino</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_array_of_led_arrays_8ino-example.html#a1">ArrayOfLedArrays.ino</a>, <a class="el" href="_blink_8ino-example.html#a1">Blink.ino</a>, <a class="el" href="_color_palette_8ino-example.html#a3">ColorPalette.ino</a>, <a class="el" href="_color_temperature_8ino-example.html#a2">ColorTemperature.ino</a>, <a class="el" href="_cylon_8ino-example.html#a1">Cylon.ino</a>, <a class="el" href="_demo_reel100_8ino-example.html#a1">DemoReel100.ino</a>, <a class="el" href="_fire2012_with_palette_8ino-example.html#a2">Fire2012WithPalette.ino</a>, <a class="el" href="_first_light_8ino-example.html#a1">FirstLight.ino</a>, <a class="el" href="_mirroring_sample_8ino-example.html#a1">MirroringSample.ino</a>, <a class="el" href="_multi_arrays_8ino-example.html#a1">MultiArrays.ino</a>, <a class="el" href="_multiple_strips_in_one_array_8ino-example.html#a1">MultipleStripsInOneArray.ino</a>, <a class="el" href="_noise_8ino-example.html#a1">Noise.ino</a>, <a class="el" href="_noise_playground_8ino-example.html#a2">NoisePlayground.ino</a>, <a class="el" href="_noise_plus_palette_8ino-example.html#a3">NoisePlusPalette.ino</a>, <a class="el" href="_octo_w_s2811_demo_8ino-example.html#a1">OctoWS2811Demo.ino</a>, <a class="el" href="_p_j_r_c_spectrum_analyzer_8ino-example.html#a1">PJRCSpectrumAnalyzer.ino</a>, <a class="el" href="_pacifica_8ino-example.html#a1">Pacifica.ino</a>, <a class="el" href="_parallel_output_demo_8ino-example.html#a1">ParallelOutputDemo.ino</a>, <a class="el" href="_pride2015_8ino-example.html#a1">Pride2015.ino</a>, <a class="el" href="_r_g_b_calibrate_8ino-example.html#a1">RGBCalibrate.ino</a>, <a class="el" href="_r_g_b_set_demo_8ino-example.html#a1">RGBSetDemo.ino</a>, <a class="el" href="_smart_matrix_8ino-example.html#a1">SmartMatrix.ino</a>, <a class="el" href="_twinkle_fox_8ino-example.html#a1">TwinkleFox.ino</a>, and <a class="el" href="_x_y_matrix_8ino-example.html#a2">XYMatrix.ino</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8cpp_source.html#l00021">21</a> of file <a class="el" href="_fast_l_e_d_8cpp_source.html">FastLED.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8cpp_source.html#l00033">33</a> of file <a class="el" href="_fast_l_e_d_8cpp_source.html">FastLED.cpp</a>.</p>
 
 </div>
 </div>
@@ -332,10 +397,10 @@ Variables</h2></td></tr>
 
 <p>Pointer to the matrix object when using the Smart Matrix Library. </p>
 <dl class="section see"><dt>See also</dt><dd><a href="https://github.com/pixelmatix/SmartMatrix">https://github.com/pixelmatix/SmartMatrix</a> </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_smart_matrix_8ino-example.html#a6">SmartMatrix.ino</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_smart_matrix_8ino-example.html#a5">SmartMatrix.ino</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8cpp_source.html#l00019">19</a> of file <a class="el" href="_fast_l_e_d_8cpp_source.html">FastLED.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8cpp_source.html#l00031">31</a> of file <a class="el" href="_fast_l_e_d_8cpp_source.html">FastLED.cpp</a>.</p>
 
 </div>
 </div>
@@ -346,7 +411,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_fast_l_e_d_8cpp.html">FastLED.cpp</a></li>
-    <li class="footer">Generated on Tue Sep 24 2024 03:42:48 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sun Oct 27 2024 23:51:50 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

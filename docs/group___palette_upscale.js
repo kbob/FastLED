@@ -1,9 +1,9 @@
 var group___palette_upscale =
 [
-    [ "UpscalePalette", "group___palette_upscale.html#gae2a0641902f28723263666a128995fef", null ],
-    [ "UpscalePalette", "group___palette_upscale.html#gab247fdb68a0ed37779c7bc11b83f6f8a", null ],
-    [ "UpscalePalette", "group___palette_upscale.html#gaeac1e2dbb61ff4b9f21dbed9cb0a1350", null ],
-    [ "UpscalePalette", "group___palette_upscale.html#gaea18108bf50282f20a0ecd4213b5ac8c", null ],
-    [ "UpscalePalette", "group___palette_upscale.html#ga1916d32f04256f662ecb0f4d7cff6062", null ],
-    [ "UpscalePalette", "group___palette_upscale.html#gaa91cec87978562a2b22709b47d02cdd7", null ]
+    [ "UpscalePalette", "group___palette_upscale.html#gab25990089da4e6e2179c52bf84371ef6", null ],
+    [ "UpscalePalette", "group___palette_upscale.html#ga9e993e90ae254bd0ae4e2b3ec30793e8", null ],
+    [ "UpscalePalette", "group___palette_upscale.html#ga7ece2048e58a7d25a494d9856b2218bd", null ],
+    [ "UpscalePalette", "group___palette_upscale.html#gaa88523d1afb29cf3f75b9b2725ba55d3", null ],
+    [ "UpscalePalette", "group___palette_upscale.html#gab719ebc3565c6d7e32cc5d9735938cd2", null ],
+    [ "UpscalePalette", "group___palette_upscale.html#gacd78065e7fb5f0f0997610b67eab968c", null ]
 ];

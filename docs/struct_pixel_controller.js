@@ -1,9 +1,9 @@
 var struct_pixel_controller =
 [
     [ "PixelController", "struct_pixel_controller.html#ae44229e20fb4ba4473b057dcda87122e", null ],
-    [ "PixelController", "struct_pixel_controller.html#ae18da760fe20d9bd9d0be593a4191607", null ],
-    [ "PixelController", "struct_pixel_controller.html#aff23aeae4b67372b82b5225ccd66632e", null ],
-    [ "PixelController", "struct_pixel_controller.html#aad52cdc177840aee3a0ef9087a551e8a", null ],
+    [ "PixelController", "struct_pixel_controller.html#ae1e1069b343fc0577828d28ffe3cead9", null ],
+    [ "PixelController", "struct_pixel_controller.html#ac272cca24b476c78cddd257cd9406150", null ],
+    [ "PixelController", "struct_pixel_controller.html#a68e0ae41357f1dda75a5724cde6aa991", null ],
     [ "advanceAndLoadAndScale0", "struct_pixel_controller.html#aa6a77bc5cd442a95a4f36b3c39d09f6e", null ],
     [ "advanceAndLoadAndScale0", "struct_pixel_controller.html#a9b3aad7f0649ea0d87e2ac243a6ede89", null ],
     [ "advanceAndLoadAndScale0", "struct_pixel_controller.html#a5ed1cdb992788946f8aa585e014491fa", null ],
@@ -38,6 +38,5 @@ var struct_pixel_controller =
     [ "mData", "struct_pixel_controller.html#a54bedae9117a19b242b73682c5d1a182", null ],
     [ "mLen", "struct_pixel_controller.html#a6e1491364f944af0eee408fc8dffef58", null ],
     [ "mLenRemaining", "struct_pixel_controller.html#a329cebe498f2d119cf10e0e6a7b5f7c5", null ],
-    [ "mOffsets", "struct_pixel_controller.html#a5ea77404f9ea28134291af923a79c82f", null ],
-    [ "mScale", "struct_pixel_controller.html#a9c8fa28fd867a4048796b4f88146d332", null ]
+    [ "mOffsets", "struct_pixel_controller.html#a5ea77404f9ea28134291af923a79c82f", null ]
 ];

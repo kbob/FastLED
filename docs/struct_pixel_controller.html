@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.7.8</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.0</span>
    </div>
   </td>
  </tr>
@@ -105,6 +105,7 @@ $(function(){initNavTree('struct_pixel_controller.html',''); initResizable(true)
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="struct_pixel_controller-members.html">List of all members</a>  </div>
@@ -123,14 +124,23 @@ struct PixelController&lt; RGB_ORDER, LANES, MASK &gt;</div><p>Pixel controller 
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00062">62</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00070">70</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 </div>
 <p><code>#include &lt;<a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aede3c1098c3aae3f3f5511153c7e9b81" id="r_aede3c1098c3aae3f3f5511153c7e9b81"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>kLanes</b> = LANES
+, <b>kMask</b> = MASK
+ }</td></tr>
+<tr class="separator:aede3c1098c3aae3f3f5511153c7e9b81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac6f435cbc5072b187ab4152b35ed265c" id="r_ac6f435cbc5072b187ab4152b35ed265c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_pixel_iterator.html">PixelIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6f435cbc5072b187ab4152b35ed265c">as_iterator</a> (const <a class="el" href="struct_rgbw.html">Rgbw</a> &amp;rgbw)</td></tr>
 <tr class="separator:ac6f435cbc5072b187ab4152b35ed265c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a894ca45aa17aea485defc34967e0a19b" id="r_a894ca45aa17aea485defc34967e0a19b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a894ca45aa17aea485defc34967e0a19b">disableColorAdjustment</a> ()</td></tr>
+<tr class="separator:a894ca45aa17aea485defc34967e0a19b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae44229e20fb4ba4473b057dcda87122e" id="r_ae44229e20fb4ba4473b057dcda87122e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae44229e20fb4ba4473b057dcda87122e">PixelController</a> (const <a class="el" href="struct_pixel_controller.html">PixelController</a> &amp;other)</td></tr>
 <tr class="memdesc:ae44229e20fb4ba4473b057dcda87122e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <br /></td></tr>
 <tr class="separator:ae44229e20fb4ba4473b057dcda87122e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,15 +153,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a358944f031ee8b8536d2f48ca670de77" id="r_a358944f031ee8b8536d2f48ca670de77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a358944f031ee8b8536d2f48ca670de77">initOffsets</a> (int len)</td></tr>
 <tr class="memdesc:a358944f031ee8b8536d2f48ca670de77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the <a class="el" href="#a5ea77404f9ea28134291af923a79c82f" title="the number of bytes to offset each lane from the starting pointer">PixelController::mOffsets</a> array based on the length of the strip.  <br /></td></tr>
 <tr class="separator:a358944f031ee8b8536d2f48ca670de77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae18da760fe20d9bd9d0be593a4191607" id="r_ae18da760fe20d9bd9d0be593a4191607"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae18da760fe20d9bd9d0be593a4191607">PixelController</a> (const uint8_t *<a class="el" href="#a576c3a3eac363fb83e475e142bbe586d">d</a>, int len, <a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp;pre_mixed, EDitherMode <a class="el" href="#aa2a1b38058a62a4337605425e482202f">dither</a>, bool advance, uint8_t skip)</td></tr>
-<tr class="memdesc:ae18da760fe20d9bd9d0be593a4191607"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
-<tr class="separator:ae18da760fe20d9bd9d0be593a4191607"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff23aeae4b67372b82b5225ccd66632e" id="r_aff23aeae4b67372b82b5225ccd66632e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff23aeae4b67372b82b5225ccd66632e">PixelController</a> (const <a class="el" href="struct_c_r_g_b.html">CRGB</a> *<a class="el" href="#a576c3a3eac363fb83e475e142bbe586d">d</a>, int len, <a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp;pre_mixed, EDitherMode <a class="el" href="#aa2a1b38058a62a4337605425e482202f">dither</a>)</td></tr>
-<tr class="memdesc:aff23aeae4b67372b82b5225ccd66632e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
-<tr class="separator:aff23aeae4b67372b82b5225ccd66632e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad52cdc177840aee3a0ef9087a551e8a" id="r_aad52cdc177840aee3a0ef9087a551e8a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad52cdc177840aee3a0ef9087a551e8a">PixelController</a> (const <a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp;<a class="el" href="#a576c3a3eac363fb83e475e142bbe586d">d</a>, int len, <a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp;pre_mixed, EDitherMode <a class="el" href="#aa2a1b38058a62a4337605425e482202f">dither</a>)</td></tr>
-<tr class="memdesc:aad52cdc177840aee3a0ef9087a551e8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
-<tr class="separator:aad52cdc177840aee3a0ef9087a551e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1e1069b343fc0577828d28ffe3cead9" id="r_ae1e1069b343fc0577828d28ffe3cead9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1e1069b343fc0577828d28ffe3cead9">PixelController</a> (const uint8_t *<a class="el" href="#a576c3a3eac363fb83e475e142bbe586d">d</a>, int len, <a class="el" href="struct_color_adjustment.html">ColorAdjustment</a> color_adjustment, EDitherMode <a class="el" href="#aa2a1b38058a62a4337605425e482202f">dither</a>, bool advance, uint8_t skip)</td></tr>
+<tr class="memdesc:ae1e1069b343fc0577828d28ffe3cead9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
+<tr class="separator:ae1e1069b343fc0577828d28ffe3cead9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac272cca24b476c78cddd257cd9406150" id="r_ac272cca24b476c78cddd257cd9406150"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac272cca24b476c78cddd257cd9406150">PixelController</a> (const <a class="el" href="struct_c_r_g_b.html">CRGB</a> *<a class="el" href="#a576c3a3eac363fb83e475e142bbe586d">d</a>, int len, <a class="el" href="struct_color_adjustment.html">ColorAdjustment</a> color_adjustment, EDitherMode <a class="el" href="#aa2a1b38058a62a4337605425e482202f">dither</a>)</td></tr>
+<tr class="memdesc:ac272cca24b476c78cddd257cd9406150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
+<tr class="separator:ac272cca24b476c78cddd257cd9406150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68e0ae41357f1dda75a5724cde6aa991" id="r_a68e0ae41357f1dda75a5724cde6aa991"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68e0ae41357f1dda75a5724cde6aa991">PixelController</a> (const <a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp;<a class="el" href="#a576c3a3eac363fb83e475e142bbe586d">d</a>, int len, <a class="el" href="struct_color_adjustment.html">ColorAdjustment</a> color_adjustment, EDitherMode <a class="el" href="#aa2a1b38058a62a4337605425e482202f">dither</a>)</td></tr>
+<tr class="memdesc:a68e0ae41357f1dda75a5724cde6aa991"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
+<tr class="separator:a68e0ae41357f1dda75a5724cde6aa991"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a8441da873d3a094c15c337b34d3e43" id="r_a2a8441da873d3a094c15c337b34d3e43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a8441da873d3a094c15c337b34d3e43">init_binary_dithering</a> ()</td></tr>
 <tr class="memdesc:a2a8441da873d3a094c15c337b34d3e43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set up the values for binary dithering.  <br /></td></tr>
 <tr class="separator:a2a8441da873d3a094c15c337b34d3e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -329,16 +339,34 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a9ba367b1689ad3fc6c1cac3174faf341" id="r_a9ba367b1689ad3fc6c1cac3174faf341"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ba367b1689ad3fc6c1cac3174faf341">e</a> [3]</td></tr>
 <tr class="memdesc:a9ba367b1689ad3fc6c1cac3174faf341"><td class="mdescLeft">&#160;</td><td class="mdescRight">values for the scaled dither signal  <br /></td></tr>
 <tr class="separator:a9ba367b1689ad3fc6c1cac3174faf341"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c8fa28fd867a4048796b4f88146d332" id="r_a9c8fa28fd867a4048796b4f88146d332"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_c_r_g_b.html">CRGB</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c8fa28fd867a4048796b4f88146d332">mScale</a></td></tr>
-<tr class="memdesc:a9c8fa28fd867a4048796b4f88146d332"><td class="mdescLeft">&#160;</td><td class="mdescRight">the per-channel scale values, provided by a color correction function such as <a class="el" href="class_c_l_e_d_controller.html#a3ad4ceb3bc9ae2efa11e50ffe4b140d4" title="Calculates the combined color adjustment to the LEDs at a given scale, color correction,...">CLEDController::computeAdjustment()</a>  <br /></td></tr>
-<tr class="separator:a9c8fa28fd867a4048796b4f88146d332"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f4eb594a337bc3a739e65b2a1e5c401" id="r_a0f4eb594a337bc3a739e65b2a1e5c401"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f4eb594a337bc3a739e65b2a1e5c401">mAdvance</a></td></tr>
 <tr class="memdesc:a0f4eb594a337bc3a739e65b2a1e5c401"><td class="mdescLeft">&#160;</td><td class="mdescRight">how many bytes to advance the pointer by each time. For <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> this is 3.  <br /></td></tr>
 <tr class="separator:a0f4eb594a337bc3a739e65b2a1e5c401"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ea77404f9ea28134291af923a79c82f" id="r_a5ea77404f9ea28134291af923a79c82f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ea77404f9ea28134291af923a79c82f">mOffsets</a> [LANES]</td></tr>
 <tr class="memdesc:a5ea77404f9ea28134291af923a79c82f"><td class="mdescLeft">&#160;</td><td class="mdescRight">the number of bytes to offset each lane from the starting pointer  <br /></td></tr>
 <tr class="separator:a5ea77404f9ea28134291af923a79c82f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69d37dea3d26dcd3c3abeb44a17dd13a" id="r_a69d37dea3d26dcd3c3abeb44a17dd13a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_color_adjustment.html">ColorAdjustment</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69d37dea3d26dcd3c3abeb44a17dd13a">mColorAdjustment</a></td></tr>
+<tr class="separator:a69d37dea3d26dcd3c3abeb44a17dd13a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="aede3c1098c3aae3f3f5511153c7e9b81" name="aede3c1098c3aae3f3f5511153c7e9b81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aede3c1098c3aae3f3f5511153c7e9b81">&#9670;&#160;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00080">80</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae44229e20fb4ba4473b057dcda87122e" name="ae44229e20fb4ba4473b057dcda87122e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae44229e20fb4ba4473b057dcda87122e">&#9670;&#160;</a></span>PixelController() <span class="overload">[1/5]</span></h2>
@@ -374,7 +402,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00078">78</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00098">98</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -405,12 +433,12 @@ template&lt;EOrder RGB_ORDER_OTHER&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00083">83</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00103">103</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
-<a id="ae18da760fe20d9bd9d0be593a4191607" name="ae18da760fe20d9bd9d0be593a4191607"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae18da760fe20d9bd9d0be593a4191607">&#9670;&#160;</a></span>PixelController() <span class="overload">[3/5]</span></h2>
+<a id="ae1e1069b343fc0577828d28ffe3cead9" name="ae1e1069b343fc0577828d28ffe3cead9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1e1069b343fc0577828d28ffe3cead9">&#9670;&#160;</a></span>PixelController() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -433,7 +461,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>pre_mixed</em></span>, </td>
+          <td class="paramtype"><a class="el" href="struct_color_adjustment.html">ColorAdjustment</a></td>          <td class="paramname"><span class="paramname"><em>color_adjustment</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -463,7 +491,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
   <table class="params">
     <tr><td class="paramname">d</td><td>pointer to LED data </td></tr>
     <tr><td class="paramname">len</td><td>length of the LED data </td></tr>
-    <tr><td class="paramname">pre_mixed</td><td>LED scale values premixed with global brightness, as <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> struct </td></tr>
+    <tr><td class="paramname">color_adjustment</td><td>LED scale values </td></tr>
     <tr><td class="paramname">dither</td><td>dither setting for the LEDs </td></tr>
     <tr><td class="paramname">advance</td><td>whether the pointer (d) should advance per LED </td></tr>
     <tr><td class="paramname">skip</td><td>if the pointer is advancing, how many bytes to skip in addition to 3 </td></tr>
@@ -471,12 +499,12 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00119">119</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00141">141</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
-<a id="aff23aeae4b67372b82b5225ccd66632e" name="aff23aeae4b67372b82b5225ccd66632e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff23aeae4b67372b82b5225ccd66632e">&#9670;&#160;</a></span>PixelController() <span class="overload">[4/5]</span></h2>
+<a id="ac272cca24b476c78cddd257cd9406150" name="ac272cca24b476c78cddd257cd9406150"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac272cca24b476c78cddd257cd9406150">&#9670;&#160;</a></span>PixelController() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -499,7 +527,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>pre_mixed</em></span>, </td>
+          <td class="paramtype"><a class="el" href="struct_color_adjustment.html">ColorAdjustment</a></td>          <td class="paramname"><span class="paramname"><em>color_adjustment</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -519,18 +547,18 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
   <table class="params">
     <tr><td class="paramname">d</td><td>pointer to LED data </td></tr>
     <tr><td class="paramname">len</td><td>length of the LED data </td></tr>
-    <tr><td class="paramname">pre_mixed</td><td>LED scale values premixed with global brightness, as <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> struct </td></tr>
+    <tr><td class="paramname">color_adjustment</td><td>LED scale values </td></tr>
     <tr><td class="paramname">dither</td><td>dither setting for the LEDs </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00134">134</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00156">156</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
-<a id="aad52cdc177840aee3a0ef9087a551e8a" name="aad52cdc177840aee3a0ef9087a551e8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad52cdc177840aee3a0ef9087a551e8a">&#9670;&#160;</a></span>PixelController() <span class="overload">[5/5]</span></h2>
+<a id="a68e0ae41357f1dda75a5724cde6aa991" name="a68e0ae41357f1dda75a5724cde6aa991"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68e0ae41357f1dda75a5724cde6aa991">&#9670;&#160;</a></span>PixelController() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -553,7 +581,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>pre_mixed</em></span>, </td>
+          <td class="paramtype"><a class="el" href="struct_color_adjustment.html">ColorAdjustment</a></td>          <td class="paramname"><span class="paramname"><em>color_adjustment</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -573,13 +601,13 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
   <table class="params">
     <tr><td class="paramname">d</td><td>pointer to LED data </td></tr>
     <tr><td class="paramname">len</td><td>length of the LED data </td></tr>
-    <tr><td class="paramname">pre_mixed</td><td>LED scale values premixed with global brightness, as <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> struct </td></tr>
+    <tr><td class="paramname">color_adjustment</td><td>LED scale values </td></tr>
     <tr><td class="paramname">dither</td><td>dither setting for the LEDs </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00148">148</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00170">170</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -619,7 +647,7 @@ template&lt;int SLOT&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00376">376</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00404">404</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -663,7 +691,7 @@ template&lt;int SLOT&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00381">381</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00409">409</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -713,7 +741,7 @@ template&lt;int SLOT&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00387">387</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00415">415</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -744,7 +772,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 
 <p>non-template alias of <a class="el" href="#a6c5dff0bd5be54ed5cdc8edb05d3ee2d" title="A version of loadAndScale() that advances the output data pointer.">advanceAndLoadAndScale&lt;0&gt;()</a>    </p>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00434">434</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00462">462</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -775,7 +803,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 
 <p>non-template alias of <a class="el" href="#a6c5dff0bd5be54ed5cdc8edb05d3ee2d" title="A version of loadAndScale() that advances the output data pointer.">advanceAndLoadAndScale&lt;0&gt;()</a>    </p>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00426">426</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00454">454</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -810,7 +838,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 
 <p>non-template alias of <a class="el" href="#a6c5dff0bd5be54ed5cdc8edb05d3ee2d" title="A version of loadAndScale() that advances the output data pointer.">advanceAndLoadAndScale&lt;0&gt;()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00420">420</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00448">448</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -842,7 +870,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <p>Get the amount to advance the pointer by. </p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="#a0f4eb594a337bc3a739e65b2a1e5c401" title="how many bytes to advance the pointer by each time. For CRGB this is 3.">PixelController::mAdvance</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00279">279</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00307">307</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -873,7 +901,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 
 <p>Advance the data pointer forward, adjust position counter. </p>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00282">282</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00310">310</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -902,7 +930,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00072">72</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00085">85</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -933,7 +961,36 @@ template&lt;typename PixelControllerT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00088">88</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00108">108</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+
+</div>
+</div>
+<a id="a894ca45aa17aea485defc34967e0a19b" name="a894ca45aa17aea485defc34967e0a19b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a894ca45aa17aea485defc34967e0a19b">&#9670;&#160;</a></span>disableColorAdjustment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="struct_pixel_controller.html">PixelController</a>&lt; RGB_ORDER, LANES, MASK &gt;::disableColorAdjustment </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00089">89</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -988,7 +1045,7 @@ template&lt;int SLOT&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00325">325</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00353">353</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -1039,7 +1096,7 @@ template&lt;int SLOT&gt; </div>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="#a576c3a3eac363fb83e475e142bbe586d" title="values for the scaled dither signal">PixelController::d</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00319">319</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00347">347</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -1076,7 +1133,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00262">262</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00290">290</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -1123,7 +1180,7 @@ template&lt;int SLOT&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>dithering data for the given channel </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="#a576c3a3eac363fb83e475e142bbe586d" title="values for the scaled dither signal">PixelController::d</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00402">402</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00430">430</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -1168,9 +1225,9 @@ template&lt;int SLOT&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>scale data for the given channel </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a9c8fa28fd867a4048796b4f88146d332" title="the per-channel scale values, provided by a color correction function such as CLEDController::compute...">PixelController::mScale</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>PixelController::mScale </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00409">409</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00437">437</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -1201,7 +1258,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 
 <p>non-template alias of <a class="el" href="#a9d1ddf7aa7b8e5a3896a898911f0a6cd" title="Gets the scale data for the provided output slot.">getscale&lt;0&gt;()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00437">437</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00465">465</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -1232,7 +1289,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 
 <p>non-template alias of <a class="el" href="#a9d1ddf7aa7b8e5a3896a898911f0a6cd" title="Gets the scale data for the provided output slot.">getscale&lt;1&gt;()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00438">438</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00466">466</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -1263,7 +1320,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 
 <p>non-template alias of <a class="el" href="#a9d1ddf7aa7b8e5a3896a898911f0a6cd" title="Gets the scale data for the provided output slot.">getscale&lt;2&gt;()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00439">439</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00467">467</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -1301,7 +1358,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>'true' if there are more than n pixels left to process </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00253">253</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00281">281</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -1332,7 +1389,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 
 <p>Set up the values for binary dithering. </p>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00197">197</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00225">225</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -1369,7 +1426,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00104">104</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00126">126</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -1401,7 +1458,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <p>Get the number of lanes of the Controller. </p>
 <dl class="section return"><dt>Returns</dt><dd>LANES from template </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00275">275</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00303">303</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -1446,7 +1503,7 @@ template&lt;int SLOT&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00350">350</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00378">378</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -1496,7 +1553,7 @@ template&lt;int SLOT&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00356">356</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00384">384</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -1558,7 +1615,7 @@ template&lt;int SLOT&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00364">364</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00392">392</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -1614,7 +1671,7 @@ template&lt;int SLOT&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00371">371</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00399">399</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -1645,7 +1702,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 
 <p>non-template alias of <a class="el" href="#a56fc5e5bf305e1760198c0a69ac85ff9" title="Loads, dithers, and scales a single byte for a given output slot, using class dither and scale values...">loadAndScale&lt;0&gt;()</a>    </p>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00431">431</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00459">459</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -1676,7 +1733,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 
 <p>non-template alias of <a class="el" href="#a56fc5e5bf305e1760198c0a69ac85ff9" title="Loads, dithers, and scales a single byte for a given output slot, using class dither and scale values...">loadAndScale&lt;0&gt;()</a>    </p>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00423">423</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00451">451</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -1711,7 +1768,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 
 <p>non-template alias of <a class="el" href="#a56fc5e5bf305e1760198c0a69ac85ff9" title="Loads, dithers, and scales a single byte for a given output slot, using class dither and scale values...">loadAndScale&lt;0&gt;()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00417">417</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00445">445</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -1742,7 +1799,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 
 <p>non-template alias of <a class="el" href="#a56fc5e5bf305e1760198c0a69ac85ff9" title="Loads, dithers, and scales a single byte for a given output slot, using class dither and scale values...">loadAndScale&lt;1&gt;()</a>    </p>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00432">432</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00460">460</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -1773,7 +1830,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 
 <p>non-template alias of <a class="el" href="#a56fc5e5bf305e1760198c0a69ac85ff9" title="Loads, dithers, and scales a single byte for a given output slot, using class dither and scale values...">loadAndScale&lt;1&gt;()</a>    </p>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00424">424</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00452">452</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -1808,7 +1865,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 
 <p>non-template alias of <a class="el" href="#a56fc5e5bf305e1760198c0a69ac85ff9" title="Loads, dithers, and scales a single byte for a given output slot, using class dither and scale values...">loadAndScale&lt;1&gt;()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00418">418</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00446">446</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -1839,7 +1896,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 
 <p>non-template alias of <a class="el" href="#a56fc5e5bf305e1760198c0a69ac85ff9" title="Loads, dithers, and scales a single byte for a given output slot, using class dither and scale values...">loadAndScale&lt;2&gt;()</a>    </p>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00433">433</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00461">461</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -1870,7 +1927,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 
 <p>non-template alias of <a class="el" href="#a56fc5e5bf305e1760198c0a69ac85ff9" title="Loads, dithers, and scales a single byte for a given output slot, using class dither and scale values...">loadAndScale&lt;2&gt;()</a>    </p>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00425">425</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00453">453</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -1905,7 +1962,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 
 <p>non-template alias of <a class="el" href="#a56fc5e5bf305e1760198c0a69ac85ff9" title="Loads, dithers, and scales a single byte for a given output slot, using class dither and scale values...">loadAndScale&lt;2&gt;()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00419">419</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00447">447</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -1948,7 +2005,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00442">442</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00482">482</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -1986,7 +2043,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00464">464</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00511">511</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -2034,7 +2091,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00471">471</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00518">518</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -2079,7 +2136,7 @@ template&lt;int SLOT&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00306">306</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00334">334</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -2129,7 +2186,7 @@ template&lt;int SLOT&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00312">312</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00340">340</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -2160,7 +2217,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 
 <p>Some chipsets pre-cycle the first byte, which means we want to cycle byte 0's dithering separately. </p>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00295">295</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00323">323</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -2215,7 +2272,7 @@ template&lt;int SLOT&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00338">338</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00366">366</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -2264,9 +2321,9 @@ template&lt;int SLOT&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a9c8fa28fd867a4048796b4f88146d332" title="the per-channel scale values, provided by a color correction function such as CLEDController::compute...">PixelController::mScale</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>PixelController::mScale </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00332">332</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00360">360</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -2298,7 +2355,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <p>Get the length of the LED strip. </p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="#a6e1491364f944af0eee408fc8dffef58" title="number of LEDs in the data for one lane">PixelController::mLen</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00271">271</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00299">299</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -2329,7 +2386,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 
 <p><a class="el" href="#ac7cb7840989882cce60218ac43dbe8ef" title="Step the dithering forward.">stepDithering()</a> and <a class="el" href="#aa6a77bc5cd442a95a4f36b3c39d09f6e" title="non-template alias of advanceAndLoadAndScale&lt;0&gt;()">advanceAndLoadAndScale0()</a>    </p>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00435">435</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00463">463</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -2360,7 +2417,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 
 <p><a class="el" href="#ac7cb7840989882cce60218ac43dbe8ef" title="Step the dithering forward.">stepDithering()</a> and <a class="el" href="#aa6a77bc5cd442a95a4f36b3c39d09f6e" title="non-template alias of advanceAndLoadAndScale&lt;0&gt;()">advanceAndLoadAndScale0()</a>    </p>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00427">427</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00455">455</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -2395,7 +2452,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 
 <p><a class="el" href="#ac7cb7840989882cce60218ac43dbe8ef" title="Step the dithering forward.">stepDithering()</a> and <a class="el" href="#aa6a77bc5cd442a95a4f36b3c39d09f6e" title="non-template alias of advanceAndLoadAndScale&lt;0&gt;()">advanceAndLoadAndScale0()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00421">421</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00449">449</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -2427,7 +2484,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <p>Step the dithering forward. </p>
 <dl class="section note"><dt>Note</dt><dd>If updating here, be sure to update the asm version in clockless_trinket.h! </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00286">286</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00314">314</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -2449,7 +2506,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <p>values for the scaled dither signal </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="#a2a8441da873d3a094c15c337b34d3e43" title="Set up the values for binary dithering.">init_binary_dithering()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00066">66</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00074">74</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -2470,7 +2527,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <p>values for the scaled dither signal </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="#a2a8441da873d3a094c15c337b34d3e43" title="Set up the values for binary dithering.">init_binary_dithering()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00067">67</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00075">75</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -2490,7 +2547,25 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 
 <p>how many bytes to advance the pointer by each time. For <a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a> this is 3. </p>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00069">69</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00076">76</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+
+</div>
+</div>
+<a id="a69d37dea3d26dcd3c3abeb44a17dd13a" name="a69d37dea3d26dcd3c3abeb44a17dd13a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69d37dea3d26dcd3c3abeb44a17dd13a">&#9670;&#160;</a></span>mColorAdjustment</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_color_adjustment.html">ColorAdjustment</a> <a class="el" href="struct_pixel_controller.html">PixelController</a>&lt; RGB_ORDER, LANES, MASK &gt;::mColorAdjustment</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00078">78</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -2510,7 +2585,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 
 <p>pointer to the underlying LED data </p>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00063">63</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00071">71</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -2530,7 +2605,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 
 <p>number of LEDs in the data for one lane </p>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00064">64</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00072">72</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -2550,7 +2625,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 
 <p>counter for the number of LEDs left to process </p>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00065">65</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00073">73</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -2571,27 +2646,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <p>the number of bytes to offset each lane from the starting pointer </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="#a358944f031ee8b8536d2f48ca670de77" title="Initialize the PixelController::mOffsets array based on the length of the strip.">initOffsets()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00070">70</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
-
-</div>
-</div>
-<a id="a9c8fa28fd867a4048796b4f88146d332" name="a9c8fa28fd867a4048796b4f88146d332"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c8fa28fd867a4048796b4f88146d332">&#9670;&#160;</a></span>mScale</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_c_r_g_b.html">CRGB</a> <a class="el" href="struct_pixel_controller.html">PixelController</a>&lt; RGB_ORDER, LANES, MASK &gt;::mScale</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>the per-channel scale values, provided by a color correction function such as <a class="el" href="class_c_l_e_d_controller.html#a3ad4ceb3bc9ae2efa11e50ffe4b140d4" title="Calculates the combined color adjustment to the LEDs at a given scale, color correction,...">CLEDController::computeAdjustment()</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00068">68</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pixel__controller_8h_source.html#l00077">77</a> of file <a class="el" href="pixel__controller_8h_source.html">pixel_controller.h</a>.</p>
 
 </div>
 </div>
@@ -2605,7 +2660,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct_pixel_controller.html">PixelController</a></li>
-    <li class="footer">Generated on Tue Sep 24 2024 03:42:49 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sun Oct 27 2024 23:51:50 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

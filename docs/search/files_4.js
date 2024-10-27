@@ -12,7 +12,6 @@ var searchData=
   ['fastspi_5fnop_2eh_9',['fastspi_nop.h',['../fastspi__nop_8h.html',1,'']]],
   ['fastspi_5fref_2eh_10',['fastspi_ref.h',['../fastspi__ref_8h.html',1,'']]],
   ['fastspi_5ftypes_2eh_11',['fastspi_types.h',['../fastspi__types_8h.html',1,'']]],
-  ['fire2012_2eino_12',['Fire2012.ino',['../_fire2012_8ino.html',1,'']]],
-  ['fire2012withpalette_2eino_13',['Fire2012WithPalette.ino',['../_fire2012_with_palette_8ino.html',1,'']]],
-  ['firstlight_2eino_14',['FirstLight.ino',['../_first_light_8ino.html',1,'']]]
+  ['fire2012withpalette_2eino_12',['Fire2012WithPalette.ino',['../_fire2012_with_palette_8ino.html',1,'']]],
+  ['firstlight_2eino_13',['FirstLight.ino',['../_first_light_8ino.html',1,'']]]
 ];

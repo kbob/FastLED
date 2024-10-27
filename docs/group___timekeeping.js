@@ -16,6 +16,7 @@ var group___timekeeping =
       [ "mPeriod", "class_c_every_n_time.html#a27fdededaf37417018f079336feabbf7", null ],
       [ "mPrevTrigger", "class_c_every_n_time.html#af886ee09b27d68263dfa1e40d6137ce8", null ]
     ] ],
+    [ "CEveryNMillisDynamic", "class_c_every_n_millis_dynamic.html", null ],
     [ "CEveryNMilliseconds", "group___timekeeping.html#ga0158aafd34145d29ecdce57c0a5ef908", null ],
     [ "EVERY_N_BSECONDS", "group___timekeeping.html#ga860bac35464e2c83c313e92a59e0e39a", null ],
     [ "EVERY_N_BSECONDS_I", "group___timekeeping.html#ga8057578b51f0a5cff337fb2fd5521de7", null ],
@@ -24,6 +25,8 @@ var group___timekeeping =
     [ "EVERY_N_MILLIS", "group___timekeeping.html#ga90e084b8253af257a0257a23aeef53e1", null ],
     [ "EVERY_N_MILLIS_I", "group___timekeeping.html#ga7efd8f560d5490e6d2e79039a775b195", null ],
     [ "EVERY_N_MILLISECONDS", "group___timekeeping.html#ga5eeb30462c2c1d653b7f4abaf262fc3d", null ],
+    [ "EVERY_N_MILLISECONDS_DYNAMIC", "group___timekeeping.html#ga84622b4bfb271a01d0a3bab2f2217f47", null ],
+    [ "EVERY_N_MILLISECONDS_DYNAMIC_I", "group___timekeeping.html#ga33823fb898e26e976f4394bf3fed8b10", null ],
     [ "EVERY_N_MILLISECONDS_I", "group___timekeeping.html#ga8b6fa2a3e84d33ffebf136f6bd9019b3", null ],
     [ "EVERY_N_MINUTES", "group___timekeeping.html#gac1512a67df37be930a2015eca7219bad", null ],
     [ "EVERY_N_MINUTES_I", "group___timekeeping.html#ga08ec76930e29e8685edacc060f01a9fd", null ],
