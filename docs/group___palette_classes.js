@@ -175,16 +175,7 @@ var group___palette_classes =
       [ "operator[]", "class_c_r_g_b_palette256.html#a0823f42d6dc933fd1e618a5078d2e2af", null ],
       [ "entries", "class_c_r_g_b_palette256.html#a3279636490301d45a05adfcbc8a7b4da", null ]
     ] ],
-    [ "TProgmemPalette16", "group___palette_classes.html#ga2e2c47988086791244a547f098633a4a", null ],
-    [ "TProgmemPalette32", "group___palette_classes.html#gacbe65e7b11919a132bc2f148e448bacc", null ],
     [ "TDynamicRGBGradientPalette_byte", "group___palette_classes.html#ga9b4bbbaa572ed85baf5d098dc47a347b", null ],
     [ "TDynamicRGBGradientPalette_bytes", "group___palette_classes.html#gae1c82c19302557ba92e9ce0ec2c9ed5b", null ],
-    [ "TDynamicRGBGradientPalettePtr", "group___palette_classes.html#ga8ca55222f4aaa94bba41171554225f75", null ],
-    [ "TProgmemHSVPalette16", "group___palette_classes.html#ga68d7c7a5522fb7aa113e50351bd620d4", null ],
-    [ "TProgmemHSVPalette32", "group___palette_classes.html#ga4173693bfea9b72f0f73085e9a7318a8", null ],
-    [ "TProgmemRGBGradientPalette_byte", "group___palette_classes.html#ga5c6ee5f16c2e9dcea972adc5b582218c", null ],
-    [ "TProgmemRGBGradientPalette_bytes", "group___palette_classes.html#ga56cb3bce8ab7c903689192abedcc9699", null ],
-    [ "TProgmemRGBGradientPalettePtr", "group___palette_classes.html#gad07b6fd5973f3c9fc4a084b206aaeabd", null ],
-    [ "TProgmemRGBPalette16", "group___palette_classes.html#ga3ce4f8424098c820a739f95cf86d7663", null ],
-    [ "TProgmemRGBPalette32", "group___palette_classes.html#ga0402dc727d6a118cf426da017ff42152", null ]
+    [ "TDynamicRGBGradientPaletteRef", "group___palette_classes.html#ga4c4801b40c665d6cf7febd016a81a0cd", null ]
 ];

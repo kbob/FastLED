@@ -16,15 +16,5 @@ var searchData=
   ['pointerdeleter_13',['PointerDeleter',['../struct_pointer_deleter.html',1,'']]],
   ['pointerdeleter_3c_20fastledanimartrix_20_3e_14',['PointerDeleter&lt; FastLEDANIMartRIX &gt;',['../struct_pointer_deleter.html',1,'']]],
   ['pointerdeleter_3c_20uint8_5ft_20_3e_15',['PointerDeleter&lt; uint8_t &gt;',['../struct_pointer_deleter.html',1,'']]],
-  ['pride2015_16',['Pride2015',['../class_pride2015.html',1,'']]],
-  ['ptr_17',['Ptr',['../class_ptr.html',1,'']]],
-  ['ptr_3c_20frame_20_3e_18',['Ptr&lt; Frame &gt;',['../class_ptr.html',1,'']]],
-  ['ptr_3c_20fx_20_3e_19',['Ptr&lt; Fx &gt;',['../class_ptr.html',1,'']]],
-  ['ptr_3c_20fxgrid_20_3e_20',['Ptr&lt; FxGrid &gt;',['../class_ptr.html',1,'']]],
-  ['ptr_3c_20weakreferent_20_3e_21',['Ptr&lt; WeakReferent &gt;',['../class_ptr.html',1,'']]],
-  ['ptrtraits_22',['PtrTraits',['../class_ptr_traits.html',1,'']]],
-  ['ptrtraits_3c_20frame_20_3e_23',['PtrTraits&lt; Frame &gt;',['../class_ptr_traits.html',1,'']]],
-  ['ptrtraits_3c_20fx_20_3e_24',['PtrTraits&lt; Fx &gt;',['../class_ptr_traits.html',1,'']]],
-  ['ptrtraits_3c_20fxgrid_20_3e_25',['PtrTraits&lt; FxGrid &gt;',['../class_ptr_traits.html',1,'']]],
-  ['ptrtraits_3c_20weakreferent_20_3e_26',['PtrTraits&lt; WeakReferent &gt;',['../class_ptr_traits.html',1,'']]]
+  ['pride2015_16',['Pride2015',['../class_pride2015.html',1,'']]]
 ];

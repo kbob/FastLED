@@ -10,6 +10,5 @@ var searchData=
   ['dmxsimplecontroller_7',['DMXSimpleController',['../class_d_m_x_simple_controller.html',1,'']]],
   ['dmxsimplecontroller_3c_20data_5fpin_2c_20rgb_5forder_20_3e_8',['DMXSimpleController&lt; DATA_PIN, RGB_ORDER &gt;',['../class_d_m_x_simple_controller.html',1,'']]],
   ['dp1903controller400khz_9',['DP1903Controller400Khz',['../class_d_p1903_controller400_khz.html',1,'']]],
-  ['dp1903controller800khz_10',['DP1903Controller800Khz',['../class_d_p1903_controller800_khz.html',1,'']]],
-  ['drawcontext_11',['DrawContext',['../struct_draw_context.html',1,'']]]
+  ['dp1903controller800khz_10',['DP1903Controller800Khz',['../class_d_p1903_controller800_khz.html',1,'']]]
 ];

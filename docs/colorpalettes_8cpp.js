@@ -1,6 +1,5 @@
 var colorpalettes_8cpp =
 [
-    [ "__INC_COLORPALETTES_H", "colorpalettes_8cpp.html#afa716cc50893adccc99218252824a5d1", null ],
     [ "FASTLED_INTERNAL", "colorpalettes_8cpp.html#a2d8dda85477a00deab830effc5159d33", null ],
     [ "RainbowStripesColors_p", "group___predefined_palettes.html#ga74989daf3663c88b35251ae9ddf5d188", null ],
     [ "DEFINE_GRADIENT_PALETTE", "group___predefined_palettes.html#gae75211eb2c886d3c766422f64fbd08a6", null ],

@@ -6,7 +6,7 @@ var searchData=
   ['wasm_3',['Wasm',['../index.html#autotoc_md10',1,'']]],
   ['waveform_20beat_20generators_4',['Waveform Beat Generators',['../group___beat_generators.html',1,'']]],
   ['waveform_20generators_5',['Waveform Generators',['../group___waveform_generators.html',1,'']]],
-  ['weakptr_6',['WeakPtr',['../class_weak_ptr.html',1,'']]],
+  ['weakref_6',['WeakRef',['../class_weak_ref.html',1,'']]],
   ['weakreferent_7',['WeakReferent',['../class_weak_referent.html',1,'']]],
   ['what_20about_20that_20name_8',['What about that name?',['../index.html#autotoc_md21',1,'']]],
   ['wheat_9',['Wheat',['../group___pixel_types.html#ggaeb40a08b7cb90c1e21bd408261558b99a22541bf68ff7246e103661cb614d1fa0',1,'CRGB']]],

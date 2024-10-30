@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.0</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.1</span>
    </div>
   </td>
  </tr>
@@ -151,7 +151,7 @@ $(function(){initNavTree('fire2012_8hpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">// Higher chance = more roaring fire.  Lower chance = more flickery fire.</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">// Default 120, suggested range 50-200.</span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>DECLARE_SMART_PTR(<a class="code hl_class" href="class_fire2012.html">Fire2012</a>);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>FASTLED_SMART_REF(<a class="code hl_class" href="class_fire2012.html">Fire2012</a>);</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="foldopen" id="foldopen00049" data-start="{" data-end="};">
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_fire2012.html">   49</a></span><span class="keyword">class </span><a class="code hl_class" href="class_fire2012.html">Fire2012</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_fx_strip.html">FxStrip</a> {</div>
@@ -167,7 +167,7 @@ $(function(){initNavTree('fire2012_8hpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <a class="code hl_class" href="class_fire2012.html">~Fire2012</a>() {}</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
 <div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_fire2012.html#a856d24f563c72b450233f894d39f1ba7">   61</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_fire2012.html#a856d24f563c72b450233f894d39f1ba7">draw</a>(<a class="code hl_struct" href="struct_draw_context.html">DrawContext</a> context)<span class="keyword"> override </span>{</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_fire2012.html#a856d24f563c72b450233f894d39f1ba7">   61</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_fire2012.html#a856d24f563c72b450233f894d39f1ba7">draw</a>(<a class="code hl_struct" href="struct___draw_context.html">DrawContext</a> context)<span class="keyword"> override </span>{</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <a class="code hl_struct" href="struct_c_r_g_b.html">CRGB</a> *leds = context.leds;</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordflow">if</span> (leds == <span class="keyword">nullptr</span>) {</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <span class="keywordflow">return</span>;</div>
@@ -220,19 +220,19 @@ $(function(){initNavTree('fire2012_8hpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>FASTLED_NAMESPACE_END</div>
 <div class="ttc" id="a_fast_l_e_d_8h_html"><div class="ttname"><a href="_fast_l_e_d_8h.html">FastLED.h</a></div><div class="ttdoc">central include file for FastLED, defines the CFastLED class/object</div></div>
-<div class="ttc" id="aclass_c_r_g_b_palette16_html"><div class="ttname"><a href="class_c_r_g_b_palette16.html">CRGBPalette16</a></div><div class="ttdoc">RGB color palette with 16 discrete values.</div><div class="ttdef"><b>Definition</b> <a href="colorutils_8h_source.html#l00934">colorutils.h:934</a></div></div>
+<div class="ttc" id="aclass_c_r_g_b_palette16_html"><div class="ttname"><a href="class_c_r_g_b_palette16.html">CRGBPalette16</a></div><div class="ttdoc">RGB color palette with 16 discrete values.</div><div class="ttdef"><b>Definition</b> <a href="colorutils_8h_source.html#l00997">colorutils.h:997</a></div></div>
 <div class="ttc" id="aclass_fire2012_html"><div class="ttname"><a href="class_fire2012.html">Fire2012</a></div><div class="ttdef"><b>Definition</b> <a href="#l00049">fire2012.hpp:49</a></div></div>
 <div class="ttc" id="aclass_fire2012_html_a856d24f563c72b450233f894d39f1ba7"><div class="ttname"><a href="class_fire2012.html#a856d24f563c72b450233f894d39f1ba7">Fire2012::draw</a></div><div class="ttdeci">void draw(DrawContext context) override</div><div class="ttdef"><b>Definition</b> <a href="#l00061">fire2012.hpp:61</a></div></div>
-<div class="ttc" id="aclass_fx_strip_html"><div class="ttname"><a href="class_fx_strip.html">FxStrip</a></div><div class="ttdef"><b>Definition</b> <a href="fx1d_8h_source.html#l00011">fx1d.h:11</a></div></div>
-<div class="ttc" id="aclassscoped__array_html"><div class="ttname"><a href="classscoped__array.html">scoped_array</a></div><div class="ttdef"><b>Definition</b> <a href="scoped__ptr_8h_source.html#l00090">scoped_ptr.h:90</a></div></div>
-<div class="ttc" id="agroup___math_html_ga07133b3085824d0fcd4f5086d286c4b5"><div class="ttname"><a href="group___math.html#ga07133b3085824d0fcd4f5086d286c4b5">qadd8</a></div><div class="ttdeci">LIB8STATIC_ALWAYS_INLINE uint8_t qadd8(uint8_t i, uint8_t j)</div><div class="ttdoc">Add one byte to another, saturating at 0xFF.</div><div class="ttdef"><b>Definition</b> <a href="math8_8h_source.html#l00029">math8.h:29</a></div></div>
-<div class="ttc" id="agroup___math_html_gae261576a4c8155d6c0ba8615b2d2ecb3"><div class="ttname"><a href="group___math.html#gae261576a4c8155d6c0ba8615b2d2ecb3">qsub8</a></div><div class="ttdeci">LIB8STATIC_ALWAYS_INLINE uint8_t qsub8(uint8_t i, uint8_t j)</div><div class="ttdoc">Subtract one byte from another, saturating at 0x00.</div><div class="ttdef"><b>Definition</b> <a href="math8_8h_source.html#l00101">math8.h:101</a></div></div>
-<div class="ttc" id="agroup___palette_colors_html_gac46e65aff3dd6519b33e27f0998f17cd"><div class="ttname"><a href="group___palette_colors.html#gac46e65aff3dd6519b33e27f0998f17cd">ColorFromPalette</a></div><div class="ttdeci">CRGB ColorFromPalette(const CRGBPalette16 &amp;pal, uint8_t index, uint8_t brightness, TBlendType blendType)</div><div class="ttdoc">Get a color from a palette.</div><div class="ttdef"><b>Definition</b> <a href="colorutils_8cpp_source.html#l00608">colorutils.cpp:608</a></div></div>
+<div class="ttc" id="aclass_fx_strip_html"><div class="ttname"><a href="class_fx_strip.html">FxStrip</a></div><div class="ttdef"><b>Definition</b> <a href="fx1d_8h_source.html#l00012">fx1d.h:12</a></div></div>
+<div class="ttc" id="aclassscoped__array_html"><div class="ttname"><a href="classscoped__array.html">scoped_array</a></div><div class="ttdef"><b>Definition</b> <a href="scoped__ptr_8h_source.html#l00092">scoped_ptr.h:92</a></div></div>
+<div class="ttc" id="agroup___math_html_ga07133b3085824d0fcd4f5086d286c4b5"><div class="ttname"><a href="group___math.html#ga07133b3085824d0fcd4f5086d286c4b5">qadd8</a></div><div class="ttdeci">LIB8STATIC_ALWAYS_INLINE uint8_t qadd8(uint8_t i, uint8_t j)</div><div class="ttdoc">Add one byte to another, saturating at 0xFF.</div><div class="ttdef"><b>Definition</b> <a href="math8_8h_source.html#l00031">math8.h:31</a></div></div>
+<div class="ttc" id="agroup___math_html_gae261576a4c8155d6c0ba8615b2d2ecb3"><div class="ttname"><a href="group___math.html#gae261576a4c8155d6c0ba8615b2d2ecb3">qsub8</a></div><div class="ttdeci">LIB8STATIC_ALWAYS_INLINE uint8_t qsub8(uint8_t i, uint8_t j)</div><div class="ttdoc">Subtract one byte from another, saturating at 0x00.</div><div class="ttdef"><b>Definition</b> <a href="math8_8h_source.html#l00103">math8.h:103</a></div></div>
+<div class="ttc" id="agroup___palette_colors_html_gac46e65aff3dd6519b33e27f0998f17cd"><div class="ttname"><a href="group___palette_colors.html#gac46e65aff3dd6519b33e27f0998f17cd">ColorFromPalette</a></div><div class="ttdeci">CRGB ColorFromPalette(const CRGBPalette16 &amp;pal, uint8_t index, uint8_t brightness, TBlendType blendType)</div><div class="ttdoc">Get a color from a palette.</div><div class="ttdef"><b>Definition</b> <a href="colorutils_8cpp_source.html#l00610">colorutils.cpp:610</a></div></div>
 <div class="ttc" id="agroup___predefined_palettes_html_ga8932790994cfe78cf535fce88502d649"><div class="ttname"><a href="group___predefined_palettes.html#ga8932790994cfe78cf535fce88502d649">HeatColors_p</a></div><div class="ttdeci">const TProgmemRGBPalette16 HeatColors_p</div><div class="ttdoc">Approximate &quot;black body radiation&quot; palette, akin to the FastLED HeatColor() function.</div></div>
 <div class="ttc" id="agroup___random_html_ga4e63c74426f6516f28470dc1b814aefe"><div class="ttname"><a href="group___random.html#ga4e63c74426f6516f28470dc1b814aefe">random8</a></div><div class="ttdeci">LIB8STATIC uint8_t random8()</div><div class="ttdoc">Generate an 8-bit random number.</div><div class="ttdef"><b>Definition</b> <a href="random8_8h_source.html#l00040">random8.h:40</a></div></div>
-<div class="ttc" id="agroup___scaling_html_gad7535ccda9c92470c4e6ee0265585555"><div class="ttname"><a href="group___scaling.html#gad7535ccda9c92470c4e6ee0265585555">scale8</a></div><div class="ttdeci">LIB8STATIC_ALWAYS_INLINE uint8_t scale8(uint8_t i, fract8 scale)</div><div class="ttdoc">Scale one byte by a second one, which is treated as the numerator of a fraction whose denominator is ...</div><div class="ttdef"><b>Definition</b> <a href="scale8_8h_source.html#l00032">scale8.h:32</a></div></div>
-<div class="ttc" id="astruct_c_r_g_b_html"><div class="ttname"><a href="struct_c_r_g_b.html">CRGB</a></div><div class="ttdoc">Representation of an RGB pixel (Red, Green, Blue)</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00035">crgb.h:35</a></div></div>
-<div class="ttc" id="astruct_draw_context_html"><div class="ttname"><a href="struct_draw_context.html">DrawContext</a></div><div class="ttdef"><b>Definition</b> <a href="draw__context_8h_source.html#l00011">draw_context.h:11</a></div></div>
+<div class="ttc" id="agroup___scaling_html_gad7535ccda9c92470c4e6ee0265585555"><div class="ttname"><a href="group___scaling.html#gad7535ccda9c92470c4e6ee0265585555">scale8</a></div><div class="ttdeci">LIB8STATIC_ALWAYS_INLINE uint8_t scale8(uint8_t i, fract8 scale)</div><div class="ttdoc">Scale one byte by a second one, which is treated as the numerator of a fraction whose denominator is ...</div><div class="ttdef"><b>Definition</b> <a href="scale8_8h_source.html#l00034">scale8.h:34</a></div></div>
+<div class="ttc" id="astruct___draw_context_html"><div class="ttname"><a href="struct___draw_context.html">_DrawContext</a></div><div class="ttdef"><b>Definition</b> <a href="draw__context_8h_source.html#l00011">draw_context.h:11</a></div></div>
+<div class="ttc" id="astruct_c_r_g_b_html"><div class="ttname"><a href="struct_c_r_g_b.html">CRGB</a></div><div class="ttdoc">Representation of an RGB pixel (Red, Green, Blue)</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00038">crgb.h:38</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.3-->
@@ -240,7 +240,7 @@ $(function(){initNavTree('fire2012_8hpp_source.html',''); initResizable(true); }
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_acbb946b833f21b16ec30aa21c4c3a72.html">fx</a></li><li class="navelem"><a class="el" href="dir_3c096064f75e33bbd0d7cdd12788e828.html">1d</a></li><li class="navelem"><b>fire2012.hpp</b></li>
-    <li class="footer">Generated on Sun Oct 27 2024 23:51:50 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Oct 30 2024 03:59:40 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

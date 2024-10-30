@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.0</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.1</span>
    </div>
   </td>
  </tr>
@@ -122,7 +122,7 @@ $(function(){initNavTree('_demo_reel100_8ino-example.html',''); initResizable(tr
 <div class="line"><span class="preprocessor">#define BRIGHTNESS          96</span></div>
 <div class="line"><span class="preprocessor">#define FRAMES_PER_SECOND  120</span></div>
 <div class="line"> </div>
-<div class="line">DemoReel100Ptr demoReel = DemoReel100Ptr::New(NUM_LEDS);</div>
+<div class="line">DemoReel100Ref demoReel = DemoReel100Ref::New(NUM_LEDS);</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
 <div class="line">  delay(3000); <span class="comment">// 3 second delay for recovery</span></div>
@@ -141,30 +141,31 @@ $(function(){initNavTree('_demo_reel100_8ino-example.html',''); initResizable(tr
 <div class="line"><span class="keywordtype">void</span> loop()</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// Run the DemoReel100 draw function</span></div>
-<div class="line">    demoReel-&gt;draw(Fx::DrawContext(millis(), leds));</div>
+<div class="line">    demoReel-&gt;draw(<a id="_a5" name="_a5"></a><a class="code hl_struct" href="struct___draw_context.html">Fx::DrawContext</a>(millis(), leds));</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// send the &#39;leds&#39; array out to the actual LED strip</span></div>
-<div class="line">    <a class="code hl_variable" href="_fast_l_e_d_8cpp.html#a7077a6a69b1339a4c04f4bb9ecc0ad3f">FastLED</a>.<a id="a5" name="a5"></a><a class="code hl_function" href="class_c_fast_l_e_d.html#a83afdd1e2a21f33ac4f8d2610d6e331b">show</a>();  </div>
+<div class="line">    <a class="code hl_variable" href="_fast_l_e_d_8cpp.html#a7077a6a69b1339a4c04f4bb9ecc0ad3f">FastLED</a>.<a id="a6" name="a6"></a><a class="code hl_function" href="class_c_fast_l_e_d.html#a83afdd1e2a21f33ac4f8d2610d6e331b">show</a>();  </div>
 <div class="line">    <span class="comment">// insert a delay to keep the framerate modest</span></div>
-<div class="line">    <a class="code hl_variable" href="_fast_l_e_d_8cpp.html#a7077a6a69b1339a4c04f4bb9ecc0ad3f">FastLED</a>.<a id="a6" name="a6"></a><a class="code hl_function" href="class_c_fast_l_e_d.html#a6819ff831058a710d4582dfc09817202">delay</a>(1000/FRAMES_PER_SECOND); </div>
+<div class="line">    <a class="code hl_variable" href="_fast_l_e_d_8cpp.html#a7077a6a69b1339a4c04f4bb9ecc0ad3f">FastLED</a>.<a id="a7" name="a7"></a><a class="code hl_function" href="class_c_fast_l_e_d.html#a6819ff831058a710d4582dfc09817202">delay</a>(1000/FRAMES_PER_SECOND); </div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"> </div>
 <div class="ttc" id="a_fast_l_e_d_8cpp_html_a7077a6a69b1339a4c04f4bb9ecc0ad3f"><div class="ttname"><a href="_fast_l_e_d_8cpp.html#a7077a6a69b1339a4c04f4bb9ecc0ad3f">FastLED</a></div><div class="ttdeci">CFastLED FastLED</div><div class="ttdoc">Global LED strip management instance.</div><div class="ttdef"><b>Definition</b> <a href="_fast_l_e_d_8cpp_source.html#l00033">FastLED.cpp:33</a></div></div>
 <div class="ttc" id="a_fast_l_e_d_8h_html"><div class="ttname"><a href="_fast_l_e_d_8h.html">FastLED.h</a></div><div class="ttdoc">central include file for FastLED, defines the CFastLED class/object</div></div>
 <div class="ttc" id="aclass_c_fast_l_e_d_html_a6819ff831058a710d4582dfc09817202"><div class="ttname"><a href="class_c_fast_l_e_d.html#a6819ff831058a710d4582dfc09817202">CFastLED::delay</a></div><div class="ttdeci">void delay(unsigned long ms)</div><div class="ttdoc">Delay for the given number of milliseconds.</div><div class="ttdef"><b>Definition</b> <a href="_fast_l_e_d_8cpp_source.html#l00170">FastLED.cpp:170</a></div></div>
-<div class="ttc" id="aclass_c_fast_l_e_d_html_a730ba7d967e882b4b893689cf333b2eb"><div class="ttname"><a href="class_c_fast_l_e_d.html#a730ba7d967e882b4b893689cf333b2eb">CFastLED::setBrightness</a></div><div class="ttdeci">void setBrightness(uint8_t scale)</div><div class="ttdoc">Set the global brightness scaling.</div><div class="ttdef"><b>Definition</b> <a href="_fast_l_e_d_8h_source.html#l00720">FastLED.h:720</a></div></div>
+<div class="ttc" id="aclass_c_fast_l_e_d_html_a730ba7d967e882b4b893689cf333b2eb"><div class="ttname"><a href="class_c_fast_l_e_d.html#a730ba7d967e882b4b893689cf333b2eb">CFastLED::setBrightness</a></div><div class="ttdeci">void setBrightness(uint8_t scale)</div><div class="ttdoc">Set the global brightness scaling.</div><div class="ttdef"><b>Definition</b> <a href="_fast_l_e_d_8h_source.html#l00722">FastLED.h:722</a></div></div>
 <div class="ttc" id="aclass_c_fast_l_e_d_html_a83afdd1e2a21f33ac4f8d2610d6e331b"><div class="ttname"><a href="class_c_fast_l_e_d.html#a83afdd1e2a21f33ac4f8d2610d6e331b">CFastLED::show</a></div><div class="ttdeci">void show(uint8_t scale)</div><div class="ttdoc">Update all our controllers with the current led colors, using the passed in brightness.</div><div class="ttdef"><b>Definition</b> <a href="_fast_l_e_d_8cpp_source.html#l00074">FastLED.cpp:74</a></div></div>
 <div class="ttc" id="aclass_c_fast_l_e_d_html_afd7928d822589740af6e23b2d510cf3f"><div class="ttname"><a href="class_c_fast_l_e_d.html#afd7928d822589740af6e23b2d510cf3f">CFastLED::addLeds</a></div><div class="ttdeci">static CLEDController &amp; addLeds(CLEDController *pLed, struct CRGB *data, int nLedsOrOffset, int nLedsIfOffset=0)</div><div class="ttdoc">Add a CLEDController instance to the world.</div><div class="ttdef"><b>Definition</b> <a href="_fast_l_e_d_8cpp_source.html#l00059">FastLED.cpp:59</a></div></div>
-<div class="ttc" id="agroup___color_enums_html_ggadf6bcba67c9573665af20788c4431ae8abb6d30d01c054f65ed9c5a52c2855534"><div class="ttname"><a href="group___color_enums.html#ggadf6bcba67c9573665af20788c4431ae8abb6d30d01c054f65ed9c5a52c2855534">TypicalLEDStrip</a></div><div class="ttdeci">@ TypicalLEDStrip</div><div class="ttdoc">Typical values for SMD5050 LEDs.</div><div class="ttdef"><b>Definition</b> <a href="color_8h_source.html#l00020">color.h:20</a></div></div>
-<div class="ttc" id="astruct_c_r_g_b_html"><div class="ttname"><a href="struct_c_r_g_b.html">CRGB</a></div><div class="ttdoc">Representation of an RGB pixel (Red, Green, Blue)</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00035">crgb.h:35</a></div></div>
+<div class="ttc" id="agroup___color_enums_html_ggadf6bcba67c9573665af20788c4431ae8abb6d30d01c054f65ed9c5a52c2855534"><div class="ttname"><a href="group___color_enums.html#ggadf6bcba67c9573665af20788c4431ae8abb6d30d01c054f65ed9c5a52c2855534">TypicalLEDStrip</a></div><div class="ttdeci">@ TypicalLEDStrip</div><div class="ttdoc">Typical values for SMD5050 LEDs.</div><div class="ttdef"><b>Definition</b> <a href="color_8h_source.html#l00019">color.h:19</a></div></div>
+<div class="ttc" id="astruct___draw_context_html"><div class="ttname"><a href="struct___draw_context.html">_DrawContext</a></div><div class="ttdef"><b>Definition</b> <a href="draw__context_8h_source.html#l00011">draw_context.h:11</a></div></div>
+<div class="ttc" id="astruct_c_r_g_b_html"><div class="ttname"><a href="struct_c_r_g_b.html">CRGB</a></div><div class="ttdoc">Representation of an RGB pixel (Red, Green, Blue)</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00038">crgb.h:38</a></div></div>
 </div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.3-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Oct 27 2024 23:51:50 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Oct 30 2024 03:59:40 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

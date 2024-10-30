@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.0</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.1</span>
    </div>
   </td>
  </tr>
@@ -109,10 +109,10 @@ $(function(){initNavTree('str_8h_source.html',''); initResizable(true); });
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;ptr.h&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;string.h&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;ref.h&quot;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;namespace.h&quot;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>FASTLED_NAMESPACE_BEGIN</div>
@@ -138,7 +138,7 @@ $(function(){initNavTree('str_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">// Implementation details.</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>DECLARE_SMART_PTR(<a class="code hl_class" href="class_string_holder.html">StringHolder</a>);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>FASTLED_SMART_REF(<a class="code hl_class" href="class_string_holder.html">StringHolder</a>);</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="foldopen" id="foldopen00035" data-start="{" data-end="};">
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_string_formatter.html">   35</a></span><span class="keyword">class </span><a class="code hl_class" href="class_string_formatter.html">StringFormatter</a> {</div>
@@ -173,7 +173,7 @@ $(function(){initNavTree('str_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">size_t</span> mLength = 0;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">char</span> mInlineData[SIZE] = {0};</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    StringHolderPtr mHeapData;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    StringHolderRef mHeapData;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="comment">// Constructors</span></div>
@@ -188,7 +188,7 @@ $(function(){initNavTree('str_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            memcpy(mInlineData, str, len + 1);</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            mHeapData.reset();</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            mHeapData = StringHolderPtr::New(str);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            mHeapData = StringHolderRef::New(str);</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        }</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <a class="code hl_class" href="class_str_n.html">StrN</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_str_n.html">StrN</a> &amp;other) { copy(other); }</div>
@@ -206,7 +206,7 @@ $(function(){initNavTree('str_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            }</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            mHeapData.reset();</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            mHeapData = StringHolderPtr::New(str);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            mHeapData = StringHolderRef::New(str);</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        }</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    }</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <a class="code hl_class" href="class_str_n.html">StrN</a> &amp;operator=(<span class="keyword">const</span> <a class="code hl_class" href="class_str_n.html">StrN</a> &amp;other) {</div>
@@ -236,7 +236,7 @@ $(function(){initNavTree('str_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            <span class="keywordflow">if</span> (other.mHeapData) {</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                mHeapData = other.mHeapData;</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>                mHeapData = StringHolderPtr::New(other.c_str());</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>                mHeapData = StringHolderRef::New(other.c_str());</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            }</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        }</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        mLength = len;</div>
@@ -271,7 +271,7 @@ $(function(){initNavTree('str_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>            <span class="keywordflow">return</span> mLength;</div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        }</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        mHeapData.reset();</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        StringHolderPtr newData = StringHolderPtr::New(newLen);</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        StringHolderRef newData = StringHolderRef::New(newLen);</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        <span class="keywordflow">if</span> (newData) {</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            memcpy(newData-&gt;data(), c_str(), mLength);</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>            memcpy(newData-&gt;data() + mLength, str, n);</div>
@@ -322,29 +322,37 @@ $(function(){initNavTree('str_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    <span class="comment">// Append method</span></div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    <span class="keywordtype">void</span> append(<span class="keyword">const</span> <span class="keywordtype">char</span> *str) { write(str, strlen(str)); }</div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>  <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    StringHolderPtr mData;</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>};</div>
-</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    <span class="keywordtype">bool</span> operator&lt;(<span class="keyword">const</span> <a class="code hl_class" href="class_str_n.html">StrN</a> &amp;other)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        <span class="keywordflow">return</span> strcmp(c_str(), other.c_str()) &lt; 0;</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    }</div>
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span> </div>
-<div class="foldopen" id="foldopen00216" data-start="{" data-end="};">
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno"><a class="line" href="class_str.html">  216</a></span><span class="keyword">class </span><a class="code hl_class" href="class_str.html">Str</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_str_n.html">StrN</a>&lt;FASTLED_STR_INLINED_SIZE&gt; {</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    <a class="code hl_class" href="class_str.html">Str</a>() : <a class="code hl_class" href="class_str_n.html">StrN&lt;FASTLED_STR_INLINED_SIZE&gt;</a>() {}</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    <a class="code hl_class" href="class_str.html">Str</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *str) : <a class="code hl_class" href="class_str_n.html">StrN&lt;FASTLED_STR_INLINED_SIZE&gt;</a>(str) {}</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    <a class="code hl_class" href="class_str.html">Str</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_str.html">Str</a> &amp;other) : <a class="code hl_class" href="class_str_n.html">StrN&lt;FASTLED_STR_INLINED_SIZE&gt;</a>(other) {}</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    <span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> M&gt;</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    <a class="code hl_class" href="class_str.html">Str</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_str_n.html">StrN&lt;M&gt;</a> &amp;other) : <a class="code hl_class" href="class_str_n.html">StrN&lt;FASTLED_STR_INLINED_SIZE&gt;</a>(other) {}</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    <a class="code hl_class" href="class_str.html">Str</a> &amp;operator=(<span class="keyword">const</span> <a class="code hl_class" href="class_str.html">Str</a> &amp;other) {</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>        copy(other);</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    }</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>};</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    <span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> M&gt; <span class="keywordtype">bool</span> operator&lt;(<span class="keyword">const</span> <a class="code hl_class" href="class_str_n.html">StrN&lt;M&gt;</a> &amp;other)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        <span class="keywordflow">return</span> strcmp(c_str(), other.c_str()) &lt; 0;</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    }</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    StringHolderRef mData;</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>};</div>
 </div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>FASTLED_NAMESPACE_END</div>
-<div class="ttc" id="aclass_referent_html"><div class="ttname"><a href="class_referent.html">Referent</a></div><div class="ttdef"><b>Definition</b> <a href="ptr_8h_source.html#l00382">ptr.h:382</a></div></div>
-<div class="ttc" id="aclass_str_html"><div class="ttname"><a href="class_str.html">Str</a></div><div class="ttdef"><b>Definition</b> <a href="#l00216">str.h:216</a></div></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
+<div class="foldopen" id="foldopen00224" data-start="{" data-end="};">
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno"><a class="line" href="class_str.html">  224</a></span><span class="keyword">class </span><a class="code hl_class" href="class_str.html">Str</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_str_n.html">StrN</a>&lt;FASTLED_STR_INLINED_SIZE&gt; {</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    <a class="code hl_class" href="class_str.html">Str</a>() : <a class="code hl_class" href="class_str_n.html">StrN&lt;FASTLED_STR_INLINED_SIZE&gt;</a>() {}</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    <a class="code hl_class" href="class_str.html">Str</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *str) : <a class="code hl_class" href="class_str_n.html">StrN&lt;FASTLED_STR_INLINED_SIZE&gt;</a>(str) {}</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    <a class="code hl_class" href="class_str.html">Str</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_str.html">Str</a> &amp;other) : <a class="code hl_class" href="class_str_n.html">StrN&lt;FASTLED_STR_INLINED_SIZE&gt;</a>(other) {}</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    <span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> M&gt;</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    <a class="code hl_class" href="class_str.html">Str</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_str_n.html">StrN&lt;M&gt;</a> &amp;other) : <a class="code hl_class" href="class_str_n.html">StrN&lt;FASTLED_STR_INLINED_SIZE&gt;</a>(other) {}</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    <a class="code hl_class" href="class_str.html">Str</a> &amp;operator=(<span class="keyword">const</span> <a class="code hl_class" href="class_str.html">Str</a> &amp;other) {</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        copy(other);</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    }</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>};</div>
+</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>FASTLED_NAMESPACE_END</div>
+<div class="ttc" id="aclass_referent_html"><div class="ttname"><a href="class_referent.html">Referent</a></div><div class="ttdef"><b>Definition</b> <a href="ref_8h_source.html#l00387">ref.h:387</a></div></div>
+<div class="ttc" id="aclass_str_html"><div class="ttname"><a href="class_str.html">Str</a></div><div class="ttdef"><b>Definition</b> <a href="#l00224">str.h:224</a></div></div>
 <div class="ttc" id="aclass_str_n_html"><div class="ttname"><a href="class_str_n.html">StrN</a></div><div class="ttdef"><b>Definition</b> <a href="#l00059">str.h:59</a></div></div>
 <div class="ttc" id="aclass_string_formatter_html"><div class="ttname"><a href="class_string_formatter.html">StringFormatter</a></div><div class="ttdef"><b>Definition</b> <a href="#l00035">str.h:35</a></div></div>
 <div class="ttc" id="aclass_string_holder_html"><div class="ttname"><a href="class_string_holder.html">StringHolder</a></div><div class="ttdef"><b>Definition</b> <a href="#l00040">str.h:40</a></div></div>
@@ -355,7 +363,7 @@ $(function(){initNavTree('str_8h_source.html',''); initResizable(true); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><b>str.h</b></li>
-    <li class="footer">Generated on Sun Oct 27 2024 23:51:50 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Oct 30 2024 03:59:41 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

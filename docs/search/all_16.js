@@ -7,5 +7,5 @@ var searchData=
   ['videofx_4',['VideoFx',['../class_video_fx.html',1,'']]],
   ['videostream_5',['VideoStream',['../class_video_stream.html',1,'']]],
   ['violet_6',['Violet',['../group___pixel_types.html#ggaeb40a08b7cb90c1e21bd408261558b99a08966db6d19bc731401bec166936580b',1,'CRGB']]],
-  ['visitor_7',['Visitor',['../struct_file_reader_1_1_visitor.html',1,'FileReader']]]
+  ['visitor_7',['Visitor',['../struct_fs_impl_1_1_visitor.html',1,'FsImpl']]]
 ];

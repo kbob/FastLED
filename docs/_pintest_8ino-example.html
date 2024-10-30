@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.0</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.1</span>
    </div>
   </td>
  </tr>
@@ -113,88 +113,88 @@ $(function(){initNavTree('_pintest_8ino-example.html',''); initResizable(true); 
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">char</span> fullstrBuffer[64];</div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">const</span> <span class="keywordtype">char</span> *getPort(<span class="keywordtype">void</span> *portPtr) {</div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">char</span> *getPort(<span class="keywordtype">void</span> *portRef) {</div>
 <div class="line"><span class="comment">// AVR port checks</span></div>
 <div class="line"><span class="preprocessor">#ifdef PORTA</span></div>
-<div class="line">    <span class="keywordflow">if</span>(portPtr == (<span class="keywordtype">void</span>*)&amp;PORTA) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;PORTA&quot;</span>; }</div>
+<div class="line">    <span class="keywordflow">if</span>(portRef == (<span class="keywordtype">void</span>*)&amp;PORTA) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;PORTA&quot;</span>; }</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="preprocessor">#ifdef PORTB</span></div>
-<div class="line">    <span class="keywordflow">if</span>(portPtr == (<span class="keywordtype">void</span>*)&amp;PORTB) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;PORTB&quot;</span>; }</div>
+<div class="line">    <span class="keywordflow">if</span>(portRef == (<span class="keywordtype">void</span>*)&amp;PORTB) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;PORTB&quot;</span>; }</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="preprocessor">#ifdef PORTC</span></div>
-<div class="line">    <span class="keywordflow">if</span>(portPtr == (<span class="keywordtype">void</span>*)&amp;PORTC) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;PORTC&quot;</span>; }</div>
+<div class="line">    <span class="keywordflow">if</span>(portRef == (<span class="keywordtype">void</span>*)&amp;PORTC) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;PORTC&quot;</span>; }</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="preprocessor">#ifdef PORTD</span></div>
-<div class="line">    <span class="keywordflow">if</span>(portPtr == (<span class="keywordtype">void</span>*)&amp;PORTD) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;PORTD&quot;</span>; }</div>
+<div class="line">    <span class="keywordflow">if</span>(portRef == (<span class="keywordtype">void</span>*)&amp;PORTD) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;PORTD&quot;</span>; }</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="preprocessor">#ifdef PORTE</span></div>
-<div class="line">    <span class="keywordflow">if</span>(portPtr == (<span class="keywordtype">void</span>*)&amp;PORTE) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;PORTE&quot;</span>; }</div>
+<div class="line">    <span class="keywordflow">if</span>(portRef == (<span class="keywordtype">void</span>*)&amp;PORTE) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;PORTE&quot;</span>; }</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="preprocessor">#ifdef PORTF</span></div>
-<div class="line">    <span class="keywordflow">if</span>(portPtr == (<span class="keywordtype">void</span>*)&amp;PORTF) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;PORTF&quot;</span>; }</div>
+<div class="line">    <span class="keywordflow">if</span>(portRef == (<span class="keywordtype">void</span>*)&amp;PORTF) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;PORTF&quot;</span>; }</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="preprocessor">#ifdef PORTG</span></div>
-<div class="line">    <span class="keywordflow">if</span>(portPtr == (<span class="keywordtype">void</span>*)&amp;PORTG) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;PORTG&quot;</span>; }</div>
+<div class="line">    <span class="keywordflow">if</span>(portRef == (<span class="keywordtype">void</span>*)&amp;PORTG) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;PORTG&quot;</span>; }</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="preprocessor">#ifdef PORTH</span></div>
-<div class="line">    <span class="keywordflow">if</span>(portPtr == (<span class="keywordtype">void</span>*)&amp;PORTH) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;PORTH&quot;</span>; }</div>
+<div class="line">    <span class="keywordflow">if</span>(portRef == (<span class="keywordtype">void</span>*)&amp;PORTH) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;PORTH&quot;</span>; }</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="preprocessor">#ifdef PORTI</span></div>
-<div class="line">    <span class="keywordflow">if</span>(portPtr == (<span class="keywordtype">void</span>*)&amp;PORTI) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;PORTI&quot;</span>; }</div>
+<div class="line">    <span class="keywordflow">if</span>(portRef == (<span class="keywordtype">void</span>*)&amp;PORTI) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;PORTI&quot;</span>; }</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="preprocessor">#ifdef PORTJ</span></div>
-<div class="line">    <span class="keywordflow">if</span>(portPtr == (<span class="keywordtype">void</span>*)&amp;PORTJ) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;PORTJ&quot;</span>; }</div>
+<div class="line">    <span class="keywordflow">if</span>(portRef == (<span class="keywordtype">void</span>*)&amp;PORTJ) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;PORTJ&quot;</span>; }</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="preprocessor">#ifdef PORTK</span></div>
-<div class="line">    <span class="keywordflow">if</span>(portPtr == (<span class="keywordtype">void</span>*)&amp;PORTK) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;PORTK&quot;</span>; }</div>
+<div class="line">    <span class="keywordflow">if</span>(portRef == (<span class="keywordtype">void</span>*)&amp;PORTK) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;PORTK&quot;</span>; }</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="preprocessor">#ifdef PORTL</span></div>
-<div class="line">    <span class="keywordflow">if</span>(portPtr == (<span class="keywordtype">void</span>*)&amp;PORTL) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;PORTL&quot;</span>; }</div>
+<div class="line">    <span class="keywordflow">if</span>(portRef == (<span class="keywordtype">void</span>*)&amp;PORTL) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;PORTL&quot;</span>; }</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Teensy 3.x port checks</span></div>
 <div class="line"><span class="preprocessor">#ifdef GPIO_A_PDOR</span></div>
-<div class="line">    <span class="keywordflow">if</span>(portPtr == (<span class="keywordtype">void</span>*)&amp;GPIO_A_PDOR) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;GPIO_A_PDOR&quot;</span>; }</div>
+<div class="line">    <span class="keywordflow">if</span>(portRef == (<span class="keywordtype">void</span>*)&amp;GPIO_A_PDOR) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;GPIO_A_PDOR&quot;</span>; }</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="preprocessor">#ifdef GPIO_B_PDOR</span></div>
-<div class="line">    <span class="keywordflow">if</span>(portPtr == (<span class="keywordtype">void</span>*)&amp;GPIO_B_PDOR) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;GPIO_B_PDOR&quot;</span>; }</div>
+<div class="line">    <span class="keywordflow">if</span>(portRef == (<span class="keywordtype">void</span>*)&amp;GPIO_B_PDOR) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;GPIO_B_PDOR&quot;</span>; }</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="preprocessor">#ifdef GPIO_C_PDOR</span></div>
-<div class="line">    <span class="keywordflow">if</span>(portPtr == (<span class="keywordtype">void</span>*)&amp;GPIO_C_PDOR) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;GPIO_C_PDOR&quot;</span>; }</div>
+<div class="line">    <span class="keywordflow">if</span>(portRef == (<span class="keywordtype">void</span>*)&amp;GPIO_C_PDOR) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;GPIO_C_PDOR&quot;</span>; }</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="preprocessor">#ifdef GPIO_D_PDOR</span></div>
-<div class="line">    <span class="keywordflow">if</span>(portPtr == (<span class="keywordtype">void</span>*)&amp;GPIO_D_PDOR) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;GPIO_D_PDOR&quot;</span>; }</div>
+<div class="line">    <span class="keywordflow">if</span>(portRef == (<span class="keywordtype">void</span>*)&amp;GPIO_D_PDOR) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;GPIO_D_PDOR&quot;</span>; }</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="preprocessor">#ifdef GPIO_E_PDOR</span></div>
-<div class="line">    <span class="keywordflow">if</span>(portPtr == (<span class="keywordtype">void</span>*)&amp;GPIO_E_PDOR) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;GPIO_E_PDOR&quot;</span>; }</div>
+<div class="line">    <span class="keywordflow">if</span>(portRef == (<span class="keywordtype">void</span>*)&amp;GPIO_E_PDOR) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;GPIO_E_PDOR&quot;</span>; }</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="preprocessor">#ifdef REG_PIO_A_ODSR</span></div>
-<div class="line">    <span class="keywordflow">if</span>(portPtr == (<span class="keywordtype">void</span>*)&amp;REG_PIO_A_ODSR) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;REG_PIO_A_ODSR&quot;</span>; }</div>
+<div class="line">    <span class="keywordflow">if</span>(portRef == (<span class="keywordtype">void</span>*)&amp;REG_PIO_A_ODSR) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;REG_PIO_A_ODSR&quot;</span>; }</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="preprocessor">#ifdef REG_PIO_B_ODSR</span></div>
-<div class="line">    <span class="keywordflow">if</span>(portPtr == (<span class="keywordtype">void</span>*)&amp;REG_PIO_B_ODSR) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;REG_PIO_B_ODSR&quot;</span>; }</div>
+<div class="line">    <span class="keywordflow">if</span>(portRef == (<span class="keywordtype">void</span>*)&amp;REG_PIO_B_ODSR) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;REG_PIO_B_ODSR&quot;</span>; }</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="preprocessor">#ifdef REG_PIO_C_ODSR</span></div>
-<div class="line">    <span class="keywordflow">if</span>(portPtr == (<span class="keywordtype">void</span>*)&amp;REG_PIO_C_ODSR) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;REG_PIO_C_ODSR&quot;</span>; }</div>
+<div class="line">    <span class="keywordflow">if</span>(portRef == (<span class="keywordtype">void</span>*)&amp;REG_PIO_C_ODSR) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;REG_PIO_C_ODSR&quot;</span>; }</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="preprocessor">#ifdef REG_PIO_D_ODSR</span></div>
-<div class="line">    <span class="keywordflow">if</span>(portPtr == (<span class="keywordtype">void</span>*)&amp;REG_PIO_D_ODSR) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;REG_PIO_D_ODSR&quot;</span>; }</div>
+<div class="line">    <span class="keywordflow">if</span>(portRef == (<span class="keywordtype">void</span>*)&amp;REG_PIO_D_ODSR) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;REG_PIO_D_ODSR&quot;</span>; }</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Teensy 4 port checks</span></div>
 <div class="line"><span class="preprocessor">#ifdef GPIO1_DR</span></div>
-<div class="line">    <span class="keywordflow">if</span>(portPtr == (<span class="keywordtype">void</span>*)&amp;GPIO1_DR) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;GPIO1_DR&quot;</span>; }</div>
+<div class="line">    <span class="keywordflow">if</span>(portRef == (<span class="keywordtype">void</span>*)&amp;GPIO1_DR) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;GPIO1_DR&quot;</span>; }</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="preprocessor">#ifdef GPIO2_DR</span></div>
-<div class="line"><span class="keywordflow">if</span>(portPtr == (<span class="keywordtype">void</span>*)&amp;GPIO2_DR) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;GPIO21_DR&quot;</span>; }</div>
+<div class="line"><span class="keywordflow">if</span>(portRef == (<span class="keywordtype">void</span>*)&amp;GPIO2_DR) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;GPIO21_DR&quot;</span>; }</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="preprocessor">#ifdef GPIO3_DR</span></div>
-<div class="line"><span class="keywordflow">if</span>(portPtr == (<span class="keywordtype">void</span>*)&amp;GPIO3_DR) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;GPIO3_DR&quot;</span>; }</div>
+<div class="line"><span class="keywordflow">if</span>(portRef == (<span class="keywordtype">void</span>*)&amp;GPIO3_DR) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;GPIO3_DR&quot;</span>; }</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="preprocessor">#ifdef GPIO4_DR</span></div>
-<div class="line"><span class="keywordflow">if</span>(portPtr == (<span class="keywordtype">void</span>*)&amp;GPIO4_DR) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;GPIO4_DR&quot;</span>; }</div>
+<div class="line"><span class="keywordflow">if</span>(portRef == (<span class="keywordtype">void</span>*)&amp;GPIO4_DR) { <span class="keywordflow">return</span> <span class="stringliteral">&quot;GPIO4_DR&quot;</span>; }</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
-<div class="line">  String unknown_str = <span class="stringliteral">&quot;Unknown: &quot;</span> + String((<span class="keywordtype">size_t</span>)portPtr, HEX);</div>
+<div class="line">  String unknown_str = <span class="stringliteral">&quot;Unknown: &quot;</span> + String((<span class="keywordtype">size_t</span>)portRef, HEX);</div>
 <div class="line">    strncpy(fullstrBuffer, unknown_str.c_str(), unknown_str.length());</div>
 <div class="line">    fullstrBuffer[<span class="keyword">sizeof</span>(fullstrBuffer)-1] = <span class="charliteral">&#39;\0&#39;</span>;</div>
 <div class="line">    <span class="keywordflow">return</span> fullstrBuffer;</div>
@@ -317,7 +317,7 @@ $(function(){initNavTree('_pintest_8ino-example.html',''); initResizable(true); 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Oct 27 2024 23:51:50 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Oct 30 2024 03:59:40 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

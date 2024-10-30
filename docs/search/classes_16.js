@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['weakptr_0',['WeakPtr',['../class_weak_ptr.html',1,'']]],
+  ['weakref_0',['WeakRef',['../class_weak_ref.html',1,'']]],
   ['weakreferent_1',['WeakReferent',['../class_weak_referent.html',1,'']]],
   ['ws2801controller_2',['WS2801Controller',['../class_w_s2801_controller.html',1,'']]],
   ['ws2801controller_3c_20data_5fpin_2c_20clock_5fpin_2c_20rgb_2c_20data_5frate_5fmhz_2825_29_20_3e_3',['WS2801Controller&lt; DATA_PIN, CLOCK_PIN, RGB, DATA_RATE_MHZ(25) &gt;',['../class_w_s2801_controller.html',1,'']]],

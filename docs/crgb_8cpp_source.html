@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.0</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.1</span>
    </div>
   </td>
  </tr>
@@ -112,51 +112,57 @@ $(function(){initNavTree('crgb_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;crgb.h&quot;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="math8_8h.html">lib8tion/math8.h</a>&quot;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="foldopen" id="foldopen00006" data-start="{" data-end="}">
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="group___pixel_types.html#ga65e166b90fb7b4aecd2b26a987e312e3">    6</a></span><a class="code hl_struct" href="struct_c_r_g_b.html">CRGB</a> <a class="code hl_function" href="group___pixel_types.html#ga65e166b90fb7b4aecd2b26a987e312e3">CRGB::computeAdjustment</a>(uint8_t scale, <span class="keyword">const</span> <a class="code hl_struct" href="struct_c_r_g_b.html">CRGB</a> &amp; colorCorrection, <span class="keyword">const</span> <a class="code hl_struct" href="struct_c_r_g_b.html">CRGB</a> &amp; colorTemperature) {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">    #if defined(NO_CORRECTION) &amp;&amp; (NO_CORRECTION==1)</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="group___pixel_types.html#ga08d8e05a3fcdb88dedb886cad9cbd3fa">CRGB</a>(scale,scale,scale);</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">    #else</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>            <a class="code hl_struct" href="struct_c_r_g_b.html">CRGB</a> adj(0,0,0);</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>            <span class="keywordflow">if</span>(scale &gt; 0) {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>                <span class="keywordflow">for</span>(uint8_t i = 0; i &lt; 3; ++i) {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>                    uint8_t cc = colorCorrection.<a class="code hl_variable" href="group___pixel_types.html#ga2b232c5686b0f150273a230ff53665ea">raw</a>[i];</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>                    uint8_t ct = colorTemperature.<a class="code hl_variable" href="group___pixel_types.html#ga2b232c5686b0f150273a230ff53665ea">raw</a>[i];</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>                    <span class="keywordflow">if</span>(cc &gt; 0 &amp;&amp; ct &gt; 0) {</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>                        <span class="comment">// Optimized for AVR size. This function is only called very infrequently so size</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                        <span class="comment">// matters more than speed.</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>                        uint32_t work = (((uint16_t)cc)+1);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                        work *= (((uint16_t)ct)+1);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                        work *= scale;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                        work /= 0x10000L;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                        adj.<a class="code hl_variable" href="group___pixel_types.html#ga2b232c5686b0f150273a230ff53665ea">raw</a>[i] = work &amp; 0xFF;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                    }</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                }</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            }</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <span class="keywordflow">return</span> adj;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">    #endif</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>}</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;namespace.h&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>FASTLED_NAMESPACE_BEGIN</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="}">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="group___pixel_types.html#ga65e166b90fb7b4aecd2b26a987e312e3">   10</a></span><a class="code hl_struct" href="struct_c_r_g_b.html">CRGB</a> <a class="code hl_function" href="group___pixel_types.html#ga65e166b90fb7b4aecd2b26a987e312e3">CRGB::computeAdjustment</a>(uint8_t scale, <span class="keyword">const</span> <a class="code hl_struct" href="struct_c_r_g_b.html">CRGB</a> &amp; colorCorrection, <span class="keyword">const</span> <a class="code hl_struct" href="struct_c_r_g_b.html">CRGB</a> &amp; colorTemperature) {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">    #if defined(NO_CORRECTION) &amp;&amp; (NO_CORRECTION==1)</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="group___pixel_types.html#ga08d8e05a3fcdb88dedb886cad9cbd3fa">CRGB</a>(scale,scale,scale);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">    #else</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            <a class="code hl_struct" href="struct_c_r_g_b.html">CRGB</a> adj(0,0,0);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            <span class="keywordflow">if</span>(scale &gt; 0) {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>                <span class="keywordflow">for</span>(uint8_t i = 0; i &lt; 3; ++i) {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                    uint8_t cc = colorCorrection.<a class="code hl_variable" href="group___pixel_types.html#ga2b232c5686b0f150273a230ff53665ea">raw</a>[i];</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>                    uint8_t ct = colorTemperature.<a class="code hl_variable" href="group___pixel_types.html#ga2b232c5686b0f150273a230ff53665ea">raw</a>[i];</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                    <span class="keywordflow">if</span>(cc &gt; 0 &amp;&amp; ct &gt; 0) {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                        <span class="comment">// Optimized for AVR size. This function is only called very infrequently so size</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                        <span class="comment">// matters more than speed.</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                        uint32_t work = (((uint16_t)cc)+1);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                        work *= (((uint16_t)ct)+1);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                        work *= scale;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                        work /= 0x10000L;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                        adj.<a class="code hl_variable" href="group___pixel_types.html#ga2b232c5686b0f150273a230ff53665ea">raw</a>[i] = work &amp; 0xFF;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                    }</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                }</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <span class="keywordflow">return</span> adj;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
 </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><a class="code hl_struct" href="struct_c_r_g_b.html">CRGB</a> CRGB::blend(<span class="keyword">const</span> <a class="code hl_struct" href="struct_c_r_g_b.html">CRGB</a>&amp; p1, <span class="keyword">const</span> <a class="code hl_struct" href="struct_c_r_g_b.html">CRGB</a>&amp; p2, <a class="code hl_typedef" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> amountOfP2) {</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group___pixel_types.html#ga08d8e05a3fcdb88dedb886cad9cbd3fa">CRGB</a>(</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <a class="code hl_function" href="group___math.html#ga9a604de042246d6c87fdbfdd5578f377">blend8</a>(p1.<a class="code hl_variable" href="group___pixel_types.html#ga2f664317f80358ba808cfab70a764e5d">r</a>, p2.<a class="code hl_variable" href="group___pixel_types.html#ga2f664317f80358ba808cfab70a764e5d">r</a>, amountOfP2),</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <a class="code hl_function" href="group___math.html#ga9a604de042246d6c87fdbfdd5578f377">blend8</a>(p1.<a class="code hl_variable" href="group___pixel_types.html#ga8827262477c0f018583263fdbfe9a3f4">g</a>, p2.<a class="code hl_variable" href="group___pixel_types.html#ga8827262477c0f018583263fdbfe9a3f4">g</a>, amountOfP2),</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <a class="code hl_function" href="group___math.html#ga9a604de042246d6c87fdbfdd5578f377">blend8</a>(p1.<a class="code hl_variable" href="group___pixel_types.html#gaa3ca469ee3a18e04896b0b1da5a1d66d">b</a>, p2.<a class="code hl_variable" href="group___pixel_types.html#gaa3ca469ee3a18e04896b0b1da5a1d66d">b</a>, amountOfP2)</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    );</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>}</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><a class="code hl_struct" href="struct_c_r_g_b.html">CRGB</a> CRGB::blend(<span class="keyword">const</span> <a class="code hl_struct" href="struct_c_r_g_b.html">CRGB</a>&amp; p1, <span class="keyword">const</span> <a class="code hl_struct" href="struct_c_r_g_b.html">CRGB</a>&amp; p2, <a class="code hl_typedef" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> amountOfP2) {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group___pixel_types.html#ga08d8e05a3fcdb88dedb886cad9cbd3fa">CRGB</a>(</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <a class="code hl_function" href="group___math.html#ga9a604de042246d6c87fdbfdd5578f377">blend8</a>(p1.<a class="code hl_variable" href="group___pixel_types.html#ga2f664317f80358ba808cfab70a764e5d">r</a>, p2.<a class="code hl_variable" href="group___pixel_types.html#ga2f664317f80358ba808cfab70a764e5d">r</a>, amountOfP2),</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <a class="code hl_function" href="group___math.html#ga9a604de042246d6c87fdbfdd5578f377">blend8</a>(p1.<a class="code hl_variable" href="group___pixel_types.html#ga8827262477c0f018583263fdbfe9a3f4">g</a>, p2.<a class="code hl_variable" href="group___pixel_types.html#ga8827262477c0f018583263fdbfe9a3f4">g</a>, amountOfP2),</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <a class="code hl_function" href="group___math.html#ga9a604de042246d6c87fdbfdd5578f377">blend8</a>(p1.<a class="code hl_variable" href="group___pixel_types.html#gaa3ca469ee3a18e04896b0b1da5a1d66d">b</a>, p2.<a class="code hl_variable" href="group___pixel_types.html#gaa3ca469ee3a18e04896b0b1da5a1d66d">b</a>, amountOfP2)</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    );</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>FASTLED_NAMESPACE_END</div>
 <div class="ttc" id="a_fast_l_e_d_8h_html"><div class="ttname"><a href="_fast_l_e_d_8h.html">FastLED.h</a></div><div class="ttdoc">central include file for FastLED, defines the CFastLED class/object</div></div>
 <div class="ttc" id="agroup___fractional_types_html_ga5d6d013429a5b8a09d564d6137217644"><div class="ttname"><a href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a></div><div class="ttdeci">uint8_t fract8</div><div class="ttdoc">ANSI: unsigned short _Fract.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_2types_8h_source.html#l00030">types.h:30</a></div></div>
-<div class="ttc" id="agroup___math_html_ga9a604de042246d6c87fdbfdd5578f377"><div class="ttname"><a href="group___math.html#ga9a604de042246d6c87fdbfdd5578f377">blend8</a></div><div class="ttdeci">LIB8STATIC uint8_t blend8(uint8_t a, uint8_t b, uint8_t amountOfB)</div><div class="ttdoc">Blend a variable proportion (0-255) of one byte to another.</div><div class="ttdef"><b>Definition</b> <a href="math8_8h_source.html#l00665">math8.h:665</a></div></div>
+<div class="ttc" id="agroup___math_html_ga9a604de042246d6c87fdbfdd5578f377"><div class="ttname"><a href="group___math.html#ga9a604de042246d6c87fdbfdd5578f377">blend8</a></div><div class="ttdeci">LIB8STATIC uint8_t blend8(uint8_t a, uint8_t b, uint8_t amountOfB)</div><div class="ttdoc">Blend a variable proportion (0-255) of one byte to another.</div><div class="ttdef"><b>Definition</b> <a href="math8_8h_source.html#l00667">math8.h:667</a></div></div>
 <div class="ttc" id="agroup___pixel_types_html_ga08d8e05a3fcdb88dedb886cad9cbd3fa"><div class="ttname"><a href="group___pixel_types.html#ga08d8e05a3fcdb88dedb886cad9cbd3fa">CRGB::CRGB</a></div><div class="ttdeci">FASTLED_FORCE_INLINE CRGB()=default</div><div class="ttdoc">Default constructor.</div></div>
-<div class="ttc" id="agroup___pixel_types_html_ga2b232c5686b0f150273a230ff53665ea"><div class="ttname"><a href="group___pixel_types.html#ga2b232c5686b0f150273a230ff53665ea">CRGB::raw</a></div><div class="ttdeci">uint8_t raw[3]</div><div class="ttdoc">Access the red, green, and blue data as an array.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00056">crgb.h:56</a></div></div>
-<div class="ttc" id="agroup___pixel_types_html_ga2f664317f80358ba808cfab70a764e5d"><div class="ttname"><a href="group___pixel_types.html#ga2f664317f80358ba808cfab70a764e5d">CRGB::r</a></div><div class="ttdeci">uint8_t r</div><div class="ttdoc">Red channel value.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00039">crgb.h:39</a></div></div>
-<div class="ttc" id="agroup___pixel_types_html_ga65e166b90fb7b4aecd2b26a987e312e3"><div class="ttname"><a href="group___pixel_types.html#ga65e166b90fb7b4aecd2b26a987e312e3">CRGB::computeAdjustment</a></div><div class="ttdeci">static CRGB computeAdjustment(uint8_t scale, const CRGB &amp;colorCorrection, const CRGB &amp;colorTemperature)</div><div class="ttdoc">Calculates the combined color adjustment to the LEDs at a given scale, color correction,...</div><div class="ttdef"><b>Definition</b> <a href="#l00006">crgb.cpp:6</a></div></div>
-<div class="ttc" id="agroup___pixel_types_html_ga8827262477c0f018583263fdbfe9a3f4"><div class="ttname"><a href="group___pixel_types.html#ga8827262477c0f018583263fdbfe9a3f4">CRGB::g</a></div><div class="ttdeci">uint8_t g</div><div class="ttdoc">Green channel value.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00043">crgb.h:43</a></div></div>
-<div class="ttc" id="agroup___pixel_types_html_gaa3ca469ee3a18e04896b0b1da5a1d66d"><div class="ttname"><a href="group___pixel_types.html#gaa3ca469ee3a18e04896b0b1da5a1d66d">CRGB::b</a></div><div class="ttdeci">uint8_t b</div><div class="ttdoc">Blue channel value.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00047">crgb.h:47</a></div></div>
+<div class="ttc" id="agroup___pixel_types_html_ga2b232c5686b0f150273a230ff53665ea"><div class="ttname"><a href="group___pixel_types.html#ga2b232c5686b0f150273a230ff53665ea">CRGB::raw</a></div><div class="ttdeci">uint8_t raw[3]</div><div class="ttdoc">Access the red, green, and blue data as an array.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00059">crgb.h:59</a></div></div>
+<div class="ttc" id="agroup___pixel_types_html_ga2f664317f80358ba808cfab70a764e5d"><div class="ttname"><a href="group___pixel_types.html#ga2f664317f80358ba808cfab70a764e5d">CRGB::r</a></div><div class="ttdeci">uint8_t r</div><div class="ttdoc">Red channel value.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00042">crgb.h:42</a></div></div>
+<div class="ttc" id="agroup___pixel_types_html_ga65e166b90fb7b4aecd2b26a987e312e3"><div class="ttname"><a href="group___pixel_types.html#ga65e166b90fb7b4aecd2b26a987e312e3">CRGB::computeAdjustment</a></div><div class="ttdeci">static CRGB computeAdjustment(uint8_t scale, const CRGB &amp;colorCorrection, const CRGB &amp;colorTemperature)</div><div class="ttdoc">Calculates the combined color adjustment to the LEDs at a given scale, color correction,...</div><div class="ttdef"><b>Definition</b> <a href="#l00010">crgb.cpp:10</a></div></div>
+<div class="ttc" id="agroup___pixel_types_html_ga8827262477c0f018583263fdbfe9a3f4"><div class="ttname"><a href="group___pixel_types.html#ga8827262477c0f018583263fdbfe9a3f4">CRGB::g</a></div><div class="ttdeci">uint8_t g</div><div class="ttdoc">Green channel value.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00046">crgb.h:46</a></div></div>
+<div class="ttc" id="agroup___pixel_types_html_gaa3ca469ee3a18e04896b0b1da5a1d66d"><div class="ttname"><a href="group___pixel_types.html#gaa3ca469ee3a18e04896b0b1da5a1d66d">CRGB::b</a></div><div class="ttdeci">uint8_t b</div><div class="ttdoc">Blue channel value.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00050">crgb.h:50</a></div></div>
 <div class="ttc" id="amath8_8h_html"><div class="ttname"><a href="math8_8h.html">math8.h</a></div><div class="ttdoc">Fast, efficient 8-bit math functions specifically designed for high-performance LED programming.</div></div>
-<div class="ttc" id="astruct_c_r_g_b_html"><div class="ttname"><a href="struct_c_r_g_b.html">CRGB</a></div><div class="ttdoc">Representation of an RGB pixel (Red, Green, Blue)</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00035">crgb.h:35</a></div></div>
+<div class="ttc" id="astruct_c_r_g_b_html"><div class="ttname"><a href="struct_c_r_g_b.html">CRGB</a></div><div class="ttdoc">Representation of an RGB pixel (Red, Green, Blue)</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00038">crgb.h:38</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.3-->
@@ -164,7 +170,7 @@ $(function(){initNavTree('crgb_8cpp_source.html',''); initResizable(true); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><b>crgb.cpp</b></li>
-    <li class="footer">Generated on Sun Oct 27 2024 23:51:50 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Oct 30 2024 03:59:40 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

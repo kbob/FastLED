@@ -67,16 +67,6 @@ var searchData=
   ['pride2015_64',['Pride2015',['../class_pride2015.html',1,'']]],
   ['pride2015_2ehpp_65',['pride2015.hpp',['../pride2015_8hpp.html',1,'']]],
   ['psmartmatrix_66',['pSmartMatrix',['../_fast_l_e_d_8cpp.html#a0d0cd1944c11e20c7382f56e673339c8',1,'FastLED.cpp']]],
-  ['ptr_67',['Ptr',['../class_ptr.html',1,'']]],
-  ['ptr_3c_20frame_20_3e_68',['Ptr&lt; Frame &gt;',['../class_ptr.html',1,'']]],
-  ['ptr_3c_20fx_20_3e_69',['Ptr&lt; Fx &gt;',['../class_ptr.html',1,'']]],
-  ['ptr_3c_20fxgrid_20_3e_70',['Ptr&lt; FxGrid &gt;',['../class_ptr.html',1,'']]],
-  ['ptr_3c_20weakreferent_20_3e_71',['Ptr&lt; WeakReferent &gt;',['../class_ptr.html',1,'']]],
-  ['ptr_5freg32_5ft_72',['ptr_reg32_t',['../fastpin_8h.html#a3459200771dcb25906c9fe4857e76af7',1,'fastpin.h']]],
-  ['ptrtraits_73',['PtrTraits',['../class_ptr_traits.html',1,'']]],
-  ['ptrtraits_3c_20frame_20_3e_74',['PtrTraits&lt; Frame &gt;',['../class_ptr_traits.html',1,'']]],
-  ['ptrtraits_3c_20fx_20_3e_75',['PtrTraits&lt; Fx &gt;',['../class_ptr_traits.html',1,'']]],
-  ['ptrtraits_3c_20fxgrid_20_3e_76',['PtrTraits&lt; FxGrid &gt;',['../class_ptr_traits.html',1,'']]],
-  ['ptrtraits_3c_20weakreferent_20_3e_77',['PtrTraits&lt; WeakReferent &gt;',['../class_ptr_traits.html',1,'']]],
-  ['purple_78',['Purple',['../group___pixel_types.html#ggaeb40a08b7cb90c1e21bd408261558b99a3ed9005a846adca7aace9c4779491093',1,'CRGB']]]
+  ['ptr_5freg32_5ft_67',['ptr_reg32_t',['../fastpin_8h.html#a3459200771dcb25906c9fe4857e76af7',1,'fastpin.h']]],
+  ['purple_68',['Purple',['../group___pixel_types.html#ggaeb40a08b7cb90c1e21bd408261558b99a3ed9005a846adca7aace9c4779491093',1,'CRGB']]]
 ];

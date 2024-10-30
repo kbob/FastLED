@@ -1,12 +1,13 @@
 var hierarchy =
 [
     [ "__FL_PORT_INFO< port >", "struct_____f_l___p_o_r_t___i_n_f_o.html", null ],
+    [ "_DrawContext", "struct___draw_context.html", null ],
     [ "animartrix_detail::ANIMartRIX", "classanimartrix__detail_1_1_a_n_i_mart_r_i_x.html", [
       [ "FastLEDANIMartRIX", "class_fast_l_e_d_a_n_i_mart_r_i_x.html", null ]
     ] ],
     [ "ArrayDeleter< T >", "struct_array_deleter.html", null ],
     [ "ArrayDeleter< CRGB >", "struct_array_deleter.html", null ],
-    [ "ArrayDeleter< FramePtr >", "struct_array_deleter.html", null ],
+    [ "ArrayDeleter< FrameRef >", "struct_array_deleter.html", null ],
     [ "ArrayDeleter< uint8_t >", "struct_array_deleter.html", null ],
     [ "AVRSoftwareSPIOutput< DATA_PIN, CLOCK_PIN, SPI_SPEED >", "class_a_v_r_software_s_p_i_output.html", null ],
     [ "AVRSoftwareSPIOutput< _DATA_PIN, _CLOCK_PIN, _SPI_CLOCK_DIVIDER >", "class_a_v_r_software_s_p_i_output.html", [
@@ -31,7 +32,7 @@ var hierarchy =
     [ "CHSVPalette256", "class_c_h_s_v_palette256.html", null ],
     [ "CHSVPalette32", "class_c_h_s_v_palette32.html", null ],
     [ "CircularBuffer< T >", "class_circular_buffer.html", null ],
-    [ "CircularBuffer< FramePtr >", "class_circular_buffer.html", null ],
+    [ "CircularBuffer< FrameRef >", "class_circular_buffer.html", null ],
     [ "CircularBuffer< uint8_t >", "class_circular_buffer.html", null ],
     [ "CLEDController", "class_c_l_e_d_controller.html", [
       [ "CPixelLEDController< RGB >", "class_c_pixel_l_e_d_controller.html", [
@@ -183,22 +184,17 @@ var hierarchy =
     [ "CRGBPalette256", "class_c_r_g_b_palette256.html", null ],
     [ "CRGBPalette32", "class_c_r_g_b_palette32.html", null ],
     [ "DATA_NOP", "class_d_a_t_a___n_o_p.html", null ],
-    [ "DrawContext", "struct_draw_context.html", null ],
     [ "EngineEvents", "class_engine_events.html", null ],
     [ "FastPin< PIN >", "class_fast_pin.html", [
       [ "FastPinBB< PIN >", "class_fast_pin_b_b.html", null ]
     ] ],
-    [ "FileReader", "class_file_reader.html", [
-      [ "SdCardSpi", "class_sd_card_spi.html", [
-        [ "SdCardSpiArduino", "class_sd_card_spi_arduino.html", null ]
-      ] ]
-    ] ],
     [ "FixedMap< Key, Value, N >", "class_fixed_map.html", null ],
-    [ "FixedMap< int, FxPtr, FASTLED_FX_ENGINE_MAX_FX >", "class_fixed_map.html", null ],
+    [ "FixedMap< int, FxRef, FASTLED_FX_ENGINE_MAX_FX >", "class_fixed_map.html", null ],
     [ "FixedSet< Key, N >", "class_fixed_set.html", null ],
     [ "FixedVector< T, N >", "class_fixed_vector.html", null ],
     [ "FixedVector< Key, N >", "class_fixed_vector.html", null ],
     [ "FixedVector< Pair, N >", "class_fixed_vector.html", null ],
+    [ "Fs", "class_fs.html", null ],
     [ "FxCompositor", "class_fx_compositor.html", null ],
     [ "FxEngine", "class_fx_engine.html", null ],
     [ "HighPrecisionInterval", "class_high_precision_interval.html", null ],
@@ -222,21 +218,6 @@ var hierarchy =
     [ "PointerDeleter< T >", "struct_pointer_deleter.html", null ],
     [ "PointerDeleter< FastLEDANIMartRIX >", "struct_pointer_deleter.html", null ],
     [ "PointerDeleter< uint8_t >", "struct_pointer_deleter.html", null ],
-    [ "PtrTraits< T >", "class_ptr_traits.html", [
-      [ "Ptr< T >", "class_ptr.html", null ]
-    ] ],
-    [ "PtrTraits< Frame >", "class_ptr_traits.html", [
-      [ "Ptr< Frame >", "class_ptr.html", null ]
-    ] ],
-    [ "PtrTraits< Fx >", "class_ptr_traits.html", [
-      [ "Ptr< Fx >", "class_ptr.html", null ]
-    ] ],
-    [ "PtrTraits< FxGrid >", "class_ptr_traits.html", [
-      [ "Ptr< FxGrid >", "class_ptr.html", null ]
-    ] ],
-    [ "PtrTraits< WeakReferent >", "class_ptr_traits.html", [
-      [ "Ptr< WeakReferent >", "class_ptr.html", null ]
-    ] ],
     [ "qfx< T, F, I >", "classqfx.html", null ],
     [ "Referent", "class_referent.html", [
       [ "ByteStream", "class_byte_stream.html", [
@@ -244,11 +225,10 @@ var hierarchy =
       ] ],
       [ "DataStream", "class_data_stream.html", null ],
       [ "FileBuffer", "class_file_buffer.html", null ],
-      [ "FileHandle", "class_file_handle.html", [
-        [ "SDFileHandle", "class_s_d_file_handle.html", null ]
-      ] ],
+      [ "FileHandle", "class_file_handle.html", null ],
       [ "Frame", "class_frame.html", null ],
       [ "FrameInterpolator", "class_frame_interpolator.html", null ],
+      [ "FsImpl", "class_fs_impl.html", null ],
       [ "Fx", "class_fx.html", [
         [ "FxGrid", "class_fx_grid.html", [
           [ "Animartrix", "class_animartrix.html", null ],
@@ -270,11 +250,25 @@ var hierarchy =
       ] ],
       [ "FxLayer", "class_fx_layer.html", null ],
       [ "LUT< T >", "class_l_u_t.html", null ],
-      [ "SdCardSpi", "class_sd_card_spi.html", null ],
       [ "StringHolder", "class_string_holder.html", null ],
       [ "VideoStream", "class_video_stream.html", null ]
     ] ],
     [ "REFHardwareSPIOutput< _DATA_PIN, _CLOCK_PIN, _SPI_CLOCK_DIVIDER >", "class_r_e_f_hardware_s_p_i_output.html", null ],
+    [ "RefTraits< T >", "class_ref_traits.html", [
+      [ "Ref< T >", "class_ref.html", null ]
+    ] ],
+    [ "RefTraits< Frame >", "class_ref_traits.html", [
+      [ "Ref< Frame >", "class_ref.html", null ]
+    ] ],
+    [ "RefTraits< Fx >", "class_ref_traits.html", [
+      [ "Ref< Fx >", "class_ref.html", null ]
+    ] ],
+    [ "RefTraits< FxGrid >", "class_ref_traits.html", [
+      [ "Ref< FxGrid >", "class_ref.html", null ]
+    ] ],
+    [ "RefTraits< WeakReferent >", "class_ref_traits.html", [
+      [ "Ref< WeakReferent >", "class_ref.html", null ]
+    ] ],
     [ "animartrix_detail::render_parameters", "structanimartrix__detail_1_1render__parameters.html", null ],
     [ "animartrix_detail::rgb", "structanimartrix__detail_1_1rgb.html", null ],
     [ "Rgbw", "struct_rgbw.html", [
@@ -284,7 +278,7 @@ var hierarchy =
     [ "Ripple", "class_ripple.html", null ],
     [ "scoped_array< T, Deleter >", "classscoped__array.html", null ],
     [ "scoped_array< CRGB >", "classscoped__array.html", null ],
-    [ "scoped_array< FramePtr >", "classscoped__array.html", null ],
+    [ "scoped_array< FrameRef >", "classscoped__array.html", null ],
     [ "scoped_array< uint8_t >", "classscoped__array.html", null ],
     [ "scoped_ptr< T, Deleter >", "classscoped__ptr.html", null ],
     [ "scoped_ptr< FastLEDANIMartRIX >", "classscoped__ptr.html", null ],
@@ -308,8 +302,8 @@ var hierarchy =
     [ "TimeWarp", "class_time_warp.html", null ],
     [ "Transition", "class_transition.html", null ],
     [ "TRGBGradientPaletteEntryUnion", "union_t_r_g_b_gradient_palette_entry_union.html", null ],
-    [ "FileReader::Visitor", "struct_file_reader_1_1_visitor.html", null ],
-    [ "WeakPtr< T >", "class_weak_ptr.html", null ],
+    [ "FsImpl::Visitor", "struct_fs_impl_1_1_visitor.html", null ],
+    [ "WeakRef< T >", "class_weak_ref.html", null ],
     [ "WeakReferent", "class_weak_referent.html", null ],
     [ "XMap", "class_x_map.html", null ],
     [ "XYMap", "class_x_y_map.html", null ],

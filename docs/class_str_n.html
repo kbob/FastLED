@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.0</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.1</span>
    </div>
   </td>
  </tr>
@@ -160,6 +160,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5d053ce644fec5fe0633854aebbb20b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c8d11ae32d9cb1f6fdb46c6614792ef" id="r_a3c8d11ae32d9cb1f6fdb46c6614792ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c8d11ae32d9cb1f6fdb46c6614792ef">append</a> (const char *str)</td></tr>
 <tr class="separator:a3c8d11ae32d9cb1f6fdb46c6614792ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8944ca284e64e0a350a0663495b4244f" id="r_a8944ca284e64e0a350a0663495b4244f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8944ca284e64e0a350a0663495b4244f">operator&lt;</a> (const <a class="el" href="class_str_n.html">StrN</a> &amp;other) const</td></tr>
+<tr class="separator:a8944ca284e64e0a350a0663495b4244f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba49710d9378755b2e4db71a01c4967d" id="r_aba49710d9378755b2e4db71a01c4967d"><td class="memTemplParams" colspan="2">template&lt;size_t M&gt; </td></tr>
+<tr class="memitem:aba49710d9378755b2e4db71a01c4967d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aba49710d9378755b2e4db71a01c4967d">operator&lt;</a> (const <a class="el" href="class_str_n.html">StrN</a>&lt; M &gt; &amp;other) const</td></tr>
+<tr class="separator:aba49710d9378755b2e4db71a01c4967d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="add33caa1a141cb946b55a89b847f660a" name="add33caa1a141cb946b55a89b847f660a"></a>
@@ -454,6 +459,66 @@ template&lt;size_t SIZE = 64&gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00113">113</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
+
+</div>
+</div>
+<a id="a8944ca284e64e0a350a0663495b4244f" name="a8944ca284e64e0a350a0663495b4244f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8944ca284e64e0a350a0663495b4244f">&#9670;&#160;</a></span>operator&lt;() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t SIZE = 64&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_str_n.html">StrN</a>&lt; SIZE &gt;::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_str_n.html">StrN</a>&lt; SIZE &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00212">212</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
+
+</div>
+</div>
+<a id="aba49710d9378755b2e4db71a01c4967d" name="aba49710d9378755b2e4db71a01c4967d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba49710d9378755b2e4db71a01c4967d">&#9670;&#160;</a></span>operator&lt;() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t SIZE = 64&gt; </div>
+<div class="memtemplate">
+template&lt;size_t M&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_str_n.html">StrN</a>&lt; SIZE &gt;::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_str_n.html">StrN</a>&lt; M &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00216">216</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
 
 </div>
 </div>
@@ -796,7 +861,7 @@ template&lt;size_t SIZE = 64&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_str_n.html">StrN</a></li>
-    <li class="footer">Generated on Sun Oct 27 2024 23:51:50 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Oct 30 2024 03:59:41 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

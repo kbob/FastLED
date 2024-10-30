@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.0</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.1</span>
    </div>
   </td>
  </tr>
@@ -112,7 +112,7 @@ $(function(){initNavTree('class_file_handle.html',''); initResizable(true); });
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="filehandle_8h_source.html#l00014">14</a> of file <a class="el" href="filehandle_8h_source.html">filehandle.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fs_8h_source.html#l00040">40</a> of file <a class="el" href="fs_8h_source.html">fs.h</a>.</p>
 </div><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for FileHandle:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -121,8 +121,7 @@ $(function(){initNavTree('class_file_handle.html',''); initResizable(true); });
  <div class="center">
   <img src="class_file_handle.png" usemap="#FileHandle_map" alt=""/>
   <map id="FileHandle_map" name="FileHandle_map">
-<area href="class_referent.html" alt="Referent" shape="rect" coords="0,0,90,24"/>
-<area href="class_s_d_file_handle.html" alt="SDFileHandle" shape="rect" coords="0,112,90,136"/>
+<area href="class_referent.html" alt="Referent" shape="rect" coords="0,0,73,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -131,8 +130,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab877f0954e21d18d02939bae5936c124" id="r_ab877f0954e21d18d02939bae5936c124"><td class="memItemLeft" align="right" valign="top"><a id="ab877f0954e21d18d02939bae5936c124" name="ab877f0954e21d18d02939bae5936c124"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>available</b> () const =0</td></tr>
 <tr class="separator:ab877f0954e21d18d02939bae5936c124"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3c078dcbc474b24ec95777b8c06da52" id="r_ae3c078dcbc474b24ec95777b8c06da52"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3c078dcbc474b24ec95777b8c06da52">bytesLeft</a> () const</td></tr>
-<tr class="separator:ae3c078dcbc474b24ec95777b8c06da52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a100cb88d3555ae25fd1ffecb9fbb0ccd" id="r_a100cb88d3555ae25fd1ffecb9fbb0ccd"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a100cb88d3555ae25fd1ffecb9fbb0ccd">bytesLeft</a> () const</td></tr>
+<tr class="separator:a100cb88d3555ae25fd1ffecb9fbb0ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd86124666a643ab1a5f15c32eb47690" id="r_abd86124666a643ab1a5f15c32eb47690"><td class="memItemLeft" align="right" valign="top"><a id="abd86124666a643ab1a5f15c32eb47690" name="abd86124666a643ab1a5f15c32eb47690"></a>
 virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const =0</td></tr>
 <tr class="separator:abd86124666a643ab1a5f15c32eb47690"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,13 +200,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="filehandle_8h_source.html#l00016">16</a> of file <a class="el" href="filehandle_8h_source.html">filehandle.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fs_8h_source.html#l00042">42</a> of file <a class="el" href="fs_8h_source.html">fs.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae3c078dcbc474b24ec95777b8c06da52" name="ae3c078dcbc474b24ec95777b8c06da52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3c078dcbc474b24ec95777b8c06da52">&#9670;&#160;</a></span>bytesLeft()</h2>
+<a id="a100cb88d3555ae25fd1ffecb9fbb0ccd" name="a100cb88d3555ae25fd1ffecb9fbb0ccd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a100cb88d3555ae25fd1ffecb9fbb0ccd">&#9670;&#160;</a></span>bytesLeft()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -216,7 +215,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual size_t FileHandle::bytesLeft </td>
+          <td class="memname">size_t FileHandle::bytesLeft </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -224,17 +223,18 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="filehandle_8h_source.html#l00018">18</a> of file <a class="el" href="filehandle_8h_source.html">filehandle.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fs_8cpp_source.html#l00029">29</a> of file <a class="el" href="fs_8cpp_source.html">fs.cpp</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/runner/work/FastLED/FastLED/src/fx/storage/<a class="el" href="filehandle_8h_source.html">filehandle.h</a></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/FastLED/FastLED/src/<a class="el" href="fs_8h_source.html">fs.h</a></li>
+<li>/home/runner/work/FastLED/FastLED/src/<a class="el" href="fs_8cpp_source.html">fs.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -243,7 +243,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_file_handle.html">FileHandle</a></li>
-    <li class="footer">Generated on Sun Oct 27 2024 23:51:50 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Oct 30 2024 03:59:41 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

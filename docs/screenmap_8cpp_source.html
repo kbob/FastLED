@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.0</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.1</span>
    </div>
   </td>
  </tr>
@@ -127,10 +127,10 @@ $(function(){initNavTree('screenmap_8cpp_source.html',''); initResizable(true); 
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keywordtype">void</span> ScreenMap::ParseJson(<span class="keyword">const</span> <span class="keywordtype">char</span> *jsonStrOfMapFile,</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                          <a class="code hl_class" href="class_fixed_map.html">FixedMap&lt;Str, ScreenMap, 16&gt;</a> *segmentMaps) {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    ArduinoJson::JsonDocument doc;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    ArduinoJson::deserializeJson(doc, jsonStrOfMapFile);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    FLArduinoJson::JsonDocument doc;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    FLArduinoJson::deserializeJson(doc, jsonStrOfMapFile);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">auto</span> map = doc[<span class="stringliteral">&quot;map&quot;</span>];</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> kv : map.as&lt;ArduinoJson::JsonObject&gt;()) {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> kv : map.as&lt;FLArduinoJson::JsonObject&gt;()) {</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keyword">auto</span> segment = kv.value();</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keyword">auto</span> x = segment[<span class="stringliteral">&quot;x&quot;</span>];</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keyword">auto</span> y = segment[<span class="stringliteral">&quot;y&quot;</span>];</div>
@@ -151,13 +151,13 @@ $(function(){initNavTree('screenmap_8cpp_source.html',''); initResizable(true); 
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keywordtype">void</span> ScreenMap::toJson(<span class="keyword">const</span> <a class="code hl_class" href="class_fixed_map.html">FixedMap&lt;Str, ScreenMap, 16&gt;</a>&amp; segmentMaps, ArduinoJson::JsonDocument* _doc) {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keywordtype">void</span> ScreenMap::toJson(<span class="keyword">const</span> <a class="code hl_class" href="class_fixed_map.html">FixedMap&lt;Str, ScreenMap, 16&gt;</a>&amp; segmentMaps, FLArduinoJson::JsonDocument* _doc) {</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">auto</span>&amp; doc = *_doc;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">auto</span> map = doc[<span class="stringliteral">&quot;map&quot;</span>].to&lt;ArduinoJson::JsonObject&gt;();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">auto</span> map = doc[<span class="stringliteral">&quot;map&quot;</span>].to&lt;FLArduinoJson::JsonObject&gt;();</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> kv : segmentMaps) {</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keyword">auto</span> segment = map[kv.first].to&lt;ArduinoJson::JsonObject&gt;();</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keyword">auto</span> x_array = segment[<span class="stringliteral">&quot;x&quot;</span>].to&lt;ArduinoJson::JsonArray&gt;();</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keyword">auto</span> y_array = segment[<span class="stringliteral">&quot;y&quot;</span>].to&lt;ArduinoJson::JsonArray&gt;();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keyword">auto</span> segment = map[kv.first].to&lt;FLArduinoJson::JsonObject&gt;();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keyword">auto</span> x_array = segment[<span class="stringliteral">&quot;x&quot;</span>].to&lt;FLArduinoJson::JsonArray&gt;();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keyword">auto</span> y_array = segment[<span class="stringliteral">&quot;y&quot;</span>].to&lt;FLArduinoJson::JsonArray&gt;();</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">for</span> (uint16_t i = 0; i &lt; kv.second.getLength(); i++) {</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="keyword">const</span> <a class="code hl_struct" href="structpair__xy.html">pair_xy_float</a>&amp; xy = kv.second[i];</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            x_array.add(xy.x);</div>
@@ -171,16 +171,16 @@ $(function(){initNavTree('screenmap_8cpp_source.html',''); initResizable(true); 
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keywordtype">void</span> ScreenMap::toJsonStr(<span class="keyword">const</span> <a class="code hl_class" href="class_fixed_map.html">FixedMap&lt;Str, ScreenMap, 16&gt;</a>&amp; segmentMaps, <a class="code hl_class" href="class_str.html">Str</a>* jsonBuffer) {</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    ArduinoJson::JsonDocument doc;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    FLArduinoJson::JsonDocument doc;</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    toJson(segmentMaps, &amp;doc);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    ArduinoJson::serializeJson(doc, *jsonBuffer);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    FLArduinoJson::serializeJson(doc, *jsonBuffer);</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>FASTLED_NAMESPACE_END</div>
 <div class="ttc" id="aclass_fixed_map_html"><div class="ttname"><a href="class_fixed_map.html">FixedMap</a></div><div class="ttdef"><b>Definition</b> <a href="fixed__map_8h_source.html#l00017">fixed_map.h:17</a></div></div>
-<div class="ttc" id="aclass_screen_map_html"><div class="ttname"><a href="class_screen_map.html">ScreenMap</a></div><div class="ttdef"><b>Definition</b> <a href="screenmap_8h_source.html#l00022">screenmap.h:22</a></div></div>
-<div class="ttc" id="aclass_str_html"><div class="ttname"><a href="class_str.html">Str</a></div><div class="ttdef"><b>Definition</b> <a href="str_8h_source.html#l00216">str.h:216</a></div></div>
-<div class="ttc" id="astructpair__xy_html"><div class="ttname"><a href="structpair__xy.html">pair_xy</a></div><div class="ttdef"><b>Definition</b> <a href="lut_8h_source.html#l00013">lut.h:13</a></div></div>
+<div class="ttc" id="aclass_screen_map_html"><div class="ttname"><a href="class_screen_map.html">ScreenMap</a></div><div class="ttdef"><b>Definition</b> <a href="screenmap_8h_source.html#l00029">screenmap.h:29</a></div></div>
+<div class="ttc" id="aclass_str_html"><div class="ttname"><a href="class_str.html">Str</a></div><div class="ttdef"><b>Definition</b> <a href="str_8h_source.html#l00224">str.h:224</a></div></div>
+<div class="ttc" id="astructpair__xy_html"><div class="ttname"><a href="structpair__xy.html">pair_xy</a></div><div class="ttdef"><b>Definition</b> <a href="lut_8h_source.html#l00017">lut.h:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.3-->
@@ -188,7 +188,7 @@ $(function(){initNavTree('screenmap_8cpp_source.html',''); initResizable(true); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><b>screenmap.cpp</b></li>
-    <li class="footer">Generated on Sun Oct 27 2024 23:51:50 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Oct 30 2024 03:59:41 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

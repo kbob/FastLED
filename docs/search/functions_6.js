@@ -8,7 +8,7 @@ var searchData=
   ['getdither_5',['getDither',['../class_c_l_e_d_controller.html#a676f705adf93898739a405b85150a3e7',1,'CLEDController']]],
   ['getelapsed_6',['getElapsed',['../class_c_every_n_time.html#abf8af3755a0c9c8ac5d1f70eabef5c3b',1,'CEveryNTime']]],
   ['getfps_7',['getFPS',['../class_c_fast_l_e_d.html#aa8c3ae3381e524ce30b181ffa23b83cd',1,'CFastLED']]],
-  ['getfx_8',['getFx',['../class_fx_engine.html#a7333e1aad835e960103509a762c9ba59',1,'FxEngine']]],
+  ['getfx_8',['getFx',['../class_fx_engine.html#ae041c1832857a7e950a390dd629f8c85',1,'FxEngine']]],
   ['getlasttriggertime_9',['getLastTriggerTime',['../class_c_every_n_time.html#a66a10ad1574d96a28e66df625c7df2f6',1,'CEveryNTime']]],
   ['getluma_10',['getLuma',['../group___pixel_types.html#ga1646931c5c6fe7a68548474388a3e97c',1,'CRGB']]],
   ['getmaxrefreshrate_11',['getMaxRefreshRate',['../class_c_l_e_d_controller.html#a44d20f088426191c82919c9cdbc63a35',1,'CLEDController']]],

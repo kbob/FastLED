@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.0</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.1</span>
    </div>
   </td>
  </tr>
@@ -166,7 +166,7 @@ $(function(){initNavTree('frame__interpolator_8cpp_source.html',''); initResizab
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">if</span> (mFrames.empty()) {</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="comment">// Insert the first frame</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        FramePtr newFrame = FramePtr::New(frame.size(), !!frame.alpha());</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        FrameRef newFrame = FrameRef::New(frame.size(), !!frame.alpha());</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        newFrame-&gt;copy(frame);</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        newFrame-&gt;setTimestamp(timestamp);</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        mFrames.push_back(newFrame);</div>
@@ -178,7 +178,7 @@ $(function(){initNavTree('frame__interpolator_8cpp_source.html',''); initResizab
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    }</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    FramePtr newFrame;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    FrameRef newFrame;</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordflow">if</span> (mFrames.full()) {</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="comment">// Reuse the oldest frame</span></div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordtype">bool</span> ok = mFrames.pop_back(&amp;newFrame);</div>
@@ -188,7 +188,7 @@ $(function(){initNavTree('frame__interpolator_8cpp_source.html',''); initResizab
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        }</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="comment">// Allocate a new frame</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        newFrame = FramePtr::New(frame.size(), !!frame.alpha());</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        newFrame = FrameRef::New(frame.size(), !!frame.alpha());</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    }</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    newFrame-&gt;copy(frame);</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    newFrame-&gt;setTimestamp(timestamp);</div>
@@ -244,8 +244,8 @@ $(function(){initNavTree('frame__interpolator_8cpp_source.html',''); initResizab
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>}</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>FASTLED_NAMESPACE_END</div>
-<div class="ttc" id="aclass_frame_html"><div class="ttname"><a href="class_frame.html">Frame</a></div><div class="ttdef"><b>Definition</b> <a href="frame_8h_source.html#l00016">frame.h:16</a></div></div>
-<div class="ttc" id="astruct_c_r_g_b_html"><div class="ttname"><a href="struct_c_r_g_b.html">CRGB</a></div><div class="ttdoc">Representation of an RGB pixel (Red, Green, Blue)</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00035">crgb.h:35</a></div></div>
+<div class="ttc" id="aclass_frame_html"><div class="ttname"><a href="class_frame.html">Frame</a></div><div class="ttdef"><b>Definition</b> <a href="frame_8h_source.html#l00018">frame.h:18</a></div></div>
+<div class="ttc" id="astruct_c_r_g_b_html"><div class="ttname"><a href="struct_c_r_g_b.html">CRGB</a></div><div class="ttdoc">Representation of an RGB pixel (Red, Green, Blue)</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00038">crgb.h:38</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.3-->
@@ -253,7 +253,7 @@ $(function(){initNavTree('frame__interpolator_8cpp_source.html',''); initResizab
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_acbb946b833f21b16ec30aa21c4c3a72.html">fx</a></li><li class="navelem"><a class="el" href="dir_41db4d67e98c6097b43e1b5a33111e5f.html">video</a></li><li class="navelem"><b>frame_interpolator.cpp</b></li>
-    <li class="footer">Generated on Sun Oct 27 2024 23:51:50 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Oct 30 2024 03:59:41 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

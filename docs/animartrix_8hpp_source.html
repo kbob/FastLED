@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.0</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.1</span>
    </div>
   </td>
  </tr>
@@ -121,7 +121,7 @@ $(function(){initNavTree('animartrix_8hpp_source.html',''); initResizable(true);
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;crgb.h&quot;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;fx/fx2d.h&quot;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;namespace.h&quot;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;ptr.h&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;ref.h&quot;</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;xymap.h&quot;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#define ANIMARTRIX_INTERNAL</span></div>
@@ -129,7 +129,7 @@ $(function(){initNavTree('animartrix_8hpp_source.html',''); initResizable(true);
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>FASTLED_NAMESPACE_BEGIN</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>DECLARE_SMART_PTR(<a class="code hl_class" href="class_animartrix.html">Animartrix</a>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>FASTLED_SMART_REF(<a class="code hl_class" href="class_animartrix.html">Animartrix</a>);</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">enum</span> AnimartrixAnim {</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    RGB_BLOBS5 = 0,</div>
@@ -188,7 +188,7 @@ $(function(){initNavTree('animartrix_8hpp_source.html',''); initResizable(true);
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <a class="code hl_class" href="class_animartrix.html">Animartrix</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_animartrix.html">Animartrix</a> &amp;) = <span class="keyword">delete</span>;</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordtype">void</span> lazyInit()<span class="keyword"> override </span>{ this-&gt;mXyMap.convertToLookUpTable(); }</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_animartrix.html#acf4a5d3edf00c3c5c7128335ca40e016">draw</a>(<a class="code hl_struct" href="struct_draw_context.html">DrawContext</a> context) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_animartrix.html#acf4a5d3edf00c3c5c7128335ca40e016">draw</a>(<a class="code hl_struct" href="struct___draw_context.html">DrawContext</a> context) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordtype">int</span> fxNum()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> NUM_ANIMATIONS; }</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordtype">void</span> fxSet(<span class="keywordtype">int</span> fx) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordtype">int</span> fxGet()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(current_animation); }</div>
@@ -488,7 +488,7 @@ $(function(){initNavTree('animartrix_8hpp_source.html',''); initResizable(true);
 <div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>}</div>
 <div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span> </div>
 <div class="foldopen" id="foldopen00379" data-start="{" data-end="}">
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno"><a class="line" href="class_animartrix.html#acf4a5d3edf00c3c5c7128335ca40e016">  379</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_animartrix.html#acf4a5d3edf00c3c5c7128335ca40e016">Animartrix::draw</a>(<a class="code hl_struct" href="struct_draw_context.html">DrawContext</a> ctx) {</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno"><a class="line" href="class_animartrix.html#acf4a5d3edf00c3c5c7128335ca40e016">  379</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_animartrix.html#acf4a5d3edf00c3c5c7128335ca40e016">Animartrix::draw</a>(<a class="code hl_struct" href="struct___draw_context.html">DrawContext</a> ctx) {</div>
 <div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>    this-&gt;leds = ctx.leds;</div>
 <div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>    AnimartrixLoop(*<span class="keyword">this</span>, ctx.now);</div>
 <div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>    this-&gt;leds = <span class="keyword">nullptr</span>;</div>
@@ -499,13 +499,13 @@ $(function(){initNavTree('animartrix_8hpp_source.html',''); initResizable(true);
 <div class="ttc" id="aclass_animartrix_html"><div class="ttname"><a href="class_animartrix.html">Animartrix</a></div><div class="ttdef"><b>Definition</b> <a href="#l00072">animartrix.hpp:72</a></div></div>
 <div class="ttc" id="aclass_animartrix_html_acf4a5d3edf00c3c5c7128335ca40e016"><div class="ttname"><a href="class_animartrix.html#acf4a5d3edf00c3c5c7128335ca40e016">Animartrix::draw</a></div><div class="ttdeci">void draw(DrawContext context) override</div><div class="ttdef"><b>Definition</b> <a href="#l00379">animartrix.hpp:379</a></div></div>
 <div class="ttc" id="aclass_fast_l_e_d_a_n_i_mart_r_i_x_html"><div class="ttname"><a href="class_fast_l_e_d_a_n_i_mart_r_i_x.html">FastLEDANIMartRIX</a></div><div class="ttdef"><b>Definition</b> <a href="#l00198">animartrix.hpp:198</a></div></div>
-<div class="ttc" id="aclass_fx_grid_html"><div class="ttname"><a href="class_fx_grid.html">FxGrid</a></div><div class="ttdef"><b>Definition</b> <a href="fx2d_8h_source.html#l00015">fx2d.h:15</a></div></div>
-<div class="ttc" id="aclass_x_y_map_html"><div class="ttname"><a href="class_x_y_map.html">XYMap</a></div><div class="ttdef"><b>Definition</b> <a href="xymap_8h_source.html#l00032">xymap.h:32</a></div></div>
-<div class="ttc" id="aclassanimartrix__detail_1_1_a_n_i_mart_r_i_x_html"><div class="ttname"><a href="classanimartrix__detail_1_1_a_n_i_mart_r_i_x.html">animartrix_detail::ANIMartRIX</a></div><div class="ttdef"><b>Definition</b> <a href="animartrix__detail_8hpp_source.html#l00144">animartrix_detail.hpp:144</a></div></div>
-<div class="ttc" id="aclassscoped__ptr_html"><div class="ttname"><a href="classscoped__ptr.html">scoped_ptr</a></div><div class="ttdef"><b>Definition</b> <a href="scoped__ptr_8h_source.html#l00025">scoped_ptr.h:25</a></div></div>
-<div class="ttc" id="astruct_c_r_g_b_html"><div class="ttname"><a href="struct_c_r_g_b.html">CRGB</a></div><div class="ttdoc">Representation of an RGB pixel (Red, Green, Blue)</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00035">crgb.h:35</a></div></div>
-<div class="ttc" id="astruct_draw_context_html"><div class="ttname"><a href="struct_draw_context.html">DrawContext</a></div><div class="ttdef"><b>Definition</b> <a href="draw__context_8h_source.html#l00011">draw_context.h:11</a></div></div>
-<div class="ttc" id="astructanimartrix__detail_1_1rgb_html"><div class="ttname"><a href="structanimartrix__detail_1_1rgb.html">animartrix_detail::rgb</a></div><div class="ttdef"><b>Definition</b> <a href="animartrix__detail_8hpp_source.html#l00112">animartrix_detail.hpp:112</a></div></div>
+<div class="ttc" id="aclass_fx_grid_html"><div class="ttname"><a href="class_fx_grid.html">FxGrid</a></div><div class="ttdef"><b>Definition</b> <a href="fx2d_8h_source.html#l00016">fx2d.h:16</a></div></div>
+<div class="ttc" id="aclass_x_y_map_html"><div class="ttname"><a href="class_x_y_map.html">XYMap</a></div><div class="ttdef"><b>Definition</b> <a href="xymap_8h_source.html#l00036">xymap.h:36</a></div></div>
+<div class="ttc" id="aclassanimartrix__detail_1_1_a_n_i_mart_r_i_x_html"><div class="ttname"><a href="classanimartrix__detail_1_1_a_n_i_mart_r_i_x.html">animartrix_detail::ANIMartRIX</a></div><div class="ttdef"><b>Definition</b> <a href="animartrix__detail_8hpp_source.html#l00146">animartrix_detail.hpp:146</a></div></div>
+<div class="ttc" id="aclassscoped__ptr_html"><div class="ttname"><a href="classscoped__ptr.html">scoped_ptr</a></div><div class="ttdef"><b>Definition</b> <a href="scoped__ptr_8h_source.html#l00027">scoped_ptr.h:27</a></div></div>
+<div class="ttc" id="astruct___draw_context_html"><div class="ttname"><a href="struct___draw_context.html">_DrawContext</a></div><div class="ttdef"><b>Definition</b> <a href="draw__context_8h_source.html#l00011">draw_context.h:11</a></div></div>
+<div class="ttc" id="astruct_c_r_g_b_html"><div class="ttname"><a href="struct_c_r_g_b.html">CRGB</a></div><div class="ttdoc">Representation of an RGB pixel (Red, Green, Blue)</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00038">crgb.h:38</a></div></div>
+<div class="ttc" id="astructanimartrix__detail_1_1rgb_html"><div class="ttname"><a href="structanimartrix__detail_1_1rgb.html">animartrix_detail::rgb</a></div><div class="ttdef"><b>Definition</b> <a href="animartrix__detail_8hpp_source.html#l00114">animartrix_detail.hpp:114</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.3-->
@@ -513,7 +513,7 @@ $(function(){initNavTree('animartrix_8hpp_source.html',''); initResizable(true);
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_acbb946b833f21b16ec30aa21c4c3a72.html">fx</a></li><li class="navelem"><a class="el" href="dir_da6de6ffed4dc8eba2e7529df043e06f.html">2d</a></li><li class="navelem"><b>animartrix.hpp</b></li>
-    <li class="footer">Generated on Sun Oct 27 2024 23:51:50 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Oct 30 2024 03:59:40 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

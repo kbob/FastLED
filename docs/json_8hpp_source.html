@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.0</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.1</span>
    </div>
   </td>
  </tr>
@@ -373,13 +373,13 @@ $(function(){initNavTree('json_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span><span class="preprocessor">        ARDUINOJSON_SLOT_ID_SIZE, ARDUINOJSON_STRING_LENGTH_SIZE)</span></div>
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span><span class="preprocessor">#define ARDUINOJSON_BEGIN_PUBLIC_NAMESPACE \</span></div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="preprocessor">  namespace ArduinoJson {                  \</span></div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="preprocessor">  namespace FLArduinoJson {                  \</span></div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span><span class="preprocessor">  inline namespace ARDUINOJSON_VERSION_NAMESPACE {</span></div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span><span class="preprocessor">#define ARDUINOJSON_END_PUBLIC_NAMESPACE \</span></div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span><span class="preprocessor">  }                                      \</span></div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span><span class="preprocessor">  }</span></div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="preprocessor">#define ARDUINOJSON_BEGIN_PRIVATE_NAMESPACE        \</span></div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span><span class="preprocessor">  namespace ArduinoJson {                          \</span></div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span><span class="preprocessor">  namespace FLArduinoJson {                          \</span></div>
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span><span class="preprocessor">  inline namespace ARDUINOJSON_VERSION_NAMESPACE { \</span></div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="preprocessor">  namespace detail {</span></div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span><span class="preprocessor">#define ARDUINOJSON_END_PRIVATE_NAMESPACE \</span></div>
@@ -1304,7 +1304,7 @@ $(function(){initNavTree('json_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l01195" name="l01195"></a><span class="lineno"> 1195</span>};</div>
 <div class="line"><a id="l01196" name="l01196"></a><span class="lineno"> 1196</span>ARDUINOJSON_END_PRIVATE_NAMESPACE</div>
 <div class="line"><a id="l01197" name="l01197"></a><span class="lineno"> 1197</span><span class="preprocessor">#ifndef strlen_P</span></div>
-<div class="line"><a id="l01198" name="l01198"></a><span class="lineno"> 1198</span><span class="keyword">inline</span> <span class="keywordtype">size_t</span> strlen_P(ArduinoJson::detail::pgm_p s) {</div>
+<div class="line"><a id="l01198" name="l01198"></a><span class="lineno"> 1198</span><span class="keyword">inline</span> <span class="keywordtype">size_t</span> strlen_P(FLArduinoJson::detail::pgm_p s) {</div>
 <div class="line"><a id="l01199" name="l01199"></a><span class="lineno"> 1199</span>  <span class="keyword">const</span> <span class="keywordtype">char</span>* p = s.address;</div>
 <div class="line"><a id="l01200" name="l01200"></a><span class="lineno"> 1200</span>  ARDUINOJSON_ASSERT(p != NULL);</div>
 <div class="line"><a id="l01201" name="l01201"></a><span class="lineno"> 1201</span>  <span class="keywordflow">while</span> (pgm_read_byte(p))</div>
@@ -1313,7 +1313,7 @@ $(function(){initNavTree('json_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l01204" name="l01204"></a><span class="lineno"> 1204</span>}</div>
 <div class="line"><a id="l01205" name="l01205"></a><span class="lineno"> 1205</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l01206" name="l01206"></a><span class="lineno"> 1206</span><span class="preprocessor">#ifndef strncmp_P</span></div>
-<div class="line"><a id="l01207" name="l01207"></a><span class="lineno"> 1207</span><span class="keyword">inline</span> <span class="keywordtype">int</span> strncmp_P(<span class="keyword">const</span> <span class="keywordtype">char</span>* a, ArduinoJson::detail::pgm_p b, <span class="keywordtype">size_t</span> n) {</div>
+<div class="line"><a id="l01207" name="l01207"></a><span class="lineno"> 1207</span><span class="keyword">inline</span> <span class="keywordtype">int</span> strncmp_P(<span class="keyword">const</span> <span class="keywordtype">char</span>* a, FLArduinoJson::detail::pgm_p b, <span class="keywordtype">size_t</span> n) {</div>
 <div class="line"><a id="l01208" name="l01208"></a><span class="lineno"> 1208</span>  <span class="keyword">const</span> <span class="keywordtype">char</span>* s1 = a;</div>
 <div class="line"><a id="l01209" name="l01209"></a><span class="lineno"> 1209</span>  <span class="keyword">const</span> <span class="keywordtype">char</span>* s2 = b.address;</div>
 <div class="line"><a id="l01210" name="l01210"></a><span class="lineno"> 1210</span>  ARDUINOJSON_ASSERT(s1 != NULL);</div>
@@ -1332,7 +1332,7 @@ $(function(){initNavTree('json_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l01223" name="l01223"></a><span class="lineno"> 1223</span>}</div>
 <div class="line"><a id="l01224" name="l01224"></a><span class="lineno"> 1224</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l01225" name="l01225"></a><span class="lineno"> 1225</span><span class="preprocessor">#ifndef strcmp_P</span></div>
-<div class="line"><a id="l01226" name="l01226"></a><span class="lineno"> 1226</span><span class="keyword">inline</span> <span class="keywordtype">int</span> strcmp_P(<span class="keyword">const</span> <span class="keywordtype">char</span>* a, ArduinoJson::detail::pgm_p b) {</div>
+<div class="line"><a id="l01226" name="l01226"></a><span class="lineno"> 1226</span><span class="keyword">inline</span> <span class="keywordtype">int</span> strcmp_P(<span class="keyword">const</span> <span class="keywordtype">char</span>* a, FLArduinoJson::detail::pgm_p b) {</div>
 <div class="line"><a id="l01227" name="l01227"></a><span class="lineno"> 1227</span>  <span class="keyword">const</span> <span class="keywordtype">char</span>* s1 = a;</div>
 <div class="line"><a id="l01228" name="l01228"></a><span class="lineno"> 1228</span>  <span class="keyword">const</span> <span class="keywordtype">char</span>* s2 = b.address;</div>
 <div class="line"><a id="l01229" name="l01229"></a><span class="lineno"> 1229</span>  ARDUINOJSON_ASSERT(s1 != NULL);</div>
@@ -1350,7 +1350,7 @@ $(function(){initNavTree('json_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l01241" name="l01241"></a><span class="lineno"> 1241</span>}</div>
 <div class="line"><a id="l01242" name="l01242"></a><span class="lineno"> 1242</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l01243" name="l01243"></a><span class="lineno"> 1243</span><span class="preprocessor">#ifndef memcmp_P</span></div>
-<div class="line"><a id="l01244" name="l01244"></a><span class="lineno"> 1244</span><span class="keyword">inline</span> <span class="keywordtype">int</span> memcmp_P(<span class="keyword">const</span> <span class="keywordtype">void</span>* a, ArduinoJson::detail::pgm_p b, <span class="keywordtype">size_t</span> n) {</div>
+<div class="line"><a id="l01244" name="l01244"></a><span class="lineno"> 1244</span><span class="keyword">inline</span> <span class="keywordtype">int</span> memcmp_P(<span class="keyword">const</span> <span class="keywordtype">void</span>* a, FLArduinoJson::detail::pgm_p b, <span class="keywordtype">size_t</span> n) {</div>
 <div class="line"><a id="l01245" name="l01245"></a><span class="lineno"> 1245</span>  <span class="keyword">const</span> uint8_t* p1 = <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>uint8_t*<span class="keyword">&gt;</span>(a);</div>
 <div class="line"><a id="l01246" name="l01246"></a><span class="lineno"> 1246</span>  <span class="keyword">const</span> <span class="keywordtype">char</span>* p2 = b.address;</div>
 <div class="line"><a id="l01247" name="l01247"></a><span class="lineno"> 1247</span>  ARDUINOJSON_ASSERT(p1 != NULL);</div>
@@ -1365,7 +1365,7 @@ $(function(){initNavTree('json_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l01256" name="l01256"></a><span class="lineno"> 1256</span>}</div>
 <div class="line"><a id="l01257" name="l01257"></a><span class="lineno"> 1257</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l01258" name="l01258"></a><span class="lineno"> 1258</span><span class="preprocessor">#ifndef memcpy_P</span></div>
-<div class="line"><a id="l01259" name="l01259"></a><span class="lineno"> 1259</span><span class="keyword">inline</span> <span class="keywordtype">void</span>* memcpy_P(<span class="keywordtype">void</span>* dst, ArduinoJson::detail::pgm_p src, <span class="keywordtype">size_t</span> n) {</div>
+<div class="line"><a id="l01259" name="l01259"></a><span class="lineno"> 1259</span><span class="keyword">inline</span> <span class="keywordtype">void</span>* memcpy_P(<span class="keywordtype">void</span>* dst, FLArduinoJson::detail::pgm_p src, <span class="keywordtype">size_t</span> n) {</div>
 <div class="line"><a id="l01260" name="l01260"></a><span class="lineno"> 1260</span>  uint8_t* d = <span class="keyword">reinterpret_cast&lt;</span>uint8_t*<span class="keyword">&gt;</span>(dst);</div>
 <div class="line"><a id="l01261" name="l01261"></a><span class="lineno"> 1261</span>  <span class="keyword">const</span> <span class="keywordtype">char</span>* s = src.address;</div>
 <div class="line"><a id="l01262" name="l01262"></a><span class="lineno"> 1262</span>  ARDUINOJSON_ASSERT(d != NULL);</div>
@@ -1377,14 +1377,14 @@ $(function(){initNavTree('json_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l01268" name="l01268"></a><span class="lineno"> 1268</span>}</div>
 <div class="line"><a id="l01269" name="l01269"></a><span class="lineno"> 1269</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l01270" name="l01270"></a><span class="lineno"> 1270</span><span class="preprocessor">#ifndef pgm_read_dword</span></div>
-<div class="line"><a id="l01271" name="l01271"></a><span class="lineno"> 1271</span><span class="keyword">inline</span> uint32_t pgm_read_dword(ArduinoJson::detail::pgm_p p) {</div>
+<div class="line"><a id="l01271" name="l01271"></a><span class="lineno"> 1271</span><span class="keyword">inline</span> uint32_t pgm_read_dword(FLArduinoJson::detail::pgm_p p) {</div>
 <div class="line"><a id="l01272" name="l01272"></a><span class="lineno"> 1272</span>  uint32_t result;</div>
 <div class="line"><a id="l01273" name="l01273"></a><span class="lineno"> 1273</span>  memcpy_P(&amp;result, p.address, 4);</div>
 <div class="line"><a id="l01274" name="l01274"></a><span class="lineno"> 1274</span>  <span class="keywordflow">return</span> result;</div>
 <div class="line"><a id="l01275" name="l01275"></a><span class="lineno"> 1275</span>}</div>
 <div class="line"><a id="l01276" name="l01276"></a><span class="lineno"> 1276</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l01277" name="l01277"></a><span class="lineno"> 1277</span><span class="preprocessor">#ifndef pgm_read_float</span></div>
-<div class="line"><a id="l01278" name="l01278"></a><span class="lineno"> 1278</span><span class="keyword">inline</span> <span class="keywordtype">float</span> pgm_read_float(ArduinoJson::detail::pgm_p p) {</div>
+<div class="line"><a id="l01278" name="l01278"></a><span class="lineno"> 1278</span><span class="keyword">inline</span> <span class="keywordtype">float</span> pgm_read_float(FLArduinoJson::detail::pgm_p p) {</div>
 <div class="line"><a id="l01279" name="l01279"></a><span class="lineno"> 1279</span>  <span class="keywordtype">float</span> result;</div>
 <div class="line"><a id="l01280" name="l01280"></a><span class="lineno"> 1280</span>  memcpy_P(&amp;result, p.address, <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
 <div class="line"><a id="l01281" name="l01281"></a><span class="lineno"> 1281</span>  <span class="keywordflow">return</span> result;</div>
@@ -1393,11 +1393,11 @@ $(function(){initNavTree('json_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l01284" name="l01284"></a><span class="lineno"> 1284</span><span class="preprocessor">#ifndef pgm_read_double</span></div>
 <div class="line"><a id="l01285" name="l01285"></a><span class="lineno"> 1285</span><span class="preprocessor">#  if defined(__SIZEOF_DOUBLE__) &amp;&amp; defined(__SIZEOF_FLOAT__) &amp;&amp; \</span></div>
 <div class="line"><a id="l01286" name="l01286"></a><span class="lineno"> 1286</span><span class="preprocessor">      __SIZEOF_DOUBLE__ == __SIZEOF_FLOAT__</span></div>
-<div class="line"><a id="l01287" name="l01287"></a><span class="lineno"> 1287</span><span class="keyword">inline</span> <span class="keywordtype">double</span> pgm_read_double(ArduinoJson::detail::pgm_p p) {</div>
+<div class="line"><a id="l01287" name="l01287"></a><span class="lineno"> 1287</span><span class="keyword">inline</span> <span class="keywordtype">double</span> pgm_read_double(FLArduinoJson::detail::pgm_p p) {</div>
 <div class="line"><a id="l01288" name="l01288"></a><span class="lineno"> 1288</span>  <span class="keywordflow">return</span> pgm_read_float(p.address);</div>
 <div class="line"><a id="l01289" name="l01289"></a><span class="lineno"> 1289</span>}</div>
 <div class="line"><a id="l01290" name="l01290"></a><span class="lineno"> 1290</span><span class="preprocessor">#  else</span></div>
-<div class="line"><a id="l01291" name="l01291"></a><span class="lineno"> 1291</span><span class="keyword">inline</span> <span class="keywordtype">double</span> pgm_read_double(ArduinoJson::detail::pgm_p p) {</div>
+<div class="line"><a id="l01291" name="l01291"></a><span class="lineno"> 1291</span><span class="keyword">inline</span> <span class="keywordtype">double</span> pgm_read_double(FLArduinoJson::detail::pgm_p p) {</div>
 <div class="line"><a id="l01292" name="l01292"></a><span class="lineno"> 1292</span>  <span class="keywordtype">double</span> result;</div>
 <div class="line"><a id="l01293" name="l01293"></a><span class="lineno"> 1293</span>  memcpy_P(&amp;result, p.address, <span class="keyword">sizeof</span>(<span class="keywordtype">double</span>));</div>
 <div class="line"><a id="l01294" name="l01294"></a><span class="lineno"> 1294</span>  <span class="keywordflow">return</span> result;</div>
@@ -1405,7 +1405,7 @@ $(function(){initNavTree('json_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l01296" name="l01296"></a><span class="lineno"> 1296</span><span class="preprocessor">#  endif</span></div>
 <div class="line"><a id="l01297" name="l01297"></a><span class="lineno"> 1297</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l01298" name="l01298"></a><span class="lineno"> 1298</span><span class="preprocessor">#ifndef pgm_read_ptr</span></div>
-<div class="line"><a id="l01299" name="l01299"></a><span class="lineno"> 1299</span><span class="keyword">inline</span> <span class="keywordtype">void</span>* pgm_read_ptr(ArduinoJson::detail::pgm_p p) {</div>
+<div class="line"><a id="l01299" name="l01299"></a><span class="lineno"> 1299</span><span class="keyword">inline</span> <span class="keywordtype">void</span>* pgm_read_ptr(FLArduinoJson::detail::pgm_p p) {</div>
 <div class="line"><a id="l01300" name="l01300"></a><span class="lineno"> 1300</span>  <span class="keywordtype">void</span>* result;</div>
 <div class="line"><a id="l01301" name="l01301"></a><span class="lineno"> 1301</span>  memcpy_P(&amp;result, p.address, <span class="keyword">sizeof</span>(result));</div>
 <div class="line"><a id="l01302" name="l01302"></a><span class="lineno"> 1302</span>  <span class="keywordflow">return</span> result;</div>
@@ -2120,7 +2120,7 @@ $(function(){initNavTree('json_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l02011" name="l02011"></a><span class="lineno"> 2011</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l02012" name="l02012"></a><span class="lineno"> 2012</span>ARDUINOJSON_END_PUBLIC_NAMESPACE</div>
 <div class="line"><a id="l02013" name="l02013"></a><span class="lineno"> 2013</span><span class="preprocessor">#define ARDUINOJSON_ASSERT_INTEGER_TYPE_IS_SUPPORTED(T)                  \</span></div>
-<div class="line"><a id="l02014" name="l02014"></a><span class="lineno"> 2014</span><span class="preprocessor">  static_assert(sizeof(T) &lt;= sizeof(ArduinoJson::JsonInteger),           \</span></div>
+<div class="line"><a id="l02014" name="l02014"></a><span class="lineno"> 2014</span><span class="preprocessor">  static_assert(sizeof(T) &lt;= sizeof(FLArduinoJson::JsonInteger),           \</span></div>
 <div class="line"><a id="l02015" name="l02015"></a><span class="lineno"> 2015</span><span class="preprocessor">                &quot;To use 64-bit integers with ArduinoJson, you must set &quot; \</span></div>
 <div class="line"><a id="l02016" name="l02016"></a><span class="lineno"> 2016</span><span class="preprocessor">                &quot;ARDUINOJSON_USE_LONG_LONG to 1. See &quot;                   \</span></div>
 <div class="line"><a id="l02017" name="l02017"></a><span class="lineno"> 2017</span><span class="preprocessor">                &quot;https://arduinojson.org/v7/api/config/use_long_long/&quot;);</span></div>
@@ -3315,9 +3315,9 @@ $(function(){initNavTree('json_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l03206" name="l03206"></a><span class="lineno"> 3206</span>  VariantData* getOrCreateData()<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l03207" name="l03207"></a><span class="lineno"> 3207</span>    <span class="keywordflow">return</span> VariantAttorney::getOrCreateData(derived());</div>
 <div class="line"><a id="l03208" name="l03208"></a><span class="lineno"> 3208</span>  }</div>
-<div class="line"><a id="l03209" name="l03209"></a><span class="lineno"> 3209</span>  FORCE_INLINE ArduinoJson::JsonVariant getVariant() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l03210" name="l03210"></a><span class="lineno"> 3210</span>  FORCE_INLINE ArduinoJson::JsonVariantConst getVariantConst()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l03211" name="l03211"></a><span class="lineno"> 3211</span>    <span class="keywordflow">return</span> ArduinoJson::JsonVariantConst(getData(), getResourceManager());</div>
+<div class="line"><a id="l03209" name="l03209"></a><span class="lineno"> 3209</span>  FORCE_INLINE FLArduinoJson::JsonVariant getVariant() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l03210" name="l03210"></a><span class="lineno"> 3210</span>  FORCE_INLINE FLArduinoJson::JsonVariantConst getVariantConst()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l03211" name="l03211"></a><span class="lineno"> 3211</span>    <span class="keywordflow">return</span> FLArduinoJson::JsonVariantConst(getData(), getResourceManager());</div>
 <div class="line"><a id="l03212" name="l03212"></a><span class="lineno"> 3212</span>  }</div>
 <div class="line"><a id="l03213" name="l03213"></a><span class="lineno"> 3213</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a id="l03214" name="l03214"></a><span class="lineno"> 3214</span>  FORCE_INLINE enable_if_t&lt;is_same&lt;T, JsonVariantConst&gt;::value, T&gt; getVariant()<span class="keyword"></span></div>
@@ -3341,7 +3341,7 @@ $(function(){initNavTree('json_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l03232" name="l03232"></a><span class="lineno"> 3232</span>  <span class="keywordtype">bool</span> doSet(T&amp;&amp; value, false_type) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l03233" name="l03233"></a><span class="lineno"> 3233</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TConverter, <span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a id="l03234" name="l03234"></a><span class="lineno"> 3234</span>  <span class="keywordtype">bool</span> doSet(T&amp;&amp; value, true_type) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l03235" name="l03235"></a><span class="lineno"> 3235</span>  ArduinoJson::JsonVariant getOrCreateVariant() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l03235" name="l03235"></a><span class="lineno"> 3235</span>  FLArduinoJson::JsonVariant getOrCreateVariant() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l03236" name="l03236"></a><span class="lineno"> 3236</span>};</div>
 <div class="line"><a id="l03237" name="l03237"></a><span class="lineno"> 3237</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> TUpstream&gt;</div>
 <div class="line"><a id="l03238" name="l03238"></a><span class="lineno"> 3238</span><span class="keyword">class </span>ElementProxy : <span class="keyword">public</span> VariantRefBase&lt;ElementProxy&lt;TUpstream&gt;&gt;,</div>
@@ -3437,9 +3437,9 @@ $(function(){initNavTree('json_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l03328" name="l03328"></a><span class="lineno"> 3328</span>  }</div>
 <div class="line"><a id="l03329" name="l03329"></a><span class="lineno"> 3329</span>};</div>
 <div class="line"><a id="l03330" name="l03330"></a><span class="lineno"> 3330</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l03331" name="l03331"></a><span class="lineno"> 3331</span><span class="keyword">class </span><a class="code hl_class" href="class_ptr.html">Ptr</a> {</div>
+<div class="line"><a id="l03331" name="l03331"></a><span class="lineno"> 3331</span><span class="keyword">class </span><a class="code hl_class" href="class_ref.html">Ref</a> {</div>
 <div class="line"><a id="l03332" name="l03332"></a><span class="lineno"> 3332</span> <span class="keyword">public</span>:</div>
-<div class="line"><a id="l03333" name="l03333"></a><span class="lineno"> 3333</span>  <a class="code hl_class" href="class_ptr.html">Ptr</a>(T value) : value_(value) {}</div>
+<div class="line"><a id="l03333" name="l03333"></a><span class="lineno"> 3333</span>  <a class="code hl_class" href="class_ref.html">Ref</a>(T value) : value_(value) {}</div>
 <div class="line"><a id="l03334" name="l03334"></a><span class="lineno"> 3334</span>  T* operator-&gt;() {</div>
 <div class="line"><a id="l03335" name="l03335"></a><span class="lineno"> 3335</span>    <span class="keywordflow">return</span> &amp;value_;</div>
 <div class="line"><a id="l03336" name="l03336"></a><span class="lineno"> 3336</span>  }</div>
@@ -3459,7 +3459,7 @@ $(function(){initNavTree('json_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l03350" name="l03350"></a><span class="lineno"> 3350</span>  JsonVariant <a class="code hl_function" href="group___pixel_types.html#gaeda6b694068cd82be2563b7c748d26e9">operator*</a>() {</div>
 <div class="line"><a id="l03351" name="l03351"></a><span class="lineno"> 3351</span>    <span class="keywordflow">return</span> JsonVariant(iterator_.data(), resources_);</div>
 <div class="line"><a id="l03352" name="l03352"></a><span class="lineno"> 3352</span>  }</div>
-<div class="line"><a id="l03353" name="l03353"></a><span class="lineno"> 3353</span>  <a class="code hl_class" href="class_ptr.html">Ptr&lt;JsonVariant&gt;</a> operator-&gt;() {</div>
+<div class="line"><a id="l03353" name="l03353"></a><span class="lineno"> 3353</span>  <a class="code hl_class" href="class_ref.html">Ref&lt;JsonVariant&gt;</a> operator-&gt;() {</div>
 <div class="line"><a id="l03354" name="l03354"></a><span class="lineno"> 3354</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group___pixel_types.html#gaeda6b694068cd82be2563b7c748d26e9">operator*</a>();</div>
 <div class="line"><a id="l03355" name="l03355"></a><span class="lineno"> 3355</span>  }</div>
 <div class="line"><a id="l03356" name="l03356"></a><span class="lineno"> 3356</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="group___pixel_types.html#ga26d453dd63264efc07c23ce640205858">operator==</a>(<span class="keyword">const</span> JsonArrayIterator&amp; other)<span class="keyword"> const </span>{</div>
@@ -3486,7 +3486,7 @@ $(function(){initNavTree('json_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l03377" name="l03377"></a><span class="lineno"> 3377</span>  JsonVariantConst <a class="code hl_function" href="group___pixel_types.html#gaeda6b694068cd82be2563b7c748d26e9">operator*</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l03378" name="l03378"></a><span class="lineno"> 3378</span>    <span class="keywordflow">return</span> JsonVariantConst(iterator_.data(), resources_);</div>
 <div class="line"><a id="l03379" name="l03379"></a><span class="lineno"> 3379</span>  }</div>
-<div class="line"><a id="l03380" name="l03380"></a><span class="lineno"> 3380</span>  <a class="code hl_class" href="class_ptr.html">Ptr&lt;JsonVariantConst&gt;</a> operator-&gt;() {</div>
+<div class="line"><a id="l03380" name="l03380"></a><span class="lineno"> 3380</span>  <a class="code hl_class" href="class_ref.html">Ref&lt;JsonVariantConst&gt;</a> operator-&gt;() {</div>
 <div class="line"><a id="l03381" name="l03381"></a><span class="lineno"> 3381</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group___pixel_types.html#gaeda6b694068cd82be2563b7c748d26e9">operator*</a>();</div>
 <div class="line"><a id="l03382" name="l03382"></a><span class="lineno"> 3382</span>  }</div>
 <div class="line"><a id="l03383" name="l03383"></a><span class="lineno"> 3383</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="group___pixel_types.html#ga26d453dd63264efc07c23ce640205858">operator==</a>(<span class="keyword">const</span> JsonArrayConstIterator&amp; other)<span class="keyword"> const </span>{</div>
@@ -3753,7 +3753,7 @@ $(function(){initNavTree('json_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l03644" name="l03644"></a><span class="lineno"> 3644</span>  JsonPair <a class="code hl_function" href="group___pixel_types.html#gaeda6b694068cd82be2563b7c748d26e9">operator*</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l03645" name="l03645"></a><span class="lineno"> 3645</span>    <span class="keywordflow">return</span> JsonPair(iterator_, resources_);</div>
 <div class="line"><a id="l03646" name="l03646"></a><span class="lineno"> 3646</span>  }</div>
-<div class="line"><a id="l03647" name="l03647"></a><span class="lineno"> 3647</span>  <a class="code hl_class" href="class_ptr.html">Ptr&lt;JsonPair&gt;</a> operator-&gt;() {</div>
+<div class="line"><a id="l03647" name="l03647"></a><span class="lineno"> 3647</span>  <a class="code hl_class" href="class_ref.html">Ref&lt;JsonPair&gt;</a> operator-&gt;() {</div>
 <div class="line"><a id="l03648" name="l03648"></a><span class="lineno"> 3648</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group___pixel_types.html#gaeda6b694068cd82be2563b7c748d26e9">operator*</a>();</div>
 <div class="line"><a id="l03649" name="l03649"></a><span class="lineno"> 3649</span>  }</div>
 <div class="line"><a id="l03650" name="l03650"></a><span class="lineno"> 3650</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="group___pixel_types.html#ga26d453dd63264efc07c23ce640205858">operator==</a>(<span class="keyword">const</span> JsonObjectIterator&amp; other)<span class="keyword"> const </span>{</div>
@@ -3781,7 +3781,7 @@ $(function(){initNavTree('json_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l03672" name="l03672"></a><span class="lineno"> 3672</span>  JsonPairConst <a class="code hl_function" href="group___pixel_types.html#gaeda6b694068cd82be2563b7c748d26e9">operator*</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l03673" name="l03673"></a><span class="lineno"> 3673</span>    <span class="keywordflow">return</span> JsonPairConst(iterator_, resources_);</div>
 <div class="line"><a id="l03674" name="l03674"></a><span class="lineno"> 3674</span>  }</div>
-<div class="line"><a id="l03675" name="l03675"></a><span class="lineno"> 3675</span>  <a class="code hl_class" href="class_ptr.html">Ptr&lt;JsonPairConst&gt;</a> operator-&gt;() {</div>
+<div class="line"><a id="l03675" name="l03675"></a><span class="lineno"> 3675</span>  <a class="code hl_class" href="class_ref.html">Ref&lt;JsonPairConst&gt;</a> operator-&gt;() {</div>
 <div class="line"><a id="l03676" name="l03676"></a><span class="lineno"> 3676</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group___pixel_types.html#gaeda6b694068cd82be2563b7c748d26e9">operator*</a>();</div>
 <div class="line"><a id="l03677" name="l03677"></a><span class="lineno"> 3677</span>  }</div>
 <div class="line"><a id="l03678" name="l03678"></a><span class="lineno"> 3678</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="group___pixel_types.html#ga26d453dd63264efc07c23ce640205858">operator==</a>(<span class="keyword">const</span> JsonObjectConstIterator&amp; other)<span class="keyword"> const </span>{</div>
@@ -4543,13 +4543,13 @@ $(function(){initNavTree('json_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l04434" name="l04434"></a><span class="lineno"> 4434</span>};</div>
 <div class="line"><a id="l04435" name="l04435"></a><span class="lineno"> 4435</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a id="l04436" name="l04436"></a><span class="lineno"> 4436</span><span class="keyword">struct </span>Comparer&lt;</div>
-<div class="line"><a id="l04437" name="l04437"></a><span class="lineno"> 4437</span>    T, enable_if_t&lt;is_convertible&lt;T, ArduinoJson::JsonVariantConst&gt;::value&gt;&gt;</div>
+<div class="line"><a id="l04437" name="l04437"></a><span class="lineno"> 4437</span>    T, enable_if_t&lt;is_convertible&lt;T, FLArduinoJson::JsonVariantConst&gt;::value&gt;&gt;</div>
 <div class="line"><a id="l04438" name="l04438"></a><span class="lineno"> 4438</span>    : VariantComparer {</div>
 <div class="line"><a id="l04439" name="l04439"></a><span class="lineno"> 4439</span>  <span class="keyword">explicit</span> Comparer(<span class="keyword">const</span> T&amp; value)</div>
 <div class="line"><a id="l04440" name="l04440"></a><span class="lineno"> 4440</span>      : VariantComparer(static_cast&lt;JsonVariantConst&gt;(value)) {}</div>
 <div class="line"><a id="l04441" name="l04441"></a><span class="lineno"> 4441</span>};</div>
 <div class="line"><a id="l04442" name="l04442"></a><span class="lineno"> 4442</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l04443" name="l04443"></a><span class="lineno"> 4443</span>CompareResult compare(ArduinoJson::JsonVariantConst lhs, <span class="keyword">const</span> T&amp; rhs) {</div>
+<div class="line"><a id="l04443" name="l04443"></a><span class="lineno"> 4443</span>CompareResult compare(FLArduinoJson::JsonVariantConst lhs, <span class="keyword">const</span> T&amp; rhs) {</div>
 <div class="line"><a id="l04444" name="l04444"></a><span class="lineno"> 4444</span>  Comparer&lt;T&gt; comparer(rhs);</div>
 <div class="line"><a id="l04445" name="l04445"></a><span class="lineno"> 4445</span>  <span class="keywordflow">return</span> accept(lhs, comparer);</div>
 <div class="line"><a id="l04446" name="l04446"></a><span class="lineno"> 4446</span>}</div>
@@ -5143,7 +5143,7 @@ $(function(){initNavTree('json_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l05034" name="l05034"></a><span class="lineno"> 5034</span>  }</div>
 <div class="line"><a id="l05035" name="l05035"></a><span class="lineno"> 5035</span>};</div>
 <div class="line"><a id="l05036" name="l05036"></a><span class="lineno"> 5036</span><span class="keyword">template</span> &lt;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>&gt; <span class="keyword">class </span>TSerializer&gt;</div>
-<div class="line"><a id="l05037" name="l05037"></a><span class="lineno"> 5037</span><span class="keywordtype">size_t</span> measure(ArduinoJson::JsonVariantConst source) {</div>
+<div class="line"><a id="l05037" name="l05037"></a><span class="lineno"> 5037</span><span class="keywordtype">size_t</span> measure(FLArduinoJson::JsonVariantConst source) {</div>
 <div class="line"><a id="l05038" name="l05038"></a><span class="lineno"> 5038</span>  DummyWriter dp;</div>
 <div class="line"><a id="l05039" name="l05039"></a><span class="lineno"> 5039</span>  <span class="keyword">auto</span> data = VariantAttorney::getData(source);</div>
 <div class="line"><a id="l05040" name="l05040"></a><span class="lineno"> 5040</span>  <span class="keyword">auto</span> resources = VariantAttorney::getResourceManager(source);</div>
@@ -5293,27 +5293,27 @@ $(function(){initNavTree('json_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l05184" name="l05184"></a><span class="lineno"> 5184</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l05185" name="l05185"></a><span class="lineno"> 5185</span>ARDUINOJSON_BEGIN_PRIVATE_NAMESPACE</div>
 <div class="line"><a id="l05186" name="l05186"></a><span class="lineno"> 5186</span><span class="keyword">template</span> &lt;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>&gt; <span class="keyword">class </span>TSerializer, <span class="keyword">typename</span> TWriter&gt;</div>
-<div class="line"><a id="l05187" name="l05187"></a><span class="lineno"> 5187</span><span class="keywordtype">size_t</span> doSerialize(ArduinoJson::JsonVariantConst source, TWriter writer) {</div>
+<div class="line"><a id="l05187" name="l05187"></a><span class="lineno"> 5187</span><span class="keywordtype">size_t</span> doSerialize(FLArduinoJson::JsonVariantConst source, TWriter writer) {</div>
 <div class="line"><a id="l05188" name="l05188"></a><span class="lineno"> 5188</span>  <span class="keyword">auto</span> data = VariantAttorney::getData(source);</div>
 <div class="line"><a id="l05189" name="l05189"></a><span class="lineno"> 5189</span>  <span class="keyword">auto</span> resources = VariantAttorney::getResourceManager(source);</div>
 <div class="line"><a id="l05190" name="l05190"></a><span class="lineno"> 5190</span>  TSerializer&lt;TWriter&gt; serializer(writer, resources);</div>
 <div class="line"><a id="l05191" name="l05191"></a><span class="lineno"> 5191</span>  <span class="keywordflow">return</span> VariantData::accept(data, resources, serializer);</div>
 <div class="line"><a id="l05192" name="l05192"></a><span class="lineno"> 5192</span>}</div>
 <div class="line"><a id="l05193" name="l05193"></a><span class="lineno"> 5193</span><span class="keyword">template</span> &lt;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>&gt; <span class="keyword">class </span>TSerializer, <span class="keyword">typename</span> TDestination&gt;</div>
-<div class="line"><a id="l05194" name="l05194"></a><span class="lineno"> 5194</span><span class="keywordtype">size_t</span> serialize(ArduinoJson::JsonVariantConst source,</div>
+<div class="line"><a id="l05194" name="l05194"></a><span class="lineno"> 5194</span><span class="keywordtype">size_t</span> serialize(FLArduinoJson::JsonVariantConst source,</div>
 <div class="line"><a id="l05195" name="l05195"></a><span class="lineno"> 5195</span>                 TDestination&amp; destination) {</div>
 <div class="line"><a id="l05196" name="l05196"></a><span class="lineno"> 5196</span>  Writer&lt;TDestination&gt; writer(destination);</div>
 <div class="line"><a id="l05197" name="l05197"></a><span class="lineno"> 5197</span>  <span class="keywordflow">return</span> doSerialize&lt;TSerializer&gt;(source, writer);</div>
 <div class="line"><a id="l05198" name="l05198"></a><span class="lineno"> 5198</span>}</div>
 <div class="line"><a id="l05199" name="l05199"></a><span class="lineno"> 5199</span><span class="keyword">template</span> &lt;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>&gt; <span class="keyword">class </span>TSerializer&gt;</div>
 <div class="line"><a id="l05200" name="l05200"></a><span class="lineno"> 5200</span>enable_if_t&lt;!TSerializer&lt;StaticStringWriter&gt;::producesText, <span class="keywordtype">size_t</span>&gt; serialize(</div>
-<div class="line"><a id="l05201" name="l05201"></a><span class="lineno"> 5201</span>    ArduinoJson::JsonVariantConst source, <span class="keywordtype">void</span>* buffer, <span class="keywordtype">size_t</span> bufferSize) {</div>
+<div class="line"><a id="l05201" name="l05201"></a><span class="lineno"> 5201</span>    FLArduinoJson::JsonVariantConst source, <span class="keywordtype">void</span>* buffer, <span class="keywordtype">size_t</span> bufferSize) {</div>
 <div class="line"><a id="l05202" name="l05202"></a><span class="lineno"> 5202</span>  StaticStringWriter writer(<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(buffer), bufferSize);</div>
 <div class="line"><a id="l05203" name="l05203"></a><span class="lineno"> 5203</span>  <span class="keywordflow">return</span> doSerialize&lt;TSerializer&gt;(source, writer);</div>
 <div class="line"><a id="l05204" name="l05204"></a><span class="lineno"> 5204</span>}</div>
 <div class="line"><a id="l05205" name="l05205"></a><span class="lineno"> 5205</span><span class="keyword">template</span> &lt;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>&gt; <span class="keyword">class </span>TSerializer&gt;</div>
 <div class="line"><a id="l05206" name="l05206"></a><span class="lineno"> 5206</span>enable_if_t&lt;TSerializer&lt;StaticStringWriter&gt;::producesText, <span class="keywordtype">size_t</span>&gt; serialize(</div>
-<div class="line"><a id="l05207" name="l05207"></a><span class="lineno"> 5207</span>    ArduinoJson::JsonVariantConst source, <span class="keywordtype">void</span>* buffer, <span class="keywordtype">size_t</span> bufferSize) {</div>
+<div class="line"><a id="l05207" name="l05207"></a><span class="lineno"> 5207</span>    FLArduinoJson::JsonVariantConst source, <span class="keywordtype">void</span>* buffer, <span class="keywordtype">size_t</span> bufferSize) {</div>
 <div class="line"><a id="l05208" name="l05208"></a><span class="lineno"> 5208</span>  StaticStringWriter writer(<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(buffer), bufferSize);</div>
 <div class="line"><a id="l05209" name="l05209"></a><span class="lineno"> 5209</span>  <span class="keywordtype">size_t</span> n = doSerialize&lt;TSerializer&gt;(source, writer);</div>
 <div class="line"><a id="l05210" name="l05210"></a><span class="lineno"> 5210</span>  <span class="keywordflow">if</span> (n &lt; bufferSize)</div>
@@ -5322,7 +5322,7 @@ $(function(){initNavTree('json_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l05213" name="l05213"></a><span class="lineno"> 5213</span>}</div>
 <div class="line"><a id="l05214" name="l05214"></a><span class="lineno"> 5214</span><span class="keyword">template</span> &lt;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>&gt; <span class="keyword">class </span>TSerializer, <span class="keyword">typename</span> TChar, <span class="keywordtype">size_t</span> N&gt;</div>
 <div class="line"><a id="l05215" name="l05215"></a><span class="lineno"> 5215</span>enable_if_t&lt;IsChar&lt;TChar&gt;::value, <span class="keywordtype">size_t</span>&gt; serialize(</div>
-<div class="line"><a id="l05216" name="l05216"></a><span class="lineno"> 5216</span>    ArduinoJson::JsonVariantConst source, TChar (&amp;buffer)[N]) {</div>
+<div class="line"><a id="l05216" name="l05216"></a><span class="lineno"> 5216</span>    FLArduinoJson::JsonVariantConst source, TChar (&amp;buffer)[N]) {</div>
 <div class="line"><a id="l05217" name="l05217"></a><span class="lineno"> 5217</span>  <span class="keywordflow">return</span> serialize&lt;TSerializer&gt;(source, buffer, N);</div>
 <div class="line"><a id="l05218" name="l05218"></a><span class="lineno"> 5218</span>}</div>
 <div class="line"><a id="l05219" name="l05219"></a><span class="lineno"> 5219</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> TWriter&gt;</div>
@@ -7393,16 +7393,16 @@ $(function(){initNavTree('json_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l07284" name="l07284"></a><span class="lineno"> 7284</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> TDestination&gt;</div>
 <div class="line"><a id="l07285" name="l07285"></a><span class="lineno"> 7285</span>detail::enable_if_t&lt;!detail::is_pointer&lt;TDestination&gt;::value, <span class="keywordtype">size_t</span>&gt;</div>
 <div class="line"><a id="l07286" name="l07286"></a><span class="lineno"> 7286</span>serializeJsonPretty(JsonVariantConst source, TDestination&amp; destination) {</div>
-<div class="line"><a id="l07287" name="l07287"></a><span class="lineno"> 7287</span>  <span class="keyword">using namespace </span>ArduinoJson::detail;</div>
+<div class="line"><a id="l07287" name="l07287"></a><span class="lineno"> 7287</span>  <span class="keyword">using namespace </span>FLArduinoJson::detail;</div>
 <div class="line"><a id="l07288" name="l07288"></a><span class="lineno"> 7288</span>  <span class="keywordflow">return</span> serialize&lt;PrettyJsonSerializer&gt;(source, destination);</div>
 <div class="line"><a id="l07289" name="l07289"></a><span class="lineno"> 7289</span>}</div>
 <div class="line"><a id="l07290" name="l07290"></a><span class="lineno"> 7290</span><span class="keyword">inline</span> <span class="keywordtype">size_t</span> serializeJsonPretty(JsonVariantConst source, <span class="keywordtype">void</span>* buffer,</div>
 <div class="line"><a id="l07291" name="l07291"></a><span class="lineno"> 7291</span>                                  <span class="keywordtype">size_t</span> bufferSize) {</div>
-<div class="line"><a id="l07292" name="l07292"></a><span class="lineno"> 7292</span>  <span class="keyword">using namespace </span>ArduinoJson::detail;</div>
+<div class="line"><a id="l07292" name="l07292"></a><span class="lineno"> 7292</span>  <span class="keyword">using namespace </span>FLArduinoJson::detail;</div>
 <div class="line"><a id="l07293" name="l07293"></a><span class="lineno"> 7293</span>  <span class="keywordflow">return</span> serialize&lt;PrettyJsonSerializer&gt;(source, buffer, bufferSize);</div>
 <div class="line"><a id="l07294" name="l07294"></a><span class="lineno"> 7294</span>}</div>
 <div class="line"><a id="l07295" name="l07295"></a><span class="lineno"> 7295</span><span class="keyword">inline</span> <span class="keywordtype">size_t</span> measureJsonPretty(JsonVariantConst source) {</div>
-<div class="line"><a id="l07296" name="l07296"></a><span class="lineno"> 7296</span>  <span class="keyword">using namespace </span>ArduinoJson::detail;</div>
+<div class="line"><a id="l07296" name="l07296"></a><span class="lineno"> 7296</span>  <span class="keyword">using namespace </span>FLArduinoJson::detail;</div>
 <div class="line"><a id="l07297" name="l07297"></a><span class="lineno"> 7297</span>  <span class="keywordflow">return</span> measure&lt;PrettyJsonSerializer&gt;(source);</div>
 <div class="line"><a id="l07298" name="l07298"></a><span class="lineno"> 7298</span>}</div>
 <div class="line"><a id="l07299" name="l07299"></a><span class="lineno"> 7299</span><span class="keyword">class </span>MsgPackBinary {</div>
@@ -8219,16 +8219,16 @@ $(function(){initNavTree('json_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l08110" name="l08110"></a><span class="lineno"> 8110</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> TDestination&gt;</div>
 <div class="line"><a id="l08111" name="l08111"></a><span class="lineno"> 8111</span>detail::enable_if_t&lt;!detail::is_pointer&lt;TDestination&gt;::value, <span class="keywordtype">size_t</span>&gt;</div>
 <div class="line"><a id="l08112" name="l08112"></a><span class="lineno"> 8112</span>serializeMsgPack(JsonVariantConst source, TDestination&amp; output) {</div>
-<div class="line"><a id="l08113" name="l08113"></a><span class="lineno"> 8113</span>  <span class="keyword">using namespace </span>ArduinoJson::detail;</div>
+<div class="line"><a id="l08113" name="l08113"></a><span class="lineno"> 8113</span>  <span class="keyword">using namespace </span>FLArduinoJson::detail;</div>
 <div class="line"><a id="l08114" name="l08114"></a><span class="lineno"> 8114</span>  <span class="keywordflow">return</span> serialize&lt;MsgPackSerializer&gt;(source, output);</div>
 <div class="line"><a id="l08115" name="l08115"></a><span class="lineno"> 8115</span>}</div>
 <div class="line"><a id="l08116" name="l08116"></a><span class="lineno"> 8116</span><span class="keyword">inline</span> <span class="keywordtype">size_t</span> serializeMsgPack(JsonVariantConst source, <span class="keywordtype">void</span>* output,</div>
 <div class="line"><a id="l08117" name="l08117"></a><span class="lineno"> 8117</span>                               <span class="keywordtype">size_t</span> size) {</div>
-<div class="line"><a id="l08118" name="l08118"></a><span class="lineno"> 8118</span>  <span class="keyword">using namespace </span>ArduinoJson::detail;</div>
+<div class="line"><a id="l08118" name="l08118"></a><span class="lineno"> 8118</span>  <span class="keyword">using namespace </span>FLArduinoJson::detail;</div>
 <div class="line"><a id="l08119" name="l08119"></a><span class="lineno"> 8119</span>  <span class="keywordflow">return</span> serialize&lt;MsgPackSerializer&gt;(source, output, size);</div>
 <div class="line"><a id="l08120" name="l08120"></a><span class="lineno"> 8120</span>}</div>
 <div class="line"><a id="l08121" name="l08121"></a><span class="lineno"> 8121</span><span class="keyword">inline</span> <span class="keywordtype">size_t</span> measureMsgPack(JsonVariantConst source) {</div>
-<div class="line"><a id="l08122" name="l08122"></a><span class="lineno"> 8122</span>  <span class="keyword">using namespace </span>ArduinoJson::detail;</div>
+<div class="line"><a id="l08122" name="l08122"></a><span class="lineno"> 8122</span>  <span class="keyword">using namespace </span>FLArduinoJson::detail;</div>
 <div class="line"><a id="l08123" name="l08123"></a><span class="lineno"> 8123</span>  <span class="keywordflow">return</span> measure&lt;MsgPackSerializer&gt;(source);</div>
 <div class="line"><a id="l08124" name="l08124"></a><span class="lineno"> 8124</span>}</div>
 <div class="line"><a id="l08125" name="l08125"></a><span class="lineno"> 8125</span>ARDUINOJSON_END_PUBLIC_NAMESPACE</div>
@@ -8243,18 +8243,18 @@ $(function(){initNavTree('json_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l08134" name="l08134"></a><span class="lineno"> 8134</span><span class="preprocessor">#define ARDUINOJSON_COMPILE_ERROR(msg) ARDUINOJSON_PRAGMA(GCC error msg)</span></div>
 <div class="line"><a id="l08135" name="l08135"></a><span class="lineno"> 8135</span><span class="preprocessor">#define ARDUINOJSON_STRINGIFY(S) #S</span></div>
 <div class="line"><a id="l08136" name="l08136"></a><span class="lineno"> 8136</span><span class="preprocessor">#define ARDUINOJSON_DEPRECATION_ERROR(X, Y) \</span></div>
-<div class="line"><a id="l08137" name="l08137"></a><span class="lineno"> 8137</span><span class="preprocessor">  ARDUINOJSON_COMPILE_ERROR(ARDUINOJSON_STRINGIFY(X is a Y from ArduinoJson 5. Please see https:/\/arduinojson.org/v7/upgrade-from-v5/ to learn how to upgrade to ArduinoJson 7))</span></div>
+<div class="line"><a id="l08137" name="l08137"></a><span class="lineno"> 8137</span><span class="preprocessor">  ARDUINOJSON_COMPILE_ERROR(ARDUINOJSON_STRINGIFY(X is a Y from FLArduinoJson 5. Please see https:/\/arduinojson.org/v7/upgrade-from-v5/ to learn how to upgrade to FLArduinoJson 7))</span></div>
 <div class="line"><a id="l08138" name="l08138"></a><span class="lineno"> 8138</span><span class="preprocessor">#define StaticJsonBuffer ARDUINOJSON_DEPRECATION_ERROR(StaticJsonBuffer, class)</span></div>
 <div class="line"><a id="l08139" name="l08139"></a><span class="lineno"> 8139</span><span class="preprocessor">#define DynamicJsonBuffer ARDUINOJSON_DEPRECATION_ERROR(DynamicJsonBuffer, class)</span></div>
 <div class="line"><a id="l08140" name="l08140"></a><span class="lineno"> 8140</span><span class="preprocessor">#define JsonBuffer ARDUINOJSON_DEPRECATION_ERROR(JsonBuffer, class)</span></div>
 <div class="line"><a id="l08141" name="l08141"></a><span class="lineno"> 8141</span><span class="preprocessor">#define RawJson ARDUINOJSON_DEPRECATION_ERROR(RawJson, function)</span></div>
-<div class="line"><a id="l08142" name="l08142"></a><span class="lineno"> 8142</span><span class="preprocessor">#define ARDUINOJSON_NAMESPACE _Pragma (&quot;GCC warning \&quot;ARDUINOJSON_NAMESPACE is deprecated, use ArduinoJson instead\&quot;&quot;) ArduinoJson</span></div>
-<div class="line"><a id="l08143" name="l08143"></a><span class="lineno"> 8143</span><span class="preprocessor">#define JSON_ARRAY_SIZE(N) _Pragma (&quot;GCC warning \&quot;JSON_ARRAY_SIZE is deprecated, you don&#39;t need to compute the size anymore\&quot;&quot;) (ArduinoJson::detail::sizeofArray(N))</span></div>
-<div class="line"><a id="l08144" name="l08144"></a><span class="lineno"> 8144</span><span class="preprocessor">#define JSON_OBJECT_SIZE(N) _Pragma (&quot;GCC warning \&quot;JSON_OBJECT_SIZE is deprecated, you don&#39;t need to compute the size anymore\&quot;&quot;) (ArduinoJson::detail::sizeofObject(N))</span></div>
+<div class="line"><a id="l08142" name="l08142"></a><span class="lineno"> 8142</span><span class="preprocessor">#define ARDUINOJSON_NAMESPACE _Pragma (&quot;GCC warning \&quot;ARDUINOJSON_NAMESPACE is deprecated, use ArduinoJson instead\&quot;&quot;) FLArduinoJson</span></div>
+<div class="line"><a id="l08143" name="l08143"></a><span class="lineno"> 8143</span><span class="preprocessor">#define JSON_ARRAY_SIZE(N) _Pragma (&quot;GCC warning \&quot;JSON_ARRAY_SIZE is deprecated, you don&#39;t need to compute the size anymore\&quot;&quot;) (FLArduinoJson::detail::sizeofArray(N))</span></div>
+<div class="line"><a id="l08144" name="l08144"></a><span class="lineno"> 8144</span><span class="preprocessor">#define JSON_OBJECT_SIZE(N) _Pragma (&quot;GCC warning \&quot;JSON_OBJECT_SIZE is deprecated, you don&#39;t need to compute the size anymore\&quot;&quot;) (FLArduinoJson::detail::sizeofObject(N))</span></div>
 <div class="line"><a id="l08145" name="l08145"></a><span class="lineno"> 8145</span><span class="preprocessor">#define JSON_STRING_SIZE(N) _Pragma (&quot;GCC warning \&quot;JSON_STRING_SIZE is deprecated, you don&#39;t need to compute the size anymore\&quot;&quot;) (N+1)</span></div>
 <div class="line"><a id="l08146" name="l08146"></a><span class="lineno"> 8146</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l08147" name="l08147"></a><span class="lineno"> 8147</span><span class="preprocessor">#define JSON_ARRAY_SIZE(N) (ArduinoJson::detail::sizeofArray(N))</span></div>
-<div class="line"><a id="l08148" name="l08148"></a><span class="lineno"> 8148</span><span class="preprocessor">#define JSON_OBJECT_SIZE(N) (ArduinoJson::detail::sizeofObject(N))</span></div>
+<div class="line"><a id="l08147" name="l08147"></a><span class="lineno"> 8147</span><span class="preprocessor">#define JSON_ARRAY_SIZE(N) (FLArduinoJson::detail::sizeofArray(N))</span></div>
+<div class="line"><a id="l08148" name="l08148"></a><span class="lineno"> 8148</span><span class="preprocessor">#define JSON_OBJECT_SIZE(N) (FLArduinoJson::detail::sizeofObject(N))</span></div>
 <div class="line"><a id="l08149" name="l08149"></a><span class="lineno"> 8149</span><span class="preprocessor">#define JSON_STRING_SIZE(N) (N+1)</span></div>
 <div class="line"><a id="l08150" name="l08150"></a><span class="lineno"> 8150</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l08151" name="l08151"></a><span class="lineno"> 8151</span>ARDUINOJSON_BEGIN_PUBLIC_NAMESPACE</div>
@@ -8322,24 +8322,24 @@ $(function(){initNavTree('json_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l08213" name="l08213"></a><span class="lineno"> 8213</span>}</div>
 <div class="line"><a id="l08214" name="l08214"></a><span class="lineno"> 8214</span>ARDUINOJSON_END_PUBLIC_NAMESPACE</div>
 <div class="line"><a id="l08215" name="l08215"></a><span class="lineno"> 8215</span> </div>
-<div class="line"><a id="l08216" name="l08216"></a><span class="lineno"> 8216</span><span class="comment">// using namespace ArduinoJson;</span></div>
+<div class="line"><a id="l08216" name="l08216"></a><span class="lineno"> 8216</span><span class="comment">// using namespace FLArduinoJson;</span></div>
 <div class="line"><a id="l08217" name="l08217"></a><span class="lineno"> 8217</span> </div>
 <div class="line"><a id="l08218" name="l08218"></a><span class="lineno"> 8218</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l08219" name="l08219"></a><span class="lineno"> 8219</span> </div>
 <div class="line"><a id="l08220" name="l08220"></a><span class="lineno"> 8220</span><span class="preprocessor">#error ArduinoJson requires a C++ compiler, please change file extension to .cc or .cpp</span></div>
 <div class="line"><a id="l08221" name="l08221"></a><span class="lineno"> 8221</span> </div>
 <div class="line"><a id="l08222" name="l08222"></a><span class="lineno"> 8222</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclass_ptr_html"><div class="ttname"><a href="class_ptr.html">Ptr</a></div><div class="ttdef"><b>Definition</b> <a href="ptr_8h_source.html#l00095">ptr.h:95</a></div></div>
-<div class="ttc" id="agroup___pixel_types_html_ga19fe40faf567a840c117aa10ed9542d2"><div class="ttname"><a href="group___pixel_types.html#ga19fe40faf567a840c117aa10ed9542d2">operator!=</a></div><div class="ttdeci">FASTLED_FORCE_INLINE bool operator!=(const CRGB &amp;lhs, const CRGB &amp;rhs)</div><div class="ttdoc">Check if two CRGB objects do not have the same color data.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00649">crgb.h:649</a></div></div>
-<div class="ttc" id="agroup___pixel_types_html_ga1de0f5277d29ec5632ec187c04e447b8"><div class="ttname"><a href="group___pixel_types.html#ga1de0f5277d29ec5632ec187c04e447b8">operator&lt;=</a></div><div class="ttdeci">FASTLED_FORCE_INLINE bool operator&lt;=(const CRGB &amp;lhs, const CRGB &amp;rhs)</div><div class="ttdoc">Check if the sum of the color channels in one CRGB object is less than or equal to another.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00694">crgb.h:694</a></div></div>
-<div class="ttc" id="agroup___pixel_types_html_ga26d453dd63264efc07c23ce640205858"><div class="ttname"><a href="group___pixel_types.html#ga26d453dd63264efc07c23ce640205858">operator==</a></div><div class="ttdeci">FASTLED_FORCE_INLINE bool operator==(const CRGB &amp;lhs, const CRGB &amp;rhs)</div><div class="ttdoc">Check if two CRGB objects have the same color data.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00643">crgb.h:643</a></div></div>
-<div class="ttc" id="agroup___pixel_types_html_ga7f9951a2dbcee1172518377966f1f9d2"><div class="ttname"><a href="group___pixel_types.html#ga7f9951a2dbcee1172518377966f1f9d2">operator&lt;</a></div><div class="ttdeci">FASTLED_FORCE_INLINE bool operator&lt;(const CRGB &amp;lhs, const CRGB &amp;rhs)</div><div class="ttdoc">Check if the sum of the color channels in one CRGB object is less than another.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00667">crgb.h:667</a></div></div>
-<div class="ttc" id="agroup___pixel_types_html_ga8329bae59ba485ef862f8a08d066408c"><div class="ttname"><a href="group___pixel_types.html#ga8329bae59ba485ef862f8a08d066408c">operator&lt;&lt;</a></div><div class="ttdeci">T &amp; operator&lt;&lt;(T &amp;os, const CRGB &amp;rgb)</div><div class="ttdoc">Generic template for ostream operator to print CRGB objects.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00742">crgb.h:742</a></div></div>
-<div class="ttc" id="agroup___pixel_types_html_ga8a5083bb351fad245f328ae8066134ae"><div class="ttname"><a href="group___pixel_types.html#ga8a5083bb351fad245f328ae8066134ae">operator|</a></div><div class="ttdeci">FASTLED_FORCE_INLINE CRGB operator|(const CRGB &amp;p1, const CRGB &amp;p2)</div><div class="ttdoc">Combine two CRGB objects, taking the largest value of each channel.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00720">crgb.h:720</a></div></div>
-<div class="ttc" id="agroup___pixel_types_html_ga8a80cf207f08b95b7e6d5775ec02ac4b"><div class="ttname"><a href="group___pixel_types.html#ga8a80cf207f08b95b7e6d5775ec02ac4b">operator&amp;</a></div><div class="ttdeci">FASTLED_FORCE_INLINE CRGB operator&amp;(const CRGB &amp;p1, const CRGB &amp;p2)</div><div class="ttdoc">Combine two CRGB objects, taking the smallest value of each channel.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00712">crgb.h:712</a></div></div>
-<div class="ttc" id="agroup___pixel_types_html_ga9dd25b2710606daf2b439ca93a346893"><div class="ttname"><a href="group___pixel_types.html#ga9dd25b2710606daf2b439ca93a346893">operator&gt;</a></div><div class="ttdeci">FASTLED_FORCE_INLINE bool operator&gt;(const CRGB &amp;lhs, const CRGB &amp;rhs)</div><div class="ttdoc">Check if the sum of the color channels in one CRGB object is greater than another.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00676">crgb.h:676</a></div></div>
-<div class="ttc" id="agroup___pixel_types_html_gacfcbe699840b65178159536545397252"><div class="ttname"><a href="group___pixel_types.html#gacfcbe699840b65178159536545397252">operator&gt;=</a></div><div class="ttdeci">FASTLED_FORCE_INLINE bool operator&gt;=(const CRGB &amp;lhs, const CRGB &amp;rhs)</div><div class="ttdoc">Check if the sum of the color channels in one CRGB object is greater than or equal to another.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00685">crgb.h:685</a></div></div>
-<div class="ttc" id="agroup___pixel_types_html_gaeda6b694068cd82be2563b7c748d26e9"><div class="ttname"><a href="group___pixel_types.html#gaeda6b694068cd82be2563b7c748d26e9">operator*</a></div><div class="ttdeci">FASTLED_FORCE_INLINE CRGB operator*(const CRGB &amp;p1, uint8_t d)</div><div class="ttdoc">Multiply each of the channels by a constant, saturating each channel at 0xFF.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8hpp_source.html#l00212">crgb.hpp:212</a></div></div>
+<div class="ttc" id="aclass_ref_html"><div class="ttname"><a href="class_ref.html">Ref</a></div><div class="ttdef"><b>Definition</b> <a href="ref_8h_source.html#l00098">ref.h:98</a></div></div>
+<div class="ttc" id="agroup___pixel_types_html_ga19fe40faf567a840c117aa10ed9542d2"><div class="ttname"><a href="group___pixel_types.html#ga19fe40faf567a840c117aa10ed9542d2">operator!=</a></div><div class="ttdeci">FASTLED_FORCE_INLINE bool operator!=(const CRGB &amp;lhs, const CRGB &amp;rhs)</div><div class="ttdoc">Check if two CRGB objects do not have the same color data.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00652">crgb.h:652</a></div></div>
+<div class="ttc" id="agroup___pixel_types_html_ga1de0f5277d29ec5632ec187c04e447b8"><div class="ttname"><a href="group___pixel_types.html#ga1de0f5277d29ec5632ec187c04e447b8">operator&lt;=</a></div><div class="ttdeci">FASTLED_FORCE_INLINE bool operator&lt;=(const CRGB &amp;lhs, const CRGB &amp;rhs)</div><div class="ttdoc">Check if the sum of the color channels in one CRGB object is less than or equal to another.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00697">crgb.h:697</a></div></div>
+<div class="ttc" id="agroup___pixel_types_html_ga26d453dd63264efc07c23ce640205858"><div class="ttname"><a href="group___pixel_types.html#ga26d453dd63264efc07c23ce640205858">operator==</a></div><div class="ttdeci">FASTLED_FORCE_INLINE bool operator==(const CRGB &amp;lhs, const CRGB &amp;rhs)</div><div class="ttdoc">Check if two CRGB objects have the same color data.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00646">crgb.h:646</a></div></div>
+<div class="ttc" id="agroup___pixel_types_html_ga7f9951a2dbcee1172518377966f1f9d2"><div class="ttname"><a href="group___pixel_types.html#ga7f9951a2dbcee1172518377966f1f9d2">operator&lt;</a></div><div class="ttdeci">FASTLED_FORCE_INLINE bool operator&lt;(const CRGB &amp;lhs, const CRGB &amp;rhs)</div><div class="ttdoc">Check if the sum of the color channels in one CRGB object is less than another.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00670">crgb.h:670</a></div></div>
+<div class="ttc" id="agroup___pixel_types_html_ga8329bae59ba485ef862f8a08d066408c"><div class="ttname"><a href="group___pixel_types.html#ga8329bae59ba485ef862f8a08d066408c">operator&lt;&lt;</a></div><div class="ttdeci">T &amp; operator&lt;&lt;(T &amp;os, const CRGB &amp;rgb)</div><div class="ttdoc">Generic template for ostream operator to print CRGB objects.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00745">crgb.h:745</a></div></div>
+<div class="ttc" id="agroup___pixel_types_html_ga8a5083bb351fad245f328ae8066134ae"><div class="ttname"><a href="group___pixel_types.html#ga8a5083bb351fad245f328ae8066134ae">operator|</a></div><div class="ttdeci">FASTLED_FORCE_INLINE CRGB operator|(const CRGB &amp;p1, const CRGB &amp;p2)</div><div class="ttdoc">Combine two CRGB objects, taking the largest value of each channel.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00723">crgb.h:723</a></div></div>
+<div class="ttc" id="agroup___pixel_types_html_ga8a80cf207f08b95b7e6d5775ec02ac4b"><div class="ttname"><a href="group___pixel_types.html#ga8a80cf207f08b95b7e6d5775ec02ac4b">operator&amp;</a></div><div class="ttdeci">FASTLED_FORCE_INLINE CRGB operator&amp;(const CRGB &amp;p1, const CRGB &amp;p2)</div><div class="ttdoc">Combine two CRGB objects, taking the smallest value of each channel.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00715">crgb.h:715</a></div></div>
+<div class="ttc" id="agroup___pixel_types_html_ga9dd25b2710606daf2b439ca93a346893"><div class="ttname"><a href="group___pixel_types.html#ga9dd25b2710606daf2b439ca93a346893">operator&gt;</a></div><div class="ttdeci">FASTLED_FORCE_INLINE bool operator&gt;(const CRGB &amp;lhs, const CRGB &amp;rhs)</div><div class="ttdoc">Check if the sum of the color channels in one CRGB object is greater than another.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00679">crgb.h:679</a></div></div>
+<div class="ttc" id="agroup___pixel_types_html_gacfcbe699840b65178159536545397252"><div class="ttname"><a href="group___pixel_types.html#gacfcbe699840b65178159536545397252">operator&gt;=</a></div><div class="ttdeci">FASTLED_FORCE_INLINE bool operator&gt;=(const CRGB &amp;lhs, const CRGB &amp;rhs)</div><div class="ttdoc">Check if the sum of the color channels in one CRGB object is greater than or equal to another.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00688">crgb.h:688</a></div></div>
+<div class="ttc" id="agroup___pixel_types_html_gaeda6b694068cd82be2563b7c748d26e9"><div class="ttname"><a href="group___pixel_types.html#gaeda6b694068cd82be2563b7c748d26e9">operator*</a></div><div class="ttdeci">FASTLED_FORCE_INLINE CRGB operator*(const CRGB &amp;p1, uint8_t d)</div><div class="ttdoc">Multiply each of the channels by a constant, saturating each channel at 0xFF.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8hpp_source.html#l00218">crgb.hpp:218</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.3-->
@@ -8347,7 +8347,7 @@ $(function(){initNavTree('json_8hpp_source.html',''); initResizable(true); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c30bdf76ce759a4eae8387be42921388.html">third_party</a></li><li class="navelem"><a class="el" href="dir_99054eaaf1ec2d970c78e0cd41436977.html">arduinojson</a></li><li class="navelem"><b>json.hpp</b></li>
-    <li class="footer">Generated on Sun Oct 27 2024 23:51:50 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Oct 30 2024 03:59:41 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->
