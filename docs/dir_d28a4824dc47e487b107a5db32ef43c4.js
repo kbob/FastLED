@@ -22,6 +22,7 @@ var dir_d28a4824dc47e487b107a5db32ef43c4 =
     [ "NoisePlayground", "dir_8b10bafa6e455a6cfdd7da84bc339d80.html", "dir_8b10bafa6e455a6cfdd7da84bc339d80" ],
     [ "NoisePlusPalette", "dir_9855228c8cabbd40154e79ac1a40dc7f.html", "dir_9855228c8cabbd40154e79ac1a40dc7f" ],
     [ "OctoWS2811", "dir_ace4e50fcc955ba7d1af81fff465c2e8.html", "dir_ace4e50fcc955ba7d1af81fff465c2e8" ],
+    [ "Overclock", "dir_e42350710e4d449d396561585bae204b.html", "dir_e42350710e4d449d396561585bae204b" ],
     [ "Pacifica", "dir_6c462138272298d2e4097d58743c07ce.html", "dir_6c462138272298d2e4097d58743c07ce" ],
     [ "Pintest", "dir_26c6288c6e5cb98dccb832f1aa4eaa4f.html", "dir_26c6288c6e5cb98dccb832f1aa4eaa4f" ],
     [ "Ports", "dir_5be643861a9099dc7f4088bde5b50734.html", "dir_5be643861a9099dc7f4088bde5b50734" ],

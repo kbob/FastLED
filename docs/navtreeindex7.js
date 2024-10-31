@@ -1,5 +1,8 @@
 var NAVTREEINDEX7 =
 {
+"group___timekeeping.html#ga8057578b51f0a5cff337fb2fd5521de7":[13,11,4],
+"group___timekeeping.html#ga837f5a688998f3340994613944e47d41":[13,11,22],
+"group___timekeeping.html#ga84622b4bfb271a01d0a3bab2f2217f47":[13,11,10],
 "group___timekeeping.html#ga860bac35464e2c83c313e92a59e0e39a":[13,11,3],
 "group___timekeeping.html#ga8b6fa2a3e84d33ffebf136f6bd9019b3":[13,11,12],
 "group___timekeeping.html#ga90e084b8253af257a0257a23aeef53e1":[13,11,7],
@@ -246,8 +249,5 @@ var NAVTREEINDEX7 =
 "structsub4.html#adae47f7ddd57c1e2a1191e6f7a0b4146":[15,0,136,27],
 "structsub4.html#adcc8a238228e93e405b1413fd6403e69":[15,0,136,6],
 "structsub4.html#af19bf78fa32695ff3266f7817144d534":[15,0,136,16],
-"structsub4.html#af59d256057cfb1c1f18ef34e602755c1":[15,0,136,28],
-"structsub4.html#af62353204ff783dca725ecb17e1be6ef":[15,0,136,18],
-"stub__main_8cpp_source.html":[16,0,1,83],
-"third__party_2arduinojson_2json_8h_source.html":[16,0,1,2,0,0]
+"structsub4.html#af59d256057cfb1c1f18ef34e602755c1":[15,0,136,28]
 };

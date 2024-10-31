@@ -1,5 +1,8 @@
 var NAVTREEINDEX8 =
 {
+"structsub4.html#af62353204ff783dca725ecb17e1be6ef":[15,0,136,18],
+"stub__main_8cpp_source.html":[16,0,1,83],
+"third__party_2arduinojson_2json_8h_source.html":[16,0,1,2,0,0],
 "time__warp_8h_source.html":[16,0,1,0,2,6],
 "todo.html":[11],
 "topics.html":[13],
@@ -49,7 +52,7 @@ var NAVTREEINDEX8 =
 "unionjust8bits.html#ae4f5c1652bd536727fd481c140d7c3df":[15,0,75,1],
 "video_8hpp_source.html":[16,0,1,0,1,5],
 "warn_8h_source.html":[16,0,1,88],
-"wasm_8ino_source.html":[16,0,0,34,0],
+"wasm_8ino_source.html":[16,0,0,35,0],
 "wiring_8cpp.html":[16,0,1,89],
 "wiring_8cpp_source.html":[16,0,1,89],
 "xmap_8h_source.html":[16,0,1,90],

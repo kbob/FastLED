@@ -1,5 +1,7 @@
 var NAVTREEINDEX2 =
 {
+"class_c_r_g_b_palette32.html#aaf3410f8c5222ca4ca0b28cd063f90c9":[13,1,0,5,5],
+"class_c_r_g_b_palette32.html#acb78b37e9ddeb393c3b8c613c9bb1f14":[13,1,0,5,1],
 "class_c_r_g_b_palette32.html#ae1d3ab8f56db6053889235afac4ed354":[13,1,0,5,34],
 "class_c_r_g_b_palette32.html#ae22b0593f4db09ec50b173ab49cbeb8d":[13,1,0,5,4],
 "class_c_r_g_b_palette32.html#ae56dd09a3bf53170d062a832f4b834b7":[13,1,0,5,17],
@@ -247,7 +249,5 @@ var NAVTREEINDEX2 =
 "classscoped__array.html":[15,0,114],
 "classscoped__ptr.html":[15,0,115],
 "cled__controller_8h_source.html":[16,0,1,12],
-"color_8h.html":[16,0,1,13],
-"color_8h_source.html":[16,0,1,13],
-"colorpalettes_8cpp.html":[16,0,1,14]
+"color_8h.html":[16,0,1,13]
 };

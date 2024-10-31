@@ -47,5 +47,6 @@ var searchData=
   ['other_20devices_44',['Testing other devices',['../index.html#autotoc_md16',1,'']]],
   ['outputpin_45',['OutputPin',['../class_output_pin.html',1,'OutputPin'],['../class_output_pin.html#ad39cf32217852803ee3f1d410a93a1db',1,'OutputPin::OutputPin()']]],
   ['overcastsky_46',['OvercastSky',['../group___color_enums.html#gga251e9e8dc2c7b981786b71706522b2a9ad0aebf757f0aa8fc45ba282bd25006f7',1,'color.h']]],
-  ['ows2811_47',['OWS2811',['../_fast_l_e_d_8h.html#a69ae16731cd4ff30f81793033758d59c',1,'FastLED.h']]]
+  ['overclock_2eino_47',['Overclock.ino',['../_overclock_8ino.html',1,'']]],
+  ['ows2811_48',['OWS2811',['../_fast_l_e_d_8h.html#a69ae16731cd4ff30f81793033758d59c',1,'FastLED.h']]]
 ];
