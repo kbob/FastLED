@@ -4,6 +4,7 @@ var topics =
     [ "Color Palettes", "group___color_palettes.html", "group___color_palettes" ],
     [ "Color Utility Functions", "group___color_utils.html", "group___color_utils" ],
     [ "Fast Math Functions", "group__lib8tion.html", "group__lib8tion" ],
+    [ "Fixed-Point Fractional Types.", "group___fractional_types.html", "group___fractional_types" ],
     [ "Gamma Adjustment Functions", "group___gamma_funcs.html", "group___gamma_funcs" ],
     [ "HSV to RGB Conversion Functions", "group___h_s_v2_r_g_b.html", "group___h_s_v2_r_g_b" ],
     [ "LED Chipset Controllers", "group___chipsets.html", "group___chipsets" ],

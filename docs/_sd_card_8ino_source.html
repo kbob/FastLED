@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.2</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.3</span>
    </div>
   </td>
  </tr>
@@ -122,34 +122,97 @@ $(function(){initNavTree('_sd_card_8ino_source.html',''); initResizable(true); }
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;<a class="code" href="_fast_l_e_d_8h.html">FastLED.h</a>&gt;</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;Arduino.h&quot;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;file_system.h&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">const</span> <span class="keywordtype">int</span> CHIP_SELECT_PIN = 5;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><a class="code hl_class" href="class_fs.html">Fs</a> fs(CHIP_SELECT_PIN);</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keywordtype">void</span> setup() {</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    Serial.begin(115200);</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordflow">if</span> (!fs.begin()) {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        Serial.println(<span class="stringliteral">&quot;Failed to initialize file system.&quot;</span>);</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    }</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    delay(2000);  <span class="comment">// If something ever goes wrong this delay will allow upload.</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keywordtype">void</span> loop() {</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    FileHandleRef fh = fs.openRead(<span class="stringliteral">&quot;data/video.dat&quot;</span>);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">if</span> (!fh) {</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>      Serial.println(<span class="stringliteral">&quot;Failed to open SD card because sd is null&quot;</span>);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>      fs.close(fh);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    delay(1000);    </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;fx/2d/noisepalette.hpp&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// #include &quot;fx/2d/animartrix.hpp&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;fx/fx_engine.h&quot;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;fx/video.h&quot;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;file_system.h&quot;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;ui.h&quot;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;file_system.h&quot;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#define LED_PIN 2</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#define LED_TYPE WS2811</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#define COLOR_ORDER GRB</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#define FPS 30</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#define CHIP_SELECT_PIN 5</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#define MATRIX_WIDTH 32</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#define MATRIX_HEIGHT 32</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#define NUM_LEDS (MATRIX_WIDTH * MATRIX_HEIGHT)</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#define IS_SERPINTINE true</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><a class="code hl_struct" href="struct_c_r_g_b.html">CRGB</a> leds[NUM_LEDS];</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><a class="code hl_class" href="class_x_y_map.html">XYMap</a> xyMap(MATRIX_WIDTH, MATRIX_HEIGHT, IS_SERPINTINE);  <span class="comment">// No serpentine</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><a class="code hl_class" href="class_file_system.html">FileSystem</a> filesystem;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><a class="code hl_class" href="class_video.html">Video</a> video;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keywordtype">void</span> setup() {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    Serial.begin(115200);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    delay(1000); <span class="comment">// sanity delay</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">if</span> (!filesystem.beginSd(CHIP_SELECT_PIN)) {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        Serial.println(<span class="stringliteral">&quot;Failed to initialize file system.&quot;</span>);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_variable" href="_fast_l_e_d_8cpp.html#a7077a6a69b1339a4c04f4bb9ecc0ad3f">FastLED</a>.<a class="code hl_function" href="class_c_fast_l_e_d.html#afd7928d822589740af6e23b2d510cf3f">addLeds</a>&lt;LED_TYPE, LED_PIN, COLOR_ORDER&gt;(leds, NUM_LEDS)</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        .setCorrection(<a class="code hl_enumvalue" href="group___color_enums.html#ggadf6bcba67c9573665af20788c4431ae8abb6d30d01c054f65ed9c5a52c2855534">TypicalLEDStrip</a>)</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        .setScreenMap(xyMap);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_variable" href="_fast_l_e_d_8cpp.html#a7077a6a69b1339a4c04f4bb9ecc0ad3f">FastLED</a>.<a class="code hl_function" href="class_c_fast_l_e_d.html#a730ba7d967e882b4b893689cf333b2eb">setBrightness</a>(96);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="comment">//fxEngine.addFx(animartrix);</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    video = filesystem.openVideo(<span class="stringliteral">&quot;data/video.dat&quot;</span>, NUM_LEDS, FPS);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">if</span> (!video) {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>      Serial.println(<span class="stringliteral">&quot;Failed to instantiate video&quot;</span>);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keywordtype">void</span> loop() {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    uint32_t now = millis();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="comment">// fxEngine.draw(millis(), leds);</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    video.draw(now, leds);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <a class="code hl_define" href="group___timekeeping.html#gaf4a00b9c39c12d777b99808d18f959fb">EVERY_N_SECONDS</a>(1){</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        Serial.println(<span class="stringliteral">&quot;Drawing&quot;</span>);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; NUM_LEDS;) {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <span class="keywordtype">int</span> nleft = MIN(8, NUM_LEDS - i);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; nleft; j++) {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                <a class="code hl_struct" href="struct_c_r_g_b.html">CRGB</a> c = leds[i + j];</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                Serial.print(<span class="stringliteral">&quot;(&quot;</span>);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                Serial.print(c.<a class="code hl_variable" href="group___pixel_types.html#ga2f664317f80358ba808cfab70a764e5d">r</a>);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                Serial.print(<span class="stringliteral">&quot;, &quot;</span>);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                Serial.print(c.<a class="code hl_variable" href="group___pixel_types.html#ga8827262477c0f018583263fdbfe9a3f4">g</a>);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                Serial.print(<span class="stringliteral">&quot;, &quot;</span>);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                Serial.print(c.<a class="code hl_variable" href="group___pixel_types.html#gaa3ca469ee3a18e04896b0b1da5a1d66d">b</a>);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                Serial.print(<span class="stringliteral">&quot;)  &quot;</span>);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            Serial.println();</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            i += nleft;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <a class="code hl_variable" href="_fast_l_e_d_8cpp.html#a7077a6a69b1339a4c04f4bb9ecc0ad3f">FastLED</a>.<a class="code hl_function" href="class_c_fast_l_e_d.html#a83afdd1e2a21f33ac4f8d2610d6e331b">show</a>();</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>}</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_fast_l_e_d_8cpp_html_a7077a6a69b1339a4c04f4bb9ecc0ad3f"><div class="ttname"><a href="_fast_l_e_d_8cpp.html#a7077a6a69b1339a4c04f4bb9ecc0ad3f">FastLED</a></div><div class="ttdeci">CFastLED FastLED</div><div class="ttdoc">Global LED strip management instance.</div><div class="ttdef"><b>Definition</b> <a href="_fast_l_e_d_8cpp_source.html#l00033">FastLED.cpp:33</a></div></div>
 <div class="ttc" id="a_fast_l_e_d_8h_html"><div class="ttname"><a href="_fast_l_e_d_8h.html">FastLED.h</a></div><div class="ttdoc">central include file for FastLED, defines the CFastLED class/object</div></div>
-<div class="ttc" id="aclass_fs_html"><div class="ttname"><a href="class_fs.html">Fs</a></div><div class="ttdef"><b>Definition</b> <a href="file__system_8h_source.html#l00018">file_system.h:18</a></div></div>
+<div class="ttc" id="aclass_c_fast_l_e_d_html_a730ba7d967e882b4b893689cf333b2eb"><div class="ttname"><a href="class_c_fast_l_e_d.html#a730ba7d967e882b4b893689cf333b2eb">CFastLED::setBrightness</a></div><div class="ttdeci">void setBrightness(uint8_t scale)</div><div class="ttdoc">Set the global brightness scaling.</div><div class="ttdef"><b>Definition</b> <a href="_fast_l_e_d_8h_source.html#l00722">FastLED.h:722</a></div></div>
+<div class="ttc" id="aclass_c_fast_l_e_d_html_a83afdd1e2a21f33ac4f8d2610d6e331b"><div class="ttname"><a href="class_c_fast_l_e_d.html#a83afdd1e2a21f33ac4f8d2610d6e331b">CFastLED::show</a></div><div class="ttdeci">void show(uint8_t scale)</div><div class="ttdoc">Update all our controllers with the current led colors, using the passed in brightness.</div><div class="ttdef"><b>Definition</b> <a href="_fast_l_e_d_8cpp_source.html#l00082">FastLED.cpp:82</a></div></div>
+<div class="ttc" id="aclass_c_fast_l_e_d_html_afd7928d822589740af6e23b2d510cf3f"><div class="ttname"><a href="class_c_fast_l_e_d.html#afd7928d822589740af6e23b2d510cf3f">CFastLED::addLeds</a></div><div class="ttdeci">static CLEDController &amp; addLeds(CLEDController *pLed, struct CRGB *data, int nLedsOrOffset, int nLedsIfOffset=0)</div><div class="ttdoc">Add a CLEDController instance to the world.</div><div class="ttdef"><b>Definition</b> <a href="_fast_l_e_d_8cpp_source.html#l00067">FastLED.cpp:67</a></div></div>
+<div class="ttc" id="aclass_file_system_html"><div class="ttname"><a href="class_file_system.html">FileSystem</a></div><div class="ttdef"><b>Definition</b> <a href="file__system_8h_source.html#l00023">file_system.h:23</a></div></div>
+<div class="ttc" id="aclass_video_html"><div class="ttname"><a href="class_video.html">Video</a></div><div class="ttdef"><b>Definition</b> <a href="video_8h_source.html#l00023">video.h:23</a></div></div>
+<div class="ttc" id="aclass_x_y_map_html"><div class="ttname"><a href="class_x_y_map.html">XYMap</a></div><div class="ttdef"><b>Definition</b> <a href="xymap_8h_source.html#l00039">xymap.h:39</a></div></div>
+<div class="ttc" id="agroup___color_enums_html_ggadf6bcba67c9573665af20788c4431ae8abb6d30d01c054f65ed9c5a52c2855534"><div class="ttname"><a href="group___color_enums.html#ggadf6bcba67c9573665af20788c4431ae8abb6d30d01c054f65ed9c5a52c2855534">TypicalLEDStrip</a></div><div class="ttdeci">@ TypicalLEDStrip</div><div class="ttdoc">Typical values for SMD5050 LEDs.</div><div class="ttdef"><b>Definition</b> <a href="color_8h_source.html#l00019">color.h:19</a></div></div>
+<div class="ttc" id="agroup___pixel_types_html_ga2f664317f80358ba808cfab70a764e5d"><div class="ttname"><a href="group___pixel_types.html#ga2f664317f80358ba808cfab70a764e5d">CRGB::r</a></div><div class="ttdeci">uint8_t r</div><div class="ttdoc">Red channel value.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00043">crgb.h:43</a></div></div>
+<div class="ttc" id="agroup___pixel_types_html_ga8827262477c0f018583263fdbfe9a3f4"><div class="ttname"><a href="group___pixel_types.html#ga8827262477c0f018583263fdbfe9a3f4">CRGB::g</a></div><div class="ttdeci">uint8_t g</div><div class="ttdoc">Green channel value.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00047">crgb.h:47</a></div></div>
+<div class="ttc" id="agroup___pixel_types_html_gaa3ca469ee3a18e04896b0b1da5a1d66d"><div class="ttname"><a href="group___pixel_types.html#gaa3ca469ee3a18e04896b0b1da5a1d66d">CRGB::b</a></div><div class="ttdeci">uint8_t b</div><div class="ttdoc">Blue channel value.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00051">crgb.h:51</a></div></div>
+<div class="ttc" id="agroup___timekeeping_html_gaf4a00b9c39c12d777b99808d18f959fb"><div class="ttname"><a href="group___timekeeping.html#gaf4a00b9c39c12d777b99808d18f959fb">EVERY_N_SECONDS</a></div><div class="ttdeci">#define EVERY_N_SECONDS(N)</div><div class="ttdoc">Checks whether to execute a block of code every N seconds.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_8h_source.html#l01288">lib8tion.h:1288</a></div></div>
+<div class="ttc" id="astruct_c_r_g_b_html"><div class="ttname"><a href="struct_c_r_g_b.html">CRGB</a></div><div class="ttdoc">Representation of an RGB pixel (Red, Green, Blue)</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00039">crgb.h:39</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.3-->
@@ -157,7 +220,7 @@ $(function(){initNavTree('_sd_card_8ino_source.html',''); initResizable(true); }
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_aaeb0023ab9319ca2a9d892378b0f1fd.html">SdCard</a></li><li class="navelem"><b>SdCard.ino</b></li>
-    <li class="footer">Generated on Thu Oct 31 2024 23:03:15 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Nov 14 2024 00:00:34 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

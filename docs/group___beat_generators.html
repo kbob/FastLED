@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.2</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.3</span>
    </div>
   </td>
  </tr>
@@ -119,8 +119,8 @@ $(function(){initNavTree('group___beat_generators.html',''); initResizable(true)
 <div class="line"><a class="code hl_variable" href="_fast_l_e_d_8cpp.html#a7077a6a69b1339a4c04f4bb9ecc0ad3f">FastLED</a>.<a class="code hl_function" href="class_c_fast_l_e_d.html#a83afdd1e2a21f33ac4f8d2610d6e331b">show</a>();</div>
 <div class="ttc" id="a_fast_l_e_d_8cpp_html_a7077a6a69b1339a4c04f4bb9ecc0ad3f"><div class="ttname"><a href="_fast_l_e_d_8cpp.html#a7077a6a69b1339a4c04f4bb9ecc0ad3f">FastLED</a></div><div class="ttdeci">CFastLED FastLED</div><div class="ttdoc">Global LED strip management instance.</div><div class="ttdef"><b>Definition</b> <a href="_fast_l_e_d_8cpp_source.html#l00033">FastLED.cpp:33</a></div></div>
 <div class="ttc" id="aclass_c_fast_l_e_d_html_a730ba7d967e882b4b893689cf333b2eb"><div class="ttname"><a href="class_c_fast_l_e_d.html#a730ba7d967e882b4b893689cf333b2eb">CFastLED::setBrightness</a></div><div class="ttdeci">void setBrightness(uint8_t scale)</div><div class="ttdoc">Set the global brightness scaling.</div><div class="ttdef"><b>Definition</b> <a href="_fast_l_e_d_8h_source.html#l00722">FastLED.h:722</a></div></div>
-<div class="ttc" id="aclass_c_fast_l_e_d_html_a83afdd1e2a21f33ac4f8d2610d6e331b"><div class="ttname"><a href="class_c_fast_l_e_d.html#a83afdd1e2a21f33ac4f8d2610d6e331b">CFastLED::show</a></div><div class="ttdeci">void show(uint8_t scale)</div><div class="ttdoc">Update all our controllers with the current led colors, using the passed in brightness.</div><div class="ttdef"><b>Definition</b> <a href="_fast_l_e_d_8cpp_source.html#l00074">FastLED.cpp:74</a></div></div>
-<div class="ttc" id="agroup___beat_generators_html_gaecd7cbfc2640407cabf75afcc7d9ddf4"><div class="ttname"><a href="#gaecd7cbfc2640407cabf75afcc7d9ddf4">beatsin8</a></div><div class="ttdeci">LIB8STATIC uint8_t beatsin8(accum88 beats_per_minute, uint8_t lowest=0, uint8_t highest=255, uint32_t timebase=0, uint8_t phase_offset=0)</div><div class="ttdoc">Generates an 8-bit sine wave at a given BPM that oscillates within a given range.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_8h_source.html#l01029">lib8tion.h:1029</a></div></div>
+<div class="ttc" id="aclass_c_fast_l_e_d_html_a83afdd1e2a21f33ac4f8d2610d6e331b"><div class="ttname"><a href="class_c_fast_l_e_d.html#a83afdd1e2a21f33ac4f8d2610d6e331b">CFastLED::show</a></div><div class="ttdeci">void show(uint8_t scale)</div><div class="ttdoc">Update all our controllers with the current led colors, using the passed in brightness.</div><div class="ttdef"><b>Definition</b> <a href="_fast_l_e_d_8cpp_source.html#l00082">FastLED.cpp:82</a></div></div>
+<div class="ttc" id="agroup___beat_generators_html_gaecd7cbfc2640407cabf75afcc7d9ddf4"><div class="ttname"><a href="#gaecd7cbfc2640407cabf75afcc7d9ddf4">beatsin8</a></div><div class="ttdeci">LIB8STATIC uint8_t beatsin8(accum88 beats_per_minute, uint8_t lowest=0, uint8_t highest=255, uint32_t timebase=0, uint8_t phase_offset=0)</div><div class="ttdoc">Generates an 8-bit sine wave at a given BPM that oscillates within a given range.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_8h_source.html#l00980">lib8tion.h:980</a></div></div>
 </div><!-- fragment --><p>The entire animation will now pulse between brightness 192 and 255 once per second.</p>
 <dl class="section warning"><dt>Warning</dt><dd>Any "BPM88" parameter <b>MUST</b> always be provided in Q8.8 format! </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The beat generators need access to a millisecond counter to track elapsed time. See <a class="el" href="group___timekeeping.html#ga5c6228cce9ecb06616c040c8e8265853" title="The a number of functions need access to a millisecond counter in order to keep time.">GET_MILLIS</a> for reference. When using the Arduino <code>millis()</code> function, accuracy is a bit better than one part in a thousand. </dd></dl>
@@ -175,7 +175,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="lib8tion_8h_source.html#l00967">967</a> of file <a class="el" href="lib8tion_8h_source.html">lib8tion.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lib8tion_8h_source.html#l00918">918</a> of file <a class="el" href="lib8tion_8h_source.html">lib8tion.h</a>.</p>
 
 </div>
 </div>
@@ -207,7 +207,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="lib8tion_8h_source.html#l00977">977</a> of file <a class="el" href="lib8tion_8h_source.html">lib8tion.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lib8tion_8h_source.html#l00928">928</a> of file <a class="el" href="lib8tion_8h_source.html">lib8tion.h</a>.</p>
 
 </div>
 </div>
@@ -240,7 +240,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section warning"><dt>Warning</dt><dd>The BPM parameter <b>MUST</b> be provided in Q8.8 format! E.g. for 120 BPM it would be 120*256 = 30720. If you just want to specify "120", use <a class="el" href="#gade6acbf6fd3c9d346148bccfcafb2fe2" title="Generates a 16-bit &quot;sawtooth&quot; wave at a given BPM.">beat16()</a> or <a class="el" href="#ga12014943214a72eec31433d9682d4ebe" title="Generates an 8-bit &quot;sawtooth&quot; wave at a given BPM.">beat8()</a>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="lib8tion_8h_source.html#l00951">951</a> of file <a class="el" href="lib8tion_8h_source.html">lib8tion.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lib8tion_8h_source.html#l00902">902</a> of file <a class="el" href="lib8tion_8h_source.html">lib8tion.h</a>.</p>
 
 </div>
 </div>
@@ -290,7 +290,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="lib8tion_8h_source.html#l01011">1011</a> of file <a class="el" href="lib8tion_8h_source.html">lib8tion.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lib8tion_8h_source.html#l00962">962</a> of file <a class="el" href="lib8tion_8h_source.html">lib8tion.h</a>.</p>
 
 </div>
 </div>
@@ -340,7 +340,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="lib8tion_8h_source.html#l01029">1029</a> of file <a class="el" href="lib8tion_8h_source.html">lib8tion.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lib8tion_8h_source.html#l00980">980</a> of file <a class="el" href="lib8tion_8h_source.html">lib8tion.h</a>.</p>
 
 </div>
 </div>
@@ -391,7 +391,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section warning"><dt>Warning</dt><dd>The BPM parameter <b>MUST</b> be provided in Q8.8 format! E.g. for 120 BPM it would be 120*256 = 30720. If you just want to specify "120", use <a class="el" href="#gaa46e5de1c4c27833359e7a97a18c839b" title="Generates a 16-bit sine wave at a given BPM that oscillates within a given range.">beatsin16()</a> or <a class="el" href="#gaecd7cbfc2640407cabf75afcc7d9ddf4" title="Generates an 8-bit sine wave at a given BPM that oscillates within a given range.">beatsin8()</a>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="lib8tion_8h_source.html#l00993">993</a> of file <a class="el" href="lib8tion_8h_source.html">lib8tion.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lib8tion_8h_source.html#l00944">944</a> of file <a class="el" href="lib8tion_8h_source.html">lib8tion.h</a>.</p>
 
 </div>
 </div>
@@ -401,7 +401,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Oct 31 2024 23:03:15 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Nov 14 2024 00:00:34 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

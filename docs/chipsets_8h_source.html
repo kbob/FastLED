@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.2</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.3</span>
    </div>
   </td>
  </tr>
@@ -824,163 +824,188 @@ $(function(){initNavTree('chipsets_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span><span class="preprocessor">#define FASTLED_LED_OVERCLOCK 1.0</span></div>
 <div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span> </div>
-<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span><span class="preprocessor">#ifndef FASTLED_LED_OVERCLOCK_WS2812</span></div>
-<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span><span class="preprocessor">#define FASTLED_LED_OVERCLOCK_WS2812 FASTLED_LED_OVERCLOCK</span></div>
-<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span> </div>
-<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span><span class="preprocessor">#ifndef FASTLED_LED_OVERCLOCK_WS2811</span></div>
-<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span><span class="preprocessor">#define FASTLED_LED_OVERCLOCK_WS2811 FASTLED_LED_OVERCLOCK</span></div>
-<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span> </div>
-<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span><span class="preprocessor">#ifndef FASTLED_LED_OVERCLOCK_WS2813</span></div>
-<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span><span class="preprocessor">#define FASTLED_LED_OVERCLOCK_WS2813 FASTLED_LED_OVERCLOCK</span></div>
-<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span> </div>
-<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span><span class="preprocessor">#ifndef FASTLED_LED_OVERCLOCK_WS2815</span></div>
-<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span><span class="preprocessor">#define FASTLED_LED_OVERCLOCK_WS2815 FASTLED_LED_OVERCLOCK</span></div>
-<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span> </div>
-<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span><span class="preprocessor">#ifndef FASTLED_LED_OVERCLOCK_SK6822</span></div>
-<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span><span class="preprocessor">#define FASTLED_LED_OVERCLOCK_SK6822 FASTLED_LED_OVERCLOCK</span></div>
-<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span> </div>
-<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span><span class="preprocessor">#ifndef FASTLED_LED_OVERCLOCK_SK6812</span></div>
-<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span><span class="preprocessor">#define FASTLED_LED_OVERCLOCK_SK6812 FASTLED_LED_OVERCLOCK</span></div>
-<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span> </div>
-<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span><span class="preprocessor">#if FASTLED_CLOCKLESS_USES_NANOSECONDS</span></div>
-<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span><span class="comment">// just use raw nanosecond values for the teensy4</span></div>
-<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span><span class="preprocessor">#define C_NS(_NS) _NS</span></div>
-<div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span><span class="preprocessor">#define C_NS(_NS) (((_NS * ((CLOCKLESS_FREQUENCY / 1000000L)) + 999)) / 1000)</span></div>
-<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span> </div>
-<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span><span class="comment">// Allow overclocking various LED chipsets in the clockless family.</span></div>
-<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span><span class="comment">// Clocked chips like the APA102 don&#39;t need this because they allow</span></div>
-<div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span><span class="comment">// you to control the clock speed directly.</span></div>
-<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span><span class="preprocessor">#define C_NS_WS2812(_NS) (C_NS(int(_NS / FASTLED_LED_OVERCLOCK_WS2812)))</span></div>
-<div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span><span class="preprocessor">#define C_NS_WS2811(_NS) (C_NS(int(_NS / FASTLED_LED_OVERCLOCK_WS2811)))</span></div>
-<div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span><span class="preprocessor">#define C_NS_WS2813(_NS) (C_NS(int(_NS / FASTLED_LED_OVERCLOCK_WS2813)))</span></div>
-<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span><span class="preprocessor">#define C_NS_WS2815(_NS) (C_NS(int(_NS / FASTLED_LED_OVERCLOCK_WS2815)))</span></div>
-<div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span><span class="preprocessor">#define C_NS_SK6822(_NS) (C_NS(int(_NS / FASTLED_LED_OVERCLOCK_SK6822)))</span></div>
-<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span><span class="preprocessor">#define C_NS_SK6812(_NS) (C_NS(int(_NS / FASTLED_LED_OVERCLOCK_SK6812)))</span></div>
-<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span> </div>
-<div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span><span class="comment">// At T=0        : the line is raised hi to start a bit</span></div>
-<div class="line"><a id="l00869" name="l00869"></a><span class="lineno">  869</span><span class="comment">// At T=T1       : the line is dropped low to transmit a zero bit</span></div>
-<div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span><span class="comment">// At T=T1+T2    : the line is dropped low to transmit a one bit</span></div>
-<div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span><span class="comment">// At T=T1+T2+T3 : the cycle is concluded (next bit can be sent)</span></div>
-<div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span><span class="comment">//</span></div>
-<div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span><span class="comment">// Python script to calculate the values for T1, T2, and T3 for FastLED:</span></div>
-<div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span><span class="comment">//</span></div>
-<div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span><span class="comment">//  print(&quot;Enter the values of T0H, T0L, T1H, T1L, in nanoseconds: &quot;)</span></div>
-<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span><span class="comment">//  T0H = int(input(&quot;  T0H: &quot;))</span></div>
-<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span><span class="comment">//  T0L = int(input(&quot;  T0L: &quot;))</span></div>
-<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span><span class="comment">//  T1H = int(input(&quot;  T1H: &quot;))</span></div>
-<div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span><span class="comment">//  T1L = int(input(&quot;  T1L: &quot;))</span></div>
-<div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span><span class="comment">//  </span></div>
-<div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span><span class="comment">//  duration = max(T0H + T0L, T1H + T1L)</span></div>
-<div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span><span class="comment">//  </span></div>
-<div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span><span class="comment">//  print(&quot;The max duration of the signal is: &quot;, duration)</span></div>
-<div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span><span class="comment">//  </span></div>
-<div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span><span class="comment">//  T1 = T0H</span></div>
-<div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span><span class="comment">//  T2 = T1H</span></div>
-<div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span><span class="comment">//  T3 = duration - T0H - T0L</span></div>
-<div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span><span class="comment">//  </span></div>
-<div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span><span class="comment">//  print(&quot;T1: &quot;, T1)</span></div>
-<div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span><span class="comment">//  print(&quot;T2: &quot;, T2)</span></div>
-<div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span><span class="comment">//  print(&quot;T3: &quot;, T3)</span></div>
-<div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span> </div>
-<div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span> </div>
-<div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span><span class="comment">// GE8822 - 350ns 660ns 350ns</span></div>
-<div class="line"><a id="l00895" name="l00895"></a><span class="lineno">  895</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
-<div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span><span class="keyword">class </span><a class="code hl_class" href="class_g_e8822_controller800_khz.html">GE8822Controller800Khz</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS(350), C_NS(660), C_NS(350), RGB_ORDER, 4&gt; {};</div>
+<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span><span class="comment">// WS2812 can be overclocked pretty aggressively, however, there are</span></div>
+<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span><span class="comment">// some excellent articles that you should read about WS2812 overclocking</span></div>
+<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span><span class="comment">// and corruption for a large number of LEDs.</span></div>
+<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span><span class="comment">// https://wp.josh.com/2014/05/16/why-you-should-give-your-neopixel-bits-room-to-breathe/</span></div>
+<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span><span class="comment">// https://wp.josh.com/2014/05/13/ws2812-neopixels-are-not-so-finicky-once-you-get-to-know-them/</span></div>
+<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span><span class="preprocessor">#ifndef FASTLED_LED_OVERCLOCK_WS2812</span></div>
+<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span><span class="preprocessor">#define FASTLED_LED_OVERCLOCK_WS2812 FASTLED_LED_OVERCLOCK</span></div>
+<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span> </div>
+<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span><span class="preprocessor">#ifndef FASTLED_LED_OVERCLOCK_WS2811</span></div>
+<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span><span class="preprocessor">#define FASTLED_LED_OVERCLOCK_WS2811 FASTLED_LED_OVERCLOCK</span></div>
+<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span> </div>
+<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span><span class="preprocessor">#ifndef FASTLED_LED_OVERCLOCK_WS2813</span></div>
+<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span><span class="preprocessor">#define FASTLED_LED_OVERCLOCK_WS2813 FASTLED_LED_OVERCLOCK</span></div>
+<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span> </div>
+<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span><span class="preprocessor">#ifndef FASTLED_LED_OVERCLOCK_WS2815</span></div>
+<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span><span class="preprocessor">#define FASTLED_LED_OVERCLOCK_WS2815 FASTLED_LED_OVERCLOCK</span></div>
+<div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span> </div>
+<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span><span class="preprocessor">#ifndef FASTLED_LED_OVERCLOCK_SK6822</span></div>
+<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span><span class="preprocessor">#define FASTLED_LED_OVERCLOCK_SK6822 FASTLED_LED_OVERCLOCK</span></div>
+<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span> </div>
+<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span><span class="preprocessor">#ifndef FASTLED_LED_OVERCLOCK_SK6812</span></div>
+<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span><span class="preprocessor">#define FASTLED_LED_OVERCLOCK_SK6812 FASTLED_LED_OVERCLOCK</span></div>
+<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span> </div>
+<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span><span class="preprocessor">#if FASTLED_CLOCKLESS_USES_NANOSECONDS</span></div>
+<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span><span class="comment">// just use raw nanosecond values for the teensy4</span></div>
+<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span><span class="preprocessor">#define C_NS(_NS) _NS</span></div>
+<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span><span class="preprocessor">#define C_NS(_NS) (((_NS * ((CLOCKLESS_FREQUENCY / 1000000L)) + 999)) / 1000)</span></div>
+<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span> </div>
+<div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span><span class="comment">// Allow overclocking various LED chipsets in the clockless family.</span></div>
+<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span><span class="comment">// Clocked chips like the APA102 don&#39;t need this because they allow</span></div>
+<div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span><span class="comment">// you to control the clock speed directly.</span></div>
+<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span><span class="preprocessor">#define C_NS_WS2812(_NS) (C_NS(int(_NS / FASTLED_LED_OVERCLOCK_WS2812)))</span></div>
+<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span><span class="preprocessor">#define C_NS_WS2811(_NS) (C_NS(int(_NS / FASTLED_LED_OVERCLOCK_WS2811)))</span></div>
+<div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span><span class="preprocessor">#define C_NS_WS2813(_NS) (C_NS(int(_NS / FASTLED_LED_OVERCLOCK_WS2813)))</span></div>
+<div class="line"><a id="l00869" name="l00869"></a><span class="lineno">  869</span><span class="preprocessor">#define C_NS_WS2815(_NS) (C_NS(int(_NS / FASTLED_LED_OVERCLOCK_WS2815)))</span></div>
+<div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span><span class="preprocessor">#define C_NS_SK6822(_NS) (C_NS(int(_NS / FASTLED_LED_OVERCLOCK_SK6822)))</span></div>
+<div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span><span class="preprocessor">#define C_NS_SK6812(_NS) (C_NS(int(_NS / FASTLED_LED_OVERCLOCK_SK6812)))</span></div>
+<div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span> </div>
+<div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span><span class="comment">// At T=0        : the line is raised hi to start a bit</span></div>
+<div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span><span class="comment">// At T=T1       : the line is dropped low to transmit a zero bit</span></div>
+<div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span><span class="comment">// At T=T1+T2    : the line is dropped low to transmit a one bit</span></div>
+<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span><span class="comment">// At T=T1+T2+T3 : the cycle is concluded (next bit can be sent)</span></div>
+<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span><span class="comment">//</span></div>
+<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span><span class="comment">// Python script to calculate the values for T1, T2, and T3 for FastLED:</span></div>
+<div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span><span class="comment">//</span></div>
+<div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span><span class="comment">//  print(&quot;Enter the values of T0H, T0L, T1H, T1L, in nanoseconds: &quot;)</span></div>
+<div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span><span class="comment">//  T0H = int(input(&quot;  T0H: &quot;))</span></div>
+<div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span><span class="comment">//  T0L = int(input(&quot;  T0L: &quot;))</span></div>
+<div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span><span class="comment">//  T1H = int(input(&quot;  T1H: &quot;))</span></div>
+<div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span><span class="comment">//  T1L = int(input(&quot;  T1L: &quot;))</span></div>
+<div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span><span class="comment">//  </span></div>
+<div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span><span class="comment">//  duration = max(T0H + T0L, T1H + T1L)</span></div>
+<div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span><span class="comment">//  </span></div>
+<div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span><span class="comment">//  print(&quot;The max duration of the signal is: &quot;, duration)</span></div>
+<div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span><span class="comment">//  </span></div>
+<div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span><span class="comment">//  T1 = T0H</span></div>
+<div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span><span class="comment">//  T2 = T1H</span></div>
+<div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span><span class="comment">//  T3 = duration - T0H - T0L</span></div>
+<div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span><span class="comment">//  </span></div>
+<div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span><span class="comment">//  print(&quot;T1: &quot;, T1)</span></div>
+<div class="line"><a id="l00895" name="l00895"></a><span class="lineno">  895</span><span class="comment">//  print(&quot;T2: &quot;, T2)</span></div>
+<div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span><span class="comment">//  print(&quot;T3: &quot;, T3)</span></div>
 <div class="line"><a id="l00897" name="l00897"></a><span class="lineno">  897</span> </div>
-<div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span><span class="comment">// GW6205@400khz - 800ns, 800ns, 800ns</span></div>
-<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
-<div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span><span class="keyword">class </span><a class="code hl_class" href="class_g_w6205_controller400_khz.html">GW6205Controller400Khz</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS(800), C_NS(800), C_NS(800), RGB_ORDER, 4&gt; {};</div>
-<div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span> </div>
-<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span><span class="comment">// GW6205@400khz - 400ns, 400ns, 400ns</span></div>
-<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
-<div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span><span class="keyword">class </span><a class="code hl_class" href="class_g_w6205_controller800_khz.html">GW6205Controller800Khz</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS(400), C_NS(400), C_NS(400), RGB_ORDER, 4&gt; {};</div>
-<div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span> </div>
-<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span><span class="comment">// UCS1903 - 500ns, 1500ns, 500ns</span></div>
-<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
-<div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span><span class="keyword">class </span><a class="code hl_class" href="class_u_c_s1903_controller400_khz.html">UCS1903Controller400Khz</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS(500), C_NS(1500), C_NS(500), RGB_ORDER&gt; {};</div>
-<div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span> </div>
-<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span><span class="comment">// UCS1903B - 400ns, 450ns, 450ns</span></div>
-<div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
-<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span><span class="keyword">class </span><a class="code hl_class" href="class_u_c_s1903_b_controller800_khz.html">UCS1903BController800Khz</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS(400), C_NS(450), C_NS(450), RGB_ORDER&gt; {};</div>
-<div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span> </div>
-<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span><span class="comment">// UCS1904 - 400ns, 400ns, 450ns</span></div>
-<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
-<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span><span class="keyword">class </span><a class="code hl_class" href="class_u_c_s1904_controller800_khz.html">UCS1904Controller800Khz</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS(400), C_NS(400), C_NS(450), RGB_ORDER&gt; {};</div>
-<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span> </div>
-<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span><span class="comment">// UCS2903 - 250ns, 750ns, 250ns</span></div>
-<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
-<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span><span class="keyword">class </span><a class="code hl_class" href="class_u_c_s2903_controller.html">UCS2903Controller</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS(250), C_NS(750), C_NS(250), RGB_ORDER&gt; {};</div>
-<div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span> </div>
-<div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span><span class="comment">// TM1809 - 350ns, 350ns, 550ns</span></div>
-<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
-<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span><span class="keyword">class </span><a class="code hl_class" href="class_t_m1809_controller800_khz.html">TM1809Controller800Khz</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS(350), C_NS(350), C_NS(450), RGB_ORDER&gt; {};</div>
-<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span> </div>
-<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span><span class="comment">// WS2811 - 320ns, 320ns, 640ns</span></div>
-<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = GRB&gt;</div>
-<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span><span class="keyword">class </span><a class="code hl_class" href="class_w_s2811_controller800_khz.html">WS2811Controller800Khz</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS_WS2811(320), C_NS_WS2811(320), C_NS_WS2811(640), RGB_ORDER&gt; {};</div>
-<div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span> </div>
-<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span><span class="comment">// WS2813 - 320ns, 320ns, 640ns</span></div>
-<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = GRB&gt;</div>
-<div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span><span class="keyword">class </span><a class="code hl_class" href="class_w_s2813_controller.html">WS2813Controller</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS_WS2813(320), C_NS_WS2813(320), C_NS_WS2813(640), RGB_ORDER&gt; {};</div>
-<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span> </div>
-<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span><span class="comment">// WS2812 - 250ns, 625ns, 375ns</span></div>
-<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = GRB&gt;</div>
-<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span><span class="keyword">class </span><a class="code hl_class" href="class_w_s2812_controller800_khz.html">WS2812Controller800Khz</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS_WS2812(250), C_NS_WS2812(625), C_NS_WS2812(375), RGB_ORDER&gt; {};</div>
-<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span> </div>
-<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span><span class="comment">// WS2811@400khz - 800ns, 800ns, 900ns</span></div>
-<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = GRB&gt;</div>
-<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span><span class="keyword">class </span><a class="code hl_class" href="class_w_s2811_controller400_khz.html">WS2811Controller400Khz</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS_WS2811(800), C_NS_WS2811(800), C_NS_WS2811(900), RGB_ORDER&gt; {};</div>
-<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span> </div>
-<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = GRB&gt;</div>
-<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span><span class="keyword">class </span><a class="code hl_class" href="class_w_s2815_controller.html">WS2815Controller</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS_WS2815(250), C_NS_WS2815(1090), C_NS_WS2815(550), RGB_ORDER&gt; {};</div>
-<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span> </div>
-<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span><span class="comment">// 750NS, 750NS, 750NS</span></div>
-<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
-<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span><span class="keyword">class </span><a class="code hl_class" href="class_t_m1803_controller400_khz.html">TM1803Controller400Khz</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS(700), C_NS(1100), C_NS(700), RGB_ORDER&gt; {};</div>
-<div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span> </div>
-<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
-<div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span><span class="keyword">class </span><a class="code hl_class" href="class_t_m1829_controller800_khz.html">TM1829Controller800Khz</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS(340), C_NS(340), C_NS(550), RGB_ORDER, 0, true, 500&gt; {};</div>
-<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span> </div>
-<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
-<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span><span class="keyword">class </span>TM1829Controller1600Khz : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS(100), C_NS(300), C_NS(200), RGB_ORDER, 0, true, 500&gt; {};</div>
-<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span> </div>
-<div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
-<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span><span class="keyword">class </span><a class="code hl_class" href="class_l_p_d1886_controller1250_khz.html">LPD1886Controller1250Khz</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS(200), C_NS(400), C_NS(200), RGB_ORDER, 4&gt; {};</div>
-<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span> </div>
-<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
-<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span><span class="keyword">class </span><a class="code hl_class" href="class_l_p_d1886_controller1250_khz__8bit.html">LPD1886Controller1250Khz_8bit</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS(200), C_NS(400), C_NS(200), RGB_ORDER&gt; {};</div>
-<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span> </div>
-<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span> </div>
-<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
-<div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span><span class="keyword">class </span><a class="code hl_class" href="class_s_k6822_controller.html">SK6822Controller</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS_SK6822(375), C_NS_SK6822(1000), C_NS_SK6822(375), RGB_ORDER&gt; {};</div>
+<div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span> </div>
+<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span><span class="comment">// GE8822 - 350ns 660ns 350ns</span></div>
+<div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
+<div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span><span class="keyword">class </span><a class="code hl_class" href="class_g_e8822_controller800_khz.html">GE8822Controller800Khz</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS(350), C_NS(660), C_NS(350), RGB_ORDER, 4&gt; {};</div>
+<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span> </div>
+<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span><span class="comment">// GW6205@400khz - 800ns, 800ns, 800ns</span></div>
+<div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
+<div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span><span class="keyword">class </span><a class="code hl_class" href="class_g_w6205_controller400_khz.html">GW6205Controller400Khz</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS(800), C_NS(800), C_NS(800), RGB_ORDER, 4&gt; {};</div>
+<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span> </div>
+<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span><span class="comment">// GW6205@400khz - 400ns, 400ns, 400ns</span></div>
+<div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
+<div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span><span class="keyword">class </span><a class="code hl_class" href="class_g_w6205_controller800_khz.html">GW6205Controller800Khz</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS(400), C_NS(400), C_NS(400), RGB_ORDER, 4&gt; {};</div>
+<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span> </div>
+<div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span><span class="comment">// UCS1903 - 500ns, 1500ns, 500ns</span></div>
+<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
+<div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span><span class="keyword">class </span><a class="code hl_class" href="class_u_c_s1903_controller400_khz.html">UCS1903Controller400Khz</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS(500), C_NS(1500), C_NS(500), RGB_ORDER&gt; {};</div>
+<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span> </div>
+<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span><span class="comment">// UCS1903B - 400ns, 450ns, 450ns</span></div>
+<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
+<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span><span class="keyword">class </span><a class="code hl_class" href="class_u_c_s1903_b_controller800_khz.html">UCS1903BController800Khz</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS(400), C_NS(450), C_NS(450), RGB_ORDER&gt; {};</div>
+<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span> </div>
+<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span><span class="comment">// UCS1904 - 400ns, 400ns, 450ns</span></div>
+<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
+<div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span><span class="keyword">class </span><a class="code hl_class" href="class_u_c_s1904_controller800_khz.html">UCS1904Controller800Khz</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS(400), C_NS(400), C_NS(450), RGB_ORDER&gt; {};</div>
+<div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span> </div>
+<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span><span class="comment">// UCS2903 - 250ns, 750ns, 250ns</span></div>
+<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
+<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span><span class="keyword">class </span><a class="code hl_class" href="class_u_c_s2903_controller.html">UCS2903Controller</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS(250), C_NS(750), C_NS(250), RGB_ORDER&gt; {};</div>
+<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span> </div>
+<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span><span class="comment">// TM1809 - 350ns, 350ns, 550ns</span></div>
+<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
+<div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span><span class="keyword">class </span><a class="code hl_class" href="class_t_m1809_controller800_khz.html">TM1809Controller800Khz</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS(350), C_NS(350), C_NS(450), RGB_ORDER&gt; {};</div>
+<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span> </div>
+<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span><span class="comment">// WS2811 - 320ns, 320ns, 640ns</span></div>
+<div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = GRB&gt;</div>
+<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span><span class="keyword">class </span><a class="code hl_class" href="class_w_s2811_controller800_khz.html">WS2811Controller800Khz</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS_WS2811(320), C_NS_WS2811(320), C_NS_WS2811(640), RGB_ORDER&gt; {};</div>
+<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span> </div>
+<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span><span class="comment">// WS2813 - 320ns, 320ns, 640ns</span></div>
+<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = GRB&gt;</div>
+<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span><span class="keyword">class </span><a class="code hl_class" href="class_w_s2813_controller.html">WS2813Controller</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS_WS2813(320), C_NS_WS2813(320), C_NS_WS2813(640), RGB_ORDER&gt; {};</div>
+<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span> </div>
+<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span><span class="preprocessor">#ifndef FASTLED_WS2812_T1</span></div>
+<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span><span class="preprocessor">#define FASTLED_WS2812_T1 250</span></div>
+<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span> </div>
+<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span><span class="preprocessor">#ifndef FASTLED_WS2812_T2</span></div>
+<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span><span class="preprocessor">#define FASTLED_WS2812_T2 625</span></div>
+<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span> </div>
+<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span><span class="preprocessor">#ifndef FASTLED_WS2812_T3</span></div>
+<div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span><span class="preprocessor">#define FASTLED_WS2812_T3 375</span></div>
+<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span> </div>
+<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span><span class="comment">// WS2812 - 250ns, 625ns, 375ns</span></div>
+<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = GRB&gt;</div>
+<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span><span class="keyword">class </span><a class="code hl_class" href="class_w_s2812_controller800_khz.html">WS2812Controller800Khz</a> : <span class="keyword">public</span> ClocklessController&lt;</div>
+<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>    DATA_PIN,</div>
+<div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span>    C_NS_WS2812(FASTLED_WS2812_T1),</div>
+<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>    C_NS_WS2812(FASTLED_WS2812_T2),</div>
+<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>    C_NS_WS2812(FASTLED_WS2812_T3),</div>
+<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span>    RGB_ORDER&gt; {};</div>
+<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span> </div>
+<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span><span class="comment">// WS2811@400khz - 800ns, 800ns, 900ns</span></div>
+<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = GRB&gt;</div>
+<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span><span class="keyword">class </span><a class="code hl_class" href="class_w_s2811_controller400_khz.html">WS2811Controller400Khz</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS_WS2811(800), C_NS_WS2811(800), C_NS_WS2811(900), RGB_ORDER&gt; {};</div>
+<div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span> </div>
 <div class="line"><a id="l00964" name="l00964"></a><span class="lineno">  964</span> </div>
-<div class="line"><a id="l00965" name="l00965"></a><span class="lineno">  965</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
-<div class="line"><a id="l00966" name="l00966"></a><span class="lineno">  966</span><span class="keyword">class </span><a class="code hl_class" href="class_s_k6812_controller.html">SK6812Controller</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS_SK6812(300), C_NS_SK6812(300), C_NS_SK6812(600), RGB_ORDER&gt; {};</div>
-<div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span> </div>
-<div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
-<div class="line"><a id="l00969" name="l00969"></a><span class="lineno">  969</span><span class="keyword">class </span><a class="code hl_class" href="class_s_m16703_controller.html">SM16703Controller</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS(300), C_NS(600), C_NS(300), RGB_ORDER&gt; {};</div>
-<div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span> </div>
+<div class="line"><a id="l00965" name="l00965"></a><span class="lineno">  965</span> </div>
+<div class="line"><a id="l00966" name="l00966"></a><span class="lineno">  966</span> </div>
+<div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = GRB&gt;</div>
+<div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span><span class="keyword">class </span><a class="code hl_class" href="class_w_s2815_controller.html">WS2815Controller</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS_WS2815(250), C_NS_WS2815(1090), C_NS_WS2815(550), RGB_ORDER&gt; {};</div>
+<div class="line"><a id="l00969" name="l00969"></a><span class="lineno">  969</span> </div>
+<div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span><span class="comment">// 750NS, 750NS, 750NS</span></div>
 <div class="line"><a id="l00971" name="l00971"></a><span class="lineno">  971</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
-<div class="line"><a id="l00972" name="l00972"></a><span class="lineno">  972</span><span class="keyword">class </span><a class="code hl_class" href="class_p_l9823_controller.html">PL9823Controller</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS(350), C_NS(1010), C_NS(350), RGB_ORDER&gt; {};</div>
+<div class="line"><a id="l00972" name="l00972"></a><span class="lineno">  972</span><span class="keyword">class </span><a class="code hl_class" href="class_t_m1803_controller400_khz.html">TM1803Controller400Khz</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS(700), C_NS(1100), C_NS(700), RGB_ORDER&gt; {};</div>
 <div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span> </div>
-<div class="line"><a id="l00974" name="l00974"></a><span class="lineno">  974</span><span class="comment">// UCS1912 - Note, never been tested, this is according to the datasheet</span></div>
-<div class="line"><a id="l00975" name="l00975"></a><span class="lineno">  975</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
-<div class="line"><a id="l00976" name="l00976"></a><span class="lineno">  976</span><span class="keyword">class </span><a class="code hl_class" href="class_u_c_s1912_controller.html">UCS1912Controller</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS(250), C_NS(1000), C_NS(350), RGB_ORDER&gt; {};</div>
-<div class="line"><a id="l00977" name="l00977"></a><span class="lineno">  977</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00974" name="l00974"></a><span class="lineno">  974</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
+<div class="line"><a id="l00975" name="l00975"></a><span class="lineno">  975</span><span class="keyword">class </span><a class="code hl_class" href="class_t_m1829_controller800_khz.html">TM1829Controller800Khz</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS(340), C_NS(340), C_NS(550), RGB_ORDER, 0, true, 500&gt; {};</div>
+<div class="line"><a id="l00976" name="l00976"></a><span class="lineno">  976</span> </div>
+<div class="line"><a id="l00977" name="l00977"></a><span class="lineno">  977</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
+<div class="line"><a id="l00978" name="l00978"></a><span class="lineno">  978</span><span class="keyword">class </span>TM1829Controller1600Khz : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS(100), C_NS(300), C_NS(200), RGB_ORDER, 0, true, 500&gt; {};</div>
 <div class="line"><a id="l00979" name="l00979"></a><span class="lineno">  979</span> </div>
-<div class="line"><a id="l00980" name="l00980"></a><span class="lineno">  980</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00980" name="l00980"></a><span class="lineno">  980</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
+<div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span><span class="keyword">class </span><a class="code hl_class" href="class_l_p_d1886_controller1250_khz.html">LPD1886Controller1250Khz</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS(200), C_NS(400), C_NS(200), RGB_ORDER, 4&gt; {};</div>
 <div class="line"><a id="l00982" name="l00982"></a><span class="lineno">  982</span> </div>
-<div class="line"><a id="l00983" name="l00983"></a><span class="lineno">  983</span>FASTLED_NAMESPACE_END</div>
-<div class="line"><a id="l00984" name="l00984"></a><span class="lineno">  984</span> </div>
-<div class="line"><a id="l00985" name="l00985"></a><span class="lineno">  985</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00983" name="l00983"></a><span class="lineno">  983</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
+<div class="line"><a id="l00984" name="l00984"></a><span class="lineno">  984</span><span class="keyword">class </span><a class="code hl_class" href="class_l_p_d1886_controller1250_khz__8bit.html">LPD1886Controller1250Khz_8bit</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS(200), C_NS(400), C_NS(200), RGB_ORDER&gt; {};</div>
+<div class="line"><a id="l00985" name="l00985"></a><span class="lineno">  985</span> </div>
+<div class="line"><a id="l00986" name="l00986"></a><span class="lineno">  986</span> </div>
+<div class="line"><a id="l00987" name="l00987"></a><span class="lineno">  987</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
+<div class="line"><a id="l00988" name="l00988"></a><span class="lineno">  988</span><span class="keyword">class </span><a class="code hl_class" href="class_s_k6822_controller.html">SK6822Controller</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS_SK6822(375), C_NS_SK6822(1000), C_NS_SK6822(375), RGB_ORDER&gt; {};</div>
+<div class="line"><a id="l00989" name="l00989"></a><span class="lineno">  989</span> </div>
+<div class="line"><a id="l00990" name="l00990"></a><span class="lineno">  990</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
+<div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span><span class="keyword">class </span><a class="code hl_class" href="class_s_k6812_controller.html">SK6812Controller</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS_SK6812(300), C_NS_SK6812(300), C_NS_SK6812(600), RGB_ORDER&gt; {};</div>
+<div class="line"><a id="l00992" name="l00992"></a><span class="lineno">  992</span> </div>
+<div class="line"><a id="l00993" name="l00993"></a><span class="lineno">  993</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
+<div class="line"><a id="l00994" name="l00994"></a><span class="lineno">  994</span><span class="keyword">class </span><a class="code hl_class" href="class_s_m16703_controller.html">SM16703Controller</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS(300), C_NS(600), C_NS(300), RGB_ORDER&gt; {};</div>
+<div class="line"><a id="l00995" name="l00995"></a><span class="lineno">  995</span> </div>
+<div class="line"><a id="l00996" name="l00996"></a><span class="lineno">  996</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
+<div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span><span class="keyword">class </span><a class="code hl_class" href="class_p_l9823_controller.html">PL9823Controller</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS(350), C_NS(1010), C_NS(350), RGB_ORDER&gt; {};</div>
+<div class="line"><a id="l00998" name="l00998"></a><span class="lineno">  998</span> </div>
+<div class="line"><a id="l00999" name="l00999"></a><span class="lineno">  999</span><span class="comment">// UCS1912 - Note, never been tested, this is according to the datasheet</span></div>
+<div class="line"><a id="l01000" name="l01000"></a><span class="lineno"> 1000</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t DATA_PIN, EOrder RGB_ORDER = RGB&gt;</div>
+<div class="line"><a id="l01001" name="l01001"></a><span class="lineno"> 1001</span><span class="keyword">class </span><a class="code hl_class" href="class_u_c_s1912_controller.html">UCS1912Controller</a> : <span class="keyword">public</span> ClocklessController&lt;DATA_PIN, C_NS(250), C_NS(1000), C_NS(350), RGB_ORDER&gt; {};</div>
+<div class="line"><a id="l01002" name="l01002"></a><span class="lineno"> 1002</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01004" name="l01004"></a><span class="lineno"> 1004</span> </div>
+<div class="line"><a id="l01005" name="l01005"></a><span class="lineno"> 1005</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01007" name="l01007"></a><span class="lineno"> 1007</span> </div>
+<div class="line"><a id="l01008" name="l01008"></a><span class="lineno"> 1008</span>FASTLED_NAMESPACE_END</div>
+<div class="line"><a id="l01009" name="l01009"></a><span class="lineno"> 1009</span> </div>
+<div class="line"><a id="l01010" name="l01010"></a><span class="lineno"> 1010</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a_fast_l_e_d_8h_html"><div class="ttname"><a href="_fast_l_e_d_8h.html">FastLED.h</a></div><div class="ttdoc">central include file for FastLED, defines the CFastLED class/object</div></div>
 <div class="ttc" id="aclass_a_p_a102_controller_h_d_html"><div class="ttname"><a href="class_a_p_a102_controller_h_d.html">APA102ControllerHD</a></div><div class="ttdoc">APA102 high definition controller class.</div><div class="ttdef"><b>Definition</b> <a href="#l00490">chipsets.h:497</a></div></div>
 <div class="ttc" id="aclass_a_p_a102_controller_html"><div class="ttname"><a href="class_a_p_a102_controller.html">APA102Controller</a></div><div class="ttdoc">APA102 controller class.</div><div class="ttdef"><b>Definition</b> <a href="#l00331">chipsets.h:331</a></div></div>
@@ -1046,7 +1071,7 @@ $(function(){initNavTree('chipsets_8h_source.html',''); initResizable(true); });
 <div class="ttc" id="aclass_w_s2813_controller_html"><div class="ttname"><a href="class_w_s2813_controller.html">WS2813Controller</a></div><div class="ttdoc">WS2813 controller class.</div><div class="ttdef"><b>Definition</b> <a href="#l00738">chipsets.h:738</a></div></div>
 <div class="ttc" id="aclass_w_s2815_controller_html"><div class="ttname"><a href="class_w_s2815_controller.html">WS2815Controller</a></div><div class="ttdoc">WS2815 controller class @ 400 KHz.</div><div class="ttdef"><b>Definition</b> <a href="#l00718">chipsets.h:718</a></div></div>
 <div class="ttc" id="afastspi_8h_html_a4bcb592d94b1f9d3a99afec742513efc"><div class="ttname"><a href="fastspi_8h.html#a4bcb592d94b1f9d3a99afec742513efc">DATA_RATE_MHZ</a></div><div class="ttdeci">#define DATA_RATE_MHZ(X)</div><div class="ttdoc">Convert data rate from megahertz (MHz) to clock cycles per bit.</div><div class="ttdef"><b>Definition</b> <a href="fastspi_8h_source.html#l00025">fastspi.h:25</a></div></div>
-<div class="ttc" id="astruct_c_r_g_b_html"><div class="ttname"><a href="struct_c_r_g_b.html">CRGB</a></div><div class="ttdoc">Representation of an RGB pixel (Red, Green, Blue)</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00038">crgb.h:38</a></div></div>
+<div class="ttc" id="astruct_c_r_g_b_html"><div class="ttname"><a href="struct_c_r_g_b.html">CRGB</a></div><div class="ttdoc">Representation of an RGB pixel (Red, Green, Blue)</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00039">crgb.h:39</a></div></div>
 <div class="ttc" id="astruct_pixel_controller_html"><div class="ttname"><a href="struct_pixel_controller.html">PixelController</a></div><div class="ttdoc">Pixel controller class.</div><div class="ttdef"><b>Definition</b> <a href="pixel__controller_8h_source.html#l00071">pixel_controller.h:71</a></div></div>
 <div class="ttc" id="astruct_pixel_controller_html_a11f9b50f738c6d57d08d6776b3d8eb43"><div class="ttname"><a href="struct_pixel_controller.html#a11f9b50f738c6d57d08d6776b3d8eb43">PixelController::loadAndScale1</a></div><div class="ttdeci">FASTLED_FORCE_INLINE uint8_t loadAndScale1(int lane, uint8_t scale)</div><div class="ttdoc">non-template alias of loadAndScale&lt;1&gt;()</div><div class="ttdef"><b>Definition</b> <a href="pixel__controller_8h_source.html#l00447">pixel_controller.h:447</a></div></div>
 <div class="ttc" id="astruct_pixel_controller_html_a329cebe498f2d119cf10e0e6a7b5f7c5"><div class="ttname"><a href="struct_pixel_controller.html#a329cebe498f2d119cf10e0e6a7b5f7c5">PixelController::mLenRemaining</a></div><div class="ttdeci">int mLenRemaining</div><div class="ttdoc">counter for the number of LEDs left to process</div><div class="ttdef"><b>Definition</b> <a href="pixel__controller_8h_source.html#l00074">pixel_controller.h:74</a></div></div>
@@ -1067,7 +1092,7 @@ $(function(){initNavTree('chipsets_8h_source.html',''); initResizable(true); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="chipsets_8h.html">chipsets.h</a></li>
-    <li class="footer">Generated on Thu Oct 31 2024 23:03:15 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Nov 14 2024 00:00:34 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

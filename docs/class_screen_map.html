@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.2</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.3</span>
    </div>
   </td>
  </tr>
@@ -130,6 +130,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1bc47e05f382f7c4fd71982467ae9f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a745bc0109881a588d1c55a6db1735cd5" id="r_a745bc0109881a588d1c55a6db1735cd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a745bc0109881a588d1c55a6db1735cd5">set</a> (uint16_t index, const <a class="el" href="structpair__xy.html">pair_xy_float</a> &amp;p)</td></tr>
 <tr class="separator:a745bc0109881a588d1c55a6db1735cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c34c1fed4c4cf6071f7455e70cad15b" id="r_a4c34c1fed4c4cf6071f7455e70cad15b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpair__xy.html">pair_xy_float</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c34c1fed4c4cf6071f7455e70cad15b">operator[]</a> (uint32_t x)</td></tr>
+<tr class="separator:a4c34c1fed4c4cf6071f7455e70cad15b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d92840fb1df12bc436ad322a8074b0e" id="r_a6d92840fb1df12bc436ad322a8074b0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d92840fb1df12bc436ad322a8074b0e">setDiameter</a> (float diameter)</td></tr>
 <tr class="separator:a6d92840fb1df12bc436ad322a8074b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3cd38d6942c9298b08b27ca1e33112f" id="r_ae3cd38d6942c9298b08b27ca1e33112f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_screen_map.html">ScreenMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3cd38d6942c9298b08b27ca1e33112f">operator=</a> (const <a class="el" href="class_screen_map.html">ScreenMap</a> &amp;other)</td></tr>
@@ -143,8 +145,10 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a2a0b06bb12b3b06365483e9dc395fc8f" id="r_a2a0b06bb12b3b06365483e9dc395fc8f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a0b06bb12b3b06365483e9dc395fc8f">ParseJson</a> (const char *jsonStrOfMapFile, <a class="el" href="class_fixed_map.html">FixedMap</a>&lt; <a class="el" href="class_str.html">Str</a>, <a class="el" href="class_screen_map.html">ScreenMap</a>, 16 &gt; *segmentMaps)</td></tr>
-<tr class="separator:a2a0b06bb12b3b06365483e9dc395fc8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54a3d57ee1124bcdffd3ed15f6eea36c" id="r_a54a3d57ee1124bcdffd3ed15f6eea36c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_screen_map.html">ScreenMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54a3d57ee1124bcdffd3ed15f6eea36c">Circle</a> (int numLeds, float cm_between_leds=1.5f, float cm_led_diameter=0.5f)</td></tr>
+<tr class="separator:a54a3d57ee1124bcdffd3ed15f6eea36c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7397183aa7149dec4d83c6d298e3b07" id="r_aa7397183aa7149dec4d83c6d298e3b07"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7397183aa7149dec4d83c6d298e3b07">ParseJson</a> (const char *jsonStrScreenMap, <a class="el" href="class_fixed_map.html">FixedMap</a>&lt; <a class="el" href="class_str.html">Str</a>, <a class="el" href="class_screen_map.html">ScreenMap</a>, 16 &gt; *segmentMaps)</td></tr>
+<tr class="separator:aa7397183aa7149dec4d83c6d298e3b07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a388149d12ab0ead35932d79f6175f51e" id="r_a388149d12ab0ead35932d79f6175f51e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a388149d12ab0ead35932d79f6175f51e">toJsonStr</a> (const <a class="el" href="class_fixed_map.html">FixedMap</a>&lt; <a class="el" href="class_str.html">Str</a>, <a class="el" href="class_screen_map.html">ScreenMap</a>, 16 &gt; &amp;, <a class="el" href="class_str.html">Str</a> *jsonBuffer)</td></tr>
 <tr class="separator:a388149d12ab0ead35932d79f6175f51e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8beb600088a7ca1dc5e2928fe46a8aee" id="r_a8beb600088a7ca1dc5e2928fe46a8aee"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8beb600088a7ca1dc5e2928fe46a8aee">toJson</a> (const <a class="el" href="class_fixed_map.html">FixedMap</a>&lt; <a class="el" href="class_str.html">Str</a>, <a class="el" href="class_screen_map.html">ScreenMap</a>, 16 &gt; &amp;, FLArduinoJson::JsonDocument *doc)</td></tr>
@@ -178,7 +182,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="screenmap_8h_source.html#l00034">34</a> of file <a class="el" href="screenmap_8h_source.html">screenmap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="screenmap_8h_source.html#l00037">37</a> of file <a class="el" href="screenmap_8h_source.html">screenmap.h</a>.</p>
 
 </div>
 </div>
@@ -214,7 +218,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="screenmap_8h_source.html#l00043">43</a> of file <a class="el" href="screenmap_8h_source.html">screenmap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="screenmap_8h_source.html#l00046">46</a> of file <a class="el" href="screenmap_8h_source.html">screenmap.h</a>.</p>
 
 </div>
 </div>
@@ -247,7 +251,7 @@ template&lt;uint32_t N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="screenmap_8h_source.html#l00052">52</a> of file <a class="el" href="screenmap_8h_source.html">screenmap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="screenmap_8h_source.html#l00055">55</a> of file <a class="el" href="screenmap_8h_source.html">screenmap.h</a>.</p>
 
 </div>
 </div>
@@ -274,11 +278,47 @@ template&lt;uint32_t N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="screenmap_8h_source.html#l00061">61</a> of file <a class="el" href="screenmap_8h_source.html">screenmap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="screenmap_8h_source.html#l00064">64</a> of file <a class="el" href="screenmap_8h_source.html">screenmap.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a54a3d57ee1124bcdffd3ed15f6eea36c" name="a54a3d57ee1124bcdffd3ed15f6eea36c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54a3d57ee1124bcdffd3ed15f6eea36c">&#9670;&#160;</a></span>Circle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_screen_map.html">ScreenMap</a> ScreenMap::Circle </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>numLeds</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>cm_between_leds</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1.5f</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>cm_led_diameter</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0.5f</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="screenmap_8cpp_source.html#l00019">19</a> of file <a class="el" href="screenmap_8cpp_source.html">screenmap.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a1ca54bcc6e3d35a88e07d13a923349b1" name="a1ca54bcc6e3d35a88e07d13a923349b1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1ca54bcc6e3d35a88e07d13a923349b1">&#9670;&#160;</a></span>getDiameter()</h2>
 
@@ -302,7 +342,7 @@ template&lt;uint32_t N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="screenmap_8h_source.html#l00106">106</a> of file <a class="el" href="screenmap_8h_source.html">screenmap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="screenmap_8h_source.html#l00120">120</a> of file <a class="el" href="screenmap_8h_source.html">screenmap.h</a>.</p>
 
 </div>
 </div>
@@ -329,7 +369,7 @@ template&lt;uint32_t N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="screenmap_8h_source.html#l00104">104</a> of file <a class="el" href="screenmap_8h_source.html">screenmap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="screenmap_8h_source.html#l00118">118</a> of file <a class="el" href="screenmap_8h_source.html">screenmap.h</a>.</p>
 
 </div>
 </div>
@@ -356,7 +396,7 @@ template&lt;uint32_t N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="screenmap_8h_source.html#l00095">95</a> of file <a class="el" href="screenmap_8h_source.html">screenmap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="screenmap_8h_source.html#l00109">109</a> of file <a class="el" href="screenmap_8h_source.html">screenmap.h</a>.</p>
 
 </div>
 </div>
@@ -383,12 +423,39 @@ template&lt;uint32_t N&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="screenmap_8h_source.html#l00100">100</a> of file <a class="el" href="screenmap_8h_source.html">screenmap.h</a>.</p>
+
+</div>
+</div>
+<a id="a4c34c1fed4c4cf6071f7455e70cad15b" name="a4c34c1fed4c4cf6071f7455e70cad15b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c34c1fed4c4cf6071f7455e70cad15b">&#9670;&#160;</a></span>operator[]() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structpair__xy.html">pair_xy_float</a> &amp; ScreenMap::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 <p class="definition">Definition at line <a class="el" href="screenmap_8h_source.html#l00086">86</a> of file <a class="el" href="screenmap_8h_source.html">screenmap.h</a>.</p>
 
 </div>
 </div>
 <a id="a1bc47e05f382f7c4fd71982467ae9f33" name="a1bc47e05f382f7c4fd71982467ae9f33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1bc47e05f382f7c4fd71982467ae9f33">&#9670;&#160;</a></span>operator[]()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bc47e05f382f7c4fd71982467ae9f33">&#9670;&#160;</a></span>operator[]() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -410,12 +477,12 @@ template&lt;uint32_t N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="screenmap_8h_source.html#l00067">67</a> of file <a class="el" href="screenmap_8h_source.html">screenmap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="screenmap_8h_source.html#l00070">70</a> of file <a class="el" href="screenmap_8h_source.html">screenmap.h</a>.</p>
 
 </div>
 </div>
-<a id="a2a0b06bb12b3b06365483e9dc395fc8f" name="a2a0b06bb12b3b06365483e9dc395fc8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a0b06bb12b3b06365483e9dc395fc8f">&#9670;&#160;</a></span>ParseJson()</h2>
+<a id="aa7397183aa7149dec4d83c6d298e3b07" name="aa7397183aa7149dec4d83c6d298e3b07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7397183aa7149dec4d83c6d298e3b07">&#9670;&#160;</a></span>ParseJson()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -426,7 +493,7 @@ template&lt;uint32_t N&gt; </div>
         <tr>
           <td class="memname">void ScreenMap::ParseJson </td>
           <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>jsonStrOfMapFile</em></span>, </td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>jsonStrScreenMap</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -441,7 +508,7 @@ template&lt;uint32_t N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="screenmap_8cpp_source.html#l00019">19</a> of file <a class="el" href="screenmap_8cpp_source.html">screenmap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="screenmap_8cpp_source.html#l00035">35</a> of file <a class="el" href="screenmap_8cpp_source.html">screenmap.cpp</a>.</p>
 
 </div>
 </div>
@@ -472,7 +539,7 @@ template&lt;uint32_t N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="screenmap_8h_source.html#l00075">75</a> of file <a class="el" href="screenmap_8h_source.html">screenmap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="screenmap_8h_source.html#l00078">78</a> of file <a class="el" href="screenmap_8h_source.html">screenmap.h</a>.</p>
 
 </div>
 </div>
@@ -499,7 +566,7 @@ template&lt;uint32_t N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="screenmap_8h_source.html#l00083">83</a> of file <a class="el" href="screenmap_8h_source.html">screenmap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="screenmap_8h_source.html#l00097">97</a> of file <a class="el" href="screenmap_8h_source.html">screenmap.h</a>.</p>
 
 </div>
 </div>
@@ -530,7 +597,7 @@ template&lt;uint32_t N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="screenmap_8cpp_source.html#l00045">45</a> of file <a class="el" href="screenmap_8cpp_source.html">screenmap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="screenmap_8cpp_source.html#l00061">61</a> of file <a class="el" href="screenmap_8cpp_source.html">screenmap.cpp</a>.</p>
 
 </div>
 </div>
@@ -561,7 +628,7 @@ template&lt;uint32_t N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="screenmap_8cpp_source.html#l00064">64</a> of file <a class="el" href="screenmap_8cpp_source.html">screenmap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="screenmap_8cpp_source.html#l00083">83</a> of file <a class="el" href="screenmap_8cpp_source.html">screenmap.cpp</a>.</p>
 
 </div>
 </div>
@@ -576,7 +643,7 @@ template&lt;uint32_t N&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_screen_map.html">ScreenMap</a></li>
-    <li class="footer">Generated on Thu Oct 31 2024 23:03:15 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Nov 14 2024 00:00:34 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

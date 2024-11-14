@@ -184,21 +184,29 @@ var hierarchy =
     [ "CRGBPalette256", "class_c_r_g_b_palette256.html", null ],
     [ "CRGBPalette32", "class_c_r_g_b_palette32.html", null ],
     [ "DATA_NOP", "class_d_a_t_a___n_o_p.html", null ],
+    [ "Description", "class_description.html", null ],
+    [ "fl::enable_if< Condition, T >", "structfl_1_1enable__if.html", null ],
+    [ "fl::enable_if< true, T >", "structfl_1_1enable__if_3_01true_00_01_t_01_4.html", null ],
     [ "EngineEvents", "class_engine_events.html", null ],
     [ "FastPin< PIN >", "class_fast_pin.html", [
       [ "FastPinBB< PIN >", "class_fast_pin_b_b.html", null ]
     ] ],
+    [ "FileSystem", "class_file_system.html", null ],
     [ "FixedMap< Key, Value, N >", "class_fixed_map.html", null ],
     [ "FixedMap< int, FxRef, FASTLED_FX_ENGINE_MAX_FX >", "class_fixed_map.html", null ],
     [ "FixedSet< Key, N >", "class_fixed_set.html", null ],
     [ "FixedVector< T, N >", "class_fixed_vector.html", null ],
     [ "FixedVector< Key, N >", "class_fixed_vector.html", null ],
     [ "FixedVector< Pair, N >", "class_fixed_vector.html", null ],
-    [ "Fs", "class_fs.html", null ],
     [ "FxCompositor", "class_fx_compositor.html", null ],
     [ "FxEngine", "class_fx_engine.html", null ],
     [ "HighPrecisionInterval", "class_high_precision_interval.html", null ],
     [ "IEEE754binary32_t", "union_i_e_e_e754binary32__t.html", null ],
+    [ "fl::is_base_of< Base, Derived >", "structfl_1_1is__base__of.html", null ],
+    [ "fl::is_base_of_v_helper< Base, Derived >", "structfl_1_1is__base__of__v__helper.html", null ],
+    [ "fl::is_same< T, U >", "structfl_1_1is__same.html", null ],
+    [ "fl::is_same< T, T >", "structfl_1_1is__same_3_01_t_00_01_t_01_4.html", null ],
+    [ "fl::is_same_v_helper< T, U >", "structfl_1_1is__same__v__helper.html", null ],
     [ "just8bits", "unionjust8bits.html", null ],
     [ "LargeBlockAllocator< T >", "class_large_block_allocator.html", null ],
     [ "EngineEvents::Listener", "class_engine_events_1_1_listener.html", null ],
@@ -210,6 +218,7 @@ var hierarchy =
     [ "animartrix_detail::oscillators", "structanimartrix__detail_1_1oscillators.html", null ],
     [ "FixedMap< Key, Value, N >::Pair", "struct_fixed_map_1_1_pair.html", null ],
     [ "pair_xy< T >", "structpair__xy.html", null ],
+    [ "Pir", "class_pir.html", null ],
     [ "PixelController< RGB_ORDER, LANES, MASK >", "struct_pixel_controller.html", null ],
     [ "PixelControllerVtable< PixelControllerT >", "struct_pixel_controller_vtable.html", null ],
     [ "PixelIterator", "class_pixel_iterator.html", null ],
@@ -235,7 +244,6 @@ var hierarchy =
           [ "NoisePalette", "class_noise_palette.html", null ],
           [ "RedSquare", "class_red_square.html", null ],
           [ "ScaleUp", "class_scale_up.html", null ],
-          [ "Video", "class_video.html", null ],
           [ "VideoFx", "class_video_fx.html", null ]
         ] ],
         [ "FxStrip", "class_fx_strip.html", [
@@ -251,7 +259,7 @@ var hierarchy =
       [ "FxLayer", "class_fx_layer.html", null ],
       [ "LUT< T >", "class_l_u_t.html", null ],
       [ "StringHolder", "class_string_holder.html", null ],
-      [ "VideoStream", "class_video_stream.html", null ]
+      [ "VideoImpl", "class_video_impl.html", null ]
     ] ],
     [ "REFHardwareSPIOutput< _DATA_PIN, _CLOCK_PIN, _SPI_CLOCK_DIVIDER >", "class_r_e_f_hardware_s_p_i_output.html", null ],
     [ "RefTraits< T >", "class_ref_traits.html", [
@@ -263,9 +271,6 @@ var hierarchy =
     [ "RefTraits< Fx >", "class_ref_traits.html", [
       [ "Ref< Fx >", "class_ref.html", null ]
     ] ],
-    [ "RefTraits< FxGrid >", "class_ref_traits.html", [
-      [ "Ref< FxGrid >", "class_ref.html", null ]
-    ] ],
     [ "RefTraits< WeakReferent >", "class_ref_traits.html", [
       [ "Ref< WeakReferent >", "class_ref.html", null ]
     ] ],
@@ -273,7 +278,8 @@ var hierarchy =
     [ "animartrix_detail::rgb", "structanimartrix__detail_1_1rgb.html", null ],
     [ "Rgbw", "struct_rgbw.html", [
       [ "RgbwDefault", "struct_rgbw_default.html", null ],
-      [ "RgbwInvalid", "struct_rgbw_invalid.html", null ]
+      [ "RgbwInvalid", "struct_rgbw_invalid.html", null ],
+      [ "RgbwWhiteIsOff", "struct_rgbw_white_is_off.html", null ]
     ] ],
     [ "Ripple", "class_ripple.html", null ],
     [ "scoped_array< T, Deleter >", "classscoped__array.html", null ],
@@ -299,9 +305,12 @@ var hierarchy =
       [ "Str", "class_str.html", null ]
     ] ],
     [ "sub4", "structsub4.html", null ],
+    [ "Timer", "class_timer.html", null ],
     [ "TimeWarp", "class_time_warp.html", null ],
+    [ "Title", "class_title.html", null ],
     [ "Transition", "class_transition.html", null ],
     [ "TRGBGradientPaletteEntryUnion", "union_t_r_g_b_gradient_palette_entry_union.html", null ],
+    [ "Video", "class_video.html", null ],
     [ "FsImpl::Visitor", "struct_fs_impl_1_1_visitor.html", null ],
     [ "WeakRef< T >", "class_weak_ref.html", null ],
     [ "WeakReferent", "class_weak_referent.html", null ],

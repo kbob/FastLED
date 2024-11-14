@@ -32,20 +32,22 @@ var NAVTREE =
       [ "Wasm", "index.html#autotoc_md10", null ]
     ] ],
     [ "Compiled Library Size Check", "index.html#autotoc_md11", null ],
-    [ "Getting Started", "index.html#autotoc_md12", [
-      [ "Arduino IDE / PlatformIO Dual Repo", "index.html#autotoc_md13", null ],
-      [ "ArduinoIDE", "index.html#autotoc_md14", null ]
+    [ "New in 3.9.2!", "index.html#autotoc_md12", null ],
+    [ "Star History", "index.html#autotoc_md13", null ],
+    [ "Getting Started", "index.html#autotoc_md14", [
+      [ "Arduino IDE / PlatformIO Dual Repo", "index.html#autotoc_md15", null ],
+      [ "ArduinoIDE", "index.html#autotoc_md16", null ]
     ] ],
-    [ "Development", "index.html#autotoc_md15", [
-      [ "Testing other devices", "index.html#autotoc_md16", null ]
+    [ "Development", "index.html#autotoc_md17", [
+      [ "Testing other devices", "index.html#autotoc_md18", null ]
     ] ],
-    [ "Help and Support", "index.html#autotoc_md17", null ],
-    [ "Supported LED Chipsets", "index.html#autotoc_md18", null ],
-    [ "Supported Platforms", "index.html#autotoc_md19", [
-      [ "Porting FastLED to a new platform", "index.html#autotoc_md20", null ]
+    [ "Help and Support", "index.html#autotoc_md19", null ],
+    [ "Supported LED Chipsets", "index.html#autotoc_md20", null ],
+    [ "Supported Platforms", "index.html#autotoc_md21", null ],
+    [ "Special Notes on APA102 and the 'High Definition' Mode in FastLED", "index.html#autotoc_md22", [
+      [ "What about that name?", "index.html#autotoc_md24", null ],
+      [ "For more information", "index.html#autotoc_md25", null ]
     ] ],
-    [ "What about that name?", "index.html#autotoc_md21", null ],
-    [ "For more information", "index.html#autotoc_md22", null ],
     [ "Todo List", "todo.html", null ],
     [ "Deprecated List", "deprecated.html", null ],
     [ "Topics", "topics.html", "topics" ],
@@ -84,14 +86,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "1653___s3___apa102___hardware___pins_8ino_source.html",
-"class_c_h_s_v_palette256.html",
-"class_c_r_g_b_palette32.html#aaf3410f8c5222ca4ca0b28cd063f90c9",
-"color_8h_source.html",
+"class_c_h_s_v_palette16.html#ac32170225ef05ecc4c9cfc6b837e28dd",
+"class_c_r_g_b_palette32.html#aabbbe1fd83cd3062c48f8adb1ccd8076",
+"colorpalettes_8cpp.html",
 "globals.html",
-"group___noise_fill.html#ga8bf5ab0f87a6bb79204754ef2a62f960",
-"group___pixel_types.html#ggaeb40a08b7cb90c1e21bd408261558b99a5ab3884724e8405c642ed3df1ab505c7",
-"group___timekeeping.html#ga8057578b51f0a5cff337fb2fd5521de7",
-"structsub4.html#af62353204ff783dca725ecb17e1be6ef"
+"group___noise_fill.html",
+"group___pixel_types.html#ggaeb40a08b7cb90c1e21bd408261558b99a56a3a47decb2b8f8d7fec55a92e251aa",
+"group___timekeeping.html#ga5eeb30462c2c1d653b7f4abaf262fc3d",
+"structsub4.html#a6e70209d350d5da5d7acc1a3df93bd91"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

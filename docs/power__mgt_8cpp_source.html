@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.2</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.3</span>
    </div>
   </td>
  </tr>
@@ -300,8 +300,8 @@ $(function(){initNavTree('power__mgt_8cpp_source.html',''); initResizable(true);
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>FASTLED_NAMESPACE_END</div>
 <div class="ttc" id="a_fast_l_e_d_8cpp_html_a7077a6a69b1339a4c04f4bb9ecc0ad3f"><div class="ttname"><a href="_fast_l_e_d_8cpp.html#a7077a6a69b1339a4c04f4bb9ecc0ad3f">FastLED</a></div><div class="ttdeci">CFastLED FastLED</div><div class="ttdoc">Global LED strip management instance.</div><div class="ttdef"><b>Definition</b> <a href="_fast_l_e_d_8cpp_source.html#l00033">FastLED.cpp:33</a></div></div>
 <div class="ttc" id="a_fast_l_e_d_8h_html"><div class="ttname"><a href="_fast_l_e_d_8h.html">FastLED.h</a></div><div class="ttdoc">central include file for FastLED, defines the CFastLED class/object</div></div>
-<div class="ttc" id="aclass_c_fast_l_e_d_html_a6819ff831058a710d4582dfc09817202"><div class="ttname"><a href="class_c_fast_l_e_d.html#a6819ff831058a710d4582dfc09817202">CFastLED::delay</a></div><div class="ttdeci">void delay(unsigned long ms)</div><div class="ttdoc">Delay for the given number of milliseconds.</div><div class="ttdef"><b>Definition</b> <a href="_fast_l_e_d_8cpp_source.html#l00170">FastLED.cpp:170</a></div></div>
-<div class="ttc" id="aclass_c_fast_l_e_d_html_a83afdd1e2a21f33ac4f8d2610d6e331b"><div class="ttname"><a href="class_c_fast_l_e_d.html#a83afdd1e2a21f33ac4f8d2610d6e331b">CFastLED::show</a></div><div class="ttdeci">void show(uint8_t scale)</div><div class="ttdoc">Update all our controllers with the current led colors, using the passed in brightness.</div><div class="ttdef"><b>Definition</b> <a href="_fast_l_e_d_8cpp_source.html#l00074">FastLED.cpp:74</a></div></div>
+<div class="ttc" id="aclass_c_fast_l_e_d_html_a6819ff831058a710d4582dfc09817202"><div class="ttname"><a href="class_c_fast_l_e_d.html#a6819ff831058a710d4582dfc09817202">CFastLED::delay</a></div><div class="ttdeci">void delay(unsigned long ms)</div><div class="ttdoc">Delay for the given number of milliseconds.</div><div class="ttdef"><b>Definition</b> <a href="_fast_l_e_d_8cpp_source.html#l00178">FastLED.cpp:178</a></div></div>
+<div class="ttc" id="aclass_c_fast_l_e_d_html_a83afdd1e2a21f33ac4f8d2610d6e331b"><div class="ttname"><a href="class_c_fast_l_e_d.html#a83afdd1e2a21f33ac4f8d2610d6e331b">CFastLED::show</a></div><div class="ttdeci">void show(uint8_t scale)</div><div class="ttdoc">Update all our controllers with the current led colors, using the passed in brightness.</div><div class="ttdef"><b>Definition</b> <a href="_fast_l_e_d_8cpp_source.html#l00082">FastLED.cpp:82</a></div></div>
 <div class="ttc" id="aclass_c_fast_l_e_d_html_a996375a3f4a7b8c096f87d8a93c2b196"><div class="ttname"><a href="class_c_fast_l_e_d.html#a996375a3f4a7b8c096f87d8a93c2b196">CFastLED::setMaxPowerInVoltsAndMilliamps</a></div><div class="ttdeci">void setMaxPowerInVoltsAndMilliamps(uint8_t volts, uint32_t milliamps)</div><div class="ttdoc">Set the maximum power to be used, given in volts and milliamps.</div><div class="ttdef"><b>Definition</b> <a href="_fast_l_e_d_8h_source.html#l00731">FastLED.h:731</a></div></div>
 <div class="ttc" id="aclass_c_fast_l_e_d_html_ab07d62cdec036af9ede70cbd06ece40f"><div class="ttname"><a href="class_c_fast_l_e_d.html#ab07d62cdec036af9ede70cbd06ece40f">CFastLED::setMaxPowerInMilliWatts</a></div><div class="ttdeci">void setMaxPowerInMilliWatts(uint32_t milliwatts)</div><div class="ttdoc">Set the maximum power to be used, given in milliwatts.</div><div class="ttdef"><b>Definition</b> <a href="_fast_l_e_d_8h_source.html#l00735">FastLED.h:735</a></div></div>
 <div class="ttc" id="aclass_c_l_e_d_controller_html"><div class="ttname"><a href="class_c_l_e_d_controller.html">CLEDController</a></div><div class="ttdoc">Base definition for an LED controller.</div><div class="ttdef"><b>Definition</b> <a href="cled__controller_8h_source.html#l00034">cled_controller.h:34</a></div></div>
@@ -321,7 +321,7 @@ $(function(){initNavTree('power__mgt_8cpp_source.html',''); initResizable(true);
 <div class="ttc" id="agroup___power_html_gab519e78baab1cfbaf62663c48c1c2f35"><div class="ttname"><a href="group___power.html#gab519e78baab1cfbaf62663c48c1c2f35">calculate_max_brightness_for_power_vmA</a></div><div class="ttdeci">uint8_t calculate_max_brightness_for_power_vmA(const CRGB *ledbuffer, uint16_t numLeds, uint8_t target_brightness, uint32_t max_power_V, uint32_t max_power_mA)</div><div class="ttdoc">Determines the highest brightness level you can use and still stay under the specified power budget f...</div><div class="ttdef"><b>Definition</b> <a href="#l00091">power_mgt.cpp:91</a></div></div>
 <div class="ttc" id="agroup___power_html_gafff15ebb8adee6a6c76fd46eb980397c"><div class="ttname"><a href="group___power.html#gafff15ebb8adee6a6c76fd46eb980397c">calculate_max_brightness_for_power_mW</a></div><div class="ttdeci">uint8_t calculate_max_brightness_for_power_mW(const CRGB *ledbuffer, uint16_t numLeds, uint8_t target_brightness, uint32_t max_power_mW)</div><div class="ttdoc">Determines the highest brightness level you can use and still stay under the specified power budget f...</div><div class="ttdef"><b>Definition</b> <a href="#l00095">power_mgt.cpp:95</a></div></div>
 <div class="ttc" id="apower__mgt_8h_html"><div class="ttname"><a href="power__mgt_8h.html">power_mgt.h</a></div><div class="ttdoc">Functions to limit the power used by FastLED.</div></div>
-<div class="ttc" id="astruct_c_r_g_b_html"><div class="ttname"><a href="struct_c_r_g_b.html">CRGB</a></div><div class="ttdoc">Representation of an RGB pixel (Red, Green, Blue)</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00038">crgb.h:38</a></div></div>
+<div class="ttc" id="astruct_c_r_g_b_html"><div class="ttname"><a href="struct_c_r_g_b.html">CRGB</a></div><div class="ttdoc">Representation of an RGB pixel (Red, Green, Blue)</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00039">crgb.h:39</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.3-->
@@ -329,7 +329,7 @@ $(function(){initNavTree('power__mgt_8cpp_source.html',''); initResizable(true);
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="power__mgt_8cpp.html">power_mgt.cpp</a></li>
-    <li class="footer">Generated on Thu Oct 31 2024 23:03:15 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Nov 14 2024 00:00:34 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

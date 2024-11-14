@@ -6,7 +6,6 @@ var group__lib8tion =
     [ "Fast Memory Functions for AVR", "group___fast_memory.html", "group___fast_memory" ],
     [ "Fast Random Number Generators", "group___random.html", "group___random" ],
     [ "Fast Trigonometry Functions", "group___trig.html", "group___trig" ],
-    [ "Fixed-Point Fractional Types.", "group___fractional_types.html", "group___fractional_types" ],
     [ "Float-to-Fixed and Fixed-to-Float Conversions", "group___float_conversions.html", "group___float_conversions" ],
     [ "Linear Interpolation", "group___linear_interpolation.html", "group___linear_interpolation" ],
     [ "Scaling Functions", "group___scaling.html", "group___scaling" ],

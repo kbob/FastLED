@@ -70,6 +70,7 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "platforms.h", "platforms_8h.html", null ],
     [ "power_mgt.cpp", "power__mgt_8cpp.html", "power__mgt_8cpp" ],
     [ "power_mgt.h", "power__mgt_8h.html", "power__mgt_8h" ],
+    [ "qfx.h", "qfx_8h_source.html", null ],
     [ "ref.cpp", "ref_8cpp_source.html", null ],
     [ "ref.h", "ref_8h_source.html", null ],
     [ "register.h", "register_8h_source.html", null ],
@@ -84,6 +85,7 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "str.cpp", "str_8cpp_source.html", null ],
     [ "str.h", "str_8h_source.html", null ],
     [ "stub_main.cpp", "stub__main_8cpp_source.html", null ],
+    [ "template_magic.h", "template__magic_8h_source.html", null ],
     [ "transpose8x1_noinline.cpp", "transpose8x1__noinline_8cpp_source.html", null ],
     [ "transpose8x1_noinline.h", "transpose8x1__noinline_8h_source.html", null ],
     [ "types.h", "types_8h_source.html", null ],
@@ -91,5 +93,6 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "warn.h", "warn_8h_source.html", null ],
     [ "wiring.cpp", "wiring_8cpp.html", null ],
     [ "xmap.h", "xmap_8h_source.html", null ],
+    [ "xymap.cpp", "xymap_8cpp_source.html", null ],
     [ "xymap.h", "xymap_8h_source.html", null ]
 ];

@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.2</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.3</span>
    </div>
   </td>
  </tr>
@@ -131,14 +131,18 @@ $(function(){initNavTree('bytestream_8h_source.html',''); initResizable(true); }
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">virtual</span> <span class="keywordtype">size_t</span> read(uint8_t *dst, <span class="keywordtype">size_t</span> bytesToRead) = 0;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *path() <span class="keyword">const</span> = 0;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> close() {}  <span class="comment">// default is do nothing on close.</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>};</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="comment">// convenience functions</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">size_t</span> read(<a class="code hl_struct" href="struct_c_r_g_b.html">CRGB</a> *dst, <span class="keywordtype">size_t</span> n) { <span class="keywordflow">return</span> read((uint8_t *)dst, n * 3); }</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>};</div>
 </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>FASTLED_NAMESPACE_END</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>FASTLED_NAMESPACE_END</div>
 <div class="ttc" id="aclass_byte_stream_html"><div class="ttname"><a href="class_byte_stream.html">ByteStream</a></div><div class="ttdef"><b>Definition</b> <a href="#l00017">bytestream.h:17</a></div></div>
-<div class="ttc" id="aclass_referent_html"><div class="ttname"><a href="class_referent.html">Referent</a></div><div class="ttdef"><b>Definition</b> <a href="ref_8h_source.html#l00387">ref.h:387</a></div></div>
+<div class="ttc" id="aclass_referent_html"><div class="ttname"><a href="class_referent.html">Referent</a></div><div class="ttdef"><b>Definition</b> <a href="ref_8h_source.html#l00384">ref.h:384</a></div></div>
+<div class="ttc" id="astruct_c_r_g_b_html"><div class="ttname"><a href="struct_c_r_g_b.html">CRGB</a></div><div class="ttdoc">Representation of an RGB pixel (Red, Green, Blue)</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00039">crgb.h:39</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.3-->
@@ -146,7 +150,7 @@ $(function(){initNavTree('bytestream_8h_source.html',''); initResizable(true); }
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_acbb946b833f21b16ec30aa21c4c3a72.html">fx</a></li><li class="navelem"><a class="el" href="dir_e7aa0b75a21ab6e536b800a48b676cd6.html">storage</a></li><li class="navelem"><b>bytestream.h</b></li>
-    <li class="footer">Generated on Thu Oct 31 2024 23:03:15 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Nov 14 2024 00:00:34 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

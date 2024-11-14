@@ -21,6 +21,7 @@ var dir_d28a4824dc47e487b107a5db32ef43c4 =
     [ "Noise", "dir_6ce71dca734103421d7f880fafdc58c0.html", "dir_6ce71dca734103421d7f880fafdc58c0" ],
     [ "NoisePlayground", "dir_8b10bafa6e455a6cfdd7da84bc339d80.html", "dir_8b10bafa6e455a6cfdd7da84bc339d80" ],
     [ "NoisePlusPalette", "dir_9855228c8cabbd40154e79ac1a40dc7f.html", "dir_9855228c8cabbd40154e79ac1a40dc7f" ],
+    [ "NoiseRing", "dir_ef19a8a86a6187c0d37a37d1cd6601c0.html", "dir_ef19a8a86a6187c0d37a37d1cd6601c0" ],
     [ "OctoWS2811", "dir_ace4e50fcc955ba7d1af81fff465c2e8.html", "dir_ace4e50fcc955ba7d1af81fff465c2e8" ],
     [ "Overclock", "dir_e42350710e4d449d396561585bae204b.html", "dir_e42350710e4d449d396561585bae204b" ],
     [ "Pacifica", "dir_6c462138272298d2e4097d58743c07ce.html", "dir_6c462138272298d2e4097d58743c07ce" ],

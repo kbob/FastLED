@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.2</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.3</span>
    </div>
   </td>
  </tr>
@@ -107,7 +107,6 @@ $(function(){initNavTree('lib8tion_8h.html',''); initResizable(true); });
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">lib8tion.h File Reference</div></div>
 </div><!--header-->
@@ -122,6 +121,7 @@ $(function(){initNavTree('lib8tion_8h.html',''); initResizable(true); });
 <code>#include &quot;lib8tion/types.h&quot;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &quot;lib8tion/lib8static.h&quot;</code><br />
+<code>#include &quot;qfx.h&quot;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="math8_8h_source.html">lib8tion/math8.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="scale8_8h_source.html">lib8tion/scale8.h</a>&quot;</code><br />
@@ -132,9 +132,6 @@ $(function(){initNavTree('lib8tion_8h.html',''); initResizable(true); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classqfx.html">qfx&lt; T, F, I &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Template class for representing fractional ints.  <a href="classqfx.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_every_n_time.html">CEveryNTime</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time interval checking class.  <a href="class_c_every_n_time.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,7 +156,7 @@ Macros</h2></td></tr>
 <div class="line"><a class="code hl_function" href="group___color_fills.html#ga0fef54ded2e4748869f1796603433b6b">fill_rainbow</a>(leds, NUM_LEDS, hue);</div>
 <div class="line"><a class="code hl_define" href="group___timekeeping.html#ga90e084b8253af257a0257a23aeef53e1">EVERY_N_MILLIS</a>(20) { hue++; }  <span class="comment">// advances hue every 20 milliseconds</span></div>
 <div class="ttc" id="agroup___color_fills_html_ga0fef54ded2e4748869f1796603433b6b"><div class="ttname"><a href="group___color_fills.html#ga0fef54ded2e4748869f1796603433b6b">fill_rainbow</a></div><div class="ttdeci">void fill_rainbow(struct CRGB *targetArray, int numToFill, uint8_t initialhue, uint8_t deltahue)</div><div class="ttdoc">Fill a range of LEDs with a rainbow of colors.</div><div class="ttdef"><b>Definition</b> <a href="colorutils_8cpp_source.html#l00041">colorutils.cpp:41</a></div></div>
-<div class="ttc" id="agroup___timekeeping_html_ga90e084b8253af257a0257a23aeef53e1"><div class="ttname"><a href="group___timekeeping.html#ga90e084b8253af257a0257a23aeef53e1">EVERY_N_MILLIS</a></div><div class="ttdeci">#define EVERY_N_MILLIS(N)</div><div class="ttdoc">Checks whether to execute a block of code every N milliseconds.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_8h_source.html#l01328">lib8tion.h:1328</a></div></div>
+<div class="ttc" id="agroup___timekeeping_html_ga90e084b8253af257a0257a23aeef53e1"><div class="ttname"><a href="group___timekeeping.html#ga90e084b8253af257a0257a23aeef53e1">EVERY_N_MILLIS</a></div><div class="ttdeci">#define EVERY_N_MILLIS(N)</div><div class="ttdoc">Checks whether to execute a block of code every N milliseconds.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_8h_source.html#l01279">lib8tion.h:1279</a></div></div>
 </div><!-- fragment --><p> Note that in order for these to be accurate, the EVERY_N block must be evaluated at a regular basis. <br  />
  </p>
 </div></td></tr>
@@ -205,21 +202,6 @@ Macros</h2></td></tr>
 <tr class="memitem:ga33823fb898e26e976f4394bf3fed8b10" id="r_ga33823fb898e26e976f4394bf3fed8b10"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___timekeeping.html#ga33823fb898e26e976f4394bf3fed8b10">EVERY_N_MILLISECONDS_DYNAMIC_I</a>(NAME,  PERIOD_FUNC)</td></tr>
 <tr class="memdesc:ga33823fb898e26e976f4394bf3fed8b10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether to execute a block of code every N milliseconds, where N is determined dynamically, using a custom instance name.  <br /></td></tr>
 <tr class="separator:ga33823fb898e26e976f4394bf3fed8b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ga0633f7b895315d42362360319177fb52" id="r_ga0633f7b895315d42362360319177fb52"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classqfx.html">qfx</a>&lt; uint8_t, 4, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___fractional_types.html#ga0633f7b895315d42362360319177fb52">q44</a></td></tr>
-<tr class="memdesc:ga0633f7b895315d42362360319177fb52"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 4.4 integer (4 bits integer, 4 bits fraction)  <br /></td></tr>
-<tr class="separator:ga0633f7b895315d42362360319177fb52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5fb2a49f2ff13a8ebcd801e8f7ef8517" id="r_ga5fb2a49f2ff13a8ebcd801e8f7ef8517"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classqfx.html">qfx</a>&lt; uint8_t, 6, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___fractional_types.html#ga5fb2a49f2ff13a8ebcd801e8f7ef8517">q62</a></td></tr>
-<tr class="memdesc:ga5fb2a49f2ff13a8ebcd801e8f7ef8517"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 6.2 integer (6 bits integer, 2 bits fraction)  <br /></td></tr>
-<tr class="separator:ga5fb2a49f2ff13a8ebcd801e8f7ef8517"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab0dd52829a2880f9d94a370216f17f90" id="r_gab0dd52829a2880f9d94a370216f17f90"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classqfx.html">qfx</a>&lt; uint16_t, 8, 8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___fractional_types.html#gab0dd52829a2880f9d94a370216f17f90">q88</a></td></tr>
-<tr class="memdesc:gab0dd52829a2880f9d94a370216f17f90"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 8.8 integer (8 bits integer, 8 bits fraction)  <br /></td></tr>
-<tr class="separator:gab0dd52829a2880f9d94a370216f17f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga94a3f0a96ceb1f254e6494e403427e0a" id="r_ga94a3f0a96ceb1f254e6494e403427e0a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classqfx.html">qfx</a>&lt; uint16_t, 12, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___fractional_types.html#ga94a3f0a96ceb1f254e6494e403427e0a">q124</a></td></tr>
-<tr class="memdesc:ga94a3f0a96ceb1f254e6494e403427e0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 12.4 integer (12 bits integer, 4 bits fraction)  <br /></td></tr>
-<tr class="separator:ga94a3f0a96ceb1f254e6494e403427e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -351,7 +333,7 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><b>memset8</b> (void *
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="lib8tion_8h.html">lib8tion.h</a></li>
-    <li class="footer">Generated on Thu Oct 31 2024 23:03:15 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Nov 14 2024 00:00:34 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

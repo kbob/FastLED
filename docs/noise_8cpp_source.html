@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.2</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.3</span>
    </div>
   </td>
  </tr>
@@ -1028,10 +1028,10 @@ $(function(){initNavTree('noise_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span> </div>
 <div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span><span class="preprocessor">#pragma GCC diagnostic pop</span></div>
 <div class="ttc" id="a_fast_l_e_d_8h_html"><div class="ttname"><a href="_fast_l_e_d_8h.html">FastLED.h</a></div><div class="ttdoc">central include file for FastLED, defines the CFastLED class/object</div></div>
-<div class="ttc" id="aclassqfx_html"><div class="ttname"><a href="classqfx.html">qfx</a></div><div class="ttdoc">Template class for representing fractional ints.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_8h_source.html#l00825">lib8tion.h:825</a></div></div>
+<div class="ttc" id="aclassqfx_html"><div class="ttname"><a href="classqfx.html">qfx</a></div><div class="ttdoc">Template class for representing fractional ints.</div><div class="ttdef"><b>Definition</b> <a href="qfx_8h_source.html#l00013">qfx.h:13</a></div></div>
 <div class="ttc" id="afastled__progmem_8h_html_af4d0ad0021dafa1c293cb3363a82ee8f"><div class="ttname"><a href="fastled__progmem_8h.html#af4d0ad0021dafa1c293cb3363a82ee8f">FL_PROGMEM</a></div><div class="ttdeci">#define FL_PROGMEM</div><div class="ttdoc">PROGMEM keyword for storage.</div><div class="ttdef"><b>Definition</b> <a href="fastled__progmem_8h_source.html#l00045">fastled_progmem.h:45</a></div></div>
 <div class="ttc" id="agroup___color_blends_html_ga4f06b4423f71f77346aaf5dabe7dd05c"><div class="ttname"><a href="group___color_blends.html#ga4f06b4423f71f77346aaf5dabe7dd05c">blend</a></div><div class="ttdeci">CRGB blend(const CRGB &amp;p1, const CRGB &amp;p2, fract8 amountOfP2)</div><div class="ttdoc">Computes a new color blended some fraction of the way between two other colors.</div><div class="ttdef"><b>Definition</b> <a href="colorutils_8cpp_source.html#l00319">colorutils.cpp:319</a></div></div>
-<div class="ttc" id="agroup___fractional_types_html_ga0633f7b895315d42362360319177fb52"><div class="ttname"><a href="group___fractional_types.html#ga0633f7b895315d42362360319177fb52">q44</a></div><div class="ttdeci">qfx&lt; uint8_t, 4, 4 &gt; q44</div><div class="ttdoc">A 4.4 integer (4 bits integer, 4 bits fraction)</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_8h_source.html#l00857">lib8tion.h:857</a></div></div>
+<div class="ttc" id="agroup___fractional_types_html_ga0633f7b895315d42362360319177fb52"><div class="ttname"><a href="group___fractional_types.html#ga0633f7b895315d42362360319177fb52">q44</a></div><div class="ttdeci">qfx&lt; uint8_t, 4, 4 &gt; q44</div><div class="ttdoc">A 4.4 integer (4 bits integer, 4 bits fraction)</div><div class="ttdef"><b>Definition</b> <a href="qfx_8h_source.html#l00045">qfx.h:45</a></div></div>
 <div class="ttc" id="agroup___fractional_types_html_ga5d6d013429a5b8a09d564d6137217644"><div class="ttname"><a href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a></div><div class="ttdeci">uint8_t fract8</div><div class="ttdoc">ANSI: unsigned short _Fract.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_2types_8h_source.html#l00030">types.h:30</a></div></div>
 <div class="ttc" id="agroup___fractional_types_html_gaaf46b9f719ef3bdb574f8e967af6dbb5"><div class="ttname"><a href="group___fractional_types.html#gaaf46b9f719ef3bdb574f8e967af6dbb5">fract16</a></div><div class="ttdeci">uint16_t fract16</div><div class="ttdoc">ANSI: unsigned _Fract.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_2types_8h_source.html#l00040">types.h:40</a></div></div>
 <div class="ttc" id="agroup___math_html_ga07133b3085824d0fcd4f5086d286c4b5"><div class="ttname"><a href="group___math.html#ga07133b3085824d0fcd4f5086d286c4b5">qadd8</a></div><div class="ttdeci">LIB8STATIC_ALWAYS_INLINE uint8_t qadd8(uint8_t i, uint8_t j)</div><div class="ttdoc">Add one byte to another, saturating at 0xFF.</div><div class="ttdef"><b>Definition</b> <a href="math8_8h_source.html#l00031">math8.h:31</a></div></div>
@@ -1056,7 +1056,7 @@ $(function(){initNavTree('noise_8cpp_source.html',''); initResizable(true); });
 <div class="ttc" id="anoise_8cpp_html_a3dc6c55a3f8495a7bc6dc0124434c688"><div class="ttname"><a href="noise_8cpp.html#a3dc6c55a3f8495a7bc6dc0124434c688">fill_raw_2dnoise8</a></div><div class="ttdeci">void fill_raw_2dnoise8(uint8_t *pData, int width, int height, uint8_t octaves, q44 freq44, fract8 amplitude, int skip, uint16_t x, int16_t scalex, uint16_t y, int16_t scaley, uint16_t time)</div><div class="ttdoc">Fill a 2D 8-bit buffer with noise, using inoise8()</div><div class="ttdef"><b>Definition</b> <a href="#l00654">noise.cpp:654</a></div></div>
 <div class="ttc" id="anoise_8cpp_html_a96f7525b7d6a9b4b64fe179dd064b104"><div class="ttname"><a href="noise_8cpp.html#a96f7525b7d6a9b4b64fe179dd064b104">nmax</a></div><div class="ttdeci">int32_t nmax</div><div class="ttdoc">Unused.</div><div class="ttdef"><b>Definition</b> <a href="#l00728">noise.cpp:728</a></div></div>
 <div class="ttc" id="astruct_c_h_s_v_html"><div class="ttname"><a href="struct_c_h_s_v.html">CHSV</a></div><div class="ttdoc">Representation of an HSV pixel (hue, saturation, value (aka brightness)).</div><div class="ttdef"><b>Definition</b> <a href="chsv_8h_source.html#l00011">chsv.h:11</a></div></div>
-<div class="ttc" id="astruct_c_r_g_b_html"><div class="ttname"><a href="struct_c_r_g_b.html">CRGB</a></div><div class="ttdoc">Representation of an RGB pixel (Red, Green, Blue)</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00038">crgb.h:38</a></div></div>
+<div class="ttc" id="astruct_c_r_g_b_html"><div class="ttname"><a href="struct_c_r_g_b.html">CRGB</a></div><div class="ttdoc">Representation of an RGB pixel (Red, Green, Blue)</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00039">crgb.h:39</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.3-->
@@ -1064,7 +1064,7 @@ $(function(){initNavTree('noise_8cpp_source.html',''); initResizable(true); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="noise_8cpp.html">noise.cpp</a></li>
-    <li class="footer">Generated on Thu Oct 31 2024 23:03:15 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Nov 14 2024 00:00:34 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->
