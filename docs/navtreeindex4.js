@@ -1,5 +1,11 @@
 var NAVTREEINDEX4 =
 {
+"fx_8h_source.html":[17,0,1,1,7],
+"fx__compositor_8h_source.html":[17,0,1,1,2,4],
+"fx__engine_8h_source.html":[17,0,1,1,10],
+"fx__layer_8h_source.html":[17,0,1,1,2,5],
+"gary__woos__wled__ledmap_8h_source.html":[17,0,0,6,0,0],
+"gen_8py_source.html":[17,0,0,6,3],
 "globals.html":[17,1,0],
 "globals.html":[17,1,0,0],
 "globals_a.html":[17,1,0,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX4 =
 "group___math.html#ga810cba6ac8e4f5c8a97cd41e9bb113b4":[14,3,0,19],
 "group___math.html#ga9a604de042246d6c87fdbfdd5578f377":[14,3,0,10],
 "group___math.html#gaa3beb6c31141a13c1a047b926d065ca2":[14,3,0,11],
-"group___math.html#gad22eab15c00c933402a200e5abd36a31":[14,3,0,2],
-"group___math.html#gad2d87829a6327876eed4482aa515dfa9":[14,3,0,18],
-"group___math.html#gad7af6a5b49aef34ab79e850ddb7d7911":[14,3,0,7],
-"group___math.html#gae261576a4c8155d6c0ba8615b2d2ecb3":[14,3,0,16],
-"group___math.html#gaf170916b55c493ea038c1d96b338e059":[14,3,0,12],
-"group___noise.html":[14,8],
-"group___noise.html#ga48f4d856c46824dd30ffb245d131624e":[14,8,2]
+"group___math.html#gad22eab15c00c933402a200e5abd36a31":[14,3,0,2]
 };

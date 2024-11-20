@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.3</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.4</span>
    </div>
   </td>
  </tr>
@@ -120,21 +120,22 @@ $(function(){initNavTree('class_circular_buffer.html',''); initResizable(true); 
   <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>front</b>() (defined in <a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a>)</td><td class="entry"><a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>front</b>() const (defined in <a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a>)</td><td class="entry"><a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>full</b>() const (defined in <a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a>)</td><td class="entry"><a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>operator=</b>(const CircularBuffer &amp;)=delete (defined in <a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a>)</td><td class="entry"><a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>operator[]</b>(size_t index) (defined in <a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a>)</td><td class="entry"><a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>operator[]</b>(size_t index) const (defined in <a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a>)</td><td class="entry"><a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>pop_back</b>(T *dst=nullptr) (defined in <a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a>)</td><td class="entry"><a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>pop_front</b>(T *dst=nullptr) (defined in <a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a>)</td><td class="entry"><a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>push_back</b>(const T &amp;value) (defined in <a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a>)</td><td class="entry"><a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>push_front</b>(const T &amp;value) (defined in <a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a>)</td><td class="entry"><a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>size</b>() const (defined in <a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a>)</td><td class="entry"><a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>insert</b>(size_t index, const T &amp;value) (defined in <a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a>)</td><td class="entry"><a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>operator=</b>(const CircularBuffer &amp;)=delete (defined in <a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a>)</td><td class="entry"><a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>operator[]</b>(size_t index) (defined in <a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a>)</td><td class="entry"><a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>operator[]</b>(size_t index) const (defined in <a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a>)</td><td class="entry"><a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>pop_back</b>(T *dst=nullptr) (defined in <a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a>)</td><td class="entry"><a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>pop_front</b>(T *dst=nullptr) (defined in <a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a>)</td><td class="entry"><a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>push_back</b>(const T &amp;value) (defined in <a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a>)</td><td class="entry"><a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>push_front</b>(const T &amp;value) (defined in <a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a>)</td><td class="entry"><a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>size</b>() const (defined in <a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a>)</td><td class="entry"><a class="el" href="class_circular_buffer.html">CircularBuffer&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.3-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Nov 14 2024 00:00:34 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Nov 20 2024 08:28:11 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

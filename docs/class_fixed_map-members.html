@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.3</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.4</span>
    </div>
   </td>
  </tr>
@@ -124,8 +124,12 @@ $(function(){initNavTree('class_fixed_map.html',''); initResizable(true); });
   <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>get</b>(const Key &amp;key, Value *value) const (defined in <a class="el" href="class_fixed_map.html">FixedMap&lt; Key, Value, N &gt;</a>)</td><td class="entry"><a class="el" href="class_fixed_map.html">FixedMap&lt; Key, Value, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>get</b>(const Key &amp;key, bool *has=nullptr) const (defined in <a class="el" href="class_fixed_map.html">FixedMap&lt; Key, Value, N &gt;</a>)</td><td class="entry"><a class="el" href="class_fixed_map.html">FixedMap&lt; Key, Value, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>has</b>(const Key &amp;it) const (defined in <a class="el" href="class_fixed_map.html">FixedMap&lt; Key, Value, N &gt;</a>)</td><td class="entry"><a class="el" href="class_fixed_map.html">FixedMap&lt; Key, Value, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>highest</b>(LessThan less_than=LessThan()) (defined in <a class="el" href="class_fixed_map.html">FixedMap&lt; Key, Value, N &gt;</a>)</td><td class="entry"><a class="el" href="class_fixed_map.html">FixedMap&lt; Key, Value, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>highest</b>(LessThan less_than=LessThan()) const (defined in <a class="el" href="class_fixed_map.html">FixedMap&lt; Key, Value, N &gt;</a>)</td><td class="entry"><a class="el" href="class_fixed_map.html">FixedMap&lt; Key, Value, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>insert</b>(const Key &amp;key, const Value &amp;value) (defined in <a class="el" href="class_fixed_map.html">FixedMap&lt; Key, Value, N &gt;</a>)</td><td class="entry"><a class="el" href="class_fixed_map.html">FixedMap&lt; Key, Value, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>iterator</b> typedef (defined in <a class="el" href="class_fixed_map.html">FixedMap&lt; Key, Value, N &gt;</a>)</td><td class="entry"><a class="el" href="class_fixed_map.html">FixedMap&lt; Key, Value, N &gt;</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>lowest</b>(LessThan less_than=LessThan()) (defined in <a class="el" href="class_fixed_map.html">FixedMap&lt; Key, Value, N &gt;</a>)</td><td class="entry"><a class="el" href="class_fixed_map.html">FixedMap&lt; Key, Value, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>lowest</b>(LessThan less_than=LessThan()) const (defined in <a class="el" href="class_fixed_map.html">FixedMap&lt; Key, Value, N &gt;</a>)</td><td class="entry"><a class="el" href="class_fixed_map.html">FixedMap&lt; Key, Value, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>next</b>(const Key &amp;key, Key *next_key, bool allow_rollover=false) const (defined in <a class="el" href="class_fixed_map.html">FixedMap&lt; Key, Value, N &gt;</a>)</td><td class="entry"><a class="el" href="class_fixed_map.html">FixedMap&lt; Key, Value, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>operator[]</b>(const Key &amp;key) (defined in <a class="el" href="class_fixed_map.html">FixedMap&lt; Key, Value, N &gt;</a>)</td><td class="entry"><a class="el" href="class_fixed_map.html">FixedMap&lt; Key, Value, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>operator[]</b>(const Key &amp;key) const (defined in <a class="el" href="class_fixed_map.html">FixedMap&lt; Key, Value, N &gt;</a>)</td><td class="entry"><a class="el" href="class_fixed_map.html">FixedMap&lt; Key, Value, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
@@ -139,7 +143,7 @@ $(function(){initNavTree('class_fixed_map.html',''); initResizable(true); });
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Nov 14 2024 00:00:34 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Nov 20 2024 08:28:11 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

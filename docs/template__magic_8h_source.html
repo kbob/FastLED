@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.3</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.4</span>
    </div>
   </td>
  </tr>
@@ -189,71 +189,122 @@ $(function(){initNavTree('template__magic_8h_source.html',''); initResizable(tru
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>};</div>
 </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">// This uses template magic to maybe generate a type for the given condition. If that type</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">// doesn&#39;t exist then a type will fail to be generated, and the compiler will skip the</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">// consideration of a target function. This is useful for enabling template constructors</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">// that only become available if the class can be upcasted to the desired type.</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">//</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">// Example:</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">// This is an optional upcasting constructor for a Ref&lt;T&gt;. If the type U is not derived from T</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">// then the constructor will not be generated, and the compiler will skip it.</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">//</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">// template &lt;typename U, typename = fl::is_derived&lt;T, U&gt;&gt;</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">// Ref(const Ref&lt;U&gt;&amp; refptr) : referent_(refptr.get());</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Base, <span class="keyword">typename</span> Derived&gt;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="keyword">using </span>is_derived = enable_if_t&lt;is_base_of&lt;Base, Derived&gt;::value&gt;;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>} <span class="comment">// namespace fl</span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">// Convienence macro to define an output operator for a class to make it compatible</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">// with std::ostream. This is useful for debugging and logging. The operator will</span></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">// be defined as &quot;os&quot; and the right hand object will be named &quot;obj&quot;.</span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">//</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">// Example:</span></div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">//  FASTLED_DEFINE_OUTPUT_OPERATOR(CRGB) {</span></div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">//      os &lt;&lt;(&quot;CRGB(&quot;);</span></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">//      os &lt;&lt;(static_cast&lt;int&gt;(obj.r));</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">//      os &lt;&lt;(&quot;, &quot;);</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment">//      os &lt;&lt;(static_cast&lt;int&gt;(obj.g));</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">//      os &lt;&lt;(&quot;, &quot;);</span></div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">//      os &lt;&lt;(static_cast&lt;int&gt;(obj.b));</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">//      os &lt;&lt;(&quot;)&quot;);</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">//      return os;</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">//  }</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">// Define is_pod trait (basic implementation)</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00073" data-start="{" data-end="};">
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="structfl_1_1is__pod.html">   73</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structfl_1_1is__pod.html">is_pod</a> {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> value = <span class="keyword">false</span>;  <span class="comment">// Default to false for safety</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>};</div>
+</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">// Specializations for fundamental types</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="structfl_1_1is__pod_3_01bool_01_4.html">   78</a></span><span class="keyword">template</span>&lt;&gt; <span class="keyword">struct </span><a class="code hl_struct" href="structfl_1_1is__pod.html">is_pod</a>&lt;bool&gt; { <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> value = <span class="keyword">true</span>; };</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="structfl_1_1is__pod_3_01char_01_4.html">   79</a></span><span class="keyword">template</span>&lt;&gt; <span class="keyword">struct </span><a class="code hl_struct" href="structfl_1_1is__pod.html">is_pod</a>&lt;char&gt; { <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> value = <span class="keyword">true</span>; };</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="structfl_1_1is__pod_3_01signed_01char_01_4.html">   80</a></span><span class="keyword">template</span>&lt;&gt; <span class="keyword">struct </span><a class="code hl_struct" href="structfl_1_1is__pod.html">is_pod</a>&lt;signed char&gt; { <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> value = <span class="keyword">true</span>; };</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="structfl_1_1is__pod_3_01unsigned_01char_01_4.html">   81</a></span><span class="keyword">template</span>&lt;&gt; <span class="keyword">struct </span><a class="code hl_struct" href="structfl_1_1is__pod.html">is_pod</a>&lt;unsigned char&gt; { <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> value = <span class="keyword">true</span>; };</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="structfl_1_1is__pod_3_01short_01_4.html">   82</a></span><span class="keyword">template</span>&lt;&gt; <span class="keyword">struct </span><a class="code hl_struct" href="structfl_1_1is__pod.html">is_pod</a>&lt;short&gt; { <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> value = <span class="keyword">true</span>; };</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="structfl_1_1is__pod_3_01unsigned_01short_01_4.html">   83</a></span><span class="keyword">template</span>&lt;&gt; <span class="keyword">struct </span><a class="code hl_struct" href="structfl_1_1is__pod.html">is_pod</a>&lt;unsigned short&gt; { <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> value = <span class="keyword">true</span>; };</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="structfl_1_1is__pod_3_01int_01_4.html">   84</a></span><span class="keyword">template</span>&lt;&gt; <span class="keyword">struct </span><a class="code hl_struct" href="structfl_1_1is__pod.html">is_pod</a>&lt;int&gt; { <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> value = <span class="keyword">true</span>; };</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="structfl_1_1is__pod_3_01unsigned_01int_01_4.html">   85</a></span><span class="keyword">template</span>&lt;&gt; <span class="keyword">struct </span><a class="code hl_struct" href="structfl_1_1is__pod.html">is_pod</a>&lt;unsigned int&gt; { <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> value = <span class="keyword">true</span>; };</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="structfl_1_1is__pod_3_01long_01_4.html">   86</a></span><span class="keyword">template</span>&lt;&gt; <span class="keyword">struct </span><a class="code hl_struct" href="structfl_1_1is__pod.html">is_pod</a>&lt;long&gt; { <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> value = <span class="keyword">true</span>; };</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="structfl_1_1is__pod_3_01unsigned_01long_01_4.html">   87</a></span><span class="keyword">template</span>&lt;&gt; <span class="keyword">struct </span><a class="code hl_struct" href="structfl_1_1is__pod.html">is_pod</a>&lt;unsigned long&gt; { <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> value = <span class="keyword">true</span>; };</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="structfl_1_1is__pod_3_01long_01long_01_4.html">   88</a></span><span class="keyword">template</span>&lt;&gt; <span class="keyword">struct </span><a class="code hl_struct" href="structfl_1_1is__pod.html">is_pod</a>&lt;long long&gt; { <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> value = <span class="keyword">true</span>; };</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="structfl_1_1is__pod_3_01unsigned_01long_01long_01_4.html">   89</a></span><span class="keyword">template</span>&lt;&gt; <span class="keyword">struct </span><a class="code hl_struct" href="structfl_1_1is__pod.html">is_pod</a>&lt;unsigned long long&gt; { <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> value = <span class="keyword">true</span>; };</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="structfl_1_1is__pod_3_01float_01_4.html">   90</a></span><span class="keyword">template</span>&lt;&gt; <span class="keyword">struct </span><a class="code hl_struct" href="structfl_1_1is__pod.html">is_pod</a>&lt;float&gt; { <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> value = <span class="keyword">true</span>; };</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="structfl_1_1is__pod_3_01double_01_4.html">   91</a></span><span class="keyword">template</span>&lt;&gt; <span class="keyword">struct </span><a class="code hl_struct" href="structfl_1_1is__pod.html">is_pod</a>&lt;double&gt; { <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> value = <span class="keyword">true</span>; };</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="structfl_1_1is__pod_3_01long_01double_01_4.html">   92</a></span><span class="keyword">template</span>&lt;&gt; <span class="keyword">struct </span><a class="code hl_struct" href="structfl_1_1is__pod.html">is_pod</a>&lt;long double&gt; { <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> value = <span class="keyword">true</span>; };</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">// Helper struct for is_pod_v (similar to other _v helpers)</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00096" data-start="{" data-end="};">
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="structfl_1_1is__pod__v__helper.html">   96</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structfl_1_1is__pod__v__helper.html">is_pod_v_helper</a> {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> value = <a class="code hl_struct" href="structfl_1_1is__pod.html">is_pod&lt;T&gt;::value</a>;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>};</div>
+</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">// This uses template magic to maybe generate a type for the given condition. If that type</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">// doesn&#39;t exist then a type will fail to be generated, and the compiler will skip the</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">// consideration of a target function. This is useful for enabling template constructors</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">// that only become available if the class can be upcasted to the desired type.</span></div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">//</span></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">// This is needed because in C++ there is two phase lookup, in which ONLY the first</span></div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">// parameter will be considered if matched, even if the second argument is a non match.</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">//</span></div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">// This macro get&#39;s around this issue.</span></div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">//</span></div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">// Consider the following templated operator definition:</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment">// template&lt;typename OutputStream&gt;</span></div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">// OutputStream &amp;operator&lt;&lt;(OutputStream &amp;os, const Str &amp;str) {</span></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment">//    os &lt;&lt; str.c_str();</span></div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment">//    return os;</span></div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">// }</span></div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">//</span></div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">// You would think this would only match if the left hand side is an ostream and the</span></div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">// second parameter is &quot;Str&quot;, but you would be wrong, because of two phase lookup</span></div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">// this function will be considered for any type of ostream and ANY type of second</span></div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">// parameter, even &quot;float&quot; or &quot;int&quot;.</span></div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment">//</span></div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment">// This means that normally, this template will match std::stream &lt;&lt; float</span></div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment">// then fail because of ambiguity, even though the second template is not</span></div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment">// a match. Therefore we use the enable_if which will generate a type if</span></div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">// and only if the the second condition is a match.</span></div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">//</span></div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment">// This essentially forces two phase lookup in one pass. Making the compiler skip</span></div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">// the definition if the second parameter doesn&#39;t match.</span></div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="preprocessor">#define FASTLED_DEFINE_OUTPUT_OPERATOR(CLASS)                  \</span></div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="preprocessor">template &lt;typename T, typename U&gt;                              \</span></div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="preprocessor">typename fl::enable_if&lt;fl::is_same&lt;U, CLASS&gt;::value, T&amp;&gt;::type \</span></div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="preprocessor">operator&lt;&lt;(T&amp; os, const CLASS&amp; obj)</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">// Example:</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">// This is an optional upcasting constructor for a Ref&lt;T&gt;. If the type U is not derived from T</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">// then the constructor will not be generated, and the compiler will skip it.</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">//</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">// template &lt;typename U, typename = fl::is_derived&lt;T, U&gt;&gt;</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">// Ref(const Ref&lt;U&gt;&amp; refptr) : referent_(refptr.get());</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Base, <span class="keyword">typename</span> Derived&gt;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="keyword">using </span>is_derived = enable_if_t&lt;is_base_of&lt;Base, Derived&gt;::value&gt;;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>} <span class="comment">// namespace fl</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">// Convienence macro to define an output operator for a class to make it compatible</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">// with std::ostream. This is useful for debugging and logging. The operator will</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">// be defined as &quot;os&quot; and the right hand object will be named &quot;obj&quot;.</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">//</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment">// Example:</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment">//  FASTLED_DEFINE_OUTPUT_OPERATOR(CRGB) {</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment">//      os &lt;&lt;(&quot;CRGB(&quot;);</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment">//      os &lt;&lt;(static_cast&lt;int&gt;(obj.r));</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">//      os &lt;&lt;(&quot;, &quot;);</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">//      os &lt;&lt;(static_cast&lt;int&gt;(obj.g));</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment">//      os &lt;&lt;(&quot;, &quot;);</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">//      os &lt;&lt;(static_cast&lt;int&gt;(obj.b));</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment">//      os &lt;&lt;(&quot;)&quot;);</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment">//      return os;</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment">//  }</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment">//</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment">// This is needed because in C++ there is two phase lookup, in which ONLY the first</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment">// parameter will be considered if matched, even if the second argument is a non match.</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment">//</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment">// This macro get&#39;s around this issue.</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment">//</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment">// Consider the following templated operator definition:</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment">// template&lt;typename OutputStream&gt;</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment">// OutputStream &amp;operator&lt;&lt;(OutputStream &amp;os, const Str &amp;str) {</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment">//    os &lt;&lt; str.c_str();</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment">//    return os;</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment">// }</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment">//</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment">// You would think this would only match if the left hand side is an ostream and the</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="comment">// second parameter is &quot;Str&quot;, but you would be wrong, because of two phase lookup</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="comment">// this function will be considered for any type of ostream and ANY type of second</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="comment">// parameter, even &quot;float&quot; or &quot;int&quot;.</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="comment">//</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="comment">// This means that normally, this template will match std::stream &lt;&lt; float</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="comment">// then fail because of ambiguity, even though the second template is not</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment">// a match. Therefore we use the enable_if which will generate a type if</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="comment">// and only if the the second condition is a match.</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="comment">//</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment">// This essentially forces two phase lookup in one pass. Making the compiler skip</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment">// the definition if the second parameter doesn&#39;t match.</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="preprocessor">#define FASTLED_DEFINE_OUTPUT_OPERATOR(CLASS)                  \</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="preprocessor">template &lt;typename T, typename U&gt;                              \</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="preprocessor">typename fl::enable_if&lt;fl::is_same&lt;U, CLASS&gt;::value, T&amp;&gt;::type \</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="preprocessor">operator&lt;&lt;(T&amp; os, const CLASS&amp; obj)</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="comment">// For comparison operators that return bool against pod data. The class obj will need</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment">// to supply the comparison operator for the pod type.</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="comment">// This example will show how to define a comparison operator for a class that can be</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="comment">// compared against a pod type.</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="comment">// Example:</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment">//   FASTLED_DEFINE_POD_COMPARISON_OPERATOR(Myclass, &gt;=) will allow MyClass to be compared</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">//   MyClass obj;</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment">//   return obj &gt;= 0;</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="preprocessor">#define FASTLED_DEFINE_POD_COMPARISON_OPERATOR(CLASS, OP) \</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="preprocessor">template &lt;typename T, typename U&gt;  \</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="preprocessor">typename fl::enable_if&lt;fl::is_same&lt;U, CLASS&gt;::value &amp;&amp; fl::is_pod&lt;T&gt;::value, bool&gt;::type \</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="preprocessor">operator OP (const T&amp; pod, const CLASS&amp; obj) { return pod OP obj; } \</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="preprocessor">template &lt;typename T&gt; \</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="preprocessor">typename fl::enable_if&lt;fl::is_pod&lt;T&gt;::value, bool&gt;::type \</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="preprocessor">operator OP (const CLASS&amp; obj, const T&amp; pod) { return obj OP pod; }</span></div>
 <div class="ttc" id="astructfl_1_1enable__if_html"><div class="ttname"><a href="structfl_1_1enable__if.html">fl::enable_if</a></div><div class="ttdef"><b>Definition</b> <a href="#l00015">template_magic.h:15</a></div></div>
 <div class="ttc" id="astructfl_1_1is__base__of__v__helper_html"><div class="ttname"><a href="structfl_1_1is__base__of__v__helper.html">fl::is_base_of_v_helper</a></div><div class="ttdef"><b>Definition</b> <a href="#l00049">template_magic.h:49</a></div></div>
 <div class="ttc" id="astructfl_1_1is__base__of_html"><div class="ttname"><a href="structfl_1_1is__base__of.html">fl::is_base_of</a></div><div class="ttdef"><b>Definition</b> <a href="#l00033">template_magic.h:33</a></div></div>
+<div class="ttc" id="astructfl_1_1is__pod__v__helper_html"><div class="ttname"><a href="structfl_1_1is__pod__v__helper.html">fl::is_pod_v_helper</a></div><div class="ttdef"><b>Definition</b> <a href="#l00096">template_magic.h:96</a></div></div>
+<div class="ttc" id="astructfl_1_1is__pod_html"><div class="ttname"><a href="structfl_1_1is__pod.html">fl::is_pod</a></div><div class="ttdef"><b>Definition</b> <a href="#l00073">template_magic.h:73</a></div></div>
 <div class="ttc" id="astructfl_1_1is__same__v__helper_html"><div class="ttname"><a href="structfl_1_1is__same__v__helper.html">fl::is_same_v_helper</a></div><div class="ttdef"><b>Definition</b> <a href="#l00067">template_magic.h:67</a></div></div>
 <div class="ttc" id="astructfl_1_1is__same_html"><div class="ttname"><a href="structfl_1_1is__same.html">fl::is_same</a></div><div class="ttdef"><b>Definition</b> <a href="#l00055">template_magic.h:55</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -263,7 +314,7 @@ $(function(){initNavTree('template__magic_8h_source.html',''); initResizable(tru
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><b>template_magic.h</b></li>
-    <li class="footer">Generated on Thu Nov 14 2024 00:00:34 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Nov 20 2024 08:28:11 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

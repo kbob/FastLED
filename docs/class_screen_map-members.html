@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.3</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.4</span>
    </div>
   </td>
  </tr>
@@ -117,7 +117,7 @@ $(function(){initNavTree('class_screen_map.html',''); initResizable(true); });
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>operator=</b>(const ScreenMap &amp;other) (defined in <a class="el" href="class_screen_map.html">ScreenMap</a>)</td><td class="entry"><a class="el" href="class_screen_map.html">ScreenMap</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>operator[]</b>(uint32_t x) const (defined in <a class="el" href="class_screen_map.html">ScreenMap</a>)</td><td class="entry"><a class="el" href="class_screen_map.html">ScreenMap</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>operator[]</b>(uint32_t x) (defined in <a class="el" href="class_screen_map.html">ScreenMap</a>)</td><td class="entry"><a class="el" href="class_screen_map.html">ScreenMap</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>ParseJson</b>(const char *jsonStrScreenMap, FixedMap&lt; Str, ScreenMap, 16 &gt; *segmentMaps) (defined in <a class="el" href="class_screen_map.html">ScreenMap</a>)</td><td class="entry"><a class="el" href="class_screen_map.html">ScreenMap</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>ParseJson</b>(const char *jsonStrScreenMap, FixedMap&lt; fl::Str, ScreenMap, 16 &gt; *segmentMaps) (defined in <a class="el" href="class_screen_map.html">ScreenMap</a>)</td><td class="entry"><a class="el" href="class_screen_map.html">ScreenMap</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>ScreenMap</b>()=default (defined in <a class="el" href="class_screen_map.html">ScreenMap</a>)</td><td class="entry"><a class="el" href="class_screen_map.html">ScreenMap</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>ScreenMap</b>(uint32_t length, float mDiameter=-1.0f) (defined in <a class="el" href="class_screen_map.html">ScreenMap</a>)</td><td class="entry"><a class="el" href="class_screen_map.html">ScreenMap</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>ScreenMap</b>(const pair_xy_float *lut, uint32_t length, float diameter=-1.0) (defined in <a class="el" href="class_screen_map.html">ScreenMap</a>)</td><td class="entry"><a class="el" href="class_screen_map.html">ScreenMap</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
@@ -125,15 +125,15 @@ $(function(){initNavTree('class_screen_map.html',''); initResizable(true); });
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>ScreenMap</b>(const ScreenMap &amp;other) (defined in <a class="el" href="class_screen_map.html">ScreenMap</a>)</td><td class="entry"><a class="el" href="class_screen_map.html">ScreenMap</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>set</b>(uint16_t index, const pair_xy_float &amp;p) (defined in <a class="el" href="class_screen_map.html">ScreenMap</a>)</td><td class="entry"><a class="el" href="class_screen_map.html">ScreenMap</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>setDiameter</b>(float diameter) (defined in <a class="el" href="class_screen_map.html">ScreenMap</a>)</td><td class="entry"><a class="el" href="class_screen_map.html">ScreenMap</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>toJson</b>(const FixedMap&lt; Str, ScreenMap, 16 &gt; &amp;, FLArduinoJson::JsonDocument *doc) (defined in <a class="el" href="class_screen_map.html">ScreenMap</a>)</td><td class="entry"><a class="el" href="class_screen_map.html">ScreenMap</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>toJsonStr</b>(const FixedMap&lt; Str, ScreenMap, 16 &gt; &amp;, Str *jsonBuffer) (defined in <a class="el" href="class_screen_map.html">ScreenMap</a>)</td><td class="entry"><a class="el" href="class_screen_map.html">ScreenMap</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>toJson</b>(const FixedMap&lt; fl::Str, ScreenMap, 16 &gt; &amp;, FLArduinoJson::JsonDocument *doc) (defined in <a class="el" href="class_screen_map.html">ScreenMap</a>)</td><td class="entry"><a class="el" href="class_screen_map.html">ScreenMap</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>toJsonStr</b>(const FixedMap&lt; fl::Str, ScreenMap, 16 &gt; &amp;, fl::Str *jsonBuffer) (defined in <a class="el" href="class_screen_map.html">ScreenMap</a>)</td><td class="entry"><a class="el" href="class_screen_map.html">ScreenMap</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.3-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Nov 14 2024 00:00:34 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Nov 20 2024 08:28:12 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

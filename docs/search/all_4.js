@@ -60,7 +60,7 @@ var searchData=
   ['arduinoide_57',['ArduinoIDE',['../index.html#autotoc_md16',1,'']]],
   ['arraydeleter_58',['ArrayDeleter',['../struct_array_deleter.html',1,'']]],
   ['arraydeleter_3c_20crgb_20_3e_59',['ArrayDeleter&lt; CRGB &gt;',['../struct_array_deleter.html',1,'']]],
-  ['arraydeleter_3c_20frameref_20_3e_60',['ArrayDeleter&lt; FrameRef &gt;',['../struct_array_deleter.html',1,'']]],
+  ['arraydeleter_3c_20pair_20_3e_60',['ArrayDeleter&lt; Pair &gt;',['../struct_array_deleter.html',1,'']]],
   ['arraydeleter_3c_20uint8_5ft_20_3e_61',['ArrayDeleter&lt; uint8_t &gt;',['../struct_array_deleter.html',1,'']]],
   ['arrayofledarrays_2eino_62',['ArrayOfLedArrays.ino',['../_array_of_led_arrays_8ino.html',1,'']]],
   ['atexit_63',['atexit',['../_fast_l_e_d_8cpp.html#a5a485781a43898e8594302dc3be9abbf',1,'FastLED.cpp']]],

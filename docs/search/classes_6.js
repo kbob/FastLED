@@ -15,11 +15,12 @@ var searchData=
   ['fixedvector_3c_20pair_2c_20n_20_3e_12',['FixedVector&lt; Pair, N &gt;',['../class_fixed_vector.html',1,'']]],
   ['frame_13',['Frame',['../class_frame.html',1,'']]],
   ['frameinterpolator_14',['FrameInterpolator',['../class_frame_interpolator.html',1,'']]],
-  ['fsimpl_15',['FsImpl',['../class_fs_impl.html',1,'']]],
-  ['fx_16',['Fx',['../class_fx.html',1,'']]],
-  ['fxcompositor_17',['FxCompositor',['../class_fx_compositor.html',1,'']]],
-  ['fxengine_18',['FxEngine',['../class_fx_engine.html',1,'']]],
-  ['fxgrid_19',['FxGrid',['../class_fx_grid.html',1,'']]],
-  ['fxlayer_20',['FxLayer',['../class_fx_layer.html',1,'']]],
-  ['fxstrip_21',['FxStrip',['../class_fx_strip.html',1,'']]]
+  ['frametracker_15',['FrameTracker',['../class_frame_tracker.html',1,'']]],
+  ['fsimpl_16',['FsImpl',['../class_fs_impl.html',1,'']]],
+  ['fx_17',['Fx',['../class_fx.html',1,'']]],
+  ['fxcompositor_18',['FxCompositor',['../class_fx_compositor.html',1,'']]],
+  ['fxengine_19',['FxEngine',['../class_fx_engine.html',1,'']]],
+  ['fxgrid_20',['FxGrid',['../class_fx_grid.html',1,'']]],
+  ['fxlayer_21',['FxLayer',['../class_fx_layer.html',1,'']]],
+  ['fxstrip_22',['FxStrip',['../class_fx_strip.html',1,'']]]
 ];

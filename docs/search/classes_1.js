@@ -11,7 +11,7 @@ var searchData=
   ['apa106_8',['APA106',['../class_a_p_a106.html',1,'']]],
   ['arraydeleter_9',['ArrayDeleter',['../struct_array_deleter.html',1,'']]],
   ['arraydeleter_3c_20crgb_20_3e_10',['ArrayDeleter&lt; CRGB &gt;',['../struct_array_deleter.html',1,'']]],
-  ['arraydeleter_3c_20frameref_20_3e_11',['ArrayDeleter&lt; FrameRef &gt;',['../struct_array_deleter.html',1,'']]],
+  ['arraydeleter_3c_20pair_20_3e_11',['ArrayDeleter&lt; Pair &gt;',['../struct_array_deleter.html',1,'']]],
   ['arraydeleter_3c_20uint8_5ft_20_3e_12',['ArrayDeleter&lt; uint8_t &gt;',['../struct_array_deleter.html',1,'']]],
   ['avrsoftwarespioutput_13',['AVRSoftwareSPIOutput',['../class_a_v_r_software_s_p_i_output.html',1,'']]],
   ['avrsoftwarespioutput_3c_20_5fdata_5fpin_2c_20_5fclock_5fpin_2c_20_5fspi_5fclock_5fdivider_20_3e_14',['AVRSoftwareSPIOutput&lt; _DATA_PIN, _CLOCK_PIN, _SPI_CLOCK_DIVIDER &gt;',['../class_a_v_r_software_s_p_i_output.html',1,'']]]

@@ -1,5 +1,6 @@
 var dir_68267d1309a1af8e8297ef4c3efbcdba =
 [
+    [ "fl", "dir_4d1829fa9bd13d7db71e765b2707b248.html", "dir_4d1829fa9bd13d7db71e765b2707b248" ],
     [ "fx", "dir_acbb946b833f21b16ec30aa21c4c3a72.html", "dir_acbb946b833f21b16ec30aa21c4c3a72" ],
     [ "lib8tion", "dir_d91669bda445047ed1892ac77a05ddb9.html", "dir_d91669bda445047ed1892ac77a05ddb9" ],
     [ "third_party", "dir_c30bdf76ce759a4eae8387be42921388.html", "dir_c30bdf76ce759a4eae8387be42921388" ],
@@ -82,8 +83,6 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "simplex.cpp", "simplex_8cpp_source.html", null ],
     [ "singleton.h", "singleton_8h_source.html", null ],
     [ "slice.h", "slice_8h_source.html", null ],
-    [ "str.cpp", "str_8cpp_source.html", null ],
-    [ "str.h", "str_8h_source.html", null ],
     [ "stub_main.cpp", "stub__main_8cpp_source.html", null ],
     [ "template_magic.h", "template__magic_8h_source.html", null ],
     [ "transpose8x1_noinline.cpp", "transpose8x1__noinline_8cpp_source.html", null ],

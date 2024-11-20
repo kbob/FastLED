@@ -7,7 +7,7 @@ var hierarchy =
     ] ],
     [ "ArrayDeleter< T >", "struct_array_deleter.html", null ],
     [ "ArrayDeleter< CRGB >", "struct_array_deleter.html", null ],
-    [ "ArrayDeleter< FrameRef >", "struct_array_deleter.html", null ],
+    [ "ArrayDeleter< Pair >", "struct_array_deleter.html", null ],
     [ "ArrayDeleter< uint8_t >", "struct_array_deleter.html", null ],
     [ "AVRSoftwareSPIOutput< DATA_PIN, CLOCK_PIN, SPI_SPEED >", "class_a_v_r_software_s_p_i_output.html", null ],
     [ "AVRSoftwareSPIOutput< _DATA_PIN, _CLOCK_PIN, _SPI_CLOCK_DIVIDER >", "class_a_v_r_software_s_p_i_output.html", [
@@ -32,7 +32,7 @@ var hierarchy =
     [ "CHSVPalette256", "class_c_h_s_v_palette256.html", null ],
     [ "CHSVPalette32", "class_c_h_s_v_palette32.html", null ],
     [ "CircularBuffer< T >", "class_circular_buffer.html", null ],
-    [ "CircularBuffer< FrameRef >", "class_circular_buffer.html", null ],
+    [ "CircularBuffer< Pair >", "class_circular_buffer.html", null ],
     [ "CircularBuffer< uint8_t >", "class_circular_buffer.html", null ],
     [ "CLEDController", "class_c_l_e_d_controller.html", [
       [ "CPixelLEDController< RGB >", "class_c_pixel_l_e_d_controller.html", [
@@ -198,12 +198,29 @@ var hierarchy =
     [ "FixedVector< T, N >", "class_fixed_vector.html", null ],
     [ "FixedVector< Key, N >", "class_fixed_vector.html", null ],
     [ "FixedVector< Pair, N >", "class_fixed_vector.html", null ],
+    [ "FrameTracker", "class_frame_tracker.html", null ],
     [ "FxCompositor", "class_fx_compositor.html", null ],
     [ "FxEngine", "class_fx_engine.html", null ],
-    [ "HighPrecisionInterval", "class_high_precision_interval.html", null ],
     [ "IEEE754binary32_t", "union_i_e_e_e754binary32__t.html", null ],
     [ "fl::is_base_of< Base, Derived >", "structfl_1_1is__base__of.html", null ],
     [ "fl::is_base_of_v_helper< Base, Derived >", "structfl_1_1is__base__of__v__helper.html", null ],
+    [ "fl::is_pod< T >", "structfl_1_1is__pod.html", null ],
+    [ "fl::is_pod< bool >", "structfl_1_1is__pod_3_01bool_01_4.html", null ],
+    [ "fl::is_pod< char >", "structfl_1_1is__pod_3_01char_01_4.html", null ],
+    [ "fl::is_pod< double >", "structfl_1_1is__pod_3_01double_01_4.html", null ],
+    [ "fl::is_pod< float >", "structfl_1_1is__pod_3_01float_01_4.html", null ],
+    [ "fl::is_pod< int >", "structfl_1_1is__pod_3_01int_01_4.html", null ],
+    [ "fl::is_pod< long >", "structfl_1_1is__pod_3_01long_01_4.html", null ],
+    [ "fl::is_pod< long double >", "structfl_1_1is__pod_3_01long_01double_01_4.html", null ],
+    [ "fl::is_pod< long long >", "structfl_1_1is__pod_3_01long_01long_01_4.html", null ],
+    [ "fl::is_pod< short >", "structfl_1_1is__pod_3_01short_01_4.html", null ],
+    [ "fl::is_pod< signed char >", "structfl_1_1is__pod_3_01signed_01char_01_4.html", null ],
+    [ "fl::is_pod< unsigned char >", "structfl_1_1is__pod_3_01unsigned_01char_01_4.html", null ],
+    [ "fl::is_pod< unsigned int >", "structfl_1_1is__pod_3_01unsigned_01int_01_4.html", null ],
+    [ "fl::is_pod< unsigned long >", "structfl_1_1is__pod_3_01unsigned_01long_01_4.html", null ],
+    [ "fl::is_pod< unsigned long long >", "structfl_1_1is__pod_3_01unsigned_01long_01long_01_4.html", null ],
+    [ "fl::is_pod< unsigned short >", "structfl_1_1is__pod_3_01unsigned_01short_01_4.html", null ],
+    [ "fl::is_pod_v_helper< T >", "structfl_1_1is__pod__v__helper.html", null ],
     [ "fl::is_same< T, U >", "structfl_1_1is__same.html", null ],
     [ "fl::is_same< T, T >", "structfl_1_1is__same_3_01_t_00_01_t_01_4.html", null ],
     [ "fl::is_same_v_helper< T, U >", "structfl_1_1is__same__v__helper.html", null ],
@@ -217,6 +234,7 @@ var hierarchy =
     [ "NumberField", "class_number_field.html", null ],
     [ "animartrix_detail::oscillators", "structanimartrix__detail_1_1oscillators.html", null ],
     [ "FixedMap< Key, Value, N >::Pair", "struct_fixed_map_1_1_pair.html", null ],
+    [ "FrameInterpolator::Pair", "struct_frame_interpolator_1_1_pair.html", null ],
     [ "pair_xy< T >", "structpair__xy.html", null ],
     [ "Pir", "class_pir.html", null ],
     [ "PixelController< RGB_ORDER, LANES, MASK >", "struct_pixel_controller.html", null ],
@@ -258,8 +276,11 @@ var hierarchy =
       ] ],
       [ "FxLayer", "class_fx_layer.html", null ],
       [ "LUT< T >", "class_l_u_t.html", null ],
-      [ "StringHolder", "class_string_holder.html", null ],
-      [ "VideoImpl", "class_video_impl.html", null ]
+      [ "TimeFunction", "class_time_function.html", [
+        [ "TimeScale", "class_time_scale.html", null ]
+      ] ],
+      [ "VideoImpl", "class_video_impl.html", null ],
+      [ "fl::StringHolder", "classfl_1_1_string_holder.html", null ]
     ] ],
     [ "REFHardwareSPIOutput< _DATA_PIN, _CLOCK_PIN, _SPI_CLOCK_DIVIDER >", "class_r_e_f_hardware_s_p_i_output.html", null ],
     [ "RefTraits< T >", "class_ref_traits.html", [
@@ -284,7 +305,7 @@ var hierarchy =
     [ "Ripple", "class_ripple.html", null ],
     [ "scoped_array< T, Deleter >", "classscoped__array.html", null ],
     [ "scoped_array< CRGB >", "classscoped__array.html", null ],
-    [ "scoped_array< FrameRef >", "classscoped__array.html", null ],
+    [ "scoped_array< Pair >", "classscoped__array.html", null ],
     [ "scoped_array< uint8_t >", "classscoped__array.html", null ],
     [ "scoped_ptr< T, Deleter >", "classscoped__ptr.html", null ],
     [ "scoped_ptr< FastLEDANIMartRIX >", "classscoped__ptr.html", null ],
@@ -299,14 +320,13 @@ var hierarchy =
     [ "Singleton< T, N >", "class_singleton.html", null ],
     [ "Slice< T >", "class_slice.html", null ],
     [ "Slider", "class_slider.html", null ],
-    [ "StringFormatter", "class_string_formatter.html", null ],
-    [ "StrN< SIZE >", "class_str_n.html", null ],
-    [ "StrN< FASTLED_STR_INLINED_SIZE >", "class_str_n.html", [
-      [ "Str", "class_str.html", null ]
+    [ "fl::StringFormatter", "classfl_1_1_string_formatter.html", null ],
+    [ "fl::StrN< SIZE >", "classfl_1_1_str_n.html", null ],
+    [ "fl::StrN< FASTLED_STR_INLINED_SIZE >", "classfl_1_1_str_n.html", [
+      [ "fl::Str", "classfl_1_1_str.html", null ]
     ] ],
     [ "sub4", "structsub4.html", null ],
     [ "Timer", "class_timer.html", null ],
-    [ "TimeWarp", "class_time_warp.html", null ],
     [ "Title", "class_title.html", null ],
     [ "Transition", "class_transition.html", null ],
     [ "TRGBGradientPaletteEntryUnion", "union_t_r_g_b_gradient_palette_entry_union.html", null ],

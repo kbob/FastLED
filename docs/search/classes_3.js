@@ -10,7 +10,7 @@ var searchData=
   ['chsvpalette256_7',['CHSVPalette256',['../class_c_h_s_v_palette256.html',1,'']]],
   ['chsvpalette32_8',['CHSVPalette32',['../class_c_h_s_v_palette32.html',1,'']]],
   ['circularbuffer_9',['CircularBuffer',['../class_circular_buffer.html',1,'']]],
-  ['circularbuffer_3c_20frameref_20_3e_10',['CircularBuffer&lt; FrameRef &gt;',['../class_circular_buffer.html',1,'']]],
+  ['circularbuffer_3c_20pair_20_3e_10',['CircularBuffer&lt; Pair &gt;',['../class_circular_buffer.html',1,'']]],
   ['circularbuffer_3c_20uint8_5ft_20_3e_11',['CircularBuffer&lt; uint8_t &gt;',['../class_circular_buffer.html',1,'']]],
   ['cledcontroller_12',['CLEDController',['../class_c_l_e_d_controller.html',1,'']]],
   ['clockedchipsethelper_13',['ClockedChipsetHelper',['../struct_c_fast_l_e_d_1_1_clocked_chipset_helper.html',1,'CFastLED']]],
