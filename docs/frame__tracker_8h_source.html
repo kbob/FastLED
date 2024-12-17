@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.4</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.5</span>
    </div>
   </td>
  </tr>
@@ -111,19 +111,19 @@ $(function(){initNavTree('frame__tracker_8h_source.html',''); initResizable(true
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;namespace.h&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;fl/namespace.h&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">// #include &lt;iostream&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">// using namespace std;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>FASTLED_NAMESPACE_BEGIN</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefl.html">fl</a> {</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// Tracks the current frame number based on the time elapsed since the start of the animation.</span></div>
 <div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_frame_tracker.html">   14</a></span><span class="keyword">class </span><a class="code hl_class" href="class_frame_tracker.html">FrameTracker</a> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classfl_1_1_frame_tracker.html">   14</a></span><span class="keyword">class </span><a class="code hl_class" href="classfl_1_1_frame_tracker.html">FrameTracker</a> {</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <a class="code hl_class" href="class_frame_tracker.html">FrameTracker</a>(<span class="keywordtype">float</span> fps);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <a class="code hl_class" href="classfl_1_1_frame_tracker.html">FrameTracker</a>(<span class="keywordtype">float</span> fps);</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="comment">// Gets the current frame and the next frame number based on the current time.</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">void</span> get_interval_frames(uint32_t now, uint32_t* frameNumber, uint32_t* nextFrameNumber, uint8_t* amountOfNextFrame = <span class="keyword">nullptr</span>) <span class="keyword">const</span>;</div>
@@ -133,14 +133,14 @@ $(function(){initNavTree('frame__tracker_8h_source.html',''); initResizable(true
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    uint32_t mMicrosSecondsPerInterval;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    uint32_t mStartTime;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">bool</span> mIsPaused;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>};</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    uint32_t mStartTime = 0;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>};</div>
 </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>FASTLED_NAMESPACE_END</div>
-<div class="ttc" id="aclass_frame_tracker_html"><div class="ttname"><a href="class_frame_tracker.html">FrameTracker</a></div><div class="ttdef"><b>Definition</b> <a href="#l00014">frame_tracker.h:14</a></div></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>}  <span class="comment">// namespace fl</span></div>
+<div class="ttc" id="aclassfl_1_1_frame_tracker_html"><div class="ttname"><a href="classfl_1_1_frame_tracker.html">fl::FrameTracker</a></div><div class="ttdef"><b>Definition</b> <a href="#l00014">frame_tracker.h:14</a></div></div>
+<div class="ttc" id="anamespacefl_html"><div class="ttname"><a href="namespacefl.html">fl</a></div><div class="ttdoc">Implements a simple red square effect for 2D LED grids.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00014">crgb.h:14</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.3-->
@@ -148,7 +148,7 @@ $(function(){initNavTree('frame__tracker_8h_source.html',''); initResizable(true
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_acbb946b833f21b16ec30aa21c4c3a72.html">fx</a></li><li class="navelem"><a class="el" href="dir_41db4d67e98c6097b43e1b5a33111e5f.html">video</a></li><li class="navelem"><b>frame_tracker.h</b></li>
-    <li class="footer">Generated on Wed Nov 20 2024 08:28:11 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Dec 17 2024 05:47:34 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

@@ -8,7 +8,7 @@ var noise_8cpp =
     [ "fill_noise8", "group___noise_fill.html#ga7967fd7b1a7230a0f7428347c70dac3e", null ],
     [ "fill_raw_2dnoise16", "group___noise_fill.html#ga8fdd92f7a3a96d6f131300cc79c933f6", null ],
     [ "fill_raw_2dnoise16into8", "group___noise_fill.html#ga20a2ff725bc56666c206d54deb372586", null ],
-    [ "fill_raw_2dnoise8", "noise_8cpp.html#a3dc6c55a3f8495a7bc6dc0124434c688", null ],
+    [ "fill_raw_2dnoise8", "group___noise_fill.html#ga3dc6c55a3f8495a7bc6dc0124434c688", null ],
     [ "fill_raw_noise16into8", "group___noise_fill.html#ga9db885e8cd887367fbf17e70f7d6b7fd", null ],
     [ "fill_raw_noise8", "group___noise_fill.html#ga1e4dba9289b03333697e70d4b7f3b006", null ],
     [ "inoise16", "group___noise_generation.html#ga34b2848203803e1c7a2de01d7dbcea63", null ],

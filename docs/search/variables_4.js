@@ -9,6 +9,8 @@ var searchData=
   ['d5_6',['d5',['../structsub4.html#a3bfc21fb276e8419953e836ad6e5efb3',1,'sub4']]],
   ['d6_7',['d6',['../structsub4.html#a11e81dc1eb753bbd1874177967fe808f',1,'sub4']]],
   ['d7_8',['d7',['../structsub4.html#a252ecdef790a6c2aa1de231f8912b7c0',1,'sub4']]],
-  ['dir_9',['dir',['../class_c_pixel_view.html#a6b52e13f6eacefc7dde9f6348db438d0',1,'CPixelView']]],
-  ['dword_10',['dword',['../union_t_r_g_b_gradient_palette_entry_union.html#a2d804a8e4f58e9aa7d65f456f69d904b',1,'TRGBGradientPaletteEntryUnion']]]
+  ['data1_9',['data1',['../struct_message.html#a92150532e5720f95013e16a2f49a8df8',1,'Message']]],
+  ['data2_10',['data2',['../struct_message.html#af6ca8f3ba3f77fe769a259de3b88c36c',1,'Message']]],
+  ['dir_11',['dir',['../class_c_pixel_view.html#a6b52e13f6eacefc7dde9f6348db438d0',1,'CPixelView']]],
+  ['dword_12',['dword',['../union_t_r_g_b_gradient_palette_entry_union.html#a2d804a8e4f58e9aa7d65f456f69d904b',1,'TRGBGradientPaletteEntryUnion']]]
 ];

@@ -3,7 +3,6 @@ var hsv2rgb_8h =
     [ "HUE_MAX", "group___h_s_v2_r_g_b.html#ga25585eb2c24bd5f1b3b292dce24da048", null ],
     [ "HUE_MAX_RAINBOW", "group___h_s_v2_r_g_b.html#ga4580893f03dfe1f0f49679086033a918", null ],
     [ "HUE_MAX_SPECTRUM", "group___h_s_v2_r_g_b.html#ga65cd3df592c1e5b9f2df4e364b9ae078", null ],
-    [ "hsv2rgb_rainbow", "group___h_s_v2_r_g_b.html#gab316cfeb8bd5f37d8faaf761ad3c834b", null ],
     [ "hsv2rgb_rainbow", "group___h_s_v2_r_g_b.html#gaf722826b0b5d16450ca3da28382e7eb3", null ],
     [ "hsv2rgb_raw", "group___h_s_v2_r_g_b.html#ga66f61978949a6830b138d1bf08257019", null ],
     [ "hsv2rgb_raw", "group___h_s_v2_r_g_b.html#ga5ca233d1f5f70b5efdabc405f9bcf8ec", null ],

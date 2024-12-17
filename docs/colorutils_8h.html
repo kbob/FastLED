@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.4</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.5</span>
    </div>
   </td>
  </tr>
@@ -120,7 +120,7 @@ $(function(){initNavTree('colorutils_8h.html',''); initResizable(true); });
 </div><div class="textblock"><code>#include &quot;<a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>&quot;</code><br />
 <code>#include &quot;pixeltypes.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="fastled__progmem_8h_source.html">fastled_progmem.h</a>&quot;</code><br />
-<code>#include &quot;xymap.h&quot;</code><br />
+<code>#include &quot;fl/xymap.h&quot;</code><br />
 </div>
 <p><a href="colorutils_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -314,15 +314,15 @@ Functions</h2></td></tr>
 <tr class="memitem:gaacf0416f9e0438f23f92d0df6c338ea3" id="r_gaacf0416f9e0438f23f92d0df6c338ea3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___color_blurs.html#gaacf0416f9e0438f23f92d0df6c338ea3">blur1d</a> (<a class="el" href="struct_c_r_g_b.html">CRGB</a> *leds, uint16_t numLeds, <a class="el" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> blur_amount)</td></tr>
 <tr class="memdesc:gaacf0416f9e0438f23f92d0df6c338ea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">One-dimensional blur filter.  <br /></td></tr>
 <tr class="separator:gaacf0416f9e0438f23f92d0df6c338ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad5f8e4b75f2a3f0f720351a4f8ff1d7a" id="r_gad5f8e4b75f2a3f0f720351a4f8ff1d7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___color_blurs.html#gad5f8e4b75f2a3f0f720351a4f8ff1d7a">blur2d</a> (<a class="el" href="struct_c_r_g_b.html">CRGB</a> *leds, uint8_t width, uint8_t height, <a class="el" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> blur_amount, const <a class="el" href="class_x_y_map.html">XYMap</a> &amp;xymap)</td></tr>
-<tr class="memdesc:gad5f8e4b75f2a3f0f720351a4f8ff1d7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Two-dimensional blur filter.  <br /></td></tr>
-<tr class="separator:gad5f8e4b75f2a3f0f720351a4f8ff1d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2132dd1a719cd6b812e2560f5860138f" id="r_ga2132dd1a719cd6b812e2560f5860138f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___color_blurs.html#ga2132dd1a719cd6b812e2560f5860138f">blurRows</a> (<a class="el" href="struct_c_r_g_b.html">CRGB</a> *leds, uint8_t width, uint8_t height, <a class="el" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> blur_amount, const <a class="el" href="class_x_y_map.html">XYMap</a> &amp;xymap)</td></tr>
-<tr class="memdesc:ga2132dd1a719cd6b812e2560f5860138f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a <a class="el" href="group___color_blurs.html#gaacf0416f9e0438f23f92d0df6c338ea3" title="One-dimensional blur filter.">blur1d()</a> on every row of a rectangular matrix.  <br /></td></tr>
-<tr class="separator:ga2132dd1a719cd6b812e2560f5860138f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3f3f09f8b67b14d7fe7c14e4387025b3" id="r_ga3f3f09f8b67b14d7fe7c14e4387025b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___color_blurs.html#ga3f3f09f8b67b14d7fe7c14e4387025b3">blurColumns</a> (<a class="el" href="struct_c_r_g_b.html">CRGB</a> *leds, uint8_t width, uint8_t height, <a class="el" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> blur_amount, const <a class="el" href="class_x_y_map.html">XYMap</a> &amp;xymap)</td></tr>
-<tr class="memdesc:ga3f3f09f8b67b14d7fe7c14e4387025b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a <a class="el" href="group___color_blurs.html#gaacf0416f9e0438f23f92d0df6c338ea3" title="One-dimensional blur filter.">blur1d()</a> on every column of a rectangular matrix.  <br /></td></tr>
-<tr class="separator:ga3f3f09f8b67b14d7fe7c14e4387025b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadfd6e9dc2b0c79922d8d4be9d94cf5f5" id="r_gadfd6e9dc2b0c79922d8d4be9d94cf5f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___color_blurs.html#gadfd6e9dc2b0c79922d8d4be9d94cf5f5">blur2d</a> (<a class="el" href="struct_c_r_g_b.html">CRGB</a> *leds, uint8_t width, uint8_t height, <a class="el" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> blur_amount, const <a class="el" href="classfl_1_1_x_y_map.html">fl::XYMap</a> &amp;xymap)</td></tr>
+<tr class="memdesc:gadfd6e9dc2b0c79922d8d4be9d94cf5f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Two-dimensional blur filter.  <br /></td></tr>
+<tr class="separator:gadfd6e9dc2b0c79922d8d4be9d94cf5f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3000f2662fe45e9424c02b0d35f40b21" id="r_ga3000f2662fe45e9424c02b0d35f40b21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___color_blurs.html#ga3000f2662fe45e9424c02b0d35f40b21">blurRows</a> (<a class="el" href="struct_c_r_g_b.html">CRGB</a> *leds, uint8_t width, uint8_t height, <a class="el" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> blur_amount, const <a class="el" href="classfl_1_1_x_y_map.html">fl::XYMap</a> &amp;xymap)</td></tr>
+<tr class="memdesc:ga3000f2662fe45e9424c02b0d35f40b21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a <a class="el" href="group___color_blurs.html#gaacf0416f9e0438f23f92d0df6c338ea3" title="One-dimensional blur filter.">blur1d()</a> on every row of a rectangular matrix.  <br /></td></tr>
+<tr class="separator:ga3000f2662fe45e9424c02b0d35f40b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga33ce178f76009348d3a0f0723b22d4de" id="r_ga33ce178f76009348d3a0f0723b22d4de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___color_blurs.html#ga33ce178f76009348d3a0f0723b22d4de">blurColumns</a> (<a class="el" href="struct_c_r_g_b.html">CRGB</a> *leds, uint8_t width, uint8_t height, <a class="el" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> blur_amount, const <a class="el" href="classfl_1_1_x_y_map.html">fl::XYMap</a> &amp;xymap)</td></tr>
+<tr class="memdesc:ga33ce178f76009348d3a0f0723b22d4de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a <a class="el" href="group___color_blurs.html#gaacf0416f9e0438f23f92d0df6c338ea3" title="One-dimensional blur filter.">blur1d()</a> on every column of a rectangular matrix.  <br /></td></tr>
+<tr class="separator:ga33ce178f76009348d3a0f0723b22d4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac5c6b83ec07d310385a430f9f0336530" id="r_gac5c6b83ec07d310385a430f9f0336530"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_c_r_g_b.html">CRGB</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___color_fills.html#gac5c6b83ec07d310385a430f9f0336530">HeatColor</a> (uint8_t temperature)</td></tr>
 <tr class="memdesc:gac5c6b83ec07d310385a430f9f0336530"><td class="mdescLeft">&#160;</td><td class="mdescRight">Approximates a "black body radiation" spectrum for a given "heat" level.  <br /></td></tr>
 <tr class="separator:gac5c6b83ec07d310385a430f9f0336530"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -649,7 +649,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="colorutils_8h.html">colorutils.h</a></li>
-    <li class="footer">Generated on Wed Nov 20 2024 08:28:11 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Dec 17 2024 05:47:34 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

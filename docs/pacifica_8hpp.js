@@ -1,4 +1,4 @@
 var pacifica_8hpp =
 [
-    [ "Pacifica", "class_pacifica.html", "class_pacifica" ]
+    [ "fl::Pacifica", "classfl_1_1_pacifica.html", "classfl_1_1_pacifica" ]
 ];

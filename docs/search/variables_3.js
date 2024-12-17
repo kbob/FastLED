@@ -8,5 +8,6 @@ var searchData=
   ['c5_5',['c5',['../structsub4.html#ad1e3617efc9dc608c1ede8fda0190bbf',1,'sub4']]],
   ['c6_6',['c6',['../structsub4.html#a192ea23edbf6c67b74049484ca13375a',1,'sub4']]],
   ['c7_7',['c7',['../structsub4.html#a5215342ef5fbc83a2df41951b19ccd85',1,'sub4']]],
-  ['cloudcolors_5fp_8',['CloudColors_p',['../group___predefined_palettes.html#ga87035362d30149da93d150cfd968bc61',1,'colorpalettes.cpp']]]
+  ['channel_8',['channel',['../struct_message.html#a3e088d88b4c2c84efd78f080a6ba3384',1,'Message']]],
+  ['cloudcolors_5fp_9',['CloudColors_p',['../group___predefined_palettes.html#ga87035362d30149da93d150cfd968bc61',1,'colorpalettes.cpp']]]
 ];

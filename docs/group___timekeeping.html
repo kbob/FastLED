@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.4</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.5</span>
    </div>
   </td>
  </tr>
@@ -185,7 +185,7 @@ Functions</h2></td></tr>
 <p>These are useful for limiting how often code runs. For example, you can use <a class="el" href="group___color_fills.html#ga0fef54ded2e4748869f1796603433b6b" title="Fill a range of LEDs with a rainbow of colors.">fill_rainbow()</a> to fill a strip of LEDs with color, combined with an <a class="el" href="#ga90e084b8253af257a0257a23aeef53e1" title="Checks whether to execute a block of code every N milliseconds.">EVERY_N_MILLIS</a> block to limit how fast the colors change: </p><div class="fragment"><div class="line"><span class="keyword">static</span> uint8_t hue = 0;</div>
 <div class="line"><a class="code hl_function" href="group___color_fills.html#ga0fef54ded2e4748869f1796603433b6b">fill_rainbow</a>(leds, NUM_LEDS, hue);</div>
 <div class="line"><a class="code hl_define" href="#ga90e084b8253af257a0257a23aeef53e1">EVERY_N_MILLIS</a>(20) { hue++; }  <span class="comment">// advances hue every 20 milliseconds</span></div>
-<div class="ttc" id="agroup___color_fills_html_ga0fef54ded2e4748869f1796603433b6b"><div class="ttname"><a href="group___color_fills.html#ga0fef54ded2e4748869f1796603433b6b">fill_rainbow</a></div><div class="ttdeci">void fill_rainbow(struct CRGB *targetArray, int numToFill, uint8_t initialhue, uint8_t deltahue)</div><div class="ttdoc">Fill a range of LEDs with a rainbow of colors.</div><div class="ttdef"><b>Definition</b> <a href="colorutils_8cpp_source.html#l00041">colorutils.cpp:41</a></div></div>
+<div class="ttc" id="agroup___color_fills_html_ga0fef54ded2e4748869f1796603433b6b"><div class="ttname"><a href="group___color_fills.html#ga0fef54ded2e4748869f1796603433b6b">fill_rainbow</a></div><div class="ttdeci">void fill_rainbow(struct CRGB *targetArray, int numToFill, uint8_t initialhue, uint8_t deltahue)</div><div class="ttdoc">Fill a range of LEDs with a rainbow of colors.</div><div class="ttdef"><b>Definition</b> <a href="colorutils_8cpp_source.html#l00043">colorutils.cpp:43</a></div></div>
 <div class="ttc" id="agroup___timekeeping_html_ga90e084b8253af257a0257a23aeef53e1"><div class="ttname"><a href="#ga90e084b8253af257a0257a23aeef53e1">EVERY_N_MILLIS</a></div><div class="ttdeci">#define EVERY_N_MILLIS(N)</div><div class="ttdoc">Checks whether to execute a block of code every N milliseconds.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_8h_source.html#l01279">lib8tion.h:1279</a></div></div>
 </div><!-- fragment --><p> Note that in order for these to be accurate, the EVERY_N block must be evaluated at a regular basis. <br  />
  </p>
@@ -412,8 +412,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Alias for <a class="el" href="#ga90e084b8253af257a0257a23aeef53e1" title="Checks whether to execute a block of code every N milliseconds.">EVERY_N_MILLIS</a>. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_noise_plus_palette_8ino-example.html#a10">NoisePlusPalette.ino</a>, and <a class="el" href="_pacifica_8ino-example.html#a5">Pacifica.ino</a>.</dd>
-</dl>
 
 <p class="definition">Definition at line <a class="el" href="lib8tion_8h_source.html#l01323">1323</a> of file <a class="el" href="lib8tion_8h_source.html">lib8tion.h</a>.</p>
 
@@ -559,7 +557,7 @@ Functions</h2></td></tr>
 
 <p>Checks whether to execute a block of code every N seconds. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="#gaa2abcee2fe76fafd7f3a2aeab03e3b69" title="Return the current seconds since boot in a 16-bit value.">seconds16()</a> </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_twinkle_fox_8ino-example.html#a5">TwinkleFox.ino</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_fx_engine_8ino-example.html#a5">FxEngine.ino</a>.</dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="lib8tion_8h_source.html#l01288">1288</a> of file <a class="el" href="lib8tion_8h_source.html">lib8tion.h</a>.</p>
@@ -801,7 +799,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 20 2024 08:28:11 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Dec 17 2024 05:47:34 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

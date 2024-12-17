@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.4</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.5</span>
    </div>
   </td>
  </tr>
@@ -111,7 +111,7 @@ $(function(){initNavTree('bitswap_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __INC_BITSWAP_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_fast_l_e_d_8h.html">FastLED.h</a>&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;force_inline.h&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;fl/force_inline.h&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>FASTLED_NAMESPACE_BEGIN</div>
@@ -397,7 +397,7 @@ $(function(){initNavTree('bitswap_8h_source.html',''); initResizable(true); });
 <div class="ttc" id="abitswap_8h_html_a5798031ac62fda6b32523a468a1dbb74"><div class="ttname"><a href="bitswap_8h.html#a5798031ac62fda6b32523a468a1dbb74">transpose8x1_MSB</a></div><div class="ttdeci">FASTLED_FORCE_INLINE void transpose8x1_MSB(unsigned char *A, unsigned char *B)</div><div class="ttdoc">Simplified form of bits rotating function.</div><div class="ttdef"><b>Definition</b> <a href="#l00217">bitswap.h:217</a></div></div>
 <div class="ttc" id="abitswap_8h_html_a621c13d8007fc1b36a62cf0c244cb643"><div class="ttname"><a href="bitswap_8h.html#a621c13d8007fc1b36a62cf0c244cb643">transpose8x1</a></div><div class="ttdeci">FASTLED_FORCE_INLINE void transpose8x1(unsigned char *A, unsigned char *B)</div><div class="ttdoc">Simplified form of bits rotating function.</div><div class="ttdef"><b>Definition</b> <a href="#l00191">bitswap.h:191</a></div></div>
 <div class="ttc" id="abitswap_8h_html_a7c0838cd90f3f7d303fbba2c771a2716"><div class="ttname"><a href="bitswap_8h.html#a7c0838cd90f3f7d303fbba2c771a2716">slowswap</a></div><div class="ttdeci">FASTLED_FORCE_INLINE void slowswap(unsigned char *A, unsigned char *B)</div><div class="ttdoc">Slow version of the 8 byte by 8 bit rotation.</div><div class="ttdef"><b>Definition</b> <a href="#l00160">bitswap.h:160</a></div></div>
-<div class="ttc" id="abitswap_8h_html_a961f249fa1af0950840b9e2b9a1850e9"><div class="ttname"><a href="bitswap_8h.html#a961f249fa1af0950840b9e2b9a1850e9">transpose8x1_noinline</a></div><div class="ttdeci">void transpose8x1_noinline(unsigned char *A, unsigned char *B)</div><div class="ttdoc">Simplified form of bits rotating function.</div><div class="ttdef"><b>Definition</b> <a href="transpose8x1__noinline_8cpp_source.html#l00004">transpose8x1_noinline.cpp:4</a></div></div>
+<div class="ttc" id="abitswap_8h_html_a961f249fa1af0950840b9e2b9a1850e9"><div class="ttname"><a href="bitswap_8h.html#a961f249fa1af0950840b9e2b9a1850e9">transpose8x1_noinline</a></div><div class="ttdeci">void transpose8x1_noinline(unsigned char *A, unsigned char *B)</div><div class="ttdoc">Simplified form of bits rotating function.</div><div class="ttdef"><b>Definition</b> <a href="transpose8x1__noinline_8cpp_source.html#l00006">transpose8x1_noinline.cpp:6</a></div></div>
 <div class="ttc" id="abitswap_8h_html_aa8d834c97f99dae9d7136eca9d13caab"><div class="ttname"><a href="bitswap_8h.html#aa8d834c97f99dae9d7136eca9d13caab">transpose8</a></div><div class="ttdeci">FASTLED_FORCE_INLINE void transpose8(unsigned char *A, unsigned char *B)</div><div class="ttdoc">Templated bit-rotating function.</div><div class="ttdef"><b>Definition</b> <a href="#l00251">bitswap.h:251</a></div></div>
 <div class="ttc" id="astructsub4_html"><div class="ttname"><a href="structsub4.html">sub4</a></div><div class="ttdoc">Structure representing 32 bits of access.</div><div class="ttdef"><b>Definition</b> <a href="#l00030">bitswap.h:30</a></div></div>
 <div class="ttc" id="astructsub4_html_a05ac5ed449c60006c191d62dbc67e4c9"><div class="ttname"><a href="structsub4.html#a05ac5ed449c60006c191d62dbc67e4c9">sub4::c3</a></div><div class="ttdeci">uint32_t c3</div><div class="ttdoc">byte 'c', bit 3 (0x00080000)</div><div class="ttdef"><b>Definition</b> <a href="#l00050">bitswap.h:50</a></div></div>
@@ -454,7 +454,7 @@ $(function(){initNavTree('bitswap_8h_source.html',''); initResizable(true); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="bitswap_8h.html">bitswap.h</a></li>
-    <li class="footer">Generated on Wed Nov 20 2024 08:28:11 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Dec 17 2024 05:47:34 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

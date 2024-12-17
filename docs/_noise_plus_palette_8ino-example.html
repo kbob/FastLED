@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.4</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.5</span>
    </div>
   </td>
  </tr>
@@ -107,123 +107,13 @@ $(function(){initNavTree('_noise_plus_palette_8ino-example.html',''); initResiza
   <div class="headertitle"><div class="title">NoisePlusPalette.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"> </div>
-<div class="line"> </div>
-<div class="line"><span class="preprocessor">#ifndef COMPILE_NOISEPLUSPALETTE</span></div>
-<div class="line"><span class="preprocessor">#if defined(__AVR__)</span></div>
-<div class="line"><span class="comment">// This has grown too large for the AVR to handle.</span></div>
-<div class="line"><span class="preprocessor">#define COMPILE_NOISEPLUSPALETTE 0</span></div>
-<div class="line"><span class="preprocessor">#else</span></div>
-<div class="line"><span class="preprocessor">#define COMPILE_NOISEPLUSPALETTE 1</span></div>
-<div class="line"><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="preprocessor">#endif </span><span class="comment">// COMPILE_NOISEPLUSPALETTE</span></div>
-<div class="line"> </div>
-<div class="line"><span class="preprocessor">#if COMPILE_NOISEPLUSPALETTE</span></div>
-<div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="_fast_l_e_d_8h.html">FastLED.h</a>&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &quot;fx/2d/noisepalette.hpp&quot;</span></div>
-<div class="line"><span class="preprocessor">#include &quot;ui.h&quot;</span></div>
-<div class="line"> </div>
-<div class="line"><span class="preprocessor">#define LED_PIN 3</span></div>
-<div class="line"><span class="preprocessor">#define BRIGHTNESS 96</span></div>
-<div class="line"><span class="preprocessor">#define LED_TYPE WS2811</span></div>
-<div class="line"><span class="preprocessor">#define COLOR_ORDER GRB</span></div>
-<div class="line"> </div>
-<div class="line"><span class="preprocessor">#define MATRIX_WIDTH 16</span></div>
-<div class="line"><span class="preprocessor">#define MATRIX_HEIGHT 16</span></div>
-<div class="line"> </div>
-<div class="line"><span class="preprocessor">#if __EMSCRIPTEN__</span></div>
-<div class="line"><span class="preprocessor">#define GRID_SERPENTINE 0</span></div>
-<div class="line"><span class="preprocessor">#else</span></div>
-<div class="line"><span class="preprocessor">#define GRID_SERPENTINE 1</span></div>
-<div class="line"><span class="preprocessor">#endif</span></div>
-<div class="line"> </div>
-<div class="line"><span class="preprocessor">#define NUM_LEDS (MATRIX_WIDTH * MATRIX_HEIGHT)</span></div>
-<div class="line"> </div>
-<div class="line"><span class="comment">// This example combines two features of FastLED to produce a remarkable range</span></div>
-<div class="line"><span class="comment">// of effects from a relatively small amount of code.  This example combines</span></div>
-<div class="line"><span class="comment">// FastLED&#39;s color palette lookup functions with FastLED&#39;s Perlin noise</span></div>
-<div class="line"><span class="comment">// generator, and the combination is extremely powerful.</span></div>
-<div class="line"><span class="comment">//</span></div>
-<div class="line"><span class="comment">// You might want to look at the &quot;ColorPalette&quot; and &quot;Noise&quot; examples separately</span></div>
-<div class="line"><span class="comment">// if this example code seems daunting.</span></div>
-<div class="line"><span class="comment">//</span></div>
-<div class="line"><span class="comment">//</span></div>
-<div class="line"><span class="comment">// The basic setup here is that for each frame, we generate a new array of</span></div>
-<div class="line"><span class="comment">// &#39;noise&#39; data, and then map it onto the LED matrix through a color palette.</span></div>
-<div class="line"><span class="comment">//</span></div>
-<div class="line"><span class="comment">// Periodically, the color palette is changed, and new noise-generation</span></div>
-<div class="line"><span class="comment">// parameters are chosen at the same time.  In this example, specific</span></div>
-<div class="line"><span class="comment">// noise-generation values have been selected to match the given color palettes;</span></div>
-<div class="line"><span class="comment">// some are faster, or slower, or larger, or smaller than others, but there&#39;s no</span></div>
-<div class="line"><span class="comment">// reason these parameters can&#39;t be freely mixed-and-matched.</span></div>
-<div class="line"><span class="comment">//</span></div>
-<div class="line"><span class="comment">// In addition, this example includes some fast automatic &#39;data smoothing&#39; at</span></div>
-<div class="line"><span class="comment">// lower noise speeds to help produce smoother animations in those cases.</span></div>
-<div class="line"><span class="comment">//</span></div>
-<div class="line"><span class="comment">// The FastLED built-in color palettes (Forest, Clouds, Lava, Ocean, Party) are</span></div>
-<div class="line"><span class="comment">// used, as well as some &#39;hand-defined&#39; ones, and some proceedurally generated</span></div>
-<div class="line"><span class="comment">// palettes.</span></div>
-<div class="line"> </div>
-<div class="line"><span class="comment">// Scale determines how far apart the pixels in our noise matrix are.  Try</span></div>
-<div class="line"><span class="comment">// changing these values around to see how it affects the motion of the display.</span></div>
-<div class="line"><span class="comment">// The higher the value of scale, the more &quot;zoomed out&quot; the noise iwll be.  A</span></div>
-<div class="line"><span class="comment">// value of 1 will be so zoomed in, you&#39;ll mostly see solid colors.</span></div>
-<div class="line"> </div>
-<div class="line"><a id="_a0" name="_a0"></a><a class="code hl_class" href="class_slider.html">Slider</a> SCALE(<span class="stringliteral">&quot;SCALE&quot;</span>, 20, 1, 100, 1);</div>
-<div class="line"> </div>
-<div class="line"><span class="comment">// We&#39;re using the x/y dimensions to map to the x/y pixels on the matrix.  We&#39;ll</span></div>
-<div class="line"><span class="comment">// use the z-axis for &quot;time&quot;.  speed determines how fast time moves forward. Try</span></div>
-<div class="line"><span class="comment">// 1 for a very slow moving effect, or 60 for something that ends up looking</span></div>
-<div class="line"><span class="comment">// like water.</span></div>
-<div class="line"><a class="code hl_class" href="class_slider.html">Slider</a> SPEED(<span class="stringliteral">&quot;SPEED&quot;</span>, 30, 1, 60, 1);</div>
-<div class="line"> </div>
-<div class="line"><a id="_a1" name="_a1"></a><a class="code hl_struct" href="struct_c_r_g_b.html">CRGB</a> leds[NUM_LEDS];</div>
-<div class="line"><a id="_a2" name="_a2"></a><a class="code hl_class" href="class_x_y_map.html">XYMap</a> xyMap(MATRIX_WIDTH, MATRIX_HEIGHT, GRID_SERPENTINE);</div>
-<div class="line">NoisePaletteRef noisePalette = NoisePaletteRef::New(xyMap);</div>
-<div class="line"> </div>
-<div class="line"><span class="keywordtype">void</span> setup() {</div>
-<div class="line">    delay(1000); <span class="comment">// sanity delay</span></div>
-<div class="line">    <a id="a3" name="a3"></a><a class="code hl_variable" href="_fast_l_e_d_8cpp.html#a7077a6a69b1339a4c04f4bb9ecc0ad3f">FastLED</a>.<a id="a4" name="a4"></a><a class="code hl_function" href="class_c_fast_l_e_d.html#afd7928d822589740af6e23b2d510cf3f">addLeds</a>&lt;LED_TYPE, LED_PIN, COLOR_ORDER&gt;(leds, NUM_LEDS)</div>
-<div class="line">        .setCorrection(<a id="a5" name="a5"></a><a class="code hl_enumvalue" href="group___color_enums.html#ggadf6bcba67c9573665af20788c4431ae8abb6d30d01c054f65ed9c5a52c2855534">TypicalLEDStrip</a>);</div>
-<div class="line">    <a class="code hl_variable" href="_fast_l_e_d_8cpp.html#a7077a6a69b1339a4c04f4bb9ecc0ad3f">FastLED</a>.<a id="a6" name="a6"></a><a class="code hl_function" href="class_c_fast_l_e_d.html#a730ba7d967e882b4b893689cf333b2eb">setBrightness</a>(96);</div>
-<div class="line">    noisePalette-&gt;<a id="a7" name="a7"></a>lazyInit();</div>
-<div class="line">    noisePalette-&gt;<a id="a8" name="a8"></a>setSpeed(SPEED);</div>
-<div class="line">    noisePalette-&gt;<a id="a9" name="a9"></a>setScale(SCALE);</div>
-<div class="line">}</div>
-<div class="line"> </div>
-<div class="line"><span class="keywordtype">void</span> loop() {</div>
-<div class="line">    noisePalette-&gt;setSpeed(SPEED);</div>
-<div class="line">    noisePalette-&gt;setScale(SCALE);</div>
-<div class="line">    <a id="a10" name="a10"></a><a class="code hl_define" href="group___timekeeping.html#ga5eeb30462c2c1d653b7f4abaf262fc3d">EVERY_N_MILLISECONDS</a>(5000) { noisePalette-&gt;<a id="a11" name="a11"></a>changeToRandomPalette(); }</div>
-<div class="line"> </div>
-<div class="line">    noisePalette-&gt;<a id="a12" name="a12"></a><a class="code hl_function" href="class_noise_palette.html#abdb3ef5686491728d48e3ddfcf5d7c2e">draw</a>(<a id="_a13" name="_a13"></a><a class="code hl_struct" href="struct___draw_context.html">Fx::DrawContext</a>(millis(), leds));</div>
-<div class="line">    <a class="code hl_variable" href="_fast_l_e_d_8cpp.html#a7077a6a69b1339a4c04f4bb9ecc0ad3f">FastLED</a>.<a id="a14" name="a14"></a><a class="code hl_function" href="class_c_fast_l_e_d.html#a83afdd1e2a21f33ac4f8d2610d6e331b">show</a>();</div>
-<div class="line">}</div>
-<div class="line"> </div>
-<div class="line"><span class="preprocessor">#else</span></div>
-<div class="line"><span class="keywordtype">void</span> setup() {}</div>
-<div class="line"><span class="keywordtype">void</span> loop() {}</div>
-<div class="line"><span class="preprocessor">#endif </span><span class="comment">// COMPILE_NOISEPLUSPALETTE</span></div>
-<div class="ttc" id="a_fast_l_e_d_8cpp_html_a7077a6a69b1339a4c04f4bb9ecc0ad3f"><div class="ttname"><a href="_fast_l_e_d_8cpp.html#a7077a6a69b1339a4c04f4bb9ecc0ad3f">FastLED</a></div><div class="ttdeci">CFastLED FastLED</div><div class="ttdoc">Global LED strip management instance.</div><div class="ttdef"><b>Definition</b> <a href="_fast_l_e_d_8cpp_source.html#l00038">FastLED.cpp:38</a></div></div>
-<div class="ttc" id="a_fast_l_e_d_8h_html"><div class="ttname"><a href="_fast_l_e_d_8h.html">FastLED.h</a></div><div class="ttdoc">central include file for FastLED, defines the CFastLED class/object</div></div>
-<div class="ttc" id="aclass_c_fast_l_e_d_html_a730ba7d967e882b4b893689cf333b2eb"><div class="ttname"><a href="class_c_fast_l_e_d.html#a730ba7d967e882b4b893689cf333b2eb">CFastLED::setBrightness</a></div><div class="ttdeci">void setBrightness(uint8_t scale)</div><div class="ttdoc">Set the global brightness scaling.</div><div class="ttdef"><b>Definition</b> <a href="_fast_l_e_d_8h_source.html#l00722">FastLED.h:722</a></div></div>
-<div class="ttc" id="aclass_c_fast_l_e_d_html_a83afdd1e2a21f33ac4f8d2610d6e331b"><div class="ttname"><a href="class_c_fast_l_e_d.html#a83afdd1e2a21f33ac4f8d2610d6e331b">CFastLED::show</a></div><div class="ttdeci">void show(uint8_t scale)</div><div class="ttdoc">Update all our controllers with the current led colors, using the passed in brightness.</div><div class="ttdef"><b>Definition</b> <a href="_fast_l_e_d_8cpp_source.html#l00087">FastLED.cpp:87</a></div></div>
-<div class="ttc" id="aclass_c_fast_l_e_d_html_afd7928d822589740af6e23b2d510cf3f"><div class="ttname"><a href="class_c_fast_l_e_d.html#afd7928d822589740af6e23b2d510cf3f">CFastLED::addLeds</a></div><div class="ttdeci">static CLEDController &amp; addLeds(CLEDController *pLed, struct CRGB *data, int nLedsOrOffset, int nLedsIfOffset=0)</div><div class="ttdoc">Add a CLEDController instance to the world.</div><div class="ttdef"><b>Definition</b> <a href="_fast_l_e_d_8cpp_source.html#l00072">FastLED.cpp:72</a></div></div>
-<div class="ttc" id="aclass_noise_palette_html_abdb3ef5686491728d48e3ddfcf5d7c2e"><div class="ttname"><a href="class_noise_palette.html#abdb3ef5686491728d48e3ddfcf5d7c2e">NoisePalette::draw</a></div><div class="ttdeci">void draw(DrawContext context) override</div><div class="ttdef"><b>Definition</b> <a href="noisepalette_8hpp_source.html#l00043">noisepalette.hpp:43</a></div></div>
-<div class="ttc" id="aclass_slider_html"><div class="ttname"><a href="class_slider.html">Slider</a></div><div class="ttdef"><b>Definition</b> <a href="ui_8h_source.html#l00041">ui.h:41</a></div></div>
-<div class="ttc" id="aclass_x_y_map_html"><div class="ttname"><a href="class_x_y_map.html">XYMap</a></div><div class="ttdef"><b>Definition</b> <a href="xymap_8h_source.html#l00040">xymap.h:40</a></div></div>
-<div class="ttc" id="agroup___color_enums_html_ggadf6bcba67c9573665af20788c4431ae8abb6d30d01c054f65ed9c5a52c2855534"><div class="ttname"><a href="group___color_enums.html#ggadf6bcba67c9573665af20788c4431ae8abb6d30d01c054f65ed9c5a52c2855534">TypicalLEDStrip</a></div><div class="ttdeci">@ TypicalLEDStrip</div><div class="ttdoc">Typical values for SMD5050 LEDs.</div><div class="ttdef"><b>Definition</b> <a href="color_8h_source.html#l00019">color.h:19</a></div></div>
-<div class="ttc" id="agroup___timekeeping_html_ga5eeb30462c2c1d653b7f4abaf262fc3d"><div class="ttname"><a href="group___timekeeping.html#ga5eeb30462c2c1d653b7f4abaf262fc3d">EVERY_N_MILLISECONDS</a></div><div class="ttdeci">#define EVERY_N_MILLISECONDS(N)</div><div class="ttdoc">Alias for EVERY_N_MILLIS.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_8h_source.html#l01323">lib8tion.h:1323</a></div></div>
-<div class="ttc" id="astruct___draw_context_html"><div class="ttname"><a href="struct___draw_context.html">_DrawContext</a></div><div class="ttdef"><b>Definition</b> <a href="draw__context_8h_source.html#l00011">draw_context.h:11</a></div></div>
-<div class="ttc" id="astruct_c_r_g_b_html"><div class="ttname"><a href="struct_c_r_g_b.html">CRGB</a></div><div class="ttdoc">Representation of an RGB pixel (Red, Green, Blue)</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00039">crgb.h:39</a></div></div>
-</div><!-- fragment --> </div><!-- contents -->
+<div class="fragment"></div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.3-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 20 2024 08:28:11 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Dec 17 2024 05:47:34 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

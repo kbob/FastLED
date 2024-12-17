@@ -1,14 +1,17 @@
 var hierarchy =
 [
     [ "__FL_PORT_INFO< port >", "struct_____f_l___p_o_r_t___i_n_f_o.html", null ],
-    [ "_DrawContext", "struct___draw_context.html", null ],
+    [ "fl::_DrawContext", "structfl_1_1___draw_context.html", null ],
     [ "animartrix_detail::ANIMartRIX", "classanimartrix__detail_1_1_a_n_i_mart_r_i_x.html", [
-      [ "FastLEDANIMartRIX", "class_fast_l_e_d_a_n_i_mart_r_i_x.html", null ]
+      [ "fl::FastLEDANIMartRIX", "classfl_1_1_fast_l_e_d_a_n_i_mart_r_i_x.html", null ]
     ] ],
-    [ "ArrayDeleter< T >", "struct_array_deleter.html", null ],
-    [ "ArrayDeleter< CRGB >", "struct_array_deleter.html", null ],
-    [ "ArrayDeleter< Pair >", "struct_array_deleter.html", null ],
-    [ "ArrayDeleter< uint8_t >", "struct_array_deleter.html", null ],
+    [ "fl::AnimartrixEntry", "structfl_1_1_animartrix_entry.html", null ],
+    [ "fl::ArrayDeleter< T >", "structfl_1_1_array_deleter.html", null ],
+    [ "fl::ArrayDeleter< CRGB >", "structfl_1_1_array_deleter.html", null ],
+    [ "fl::ArrayDeleter< fl::HeapVector< float > >", "structfl_1_1_array_deleter.html", null ],
+    [ "fl::ArrayDeleter< float >", "structfl_1_1_array_deleter.html", null ],
+    [ "fl::ArrayDeleter< Pair >", "structfl_1_1_array_deleter.html", null ],
+    [ "fl::ArrayDeleter< uint8_t >", "structfl_1_1_array_deleter.html", null ],
     [ "AVRSoftwareSPIOutput< DATA_PIN, CLOCK_PIN, SPI_SPEED >", "class_a_v_r_software_s_p_i_output.html", null ],
     [ "AVRSoftwareSPIOutput< _DATA_PIN, _CLOCK_PIN, _SPI_CLOCK_DIVIDER >", "class_a_v_r_software_s_p_i_output.html", [
       [ "SPIOutput< DATA_PIN, CLOCK_PIN, SPI_SPEED >", "class_s_p_i_output.html", null ],
@@ -21,19 +24,18 @@ var hierarchy =
       [ "SoftwareSPIOutput< _DATA_PIN, _CLOCK_PIN, _SPI_CLOCK_DIVIDER >", "class_software_s_p_i_output.html", null ]
     ] ],
     [ "bitswap_type", "unionbitswap__type.html", null ],
-    [ "Button", "class_button.html", null ],
-    [ "Callback< Args >", "class_callback.html", null ],
+    [ "fl::Button", "classfl_1_1_button.html", null ],
+    [ "fl::Callback< Args >", "classfl_1_1_callback.html", null ],
     [ "CEveryNMillisDynamic", "class_c_every_n_millis_dynamic.html", null ],
     [ "CEveryNTime", "class_c_every_n_time.html", null ],
     [ "CFastLED", "class_c_fast_l_e_d.html", null ],
-    [ "Checkbox", "class_checkbox.html", null ],
+    [ "fl::Checkbox", "classfl_1_1_checkbox.html", null ],
     [ "CHSV", "struct_c_h_s_v.html", null ],
     [ "CHSVPalette16", "class_c_h_s_v_palette16.html", null ],
     [ "CHSVPalette256", "class_c_h_s_v_palette256.html", null ],
     [ "CHSVPalette32", "class_c_h_s_v_palette32.html", null ],
-    [ "CircularBuffer< T >", "class_circular_buffer.html", null ],
-    [ "CircularBuffer< Pair >", "class_circular_buffer.html", null ],
-    [ "CircularBuffer< uint8_t >", "class_circular_buffer.html", null ],
+    [ "fl::CircularBuffer< T >", "classfl_1_1_circular_buffer.html", null ],
+    [ "fl::CircularBuffer< uint8_t >", "classfl_1_1_circular_buffer.html", null ],
     [ "CLEDController", "class_c_l_e_d_controller.html", [
       [ "CPixelLEDController< RGB >", "class_c_pixel_l_e_d_controller.html", [
         [ "APA102Controller< DATA_PIN, CLOCK_PIN, RGB_ORDER, SPI_SPEED, GAMMA_CORRECTION_MODE, START_FRAME, END_FRAME >", "class_a_p_a102_controller.html", null ],
@@ -174,7 +176,12 @@ var hierarchy =
     ] ],
     [ "CMinWait< WAIT >", "class_c_min_wait.html", null ],
     [ "CMinWait< 1000 >", "class_c_min_wait.html", null ],
+    [ "Color3i", "struct_color3i.html", null ],
     [ "ColorAdjustment", "struct_color_adjustment.html", null ],
+    [ "ColorHSV", "struct_color_h_s_v.html", null ],
+    [ "ColorScheme", "struct_color_scheme.html", null ],
+    [ "ColorSelector", "class_color_selector.html", null ],
+    [ "CountingButton", "class_counting_button.html", null ],
     [ "CPixelView< PIXEL_TYPE >", "class_c_pixel_view.html", null ],
     [ "CPixelView< CRGB >", "class_c_pixel_view.html", [
       [ "CRGBArray< SIZE >", "class_c_r_g_b_array.html", null ]
@@ -184,24 +191,37 @@ var hierarchy =
     [ "CRGBPalette256", "class_c_r_g_b_palette256.html", null ],
     [ "CRGBPalette32", "class_c_r_g_b_palette32.html", null ],
     [ "DATA_NOP", "class_d_a_t_a___n_o_p.html", null ],
-    [ "Description", "class_description.html", null ],
+    [ "DefaultPlatform", "struct_default_platform.html", null ],
+    [ "DefaultSerialSettings", "struct_default_serial_settings.html", null ],
+    [ "DefaultSettings", "struct_default_settings.html", null ],
+    [ "fl::Description", "classfl_1_1_description.html", null ],
+    [ "fl::DigitalPin", "classfl_1_1_digital_pin.html", null ],
     [ "fl::enable_if< Condition, T >", "structfl_1_1enable__if.html", null ],
     [ "fl::enable_if< true, T >", "structfl_1_1enable__if_3_01true_00_01_t_01_4.html", null ],
-    [ "EngineEvents", "class_engine_events.html", null ],
+    [ "fl::EngineEvents", "classfl_1_1_engine_events.html", null ],
     [ "FastPin< PIN >", "class_fast_pin.html", [
       [ "FastPinBB< PIN >", "class_fast_pin_b_b.html", null ]
     ] ],
-    [ "FileSystem", "class_file_system.html", null ],
-    [ "FixedMap< Key, Value, N >", "class_fixed_map.html", null ],
-    [ "FixedMap< int, FxRef, FASTLED_FX_ENGINE_MAX_FX >", "class_fixed_map.html", null ],
-    [ "FixedSet< Key, N >", "class_fixed_set.html", null ],
-    [ "FixedVector< T, N >", "class_fixed_vector.html", null ],
-    [ "FixedVector< Key, N >", "class_fixed_vector.html", null ],
-    [ "FixedVector< Pair, N >", "class_fixed_vector.html", null ],
-    [ "FrameTracker", "class_frame_tracker.html", null ],
-    [ "FxCompositor", "class_fx_compositor.html", null ],
-    [ "FxEngine", "class_fx_engine.html", null ],
+    [ "fl::FileSystem", "classfl_1_1_file_system.html", null ],
+    [ "fl::FixedMap< Key, Value, N >", "classfl_1_1_fixed_map.html", null ],
+    [ "fl::FixedMap< int, FxPtr, FASTLED_FX_ENGINE_MAX_FX >", "classfl_1_1_fixed_map.html", null ],
+    [ "fl::FixedSet< Key, N >", "classfl_1_1_fixed_set.html", null ],
+    [ "fl::FixedVector< T, N >", "classfl_1_1_fixed_vector.html", null ],
+    [ "fl::FixedVector< Key, N >", "classfl_1_1_fixed_vector.html", null ],
+    [ "fl::FixedVector< PairKV, N >", "classfl_1_1_fixed_vector.html", null ],
+    [ "FrameBufferBase", "class_frame_buffer_base.html", [
+      [ "FrameBuffer", "class_frame_buffer.html", null ]
+    ] ],
+    [ "fl::FrameTracker", "classfl_1_1_frame_tracker.html", null ],
+    [ "fl::FxCompositor", "classfl_1_1_fx_compositor.html", null ],
+    [ "fl::FxEngine", "classfl_1_1_fx_engine.html", null ],
+    [ "fl::HeapVector< T >", "classfl_1_1_heap_vector.html", null ],
+    [ "fl::HeapVector< CRGB >", "classfl_1_1_heap_vector.html", null ],
+    [ "fl::HeapVector< fl::HeapVector< float > >", "classfl_1_1_heap_vector.html", null ],
+    [ "fl::HeapVector< float >", "classfl_1_1_heap_vector.html", null ],
+    [ "fl::HeapVector< Pair >", "classfl_1_1_heap_vector.html", null ],
     [ "IEEE754binary32_t", "union_i_e_e_e754binary32__t.html", null ],
+    [ "InterpData< KeyT, ValT >", "struct_interp_data.html", null ],
     [ "fl::is_base_of< Base, Derived >", "structfl_1_1is__base__of.html", null ],
     [ "fl::is_base_of_v_helper< Base, Derived >", "structfl_1_1is__base__of__v__helper.html", null ],
     [ "fl::is_pod< T >", "structfl_1_1is__pod.html", null ],
@@ -224,77 +244,97 @@ var hierarchy =
     [ "fl::is_same< T, U >", "structfl_1_1is__same.html", null ],
     [ "fl::is_same< T, T >", "structfl_1_1is__same_3_01_t_00_01_t_01_4.html", null ],
     [ "fl::is_same_v_helper< T, U >", "structfl_1_1is__same__v__helper.html", null ],
+    [ "fl::JsonDocument", "classfl_1_1_json_document.html", null ],
     [ "just8bits", "unionjust8bits.html", null ],
-    [ "LargeBlockAllocator< T >", "class_large_block_allocator.html", null ],
-    [ "EngineEvents::Listener", "class_engine_events_1_1_listener.html", null ],
-    [ "RedSquare::Math", "struct_red_square_1_1_math.html", null ],
+    [ "Key", "struct_key.html", null ],
+    [ "KeyboardState", "class_keyboard_state.html", null ],
+    [ "fl::LargeBlockAllocator< T >", "classfl_1_1_large_block_allocator.html", null ],
+    [ "LedColumns", "struct_led_columns.html", null ],
+    [ "LedRopeInterface", "class_led_rope_interface.html", [
+      [ "LedRopeTCL", "class_led_rope_t_c_l.html", null ]
+    ] ],
+    [ "fl::FrameInterpolator::Less", "structfl_1_1_frame_interpolator_1_1_less.html", null ],
+    [ "fl::EngineEvents::Listener", "classfl_1_1_engine_events_1_1_listener.html", null ],
+    [ "fl::RedSquare::Math", "structfl_1_1_red_square_1_1_math.html", null ],
+    [ "Message< SysExMaxSize >", "struct_message.html", null ],
+    [ "Message< Settings::SysExMaxSize >", "struct_message.html", null ],
+    [ "MidiInterface< Transport, _Settings, _Platform >", "class_midi_interface.html", null ],
+    [ "MidiShieldButton", "class_midi_shield_button.html", null ],
     [ "animartrix_detail::modulators", "structanimartrix__detail_1_1modulators.html", null ],
     [ "NoiseGenerator", "struct_noise_generator.html", null ],
     [ "NOPSPIOutput< _DATA_PIN, _CLOCK_PIN, _SPI_CLOCK_DIVIDER >", "class_n_o_p_s_p_i_output.html", null ],
-    [ "NumberField", "class_number_field.html", null ],
+    [ "fl::NumberField", "classfl_1_1_number_field.html", null ],
+    [ "ObjectFLED", "class_object_f_l_e_d.html", null ],
     [ "animartrix_detail::oscillators", "structanimartrix__detail_1_1oscillators.html", null ],
-    [ "FixedMap< Key, Value, N >::Pair", "struct_fixed_map_1_1_pair.html", null ],
-    [ "FrameInterpolator::Pair", "struct_frame_interpolator_1_1_pair.html", null ],
-    [ "pair_xy< T >", "structpair__xy.html", null ],
-    [ "Pir", "class_pir.html", null ],
+    [ "Painter", "struct_painter.html", null ],
+    [ "fl::Pair< Key, Value >", "structfl_1_1_pair.html", null ],
+    [ "fl::pair_xy< T >", "structfl_1_1pair__xy.html", null ],
+    [ "fl::Pir", "classfl_1_1_pir.html", null ],
+    [ "fl::PirAdvanced", "classfl_1_1_pir_advanced.html", null ],
     [ "PixelController< RGB_ORDER, LANES, MASK >", "struct_pixel_controller.html", null ],
     [ "PixelControllerVtable< PixelControllerT >", "struct_pixel_controller_vtable.html", null ],
     [ "PixelIterator", "class_pixel_iterator.html", null ],
     [ "CPixelView< PIXEL_TYPE >::pixelset_iterator_base< T >", "class_c_pixel_view_1_1pixelset__iterator__base.html", null ],
     [ "gen.Point", "classgen_1_1_point.html", null ],
-    [ "PointerDeleter< T >", "struct_pointer_deleter.html", null ],
-    [ "PointerDeleter< FastLEDANIMartRIX >", "struct_pointer_deleter.html", null ],
-    [ "PointerDeleter< uint8_t >", "struct_pointer_deleter.html", null ],
+    [ "fl::PointerDeleter< T >", "structfl_1_1_pointer_deleter.html", null ],
+    [ "fl::PointerDeleter< fl::FastLEDANIMartRIX >", "structfl_1_1_pointer_deleter.html", null ],
+    [ "fl::PointerDeleter< uint8_t >", "structfl_1_1_pointer_deleter.html", null ],
+    [ "Potentiometer", "class_potentiometer.html", null ],
+    [ "fl::PtrTraits< T >", "classfl_1_1_ptr_traits.html", [
+      [ "fl::Ptr< T >", "classfl_1_1_ptr.html", null ]
+    ] ],
+    [ "fl::PtrTraits< fl::Frame >", "classfl_1_1_ptr_traits.html", [
+      [ "fl::Ptr< fl::Frame >", "classfl_1_1_ptr.html", null ]
+    ] ],
+    [ "fl::PtrTraits< fl::Fx >", "classfl_1_1_ptr_traits.html", [
+      [ "fl::Ptr< fl::Fx >", "classfl_1_1_ptr.html", null ]
+    ] ],
+    [ "fl::PtrTraits< fl::WeakReferent >", "classfl_1_1_ptr_traits.html", [
+      [ "fl::Ptr< fl::WeakReferent >", "classfl_1_1_ptr.html", null ]
+    ] ],
     [ "qfx< T, F, I >", "classqfx.html", null ],
-    [ "Referent", "class_referent.html", [
-      [ "ByteStream", "class_byte_stream.html", [
-        [ "ByteStreamMemory", "class_byte_stream_memory.html", null ]
+    [ "fl::Referent", "classfl_1_1_referent.html", [
+      [ "fl::ByteStream", "classfl_1_1_byte_stream.html", [
+        [ "fl::ByteStreamMemory", "classfl_1_1_byte_stream_memory.html", null ]
       ] ],
-      [ "DataStream", "class_data_stream.html", null ],
-      [ "FileBuffer", "class_file_buffer.html", null ],
-      [ "FileHandle", "class_file_handle.html", null ],
-      [ "Frame", "class_frame.html", null ],
-      [ "FrameInterpolator", "class_frame_interpolator.html", null ],
-      [ "FsImpl", "class_fs_impl.html", null ],
-      [ "Fx", "class_fx.html", [
-        [ "FxGrid", "class_fx_grid.html", [
-          [ "Animartrix", "class_animartrix.html", null ],
-          [ "NoisePalette", "class_noise_palette.html", null ],
-          [ "RedSquare", "class_red_square.html", null ],
-          [ "ScaleUp", "class_scale_up.html", null ],
-          [ "VideoFx", "class_video_fx.html", null ]
+      [ "fl::DigitalPinImpl", "classfl_1_1_digital_pin_impl.html", null ],
+      [ "fl::FileHandle", "classfl_1_1_file_handle.html", [
+        [ "fl::NullFileHandle", "classfl_1_1_null_file_handle.html", null ]
+      ] ],
+      [ "fl::Frame", "classfl_1_1_frame.html", null ],
+      [ "fl::FrameInterpolator", "classfl_1_1_frame_interpolator.html", null ],
+      [ "fl::FsImpl", "classfl_1_1_fs_impl.html", [
+        [ "fl::NullFileSystem", "classfl_1_1_null_file_system.html", null ]
+      ] ],
+      [ "fl::Fx", "classfl_1_1_fx.html", [
+        [ "fl::Fx1d", "classfl_1_1_fx1d.html", [
+          [ "fl::Cylon", "classfl_1_1_cylon.html", null ],
+          [ "fl::DemoReel100", "classfl_1_1_demo_reel100.html", null ],
+          [ "fl::Fire2012", "classfl_1_1_fire2012.html", null ],
+          [ "fl::NoiseWave", "classfl_1_1_noise_wave.html", null ],
+          [ "fl::Pacifica", "classfl_1_1_pacifica.html", null ],
+          [ "fl::Pride2015", "classfl_1_1_pride2015.html", null ],
+          [ "fl::TwinkleFox", "classfl_1_1_twinkle_fox.html", null ],
+          [ "fl::Video", "classfl_1_1_video.html", null ],
+          [ "fl::VideoFxWrapper", "classfl_1_1_video_fx_wrapper.html", null ]
         ] ],
-        [ "FxStrip", "class_fx_strip.html", [
-          [ "Cylon", "class_cylon.html", null ],
-          [ "DemoReel100", "class_demo_reel100.html", null ],
-          [ "Fire2012", "class_fire2012.html", null ],
-          [ "NoiseWave", "class_noise_wave.html", null ],
-          [ "Pacifica", "class_pacifica.html", null ],
-          [ "Pride2015", "class_pride2015.html", null ],
-          [ "TwinkleFox", "class_twinkle_fox.html", null ]
+        [ "fl::Fx2d", "classfl_1_1_fx2d.html", [
+          [ "fl::Animartrix", "classfl_1_1_animartrix.html", null ],
+          [ "fl::NoisePalette", "classfl_1_1_noise_palette.html", null ],
+          [ "fl::RedSquare", "classfl_1_1_red_square.html", null ],
+          [ "fl::ScaleUp", "classfl_1_1_scale_up.html", null ]
         ] ]
       ] ],
-      [ "FxLayer", "class_fx_layer.html", null ],
-      [ "LUT< T >", "class_l_u_t.html", null ],
-      [ "TimeFunction", "class_time_function.html", [
-        [ "TimeScale", "class_time_scale.html", null ]
+      [ "fl::FxLayer", "classfl_1_1_fx_layer.html", null ],
+      [ "fl::LUT< T >", "classfl_1_1_l_u_t.html", null ],
+      [ "fl::PixelStream", "classfl_1_1_pixel_stream.html", null ],
+      [ "fl::StringHolder", "classfl_1_1_string_holder.html", null ],
+      [ "fl::TimeFunction", "classfl_1_1_time_function.html", [
+        [ "fl::TimeScale", "classfl_1_1_time_scale.html", null ]
       ] ],
-      [ "VideoImpl", "class_video_impl.html", null ],
-      [ "fl::StringHolder", "classfl_1_1_string_holder.html", null ]
+      [ "fl::VideoImpl", "classfl_1_1_video_impl.html", null ]
     ] ],
     [ "REFHardwareSPIOutput< _DATA_PIN, _CLOCK_PIN, _SPI_CLOCK_DIVIDER >", "class_r_e_f_hardware_s_p_i_output.html", null ],
-    [ "RefTraits< T >", "class_ref_traits.html", [
-      [ "Ref< T >", "class_ref.html", null ]
-    ] ],
-    [ "RefTraits< Frame >", "class_ref_traits.html", [
-      [ "Ref< Frame >", "class_ref.html", null ]
-    ] ],
-    [ "RefTraits< Fx >", "class_ref_traits.html", [
-      [ "Ref< Fx >", "class_ref.html", null ]
-    ] ],
-    [ "RefTraits< WeakReferent >", "class_ref_traits.html", [
-      [ "Ref< WeakReferent >", "class_ref.html", null ]
-    ] ],
     [ "animartrix_detail::render_parameters", "structanimartrix__detail_1_1render__parameters.html", null ],
     [ "animartrix_detail::rgb", "structanimartrix__detail_1_1rgb.html", null ],
     [ "Rgbw", "struct_rgbw.html", [
@@ -303,39 +343,49 @@ var hierarchy =
       [ "RgbwWhiteIsOff", "struct_rgbw_white_is_off.html", null ]
     ] ],
     [ "Ripple", "class_ripple.html", null ],
-    [ "scoped_array< T, Deleter >", "classscoped__array.html", null ],
-    [ "scoped_array< CRGB >", "classscoped__array.html", null ],
-    [ "scoped_array< Pair >", "classscoped__array.html", null ],
-    [ "scoped_array< uint8_t >", "classscoped__array.html", null ],
-    [ "scoped_ptr< T, Deleter >", "classscoped__ptr.html", null ],
-    [ "scoped_ptr< FastLEDANIMartRIX >", "classscoped__ptr.html", null ],
-    [ "scoped_ptr< uint8_t >", "classscoped__ptr.html", null ],
-    [ "ScreenMap", "class_screen_map.html", null ],
+    [ "RPN", "struct_r_p_n.html", null ],
+    [ "fl::scoped_array< T, Deleter >", "classfl_1_1scoped__array.html", null ],
+    [ "fl::scoped_array< CRGB >", "classfl_1_1scoped__array.html", null ],
+    [ "fl::scoped_array< fl::HeapVector< float > >", "classfl_1_1scoped__array.html", null ],
+    [ "fl::scoped_array< float >", "classfl_1_1scoped__array.html", null ],
+    [ "fl::scoped_array< Pair >", "classfl_1_1scoped__array.html", null ],
+    [ "fl::scoped_array< uint8_t >", "classfl_1_1scoped__array.html", null ],
+    [ "fl::scoped_ptr< T, Deleter >", "classfl_1_1scoped__ptr.html", null ],
+    [ "fl::scoped_ptr< fl::FastLEDANIMartRIX >", "classfl_1_1scoped__ptr.html", null ],
+    [ "fl::scoped_ptr< uint8_t >", "classfl_1_1scoped__ptr.html", null ],
+    [ "fl::ScreenMap", "classfl_1_1_screen_map.html", null ],
     [ "Selectable", "class_selectable.html", [
       [ "Pin", "class_pin.html", [
         [ "InputPin", "class_input_pin.html", null ],
         [ "OutputPin", "class_output_pin.html", null ]
       ] ]
     ] ],
-    [ "Singleton< T, N >", "class_singleton.html", null ],
-    [ "Slice< T >", "class_slice.html", null ],
-    [ "Slider", "class_slider.html", null ],
+    [ "SerialMIDI< SerialPort, _Settings >", "class_serial_m_i_d_i.html", null ],
+    [ "fl::Singleton< T, N >", "classfl_1_1_singleton.html", null ],
+    [ "fl::Slice< T >", "classfl_1_1_slice.html", null ],
+    [ "fl::Slider", "classfl_1_1_slider.html", null ],
+    [ "fl::SortedHeapMap< Key, Value, Less >", "classfl_1_1_sorted_heap_map.html", null ],
+    [ "fl::SortedHeapMap< uint32_t, FramePtr, Less >", "classfl_1_1_sorted_heap_map.html", null ],
+    [ "fl::SortedHeapVector< T, LessThan >", "classfl_1_1_sorted_heap_vector.html", null ],
+    [ "fl::SortedHeapVector< Pair, PairLess >", "classfl_1_1_sorted_heap_vector.html", null ],
     [ "fl::StringFormatter", "classfl_1_1_string_formatter.html", null ],
     [ "fl::StrN< SIZE >", "classfl_1_1_str_n.html", null ],
     [ "fl::StrN< FASTLED_STR_INLINED_SIZE >", "classfl_1_1_str_n.html", [
       [ "fl::Str", "classfl_1_1_str.html", null ]
     ] ],
     [ "sub4", "structsub4.html", null ],
+    [ "Thru", "struct_thru.html", null ],
     [ "Timer", "class_timer.html", null ],
-    [ "Title", "class_title.html", null ],
-    [ "Transition", "class_transition.html", null ],
+    [ "fl::Title", "classfl_1_1_title.html", null ],
+    [ "ToggleButton", "class_toggle_button.html", null ],
+    [ "fl::Transition", "classfl_1_1_transition.html", null ],
     [ "TRGBGradientPaletteEntryUnion", "union_t_r_g_b_gradient_palette_entry_union.html", null ],
-    [ "Video", "class_video.html", null ],
-    [ "FsImpl::Visitor", "struct_fs_impl_1_1_visitor.html", null ],
-    [ "WeakRef< T >", "class_weak_ref.html", null ],
-    [ "WeakReferent", "class_weak_referent.html", null ],
-    [ "XMap", "class_x_map.html", null ],
-    [ "XYMap", "class_x_y_map.html", null ],
+    [ "ui_state", "structui__state.html", null ],
+    [ "fl::FsImpl::Visitor", "structfl_1_1_fs_impl_1_1_visitor.html", null ],
+    [ "fl::WeakPtr< T >", "classfl_1_1_weak_ptr.html", null ],
+    [ "fl::WeakReferent", "classfl_1_1_weak_referent.html", null ],
+    [ "fl::XMap", "classfl_1_1_x_map.html", null ],
+    [ "fl::XYMap", "classfl_1_1_x_y_map.html", null ],
     [ "Enum", null, [
       [ "gen.HexagonAngle", "classgen_1_1_hexagon_angle.html", null ]
     ] ]

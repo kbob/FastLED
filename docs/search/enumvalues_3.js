@@ -21,10 +21,11 @@ var searchData=
   ['darkviolet_18',['DarkViolet',['../group___pixel_types.html#ggaeb40a08b7cb90c1e21bd408261558b99a310707ad9adac7a157e8eefd8eeb4181',1,'CRGB']]],
   ['deeppink_19',['DeepPink',['../group___pixel_types.html#ggaeb40a08b7cb90c1e21bd408261558b99a2193f3f090afd8f92b933b84bf550d5a',1,'CRGB']]],
   ['deepskyblue_20',['DeepSkyBlue',['../group___pixel_types.html#ggaeb40a08b7cb90c1e21bd408261558b99a5ab3884724e8405c642ed3df1ab505c7',1,'CRGB']]],
-  ['dimgray_21',['DimGray',['../group___pixel_types.html#ggaeb40a08b7cb90c1e21bd408261558b99aeae6c44ad17989f6ee932c722865ab1a',1,'CRGB']]],
-  ['dimgrey_22',['DimGrey',['../group___pixel_types.html#ggaeb40a08b7cb90c1e21bd408261558b99acc56fb672d5ce34230c171fb1f61a432',1,'CRGB']]],
-  ['directsunlight_23',['DirectSunlight',['../group___color_enums.html#gga251e9e8dc2c7b981786b71706522b2a9a890e0555ad95071fa4391a5775a38621',1,'color.h']]],
-  ['dodgerblue_24',['DodgerBlue',['../group___pixel_types.html#ggaeb40a08b7cb90c1e21bd408261558b99a4d4b1fe189751d43e1912bd090a1af76',1,'CRGB']]],
-  ['dotstar_25',['DOTSTAR',['../_fast_l_e_d_8h.html#ac06549dc4a351e2c8f1dda8ae81f7926aa38c183e00af9030ff455d2ae0e1d5c3',1,'FastLED.h']]],
-  ['dotstarhd_26',['DOTSTARHD',['../_fast_l_e_d_8h.html#ac06549dc4a351e2c8f1dda8ae81f7926ad74c74695186923a5bac9867ec57e281',1,'FastLED.h']]]
+  ['differentchannel_21',['DifferentChannel',['../struct_thru.html#ad19abe318ba3710100aefdea1895fbbba3373022e0fab2ac4f65fdc1ce670c9bb',1,'Thru']]],
+  ['dimgray_22',['DimGray',['../group___pixel_types.html#ggaeb40a08b7cb90c1e21bd408261558b99aeae6c44ad17989f6ee932c722865ab1a',1,'CRGB']]],
+  ['dimgrey_23',['DimGrey',['../group___pixel_types.html#ggaeb40a08b7cb90c1e21bd408261558b99acc56fb672d5ce34230c171fb1f61a432',1,'CRGB']]],
+  ['directsunlight_24',['DirectSunlight',['../group___color_enums.html#gga251e9e8dc2c7b981786b71706522b2a9a890e0555ad95071fa4391a5775a38621',1,'color.h']]],
+  ['dodgerblue_25',['DodgerBlue',['../group___pixel_types.html#ggaeb40a08b7cb90c1e21bd408261558b99a4d4b1fe189751d43e1912bd090a1af76',1,'CRGB']]],
+  ['dotstar_26',['DOTSTAR',['../_fast_l_e_d_8h.html#ac06549dc4a351e2c8f1dda8ae81f7926aa38c183e00af9030ff455d2ae0e1d5c3',1,'FastLED.h']]],
+  ['dotstarhd_27',['DOTSTARHD',['../_fast_l_e_d_8h.html#ac06549dc4a351e2c8f1dda8ae81f7926ad74c74695186923a5bac9867ec57e281',1,'FastLED.h']]]
 ];

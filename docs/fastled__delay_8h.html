@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.4</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.5</span>
    </div>
   </td>
  </tr>
@@ -114,8 +114,8 @@ $(function(){initNavTree('fastled__delay_8h.html',''); initResizable(true); });
 
 <p class="definition">Definition in file <a class="el" href="fastled__delay_8h_source.html">fastled_delay.h</a>.</p>
 </div><div class="textblock"><code>#include &quot;<a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>&quot;</code><br />
-<code>#include &quot;types.h&quot;</code><br />
-<code>#include &quot;force_inline.h&quot;</code><br />
+<code>#include &quot;fl/types.h&quot;</code><br />
+<code>#include &quot;fl/force_inline.h&quot;</code><br />
 </div>
 <p><a href="fastled__delay_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -148,15 +148,15 @@ Macros</h2></td></tr>
 <tr class="memitem:a25a701b693218049c1c74b422353f8d9" id="r_a25a701b693218049c1c74b422353f8d9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25a701b693218049c1c74b422353f8d9">FL_NOP2</a>&#160;&#160;&#160;__asm__ __volatile__ (&quot;nop\n\t nop\n&quot;);</td></tr>
 <tr class="memdesc:a25a701b693218049c1c74b422353f8d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Double no operation ("no-op") instruction for delay.  <br /></td></tr>
 <tr class="separator:a25a701b693218049c1c74b422353f8d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdd14fccd97b45d3d566c95bff28ed76" id="r_acdd14fccd97b45d3d566c95bff28ed76"><td class="memTemplParams" colspan="2">template&lt;cycle_t CYCLES&gt; </td></tr>
+<tr class="memitem:acdd14fccd97b45d3d566c95bff28ed76" id="r_acdd14fccd97b45d3d566c95bff28ed76"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacefl.html#a6754328c4b1ad5e8e46ddbc6eaa638a8">fl::cycle_t</a> CYCLES&gt; </td></tr>
 <tr class="memitem:acdd14fccd97b45d3d566c95bff28ed76"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#acdd14fccd97b45d3d566c95bff28ed76">delaycycles</a> ()</td></tr>
 <tr class="memdesc:acdd14fccd97b45d3d566c95bff28ed76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay N clock cycles.  <br /></td></tr>
 <tr class="separator:acdd14fccd97b45d3d566c95bff28ed76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76328edb9ea1a1f017567ff835247d2d" id="r_a76328edb9ea1a1f017567ff835247d2d"><td class="memTemplParams" colspan="2">template&lt;cycle_t CYCLES&gt; </td></tr>
+<tr class="memitem:a76328edb9ea1a1f017567ff835247d2d" id="r_a76328edb9ea1a1f017567ff835247d2d"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacefl.html#a6754328c4b1ad5e8e46ddbc6eaa638a8">fl::cycle_t</a> CYCLES&gt; </td></tr>
 <tr class="memitem:a76328edb9ea1a1f017567ff835247d2d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a76328edb9ea1a1f017567ff835247d2d">delaycycles_min1</a> ()</td></tr>
 <tr class="memdesc:a76328edb9ea1a1f017567ff835247d2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A variant of <a class="el" href="#acdd14fccd97b45d3d566c95bff28ed76" title="Delay N clock cycles.">delaycycles</a> that will always delay at least one cycle.  <br /></td></tr>
 <tr class="separator:a76328edb9ea1a1f017567ff835247d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09be4e640c4988800c829b08b66723e5" id="r_a09be4e640c4988800c829b08b66723e5"><td class="memTemplParams" colspan="2">template&lt;cycle_t CYCLES&gt; </td></tr>
+<tr class="memitem:a09be4e640c4988800c829b08b66723e5" id="r_a09be4e640c4988800c829b08b66723e5"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacefl.html#a6754328c4b1ad5e8e46ddbc6eaa638a8">fl::cycle_t</a> CYCLES&gt; </td></tr>
 <tr class="memitem:a09be4e640c4988800c829b08b66723e5"><td class="memTemplItemLeft" align="right" valign="top">FASTLED_FORCE_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a09be4e640c4988800c829b08b66723e5">delaycycles</a> ()</td></tr>
 <tr class="memdesc:a09be4e640c4988800c829b08b66723e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay N clock cycles.  <br /></td></tr>
 <tr class="separator:a09be4e640c4988800c829b08b66723e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -295,7 +295,7 @@ Macros</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;cycle_t CYCLES&gt; </div>
+template&lt;<a class="el" href="namespacefl.html#a6754328c4b1ad5e8e46ddbc6eaa638a8">fl::cycle_t</a> CYCLES&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -333,7 +333,7 @@ template&lt;cycle_t CYCLES&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;cycle_t CYCLES&gt; </div>
+template&lt;<a class="el" href="namespacefl.html#a6754328c4b1ad5e8e46ddbc6eaa638a8">fl::cycle_t</a> CYCLES&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -371,7 +371,7 @@ template&lt;cycle_t CYCLES&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;cycle_t CYCLES&gt; </div>
+template&lt;<a class="el" href="namespacefl.html#a6754328c4b1ad5e8e46ddbc6eaa638a8">fl::cycle_t</a> CYCLES&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -403,7 +403,7 @@ template&lt;cycle_t CYCLES&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="fastled__delay_8h.html">fastled_delay.h</a></li>
-    <li class="footer">Generated on Wed Nov 20 2024 08:28:11 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Dec 17 2024 05:47:34 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

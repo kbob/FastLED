@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.4</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.5</span>
    </div>
   </td>
  </tr>
@@ -113,7 +113,7 @@ $(function(){initNavTree('classfl_1_1_str_n.html',''); initResizable(true); });
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;size_t SIZE = 64&gt;<br />
 class fl::StrN&lt; SIZE &gt;</div>
-<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00075">75</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fl_2str_8h_source.html#l00075">75</a> of file <a class="el" href="fl_2str_8h_source.html">str.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -140,6 +140,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a143172b1ced4107efd80e9484d2cefdd" id="r_a143172b1ced4107efd80e9484d2cefdd"><td class="memTemplParams" colspan="2">template&lt;size_t M&gt; </td></tr>
 <tr class="memitem:a143172b1ced4107efd80e9484d2cefdd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a143172b1ced4107efd80e9484d2cefdd">copy</a> (const <a class="el" href="classfl_1_1_str_n.html">StrN</a>&lt; M &gt; &amp;other)</td></tr>
 <tr class="separator:a143172b1ced4107efd80e9484d2cefdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdcd10ae29cb5080ea0cb0cf5d9cb30d" id="r_afdcd10ae29cb5080ea0cb0cf5d9cb30d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afdcd10ae29cb5080ea0cb0cf5d9cb30d">capacity</a> () const</td></tr>
+<tr class="separator:afdcd10ae29cb5080ea0cb0cf5d9cb30d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c1405cc5094fd0b842640a06c4fd40e" id="r_a3c1405cc5094fd0b842640a06c4fd40e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c1405cc5094fd0b842640a06c4fd40e">write</a> (int n)</td></tr>
 <tr class="separator:a3c1405cc5094fd0b842640a06c4fd40e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a270fb921e74601bc45cc8513e8a075f7" id="r_a270fb921e74601bc45cc8513e8a075f7"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a270fb921e74601bc45cc8513e8a075f7">write</a> (const uint8_t *data, size_t n)</td></tr>
@@ -162,19 +164,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a16e24af8182b93838888a4b434557682"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa858009d4782a4fc06e041581d09bd2d" id="r_aa858009d4782a4fc06e041581d09bd2d"><td class="memItemLeft" align="right" valign="top">const char &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa858009d4782a4fc06e041581d09bd2d">operator[]</a> (size_t index) const</td></tr>
 <tr class="separator:aa858009d4782a4fc06e041581d09bd2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac786dfa049e65c42a35d27dd28d46356" id="r_ac786dfa049e65c42a35d27dd28d46356"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac786dfa049e65c42a35d27dd28d46356">append</a> (const char *str)</td></tr>
-<tr class="separator:ac786dfa049e65c42a35d27dd28d46356"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a936f906064a1beb2b70dbdb5365f5572" id="r_a936f906064a1beb2b70dbdb5365f5572"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a936f906064a1beb2b70dbdb5365f5572">append</a> (char c)</td></tr>
-<tr class="separator:a936f906064a1beb2b70dbdb5365f5572"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a814bf6eee02b8f946355d053fee6bddc" id="r_a814bf6eee02b8f946355d053fee6bddc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a814bf6eee02b8f946355d053fee6bddc">append</a> (const <a class="el" href="classfl_1_1_str_n.html">StrN</a> &amp;str)</td></tr>
-<tr class="separator:a814bf6eee02b8f946355d053fee6bddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e1d92d46d9311b6cb1fc94170bc8d6b" id="r_a1e1d92d46d9311b6cb1fc94170bc8d6b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e1d92d46d9311b6cb1fc94170bc8d6b">empty</a> () const</td></tr>
+<tr class="separator:a1e1d92d46d9311b6cb1fc94170bc8d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1551ed6ea88e0690125d9829b635a0d8" id="r_a1551ed6ea88e0690125d9829b635a0d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1551ed6ea88e0690125d9829b635a0d8">operator&lt;</a> (const <a class="el" href="classfl_1_1_str_n.html">StrN</a> &amp;other) const</td></tr>
 <tr class="separator:a1551ed6ea88e0690125d9829b635a0d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb33dfba321459b4b7c8bf94a7f52c47" id="r_afb33dfba321459b4b7c8bf94a7f52c47"><td class="memTemplParams" colspan="2">template&lt;size_t M&gt; </td></tr>
 <tr class="memitem:afb33dfba321459b4b7c8bf94a7f52c47"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#afb33dfba321459b4b7c8bf94a7f52c47">operator&lt;</a> (const <a class="el" href="classfl_1_1_str_n.html">StrN</a>&lt; M &gt; &amp;other) const</td></tr>
 <tr class="separator:afb33dfba321459b4b7c8bf94a7f52c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f0d3979fd9d360f59ea2ab3d746f065" id="r_a6f0d3979fd9d360f59ea2ab3d746f065"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f0d3979fd9d360f59ea2ab3d746f065">clear</a> ()</td></tr>
-<tr class="separator:a6f0d3979fd9d360f59ea2ab3d746f065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6657ab909ff44f8cce48cf6083190c7" id="r_ad6657ab909ff44f8cce48cf6083190c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6657ab909ff44f8cce48cf6083190c7">reserve</a> (size_t newCapacity)</td></tr>
+<tr class="separator:ad6657ab909ff44f8cce48cf6083190c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f3fee5553f985b5b5d995e7232a4a71" id="r_a6f3fee5553f985b5b5d995e7232a4a71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f3fee5553f985b5b5d995e7232a4a71">clear</a> (bool freeMemory=false)</td></tr>
+<tr class="separator:a6f3fee5553f985b5b5d995e7232a4a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e6f222f3bc9ef18683a5b8ad0bb0bfd" id="r_a5e6f222f3bc9ef18683a5b8ad0bb0bfd"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e6f222f3bc9ef18683a5b8ad0bb0bfd">find</a> (const char &amp;value) const</td></tr>
 <tr class="separator:a5e6f222f3bc9ef18683a5b8ad0bb0bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12b22d1807a3dcaedeb7e8920d0854b4" id="r_a12b22d1807a3dcaedeb7e8920d0854b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfl_1_1_str_n.html">StrN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12b22d1807a3dcaedeb7e8920d0854b4">substring</a> (size_t start, size_t end) const</td></tr>
@@ -212,7 +212,7 @@ template&lt;size_t M&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00086">86</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fl_2str_8h_source.html#l00086">86</a> of file <a class="el" href="fl_2str_8h_source.html">str.h</a>.</p>
 
 </div>
 </div>
@@ -241,7 +241,7 @@ template&lt;size_t SIZE = 64&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00087">87</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fl_2str_8h_source.html#l00087">87</a> of file <a class="el" href="fl_2str_8h_source.html">str.h</a>.</p>
 
 </div>
 </div>
@@ -270,7 +270,7 @@ template&lt;size_t SIZE = 64&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00097">97</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fl_2str_8h_source.html#l00097">97</a> of file <a class="el" href="fl_2str_8h_source.html">str.h</a>.</p>
 
 </div>
 </div>
@@ -299,98 +299,11 @@ template&lt;size_t SIZE = 64&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00206">206</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fl_2str_8h_source.html#l00210">210</a> of file <a class="el" href="fl_2str_8h_source.html">str.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a936f906064a1beb2b70dbdb5365f5572" name="a936f906064a1beb2b70dbdb5365f5572"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a936f906064a1beb2b70dbdb5365f5572">&#9670;&#160;</a></span>append() <span class="overload">[1/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;size_t SIZE = 64&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classfl_1_1_str_n.html">fl::StrN</a>&lt; SIZE &gt;::append </td>
-          <td>(</td>
-          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>c</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00237">237</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
-
-</div>
-</div>
-<a id="ac786dfa049e65c42a35d27dd28d46356" name="ac786dfa049e65c42a35d27dd28d46356"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac786dfa049e65c42a35d27dd28d46356">&#9670;&#160;</a></span>append() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;size_t SIZE = 64&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classfl_1_1_str_n.html">fl::StrN</a>&lt; SIZE &gt;::append </td>
-          <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>str</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00236">236</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
-
-</div>
-</div>
-<a id="a814bf6eee02b8f946355d053fee6bddc" name="a814bf6eee02b8f946355d053fee6bddc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a814bf6eee02b8f946355d053fee6bddc">&#9670;&#160;</a></span>append() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;size_t SIZE = 64&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classfl_1_1_str_n.html">fl::StrN</a>&lt; SIZE &gt;::append </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classfl_1_1_str_n.html">StrN</a>&lt; SIZE &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>str</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00238">238</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
-
-</div>
-</div>
 <a id="a67296b774f8201293edbbabbd1b642cb" name="a67296b774f8201293edbbabbd1b642cb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a67296b774f8201293edbbabbd1b642cb">&#9670;&#160;</a></span>c_str()</h2>
 
@@ -416,7 +329,7 @@ template&lt;size_t SIZE = 64&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00211">211</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fl_2str_8h_source.html#l00215">215</a> of file <a class="el" href="fl_2str_8h_source.html">str.h</a>.</p>
 
 </div>
 </div>
@@ -445,12 +358,41 @@ template&lt;size_t SIZE = 64&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00215">215</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fl_2str_8h_source.html#l00219">219</a> of file <a class="el" href="fl_2str_8h_source.html">str.h</a>.</p>
 
 </div>
 </div>
-<a id="a6f0d3979fd9d360f59ea2ab3d746f065" name="a6f0d3979fd9d360f59ea2ab3d746f065"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f0d3979fd9d360f59ea2ab3d746f065">&#9670;&#160;</a></span>clear()</h2>
+<a id="afdcd10ae29cb5080ea0cb0cf5d9cb30d" name="afdcd10ae29cb5080ea0cb0cf5d9cb30d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdcd10ae29cb5080ea0cb0cf5d9cb30d">&#9670;&#160;</a></span>capacity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t SIZE = 64&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="classfl_1_1_str_n.html">fl::StrN</a>&lt; SIZE &gt;::capacity </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="fl_2str_8h_source.html#l00157">157</a> of file <a class="el" href="fl_2str_8h_source.html">str.h</a>.</p>
+
+</div>
+</div>
+<a id="a6f3fee5553f985b5b5d995e7232a4a71" name="a6f3fee5553f985b5b5d995e7232a4a71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f3fee5553f985b5b5d995e7232a4a71">&#9670;&#160;</a></span>clear()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -463,7 +405,7 @@ template&lt;size_t SIZE = 64&gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classfl_1_1_str_n.html">fl::StrN</a>&lt; SIZE &gt;::clear </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>freeMemory</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -474,7 +416,7 @@ template&lt;size_t SIZE = 64&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00248">248</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fl_2str_8h_source.html#l00278">278</a> of file <a class="el" href="fl_2str_8h_source.html">str.h</a>.</p>
 
 </div>
 </div>
@@ -503,7 +445,7 @@ template&lt;size_t SIZE = 64&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00098">98</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fl_2str_8h_source.html#l00098">98</a> of file <a class="el" href="fl_2str_8h_source.html">str.h</a>.</p>
 
 </div>
 </div>
@@ -536,7 +478,7 @@ template&lt;size_t SIZE = 64&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00132">132</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fl_2str_8h_source.html#l00132">132</a> of file <a class="el" href="fl_2str_8h_source.html">str.h</a>.</p>
 
 </div>
 </div>
@@ -567,7 +509,36 @@ template&lt;size_t M&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00142">142</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fl_2str_8h_source.html#l00142">142</a> of file <a class="el" href="fl_2str_8h_source.html">str.h</a>.</p>
+
+</div>
+</div>
+<a id="a1e1d92d46d9311b6cb1fc94170bc8d6b" name="a1e1d92d46d9311b6cb1fc94170bc8d6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e1d92d46d9311b6cb1fc94170bc8d6b">&#9670;&#160;</a></span>empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t SIZE = 64&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classfl_1_1_str_n.html">fl::StrN</a>&lt; SIZE &gt;::empty </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="fl_2str_8h_source.html#l00239">239</a> of file <a class="el" href="fl_2str_8h_source.html">str.h</a>.</p>
 
 </div>
 </div>
@@ -596,7 +567,7 @@ template&lt;size_t SIZE = 64&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00257">257</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fl_2str_8h_source.html#l00287">287</a> of file <a class="el" href="fl_2str_8h_source.html">str.h</a>.</p>
 
 </div>
 </div>
@@ -625,7 +596,7 @@ template&lt;size_t SIZE = 64&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00210">210</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fl_2str_8h_source.html#l00214">214</a> of file <a class="el" href="fl_2str_8h_source.html">str.h</a>.</p>
 
 </div>
 </div>
@@ -654,7 +625,7 @@ template&lt;size_t SIZE = 64&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00128">128</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fl_2str_8h_source.html#l00128">128</a> of file <a class="el" href="fl_2str_8h_source.html">str.h</a>.</p>
 
 </div>
 </div>
@@ -683,7 +654,7 @@ template&lt;size_t SIZE = 64&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00240">240</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fl_2str_8h_source.html#l00244">244</a> of file <a class="el" href="fl_2str_8h_source.html">str.h</a>.</p>
 
 </div>
 </div>
@@ -714,7 +685,7 @@ template&lt;size_t M&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00244">244</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fl_2str_8h_source.html#l00248">248</a> of file <a class="el" href="fl_2str_8h_source.html">str.h</a>.</p>
 
 </div>
 </div>
@@ -743,7 +714,7 @@ template&lt;size_t SIZE = 64&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00114">114</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fl_2str_8h_source.html#l00114">114</a> of file <a class="el" href="fl_2str_8h_source.html">str.h</a>.</p>
 
 </div>
 </div>
@@ -774,7 +745,7 @@ template&lt;size_t M&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00118">118</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fl_2str_8h_source.html#l00118">118</a> of file <a class="el" href="fl_2str_8h_source.html">str.h</a>.</p>
 
 </div>
 </div>
@@ -803,7 +774,7 @@ template&lt;size_t SIZE = 64&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00124">124</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fl_2str_8h_source.html#l00124">124</a> of file <a class="el" href="fl_2str_8h_source.html">str.h</a>.</p>
 
 </div>
 </div>
@@ -832,7 +803,7 @@ template&lt;size_t SIZE = 64&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00219">219</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fl_2str_8h_source.html#l00223">223</a> of file <a class="el" href="fl_2str_8h_source.html">str.h</a>.</p>
 
 </div>
 </div>
@@ -861,7 +832,36 @@ template&lt;size_t SIZE = 64&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00227">227</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fl_2str_8h_source.html#l00231">231</a> of file <a class="el" href="fl_2str_8h_source.html">str.h</a>.</p>
+
+</div>
+</div>
+<a id="ad6657ab909ff44f8cce48cf6083190c7" name="ad6657ab909ff44f8cce48cf6083190c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6657ab909ff44f8cce48cf6083190c7">&#9670;&#160;</a></span>reserve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t SIZE = 64&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classfl_1_1_str_n.html">fl::StrN</a>&lt; SIZE &gt;::reserve </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>newCapacity</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="fl_2str_8h_source.html#l00252">252</a> of file <a class="el" href="fl_2str_8h_source.html">str.h</a>.</p>
 
 </div>
 </div>
@@ -890,7 +890,7 @@ template&lt;size_t SIZE = 64&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00209">209</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fl_2str_8h_source.html#l00213">213</a> of file <a class="el" href="fl_2str_8h_source.html">str.h</a>.</p>
 
 </div>
 </div>
@@ -923,7 +923,7 @@ template&lt;size_t SIZE = 64&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00266">266</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fl_2str_8h_source.html#l00296">296</a> of file <a class="el" href="fl_2str_8h_source.html">str.h</a>.</p>
 
 </div>
 </div>
@@ -952,7 +952,7 @@ template&lt;size_t SIZE = 64&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00296">296</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fl_2str_8h_source.html#l00326">326</a> of file <a class="el" href="fl_2str_8h_source.html">str.h</a>.</p>
 
 </div>
 </div>
@@ -981,7 +981,7 @@ template&lt;size_t SIZE = 64&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00283">283</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fl_2str_8h_source.html#l00313">313</a> of file <a class="el" href="fl_2str_8h_source.html">str.h</a>.</p>
 
 </div>
 </div>
@@ -1010,7 +1010,7 @@ template&lt;size_t SIZE = 64&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00198">198</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fl_2str_8h_source.html#l00202">202</a> of file <a class="el" href="fl_2str_8h_source.html">str.h</a>.</p>
 
 </div>
 </div>
@@ -1043,7 +1043,7 @@ template&lt;size_t SIZE = 64&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00168">168</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fl_2str_8h_source.html#l00172">172</a> of file <a class="el" href="fl_2str_8h_source.html">str.h</a>.</p>
 
 </div>
 </div>
@@ -1076,7 +1076,7 @@ template&lt;size_t SIZE = 64&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00163">163</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fl_2str_8h_source.html#l00167">167</a> of file <a class="el" href="fl_2str_8h_source.html">str.h</a>.</p>
 
 </div>
 </div>
@@ -1105,7 +1105,7 @@ template&lt;size_t SIZE = 64&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00157">157</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fl_2str_8h_source.html#l00161">161</a> of file <a class="el" href="fl_2str_8h_source.html">str.h</a>.</p>
 
 </div>
 </div>
@@ -1134,12 +1134,12 @@ template&lt;size_t SIZE = 64&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="str_8h_source.html#l00200">200</a> of file <a class="el" href="str_8h_source.html">str.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fl_2str_8h_source.html#l00204">204</a> of file <a class="el" href="fl_2str_8h_source.html">str.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/runner/work/FastLED/FastLED/src/fl/<a class="el" href="str_8h_source.html">str.h</a></li>
+<li>/home/runner/work/FastLED/FastLED/src/fl/<a class="el" href="fl_2str_8h_source.html">str.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -1147,8 +1147,8 @@ template&lt;size_t SIZE = 64&gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>fl</b></li><li class="navelem"><a class="el" href="classfl_1_1_str_n.html">StrN</a></li>
-    <li class="footer">Generated on Wed Nov 20 2024 08:28:12 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="navelem"><a class="el" href="namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="classfl_1_1_str_n.html">StrN</a></li>
+    <li class="footer">Generated on Tue Dec 17 2024 05:47:35 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.4</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.5</span>
    </div>
   </td>
  </tr>
@@ -122,7 +122,7 @@ $(function(){initNavTree('hsv2rgb_8h.html',''); initResizable(true); });
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ga4580893f03dfe1f0f49679086033a918" id="r_ga4580893f03dfe1f0f49679086033a918"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_s_v2_r_g_b.html#ga4580893f03dfe1f0f49679086033a918">HUE_MAX_RAINBOW</a>&#160;&#160;&#160;255</td></tr>
-<tr class="memdesc:ga4580893f03dfe1f0f49679086033a918"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max hue accepted for the <a class="el" href="group___h_s_v2_r_g_b.html#gab316cfeb8bd5f37d8faaf761ad3c834b" title="Convert an HSV value to RGB using a visually balanced rainbow.">hsv2rgb_rainbow()</a> function.  <br /></td></tr>
+<tr class="memdesc:ga4580893f03dfe1f0f49679086033a918"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max hue accepted for the <a class="el" href="group___h_s_v2_r_g_b.html#gaf722826b0b5d16450ca3da28382e7eb3" title="Forward declaration of hsv2rgb_rainbow here, to avoid circular dependencies.">hsv2rgb_rainbow()</a> function.  <br /></td></tr>
 <tr class="separator:ga4580893f03dfe1f0f49679086033a918"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga65cd3df592c1e5b9f2df4e364b9ae078" id="r_ga65cd3df592c1e5b9f2df4e364b9ae078"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_s_v2_r_g_b.html#ga65cd3df592c1e5b9f2df4e364b9ae078">HUE_MAX_SPECTRUM</a>&#160;&#160;&#160;255</td></tr>
 <tr class="memdesc:ga65cd3df592c1e5b9f2df4e364b9ae078"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max hue accepted for the <a class="el" href="group___h_s_v2_r_g_b.html#ga704160ddb9173c3420a3dbfb44674440" title="Convert an HSV value to RGB using a mathematically straight spectrum.">hsv2rgb_spectrum()</a> function.  <br /></td></tr>
@@ -133,11 +133,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gab316cfeb8bd5f37d8faaf761ad3c834b" id="r_gab316cfeb8bd5f37d8faaf761ad3c834b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_s_v2_r_g_b.html#gab316cfeb8bd5f37d8faaf761ad3c834b">hsv2rgb_rainbow</a> (const struct <a class="el" href="struct_c_h_s_v.html">CHSV</a> &amp;hsv, struct <a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp;rgb)</td></tr>
-<tr class="memdesc:gab316cfeb8bd5f37d8faaf761ad3c834b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert an HSV value to RGB using a visually balanced rainbow.  <br /></td></tr>
-<tr class="separator:gab316cfeb8bd5f37d8faaf761ad3c834b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf722826b0b5d16450ca3da28382e7eb3" id="r_gaf722826b0b5d16450ca3da28382e7eb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_s_v2_r_g_b.html#gaf722826b0b5d16450ca3da28382e7eb3">hsv2rgb_rainbow</a> (const struct <a class="el" href="struct_c_h_s_v.html">CHSV</a> *phsv, struct <a class="el" href="struct_c_r_g_b.html">CRGB</a> *prgb, int numLeds)</td></tr>
-<tr class="memdesc:gaf722826b0b5d16450ca3da28382e7eb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert an HSV value to RGB using a visually balanced rainbow.     <br /></td></tr>
+<tr class="memdesc:gaf722826b0b5d16450ca3da28382e7eb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declaration of hsv2rgb_rainbow here, to avoid circular dependencies.     <br /></td></tr>
 <tr class="separator:gaf722826b0b5d16450ca3da28382e7eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga704160ddb9173c3420a3dbfb44674440" id="r_ga704160ddb9173c3420a3dbfb44674440"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_s_v2_r_g_b.html#ga704160ddb9173c3420a3dbfb44674440">hsv2rgb_spectrum</a> (const struct <a class="el" href="struct_c_h_s_v.html">CHSV</a> &amp;hsv, struct <a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp;rgb)</td></tr>
 <tr class="memdesc:ga704160ddb9173c3420a3dbfb44674440"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert an HSV value to RGB using a mathematically straight spectrum.  <br /></td></tr>
@@ -165,7 +162,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="hsv2rgb_8h.html">hsv2rgb.h</a></li>
-    <li class="footer">Generated on Wed Nov 20 2024 08:28:11 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Dec 17 2024 05:47:34 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

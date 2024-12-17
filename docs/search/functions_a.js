@@ -8,7 +8,9 @@ var searchData=
   ['memcpy8_5',['memcpy8',['../group___fast_memory.html#ga391de93a4b6ccee545531826515f3fc3',1,'lib8tion.h']]],
   ['memmove8_6',['memmove8',['../group___fast_memory.html#gaf5537d0243691002376d6a49566a47d4',1,'lib8tion.h']]],
   ['memset8_7',['memset8',['../group___fast_memory.html#ga78fd4f882354956108ebaf92f74abd42',1,'lib8tion.h']]],
-  ['minutes16_8',['minutes16',['../group___timekeeping.html#ga223820399921e32ddf018a90223ff336',1,'lib8tion.h']]],
-  ['mod8_9',['mod8',['../group___math.html#gaa3beb6c31141a13c1a047b926d065ca2',1,'math8.h']]],
-  ['mul8_10',['mul8',['../group___math.html#gaf170916b55c493ea038c1d96b338e059',1,'math8.h']]]
+  ['message_8',['Message',['../struct_message.html#a539ee7ccd80e06cb2fa45b1f47569837',1,'Message']]],
+  ['midiinterface_9',['MidiInterface',['../class_midi_interface.html#aa32dc5a4cc9a28f82e0509832c73cd18',1,'MidiInterface']]],
+  ['minutes16_10',['minutes16',['../group___timekeeping.html#ga223820399921e32ddf018a90223ff336',1,'lib8tion.h']]],
+  ['mod8_11',['mod8',['../group___math.html#gaa3beb6c31141a13c1a047b926d065ca2',1,'math8.h']]],
+  ['mul8_12',['mul8',['../group___math.html#gaf170916b55c493ea038c1d96b338e059',1,'math8.h']]]
 ];

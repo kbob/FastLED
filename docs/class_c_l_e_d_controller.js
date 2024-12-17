@@ -2,7 +2,7 @@ var class_c_l_e_d_controller =
 [
     [ "CLEDController", "class_c_l_e_d_controller.html#a8c560c6d171f117dfd19c0f2ec780a32", null ],
     [ "clearLedDataInternal", "class_c_l_e_d_controller.html#aca9f099645c6976b1a52ba13ab455352", null ],
-    [ "clearLeds", "class_c_l_e_d_controller.html#a62f220ac1758c8e20d1804dfac4f7ed5", null ],
+    [ "clearLeds", "class_c_l_e_d_controller.html#a6cd8a28d7585fba96407c9678c00d588", null ],
     [ "getAdjustment", "class_c_l_e_d_controller.html#af6173cca91ee446766cc15102990d7bb", null ],
     [ "getCorrection", "class_c_l_e_d_controller.html#a168c661bb9b4a5dfc797b69d3900b26c", null ],
     [ "getDither", "class_c_l_e_d_controller.html#a676f705adf93898739a405b85150a3e7", null ],

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['lanes_0',['lanes',['../class_c_l_e_d_controller.html#a2d3587bbb697ac07641621e7d8dc90ad',1,'CLEDController::lanes()'],['../class_c_pixel_l_e_d_controller.html#a3070b1d4c6771e886472ac5b94c38cf8',1,'CPixelLEDController::lanes()'],['../struct_pixel_controller.html#a5774d9ac88ededea49f5eec4b9772361',1,'PixelController::lanes()']]],
+  ['lanes_0',['lanes',['../class_c_l_e_d_controller.html#a2d3587bbb697ac07641621e7d8dc90ad',1,'CLEDController::lanes()'],['../class_c_pixel_l_e_d_controller.html#a49852a9e0d1d479a430f1843e4ee6314',1,'CPixelLEDController::lanes()'],['../struct_pixel_controller.html#a5774d9ac88ededea49f5eec4b9772361',1,'PixelController::lanes()']]],
   ['leds_1',['leds',['../class_c_l_e_d_controller.html#aa88facc052fcb2c9b86bd635a13f79be',1,'CLEDController::leds()'],['../class_c_fast_l_e_d.html#a22ea7bbda9ab2e306d1c0e7837d4d7f0',1,'CFastLED::leds()']]],
   ['lerp15by16_2',['lerp15by16',['../group___linear_interpolation.html#gad4b09aba4e188e14d3e71d1c9f77f1a5',1,'lib8tion.h']]],
   ['lerp15by8_3',['lerp15by8',['../group___linear_interpolation.html#gaacea0eaea98a065dfa08bb1c147c52a1',1,'lib8tion.h']]],

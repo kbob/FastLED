@@ -527,7 +527,7 @@ var group___pixel_types =
     [ "CRGB::getAverageLight", "group___pixel_types.html#ga940908cc69606bdabe3b2d32a9097356", null ],
     [ "CRGB::getLuma", "group___pixel_types.html#ga1646931c5c6fe7a68548474388a3e97c", null ],
     [ "CRGB::getParity", "group___pixel_types.html#ga385612de52ce7a479fea99a618a397fd", null ],
-    [ "hsv2rgb_rainbow", "group___pixel_types.html#ga06ee0f21e1bf430ea547244f6ed4add8", null ],
+    [ "hsv2rgb_rainbow", "group___pixel_types.html#gab316cfeb8bd5f37d8faaf761ad3c834b", null ],
     [ "CRGB::lerp16", "group___pixel_types.html#ga50b3dca085a99aa549c19ef0aabe3c5c", null ],
     [ "CRGB::lerp8", "group___pixel_types.html#ga858435ed102057edaa676bd6d3d1e9cf", null ],
     [ "CRGB::maximizeBrightness", "group___pixel_types.html#gae830bc1aa13586a2cc64111682d00716", null ],

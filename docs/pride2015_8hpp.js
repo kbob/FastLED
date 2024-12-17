@@ -1,4 +1,4 @@
 var pride2015_8hpp =
 [
-    [ "Pride2015", "class_pride2015.html", "class_pride2015" ]
+    [ "fl::Pride2015", "classfl_1_1_pride2015.html", "classfl_1_1_pride2015" ]
 ];

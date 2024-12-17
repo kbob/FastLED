@@ -7,10 +7,13 @@ var topics =
     [ "Fixed-Point Fractional Types.", "group___fractional_types.html", "group___fractional_types" ],
     [ "Gamma Adjustment Functions", "group___gamma_funcs.html", "group___gamma_funcs" ],
     [ "HSV to RGB Conversion Functions", "group___h_s_v2_r_g_b.html", "group___h_s_v2_r_g_b" ],
+    [ "Input", "group__input.html", "group__input" ],
     [ "LED Chipset Controllers", "group___chipsets.html", "group___chipsets" ],
     [ "Noise Functions", "group___noise.html", "group___noise" ],
+    [ "Output", "group__output.html", "group__output" ],
     [ "Pixel Data Sets", "group___pixel_set.html", "group___pixel_set" ],
     [ "Pixel Data Types (CRGB/CHSV)", "group___pixel_types.html", "group___pixel_types" ],
     [ "Power Management Functions", "group___power.html", "group___power" ],
+    [ "Thru", "group__thru.html", "group__thru" ],
     [ "Timekeeping Functions", "group___timekeeping.html", "group___timekeeping" ]
 ];

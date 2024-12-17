@@ -6,7 +6,6 @@ var hsv2rgb_8cpp =
     [ "FORCE_REFERENCE", "hsv2rgb_8cpp.html#a62d9eb0363957a0e61b35ca80efb31a1", null ],
     [ "HSV_SECTION_3", "hsv2rgb_8cpp.html#aeeee29536659359a2d1bd0be6339aaa0", null ],
     [ "HSV_SECTION_6", "hsv2rgb_8cpp.html#a08e6bc6fcc0701f8fbbdbead2f7e3167", null ],
-    [ "hsv2rgb_rainbow", "group___pixel_types.html#ga06ee0f21e1bf430ea547244f6ed4add8", null ],
     [ "hsv2rgb_rainbow", "group___h_s_v2_r_g_b.html#gaf722826b0b5d16450ca3da28382e7eb3", null ],
     [ "hsv2rgb_raw", "group___h_s_v2_r_g_b.html#ga66f61978949a6830b138d1bf08257019", null ],
     [ "hsv2rgb_raw", "group___h_s_v2_r_g_b.html#ga5ca233d1f5f70b5efdabc405f9bcf8ec", null ],

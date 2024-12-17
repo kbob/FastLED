@@ -14,8 +14,8 @@ var group___clocked_chipsets =
       [ "showPixels", "class_l_p_d6803_controller.html#a35f42384ada050146e6813f0fc766356", null ]
     ] ],
     [ "APA102Controller< DATA_PIN, CLOCK_PIN, RGB_ORDER, SPI_SPEED, GAMMA_CORRECTION_MODE, START_FRAME, END_FRAME >", "class_a_p_a102_controller.html", [
-      [ "init", "class_a_p_a102_controller.html#af354f0751a07151be963a6bc8093f6ef", null ],
-      [ "showPixels", "class_a_p_a102_controller.html#a22100c3d881c1ebce41b9772e821b89c", null ]
+      [ "init", "class_a_p_a102_controller.html#a1e05116946e011a1e8a54de6c9e085e3", null ],
+      [ "showPixels", "class_a_p_a102_controller.html#a523f76b88c07e29cba6c40bd0cefe4b3", null ]
     ] ],
     [ "APA102ControllerHD< DATA_PIN, CLOCK_PIN, RGB_ORDER, SPI_SPEED >", "class_a_p_a102_controller_h_d.html", null ],
     [ "SK9822Controller< DATA_PIN, CLOCK_PIN, RGB_ORDER, SPI_SPEED >", "class_s_k9822_controller.html", null ],
