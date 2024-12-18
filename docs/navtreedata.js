@@ -25,27 +25,14 @@
 var NAVTREE =
 [
   [ "FastLED", "index.html", [
-    [ "About", "index.html#autotoc_md0", null ],
-    [ "Example", "index.html#autotoc_md1", null ],
-    [ "Supported Platforms", "index.html#autotoc_md2", [
-      [ "x86", "index.html#autotoc_md9", null ],
-      [ "Wasm", "index.html#autotoc_md10", null ]
-    ] ],
-    [ "Compiled Library Size Check", "index.html#autotoc_md11", null ],
-    [ "New in 3.9.2!", "index.html#autotoc_md12", null ],
-    [ "Getting Started", "index.html#autotoc_md13", [
-      [ "Arduino IDE / PlatformIO Dual Repo", "index.html#autotoc_md14", null ],
-      [ "ArduinoIDE", "index.html#autotoc_md15", null ]
-    ] ],
-    [ "Development", "index.html#autotoc_md16", [
-      [ "Testing other devices", "index.html#autotoc_md17", null ]
-    ] ],
-    [ "Help and Support", "index.html#autotoc_md18", null ],
-    [ "Supported LED Chipsets", "index.html#autotoc_md19", null ],
-    [ "Supported Platforms", "index.html#autotoc_md20", null ],
-    [ "Special Notes on APA102 and the 'High Definition' Mode in FastLED", "index.html#autotoc_md21", [
-      [ "What about that name?", "index.html#autotoc_md23", null ],
-      [ "For more information", "index.html#autotoc_md24", null ]
+    [ "FastLED Library", "index.html", "index" ],
+    [ "Platform Porting Guide", "md__2home_2runner_2work_2_fast_l_e_d_2_fast_l_e_d_2_p_o_r_t_i_n_g.html", [
+      [ "Fast porting for a new board on existing hardware", "md__2home_2runner_2work_2_fast_l_e_d_2_fast_l_e_d_2_p_o_r_t_i_n_g.html#autotoc_md25", [
+        [ "Setting up the basic files/folders", "md__2home_2runner_2work_2_fast_l_e_d_2_fast_l_e_d_2_p_o_r_t_i_n_g.html#autotoc_md26", null ],
+        [ "Porting fastpin.h", "md__2home_2runner_2work_2_fast_l_e_d_2_fast_l_e_d_2_p_o_r_t_i_n_g.html#autotoc_md27", null ],
+        [ "Porting fastspi.h", "md__2home_2runner_2work_2_fast_l_e_d_2_fast_l_e_d_2_p_o_r_t_i_n_g.html#autotoc_md28", null ],
+        [ "Porting clockless.h", "md__2home_2runner_2work_2_fast_l_e_d_2_fast_l_e_d_2_p_o_r_t_i_n_g.html#autotoc_md29", null ]
+      ] ]
     ] ],
     [ "Todo List", "todo.html", null ],
     [ "Deprecated List", "deprecated.html", null ],
@@ -90,16 +77,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_analog_output_8ino-example.html",
-"class_c_fast_l_e_d.html#a7ae5d3864df01101d82d242c123ffb36",
-"class_c_r_g_b_palette256.html#ae4368fc2706c6a7bc5c4d833c59ed205",
-"classfl_1_1_fixed_set.html",
-"dir_b0ccd010afae1b6736eeed36b0121387.html",
-"group___beat_generators.html#gaa46e5de1c4c27833359e7a97a18c839b",
-"group___palette_upscale.html#gaa88523d1afb29cf3f75b9b2725ba55d3",
-"group___pixel_types.html#ggaeb40a08b7cb90c1e21bd408261558b99a86114e59ba00cbcca43d1317d839b08e",
-"group__output.html#ga2fd10aa2a31236679add8a6a01a5e70a",
-"serial_m_i_d_i_8h.html",
-"unionbitswap__type.html"
+"class_c_fast_l_e_d.html#a3adb23ec5f919524928d576002cb45de",
+"class_c_r_g_b_palette256.html#a98f69fbb4046243df90aa0e77aa0a9b9",
+"classfl_1_1_fire2012.html",
+"dir_786f9dc3989cf40b3de9df2d18ba04d7.html",
+"globals_defs.html",
+"group___palette_colors.html#ga79c94ea554455e72eabab172cc15456f",
+"mapping_8h_source.html",
+"struct_c_r_g_b.html#a3b098899b112c2c9a7ad7490992e0d84",
+"struct_pixel_controller.html#ab44f62f166d162bd1e3b095b368feef2"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

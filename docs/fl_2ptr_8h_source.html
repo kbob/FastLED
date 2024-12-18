@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.5</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.6</span>
    </div>
   </td>
  </tr>
@@ -115,7 +115,7 @@ $(function(){initNavTree('fl_2ptr_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// FastLED smart pointer. This was originally called Ptr&lt;T&gt; but that conflicts with</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">// ArduinoJson::Ptr&lt;T&gt; so it was renamed to Ptr&lt;T&gt;.</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;fl/namespace.h&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="namespace_8h.html">fl/namespace.h</a>&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;fl/scoped_ptr.h&quot;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;fl/template_magic.h&quot;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
@@ -556,11 +556,12 @@ $(function(){initNavTree('fl_2ptr_8h_source.html',''); initResizable(true); });
 <div class="ttc" id="aclassfl_1_1_referent_html"><div class="ttname"><a href="classfl_1_1_referent.html">fl::Referent</a></div><div class="ttdef"><b>Definition</b> <a href="#l00387">ptr.h:387</a></div></div>
 <div class="ttc" id="aclassfl_1_1_weak_ptr_html"><div class="ttname"><a href="classfl_1_1_weak_ptr.html">fl::WeakPtr</a></div><div class="ttdef"><b>Definition</b> <a href="#l00274">ptr.h:274</a></div></div>
 <div class="ttc" id="aclassfl_1_1_weak_referent_html"><div class="ttname"><a href="classfl_1_1_weak_referent.html">fl::WeakReferent</a></div><div class="ttdef"><b>Definition</b> <a href="#l00247">ptr.h:247</a></div></div>
-<div class="ttc" id="agroup___pixel_types_html_ga19fe40faf567a840c117aa10ed9542d2"><div class="ttname"><a href="group___pixel_types.html#ga19fe40faf567a840c117aa10ed9542d2">operator!=</a></div><div class="ttdeci">FASTLED_FORCE_INLINE bool operator!=(const CRGB &amp;lhs, const CRGB &amp;rhs)</div><div class="ttdoc">Check if two CRGB objects do not have the same color data.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00655">crgb.h:655</a></div></div>
-<div class="ttc" id="agroup___pixel_types_html_ga26d453dd63264efc07c23ce640205858"><div class="ttname"><a href="group___pixel_types.html#ga26d453dd63264efc07c23ce640205858">operator==</a></div><div class="ttdeci">FASTLED_FORCE_INLINE bool operator==(const CRGB &amp;lhs, const CRGB &amp;rhs)</div><div class="ttdoc">Check if two CRGB objects have the same color data.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00649">crgb.h:649</a></div></div>
-<div class="ttc" id="agroup___pixel_types_html_ga7f9951a2dbcee1172518377966f1f9d2"><div class="ttname"><a href="group___pixel_types.html#ga7f9951a2dbcee1172518377966f1f9d2">operator&lt;</a></div><div class="ttdeci">FASTLED_FORCE_INLINE bool operator&lt;(const CRGB &amp;lhs, const CRGB &amp;rhs)</div><div class="ttdoc">Check if the sum of the color channels in one CRGB object is less than another.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00673">crgb.h:673</a></div></div>
-<div class="ttc" id="agroup___pixel_types_html_gaeda6b694068cd82be2563b7c748d26e9"><div class="ttname"><a href="group___pixel_types.html#gaeda6b694068cd82be2563b7c748d26e9">operator*</a></div><div class="ttdeci">FASTLED_FORCE_INLINE CRGB operator*(const CRGB &amp;p1, uint8_t d)</div><div class="ttdoc">Multiply each of the channels by a constant, saturating each channel at 0xFF.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8hpp_source.html#l00219">crgb.hpp:219</a></div></div>
-<div class="ttc" id="anamespacefl_html"><div class="ttname"><a href="namespacefl.html">fl</a></div><div class="ttdoc">Implements a simple red square effect for 2D LED grids.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00014">crgb.h:14</a></div></div>
+<div class="ttc" id="agroup___pixel_types_html_ga19fe40faf567a840c117aa10ed9542d2"><div class="ttname"><a href="group___pixel_types.html#ga19fe40faf567a840c117aa10ed9542d2">operator!=</a></div><div class="ttdeci">FASTLED_FORCE_INLINE bool operator!=(const CRGB &amp;lhs, const CRGB &amp;rhs)</div><div class="ttdoc">Check if two CRGB objects do not have the same color data.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00657">crgb.h:657</a></div></div>
+<div class="ttc" id="agroup___pixel_types_html_ga26d453dd63264efc07c23ce640205858"><div class="ttname"><a href="group___pixel_types.html#ga26d453dd63264efc07c23ce640205858">operator==</a></div><div class="ttdeci">FASTLED_FORCE_INLINE bool operator==(const CRGB &amp;lhs, const CRGB &amp;rhs)</div><div class="ttdoc">Check if two CRGB objects have the same color data.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00651">crgb.h:651</a></div></div>
+<div class="ttc" id="agroup___pixel_types_html_ga7f9951a2dbcee1172518377966f1f9d2"><div class="ttname"><a href="group___pixel_types.html#ga7f9951a2dbcee1172518377966f1f9d2">operator&lt;</a></div><div class="ttdeci">FASTLED_FORCE_INLINE bool operator&lt;(const CRGB &amp;lhs, const CRGB &amp;rhs)</div><div class="ttdoc">Check if the sum of the color channels in one CRGB object is less than another.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00675">crgb.h:675</a></div></div>
+<div class="ttc" id="agroup___pixel_types_html_gaeda6b694068cd82be2563b7c748d26e9"><div class="ttname"><a href="group___pixel_types.html#gaeda6b694068cd82be2563b7c748d26e9">operator*</a></div><div class="ttdeci">FASTLED_FORCE_INLINE CRGB operator*(const CRGB &amp;p1, uint8_t d)</div><div class="ttdoc">Multiply each of the channels by a constant, saturating each channel at 0xFF.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8hpp_source.html#l00221">crgb.hpp:221</a></div></div>
+<div class="ttc" id="anamespace_8h_html"><div class="ttname"><a href="namespace_8h.html">namespace.h</a></div><div class="ttdoc">Implements the FastLED namespace macros.</div></div>
+<div class="ttc" id="anamespacefl_html"><div class="ttname"><a href="namespacefl.html">fl</a></div><div class="ttdoc">Implements a simple red square effect for 2D LED grids.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00016">crgb.h:16</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.3-->
@@ -568,7 +569,7 @@ $(function(){initNavTree('fl_2ptr_8h_source.html',''); initResizable(true); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_4d1829fa9bd13d7db71e765b2707b248.html">fl</a></li><li class="navelem"><b>ptr.h</b></li>
-    <li class="footer">Generated on Tue Dec 17 2024 05:47:34 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Dec 18 2024 10:54:37 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

@@ -1,12 +1,12 @@
 var group___fractional_types =
 [
     [ "qfx< T, F, I >", "classqfx.html", [
-      [ "qfx", "group___fractional_types.html#gae91cf242730c99bbca4e647dd2629a5d", null ],
-      [ "qfx", "group___fractional_types.html#ga03d47a4198dc046a24fed3086e7cbab9", null ],
-      [ "operator*", "group___fractional_types.html#ga88a6526d2740e0dc9f74ef5914a32189", null ],
-      [ "operator*", "group___fractional_types.html#gafc146b3284af9770943b7346c5fbb475", null ],
-      [ "operator*", "group___fractional_types.html#ga928d4a612b6d88bb6244f484ec410434", null ],
-      [ "operator*", "group___fractional_types.html#gade4aff0de260ec3cb407553f0e680c55", null ]
+      [ "qfx", "classqfx.html#ae91cf242730c99bbca4e647dd2629a5d", null ],
+      [ "qfx", "classqfx.html#a03d47a4198dc046a24fed3086e7cbab9", null ],
+      [ "operator*", "classqfx.html#a88a6526d2740e0dc9f74ef5914a32189", null ],
+      [ "operator*", "classqfx.html#afc146b3284af9770943b7346c5fbb475", null ],
+      [ "operator*", "classqfx.html#a928d4a612b6d88bb6244f484ec410434", null ],
+      [ "operator*", "classqfx.html#ade4aff0de260ec3cb407553f0e680c55", null ]
     ] ],
     [ "IEEE754binary32_t", "union_i_e_e_e754binary32__t.html", [
       [ "exp_", "union_i_e_e_e754binary32__t.html#aeea434a2c9a709df6bbb95ee1b279f8f", null ],
@@ -37,11 +37,5 @@ var group___fractional_types =
     [ "saccum78", "group___fractional_types.html#ga9585be88f27cab4c367399d8e91c8467", null ],
     [ "sfract15", "group___fractional_types.html#ga00cb5dc9e5b477a58669a3e40bc473c2", null ],
     [ "sfract31", "group___fractional_types.html#gaacc97cd43c4cc598be826de6d4663ec2", null ],
-    [ "sfract7", "group___fractional_types.html#ga7d6219a7247ab1923ed623e7ae0f34ae", null ],
-    [ "qfx::operator*", "group___fractional_types.html#ga88a6526d2740e0dc9f74ef5914a32189", null ],
-    [ "qfx::operator*", "group___fractional_types.html#gafc146b3284af9770943b7346c5fbb475", null ],
-    [ "qfx::operator*", "group___fractional_types.html#ga928d4a612b6d88bb6244f484ec410434", null ],
-    [ "qfx::operator*", "group___fractional_types.html#gade4aff0de260ec3cb407553f0e680c55", null ],
-    [ "qfx::qfx", "group___fractional_types.html#gae91cf242730c99bbca4e647dd2629a5d", null ],
-    [ "qfx::qfx", "group___fractional_types.html#ga03d47a4198dc046a24fed3086e7cbab9", null ]
+    [ "sfract7", "group___fractional_types.html#ga7d6219a7247ab1923ed623e7ae0f34ae", null ]
 ];

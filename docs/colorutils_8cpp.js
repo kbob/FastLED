@@ -19,6 +19,8 @@ var colorutils_8cpp =
     [ "ColorFromPalette", "group___palette_colors.html#gae5e137a13a4b6145fe40007328d398f4", null ],
     [ "ColorFromPalette", "group___palette_colors.html#ga0a1bd774cd65ee7b85a20c11212bbd95", null ],
     [ "ColorFromPalette", "group___palette_colors.html#gaea6bd3ab3ec62d88e2dcc7ab2486dcd4", null ],
+    [ "ColorFromPaletteExtended", "group___palette_colors.html#ga61f55da5eb81ddc50f7855b26fb0d69b", null ],
+    [ "ColorFromPaletteExtended", "group___palette_colors.html#ga59c2f3e8a12b9eef789c37ae4d5f0182", null ],
     [ "fade_raw", "group___color_fades.html#gac020b03041306ed9c859bbdfebe943cf", null ],
     [ "fade_video", "group___color_fades.html#gaff656b0046fac0d40b8eb02941ce1755", null ],
     [ "fadeLightBy", "group___color_fades.html#gac1e25878d16efa6112d907738f525773", null ],

@@ -20,7 +20,7 @@ var dir_4d1829fa9bd13d7db71e765b2707b248 =
     [ "lut.h", "fl_2lut_8h_source.html", null ],
     [ "map.h", "map_8h_source.html", null ],
     [ "math_macros.h", "fl_2math__macros_8h_source.html", null ],
-    [ "namespace.h", "namespace_8h_source.html", null ],
+    [ "namespace.h", "namespace_8h.html", "namespace_8h" ],
     [ "pair.h", "pair_8h_source.html", null ],
     [ "ptr.h", "fl_2ptr_8h_source.html", null ],
     [ "ref.cpp", "ref_8cpp_source.html", null ],

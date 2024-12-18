@@ -1,8 +1,11 @@
 var searchData=
 [
-  ['no_5fhardware_5fpin_5fsupport_0',['NO_HARDWARE_PIN_SUPPORT',['../_fast_l_e_d_8h.html#ad745fb280b8fb379961f6520f18f775a',1,'FastLED.h']]],
-  ['no_5fpin_1',['NO_PIN',['../fastpin_8h.html#a4af4244f8a09607e0d6a5d0ee80f1de8',1,'fastpin.h']]],
-  ['no_5ftime_2',['NO_TIME',['../fastled__delay_8h.html#acd145d740ef1b06533fce6d4659401a2',1,'fastled_delay.h']]],
-  ['ns_3',['NS',['../fastled__delay_8h.html#a3c2d7a356c40ef25cfcaaad8556a71c2',1,'fastled_delay.h']]],
-  ['num_5fcontrollers_4',['NUM_CONTROLLERS',['../_fast_l_e_d_8h.html#a825effbe157f971450cc2cff08f71792',1,'FastLED.h']]]
+  ['mask_5fskip_5fbits_0',['MASK_SKIP_BITS',['../fastspi__types_8h.html#afe32f8062c70f2114bd3a7adb55a4be3',1,'fastspi_types.h']]],
+  ['max_5fdata_5frate_1',['MAX_DATA_RATE',['../fastspi__types_8h.html#aeb2ddb65a3f7469985904ba925931e53',1,'fastspi_types.h']]],
+  ['max_5flikely_5fupdate_5frate_5fhz_2',['MAX_LIKELY_UPDATE_RATE_HZ',['../pixel__controller_8h.html#a6b62d843cb5aa0c21dceafe56901fd17',1,'pixel_controller.h']]],
+  ['midi_5fcreate_5fcustom_5finstance_3',['MIDI_CREATE_CUSTOM_INSTANCE',['../serial_m_i_d_i_8h.html#a95faae7d93fc1a603f99cc7ad92d72bf',1,'serialMIDI.h']]],
+  ['midi_5fcreate_5fdefault_5finstance_4',['MIDI_CREATE_DEFAULT_INSTANCE',['../serial_m_i_d_i_8h.html#af0378001dcec67ea873914c090a03450',1,'serialMIDI.h']]],
+  ['midi_5fcreate_5finstance_5',['MIDI_CREATE_INSTANCE',['../serial_m_i_d_i_8h.html#a83fed545a39b0bd6e50adf2b85e89fb1',1,'serialMIDI.h']]],
+  ['min_5facceptable_5fdither_5frate_5fhz_6',['MIN_ACCEPTABLE_DITHER_RATE_HZ',['../pixel__controller_8h.html#a4e5988c0a9a14761da407256de025abf',1,'pixel_controller.h']]],
+  ['min_5fdelay_7',['MIN_DELAY',['../fastspi__bitbang_8h.html#ad3b51637a39a4ff75bd979b917cb89ef',1,'fastspi_bitbang.h']]]
 ];

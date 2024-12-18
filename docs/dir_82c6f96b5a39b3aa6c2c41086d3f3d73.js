@@ -5,6 +5,7 @@ var dir_82c6f96b5a39b3aa6c2c41086d3f3d73 =
     [ "color.h", "examples_2_luminescent_grand_2shared_2color_8h_source.html", null ],
     [ "color_mapper.cpp", "color__mapper_8cpp_source.html", null ],
     [ "color_mapper.h", "color__mapper_8h_source.html", null ],
+    [ "defs.h", "defs_8h_source.html", null ],
     [ "dprint.cpp", "dprint_8cpp_source.html", null ],
     [ "dprint.h", "dprint_8h_source.html", null ],
     [ "framebuffer.cpp", "framebuffer_8cpp_source.html", null ],

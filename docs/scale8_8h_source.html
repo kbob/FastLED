@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.5</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.6</span>
    </div>
   </td>
  </tr>
@@ -109,17 +109,17 @@ $(function(){initNavTree('scale8_8h_source.html',''); initResizable(true); });
 <div class="contents">
 <a href="scale8_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;lib8static.h&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;crgb.h&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;fl/namespace.h&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="lib8static_8h.html">lib8static.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="crgb_8h.html">crgb.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="namespace_8h.html">fl/namespace.h</a>&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>FASTLED_NAMESPACE_BEGIN</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><a class="code hl_define" href="namespace_8h.html#a556e256b05a4b158f3606e4a978101ba">FASTLED_NAMESPACE_BEGIN</a></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="group___scaling.html#gad7535ccda9c92470c4e6ee0265585555">   34</a></span>LIB8STATIC_ALWAYS_INLINE uint8_t <a class="code hl_function" href="group___scaling.html#gad7535ccda9c92470c4e6ee0265585555">scale8</a>(uint8_t i, <a class="code hl_typedef" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> scale) {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="group___scaling.html#gad7535ccda9c92470c4e6ee0265585555">   34</a></span><a class="code hl_define" href="group__lib8tion.html#gaf64ff1e31d93cd9d84b5056d99ce8dd4">LIB8STATIC_ALWAYS_INLINE</a> uint8_t <a class="code hl_function" href="group___scaling.html#gad7535ccda9c92470c4e6ee0265585555">scale8</a>(uint8_t i, <a class="code hl_typedef" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> scale) {</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#if SCALE8_C == 1</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#if (FASTLED_SCALE8_FIXED == 1)</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordflow">return</span> (((uint16_t)i) * (1 + (uint16_t)(scale))) &gt;&gt; 8;</div>
@@ -195,7 +195,7 @@ $(function(){initNavTree('scale8_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>}</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
 <div class="foldopen" id="foldopen00117" data-start="{" data-end="}">
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="group___scaling.html#ga628b417ea1507e3447cdf5f308d9b6d5">  117</a></span>LIB8STATIC_ALWAYS_INLINE uint8_t <a class="code hl_function" href="group___scaling.html#ga628b417ea1507e3447cdf5f308d9b6d5">scale8_video</a>(uint8_t i, <a class="code hl_typedef" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> scale) {</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="group___scaling.html#ga628b417ea1507e3447cdf5f308d9b6d5">  117</a></span><a class="code hl_define" href="group__lib8tion.html#gaf64ff1e31d93cd9d84b5056d99ce8dd4">LIB8STATIC_ALWAYS_INLINE</a> uint8_t <a class="code hl_function" href="group___scaling.html#ga628b417ea1507e3447cdf5f308d9b6d5">scale8_video</a>(uint8_t i, <a class="code hl_typedef" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> scale) {</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="preprocessor">#if SCALE8_C == 1 || defined(LIB8_ATTINY)</span></div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    uint8_t j = (((int)i * (<span class="keywordtype">int</span>)scale) &gt;&gt; 8) + ((i &amp;&amp; scale) ? 1 : 0);</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="comment">// uint8_t nonzeroscale = (scale != 0) ? 1 : 0;</span></div>
@@ -238,7 +238,7 @@ $(function(){initNavTree('scale8_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
 <div class="foldopen" id="foldopen00170" data-start="{" data-end="}">
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="group___scaling_dirty.html#ga7386235cada3aca429b189681d2ec56d">  170</a></span>LIB8STATIC_ALWAYS_INLINE uint8_t <a class="code hl_function" href="group___scaling_dirty.html#ga7386235cada3aca429b189681d2ec56d">scale8_LEAVING_R1_DIRTY</a>(uint8_t i,</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="group___scaling_dirty.html#ga7386235cada3aca429b189681d2ec56d">  170</a></span><a class="code hl_define" href="group__lib8tion.html#gaf64ff1e31d93cd9d84b5056d99ce8dd4">LIB8STATIC_ALWAYS_INLINE</a> uint8_t <a class="code hl_function" href="group___scaling_dirty.html#ga7386235cada3aca429b189681d2ec56d">scale8_LEAVING_R1_DIRTY</a>(uint8_t i,</div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>                                                         <a class="code hl_typedef" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> scale) {</div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="preprocessor">#if SCALE8_C == 1</span></div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="preprocessor">#if (FASTLED_SCALE8_FIXED == 1)</span></div>
@@ -278,7 +278,7 @@ $(function(){initNavTree('scale8_8h_source.html',''); initResizable(true); });
 </div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
 <div class="foldopen" id="foldopen00217" data-start="{" data-end="}">
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="group___scaling_dirty.html#ga025b1e8d81032d15fe1ab500f804f3f2">  217</a></span>LIB8STATIC_ALWAYS_INLINE <span class="keywordtype">void</span> <a class="code hl_function" href="group___scaling_dirty.html#ga025b1e8d81032d15fe1ab500f804f3f2">nscale8_LEAVING_R1_DIRTY</a>(uint8_t &amp;i,</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="group___scaling_dirty.html#ga025b1e8d81032d15fe1ab500f804f3f2">  217</a></span><a class="code hl_define" href="group__lib8tion.html#gaf64ff1e31d93cd9d84b5056d99ce8dd4">LIB8STATIC_ALWAYS_INLINE</a> <span class="keywordtype">void</span> <a class="code hl_function" href="group___scaling_dirty.html#ga025b1e8d81032d15fe1ab500f804f3f2">nscale8_LEAVING_R1_DIRTY</a>(uint8_t &amp;i,</div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>                                                       <a class="code hl_typedef" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> scale) {</div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="preprocessor">#if SCALE8_C == 1</span></div>
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="preprocessor">#if (FASTLED_SCALE8_FIXED == 1)</span></div>
@@ -317,7 +317,7 @@ $(function(){initNavTree('scale8_8h_source.html',''); initResizable(true); });
 </div>
 <div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
 <div class="foldopen" id="foldopen00262" data-start="{" data-end="}">
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno"><a class="line" href="group___scaling_dirty.html#gaf8e0821f34434cd6bfed4a16a895da23">  262</a></span>LIB8STATIC_ALWAYS_INLINE uint8_t <a class="code hl_function" href="group___scaling_dirty.html#gaf8e0821f34434cd6bfed4a16a895da23">scale8_video_LEAVING_R1_DIRTY</a>(uint8_t i,</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno"><a class="line" href="group___scaling_dirty.html#gaf8e0821f34434cd6bfed4a16a895da23">  262</a></span><a class="code hl_define" href="group__lib8tion.html#gaf64ff1e31d93cd9d84b5056d99ce8dd4">LIB8STATIC_ALWAYS_INLINE</a> uint8_t <a class="code hl_function" href="group___scaling_dirty.html#gaf8e0821f34434cd6bfed4a16a895da23">scale8_video_LEAVING_R1_DIRTY</a>(uint8_t i,</div>
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>                                                               <a class="code hl_typedef" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> scale) {</div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span><span class="preprocessor">#if SCALE8_C == 1 || defined(LIB8_ATTINY)</span></div>
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    uint8_t j = (((int)i * (<span class="keywordtype">int</span>)scale) &gt;&gt; 8) + ((i &amp;&amp; scale) ? 1 : 0);</div>
@@ -359,7 +359,7 @@ $(function(){initNavTree('scale8_8h_source.html',''); initResizable(true); });
 </div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span> </div>
 <div class="foldopen" id="foldopen00311" data-start="{" data-end="}">
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno"><a class="line" href="group___scaling_dirty.html#gadfd26d9b154f5ec79dbffe612dafd146">  311</a></span>LIB8STATIC_ALWAYS_INLINE <span class="keywordtype">void</span> <a class="code hl_function" href="group___scaling_dirty.html#gadfd26d9b154f5ec79dbffe612dafd146">nscale8_video_LEAVING_R1_DIRTY</a>(uint8_t &amp;i,</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno"><a class="line" href="group___scaling_dirty.html#gadfd26d9b154f5ec79dbffe612dafd146">  311</a></span><a class="code hl_define" href="group__lib8tion.html#gaf64ff1e31d93cd9d84b5056d99ce8dd4">LIB8STATIC_ALWAYS_INLINE</a> <span class="keywordtype">void</span> <a class="code hl_function" href="group___scaling_dirty.html#gadfd26d9b154f5ec79dbffe612dafd146">nscale8_video_LEAVING_R1_DIRTY</a>(uint8_t &amp;i,</div>
 <div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>                                                             <a class="code hl_typedef" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> scale) {</div>
 <div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span><span class="preprocessor">#if SCALE8_C == 1 || defined(LIB8_ATTINY)</span></div>
 <div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    i = (((int)i * (<span class="keywordtype">int</span>)scale) &gt;&gt; 8) + ((i &amp;&amp; scale) ? 1 : 0);</div>
@@ -381,7 +381,7 @@ $(function(){initNavTree('scale8_8h_source.html',''); initResizable(true); });
 </div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
 <div class="foldopen" id="foldopen00333" data-start="{" data-end="}">
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno"><a class="line" href="group___scaling_dirty.html#ga3fade00fb4cf5b937b973128198a7a79">  333</a></span>LIB8STATIC_ALWAYS_INLINE <span class="keywordtype">void</span> <a class="code hl_function" href="group___scaling_dirty.html#ga3fade00fb4cf5b937b973128198a7a79">cleanup_R1</a>() {</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno"><a class="line" href="group___scaling_dirty.html#ga3fade00fb4cf5b937b973128198a7a79">  333</a></span><a class="code hl_define" href="group__lib8tion.html#gaf64ff1e31d93cd9d84b5056d99ce8dd4">LIB8STATIC_ALWAYS_INLINE</a> <span class="keywordtype">void</span> <a class="code hl_function" href="group___scaling_dirty.html#ga3fade00fb4cf5b937b973128198a7a79">cleanup_R1</a>() {</div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span><span class="preprocessor">#if CLEANUP_R1_AVRASM == 1</span></div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>    <span class="comment">// Restore r1 to &quot;0&quot;; it&#39;s expected to always be that</span></div>
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>    <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;clr __zero_reg__  \n\t&quot;</span> : : : <span class="stringliteral">&quot;r1&quot;</span>);</div>
@@ -396,7 +396,7 @@ $(function(){initNavTree('scale8_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span> </div>
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span> </div>
 <div class="foldopen" id="foldopen00357" data-start="{" data-end="}">
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno"><a class="line" href="group___scaling.html#ga39bf87e5526120889086cab19ac749b1">  357</a></span>LIB8STATIC <span class="keywordtype">void</span> <a class="code hl_function" href="group___scaling.html#ga39bf87e5526120889086cab19ac749b1">nscale8x3</a>(uint8_t &amp;r, uint8_t &amp;g, uint8_t &amp;b, <a class="code hl_typedef" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> scale) {</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno"><a class="line" href="group___scaling.html#ga39bf87e5526120889086cab19ac749b1">  357</a></span><a class="code hl_define" href="group__lib8tion.html#gac735bdef91ee1e80778434336a622138">LIB8STATIC</a> <span class="keywordtype">void</span> <a class="code hl_function" href="group___scaling.html#ga39bf87e5526120889086cab19ac749b1">nscale8x3</a>(uint8_t &amp;r, uint8_t &amp;g, uint8_t &amp;b, <a class="code hl_typedef" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> scale) {</div>
 <div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span><span class="preprocessor">#if SCALE8_C == 1</span></div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span><span class="preprocessor">#if (FASTLED_SCALE8_FIXED == 1)</span></div>
 <div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>    uint16_t scale_fixed = scale + 1;</div>
@@ -420,7 +420,7 @@ $(function(){initNavTree('scale8_8h_source.html',''); initResizable(true); });
 </div>
 <div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span> </div>
 <div class="foldopen" id="foldopen00391" data-start="{" data-end="}">
-<div class="line"><a id="l00391" name="l00391"></a><span class="lineno"><a class="line" href="group___scaling.html#ga700b7f510f32e8c91385093c436c27d9">  391</a></span>LIB8STATIC <span class="keywordtype">void</span> <a class="code hl_function" href="group___scaling.html#ga700b7f510f32e8c91385093c436c27d9">nscale8x3_video</a>(uint8_t &amp;r, uint8_t &amp;g, uint8_t &amp;b,</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno"><a class="line" href="group___scaling.html#ga700b7f510f32e8c91385093c436c27d9">  391</a></span><a class="code hl_define" href="group__lib8tion.html#gac735bdef91ee1e80778434336a622138">LIB8STATIC</a> <span class="keywordtype">void</span> <a class="code hl_function" href="group___scaling.html#ga700b7f510f32e8c91385093c436c27d9">nscale8x3_video</a>(uint8_t &amp;r, uint8_t &amp;g, uint8_t &amp;b,</div>
 <div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>                                <a class="code hl_typedef" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> scale) {</div>
 <div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span><span class="preprocessor">#if SCALE8_C == 1</span></div>
 <div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>    uint8_t nonzeroscale = (scale != 0) ? 1 : 0;</div>
@@ -439,7 +439,7 @@ $(function(){initNavTree('scale8_8h_source.html',''); initResizable(true); });
 </div>
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span> </div>
 <div class="foldopen" id="foldopen00417" data-start="{" data-end="}">
-<div class="line"><a id="l00417" name="l00417"></a><span class="lineno"><a class="line" href="group___scaling.html#ga6f419761a744efed4bae8875ac07aef0">  417</a></span>LIB8STATIC <span class="keywordtype">void</span> <a class="code hl_function" href="group___scaling.html#ga6f419761a744efed4bae8875ac07aef0">nscale8x2</a>(uint8_t &amp;i, uint8_t &amp;j, <a class="code hl_typedef" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> scale) {</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno"><a class="line" href="group___scaling.html#ga6f419761a744efed4bae8875ac07aef0">  417</a></span><a class="code hl_define" href="group__lib8tion.html#gac735bdef91ee1e80778434336a622138">LIB8STATIC</a> <span class="keywordtype">void</span> <a class="code hl_function" href="group___scaling.html#ga6f419761a744efed4bae8875ac07aef0">nscale8x2</a>(uint8_t &amp;i, uint8_t &amp;j, <a class="code hl_typedef" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> scale) {</div>
 <div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span><span class="preprocessor">#if SCALE8_C == 1</span></div>
 <div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span><span class="preprocessor">#if FASTLED_SCALE8_FIXED == 1</span></div>
 <div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>    uint16_t scale_fixed = scale + 1;</div>
@@ -460,7 +460,7 @@ $(function(){initNavTree('scale8_8h_source.html',''); initResizable(true); });
 </div>
 <div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span> </div>
 <div class="foldopen" id="foldopen00447" data-start="{" data-end="}">
-<div class="line"><a id="l00447" name="l00447"></a><span class="lineno"><a class="line" href="group___scaling.html#ga4204edd4a3f8aac7124a10f1f5cfccfe">  447</a></span>LIB8STATIC <span class="keywordtype">void</span> <a class="code hl_function" href="group___scaling.html#ga4204edd4a3f8aac7124a10f1f5cfccfe">nscale8x2_video</a>(uint8_t &amp;i, uint8_t &amp;j, <a class="code hl_typedef" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> scale) {</div>
+<div class="line"><a id="l00447" name="l00447"></a><span class="lineno"><a class="line" href="group___scaling.html#ga4204edd4a3f8aac7124a10f1f5cfccfe">  447</a></span><a class="code hl_define" href="group__lib8tion.html#gac735bdef91ee1e80778434336a622138">LIB8STATIC</a> <span class="keywordtype">void</span> <a class="code hl_function" href="group___scaling.html#ga4204edd4a3f8aac7124a10f1f5cfccfe">nscale8x2_video</a>(uint8_t &amp;i, uint8_t &amp;j, <a class="code hl_typedef" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> scale) {</div>
 <div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span><span class="preprocessor">#if SCALE8_C == 1</span></div>
 <div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>    uint8_t nonzeroscale = (scale != 0) ? 1 : 0;</div>
 <div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>    i = (i == 0) ? 0 : (((int)i * (<span class="keywordtype">int</span>)(scale)) &gt;&gt; 8) + nonzeroscale;</div>
@@ -476,7 +476,7 @@ $(function(){initNavTree('scale8_8h_source.html',''); initResizable(true); });
 </div>
 <div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span> </div>
 <div class="foldopen" id="foldopen00468" data-start="{" data-end="}">
-<div class="line"><a id="l00468" name="l00468"></a><span class="lineno"><a class="line" href="group___scaling.html#gaa51d5b048c2a4a20a00bddcdc257daaf">  468</a></span>LIB8STATIC_ALWAYS_INLINE uint16_t <a class="code hl_function" href="group___scaling.html#gaa51d5b048c2a4a20a00bddcdc257daaf">scale16by8</a>(uint16_t i, <a class="code hl_typedef" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> scale) {</div>
+<div class="line"><a id="l00468" name="l00468"></a><span class="lineno"><a class="line" href="group___scaling.html#gaa51d5b048c2a4a20a00bddcdc257daaf">  468</a></span><a class="code hl_define" href="group__lib8tion.html#gaf64ff1e31d93cd9d84b5056d99ce8dd4">LIB8STATIC_ALWAYS_INLINE</a> uint16_t <a class="code hl_function" href="group___scaling.html#gaa51d5b048c2a4a20a00bddcdc257daaf">scale16by8</a>(uint16_t i, <a class="code hl_typedef" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a> scale) {</div>
 <div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>    <span class="keywordflow">if</span> (scale == 0) {</div>
 <div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>        <span class="keywordflow">return</span> 0; <span class="comment">// Fixes non zero output when scale == 0 and</span></div>
 <div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span>                  <span class="comment">// FASTLED_SCALE8_FIXED==1</span></div>
@@ -544,7 +544,7 @@ $(function(){initNavTree('scale8_8h_source.html',''); initResizable(true); });
 </div>
 <div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span> </div>
 <div class="foldopen" id="foldopen00540" data-start="{" data-end="}">
-<div class="line"><a id="l00540" name="l00540"></a><span class="lineno"><a class="line" href="group___scaling.html#ga1ff8ac00ad78e22acc7bb7445bfdb145">  540</a></span>LIB8STATIC uint16_t <a class="code hl_function" href="group___scaling.html#ga1ff8ac00ad78e22acc7bb7445bfdb145">scale16</a>(uint16_t i, <a class="code hl_typedef" href="group___fractional_types.html#gaaf46b9f719ef3bdb574f8e967af6dbb5">fract16</a> scale) {</div>
+<div class="line"><a id="l00540" name="l00540"></a><span class="lineno"><a class="line" href="group___scaling.html#ga1ff8ac00ad78e22acc7bb7445bfdb145">  540</a></span><a class="code hl_define" href="group__lib8tion.html#gac735bdef91ee1e80778434336a622138">LIB8STATIC</a> uint16_t <a class="code hl_function" href="group___scaling.html#ga1ff8ac00ad78e22acc7bb7445bfdb145">scale16</a>(uint16_t i, <a class="code hl_typedef" href="group___fractional_types.html#gaaf46b9f719ef3bdb574f8e967af6dbb5">fract16</a> scale) {</div>
 <div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span><span class="preprocessor">#if SCALE16_C == 1</span></div>
 <div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>    uint16_t result;</div>
 <div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span><span class="preprocessor">#if FASTLED_SCALE8_FIXED == 1</span></div>
@@ -690,12 +690,12 @@ $(function(){initNavTree('scale8_8h_source.html',''); initResizable(true); });
 </div>
 <div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span> </div>
 <div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span> </div>
-<div class="line"><a id="l00703" name="l00703"></a><span class="lineno"><a class="line" href="group___dimming.html#gae51352a3522bb8eae5e17dbee97aa1aa">  703</a></span>LIB8STATIC uint8_t <a class="code hl_function" href="group___dimming.html#gae51352a3522bb8eae5e17dbee97aa1aa">dim8_raw</a>(uint8_t x) { <span class="keywordflow">return</span> <a class="code hl_function" href="group___scaling.html#gad7535ccda9c92470c4e6ee0265585555">scale8</a>(x, x); }</div>
+<div class="line"><a id="l00703" name="l00703"></a><span class="lineno"><a class="line" href="group___dimming.html#gae51352a3522bb8eae5e17dbee97aa1aa">  703</a></span><a class="code hl_define" href="group__lib8tion.html#gac735bdef91ee1e80778434336a622138">LIB8STATIC</a> uint8_t <a class="code hl_function" href="group___dimming.html#gae51352a3522bb8eae5e17dbee97aa1aa">dim8_raw</a>(uint8_t x) { <span class="keywordflow">return</span> <a class="code hl_function" href="group___scaling.html#gad7535ccda9c92470c4e6ee0265585555">scale8</a>(x, x); }</div>
 <div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span> </div>
-<div class="line"><a id="l00707" name="l00707"></a><span class="lineno"><a class="line" href="group___dimming.html#ga40a13446a2022dc489be8b2a8f2fa494">  707</a></span>LIB8STATIC uint8_t <a class="code hl_function" href="group___dimming.html#ga40a13446a2022dc489be8b2a8f2fa494">dim8_video</a>(uint8_t x) { <span class="keywordflow">return</span> <a class="code hl_function" href="group___scaling.html#ga628b417ea1507e3447cdf5f308d9b6d5">scale8_video</a>(x, x); }</div>
+<div class="line"><a id="l00707" name="l00707"></a><span class="lineno"><a class="line" href="group___dimming.html#ga40a13446a2022dc489be8b2a8f2fa494">  707</a></span><a class="code hl_define" href="group__lib8tion.html#gac735bdef91ee1e80778434336a622138">LIB8STATIC</a> uint8_t <a class="code hl_function" href="group___dimming.html#ga40a13446a2022dc489be8b2a8f2fa494">dim8_video</a>(uint8_t x) { <span class="keywordflow">return</span> <a class="code hl_function" href="group___scaling.html#ga628b417ea1507e3447cdf5f308d9b6d5">scale8_video</a>(x, x); }</div>
 <div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span> </div>
 <div class="foldopen" id="foldopen00710" data-start="{" data-end="}">
-<div class="line"><a id="l00710" name="l00710"></a><span class="lineno"><a class="line" href="group___dimming.html#ga3f94d2455e0aa92133f77af8747b5914">  710</a></span>LIB8STATIC uint8_t <a class="code hl_function" href="group___dimming.html#ga3f94d2455e0aa92133f77af8747b5914">dim8_lin</a>(uint8_t x) {</div>
+<div class="line"><a id="l00710" name="l00710"></a><span class="lineno"><a class="line" href="group___dimming.html#ga3f94d2455e0aa92133f77af8747b5914">  710</a></span><a class="code hl_define" href="group__lib8tion.html#gac735bdef91ee1e80778434336a622138">LIB8STATIC</a> uint8_t <a class="code hl_function" href="group___dimming.html#ga3f94d2455e0aa92133f77af8747b5914">dim8_lin</a>(uint8_t x) {</div>
 <div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>    <span class="keywordflow">if</span> (x &amp; 0x80) {</div>
 <div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>        x = <a class="code hl_function" href="group___scaling.html#gad7535ccda9c92470c4e6ee0265585555">scale8</a>(x, x);</div>
 <div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>    } <span class="keywordflow">else</span> {</div>
@@ -707,21 +707,21 @@ $(function(){initNavTree('scale8_8h_source.html',''); initResizable(true); });
 </div>
 <div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span> </div>
 <div class="foldopen" id="foldopen00721" data-start="{" data-end="}">
-<div class="line"><a id="l00721" name="l00721"></a><span class="lineno"><a class="line" href="group___dimming.html#gae8e36472a70f3016595048532d6c3a2d">  721</a></span>LIB8STATIC uint8_t <a class="code hl_function" href="group___dimming.html#gae8e36472a70f3016595048532d6c3a2d">brighten8_raw</a>(uint8_t x) {</div>
+<div class="line"><a id="l00721" name="l00721"></a><span class="lineno"><a class="line" href="group___dimming.html#gae8e36472a70f3016595048532d6c3a2d">  721</a></span><a class="code hl_define" href="group__lib8tion.html#gac735bdef91ee1e80778434336a622138">LIB8STATIC</a> uint8_t <a class="code hl_function" href="group___dimming.html#gae8e36472a70f3016595048532d6c3a2d">brighten8_raw</a>(uint8_t x) {</div>
 <div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>    uint8_t ix = 255 - x;</div>
 <div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>    <span class="keywordflow">return</span> 255 - <a class="code hl_function" href="group___scaling.html#gad7535ccda9c92470c4e6ee0265585555">scale8</a>(ix, ix);</div>
 <div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>}</div>
 </div>
 <div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span> </div>
 <div class="foldopen" id="foldopen00727" data-start="{" data-end="}">
-<div class="line"><a id="l00727" name="l00727"></a><span class="lineno"><a class="line" href="group___dimming.html#gad21876a676bcf26c47f957faed23f9bb">  727</a></span>LIB8STATIC uint8_t <a class="code hl_function" href="group___dimming.html#gad21876a676bcf26c47f957faed23f9bb">brighten8_video</a>(uint8_t x) {</div>
+<div class="line"><a id="l00727" name="l00727"></a><span class="lineno"><a class="line" href="group___dimming.html#gad21876a676bcf26c47f957faed23f9bb">  727</a></span><a class="code hl_define" href="group__lib8tion.html#gac735bdef91ee1e80778434336a622138">LIB8STATIC</a> uint8_t <a class="code hl_function" href="group___dimming.html#gad21876a676bcf26c47f957faed23f9bb">brighten8_video</a>(uint8_t x) {</div>
 <div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>    uint8_t ix = 255 - x;</div>
 <div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>    <span class="keywordflow">return</span> 255 - <a class="code hl_function" href="group___scaling.html#ga628b417ea1507e3447cdf5f308d9b6d5">scale8_video</a>(ix, ix);</div>
 <div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>}</div>
 </div>
 <div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span> </div>
 <div class="foldopen" id="foldopen00733" data-start="{" data-end="}">
-<div class="line"><a id="l00733" name="l00733"></a><span class="lineno"><a class="line" href="group___dimming.html#ga094bda002b416c66e57521fc93878830">  733</a></span>LIB8STATIC uint8_t <a class="code hl_function" href="group___dimming.html#ga094bda002b416c66e57521fc93878830">brighten8_lin</a>(uint8_t x) {</div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno"><a class="line" href="group___dimming.html#ga094bda002b416c66e57521fc93878830">  733</a></span><a class="code hl_define" href="group__lib8tion.html#gac735bdef91ee1e80778434336a622138">LIB8STATIC</a> uint8_t <a class="code hl_function" href="group___dimming.html#ga094bda002b416c66e57521fc93878830">brighten8_lin</a>(uint8_t x) {</div>
 <div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span>    uint8_t ix = 255 - x;</div>
 <div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>    <span class="keywordflow">if</span> (ix &amp; 0x80) {</div>
 <div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>        ix = <a class="code hl_function" href="group___scaling.html#gad7535ccda9c92470c4e6ee0265585555">scale8</a>(ix, ix);</div>
@@ -734,15 +734,16 @@ $(function(){initNavTree('scale8_8h_source.html',''); initResizable(true); });
 </div>
 <div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span> </div>
 <div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span> </div>
-<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>FASTLED_NAMESPACE_END</div>
+<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span><a class="code hl_define" href="namespace_8h.html#a1d5d01fb2365bb29ff7972156bff53e8">FASTLED_NAMESPACE_END</a></div>
+<div class="ttc" id="acrgb_8h_html"><div class="ttname"><a href="crgb_8h.html">crgb.h</a></div><div class="ttdoc">Defines the red, green, and blue (RGB) pixel struct.</div></div>
 <div class="ttc" id="agroup___dimming_html_ga094bda002b416c66e57521fc93878830"><div class="ttname"><a href="group___dimming.html#ga094bda002b416c66e57521fc93878830">brighten8_lin</a></div><div class="ttdeci">LIB8STATIC uint8_t brighten8_lin(uint8_t x)</div><div class="ttdoc">Brighten a value (inverse of dim8_lin())</div><div class="ttdef"><b>Definition</b> <a href="#l00733">scale8.h:733</a></div></div>
 <div class="ttc" id="agroup___dimming_html_ga3f94d2455e0aa92133f77af8747b5914"><div class="ttname"><a href="group___dimming.html#ga3f94d2455e0aa92133f77af8747b5914">dim8_lin</a></div><div class="ttdeci">LIB8STATIC uint8_t dim8_lin(uint8_t x)</div><div class="ttdoc">Linear version of the dimming function that halves for values &lt; 128.</div><div class="ttdef"><b>Definition</b> <a href="#l00710">scale8.h:710</a></div></div>
 <div class="ttc" id="agroup___dimming_html_ga40a13446a2022dc489be8b2a8f2fa494"><div class="ttname"><a href="group___dimming.html#ga40a13446a2022dc489be8b2a8f2fa494">dim8_video</a></div><div class="ttdeci">LIB8STATIC uint8_t dim8_video(uint8_t x)</div><div class="ttdoc">Adjust a scaling value for dimming for video (value will never go below 1)</div><div class="ttdef"><b>Definition</b> <a href="#l00707">scale8.h:707</a></div></div>
 <div class="ttc" id="agroup___dimming_html_gad21876a676bcf26c47f957faed23f9bb"><div class="ttname"><a href="group___dimming.html#gad21876a676bcf26c47f957faed23f9bb">brighten8_video</a></div><div class="ttdeci">LIB8STATIC uint8_t brighten8_video(uint8_t x)</div><div class="ttdoc">Brighten a value (inverse of dim8_video())</div><div class="ttdef"><b>Definition</b> <a href="#l00727">scale8.h:727</a></div></div>
 <div class="ttc" id="agroup___dimming_html_gae51352a3522bb8eae5e17dbee97aa1aa"><div class="ttname"><a href="group___dimming.html#gae51352a3522bb8eae5e17dbee97aa1aa">dim8_raw</a></div><div class="ttdeci">LIB8STATIC uint8_t dim8_raw(uint8_t x)</div><div class="ttdoc">Adjust a scaling value for dimming.</div><div class="ttdef"><b>Definition</b> <a href="#l00703">scale8.h:703</a></div></div>
 <div class="ttc" id="agroup___dimming_html_gae8e36472a70f3016595048532d6c3a2d"><div class="ttname"><a href="group___dimming.html#gae8e36472a70f3016595048532d6c3a2d">brighten8_raw</a></div><div class="ttdeci">LIB8STATIC uint8_t brighten8_raw(uint8_t x)</div><div class="ttdoc">Brighten a value (inverse of dim8_raw())</div><div class="ttdef"><b>Definition</b> <a href="#l00721">scale8.h:721</a></div></div>
-<div class="ttc" id="agroup___fractional_types_html_ga5d6d013429a5b8a09d564d6137217644"><div class="ttname"><a href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a></div><div class="ttdeci">uint8_t fract8</div><div class="ttdoc">ANSI: unsigned short _Fract.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_2types_8h_source.html#l00030">types.h:30</a></div></div>
-<div class="ttc" id="agroup___fractional_types_html_gaaf46b9f719ef3bdb574f8e967af6dbb5"><div class="ttname"><a href="group___fractional_types.html#gaaf46b9f719ef3bdb574f8e967af6dbb5">fract16</a></div><div class="ttdeci">uint16_t fract16</div><div class="ttdoc">ANSI: unsigned _Fract.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_2types_8h_source.html#l00040">types.h:40</a></div></div>
+<div class="ttc" id="agroup___fractional_types_html_ga5d6d013429a5b8a09d564d6137217644"><div class="ttname"><a href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a></div><div class="ttdeci">uint8_t fract8</div><div class="ttdoc">ANSI: unsigned short _Fract.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_2types_8h_source.html#l00036">types.h:36</a></div></div>
+<div class="ttc" id="agroup___fractional_types_html_gaaf46b9f719ef3bdb574f8e967af6dbb5"><div class="ttname"><a href="group___fractional_types.html#gaaf46b9f719ef3bdb574f8e967af6dbb5">fract16</a></div><div class="ttdeci">uint16_t fract16</div><div class="ttdoc">ANSI: unsigned _Fract.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_2types_8h_source.html#l00046">types.h:46</a></div></div>
 <div class="ttc" id="agroup___scaling_dirty_html_ga025b1e8d81032d15fe1ab500f804f3f2"><div class="ttname"><a href="group___scaling_dirty.html#ga025b1e8d81032d15fe1ab500f804f3f2">nscale8_LEAVING_R1_DIRTY</a></div><div class="ttdeci">LIB8STATIC_ALWAYS_INLINE void nscale8_LEAVING_R1_DIRTY(uint8_t &amp;i, fract8 scale)</div><div class="ttdoc">In place modifying version of scale8() that does not clean up the R1 register on AVR.</div><div class="ttdef"><b>Definition</b> <a href="#l00217">scale8.h:217</a></div></div>
 <div class="ttc" id="agroup___scaling_dirty_html_ga3fade00fb4cf5b937b973128198a7a79"><div class="ttname"><a href="group___scaling_dirty.html#ga3fade00fb4cf5b937b973128198a7a79">cleanup_R1</a></div><div class="ttdeci">LIB8STATIC_ALWAYS_INLINE void cleanup_R1()</div><div class="ttdoc">Clean up the r1 register after a series of *LEAVING_R1_DIRTY calls.</div><div class="ttdef"><b>Definition</b> <a href="#l00333">scale8.h:333</a></div></div>
 <div class="ttc" id="agroup___scaling_dirty_html_ga7386235cada3aca429b189681d2ec56d"><div class="ttname"><a href="group___scaling_dirty.html#ga7386235cada3aca429b189681d2ec56d">scale8_LEAVING_R1_DIRTY</a></div><div class="ttdeci">LIB8STATIC_ALWAYS_INLINE uint8_t scale8_LEAVING_R1_DIRTY(uint8_t i, fract8 scale)</div><div class="ttdoc">This version of scale8() does not clean up the R1 register on AVR.</div><div class="ttdef"><b>Definition</b> <a href="#l00170">scale8.h:170</a></div></div>
@@ -756,7 +757,13 @@ $(function(){initNavTree('scale8_8h_source.html',''); initResizable(true); });
 <div class="ttc" id="agroup___scaling_html_ga700b7f510f32e8c91385093c436c27d9"><div class="ttname"><a href="group___scaling.html#ga700b7f510f32e8c91385093c436c27d9">nscale8x3_video</a></div><div class="ttdeci">LIB8STATIC void nscale8x3_video(uint8_t &amp;r, uint8_t &amp;g, uint8_t &amp;b, fract8 scale)</div><div class="ttdoc">Scale three one-byte values by a fourth one, which is treated as the numerator of a fraction whose de...</div><div class="ttdef"><b>Definition</b> <a href="#l00391">scale8.h:391</a></div></div>
 <div class="ttc" id="agroup___scaling_html_gaa51d5b048c2a4a20a00bddcdc257daaf"><div class="ttname"><a href="group___scaling.html#gaa51d5b048c2a4a20a00bddcdc257daaf">scale16by8</a></div><div class="ttdeci">LIB8STATIC_ALWAYS_INLINE uint16_t scale16by8(uint16_t i, fract8 scale)</div><div class="ttdoc">Scale a 16-bit unsigned value by an 8-bit value, which is treated as the numerator of a fraction whos...</div><div class="ttdef"><b>Definition</b> <a href="#l00468">scale8.h:468</a></div></div>
 <div class="ttc" id="agroup___scaling_html_gad7535ccda9c92470c4e6ee0265585555"><div class="ttname"><a href="group___scaling.html#gad7535ccda9c92470c4e6ee0265585555">scale8</a></div><div class="ttdeci">LIB8STATIC_ALWAYS_INLINE uint8_t scale8(uint8_t i, fract8 scale)</div><div class="ttdoc">Scale one byte by a second one, which is treated as the numerator of a fraction whose denominator is ...</div><div class="ttdef"><b>Definition</b> <a href="#l00034">scale8.h:34</a></div></div>
-<div class="ttc" id="astruct_c_r_g_b_html"><div class="ttname"><a href="struct_c_r_g_b.html">CRGB</a></div><div class="ttdoc">Representation of an RGB pixel (Red, Green, Blue)</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00052">crgb.h:52</a></div></div>
+<div class="ttc" id="agroup__lib8tion_html_gac735bdef91ee1e80778434336a622138"><div class="ttname"><a href="group__lib8tion.html#gac735bdef91ee1e80778434336a622138">LIB8STATIC</a></div><div class="ttdeci">#define LIB8STATIC</div><div class="ttdoc">Define a LIB8TION member function as static inline with an &quot;unused&quot; attribute.</div><div class="ttdef"><b>Definition</b> <a href="lib8static_8h_source.html#l00010">lib8static.h:10</a></div></div>
+<div class="ttc" id="agroup__lib8tion_html_gaf64ff1e31d93cd9d84b5056d99ce8dd4"><div class="ttname"><a href="group__lib8tion.html#gaf64ff1e31d93cd9d84b5056d99ce8dd4">LIB8STATIC_ALWAYS_INLINE</a></div><div class="ttdeci">#define LIB8STATIC_ALWAYS_INLINE</div><div class="ttdoc">Define a LIB8TION member function as always static inline.</div><div class="ttdef"><b>Definition</b> <a href="lib8static_8h_source.html#l00012">lib8static.h:12</a></div></div>
+<div class="ttc" id="alib8static_8h_html"><div class="ttname"><a href="lib8static_8h.html">lib8static.h</a></div><div class="ttdoc">Defines static inlining macros for lib8tion functions.</div></div>
+<div class="ttc" id="anamespace_8h_html"><div class="ttname"><a href="namespace_8h.html">namespace.h</a></div><div class="ttdoc">Implements the FastLED namespace macros.</div></div>
+<div class="ttc" id="anamespace_8h_html_a1d5d01fb2365bb29ff7972156bff53e8"><div class="ttname"><a href="namespace_8h.html#a1d5d01fb2365bb29ff7972156bff53e8">FASTLED_NAMESPACE_END</a></div><div class="ttdeci">#define FASTLED_NAMESPACE_END</div><div class="ttdoc">End of the FastLED namespace.</div><div class="ttdef"><b>Definition</b> <a href="namespace_8h_source.html#l00016">namespace.h:16</a></div></div>
+<div class="ttc" id="anamespace_8h_html_a556e256b05a4b158f3606e4a978101ba"><div class="ttname"><a href="namespace_8h.html#a556e256b05a4b158f3606e4a978101ba">FASTLED_NAMESPACE_BEGIN</a></div><div class="ttdeci">#define FASTLED_NAMESPACE_BEGIN</div><div class="ttdoc">Start of the FastLED namespace.</div><div class="ttdef"><b>Definition</b> <a href="namespace_8h_source.html#l00014">namespace.h:14</a></div></div>
+<div class="ttc" id="astruct_c_r_g_b_html"><div class="ttname"><a href="struct_c_r_g_b.html">CRGB</a></div><div class="ttdoc">Representation of an RGB pixel (Red, Green, Blue)</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00054">crgb.h:54</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.3-->
@@ -764,7 +771,7 @@ $(function(){initNavTree('scale8_8h_source.html',''); initResizable(true); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_d91669bda445047ed1892ac77a05ddb9.html">lib8tion</a></li><li class="navelem"><a class="el" href="scale8_8h.html">scale8.h</a></li>
-    <li class="footer">Generated on Tue Dec 17 2024 05:47:34 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Dec 18 2024 10:54:37 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

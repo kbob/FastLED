@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['random8_2eh_0',['random8.h',['../random8_8h.html',1,'']]],
-  ['rgbcalibrate_2eino_1',['RGBCalibrate.ino',['../_r_g_b_calibrate_8ino.html',1,'']]],
-  ['rgbsetdemo_2eino_2',['RGBSetDemo.ino',['../_r_g_b_set_demo_8ino.html',1,'']]]
+  ['octows2811demo_2eino_0',['OctoWS2811Demo.ino',['../_octo_w_s2811_demo_8ino.html',1,'']]],
+  ['overclock_2eino_1',['Overclock.ino',['../_overclock_8ino.html',1,'']]]
 ];

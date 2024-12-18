@@ -23,5 +23,5 @@ var noise_8h =
     [ "inoise8_raw", "group___noise_generation.html#gabf6fbef9588c6d6ee35b7ad79fe14ace", null ],
     [ "inoise8_raw", "group___noise_generation.html#gae8a7338d2f14deb11f62086adf81dfe2", null ],
     [ "inoise8_raw", "group___noise_generation.html#ga6c57ed3ea69e819c29602578ecbabd71", null ],
-    [ "snoise16", "group___noise.html#ga48f4d856c46824dd30ffb245d131624e", null ]
+    [ "snoise16", "group___noise_generation.html#ga48f4d856c46824dd30ffb245d131624e", null ]
 ];

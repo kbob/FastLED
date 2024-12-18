@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.5</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.6</span>
    </div>
   </td>
  </tr>
@@ -116,7 +116,7 @@ $(function(){initNavTree('class_c_fast_l_e_d.html',''); initResizable(true); });
 <div class="textblock"><p>High level controller interface for FastLED. </p>
 <p>This class manages controllers, global settings, and trackings such as brightness and refresh rates, and provides access functions for driving led data to controllers via the <a class="el" href="#a3adb23ec5f919524928d576002cb45de" title="Update all our controllers with the current led colors.">show()</a> / <a class="el" href="#a7315b060d295bad5fbd32e50eaaf02b0" title="Set all leds on all controllers to the given color/scale.">showColor()</a> / <a class="el" href="#aeb7bd3e8f2dbced6284a2182191d5fcb" title="Clear the leds, wiping the local array of data.">clear()</a> methods. This is instantiated as a global object with the name FastLED. </p>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00356">356</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00354">354</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 </div>
 <p><code>#include &lt;<a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>&gt;</code></p>
 <table class="memberdecls">
@@ -170,7 +170,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad266c3e649cc12a6dc49a1e229acc282" id="r_ad266c3e649cc12a6dc49a1e229acc282"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad266c3e649cc12a6dc49a1e229acc282">setCorrection</a> (const struct <a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp;correction)</td></tr>
 <tr class="memdesc:ad266c3e649cc12a6dc49a1e229acc282"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a global color correction.  <br /></td></tr>
 <tr class="separator:ad266c3e649cc12a6dc49a1e229acc282"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ae5d3864df01101d82d242c123ffb36" id="r_a7ae5d3864df01101d82d242c123ffb36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ae5d3864df01101d82d242c123ffb36">setDither</a> (uint8_t ditherMode=BINARY_DITHER)</td></tr>
+<tr class="memitem:a7ae5d3864df01101d82d242c123ffb36" id="r_a7ae5d3864df01101d82d242c123ffb36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ae5d3864df01101d82d242c123ffb36">setDither</a> (uint8_t ditherMode=<a class="el" href="dither__mode_8h.html#aa5f08faeb733faf0fab65127e79e6b44">BINARY_DITHER</a>)</td></tr>
 <tr class="memdesc:a7ae5d3864df01101d82d242c123ffb36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the dithering mode.  <br /></td></tr>
 <tr class="separator:a7ae5d3864df01101d82d242c123ffb36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f39e8404db214bbd6a776f52a77d8b1" id="r_a1f39e8404db214bbd6a776f52a77d8b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f39e8404db214bbd6a776f52a77d8b1">setMaxRefreshRate</a> (uint16_t refresh, bool constrain=false)</td></tr>
@@ -224,11 +224,11 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a reference to the added controller </dd></dl>
 </td></tr>
-<tr class="memitem:adbf5461419278571b6be724313cdfcf9" id="r_adbf5461419278571b6be724313cdfcf9"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="_fast_l_e_d_8h.html#ac06549dc4a351e2c8f1dda8ae81f7926">ESPIChipsets</a> CHIPSET, uint8_t DATA_PIN, uint8_t CLOCK_PIN, EOrder RGB_ORDER, uint32_t SPI_DATA_RATE&gt; </td></tr>
+<tr class="memitem:adbf5461419278571b6be724313cdfcf9" id="r_adbf5461419278571b6be724313cdfcf9"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="_fast_l_e_d_8h.html#ac06549dc4a351e2c8f1dda8ae81f7926">ESPIChipsets</a> CHIPSET, uint8_t DATA_PIN, uint8_t CLOCK_PIN, <a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, uint32_t SPI_DATA_RATE&gt; </td></tr>
 <tr class="memitem:adbf5461419278571b6be724313cdfcf9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_c_l_e_d_controller.html">CLEDController</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#adbf5461419278571b6be724313cdfcf9">addLeds</a> (struct <a class="el" href="struct_c_r_g_b.html">CRGB</a> *data, int nLedsOrOffset, int nLedsIfOffset=0)</td></tr>
 <tr class="memdesc:adbf5461419278571b6be724313cdfcf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an SPI based <a class="el" href="class_c_l_e_d_controller.html" title="Base definition for an LED controller.">CLEDController</a> instance to the world.  <br /></td></tr>
 <tr class="separator:adbf5461419278571b6be724313cdfcf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25b5478fc7556de0e1d83d68e0142c0f" id="r_a25b5478fc7556de0e1d83d68e0142c0f"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="_fast_l_e_d_8h.html#ac06549dc4a351e2c8f1dda8ae81f7926">ESPIChipsets</a> CHIPSET, uint8_t DATA_PIN, uint8_t CLOCK_PIN, EOrder RGB_ORDER&gt; </td></tr>
+<tr class="memitem:a25b5478fc7556de0e1d83d68e0142c0f" id="r_a25b5478fc7556de0e1d83d68e0142c0f"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="_fast_l_e_d_8h.html#ac06549dc4a351e2c8f1dda8ae81f7926">ESPIChipsets</a> CHIPSET, uint8_t DATA_PIN, uint8_t CLOCK_PIN, <a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER&gt; </td></tr>
 <tr class="memitem:a25b5478fc7556de0e1d83d68e0142c0f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_c_l_e_d_controller.html">CLEDController</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a25b5478fc7556de0e1d83d68e0142c0f">addLeds</a> (struct <a class="el" href="struct_c_r_g_b.html">CRGB</a> *data, int nLedsOrOffset, int nLedsIfOffset=0)</td></tr>
 <tr class="separator:a25b5478fc7556de0e1d83d68e0142c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a306a329962327fce581b84219143d43c" id="r_a306a329962327fce581b84219143d43c"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="_fast_l_e_d_8h.html#ac06549dc4a351e2c8f1dda8ae81f7926">ESPIChipsets</a> CHIPSET, uint8_t DATA_PIN, uint8_t CLOCK_PIN&gt; </td></tr>
@@ -258,11 +258,11 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a reference to the added controller </dd></dl>
 </td></tr>
-<tr class="memitem:a306a329962327fce581b84219143d43c" id="r_a306a329962327fce581b84219143d43c"><td class="memTemplParams" colspan="2">template&lt;template&lt; uint8_t DATA_PIN, EOrder RGB_ORDER &gt; class CHIPSET, uint8_t DATA_PIN, EOrder RGB_ORDER&gt; </td></tr>
+<tr class="memitem:a306a329962327fce581b84219143d43c" id="r_a306a329962327fce581b84219143d43c"><td class="memTemplParams" colspan="2">template&lt;template&lt; uint8_t DATA_PIN, <a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER &gt; class CHIPSET, uint8_t DATA_PIN, <a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER&gt; </td></tr>
 <tr class="memitem:a306a329962327fce581b84219143d43c"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="class_c_l_e_d_controller.html">CLEDController</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a306a329962327fce581b84219143d43c">addLeds</a> (struct <a class="el" href="struct_c_r_g_b.html">CRGB</a> *data, int nLedsOrOffset, int nLedsIfOffset=0)</td></tr>
 <tr class="memdesc:a306a329962327fce581b84219143d43c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a clockless based <a class="el" href="class_c_l_e_d_controller.html" title="Base definition for an LED controller.">CLEDController</a> instance to the world.  <br /></td></tr>
 <tr class="separator:a306a329962327fce581b84219143d43c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1da5e0a4e4aebffc51443aeedcd9c4a" id="r_af1da5e0a4e4aebffc51443aeedcd9c4a"><td class="memTemplParams" colspan="2">template&lt;template&lt; uint8_t DATA_PIN, EOrder RGB_ORDER &gt; class CHIPSET, uint8_t DATA_PIN&gt; </td></tr>
+<tr class="memitem:af1da5e0a4e4aebffc51443aeedcd9c4a" id="r_af1da5e0a4e4aebffc51443aeedcd9c4a"><td class="memTemplParams" colspan="2">template&lt;template&lt; uint8_t DATA_PIN, <a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER &gt; class CHIPSET, uint8_t DATA_PIN&gt; </td></tr>
 <tr class="memitem:af1da5e0a4e4aebffc51443aeedcd9c4a"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="class_c_l_e_d_controller.html">CLEDController</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af1da5e0a4e4aebffc51443aeedcd9c4a">addLeds</a> (struct <a class="el" href="struct_c_r_g_b.html">CRGB</a> *data, int nLedsOrOffset, int nLedsIfOffset=0)</td></tr>
 <tr class="memdesc:af1da5e0a4e4aebffc51443aeedcd9c4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a clockless based <a class="el" href="class_c_l_e_d_controller.html" title="Base definition for an LED controller.">CLEDController</a> instance to the world.  <br /></td></tr>
 <tr class="separator:af1da5e0a4e4aebffc51443aeedcd9c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -292,15 +292,15 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a reference to the added controller </dd></dl>
 </td></tr>
-<tr class="memitem:af1da5e0a4e4aebffc51443aeedcd9c4a" id="r_af1da5e0a4e4aebffc51443aeedcd9c4a"><td class="memTemplParams" colspan="2">template&lt;template&lt; EOrder RGB_ORDER &gt; class CHIPSET, EOrder RGB_ORDER&gt; </td></tr>
+<tr class="memitem:af1da5e0a4e4aebffc51443aeedcd9c4a" id="r_af1da5e0a4e4aebffc51443aeedcd9c4a"><td class="memTemplParams" colspan="2">template&lt;template&lt; <a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER &gt; class CHIPSET, <a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER&gt; </td></tr>
 <tr class="memitem:af1da5e0a4e4aebffc51443aeedcd9c4a"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="class_c_l_e_d_controller.html">CLEDController</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af1da5e0a4e4aebffc51443aeedcd9c4a">addLeds</a> (struct <a class="el" href="struct_c_r_g_b.html">CRGB</a> *data, int nLedsOrOffset, int nLedsIfOffset=0)</td></tr>
 <tr class="memdesc:af1da5e0a4e4aebffc51443aeedcd9c4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a 3rd party library based <a class="el" href="class_c_l_e_d_controller.html" title="Base definition for an LED controller.">CLEDController</a> instance to the world.  <br /></td></tr>
 <tr class="separator:af1da5e0a4e4aebffc51443aeedcd9c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae98c97b19edb8f1011356dd2248a875e" id="r_ae98c97b19edb8f1011356dd2248a875e"><td class="memTemplParams" colspan="2">template&lt;template&lt; EOrder RGB_ORDER &gt; class CHIPSET&gt; </td></tr>
+<tr class="memitem:ae98c97b19edb8f1011356dd2248a875e" id="r_ae98c97b19edb8f1011356dd2248a875e"><td class="memTemplParams" colspan="2">template&lt;template&lt; <a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER &gt; class CHIPSET&gt; </td></tr>
 <tr class="memitem:ae98c97b19edb8f1011356dd2248a875e"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="class_c_l_e_d_controller.html">CLEDController</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ae98c97b19edb8f1011356dd2248a875e">addLeds</a> (struct <a class="el" href="struct_c_r_g_b.html">CRGB</a> *data, int nLedsOrOffset, int nLedsIfOffset=0)</td></tr>
 <tr class="memdesc:ae98c97b19edb8f1011356dd2248a875e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a 3rd party library based <a class="el" href="class_c_l_e_d_controller.html" title="Base definition for an LED controller.">CLEDController</a> instance to the world.  <br /></td></tr>
 <tr class="separator:ae98c97b19edb8f1011356dd2248a875e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1da5e0a4e4aebffc51443aeedcd9c4a" id="r_af1da5e0a4e4aebffc51443aeedcd9c4a"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="_fast_l_e_d_8h.html#a69ae16731cd4ff30f81793033758d59c">OWS2811</a> CHIPSET, EOrder RGB_ORDER&gt; </td></tr>
+<tr class="memitem:af1da5e0a4e4aebffc51443aeedcd9c4a" id="r_af1da5e0a4e4aebffc51443aeedcd9c4a"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="_fast_l_e_d_8h.html#a69ae16731cd4ff30f81793033758d59c">OWS2811</a> CHIPSET, <a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER&gt; </td></tr>
 <tr class="memitem:af1da5e0a4e4aebffc51443aeedcd9c4a"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="class_c_l_e_d_controller.html">CLEDController</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af1da5e0a4e4aebffc51443aeedcd9c4a">addLeds</a> (struct <a class="el" href="struct_c_r_g_b.html">CRGB</a> *data, int nLedsOrOffset, int nLedsIfOffset=0)</td></tr>
 <tr class="memdesc:af1da5e0a4e4aebffc51443aeedcd9c4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a OCTOWS2811 based <a class="el" href="class_c_l_e_d_controller.html" title="Base definition for an LED controller.">CLEDController</a> instance to the world.  <br /></td></tr>
 <tr class="separator:af1da5e0a4e4aebffc51443aeedcd9c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -308,7 +308,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae98c97b19edb8f1011356dd2248a875e"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="class_c_l_e_d_controller.html">CLEDController</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ae98c97b19edb8f1011356dd2248a875e">addLeds</a> (struct <a class="el" href="struct_c_r_g_b.html">CRGB</a> *data, int nLedsOrOffset, int nLedsIfOffset=0)</td></tr>
 <tr class="memdesc:ae98c97b19edb8f1011356dd2248a875e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a OCTOWS2811 library based <a class="el" href="class_c_l_e_d_controller.html" title="Base definition for an LED controller.">CLEDController</a> instance to the world.  <br /></td></tr>
 <tr class="separator:ae98c97b19edb8f1011356dd2248a875e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a306a329962327fce581b84219143d43c" id="r_a306a329962327fce581b84219143d43c"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="_fast_l_e_d_8h.html#a5dd5101b1f189300219b06aaaaacff2e">SWS2812</a> CHIPSET, int DATA_PIN, EOrder RGB_ORDER&gt; </td></tr>
+<tr class="memitem:a306a329962327fce581b84219143d43c" id="r_a306a329962327fce581b84219143d43c"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="_fast_l_e_d_8h.html#a5dd5101b1f189300219b06aaaaacff2e">SWS2812</a> CHIPSET, int DATA_PIN, <a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER&gt; </td></tr>
 <tr class="memitem:a306a329962327fce581b84219143d43c"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="class_c_l_e_d_controller.html">CLEDController</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a306a329962327fce581b84219143d43c">addLeds</a> (struct <a class="el" href="struct_c_r_g_b.html">CRGB</a> *data, int nLedsOrOffset, int nLedsIfOffset=0)</td></tr>
 <tr class="memdesc:a306a329962327fce581b84219143d43c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a WS2812Serial library based <a class="el" href="class_c_l_e_d_controller.html" title="Base definition for an LED controller.">CLEDController</a> instance to the world.  <br /></td></tr>
 <tr class="separator:a306a329962327fce581b84219143d43c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -339,7 +339,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a reference to the added controller </dd></dl>
 </td></tr>
-<tr class="memitem:a306a329962327fce581b84219143d43c" id="r_a306a329962327fce581b84219143d43c"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="_fast_l_e_d_8h.html#adcf22542128a12d8c3c304777422c7cc">EBlockChipsets</a> CHIPSET, int NUM_LANES, EOrder RGB_ORDER&gt; </td></tr>
+<tr class="memitem:a306a329962327fce581b84219143d43c" id="r_a306a329962327fce581b84219143d43c"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="_fast_l_e_d_8h.html#adcf22542128a12d8c3c304777422c7cc">EBlockChipsets</a> CHIPSET, int NUM_LANES, <a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER&gt; </td></tr>
 <tr class="memitem:a306a329962327fce581b84219143d43c"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="class_c_l_e_d_controller.html">CLEDController</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a306a329962327fce581b84219143d43c">addLeds</a> (struct <a class="el" href="struct_c_r_g_b.html">CRGB</a> *data, int nLedsOrOffset, int nLedsIfOffset=0)</td></tr>
 <tr class="memdesc:a306a329962327fce581b84219143d43c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a block based parallel output <a class="el" href="class_c_l_e_d_controller.html" title="Base definition for an LED controller.">CLEDController</a> instance to the world.  <br /></td></tr>
 <tr class="separator:a306a329962327fce581b84219143d43c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -417,7 +417,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a reference to the added controller </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_array_of_led_arrays_8ino-example.html#a2">ArrayOfLedArrays.ino</a>, <a class="el" href="_blink_8ino-example.html#a2">Blink.ino</a>, <a class="el" href="_color_palette_8ino-example.html#a5">ColorPalette.ino</a>, <a class="el" href="_color_temperature_8ino-example.html#a7">ColorTemperature.ino</a>, <a class="el" href="_fire2012_with_palette_8ino-example.html#a8">Fire2012WithPalette.ino</a>, <a class="el" href="_first_light_8ino-example.html#a2">FirstLight.ino</a>, <a class="el" href="_fx_engine_8ino-example.html#a2">FxEngine.ino</a>, <a class="el" href="_mirroring_sample_8ino-example.html#a2">MirroringSample.ino</a>, <a class="el" href="_multi_arrays_8ino-example.html#a2">MultiArrays.ino</a>, <a class="el" href="_multiple_strips_in_one_array_8ino-example.html#a2">MultipleStripsInOneArray.ino</a>, <a class="el" href="_noise_8ino-example.html#a2">Noise.ino</a>, <a class="el" href="_noise_playground_8ino-example.html#a6">NoisePlayground.ino</a>, <a class="el" href="_octo_w_s2811_demo_8ino-example.html#a2">OctoWS2811Demo.ino</a>, <a class="el" href="_p_j_r_c_spectrum_analyzer_8ino-example.html#a2">PJRCSpectrumAnalyzer.ino</a>, <a class="el" href="_parallel_output_demo_8ino-example.html#a2">ParallelOutputDemo.ino</a>, <a class="el" href="_pride2015_8ino-example.html#a2">Pride2015.ino</a>, <a class="el" href="_r_g_b_set_demo_8ino-example.html#a2">RGBSetDemo.ino</a>, <a class="el" href="_smart_matrix_8ino-example.html#a2">SmartMatrix.ino</a>, and <a class="el" href="_x_y_matrix_8ino-example.html#a3">XYMatrix.ino</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_array_of_led_arrays_8ino-example.html#a2">ArrayOfLedArrays.ino</a>, <a class="el" href="_blink_8ino-example.html#a2">Blink.ino</a>, <a class="el" href="_color_palette_8ino-example.html#a5">ColorPalette.ino</a>, <a class="el" href="_color_temperature_8ino-example.html#a7">ColorTemperature.ino</a>, <a class="el" href="_fire2012_with_palette_8ino-example.html#a8">Fire2012WithPalette.ino</a>, <a class="el" href="_first_light_8ino-example.html#a2">FirstLight.ino</a>, <a class="el" href="_fx_engine_8ino-example.html#a7">FxEngine.ino</a>, <a class="el" href="_mirroring_sample_8ino-example.html#a2">MirroringSample.ino</a>, <a class="el" href="_multi_arrays_8ino-example.html#a2">MultiArrays.ino</a>, <a class="el" href="_multiple_strips_in_one_array_8ino-example.html#a2">MultipleStripsInOneArray.ino</a>, <a class="el" href="_noise_8ino-example.html#a2">Noise.ino</a>, <a class="el" href="_noise_playground_8ino-example.html#a6">NoisePlayground.ino</a>, <a class="el" href="_octo_w_s2811_demo_8ino-example.html#a2">OctoWS2811Demo.ino</a>, <a class="el" href="_p_j_r_c_spectrum_analyzer_8ino-example.html#a2">PJRCSpectrumAnalyzer.ino</a>, <a class="el" href="_parallel_output_demo_8ino-example.html#a2">ParallelOutputDemo.ino</a>, <a class="el" href="_r_g_b_set_demo_8ino-example.html#a2">RGBSetDemo.ino</a>, <a class="el" href="_smart_matrix_8ino-example.html#a2">SmartMatrix.ino</a>, and <a class="el" href="_x_y_matrix_8ino-example.html#a3">XYMatrix.ino</a>.</dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8cpp_source.html#l00079">79</a> of file <a class="el" href="_fast_l_e_d_8cpp_source.html">FastLED.cpp</a>.</p>
@@ -430,7 +430,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="_fast_l_e_d_8h.html#ac06549dc4a351e2c8f1dda8ae81f7926">ESPIChipsets</a> CHIPSET, uint8_t DATA_PIN, uint8_t CLOCK_PIN, EOrder RGB_ORDER, uint32_t SPI_DATA_RATE&gt; </div>
+template&lt;<a class="el" href="_fast_l_e_d_8h.html#ac06549dc4a351e2c8f1dda8ae81f7926">ESPIChipsets</a> CHIPSET, uint8_t DATA_PIN, uint8_t CLOCK_PIN, <a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, uint32_t SPI_DATA_RATE&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -460,7 +460,7 @@ template&lt;<a class="el" href="_fast_l_e_d_8h.html#ac06549dc4a351e2c8f1dda8ae81
 
 <p>Add an SPI based <a class="el" href="class_c_l_e_d_controller.html" title="Base definition for an LED controller.">CLEDController</a> instance to the world. </p>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00453">453</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00451">451</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -500,7 +500,7 @@ template&lt;<a class="el" href="_fast_l_e_d_8h.html#ac06549dc4a351e2c8f1dda8ae81
 
 <p>Add an SPI based <a class="el" href="class_c_l_e_d_controller.html" title="Base definition for an LED controller.">CLEDController</a> instance to the world. </p>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00463">463</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00461">461</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -510,7 +510,7 @@ template&lt;<a class="el" href="_fast_l_e_d_8h.html#ac06549dc4a351e2c8f1dda8ae81
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="_fast_l_e_d_8h.html#ac06549dc4a351e2c8f1dda8ae81f7926">ESPIChipsets</a> CHIPSET, uint8_t DATA_PIN, uint8_t CLOCK_PIN, EOrder RGB_ORDER&gt; </div>
+template&lt;<a class="el" href="_fast_l_e_d_8h.html#ac06549dc4a351e2c8f1dda8ae81f7926">ESPIChipsets</a> CHIPSET, uint8_t DATA_PIN, uint8_t CLOCK_PIN, <a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -538,7 +538,7 @@ template&lt;<a class="el" href="_fast_l_e_d_8h.html#ac06549dc4a351e2c8f1dda8ae81
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00474">474</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00472">472</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -548,7 +548,7 @@ template&lt;<a class="el" href="_fast_l_e_d_8h.html#ac06549dc4a351e2c8f1dda8ae81
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;template&lt; uint8_t DATA_PIN, EOrder RGB_ORDER &gt; class CHIPSET, uint8_t DATA_PIN, EOrder RGB_ORDER&gt; </div>
+template&lt;template&lt; uint8_t DATA_PIN, <a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER &gt; class CHIPSET, uint8_t DATA_PIN, <a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -578,7 +578,7 @@ template&lt;template&lt; uint8_t DATA_PIN, EOrder RGB_ORDER &gt; class CHIPSET, 
 
 <p>Add a clockless based <a class="el" href="class_c_l_e_d_controller.html" title="Base definition for an LED controller.">CLEDController</a> instance to the world. </p>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00523">523</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00521">521</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -588,7 +588,7 @@ template&lt;template&lt; uint8_t DATA_PIN, EOrder RGB_ORDER &gt; class CHIPSET, 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;template&lt; uint8_t DATA_PIN, EOrder RGB_ORDER &gt; class CHIPSET, uint8_t DATA_PIN&gt; </div>
+template&lt;template&lt; uint8_t DATA_PIN, <a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER &gt; class CHIPSET, uint8_t DATA_PIN&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -618,7 +618,7 @@ template&lt;template&lt; uint8_t DATA_PIN, EOrder RGB_ORDER &gt; class CHIPSET, 
 
 <p>Add a clockless based <a class="el" href="class_c_l_e_d_controller.html" title="Base definition for an LED controller.">CLEDController</a> instance to the world. </p>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00530">530</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00528">528</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -658,7 +658,7 @@ template&lt;template&lt; uint8_t DATA_PIN &gt; class CHIPSET, uint8_t DATA_PIN&g
 
 <p>Add a clockless based <a class="el" href="class_c_l_e_d_controller.html" title="Base definition for an LED controller.">CLEDController</a> instance to the world. </p>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00537">537</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00535">535</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -668,7 +668,7 @@ template&lt;template&lt; uint8_t DATA_PIN &gt; class CHIPSET, uint8_t DATA_PIN&g
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;template&lt; EOrder RGB_ORDER &gt; class CHIPSET, EOrder RGB_ORDER&gt; </div>
+template&lt;template&lt; <a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER &gt; class CHIPSET, <a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -698,7 +698,7 @@ template&lt;template&lt; EOrder RGB_ORDER &gt; class CHIPSET, EOrder RGB_ORDER&g
 
 <p>Add a 3rd party library based <a class="el" href="class_c_l_e_d_controller.html" title="Base definition for an LED controller.">CLEDController</a> instance to the world. </p>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00585">585</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00583">583</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -708,7 +708,7 @@ template&lt;template&lt; EOrder RGB_ORDER &gt; class CHIPSET, EOrder RGB_ORDER&g
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;template&lt; EOrder RGB_ORDER &gt; class CHIPSET&gt; </div>
+template&lt;template&lt; <a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER &gt; class CHIPSET&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -738,7 +738,7 @@ template&lt;template&lt; EOrder RGB_ORDER &gt; class CHIPSET&gt; </div>
 
 <p>Add a 3rd party library based <a class="el" href="class_c_l_e_d_controller.html" title="Base definition for an LED controller.">CLEDController</a> instance to the world. </p>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00592">592</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00590">590</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -748,7 +748,7 @@ template&lt;template&lt; EOrder RGB_ORDER &gt; class CHIPSET&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="_fast_l_e_d_8h.html#a69ae16731cd4ff30f81793033758d59c">OWS2811</a> CHIPSET, EOrder RGB_ORDER&gt; </div>
+template&lt;<a class="el" href="_fast_l_e_d_8h.html#a69ae16731cd4ff30f81793033758d59c">OWS2811</a> CHIPSET, <a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -781,7 +781,7 @@ template&lt;<a class="el" href="_fast_l_e_d_8h.html#a69ae16731cd4ff30f8179303375
 <dd>
 <a href="https://github.com/PaulStoffregen/OctoWS2811">https://github.com/PaulStoffregen/OctoWS2811</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00602">602</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00600">600</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -824,7 +824,7 @@ template&lt;<a class="el" href="_fast_l_e_d_8h.html#a69ae16731cd4ff30f8179303375
 <dd>
 <a href="https://github.com/PaulStoffregen/OctoWS2811">https://github.com/PaulStoffregen/OctoWS2811</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00617">617</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00615">615</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -834,7 +834,7 @@ template&lt;<a class="el" href="_fast_l_e_d_8h.html#a69ae16731cd4ff30f8179303375
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="_fast_l_e_d_8h.html#a5dd5101b1f189300219b06aaaaacff2e">SWS2812</a> CHIPSET, int DATA_PIN, EOrder RGB_ORDER&gt; </div>
+template&lt;<a class="el" href="_fast_l_e_d_8h.html#a5dd5101b1f189300219b06aaaaacff2e">SWS2812</a> CHIPSET, int DATA_PIN, <a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -867,7 +867,7 @@ template&lt;<a class="el" href="_fast_l_e_d_8h.html#a5dd5101b1f189300219b06aaaaa
 <dd>
 <a href="https://github.com/PaulStoffregen/WS2812Serial">https://github.com/PaulStoffregen/WS2812Serial</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00629">629</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00627">627</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -908,7 +908,7 @@ template&lt;<a class="el" href="_fast_l_e_d_8h.html#ac8839f06bbcecd0dc5bde0a9451
 <p>Add a SmartMatrix library based <a class="el" href="class_c_l_e_d_controller.html" title="Base definition for an LED controller.">CLEDController</a> instance to the world. </p>
 <dl class="section see"><dt>See also</dt><dd><a href="https://github.com/pixelmatix/SmartMatrix">https://github.com/pixelmatix/SmartMatrix</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00640">640</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00638">638</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -918,7 +918,7 @@ template&lt;<a class="el" href="_fast_l_e_d_8h.html#ac8839f06bbcecd0dc5bde0a9451
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="_fast_l_e_d_8h.html#adcf22542128a12d8c3c304777422c7cc">EBlockChipsets</a> CHIPSET, int NUM_LANES, EOrder RGB_ORDER&gt; </div>
+template&lt;<a class="el" href="_fast_l_e_d_8h.html#adcf22542128a12d8c3c304777422c7cc">EBlockChipsets</a> CHIPSET, int NUM_LANES, <a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -948,7 +948,7 @@ template&lt;<a class="el" href="_fast_l_e_d_8h.html#adcf22542128a12d8c3c30477742
 
 <p>Add a block based parallel output <a class="el" href="class_c_l_e_d_controller.html" title="Base definition for an LED controller.">CLEDController</a> instance to the world. </p>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00675">675</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00673">673</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -988,7 +988,7 @@ template&lt;<a class="el" href="_fast_l_e_d_8h.html#adcf22542128a12d8c3c30477742
 
 <p>Add a block based parallel output <a class="el" href="class_c_l_e_d_controller.html" title="Base definition for an LED controller.">CLEDController</a> instance to the world. </p>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00717">717</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00715">715</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -1015,7 +1015,7 @@ template&lt;<a class="el" href="_fast_l_e_d_8h.html#adcf22542128a12d8c3c30477742
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00369">369</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00367">367</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -1173,7 +1173,7 @@ template&lt;<a class="el" href="_fast_l_e_d_8h.html#adcf22542128a12d8c3c30477742
 <p>Get the current global brightness setting. </p>
 <dl class="section return"><dt>Returns</dt><dd>the current global brightness value </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00729">729</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00727">727</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -1203,7 +1203,7 @@ template&lt;<a class="el" href="_fast_l_e_d_8h.html#adcf22542128a12d8c3c30477742
 <p>Get the number of frames/second being written out. </p>
 <dl class="section return"><dt>Returns</dt><dd>the most recently computed FPS value </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00802">802</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00800">800</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -1274,7 +1274,7 @@ template&lt;<a class="el" href="_fast_l_e_d_8h.html#adcf22542128a12d8c3c30477742
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00370">370</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00368">368</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -1308,10 +1308,10 @@ template&lt;<a class="el" href="_fast_l_e_d_8h.html#adcf22542128a12d8c3c30477742
   </table>
   </dd>
 </dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_color_palette_8ino-example.html#a7">ColorPalette.ino</a>, <a class="el" href="_color_temperature_8ino-example.html#a9">ColorTemperature.ino</a>, <a class="el" href="_fire2012_with_palette_8ino-example.html#a10">Fire2012WithPalette.ino</a>, <a class="el" href="_fx_engine_8ino-example.html#a4">FxEngine.ino</a>, <a class="el" href="_noise_8ino-example.html#a4">Noise.ino</a>, <a class="el" href="_noise_playground_8ino-example.html#a8">NoisePlayground.ino</a>, <a class="el" href="_octo_w_s2811_demo_8ino-example.html#a3">OctoWS2811Demo.ino</a>, <a class="el" href="_pride2015_8ino-example.html#a4">Pride2015.ino</a>, <a class="el" href="_smart_matrix_8ino-example.html#a3">SmartMatrix.ino</a>, and <a class="el" href="_x_y_matrix_8ino-example.html#a5">XYMatrix.ino</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_color_palette_8ino-example.html#a7">ColorPalette.ino</a>, <a class="el" href="_color_temperature_8ino-example.html#a9">ColorTemperature.ino</a>, <a class="el" href="_fire2012_with_palette_8ino-example.html#a10">Fire2012WithPalette.ino</a>, <a class="el" href="_fx_engine_8ino-example.html#a9">FxEngine.ino</a>, <a class="el" href="_noise_8ino-example.html#a5">Noise.ino</a>, <a class="el" href="_noise_playground_8ino-example.html#a9">NoisePlayground.ino</a>, <a class="el" href="_octo_w_s2811_demo_8ino-example.html#a3">OctoWS2811Demo.ino</a>, <a class="el" href="_smart_matrix_8ino-example.html#a3">SmartMatrix.ino</a>, and <a class="el" href="_x_y_matrix_8ino-example.html#a5">XYMatrix.ino</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00725">725</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00723">723</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -1351,7 +1351,7 @@ template&lt;<a class="el" href="_fast_l_e_d_8h.html#adcf22542128a12d8c3c30477742
         <tr>
           <td class="memname">void CFastLED::setDither </td>
           <td>(</td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>ditherMode</em></span><span class="paramdefsep"> = </span><span class="paramdefval">BINARY_DITHER</span></td><td>)</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>ditherMode</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="dither__mode_8h.html#aa5f08faeb733faf0fab65127e79e6b44">BINARY_DITHER</a></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1400,7 +1400,7 @@ template&lt;<a class="el" href="_fast_l_e_d_8h.html#adcf22542128a12d8c3c30477742
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00738">738</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00736">736</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -1440,7 +1440,7 @@ template&lt;<a class="el" href="_fast_l_e_d_8h.html#adcf22542128a12d8c3c30477742
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00734">734</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00732">732</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -1531,7 +1531,7 @@ template&lt;<a class="el" href="_fast_l_e_d_8h.html#adcf22542128a12d8c3c30477742
 
 <p>Update all our controllers with the current led colors. </p>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00745">745</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00743">743</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -1557,7 +1557,7 @@ template&lt;<a class="el" href="_fast_l_e_d_8h.html#adcf22542128a12d8c3c30477742
   </table>
   </dd>
 </dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_array_of_led_arrays_8ino-example.html#a5">ArrayOfLedArrays.ino</a>, <a class="el" href="_blink_8ino-example.html#a5">Blink.ino</a>, <a class="el" href="_color_palette_8ino-example.html#a10">ColorPalette.ino</a>, <a class="el" href="_color_temperature_8ino-example.html#a5">ColorTemperature.ino</a>, <a class="el" href="_fire2012_with_palette_8ino-example.html#a13">Fire2012WithPalette.ino</a>, <a class="el" href="_first_light_8ino-example.html#a5">FirstLight.ino</a>, <a class="el" href="_fx_engine_8ino-example.html#a6">FxEngine.ino</a>, <a class="el" href="_mirroring_sample_8ino-example.html#a5">MirroringSample.ino</a>, <a class="el" href="_multi_arrays_8ino-example.html#a7">MultiArrays.ino</a>, <a class="el" href="_multiple_strips_in_one_array_8ino-example.html#a5">MultipleStripsInOneArray.ino</a>, <a class="el" href="_noise_8ino-example.html#a8">Noise.ino</a>, <a class="el" href="_noise_playground_8ino-example.html#a3">NoisePlayground.ino</a>, <a class="el" href="_octo_w_s2811_demo_8ino-example.html#a6">OctoWS2811Demo.ino</a>, <a class="el" href="_p_j_r_c_spectrum_analyzer_8ino-example.html#a4">PJRCSpectrumAnalyzer.ino</a>, <a class="el" href="_parallel_output_demo_8ino-example.html#a5">ParallelOutputDemo.ino</a>, <a class="el" href="_pride2015_8ino-example.html#a5">Pride2015.ino</a>, <a class="el" href="_r_g_b_calibrate_8ino-example.html#a2">RGBCalibrate.ino</a>, <a class="el" href="_smart_matrix_8ino-example.html#a8">SmartMatrix.ino</a>, and <a class="el" href="_x_y_matrix_8ino-example.html#a8">XYMatrix.ino</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_array_of_led_arrays_8ino-example.html#a5">ArrayOfLedArrays.ino</a>, <a class="el" href="_blink_8ino-example.html#a5">Blink.ino</a>, <a class="el" href="_color_palette_8ino-example.html#a10">ColorPalette.ino</a>, <a class="el" href="_color_temperature_8ino-example.html#a5">ColorTemperature.ino</a>, <a class="el" href="_fire2012_with_palette_8ino-example.html#a13">Fire2012WithPalette.ino</a>, <a class="el" href="_first_light_8ino-example.html#a6">FirstLight.ino</a>, <a class="el" href="_fx_engine_8ino-example.html#a11">FxEngine.ino</a>, <a class="el" href="_mirroring_sample_8ino-example.html#a5">MirroringSample.ino</a>, <a class="el" href="_multi_arrays_8ino-example.html#a7">MultiArrays.ino</a>, <a class="el" href="_multiple_strips_in_one_array_8ino-example.html#a5">MultipleStripsInOneArray.ino</a>, <a class="el" href="_noise_8ino-example.html#a9">Noise.ino</a>, <a class="el" href="_noise_playground_8ino-example.html#a3">NoisePlayground.ino</a>, <a class="el" href="_octo_w_s2811_demo_8ino-example.html#a6">OctoWS2811Demo.ino</a>, <a class="el" href="_p_j_r_c_spectrum_analyzer_8ino-example.html#a4">PJRCSpectrumAnalyzer.ino</a>, <a class="el" href="_parallel_output_demo_8ino-example.html#a5">ParallelOutputDemo.ino</a>, <a class="el" href="_r_g_b_calibrate_8ino-example.html#a2">RGBCalibrate.ino</a>, <a class="el" href="_smart_matrix_8ino-example.html#a8">SmartMatrix.ino</a>, and <a class="el" href="_x_y_matrix_8ino-example.html#a8">XYMatrix.ino</a>.</dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8cpp_source.html#l00094">94</a> of file <a class="el" href="_fast_l_e_d_8cpp_source.html">FastLED.cpp</a>.</p>
@@ -1595,7 +1595,7 @@ template&lt;<a class="el" href="_fast_l_e_d_8h.html#adcf22542128a12d8c3c30477742
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00762">762</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fast_l_e_d_8h_source.html#l00760">760</a> of file <a class="el" href="_fast_l_e_d_8h_source.html">FastLED.h</a>.</p>
 
 </div>
 </div>
@@ -1664,7 +1664,7 @@ template&lt;<a class="el" href="_fast_l_e_d_8h.html#adcf22542128a12d8c3c30477742
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_c_fast_l_e_d.html">CFastLED</a></li>
-    <li class="footer">Generated on Tue Dec 17 2024 05:47:34 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Dec 18 2024 10:54:37 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

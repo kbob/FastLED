@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.5</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.6</span>
    </div>
   </td>
  </tr>
@@ -161,8 +161,8 @@ $(function(){initNavTree('animartrix__detail_8hpp_source.html',''); initResizabl
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#include &quot;fl/force_inline.h&quot;</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#include &quot;crgb.h&quot;</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#include &quot;fl/namespace.h&quot;</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#include &quot;<a class="code" href="crgb_8h.html">crgb.h</a>&quot;</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#include &quot;<a class="code" href="namespace_8h.html">fl/namespace.h</a>&quot;</span></div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">// Setting this to 1 means you agree to the licensing terms of the ANIMartRIX library for non commercial use only.</span></div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#if defined(FASTLED_ANIMARTRIX_LICENSING_AGREEMENT) || (FASTLED_ANIMARTRIX_LICENSING_AGREEMENT != 0)</span></div>
@@ -4171,9 +4171,9 @@ $(function(){initNavTree('animartrix__detail_8hpp_source.html',''); initResizabl
 <div class="line"><a id="l04058" name="l04058"></a><span class="lineno"> 4058</span>                uint8_t a = getTime() / 100;</div>
 <div class="line"><a id="l04059" name="l04059"></a><span class="lineno"> 4059</span>                <a class="code hl_struct" href="struct_c_r_g_b.html">CRGB</a> p = <a class="code hl_struct" href="struct_c_r_g_b.html">CRGB</a>(<a class="code hl_struct" href="struct_c_h_s_v.html">CHSV</a>(((a + show1 + show2) + show3), 255, 255));</div>
 <div class="line"><a id="l04060" name="l04060"></a><span class="lineno"> 4060</span>                rgb pixel;</div>
-<div class="line"><a id="l04061" name="l04061"></a><span class="lineno"> 4061</span>                pixel.red = p.<a class="code hl_variable" href="group___pixel_types.html#ga89666a473d004d7b837d634686cdac94">red</a>;</div>
-<div class="line"><a id="l04062" name="l04062"></a><span class="lineno"> 4062</span>                pixel.green = p.<a class="code hl_variable" href="group___pixel_types.html#gab9843c579e6982fe49630531a0a0ab67">green</a>;</div>
-<div class="line"><a id="l04063" name="l04063"></a><span class="lineno"> 4063</span>                pixel.blue = p.<a class="code hl_variable" href="group___pixel_types.html#ga90bc5170416c8e09fcd468675a319718">blue</a>;</div>
+<div class="line"><a id="l04061" name="l04061"></a><span class="lineno"> 4061</span>                pixel.red = p.<a class="code hl_variable" href="struct_c_r_g_b.html#a89666a473d004d7b837d634686cdac94">red</a>;</div>
+<div class="line"><a id="l04062" name="l04062"></a><span class="lineno"> 4062</span>                pixel.green = p.<a class="code hl_variable" href="struct_c_r_g_b.html#ab9843c579e6982fe49630531a0a0ab67">green</a>;</div>
+<div class="line"><a id="l04063" name="l04063"></a><span class="lineno"> 4063</span>                pixel.blue = p.<a class="code hl_variable" href="struct_c_r_g_b.html#a90bc5170416c8e09fcd468675a319718">blue</a>;</div>
 <div class="line"><a id="l04064" name="l04064"></a><span class="lineno"> 4064</span>                setPixelColorInternal(x, y, pixel);</div>
 <div class="line"><a id="l04065" name="l04065"></a><span class="lineno"> 4065</span>            }</div>
 <div class="line"><a id="l04066" name="l04066"></a><span class="lineno"> 4066</span>        }</div>
@@ -4185,12 +4185,14 @@ $(function(){initNavTree('animartrix__detail_8hpp_source.html',''); initResizabl
 <div class="ttc" id="aclassanimartrix__detail_1_1_a_n_i_mart_r_i_x_html"><div class="ttname"><a href="classanimartrix__detail_1_1_a_n_i_mart_r_i_x.html">animartrix_detail::ANIMartRIX</a></div><div class="ttdef"><b>Definition</b> <a href="#l00147">animartrix_detail.hpp:147</a></div></div>
 <div class="ttc" id="aclassanimartrix__detail_1_1_a_n_i_mart_r_i_x_html_aaab8224846f4a1e0649148008c65a3e1"><div class="ttname"><a href="classanimartrix__detail_1_1_a_n_i_mart_r_i_x.html#aaab8224846f4a1e0649148008c65a3e1">animartrix_detail::ANIMartRIX::setSpeedFactor</a></div><div class="ttdeci">void setSpeedFactor(float speed)</div><div class="ttdoc">Set the Speed Factor 0.1 to 10 - 1 for original speed.</div><div class="ttdef"><b>Definition</b> <a href="#l00212">animartrix_detail.hpp:212</a></div></div>
 <div class="ttc" id="aclassfl_1_1_heap_vector_html"><div class="ttname"><a href="classfl_1_1_heap_vector.html">fl::HeapVector</a></div><div class="ttdef"><b>Definition</b> <a href="vector_8h_source.html#l00210">vector.h:210</a></div></div>
-<div class="ttc" id="agroup___pixel_types_html_ga89666a473d004d7b837d634686cdac94"><div class="ttname"><a href="group___pixel_types.html#ga89666a473d004d7b837d634686cdac94">CRGB::red</a></div><div class="ttdeci">uint8_t red</div><div class="ttdoc">Red channel value.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00057">crgb.h:57</a></div></div>
-<div class="ttc" id="agroup___pixel_types_html_ga90bc5170416c8e09fcd468675a319718"><div class="ttname"><a href="group___pixel_types.html#ga90bc5170416c8e09fcd468675a319718">CRGB::blue</a></div><div class="ttdeci">uint8_t blue</div><div class="ttdoc">Blue channel value.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00065">crgb.h:65</a></div></div>
-<div class="ttc" id="agroup___pixel_types_html_gab9843c579e6982fe49630531a0a0ab67"><div class="ttname"><a href="group___pixel_types.html#gab9843c579e6982fe49630531a0a0ab67">CRGB::green</a></div><div class="ttdeci">uint8_t green</div><div class="ttdoc">Green channel value.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00061">crgb.h:61</a></div></div>
+<div class="ttc" id="acrgb_8h_html"><div class="ttname"><a href="crgb_8h.html">crgb.h</a></div><div class="ttdoc">Defines the red, green, and blue (RGB) pixel struct.</div></div>
+<div class="ttc" id="anamespace_8h_html"><div class="ttname"><a href="namespace_8h.html">namespace.h</a></div><div class="ttdoc">Implements the FastLED namespace macros.</div></div>
 <div class="ttc" id="anoise_8cpp_html_a1a82c4835f55136d206fd9b693eaed81"><div class="ttname"><a href="noise_8cpp.html#a1a82c4835f55136d206fd9b693eaed81">P</a></div><div class="ttdeci">#define P(x)</div><div class="ttdoc">Reads a single byte from the p array.</div><div class="ttdef"><b>Definition</b> <a href="noise_8cpp_source.html#l00042">noise.cpp:42</a></div></div>
-<div class="ttc" id="astruct_c_h_s_v_html"><div class="ttname"><a href="struct_c_h_s_v.html">CHSV</a></div><div class="ttdoc">Representation of an HSV pixel (hue, saturation, value (aka brightness)).</div><div class="ttdef"><b>Definition</b> <a href="chsv_8h_source.html#l00011">chsv.h:11</a></div></div>
-<div class="ttc" id="astruct_c_r_g_b_html"><div class="ttname"><a href="struct_c_r_g_b.html">CRGB</a></div><div class="ttdoc">Representation of an RGB pixel (Red, Green, Blue)</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00052">crgb.h:52</a></div></div>
+<div class="ttc" id="astruct_c_h_s_v_html"><div class="ttname"><a href="struct_c_h_s_v.html">CHSV</a></div><div class="ttdoc">Representation of an HSV pixel (hue, saturation, value (aka brightness)).</div><div class="ttdef"><b>Definition</b> <a href="chsv_8h_source.html#l00016">chsv.h:16</a></div></div>
+<div class="ttc" id="astruct_c_r_g_b_html"><div class="ttname"><a href="struct_c_r_g_b.html">CRGB</a></div><div class="ttdoc">Representation of an RGB pixel (Red, Green, Blue)</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00054">crgb.h:54</a></div></div>
+<div class="ttc" id="astruct_c_r_g_b_html_a89666a473d004d7b837d634686cdac94"><div class="ttname"><a href="struct_c_r_g_b.html#a89666a473d004d7b837d634686cdac94">CRGB::red</a></div><div class="ttdeci">uint8_t red</div><div class="ttdoc">Red channel value.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00059">crgb.h:59</a></div></div>
+<div class="ttc" id="astruct_c_r_g_b_html_a90bc5170416c8e09fcd468675a319718"><div class="ttname"><a href="struct_c_r_g_b.html#a90bc5170416c8e09fcd468675a319718">CRGB::blue</a></div><div class="ttdeci">uint8_t blue</div><div class="ttdoc">Blue channel value.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00067">crgb.h:67</a></div></div>
+<div class="ttc" id="astruct_c_r_g_b_html_ab9843c579e6982fe49630531a0a0ab67"><div class="ttname"><a href="struct_c_r_g_b.html#ab9843c579e6982fe49630531a0a0ab67">CRGB::green</a></div><div class="ttdeci">uint8_t green</div><div class="ttdoc">Green channel value.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00063">crgb.h:63</a></div></div>
 <div class="ttc" id="astructanimartrix__detail_1_1modulators_html"><div class="ttname"><a href="structanimartrix__detail_1_1modulators.html">animartrix_detail::modulators</a></div><div class="ttdef"><b>Definition</b> <a href="#l00104">animartrix_detail.hpp:104</a></div></div>
 <div class="ttc" id="astructanimartrix__detail_1_1oscillators_html"><div class="ttname"><a href="structanimartrix__detail_1_1oscillators.html">animartrix_detail::oscillators</a></div><div class="ttdef"><b>Definition</b> <a href="#l00095">animartrix_detail.hpp:95</a></div></div>
 <div class="ttc" id="astructanimartrix__detail_1_1render__parameters_html"><div class="ttname"><a href="structanimartrix__detail_1_1render__parameters.html">animartrix_detail::render_parameters</a></div><div class="ttdef"><b>Definition</b> <a href="#l00078">animartrix_detail.hpp:78</a></div></div>
@@ -4202,7 +4204,7 @@ $(function(){initNavTree('animartrix__detail_8hpp_source.html',''); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_acbb946b833f21b16ec30aa21c4c3a72.html">fx</a></li><li class="navelem"><a class="el" href="dir_da6de6ffed4dc8eba2e7529df043e06f.html">2d</a></li><li class="navelem"><b>animartrix_detail.hpp</b></li>
-    <li class="footer">Generated on Tue Dec 17 2024 05:47:34 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Dec 18 2024 10:54:37 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

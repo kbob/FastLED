@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.5</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.6</span>
    </div>
   </td>
  </tr>
@@ -113,7 +113,7 @@ $(function(){initNavTree('struct_pixel_controller.html',''); initResizable(true)
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt;<br />
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt;<br />
 struct PixelController&lt; RGB_ORDER, LANES, MASK &gt;</div><p>Pixel controller class. </p>
 <p>This is the class that we use to centralize pixel access in a block of data, including support for things like RGB reordering, scaling, dithering, skipping (for ARGB data), and eventually, we will centralize 8/12/16 conversions here as well. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -144,7 +144,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae44229e20fb4ba4473b057dcda87122e" id="r_ae44229e20fb4ba4473b057dcda87122e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae44229e20fb4ba4473b057dcda87122e">PixelController</a> (const <a class="el" href="struct_pixel_controller.html">PixelController</a> &amp;other)</td></tr>
 <tr class="memdesc:ae44229e20fb4ba4473b057dcda87122e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <br /></td></tr>
 <tr class="separator:ae44229e20fb4ba4473b057dcda87122e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a648b1b6c35c0b90bac6e2baaba46f729" id="r_a648b1b6c35c0b90bac6e2baaba46f729"><td class="memTemplParams" colspan="2">template&lt;EOrder RGB_ORDER_OTHER&gt; </td></tr>
+<tr class="memitem:a648b1b6c35c0b90bac6e2baaba46f729" id="r_a648b1b6c35c0b90bac6e2baaba46f729"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER_OTHER&gt; </td></tr>
 <tr class="memitem:a648b1b6c35c0b90bac6e2baaba46f729"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a648b1b6c35c0b90bac6e2baaba46f729">PixelController</a> (const <a class="el" href="struct_pixel_controller.html">PixelController</a>&lt; RGB_ORDER_OTHER, LANES, MASK &gt; &amp;other)</td></tr>
 <tr class="separator:a648b1b6c35c0b90bac6e2baaba46f729"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3310e3a869dfeafae981291b76b572d" id="r_af3310e3a869dfeafae981291b76b572d"><td class="memTemplParams" colspan="2">template&lt;typename PixelControllerT &gt; </td></tr>
@@ -153,13 +153,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a358944f031ee8b8536d2f48ca670de77" id="r_a358944f031ee8b8536d2f48ca670de77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a358944f031ee8b8536d2f48ca670de77">initOffsets</a> (int len)</td></tr>
 <tr class="memdesc:a358944f031ee8b8536d2f48ca670de77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the <a class="el" href="#a5ea77404f9ea28134291af923a79c82f" title="the number of bytes to offset each lane from the starting pointer">PixelController::mOffsets</a> array based on the length of the strip.  <br /></td></tr>
 <tr class="separator:a358944f031ee8b8536d2f48ca670de77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1e1069b343fc0577828d28ffe3cead9" id="r_ae1e1069b343fc0577828d28ffe3cead9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1e1069b343fc0577828d28ffe3cead9">PixelController</a> (const uint8_t *<a class="el" href="#a576c3a3eac363fb83e475e142bbe586d">d</a>, int len, <a class="el" href="struct_color_adjustment.html">ColorAdjustment</a> color_adjustment, EDitherMode <a class="el" href="#aa2a1b38058a62a4337605425e482202f">dither</a>, bool advance, uint8_t skip)</td></tr>
+<tr class="memitem:ae1e1069b343fc0577828d28ffe3cead9" id="r_ae1e1069b343fc0577828d28ffe3cead9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1e1069b343fc0577828d28ffe3cead9">PixelController</a> (const uint8_t *<a class="el" href="#a576c3a3eac363fb83e475e142bbe586d">d</a>, int len, <a class="el" href="struct_color_adjustment.html">ColorAdjustment</a> color_adjustment, <a class="el" href="dither__mode_8h.html#a685662f0b6e22bfab012e574168ba5c9">EDitherMode</a> <a class="el" href="#aa2a1b38058a62a4337605425e482202f">dither</a>, bool advance, uint8_t skip)</td></tr>
 <tr class="memdesc:ae1e1069b343fc0577828d28ffe3cead9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="separator:ae1e1069b343fc0577828d28ffe3cead9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac272cca24b476c78cddd257cd9406150" id="r_ac272cca24b476c78cddd257cd9406150"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac272cca24b476c78cddd257cd9406150">PixelController</a> (const <a class="el" href="struct_c_r_g_b.html">CRGB</a> *<a class="el" href="#a576c3a3eac363fb83e475e142bbe586d">d</a>, int len, <a class="el" href="struct_color_adjustment.html">ColorAdjustment</a> color_adjustment, EDitherMode <a class="el" href="#aa2a1b38058a62a4337605425e482202f">dither</a>)</td></tr>
+<tr class="memitem:ac272cca24b476c78cddd257cd9406150" id="r_ac272cca24b476c78cddd257cd9406150"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac272cca24b476c78cddd257cd9406150">PixelController</a> (const <a class="el" href="struct_c_r_g_b.html">CRGB</a> *<a class="el" href="#a576c3a3eac363fb83e475e142bbe586d">d</a>, int len, <a class="el" href="struct_color_adjustment.html">ColorAdjustment</a> color_adjustment, <a class="el" href="dither__mode_8h.html#a685662f0b6e22bfab012e574168ba5c9">EDitherMode</a> <a class="el" href="#aa2a1b38058a62a4337605425e482202f">dither</a>)</td></tr>
 <tr class="memdesc:ac272cca24b476c78cddd257cd9406150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="separator:ac272cca24b476c78cddd257cd9406150"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68e0ae41357f1dda75a5724cde6aa991" id="r_a68e0ae41357f1dda75a5724cde6aa991"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68e0ae41357f1dda75a5724cde6aa991">PixelController</a> (const <a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp;<a class="el" href="#a576c3a3eac363fb83e475e142bbe586d">d</a>, int len, <a class="el" href="struct_color_adjustment.html">ColorAdjustment</a> color_adjustment, EDitherMode <a class="el" href="#aa2a1b38058a62a4337605425e482202f">dither</a>)</td></tr>
+<tr class="memitem:a68e0ae41357f1dda75a5724cde6aa991" id="r_a68e0ae41357f1dda75a5724cde6aa991"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68e0ae41357f1dda75a5724cde6aa991">PixelController</a> (const <a class="el" href="struct_c_r_g_b.html">CRGB</a> &amp;<a class="el" href="#a576c3a3eac363fb83e475e142bbe586d">d</a>, int len, <a class="el" href="struct_color_adjustment.html">ColorAdjustment</a> color_adjustment, <a class="el" href="dither__mode_8h.html#a685662f0b6e22bfab012e574168ba5c9">EDitherMode</a> <a class="el" href="#aa2a1b38058a62a4337605425e482202f">dither</a>)</td></tr>
 <tr class="memdesc:a68e0ae41357f1dda75a5724cde6aa991"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="separator:a68e0ae41357f1dda75a5724cde6aa991"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a8441da873d3a094c15c337b34d3e43" id="r_a2a8441da873d3a094c15c337b34d3e43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a8441da873d3a094c15c337b34d3e43">init_binary_dithering</a> ()</td></tr>
@@ -168,7 +168,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac13f3e00855fcf6125ea27543c2fb48c" id="r_ac13f3e00855fcf6125ea27543c2fb48c"><td class="memItemLeft" align="right" valign="top">FASTLED_FORCE_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac13f3e00855fcf6125ea27543c2fb48c">has</a> (int n)</td></tr>
 <tr class="memdesc:ac13f3e00855fcf6125ea27543c2fb48c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do we have n pixels left to process?  <br /></td></tr>
 <tr class="separator:ac13f3e00855fcf6125ea27543c2fb48c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa86847022436988b28343a76bab0db4c" id="r_aa86847022436988b28343a76bab0db4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa86847022436988b28343a76bab0db4c">enable_dithering</a> (EDitherMode <a class="el" href="#aa2a1b38058a62a4337605425e482202f">dither</a>)</td></tr>
+<tr class="memitem:aa86847022436988b28343a76bab0db4c" id="r_aa86847022436988b28343a76bab0db4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa86847022436988b28343a76bab0db4c">enable_dithering</a> (<a class="el" href="dither__mode_8h.html#a685662f0b6e22bfab012e574168ba5c9">EDitherMode</a> <a class="el" href="#aa2a1b38058a62a4337605425e482202f">dither</a>)</td></tr>
 <tr class="memdesc:aa86847022436988b28343a76bab0db4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle dithering enable If dithering is set to enabled, this will re-init the dithering values (<a class="el" href="#a2a8441da873d3a094c15c337b34d3e43" title="Set up the values for binary dithering.">init_binary_dithering()</a>).  <br /></td></tr>
 <tr class="separator:aa86847022436988b28343a76bab0db4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85305135ad8ad18edcd32dfc7431c660" id="r_a85305135ad8ad18edcd32dfc7431c660"><td class="memItemLeft" align="right" valign="top">FASTLED_FORCE_INLINE int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85305135ad8ad18edcd32dfc7431c660">size</a> ()</td></tr>
@@ -355,7 +355,7 @@ Public Attributes</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">anonymous enum</td>
@@ -374,7 +374,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -412,9 +412,9 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER_OTHER&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER_OTHER&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -443,7 +443,7 @@ template&lt;EOrder RGB_ORDER_OTHER&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -466,7 +466,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">EDitherMode</td>          <td class="paramname"><span class="paramname"><em>dither</em></span>, </td>
+          <td class="paramtype"><a class="el" href="dither__mode_8h.html#a685662f0b6e22bfab012e574168ba5c9">EDitherMode</a></td>          <td class="paramname"><span class="paramname"><em>dither</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -509,7 +509,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -532,7 +532,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">EDitherMode</td>          <td class="paramname"><span class="paramname"><em>dither</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="dither__mode_8h.html#a685662f0b6e22bfab012e574168ba5c9">EDitherMode</a></td>          <td class="paramname"><span class="paramname"><em>dither</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -563,7 +563,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -586,7 +586,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">EDitherMode</td>          <td class="paramname"><span class="paramname"><em>dither</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="dither__mode_8h.html#a685662f0b6e22bfab012e574168ba5c9">EDitherMode</a></td>          <td class="paramname"><span class="paramname"><em>dither</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -618,7 +618,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <div class="memtemplate">
 template&lt;int SLOT&gt; </div>
 <table class="mlabels">
@@ -657,7 +657,7 @@ template&lt;int SLOT&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <div class="memtemplate">
 template&lt;int SLOT&gt; </div>
 <table class="mlabels">
@@ -701,7 +701,7 @@ template&lt;int SLOT&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <div class="memtemplate">
 template&lt;int SLOT&gt; </div>
 <table class="mlabels">
@@ -751,7 +751,7 @@ template&lt;int SLOT&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -782,7 +782,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -813,7 +813,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -848,7 +848,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -880,7 +880,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -911,7 +911,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -940,7 +940,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <div class="memtemplate">
 template&lt;typename PixelControllerT &gt; </div>
 <table class="mlabels">
@@ -971,7 +971,7 @@ template&lt;typename PixelControllerT &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1000,7 +1000,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <div class="memtemplate">
 template&lt;int SLOT&gt; </div>
 <table class="mlabels">
@@ -1055,7 +1055,7 @@ template&lt;int SLOT&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <div class="memtemplate">
 template&lt;int SLOT&gt; </div>
 <table class="mlabels">
@@ -1106,7 +1106,7 @@ template&lt;int SLOT&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1114,7 +1114,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
         <tr>
           <td class="memname">void <a class="el" href="struct_pixel_controller.html">PixelController</a>&lt; RGB_ORDER, LANES, MASK &gt;::enable_dithering </td>
           <td>(</td>
-          <td class="paramtype">EDitherMode</td>          <td class="paramname"><span class="paramname"><em>dither</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="dither__mode_8h.html#a685662f0b6e22bfab012e574168ba5c9">EDitherMode</a></td>          <td class="paramname"><span class="paramname"><em>dither</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1143,7 +1143,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <div class="memtemplate">
 template&lt;int SLOT&gt; </div>
 <table class="mlabels">
@@ -1190,7 +1190,7 @@ template&lt;int SLOT&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <div class="memtemplate">
 template&lt;int SLOT&gt; </div>
 <table class="mlabels">
@@ -1237,7 +1237,7 @@ template&lt;int SLOT&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1268,7 +1268,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1299,7 +1299,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1330,7 +1330,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1368,7 +1368,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1399,7 +1399,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1436,7 +1436,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1468,7 +1468,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <div class="memtemplate">
 template&lt;int SLOT&gt; </div>
 <table class="mlabels">
@@ -1513,7 +1513,7 @@ template&lt;int SLOT&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <div class="memtemplate">
 template&lt;int SLOT&gt; </div>
 <table class="mlabels">
@@ -1563,7 +1563,7 @@ template&lt;int SLOT&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <div class="memtemplate">
 template&lt;int SLOT&gt; </div>
 <table class="mlabels">
@@ -1625,7 +1625,7 @@ template&lt;int SLOT&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <div class="memtemplate">
 template&lt;int SLOT&gt; </div>
 <table class="mlabels">
@@ -1681,7 +1681,7 @@ template&lt;int SLOT&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1712,7 +1712,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1743,7 +1743,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1778,7 +1778,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1809,7 +1809,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1840,7 +1840,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1875,7 +1875,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1906,7 +1906,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1937,7 +1937,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1972,7 +1972,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -2015,7 +2015,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -2053,7 +2053,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -2101,7 +2101,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <div class="memtemplate">
 template&lt;int SLOT&gt; </div>
 <table class="mlabels">
@@ -2146,7 +2146,7 @@ template&lt;int SLOT&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <div class="memtemplate">
 template&lt;int SLOT&gt; </div>
 <table class="mlabels">
@@ -2196,7 +2196,7 @@ template&lt;int SLOT&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -2227,7 +2227,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <div class="memtemplate">
 template&lt;int SLOT&gt; </div>
 <table class="mlabels">
@@ -2282,7 +2282,7 @@ template&lt;int SLOT&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <div class="memtemplate">
 template&lt;int SLOT&gt; </div>
 <table class="mlabels">
@@ -2333,7 +2333,7 @@ template&lt;int SLOT&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -2365,7 +2365,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -2396,7 +2396,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -2427,7 +2427,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -2462,7 +2462,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -2495,7 +2495,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">uint8_t <a class="el" href="struct_pixel_controller.html">PixelController</a>&lt; RGB_ORDER, LANES, MASK &gt;::d[3]</td>
@@ -2516,7 +2516,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">uint8_t <a class="el" href="struct_pixel_controller.html">PixelController</a>&lt; RGB_ORDER, LANES, MASK &gt;::e[3]</td>
@@ -2537,7 +2537,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">int8_t <a class="el" href="struct_pixel_controller.html">PixelController</a>&lt; RGB_ORDER, LANES, MASK &gt;::mAdvance</td>
@@ -2557,7 +2557,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="struct_color_adjustment.html">ColorAdjustment</a> <a class="el" href="struct_pixel_controller.html">PixelController</a>&lt; RGB_ORDER, LANES, MASK &gt;::mColorAdjustment</td>
@@ -2575,7 +2575,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">const uint8_t* <a class="el" href="struct_pixel_controller.html">PixelController</a>&lt; RGB_ORDER, LANES, MASK &gt;::mData</td>
@@ -2595,7 +2595,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">int <a class="el" href="struct_pixel_controller.html">PixelController</a>&lt; RGB_ORDER, LANES, MASK &gt;::mLen</td>
@@ -2615,7 +2615,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">int <a class="el" href="struct_pixel_controller.html">PixelController</a>&lt; RGB_ORDER, LANES, MASK &gt;::mLenRemaining</td>
@@ -2635,7 +2635,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
+template&lt;<a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4">EOrder</a> RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">int <a class="el" href="struct_pixel_controller.html">PixelController</a>&lt; RGB_ORDER, LANES, MASK &gt;::mOffsets[LANES]</td>
@@ -2660,7 +2660,7 @@ template&lt;EOrder RGB_ORDER, int LANES = 1, uint32_t MASK = 0xFFFFFFFF&gt; </di
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct_pixel_controller.html">PixelController</a></li>
-    <li class="footer">Generated on Tue Dec 17 2024 05:47:35 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Dec 18 2024 10:54:37 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

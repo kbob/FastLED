@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.5</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.6</span>
    </div>
   </td>
  </tr>
@@ -120,6 +120,8 @@ $(function(){initNavTree('globals_f.html',''); initResizable(true); });
 <li>FASTLED_FORCE_SOFTWARE_SPI&#160;:&#160;<a class="el" href="fastled__config_8h.html#a8913ec6850b6d04b394d683950ca97a5">fastled_config.h</a></li>
 <li>FASTLED_INTERNAL&#160;:&#160;<a class="el" href="bitswap_8cpp.html#a2d8dda85477a00deab830effc5159d33">bitswap.cpp</a>, <a class="el" href="colorpalettes_8cpp.html#a2d8dda85477a00deab830effc5159d33">colorpalettes.cpp</a>, <a class="el" href="hsv2rgb_8cpp.html#a2d8dda85477a00deab830effc5159d33">hsv2rgb.cpp</a>, <a class="el" href="lib8tion_8cpp.html#a2d8dda85477a00deab830effc5159d33">lib8tion.cpp</a>, <a class="el" href="noise_8cpp.html#a2d8dda85477a00deab830effc5159d33">noise.cpp</a>, <a class="el" href="platforms_8cpp.html#a2d8dda85477a00deab830effc5159d33">platforms.cpp</a>, <a class="el" href="power__mgt_8cpp.html#a2d8dda85477a00deab830effc5159d33">power_mgt.cpp</a></li>
 <li>FASTLED_INTERRUPT_RETRY_COUNT&#160;:&#160;<a class="el" href="fastled__config_8h.html#ada042072323051a75cb6627b47678771">fastled_config.h</a></li>
+<li>FASTLED_NAMESPACE_BEGIN&#160;:&#160;<a class="el" href="namespace_8h.html#a556e256b05a4b158f3606e4a978101ba">namespace.h</a></li>
+<li>FASTLED_NAMESPACE_END&#160;:&#160;<a class="el" href="namespace_8h.html#a1d5d01fb2365bb29ff7972156bff53e8">namespace.h</a></li>
 <li>FASTLED_NOISE_ALLOW_AVERAGE_TO_OVERFLOW&#160;:&#160;<a class="el" href="fastled__config_8h.html#ad041a1dbe27ca518810d59a2d126363b">fastled_config.h</a></li>
 <li>FASTLED_NOISE_FIXED&#160;:&#160;<a class="el" href="fastled__config_8h.html#a514a1a03ad84981f78abaae386c0531b">fastled_config.h</a></li>
 <li>FASTLED_RAND16_13849&#160;:&#160;<a class="el" href="group___random.html#ga8fefd529b25c80940db6d2d626301fac">random8.h</a></li>
@@ -127,6 +129,7 @@ $(function(){initNavTree('globals_f.html',''); initResizable(true); });
 <li>FASTLED_SCALE8_FIXED&#160;:&#160;<a class="el" href="fastled__config_8h.html#a07fe5e89a10e1d68a2dda7fd8b15e51d">fastled_config.h</a></li>
 <li>FASTLED_USE_GLOBAL_BRIGHTNESS&#160;:&#160;<a class="el" href="fastled__config_8h.html#a0577bf1839c0eccaa2724062887938e2">fastled_config.h</a></li>
 <li>FASTLED_USE_PROGMEM&#160;:&#160;<a class="el" href="fastled__progmem_8h.html#a04d274f8324a77bf90e1374fedb63eac">fastled_progmem.h</a></li>
+<li>FASTLED_USING_NAMESPACE&#160;:&#160;<a class="el" href="namespace_8h.html#a635bcfc55f9fe847cff797a4408f8aac">namespace.h</a></li>
 <li>FASTLED_VERSION&#160;:&#160;<a class="el" href="_fast_l_e_d_8h.html#a2f9de4cfbd302323305a4ad0e99167f4">FastLED.h</a></li>
 <li>FastSPI_LED&#160;:&#160;<a class="el" href="_fast_l_e_d_8h.html#a142a708c2ff8d157a967309a781ac815">FastLED.h</a></li>
 <li>FastSPI_LED2&#160;:&#160;<a class="el" href="_fast_l_e_d_8h.html#ac30cd5abdb75244830caee11ae5a110c">FastLED.h</a></li>
@@ -161,6 +164,9 @@ $(function(){initNavTree('globals_f.html',''); initResizable(true); });
 <li>FORCE_REFERENCE&#160;:&#160;<a class="el" href="hsv2rgb_8cpp.html#a62d9eb0363957a0e61b35ca80efb31a1">hsv2rgb.cpp</a></li>
 <li>ForestColors_p&#160;:&#160;<a class="el" href="group___predefined_palettes.html#ga8a2b2f97cbfb58df9478b2d064abbbe0">colorpalettes.cpp</a></li>
 <li>FORWARD_HUES&#160;:&#160;<a class="el" href="group___color_fills.html#gga097bfc6a8459d95e8afa8a16b9e6476aad258b8913cb0bd8ef8fbfbee5d0ad404">colorutils.h</a></li>
+<li>fract16&#160;:&#160;<a class="el" href="group___fractional_types.html#gaaf46b9f719ef3bdb574f8e967af6dbb5">types.h</a></li>
+<li>fract32&#160;:&#160;<a class="el" href="group___fractional_types.html#gafa7b14c3e6a0991538326c3183933205">types.h</a></li>
+<li>fract8&#160;:&#160;<a class="el" href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">types.h</a></li>
 <li>FullSpectrumFluorescent&#160;:&#160;<a class="el" href="group___color_enums.html#gga251e9e8dc2c7b981786b71706522b2a9a690a5050fdfa17da8d74b903c4098f72">color.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -169,7 +175,7 @@ $(function(){initNavTree('globals_f.html',''); initResizable(true); });
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 17 2024 05:47:35 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Dec 18 2024 10:54:38 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

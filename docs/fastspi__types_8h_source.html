@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.5</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.6</span>
    </div>
   </td>
  </tr>
@@ -114,10 +114,10 @@ $(function(){initNavTree('fastspi__types_8h_source.html',''); initResizable(true
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="_fast_l_e_d_8h.html">FastLED.h</a>&quot;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;fl/force_inline.h&quot;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;fl/namespace.h&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="namespace_8h.html">fl/namespace.h</a>&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;fl/unused.h&quot;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>FASTLED_NAMESPACE_BEGIN</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><a class="code hl_define" href="namespace_8h.html#a556e256b05a4b158f3606e4a978101ba">FASTLED_NAMESPACE_BEGIN</a></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="fastspi__types_8h.html#a41a386979a022a0c699ea52094f09c42">   21</a></span><span class="preprocessor">#define SPI_B0 (RGB_BYTE0(RGB_ORDER) + (MASK_SKIP_BITS &amp; SKIP))</span></div>
@@ -155,7 +155,7 @@ $(function(){initNavTree('fastspi__types_8h_source.html',''); initResizable(true
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="fastspi__types_8h.html#aeb2ddb65a3f7469985904ba925931e53">   84</a></span><span class="preprocessor">#define MAX_DATA_RATE 0</span></div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>FASTLED_NAMESPACE_END</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><a class="code hl_define" href="namespace_8h.html#a1d5d01fb2365bb29ff7972156bff53e8">FASTLED_NAMESPACE_END</a></div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a_fast_l_e_d_8h_html"><div class="ttname"><a href="_fast_l_e_d_8h.html">FastLED.h</a></div><div class="ttdoc">central include file for FastLED, defines the CFastLED class/object</div></div>
@@ -164,6 +164,9 @@ $(function(){initNavTree('fastspi__types_8h_source.html',''); initResizable(true
 <div class="ttc" id="aclass_d_a_t_a___n_o_p_html_a1b1d7c26545a8da0cad78828709d96e3"><div class="ttname"><a href="class_d_a_t_a___n_o_p.html#a1b1d7c26545a8da0cad78828709d96e3">DATA_NOP::adjust</a></div><div class="ttdeci">static FASTLED_FORCE_INLINE uint8_t adjust(FASTLED_REGISTER uint8_t data, FASTLED_REGISTER uint8_t scale)</div><div class="ttdoc">Hook called to adjust a byte of data before writing it to the output.</div><div class="ttdef"><b>Definition</b> <a href="#l00047">fastspi_types.h:47</a></div></div>
 <div class="ttc" id="aclass_d_a_t_a___n_o_p_html_a5a05965df99e92867f7fe7491bb934b6"><div class="ttname"><a href="class_d_a_t_a___n_o_p.html#a5a05965df99e92867f7fe7491bb934b6">DATA_NOP::postBlock</a></div><div class="ttdeci">static FASTLED_FORCE_INLINE void postBlock(int, void *context=NULL)</div><div class="ttdoc">Hook called after a block of data is written to the output.</div><div class="ttdef"><b>Definition</b> <a href="#l00051">fastspi_types.h:51</a></div></div>
 <div class="ttc" id="agroup___scaling_html_gad7535ccda9c92470c4e6ee0265585555"><div class="ttname"><a href="group___scaling.html#gad7535ccda9c92470c4e6ee0265585555">scale8</a></div><div class="ttdeci">LIB8STATIC_ALWAYS_INLINE uint8_t scale8(uint8_t i, fract8 scale)</div><div class="ttdoc">Scale one byte by a second one, which is treated as the numerator of a fraction whose denominator is ...</div><div class="ttdef"><b>Definition</b> <a href="scale8_8h_source.html#l00034">scale8.h:34</a></div></div>
+<div class="ttc" id="anamespace_8h_html"><div class="ttname"><a href="namespace_8h.html">namespace.h</a></div><div class="ttdoc">Implements the FastLED namespace macros.</div></div>
+<div class="ttc" id="anamespace_8h_html_a1d5d01fb2365bb29ff7972156bff53e8"><div class="ttname"><a href="namespace_8h.html#a1d5d01fb2365bb29ff7972156bff53e8">FASTLED_NAMESPACE_END</a></div><div class="ttdeci">#define FASTLED_NAMESPACE_END</div><div class="ttdoc">End of the FastLED namespace.</div><div class="ttdef"><b>Definition</b> <a href="namespace_8h_source.html#l00016">namespace.h:16</a></div></div>
+<div class="ttc" id="anamespace_8h_html_a556e256b05a4b158f3606e4a978101ba"><div class="ttname"><a href="namespace_8h.html#a556e256b05a4b158f3606e4a978101ba">FASTLED_NAMESPACE_BEGIN</a></div><div class="ttdeci">#define FASTLED_NAMESPACE_BEGIN</div><div class="ttdoc">Start of the FastLED namespace.</div><div class="ttdef"><b>Definition</b> <a href="namespace_8h_source.html#l00014">namespace.h:14</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.3-->
@@ -171,7 +174,7 @@ $(function(){initNavTree('fastspi__types_8h_source.html',''); initResizable(true
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="fastspi__types_8h.html">fastspi_types.h</a></li>
-    <li class="footer">Generated on Tue Dec 17 2024 05:47:34 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Dec 18 2024 10:54:37 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

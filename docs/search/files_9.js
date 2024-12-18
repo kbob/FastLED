@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['noise_2ecpp_0',['noise.cpp',['../noise_8cpp.html',1,'']]],
-  ['noise_2eh_1',['noise.h',['../noise_8h.html',1,'']]],
-  ['noise_2eino_2',['Noise.ino',['../_noise_8ino.html',1,'']]],
-  ['noiseplayground_2eino_3',['NoisePlayground.ino',['../_noise_playground_8ino.html',1,'']]],
-  ['noisepluspalette_2eino_4',['NoisePlusPalette.ino',['../fx_2_noise_plus_palette_2_noise_plus_palette_8ino.html',1,'(Global Namespace)'],['../_noise_plus_palette_2_noise_plus_palette_8ino.html',1,'(Global Namespace)']]],
-  ['noisering_2eino_5',['NoiseRing.ino',['../_noise_ring_8ino.html',1,'']]]
+  ['led_5fsysdefs_2eh_0',['led_sysdefs.h',['../led__sysdefs_8h.html',1,'']]],
+  ['lib8static_2eh_1',['lib8static.h',['../lib8static_8h.html',1,'']]],
+  ['lib8tion_2ecpp_2',['lib8tion.cpp',['../lib8tion_8cpp.html',1,'']]],
+  ['lib8tion_2eh_3',['lib8tion.h',['../lib8tion_8h.html',1,'']]]
 ];

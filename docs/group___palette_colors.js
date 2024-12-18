@@ -13,6 +13,8 @@ var group___palette_colors =
     [ "ColorFromPalette", "group___palette_colors.html#gae5e137a13a4b6145fe40007328d398f4", null ],
     [ "ColorFromPalette", "group___palette_colors.html#ga0a1bd774cd65ee7b85a20c11212bbd95", null ],
     [ "ColorFromPalette", "group___palette_colors.html#gaea6bd3ab3ec62d88e2dcc7ab2486dcd4", null ],
+    [ "ColorFromPaletteExtended", "group___palette_colors.html#ga61f55da5eb81ddc50f7855b26fb0d69b", null ],
+    [ "ColorFromPaletteExtended", "group___palette_colors.html#ga59c2f3e8a12b9eef789c37ae4d5f0182", null ],
     [ "fill_palette", "group___palette_colors.html#gac3c3f6bd497b7916177d7cb95aa5a76c", null ],
     [ "fill_palette_circular", "group___palette_colors.html#ga08fe42a864e3a7ee802d89a9b72d97c1", null ],
     [ "map_data_into_colors_through_palette", "group___palette_colors.html#gaf34a692bbec05b697dc9c06d8bb0f74f", null ],

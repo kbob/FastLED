@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.5</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.6</span>
    </div>
   </td>
  </tr>
@@ -128,8 +128,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:gac46e65aff3dd6519b33e27f0998f17cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a color from a palette.  <br /></td></tr>
 <tr class="separator:gac46e65aff3dd6519b33e27f0998f17cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga61f55da5eb81ddc50f7855b26fb0d69b" id="r_ga61f55da5eb81ddc50f7855b26fb0d69b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_c_r_g_b.html">CRGB</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga61f55da5eb81ddc50f7855b26fb0d69b">ColorFromPaletteExtended</a> (const <a class="el" href="class_c_r_g_b_palette16.html">CRGBPalette16</a> &amp;pal, uint16_t index, uint8_t brightness, <a class="el" href="#ga565c04e626af4a3ec44bf97edc607b4e">TBlendType</a> blendType)</td></tr>
+<tr class="memdesc:ga61f55da5eb81ddc50f7855b26fb0d69b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as ColorFromPalette, but with uint16_t <code>index</code> to give greater precision.  <br /></td></tr>
 <tr class="separator:ga61f55da5eb81ddc50f7855b26fb0d69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga59c2f3e8a12b9eef789c37ae4d5f0182" id="r_ga59c2f3e8a12b9eef789c37ae4d5f0182"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_c_r_g_b.html">CRGB</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga59c2f3e8a12b9eef789c37ae4d5f0182">ColorFromPaletteExtended</a> (const <a class="el" href="class_c_r_g_b_palette32.html">CRGBPalette32</a> &amp;pal, uint16_t index, uint8_t brightness, <a class="el" href="#ga565c04e626af4a3ec44bf97edc607b4e">TBlendType</a> blendType)</td></tr>
+<tr class="memdesc:ga59c2f3e8a12b9eef789c37ae4d5f0182"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as ColorFromPalette, but higher precision.  <br /></td></tr>
 <tr class="separator:ga59c2f3e8a12b9eef789c37ae4d5f0182"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0a1bd774cd65ee7b85a20c11212bbd95" id="r_ga0a1bd774cd65ee7b85a20c11212bbd95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_c_r_g_b.html">CRGB</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0a1bd774cd65ee7b85a20c11212bbd95">ColorFromPalette</a> (const <a class="el" href="colorutils_8h.html#a3ce4f8424098c820a739f95cf86d7663">TProgmemRGBPalette16</a> &amp;pal, uint8_t index, uint8_t brightness=255, <a class="el" href="#ga565c04e626af4a3ec44bf97edc607b4e">TBlendType</a> blendType=<a class="el" href="#gga565c04e626af4a3ec44bf97edc607b4ea7a36ed58acc67878c9dd1b6a83910f06">LINEARBLEND</a>)</td></tr>
 <tr class="memdesc:ga0a1bd774cd65ee7b85a20c11212bbd95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a color from a palette.     <br /></td></tr>
@@ -579,6 +581,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Same as ColorFromPalette, but with uint16_t <code>index</code> to give greater precision. </p>
+<dl class="section author"><dt>Author</dt><dd><a href="https://github.com/generalelectrix">https://github.com/generalelectrix</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://github.com/FastLED/FastLED/pull/202">https://github.com/FastLED/FastLED/pull/202</a> </dd>
+<dd>
+<a href="https://wokwi.com/projects/285170662915441160">https://wokwi.com/projects/285170662915441160</a> </dd>
+<dd>
+<a href="https://wokwi.com/projects/407831886158110721">https://wokwi.com/projects/407831886158110721</a> </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="colorutils_8cpp_source.html#l00695">695</a> of file <a class="el" href="colorutils_8cpp_source.html">colorutils.cpp</a>.</p>
 
 </div>
@@ -644,6 +654,12 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Same as ColorFromPalette, but higher precision. </p>
+<p>Will eventually become the default. </p><dl class="section author"><dt>Author</dt><dd><a href="https://github.com/generalelectrix">https://github.com/generalelectrix</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://github.com/FastLED/FastLED/pull/202#issuecomment-631333384">https://github.com/FastLED/FastLED/pull/202#issuecomment-631333384</a> </dd>
+<dd>
+<a href="https://wokwi.com/projects/285170662915441160">https://wokwi.com/projects/285170662915441160</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="colorutils_8cpp_source.html#l00561">561</a> of file <a class="el" href="colorutils_8cpp_source.html">colorutils.cpp</a>.</p>
 
@@ -844,7 +860,7 @@ template&lt;typename PALETTE &gt; </div>
     <tr><td class="paramname">targetColorArray</td><td>the LED array to store the resulting colors into. Must be at least as long as <code>dataCount</code>. </td></tr>
     <tr><td class="paramname">pal</td><td>the color palette to pull colors from </td></tr>
     <tr><td class="paramname">brightness</td><td>optional brightness value used to scale the resulting color </td></tr>
-    <tr><td class="paramname">opacity</td><td>optional opacity value for the new color. If this is 255 (default), the new colors will be written to the array directly. Otherwise the existing LED data will be scaled down using <code><a class="el" href="group___pixel_types.html#ga0441d6094ab8f98d800ec789c36b4461" title="Scale down a RGB to N/256ths of it&#39;s current brightness using &quot;video&quot; dimming rules.">CRGB::nscale8_video()</a></code> and then new colors will be added on top. A higher value means that the new colors will be more visible. </td></tr>
+    <tr><td class="paramname">opacity</td><td>optional opacity value for the new color. If this is 255 (default), the new colors will be written to the array directly. Otherwise the existing LED data will be scaled down using <code><a class="el" href="struct_c_r_g_b.html#a0441d6094ab8f98d800ec789c36b4461" title="Scale down a RGB to N/256ths of it&#39;s current brightness using &quot;video&quot; dimming rules.">CRGB::nscale8_video()</a></code> and then new colors will be added on top. A higher value means that the new colors will be more visible. </td></tr>
     <tr><td class="paramname">blendType</td><td>whether to take the palette entries directly (NOBLEND) or blend linearly between palette entries (LINEARBLEND) </td></tr>
   </table>
   </dd>
@@ -881,10 +897,10 @@ template&lt;typename PALETTE &gt; </div>
 <p>Alter one palette by making it slightly more like a "target palette". </p>
 <p>Used for palette cross-fades.</p>
 <p>It does this by comparing each of the R, G, and B channels of each entry in the current palette to the corresponding entry in the target palette and making small adjustments:</p><ul>
-<li>If the <a class="el" href="group___pixel_types.html#ga89666a473d004d7b837d634686cdac94" title="Red channel value.">CRGB::red</a> channel is too low, it will be increased.</li>
-<li>If the <a class="el" href="group___pixel_types.html#ga89666a473d004d7b837d634686cdac94" title="Red channel value.">CRGB::red</a> channel is too high, it will be slightly reduced.</li>
+<li>If the <a class="el" href="struct_c_r_g_b.html#a89666a473d004d7b837d634686cdac94" title="Red channel value.">CRGB::red</a> channel is too low, it will be increased.</li>
+<li>If the <a class="el" href="struct_c_r_g_b.html#a89666a473d004d7b837d634686cdac94" title="Red channel value.">CRGB::red</a> channel is too high, it will be slightly reduced.</li>
 </ul>
-<p>...and so on and so forth for the <a class="el" href="group___pixel_types.html#gab9843c579e6982fe49630531a0a0ab67" title="Green channel value.">CRGB::green</a> and <a class="el" href="group___pixel_types.html#ga90bc5170416c8e09fcd468675a319718" title="Blue channel value.">CRGB::blue</a> channels.</p>
+<p>...and so on and so forth for the <a class="el" href="struct_c_r_g_b.html#ab9843c579e6982fe49630531a0a0ab67" title="Green channel value.">CRGB::green</a> and <a class="el" href="struct_c_r_g_b.html#a90bc5170416c8e09fcd468675a319718" title="Blue channel value.">CRGB::blue</a> channels.</p>
 <p>Additionally, there are two significant visual improvements to this algorithm implemented here. First is this:</p><ul>
 <li>When increasing a channel, it is stepped up by ONE.</li>
 <li>When decreasing a channel, it is stepped down by TWO.</li>
@@ -912,7 +928,7 @@ template&lt;typename PALETTE &gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 17 2024 05:47:34 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Dec 18 2024 10:54:37 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

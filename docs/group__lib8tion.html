@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.5</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.6</span>
    </div>
   </td>
  </tr>
@@ -105,7 +105,8 @@ $(function(){initNavTree('group__lib8tion.html',''); initResizable(true); });
 
 <div class="header">
   <div class="summary">
-<a href="#groups">Topics</a>  </div>
+<a href="#groups">Topics</a> &#124;
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle"><div class="title">Fast Math Functions</div></div>
 </div><!--header-->
 <div class="contents">
@@ -208,8 +209,8 @@ $(function(){initNavTree('group__lib8tion.html',''); initResizable(true); });
 <div class="line">  == from + (( to - from ) * <a class="code hl_typedef" href="group___fractional_types.html#gaaf46b9f719ef3bdb574f8e967af6dbb5">fract16</a>) / 65536)</div>
 <div class="line"><a class="code hl_function" href="group___linear_interpolation.html#gaf65357c7aeca9778e5a2f80a6bac2b5d">map8</a>( in, rangeStart, rangeEnd)</div>
 <div class="line">  == map( in, 0, 255, rangeStart, rangeEnd);</div>
-<div class="ttc" id="agroup___fractional_types_html_ga5d6d013429a5b8a09d564d6137217644"><div class="ttname"><a href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a></div><div class="ttdeci">uint8_t fract8</div><div class="ttdoc">ANSI: unsigned short _Fract.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_2types_8h_source.html#l00030">types.h:30</a></div></div>
-<div class="ttc" id="agroup___fractional_types_html_gaaf46b9f719ef3bdb574f8e967af6dbb5"><div class="ttname"><a href="group___fractional_types.html#gaaf46b9f719ef3bdb574f8e967af6dbb5">fract16</a></div><div class="ttdeci">uint16_t fract16</div><div class="ttdoc">ANSI: unsigned _Fract.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_2types_8h_source.html#l00040">types.h:40</a></div></div>
+<div class="ttc" id="agroup___fractional_types_html_ga5d6d013429a5b8a09d564d6137217644"><div class="ttname"><a href="group___fractional_types.html#ga5d6d013429a5b8a09d564d6137217644">fract8</a></div><div class="ttdeci">uint8_t fract8</div><div class="ttdoc">ANSI: unsigned short _Fract.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_2types_8h_source.html#l00036">types.h:36</a></div></div>
+<div class="ttc" id="agroup___fractional_types_html_gaaf46b9f719ef3bdb574f8e967af6dbb5"><div class="ttname"><a href="group___fractional_types.html#gaaf46b9f719ef3bdb574f8e967af6dbb5">fract16</a></div><div class="ttdeci">uint16_t fract16</div><div class="ttdoc">ANSI: unsigned _Fract.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_2types_8h_source.html#l00046">types.h:46</a></div></div>
 <div class="ttc" id="agroup___linear_interpolation_html_ga62ed4425400bc4140902347dc54ffb72"><div class="ttname"><a href="group___linear_interpolation.html#ga62ed4425400bc4140902347dc54ffb72">lerp8by8</a></div><div class="ttdeci">LIB8STATIC uint8_t lerp8by8(uint8_t a, uint8_t b, fract8 frac)</div><div class="ttdoc">Linear interpolation between two unsigned 8-bit values, with 8-bit fraction.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_8h_source.html#l00455">lib8tion.h:455</a></div></div>
 <div class="ttc" id="agroup___linear_interpolation_html_ga7c02960d0f26e90054c7312e5f9a55b3"><div class="ttname"><a href="group___linear_interpolation.html#ga7c02960d0f26e90054c7312e5f9a55b3">lerp16by16</a></div><div class="ttdeci">LIB8STATIC uint16_t lerp16by16(uint16_t a, uint16_t b, fract16 frac)</div><div class="ttdoc">Linear interpolation between two unsigned 16-bit values, with 16-bit fraction.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_8h_source.html#l00472">lib8tion.h:472</a></div></div>
 <div class="ttc" id="agroup___linear_interpolation_html_ga8c8f06da86c5d7cf13f55c3a5bfdf251"><div class="ttname"><a href="group___linear_interpolation.html#ga8c8f06da86c5d7cf13f55c3a5bfdf251">lerp16by8</a></div><div class="ttdeci">LIB8STATIC uint16_t lerp16by8(uint16_t a, uint16_t b, fract8 frac)</div><div class="ttdoc">Linear interpolation between two unsigned 16-bit values, with 8-bit fraction.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_8h_source.html#l00489">lib8tion.h:489</a></div></div>
@@ -232,12 +233,12 @@ $(function(){initNavTree('group__lib8tion.html',''); initResizable(true); });
 <div class="line"><a class="code hl_function" href="group___beat_generators.html#ga12014943214a72eec31433d9682d4ebe">beat8</a>( BPM)  = 8-bit repeating sawtooth wave</div>
 <div class="line"><a class="code hl_function" href="group___beat_generators.html#gade6acbf6fd3c9d346148bccfcafb2fe2">beat16</a>( BPM) = 16-bit repeating sawtooth wave</div>
 <div class="line"><a class="code hl_function" href="group___beat_generators.html#ga1b48fc520db5f40910caf79974992395">beat88</a>( BPM88) = 16-bit repeating sawtooth wave</div>
-<div class="ttc" id="agroup___beat_generators_html_ga12014943214a72eec31433d9682d4ebe"><div class="ttname"><a href="group___beat_generators.html#ga12014943214a72eec31433d9682d4ebe">beat8</a></div><div class="ttdeci">LIB8STATIC uint8_t beat8(accum88 beats_per_minute, uint32_t timebase=0)</div><div class="ttdoc">Generates an 8-bit &quot;sawtooth&quot; wave at a given BPM.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_8h_source.html#l00928">lib8tion.h:928</a></div></div>
-<div class="ttc" id="agroup___beat_generators_html_ga1b48fc520db5f40910caf79974992395"><div class="ttname"><a href="group___beat_generators.html#ga1b48fc520db5f40910caf79974992395">beat88</a></div><div class="ttdeci">LIB8STATIC uint16_t beat88(accum88 beats_per_minute_88, uint32_t timebase=0)</div><div class="ttdoc">Generates a 16-bit &quot;sawtooth&quot; wave at a given BPM, with BPM specified in Q8.8 fixed-point format.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_8h_source.html#l00902">lib8tion.h:902</a></div></div>
-<div class="ttc" id="agroup___beat_generators_html_gaa46e5de1c4c27833359e7a97a18c839b"><div class="ttname"><a href="group___beat_generators.html#gaa46e5de1c4c27833359e7a97a18c839b">beatsin16</a></div><div class="ttdeci">LIB8STATIC uint16_t beatsin16(accum88 beats_per_minute, uint16_t lowest=0, uint16_t highest=65535, uint32_t timebase=0, uint16_t phase_offset=0)</div><div class="ttdoc">Generates a 16-bit sine wave at a given BPM that oscillates within a given range.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_8h_source.html#l00962">lib8tion.h:962</a></div></div>
-<div class="ttc" id="agroup___beat_generators_html_gade6acbf6fd3c9d346148bccfcafb2fe2"><div class="ttname"><a href="group___beat_generators.html#gade6acbf6fd3c9d346148bccfcafb2fe2">beat16</a></div><div class="ttdeci">LIB8STATIC uint16_t beat16(accum88 beats_per_minute, uint32_t timebase=0)</div><div class="ttdoc">Generates a 16-bit &quot;sawtooth&quot; wave at a given BPM.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_8h_source.html#l00918">lib8tion.h:918</a></div></div>
-<div class="ttc" id="agroup___beat_generators_html_gaecd7cbfc2640407cabf75afcc7d9ddf4"><div class="ttname"><a href="group___beat_generators.html#gaecd7cbfc2640407cabf75afcc7d9ddf4">beatsin8</a></div><div class="ttdeci">LIB8STATIC uint8_t beatsin8(accum88 beats_per_minute, uint8_t lowest=0, uint8_t highest=255, uint32_t timebase=0, uint8_t phase_offset=0)</div><div class="ttdoc">Generates an 8-bit sine wave at a given BPM that oscillates within a given range.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_8h_source.html#l00980">lib8tion.h:980</a></div></div>
-<div class="ttc" id="agroup___beat_generators_html_gaf917825ff26c8e1174c5b674a2f3c631"><div class="ttname"><a href="group___beat_generators.html#gaf917825ff26c8e1174c5b674a2f3c631">beatsin88</a></div><div class="ttdeci">LIB8STATIC uint16_t beatsin88(accum88 beats_per_minute_88, uint16_t lowest=0, uint16_t highest=65535, uint32_t timebase=0, uint16_t phase_offset=0)</div><div class="ttdoc">Generates a 16-bit sine wave at a given BPM that oscillates within a given range.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_8h_source.html#l00944">lib8tion.h:944</a></div></div>
+<div class="ttc" id="agroup___beat_generators_html_ga12014943214a72eec31433d9682d4ebe"><div class="ttname"><a href="group___beat_generators.html#ga12014943214a72eec31433d9682d4ebe">beat8</a></div><div class="ttdeci">LIB8STATIC uint8_t beat8(accum88 beats_per_minute, uint32_t timebase=0)</div><div class="ttdoc">Generates an 8-bit &quot;sawtooth&quot; wave at a given BPM.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_8h_source.html#l00923">lib8tion.h:923</a></div></div>
+<div class="ttc" id="agroup___beat_generators_html_ga1b48fc520db5f40910caf79974992395"><div class="ttname"><a href="group___beat_generators.html#ga1b48fc520db5f40910caf79974992395">beat88</a></div><div class="ttdeci">LIB8STATIC uint16_t beat88(accum88 beats_per_minute_88, uint32_t timebase=0)</div><div class="ttdoc">Generates a 16-bit &quot;sawtooth&quot; wave at a given BPM, with BPM specified in Q8.8 fixed-point format.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_8h_source.html#l00897">lib8tion.h:897</a></div></div>
+<div class="ttc" id="agroup___beat_generators_html_gaa46e5de1c4c27833359e7a97a18c839b"><div class="ttname"><a href="group___beat_generators.html#gaa46e5de1c4c27833359e7a97a18c839b">beatsin16</a></div><div class="ttdeci">LIB8STATIC uint16_t beatsin16(accum88 beats_per_minute, uint16_t lowest=0, uint16_t highest=65535, uint32_t timebase=0, uint16_t phase_offset=0)</div><div class="ttdoc">Generates a 16-bit sine wave at a given BPM that oscillates within a given range.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_8h_source.html#l00957">lib8tion.h:957</a></div></div>
+<div class="ttc" id="agroup___beat_generators_html_gade6acbf6fd3c9d346148bccfcafb2fe2"><div class="ttname"><a href="group___beat_generators.html#gade6acbf6fd3c9d346148bccfcafb2fe2">beat16</a></div><div class="ttdeci">LIB8STATIC uint16_t beat16(accum88 beats_per_minute, uint32_t timebase=0)</div><div class="ttdoc">Generates a 16-bit &quot;sawtooth&quot; wave at a given BPM.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_8h_source.html#l00913">lib8tion.h:913</a></div></div>
+<div class="ttc" id="agroup___beat_generators_html_gaecd7cbfc2640407cabf75afcc7d9ddf4"><div class="ttname"><a href="group___beat_generators.html#gaecd7cbfc2640407cabf75afcc7d9ddf4">beatsin8</a></div><div class="ttdeci">LIB8STATIC uint8_t beatsin8(accum88 beats_per_minute, uint8_t lowest=0, uint8_t highest=255, uint32_t timebase=0, uint8_t phase_offset=0)</div><div class="ttdoc">Generates an 8-bit sine wave at a given BPM that oscillates within a given range.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_8h_source.html#l00975">lib8tion.h:975</a></div></div>
+<div class="ttc" id="agroup___beat_generators_html_gaf917825ff26c8e1174c5b674a2f3c631"><div class="ttname"><a href="group___beat_generators.html#gaf917825ff26c8e1174c5b674a2f3c631">beatsin88</a></div><div class="ttdeci">LIB8STATIC uint16_t beatsin88(accum88 beats_per_minute_88, uint16_t lowest=0, uint16_t highest=65535, uint32_t timebase=0, uint16_t phase_offset=0)</div><div class="ttdoc">Generates a 16-bit sine wave at a given BPM that oscillates within a given range.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_8h_source.html#l00939">lib8tion.h:939</a></div></div>
 </div><!-- fragment --><p class="startli">BPM is beats per minute in either simple form e.g. 120, or Q8.8 fixed-point form. BPM88 is beats per minute in ONLY Q8.8 fixed-point form.</p>
 </li>
 </ul>
@@ -263,8 +264,14 @@ Topics</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___trig.html">Fast Trigonometry Functions</a></td></tr>
 <tr class="memdesc:group___trig"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fast 8-bit and 16-bit approximations of sin(x) and cos(x). <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___fractional_types.html">Fixed-Point Fractional Types.</a></td></tr>
+<tr class="memdesc:group___fractional_types"><td class="mdescLeft">&#160;</td><td class="mdescRight">Types for storing fractional data. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___float_conversions.html">Float-to-Fixed and Fixed-to-Float Conversions</a></td></tr>
 <tr class="memdesc:group___float_conversions"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions to convert between floating point and fixed point types. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__intmap.html">Integer Mapping Functions</a></td></tr>
+<tr class="memdesc:group__intmap"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps a scalar from one integer size to another. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___linear_interpolation.html">Linear Interpolation</a></td></tr>
 <tr class="memdesc:group___linear_interpolation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fast linear interpolation functions, such as could be used for Perlin noise, etc. <br /></td></tr>
@@ -278,14 +285,60 @@ Topics</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___waveform_generators.html">Waveform Generators</a></td></tr>
 <tr class="memdesc:group___waveform_generators"><td class="mdescLeft">&#160;</td><td class="mdescRight">General purpose wave generator functions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:gac735bdef91ee1e80778434336a622138" id="r_gac735bdef91ee1e80778434336a622138"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac735bdef91ee1e80778434336a622138">LIB8STATIC</a>&#160;&#160;&#160;__attribute__ ((unused)) static inline</td></tr>
+<tr class="memdesc:gac735bdef91ee1e80778434336a622138"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a LIB8TION member function as static inline with an "unused" attribute.  <br /></td></tr>
+<tr class="separator:gac735bdef91ee1e80778434336a622138"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf64ff1e31d93cd9d84b5056d99ce8dd4" id="r_gaf64ff1e31d93cd9d84b5056d99ce8dd4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf64ff1e31d93cd9d84b5056d99ce8dd4">LIB8STATIC_ALWAYS_INLINE</a>&#160;&#160;&#160;__attribute__ ((always_inline)) static inline</td></tr>
+<tr class="memdesc:gaf64ff1e31d93cd9d84b5056d99ce8dd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a LIB8TION member function as always static inline.  <br /></td></tr>
+<tr class="separator:gaf64ff1e31d93cd9d84b5056d99ce8dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="gac735bdef91ee1e80778434336a622138" name="gac735bdef91ee1e80778434336a622138"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac735bdef91ee1e80778434336a622138">&#9670;&#160;</a></span>LIB8STATIC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LIB8STATIC&#160;&#160;&#160;__attribute__ ((unused)) static inline</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Define a LIB8TION member function as static inline with an "unused" attribute. </p>
+
+<p class="definition">Definition at line <a class="el" href="lib8static_8h_source.html#l00010">10</a> of file <a class="el" href="lib8static_8h_source.html">lib8static.h</a>.</p>
+
+</div>
+</div>
+<a id="gaf64ff1e31d93cd9d84b5056d99ce8dd4" name="gaf64ff1e31d93cd9d84b5056d99ce8dd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf64ff1e31d93cd9d84b5056d99ce8dd4">&#9670;&#160;</a></span>LIB8STATIC_ALWAYS_INLINE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LIB8STATIC_ALWAYS_INLINE&#160;&#160;&#160;__attribute__ ((always_inline)) static inline</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Define a LIB8TION member function as always static inline. </p>
+
+<p class="definition">Definition at line <a class="el" href="lib8static_8h_source.html#l00012">12</a> of file <a class="el" href="lib8static_8h_source.html">lib8static.h</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.3-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 17 2024 05:47:34 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Dec 18 2024 10:54:37 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

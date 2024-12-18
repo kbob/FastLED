@@ -7,6 +7,7 @@ var searchData=
   ['video_4',['Video',['../classfl_1_1_video.html',1,'fl']]],
   ['videofxwrapper_5',['VideoFxWrapper',['../classfl_1_1_video_fx_wrapper.html',1,'fl']]],
   ['videoimpl_6',['VideoImpl',['../classfl_1_1_video_impl.html',1,'fl']]],
-  ['violet_7',['Violet',['../group___pixel_types.html#ggaeb40a08b7cb90c1e21bd408261558b99a08966db6d19bc731401bec166936580b',1,'CRGB']]],
-  ['visitor_8',['Visitor',['../structfl_1_1_fs_impl_1_1_visitor.html',1,'fl::FsImpl']]]
+  ['violet_7',['Violet',['../struct_c_r_g_b.html#aeb40a08b7cb90c1e21bd408261558b99a08966db6d19bc731401bec166936580b',1,'CRGB']]],
+  ['virtual_5fbits_8',['VIRTUAL_BITS',['../pixel__controller_8h.html#a25177681f9e6192fe226707691a24dcb',1,'pixel_controller.h']]],
+  ['visitor_9',['Visitor',['../structfl_1_1_fs_impl_1_1_visitor.html',1,'fl::FsImpl']]]
 ];

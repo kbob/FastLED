@@ -1,13 +1,9 @@
 var examples =
 [
-    [ "https://wokwi.com/projects/285170662915441160", "https_1_2_2wokwi_8com_2projects_2285170662915441160-example.html", null ],
-    [ "https://wokwi.com/projects/407831886158110721", "https_1_2_2wokwi_8com_2projects_2407831886158110721-example.html", null ],
     [ "Callback", "_callback-example.html", null ],
     [ "Pacifica.ino", "_pacifica_8ino-example.html", null ],
     [ "Pride2015.ino", "_pride2015_8ino-example.html", null ],
     [ "TwinkleFox.ino", "_twinkle_fox_8ino-example.html", null ],
-    [ "NoisePlusPalette.hpp", "_noise_plus_palette_8hpp-example.html", null ],
-    [ "RGB", "_r_g_b-example.html", null ],
     [ "AnalogOutput.ino", "_analog_output_8ino-example.html", null ],
     [ "Blink.ino", "_blink_8ino-example.html", null ],
     [ "ColorPalette.ino", "_color_palette_8ino-example.html", null ],
