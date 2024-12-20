@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.6</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.7</span>
    </div>
   </td>
  </tr>
@@ -154,8 +154,8 @@ $(function(){initNavTree('digital__pin_8cpp_source.html',''); initResizable(true
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        }</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">bool</span> digitalRead() { <span class="keywordflow">return</span> HIGH == ::digitalRead(mDigitalPin); }</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">void</span> digitalWrite(<span class="keywordtype">bool</span> value) { ::digitalWrite(mDigitalPin, value ? HIGH : LOW); }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">bool</span> high() { <span class="keywordflow">return</span> HIGH == ::digitalRead(mDigitalPin); }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">void</span> write(<span class="keywordtype">bool</span> value) { ::digitalWrite(mDigitalPin, value ? HIGH : LOW); }</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">int</span> mDigitalPin;</div>
@@ -179,8 +179,8 @@ $(function(){initNavTree('digital__pin_8cpp_source.html',''); initResizable(true
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        }</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    }</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordtype">bool</span> digitalRead() { <span class="keywordflow">return</span> mPin.<a class="code hl_function" href="class_pin.html#adf6b32998416f1ea0314bb0c09279276">hival</a>(); }</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">void</span> digitalWrite(<span class="keywordtype">bool</span> value) { value ? mPin.<a class="code hl_function" href="class_pin.html#a5a2884f01bb407fd628f57553eaaa9f4">hi</a>(): mPin.<a class="code hl_function" href="class_pin.html#a6cd185ba2f0d7f5a797635988ab65017">lo</a>(); }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordtype">bool</span> high() { <span class="keywordflow">return</span> mPin.<a class="code hl_function" href="class_pin.html#adf6b32998416f1ea0314bb0c09279276">hival</a>(); }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">void</span> write(<span class="keywordtype">bool</span> value) { value ? mPin.<a class="code hl_function" href="class_pin.html#a5a2884f01bb407fd628f57553eaaa9f4">hi</a>(): mPin.<a class="code hl_function" href="class_pin.html#a6cd185ba2f0d7f5a797635988ab65017">lo</a>(); }</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="comment">// define pin</span></div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <a class="code hl_class" href="class_pin.html">Pin</a> mPin;</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>};</div>
@@ -201,11 +201,11 @@ $(function(){initNavTree('digital__pin_8cpp_source.html',''); initResizable(true
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>}</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="keywordtype">bool</span> DigitalPin::high()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordflow">return</span> mImpl-&gt;digitalRead();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordflow">return</span> mImpl-&gt;high();</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>}</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keywordtype">void</span> DigitalPin::write(<span class="keywordtype">bool</span> is_high) {</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    mImpl-&gt;digitalWrite(is_high);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    mImpl-&gt;write(is_high);</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>}</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>}  <span class="comment">// namespace fl</span></div>
@@ -229,7 +229,7 @@ $(function(){initNavTree('digital__pin_8cpp_source.html',''); initResizable(true
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_7349e89ef19c117195f8e371603e1b1f.html">sensors</a></li><li class="navelem"><b>digital_pin.cpp</b></li>
-    <li class="footer">Generated on Wed Dec 18 2024 10:54:37 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Fri Dec 20 2024 20:54:48 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->
