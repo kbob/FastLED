@@ -191,6 +191,7 @@ var hierarchy =
     [ "CRGBPalette256", "class_c_r_g_b_palette256.html", null ],
     [ "CRGBPalette32", "class_c_r_g_b_palette32.html", null ],
     [ "DATA_NOP", "class_d_a_t_a___n_o_p.html", null ],
+    [ "fl::DefaultLess< T >", "structfl_1_1_default_less.html", null ],
     [ "DefaultPlatform", "struct_default_platform.html", null ],
     [ "DefaultSerialSettings", "struct_default_serial_settings.html", null ],
     [ "DefaultSettings", "struct_default_settings.html", null ],

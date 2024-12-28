@@ -11,6 +11,7 @@ var namespacefl =
     [ "Checkbox", "classfl_1_1_checkbox.html", null ],
     [ "CircularBuffer", "classfl_1_1_circular_buffer.html", null ],
     [ "Cylon", "classfl_1_1_cylon.html", "classfl_1_1_cylon" ],
+    [ "DefaultLess", "structfl_1_1_default_less.html", null ],
     [ "DemoReel100", "classfl_1_1_demo_reel100.html", "classfl_1_1_demo_reel100" ],
     [ "Description", "classfl_1_1_description.html", null ],
     [ "DigitalPin", "classfl_1_1_digital_pin.html", null ],

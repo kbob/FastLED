@@ -77,15 +77,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_analog_output_8ino-example.html",
-"class_c_fast_l_e_d.html#a3adb23ec5f919524928d576002cb45de",
-"class_c_r_g_b_palette256.html#a98f69fbb4046243df90aa0e77aa0a9b9",
-"classfl_1_1_fire2012.html",
-"dir_786f9dc3989cf40b3de9df2d18ba04d7.html",
-"globals_defs.html",
-"group___palette_colors.html#ga79c94ea554455e72eabab172cc15456f",
-"mapping_8h_source.html",
-"struct_c_r_g_b.html#a3b098899b112c2c9a7ad7490992e0d84",
-"struct_pixel_controller.html#ab44f62f166d162bd1e3b095b368feef2"
+"class_c_every_n_time.html#af9baddee5f65500d9b1488e4264c8ff1",
+"class_c_r_g_b_palette256.html#a7d40d64cf260798c5e6ccc0d267081e8",
+"classfl_1_1_fast_l_e_d_a_n_i_mart_r_i_x.html",
+"dir_7349e89ef19c117195f8e371603e1b1f.html",
+"globals_f.html",
+"group___palette_colors.html#gaea6bd3ab3ec62d88e2dcc7ab2486dcd4",
+"math__macros_8h_source.html",
+"struct_c_r_g_b.html#a42317847cecd51d3f70d8ca3e2f151c9",
+"struct_pixel_controller.html#ac7cb7840989882cce60218ac43dbe8ef"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

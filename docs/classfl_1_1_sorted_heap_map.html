@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.7</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.8</span>
    </div>
   </td>
  </tr>
@@ -112,9 +112,9 @@ $(function(){initNavTree('classfl_1_1_sorted_heap_map.html',''); initResizable(t
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename <a class="el" href="struct_key.html">Key</a>, typename Value, typename Less&gt;<br />
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename <a class="el" href="struct_key.html">Key</a>, typename Value, typename Less = fl::DefaultLess&lt;Key&gt;&gt;<br />
 class fl::SortedHeapMap&lt; Key, Value, Less &gt;</div>
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00243">243</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00256">256</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -122,6 +122,8 @@ Public Types</h2></td></tr>
 <tr class="separator:a5058f59066c99fcf0c5e329fe776e708"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd34f1d56e1e40da16ee73eaf625120b" id="r_abd34f1d56e1e40da16ee73eaf625120b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classfl_1_1_sorted_heap_vector.html">SortedHeapVector</a>&lt; Pair, PairLess &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd34f1d56e1e40da16ee73eaf625120b">const_iterator</a></td></tr>
 <tr class="separator:abd34f1d56e1e40da16ee73eaf625120b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d041ca05bd0545e7fce54e8cc47bc05" id="r_a6d041ca05bd0545e7fce54e8cc47bc05"><td class="memItemLeft" align="right" valign="top">typedef Pair&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d041ca05bd0545e7fce54e8cc47bc05">value_type</a></td></tr>
+<tr class="separator:a6d041ca05bd0545e7fce54e8cc47bc05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -133,8 +135,20 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab0b5919964356bd0fca5df52ae07792b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9077273ac8591a31f73c00f0540abae7" id="r_a9077273ac8591a31f73c00f0540abae7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9077273ac8591a31f73c00f0540abae7">insert</a> (const <a class="el" href="struct_key.html">Key</a> &amp;key, const Value &amp;value, InsertResult *result=nullptr)</td></tr>
 <tr class="separator:a9077273ac8591a31f73c00f0540abae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b3ccbc12ecb2dfb916b316132987d57" id="r_a0b3ccbc12ecb2dfb916b316132987d57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b3ccbc12ecb2dfb916b316132987d57">update</a> (const <a class="el" href="struct_key.html">Key</a> &amp;key, const Value &amp;value)</td></tr>
+<tr class="separator:a0b3ccbc12ecb2dfb916b316132987d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d957beeb312bc2921b53dc2ce770670" id="r_a2d957beeb312bc2921b53dc2ce770670"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d957beeb312bc2921b53dc2ce770670">swap</a> (<a class="el" href="classfl_1_1_sorted_heap_map.html">SortedHeapMap</a> &amp;other)</td></tr>
+<tr class="separator:a2d957beeb312bc2921b53dc2ce770670"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae9df2efb473df0bd5471e2f1126b7fe" id="r_aae9df2efb473df0bd5471e2f1126b7fe"><td class="memItemLeft" align="right" valign="top">Value &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae9df2efb473df0bd5471e2f1126b7fe">at</a> (const <a class="el" href="struct_key.html">Key</a> &amp;key)</td></tr>
+<tr class="separator:aae9df2efb473df0bd5471e2f1126b7fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d32564de9839a97d3e3792ba89cd6c1" id="r_a0d32564de9839a97d3e3792ba89cd6c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d32564de9839a97d3e3792ba89cd6c1">has</a> (const <a class="el" href="struct_key.html">Key</a> &amp;key) const</td></tr>
 <tr class="separator:a0d32564de9839a97d3e3792ba89cd6c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57cb802c21a91b12f97473cdb9f7f528" id="r_a57cb802c21a91b12f97473cdb9f7f528"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57cb802c21a91b12f97473cdb9f7f528">contains</a> (const <a class="el" href="struct_key.html">Key</a> &amp;key) const</td></tr>
+<tr class="separator:a57cb802c21a91b12f97473cdb9f7f528"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5bf23df42c2647d0c618fd1f3feed14" id="r_ad5bf23df42c2647d0c618fd1f3feed14"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5bf23df42c2647d0c618fd1f3feed14">operator==</a> (const <a class="el" href="classfl_1_1_sorted_heap_map.html">SortedHeapMap</a> &amp;other) const</td></tr>
+<tr class="separator:ad5bf23df42c2647d0c618fd1f3feed14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63827dac76726d0029e8c81377c72efe" id="r_a63827dac76726d0029e8c81377c72efe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a63827dac76726d0029e8c81377c72efe">operator!=</a> (const <a class="el" href="classfl_1_1_sorted_heap_map.html">SortedHeapMap</a> &amp;other) const</td></tr>
+<tr class="separator:a63827dac76726d0029e8c81377c72efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a885868fa7cfa8232e069d00dfe64a78a" id="r_a885868fa7cfa8232e069d00dfe64a78a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a885868fa7cfa8232e069d00dfe64a78a">size</a> () const</td></tr>
 <tr class="separator:a885868fa7cfa8232e069d00dfe64a78a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3ea6a448212462d63239fe3c6727d1b" id="r_ad3ea6a448212462d63239fe3c6727d1b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3ea6a448212462d63239fe3c6727d1b">empty</a> () const</td></tr>
@@ -185,7 +199,7 @@ Public Member Functions</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less &gt; </div>
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">typedef <a class="el" href="classfl_1_1_sorted_heap_vector.html">SortedHeapVector</a>&lt;Pair,PairLess&gt;::const_iterator <a class="el" href="classfl_1_1_sorted_heap_map.html">fl::SortedHeapMap</a>&lt; <a class="el" href="struct_key.html">Key</a>, Value, Less &gt;::const_iterator</td>
@@ -193,7 +207,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00265">265</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00278">278</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -203,7 +217,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less &gt; </div>
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">typedef <a class="el" href="classfl_1_1_sorted_heap_vector.html">SortedHeapVector</a>&lt;Pair,PairLess&gt;::iterator <a class="el" href="classfl_1_1_sorted_heap_map.html">fl::SortedHeapMap</a>&lt; <a class="el" href="struct_key.html">Key</a>, Value, Less &gt;::iterator</td>
@@ -211,7 +225,25 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00264">264</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00277">277</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+
+</div>
+</div>
+<a id="a6d041ca05bd0545e7fce54e8cc47bc05" name="a6d041ca05bd0545e7fce54e8cc47bc05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d041ca05bd0545e7fce54e8cc47bc05">&#9670;&#160;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Pair <a class="el" href="classfl_1_1_sorted_heap_map.html">fl::SortedHeapMap</a>&lt; <a class="el" href="struct_key.html">Key</a>, Value, Less &gt;::value_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00279">279</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -222,7 +254,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less &gt; </div>
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -241,18 +273,47 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00267">267</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00281">281</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aae9df2efb473df0bd5471e2f1126b7fe" name="aae9df2efb473df0bd5471e2f1126b7fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae9df2efb473df0bd5471e2f1126b7fe">&#9670;&#160;</a></span>at()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Value &amp; <a class="el" href="classfl_1_1_sorted_heap_map.html">fl::SortedHeapMap</a>&lt; <a class="el" href="struct_key.html">Key</a>, Value, Less &gt;::at </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_key.html">Key</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00308">308</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+
+</div>
+</div>
 <a id="ac441a9b8852ccada2cb6821d3bf3f5bc" name="ac441a9b8852ccada2cb6821d3bf3f5bc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac441a9b8852ccada2cb6821d3bf3f5bc">&#9670;&#160;</a></span>back() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less &gt; </div>
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -271,7 +332,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00339">339</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00390">390</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -281,7 +342,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less &gt; </div>
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -300,7 +361,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00340">340</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00391">391</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -310,7 +371,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less &gt; </div>
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -329,7 +390,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00294">294</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00345">345</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -339,7 +400,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less &gt; </div>
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -358,7 +419,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00296">296</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00347">347</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -368,7 +429,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less &gt; </div>
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -387,7 +448,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00290">290</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00341">341</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -397,7 +458,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less &gt; </div>
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -416,7 +477,36 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00291">291</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00342">342</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+
+</div>
+</div>
+<a id="a57cb802c21a91b12f97473cdb9f7f528" name="a57cb802c21a91b12f97473cdb9f7f528"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57cb802c21a91b12f97473cdb9f7f528">&#9670;&#160;</a></span>contains()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classfl_1_1_sorted_heap_map.html">fl::SortedHeapMap</a>&lt; <a class="el" href="struct_key.html">Key</a>, Value, Less &gt;::contains </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_key.html">Key</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00317">317</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -426,7 +516,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less &gt; </div>
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -445,7 +535,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00288">288</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00339">339</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -455,7 +545,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less &gt; </div>
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -474,7 +564,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00295">295</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00346">346</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -484,7 +574,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less &gt; </div>
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -503,7 +593,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00297">297</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00348">348</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -513,7 +603,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less &gt; </div>
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -532,7 +622,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00306">306</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00357">357</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -542,7 +632,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less &gt; </div>
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -561,7 +651,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00309">309</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00360">360</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -571,7 +661,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less &gt; </div>
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -590,7 +680,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00299">299</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00350">350</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -600,7 +690,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less &gt; </div>
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -619,7 +709,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00302">302</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00353">353</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -629,7 +719,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less &gt; </div>
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -648,7 +738,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00337">337</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00388">388</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -658,7 +748,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less &gt; </div>
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -677,7 +767,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00338">338</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00389">389</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -687,7 +777,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less &gt; </div>
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -706,7 +796,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00289">289</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00340">340</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -716,7 +806,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less &gt; </div>
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -735,7 +825,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00283">283</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00313">313</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -745,7 +835,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less &gt; </div>
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -773,7 +863,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00279">279</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00293">293</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -783,7 +873,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less &gt; </div>
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -802,7 +892,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00313">313</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00364">364</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -812,7 +902,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less &gt; </div>
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -831,7 +921,65 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00317">317</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00368">368</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+
+</div>
+</div>
+<a id="a63827dac76726d0029e8c81377c72efe" name="a63827dac76726d0029e8c81377c72efe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63827dac76726d0029e8c81377c72efe">&#9670;&#160;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classfl_1_1_sorted_heap_map.html">fl::SortedHeapMap</a>&lt; <a class="el" href="struct_key.html">Key</a>, Value, Less &gt;::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classfl_1_1_sorted_heap_map.html">SortedHeapMap</a>&lt; <a class="el" href="struct_key.html">Key</a>, Value, Less &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00334">334</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+
+</div>
+</div>
+<a id="ad5bf23df42c2647d0c618fd1f3feed14" name="ad5bf23df42c2647d0c618fd1f3feed14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5bf23df42c2647d0c618fd1f3feed14">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classfl_1_1_sorted_heap_map.html">fl::SortedHeapMap</a>&lt; <a class="el" href="struct_key.html">Key</a>, Value, Less &gt;::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classfl_1_1_sorted_heap_map.html">SortedHeapMap</a>&lt; <a class="el" href="struct_key.html">Key</a>, Value, Less &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00321">321</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -841,7 +989,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less &gt; </div>
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -860,7 +1008,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00275">275</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00289">289</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -870,7 +1018,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less &gt; </div>
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -889,7 +1037,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00271">271</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00285">285</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -899,7 +1047,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less &gt; </div>
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -918,7 +1066,69 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00287">287</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00338">338</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+
+</div>
+</div>
+<a id="a2d957beeb312bc2921b53dc2ce770670" name="a2d957beeb312bc2921b53dc2ce770670"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d957beeb312bc2921b53dc2ce770670">&#9670;&#160;</a></span>swap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classfl_1_1_sorted_heap_map.html">fl::SortedHeapMap</a>&lt; <a class="el" href="struct_key.html">Key</a>, Value, Less &gt;::swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfl_1_1_sorted_heap_map.html">SortedHeapMap</a>&lt; <a class="el" href="struct_key.html">Key</a>, Value, Less &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00304">304</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+
+</div>
+</div>
+<a id="a0b3ccbc12ecb2dfb916b316132987d57" name="a0b3ccbc12ecb2dfb916b316132987d57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b3ccbc12ecb2dfb916b316132987d57">&#9670;&#160;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classfl_1_1_sorted_heap_map.html">fl::SortedHeapMap</a>&lt; <a class="el" href="struct_key.html">Key</a>, Value, Less &gt;::update </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_key.html">Key</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Value &amp;</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00297">297</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -928,7 +1138,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less &gt; </div>
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -947,7 +1157,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00321">321</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00372">372</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -957,7 +1167,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less &gt; </div>
+template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Value , typename Less  = fl::DefaultLess&lt;Key&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -976,7 +1186,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00329">329</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00380">380</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -990,7 +1200,7 @@ template&lt;typename <a class="el" href="struct_key.html">Key</a> , typename Val
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefl.html">fl</a></li><li class="navelem"><a class="el" href="classfl_1_1_sorted_heap_map.html">SortedHeapMap</a></li>
-    <li class="footer">Generated on Fri Dec 20 2024 20:54:49 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Dec 28 2024 04:23:55 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

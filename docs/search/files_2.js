@@ -17,5 +17,5 @@ var searchData=
   ['crgb_2ecpp_14',['crgb.cpp',['../crgb_8cpp.html',1,'']]],
   ['crgb_2eh_15',['crgb.h',['../crgb_8h.html',1,'']]],
   ['crgb_2ehpp_16',['crgb.hpp',['../crgb_8hpp.html',1,'']]],
-  ['cylon_2eino_17',['Cylon.ino',['../_cylon_2_cylon_8ino.html',1,'(Global Namespace)'],['../fx_2_cylon_2_cylon_8ino.html',1,'(Global Namespace)']]]
+  ['cylon_2eino_17',['Cylon.ino',['../_cylon_8ino.html',1,'']]]
 ];

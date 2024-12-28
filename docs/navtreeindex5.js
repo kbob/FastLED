@@ -1,9 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"globals_defs.html":[7,1,6],
-"globals_e.html":[7,1,0,5],
-"globals_enum.html":[7,1,4],
-"globals_eval.html":[7,1,5],
 "globals_f.html":[7,1,0,6],
 "globals_func.html":[7,1,1],
 "globals_func.html":[7,1,1,0],
@@ -249,5 +245,9 @@ var NAVTREEINDEX5 =
 "group___palette_colors.html#ga361799a4ba193694ad974079c980430c":[4,1,1,14],
 "group___palette_colors.html#ga565c04e626af4a3ec44bf97edc607b4e":[4,1,1,0],
 "group___palette_colors.html#ga59c2f3e8a12b9eef789c37ae4d5f0182":[4,1,1,10],
-"group___palette_colors.html#ga61f55da5eb81ddc50f7855b26fb0d69b":[4,1,1,9]
+"group___palette_colors.html#ga61f55da5eb81ddc50f7855b26fb0d69b":[4,1,1,9],
+"group___palette_colors.html#ga79c94ea554455e72eabab172cc15456f":[4,1,1,2],
+"group___palette_colors.html#gac3c3f6bd497b7916177d7cb95aa5a76c":[4,1,1,11],
+"group___palette_colors.html#gac46e65aff3dd6519b33e27f0998f17cd":[4,1,1,4],
+"group___palette_colors.html#gae5e137a13a4b6145fe40007328d398f4":[4,1,1,6]
 };

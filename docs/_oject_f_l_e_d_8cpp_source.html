@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.7</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.8</span>
    </div>
   </td>
  </tr>
@@ -502,7 +502,7 @@ $(function(){initNavTree('_oject_f_l_e_d_8cpp_source.html',''); initResizable(tr
 <div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span><span class="comment">// 4 word32s for each bit in (led data)/pin = 16 * 8 = 96 bitdata bytes for each LED byte: 288 bytes / LED</span></div>
 <div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span><span class="comment">// launches DMA with IRQ activation to reload bitdata from frameBuffer</span></div>
 <div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span><span class="keywordtype">void</span> ObjectFLED::show(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>    <span class="keywordflow">while</span> (!dma3.complete()); <span class="comment">// wait for dma to complete before reset/re-use</span></div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>    waitForDmaToFinish();   <span class="comment">//wait for prior DMA to finish</span></div>
 <div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span> </div>
 <div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>    <span class="comment">//Restore context if needed</span></div>
 <div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>    <span class="keywordflow">if</span> (frameBuffer != frameBufferLocal) {      </div>
@@ -723,7 +723,7 @@ $(function(){initNavTree('_oject_f_l_e_d_8cpp_source.html',''); initResizable(tr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c30bdf76ce759a4eae8387be42921388.html">third_party</a></li><li class="navelem"><a class="el" href="dir_c31c3e3593f8f0c28b47badf4d12d70e.html">object_fled</a></li><li class="navelem"><a class="el" href="dir_3fb338c90e52612a3293a7dbe09f30ff.html">src</a></li><li class="navelem"><b>OjectFLED.cpp</b></li>
-    <li class="footer">Generated on Fri Dec 20 2024 20:54:48 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Dec 28 2024 04:23:54 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

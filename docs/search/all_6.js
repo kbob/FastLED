@@ -124,5 +124,5 @@ var searchData=
   ['cyan_121',['Cyan',['../struct_c_r_g_b.html#aeb40a08b7cb90c1e21bd408261558b99a96f458f1053c14623329794e3e705dea',1,'CRGB']]],
   ['cycle_5ft_122',['cycle_t',['../namespacefl.html#a6754328c4b1ad5e8e46ddbc6eaa638a8',1,'fl']]],
   ['cylon_123',['Cylon',['../classfl_1_1_cylon.html',1,'fl']]],
-  ['cylon_2eino_124',['Cylon.ino',['../_cylon_2_cylon_8ino.html',1,'(Global Namespace)'],['../fx_2_cylon_2_cylon_8ino.html',1,'(Global Namespace)']]]
+  ['cylon_2eino_124',['Cylon.ino',['../_cylon_8ino.html',1,'']]]
 ];

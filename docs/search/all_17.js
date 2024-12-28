@@ -69,7 +69,7 @@ var searchData=
   ['turquoise_66',['Turquoise',['../struct_c_r_g_b.html#aeb40a08b7cb90c1e21bd408261558b99a5b8151aec3deb35b53d8f6c8f2f28a25',1,'CRGB']]],
   ['twinklefox_67',['TwinkleFox',['../classfl_1_1_twinkle_fox.html',1,'fl']]],
   ['twinklefox_2ehpp_68',['twinklefox.hpp',['../twinklefox_8hpp.html',1,'']]],
-  ['twinklefox_2eino_69',['TwinkleFox.ino',['../_twinkle_fox_2_twinkle_fox_8ino.html',1,'']]],
+  ['twinklefox_2eino_69',['TwinkleFox.ino',['../_twinkle_fox_8ino.html',1,'']]],
   ['type_70',['type',['../struct_message.html#abfe2249141ed2a0b529f35343affb0e0',1,'Message']]],
   ['types_71',['Fixed-Point Fractional Types.',['../group___fractional_types.html',1,'']]],
   ['types_20crgb_20chsv_72',['Pixel Data Types (CRGB/CHSV)',['../group___pixel_types.html',1,'']]],

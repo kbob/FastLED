@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.7</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.8</span>
    </div>
   </td>
  </tr>
@@ -827,7 +827,7 @@ $(function(){initNavTree('crgb_8h_source.html',''); initResizable(true); });
 <div class="ttc" id="astruct_c_r_g_b_html_a5d4166493508a1eedc34248d3fe8ad40"><div class="ttname"><a href="struct_c_r_g_b.html#a5d4166493508a1eedc34248d3fe8ad40">CRGB::setColorCode</a></div><div class="ttdeci">FASTLED_FORCE_INLINE CRGB &amp; setColorCode(uint32_t colorcode)</div><div class="ttdoc">Allow assignment from 32-bit (really 24-bit) 0xRRGGBB color code.</div><div class="ttdef"><b>Definition</b> <a href="#l00199">crgb.h:199</a></div></div>
 <div class="ttc" id="astruct_c_r_g_b_html_a64046b8971489cd4e287d2196714a4d7"><div class="ttname"><a href="struct_c_r_g_b.html#a64046b8971489cd4e287d2196714a4d7">CRGB::operator=</a></div><div class="ttdeci">FASTLED_FORCE_INLINE CRGB &amp; operator=(const CRGB &amp;rhs)=default</div><div class="ttdoc">Allow assignment from one RGB struct to another.</div></div>
 <div class="ttc" id="astruct_c_r_g_b_html_a64c20ff47371ed75b264711adfdf104a"><div class="ttname"><a href="struct_c_r_g_b.html#a64c20ff47371ed75b264711adfdf104a">CRGB::setParity</a></div><div class="ttdeci">FASTLED_FORCE_INLINE void setParity(uint8_t parity)</div><div class="ttdoc">Adjusts the color in the smallest way possible so that the parity of the coloris now the desired valu...</div><div class="ttdef"><b>Definition</b> <a href="#l00439">crgb.h:439</a></div></div>
-<div class="ttc" id="astruct_c_r_g_b_html_a65e166b90fb7b4aecd2b26a987e312e3"><div class="ttname"><a href="struct_c_r_g_b.html#a65e166b90fb7b4aecd2b26a987e312e3">CRGB::computeAdjustment</a></div><div class="ttdeci">static CRGB computeAdjustment(uint8_t scale, const CRGB &amp;colorCorrection, const CRGB &amp;colorTemperature)</div><div class="ttdoc">Calculates the combined color adjustment to the LEDs at a given scale, color correction,...</div><div class="ttdef"><b>Definition</b> <a href="crgb_8cpp_source.html#l00024">crgb.cpp:24</a></div></div>
+<div class="ttc" id="astruct_c_r_g_b_html_a65e166b90fb7b4aecd2b26a987e312e3"><div class="ttname"><a href="struct_c_r_g_b.html#a65e166b90fb7b4aecd2b26a987e312e3">CRGB::computeAdjustment</a></div><div class="ttdeci">static CRGB computeAdjustment(uint8_t scale, const CRGB &amp;colorCorrection, const CRGB &amp;colorTemperature)</div><div class="ttdoc">Calculates the combined color adjustment to the LEDs at a given scale, color correction,...</div><div class="ttdef"><b>Definition</b> <a href="crgb_8cpp_source.html#l00025">crgb.cpp:25</a></div></div>
 <div class="ttc" id="astruct_c_r_g_b_html_a679618ea3efb525132e97c9f9faf8335"><div class="ttname"><a href="struct_c_r_g_b.html#a679618ea3efb525132e97c9f9faf8335">CRGB::CRGB</a></div><div class="ttdeci">FASTLED_FORCE_INLINE CRGB(const CHSV &amp;rhs)</div><div class="ttdoc">Allow construction from a CHSV color.</div><div class="ttdef"><b>Definition</b> <a href="#l00141">crgb.h:141</a></div></div>
 <div class="ttc" id="astruct_c_r_g_b_html_a6a74f4f37adcd7b7144e7cb37d7b7367"><div class="ttname"><a href="struct_c_r_g_b.html#a6a74f4f37adcd7b7144e7cb37d7b7367">CRGB::setHSV</a></div><div class="ttdeci">FASTLED_FORCE_INLINE CRGB &amp; setHSV(uint8_t hue, uint8_t sat, uint8_t val)</div><div class="ttdoc">Allow assignment from hue, saturation, and value.</div><div class="ttdef"><b>Definition</b> <a href="#l00175">crgb.h:175</a></div></div>
 <div class="ttc" id="astruct_c_r_g_b_html_a6b2d9ed6541cf5a3bdc791bc13af88bf"><div class="ttname"><a href="struct_c_r_g_b.html#a6b2d9ed6541cf5a3bdc791bc13af88bf">CRGB::operator--</a></div><div class="ttdeci">FASTLED_FORCE_INLINE CRGB &amp; operator--()</div><div class="ttdoc">Subtract a constant of '1' from each channel, saturating at 0x00.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8hpp_source.html#l00097">crgb.hpp:97</a></div></div>
@@ -1012,7 +1012,7 @@ $(function(){initNavTree('crgb_8h_source.html',''); initResizable(true); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="crgb_8h.html">crgb.h</a></li>
-    <li class="footer">Generated on Fri Dec 20 2024 20:54:48 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Dec 28 2024 04:23:54 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->
