@@ -12,6 +12,7 @@ var dir_d28a4824dc47e487b107a5db32ef43c4 =
     [ "ColorTemperature", "dir_f14b3bf61e57ddcd04abb3082cceefb6.html", "dir_f14b3bf61e57ddcd04abb3082cceefb6" ],
     [ "Cylon", "dir_28f79ea112b9e3d7e6ff42754a4ce07c.html", "dir_28f79ea112b9e3d7e6ff42754a4ce07c" ],
     [ "DemoReel100", "dir_16996705dca5e5845caca64f4257e696.html", "dir_16996705dca5e5845caca64f4257e696" ],
+    [ "Esp32S3I2SDemo", "dir_1e86eb05dfedeac38d51c0d61b4912b9.html", "dir_1e86eb05dfedeac38d51c0d61b4912b9" ],
     [ "EspI2SDemo", "dir_6914355e2a4418f7bd5a98ad7f31c748.html", "dir_6914355e2a4418f7bd5a98ad7f31c748" ],
     [ "Fire2012", "dir_a5438c32bb8a8ac18387223a3f06b103.html", "dir_a5438c32bb8a8ac18387223a3f06b103" ],
     [ "Fire2012WithPalette", "dir_251c36837ef2b5132d93dde41ef3cbc8.html", "dir_251c36837ef2b5132d93dde41ef3cbc8" ],

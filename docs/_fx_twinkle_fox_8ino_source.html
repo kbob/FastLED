@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.8</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.9</span>
    </div>
   </td>
  </tr>
@@ -108,7 +108,7 @@ $(function(){initNavTree('_fx_twinkle_fox_8ino_source.html',''); initResizable(t
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="_fast_l_e_d_8h.html">FastLED.h</a>&quot;</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="twinklefox_8hpp.html">fx/1d/twinklefox.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;fx/1d/twinklefox.h&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacefl.html">fl</a>;</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
@@ -143,13 +143,12 @@ $(function(){initNavTree('_fx_twinkle_fox_8ino_source.html',''); initResizable(t
 <div class="ttc" id="aclass_c_fast_l_e_d_html_a996375a3f4a7b8c096f87d8a93c2b196"><div class="ttname"><a href="class_c_fast_l_e_d.html#a996375a3f4a7b8c096f87d8a93c2b196">CFastLED::setMaxPowerInVoltsAndMilliamps</a></div><div class="ttdeci">void setMaxPowerInVoltsAndMilliamps(uint8_t volts, uint32_t milliamps)</div><div class="ttdoc">Set the maximum power to be used, given in volts and milliamps.</div><div class="ttdef"><b>Definition</b> <a href="_fast_l_e_d_8h_source.html#l00732">FastLED.h:732</a></div></div>
 <div class="ttc" id="aclass_c_fast_l_e_d_html_afd7928d822589740af6e23b2d510cf3f"><div class="ttname"><a href="class_c_fast_l_e_d.html#afd7928d822589740af6e23b2d510cf3f">CFastLED::addLeds</a></div><div class="ttdeci">static CLEDController &amp; addLeds(CLEDController *pLed, struct CRGB *data, int nLedsOrOffset, int nLedsIfOffset=0)</div><div class="ttdoc">Add a CLEDController instance to the world.</div><div class="ttdef"><b>Definition</b> <a href="_fast_l_e_d_8cpp_source.html#l00079">FastLED.cpp:79</a></div></div>
 <div class="ttc" id="aclass_c_r_g_b_array_html"><div class="ttname"><a href="class_c_r_g_b_array.html">CRGBArray</a></div><div class="ttdoc">A version of CPixelView&lt;CRGB&gt; with an included array of CRGB LEDs.</div><div class="ttdef"><b>Definition</b> <a href="pixelset_8h_source.html#l00460">pixelset.h:460</a></div></div>
-<div class="ttc" id="aclassfl_1_1_twinkle_fox_html"><div class="ttname"><a href="classfl_1_1_twinkle_fox.html">fl::TwinkleFox</a></div><div class="ttdef"><b>Definition</b> <a href="twinklefox_8hpp_source.html#l00112">twinklefox.hpp:112</a></div></div>
-<div class="ttc" id="aclassfl_1_1_twinkle_fox_html_ab5d3d43b11bed65afbd407071ee85eb8"><div class="ttname"><a href="classfl_1_1_twinkle_fox.html#ab5d3d43b11bed65afbd407071ee85eb8">fl::TwinkleFox::draw</a></div><div class="ttdeci">void draw(DrawContext context) override</div><div class="ttdef"><b>Definition</b> <a href="twinklefox_8hpp_source.html#l00125">twinklefox.hpp:125</a></div></div>
+<div class="ttc" id="aclassfl_1_1_twinkle_fox_html"><div class="ttname"><a href="classfl_1_1_twinkle_fox.html">fl::TwinkleFox</a></div><div class="ttdef"><b>Definition</b> <a href="twinklefox_8h_source.html#l00112">twinklefox.h:112</a></div></div>
+<div class="ttc" id="aclassfl_1_1_twinkle_fox_html_ab5d3d43b11bed65afbd407071ee85eb8"><div class="ttname"><a href="classfl_1_1_twinkle_fox.html#ab5d3d43b11bed65afbd407071ee85eb8">fl::TwinkleFox::draw</a></div><div class="ttdeci">void draw(DrawContext context) override</div><div class="ttdef"><b>Definition</b> <a href="twinklefox_8h_source.html#l00125">twinklefox.h:125</a></div></div>
 <div class="ttc" id="agroup___color_enums_html_ggadf6bcba67c9573665af20788c4431ae8abb6d30d01c054f65ed9c5a52c2855534"><div class="ttname"><a href="group___color_enums.html#ggadf6bcba67c9573665af20788c4431ae8abb6d30d01c054f65ed9c5a52c2855534">TypicalLEDStrip</a></div><div class="ttdeci">@ TypicalLEDStrip</div><div class="ttdoc">Typical values for SMD5050 LEDs.</div><div class="ttdef"><b>Definition</b> <a href="src_2color_8h_source.html#l00019">color.h:19</a></div></div>
 <div class="ttc" id="agroup___timekeeping_html_gaf4a00b9c39c12d777b99808d18f959fb"><div class="ttname"><a href="group___timekeeping.html#gaf4a00b9c39c12d777b99808d18f959fb">EVERY_N_SECONDS</a></div><div class="ttdeci">#define EVERY_N_SECONDS(N)</div><div class="ttdoc">Checks whether to execute a block of code every N seconds.</div><div class="ttdef"><b>Definition</b> <a href="lib8tion_8h_source.html#l01283">lib8tion.h:1283</a></div></div>
 <div class="ttc" id="anamespacefl_html"><div class="ttname"><a href="namespacefl.html">fl</a></div><div class="ttdoc">Implements a simple red square effect for 2D LED grids.</div><div class="ttdef"><b>Definition</b> <a href="crgb_8h_source.html#l00016">crgb.h:16</a></div></div>
 <div class="ttc" id="astructfl_1_1___draw_context_html"><div class="ttname"><a href="structfl_1_1___draw_context.html">fl::_DrawContext</a></div><div class="ttdef"><b>Definition</b> <a href="draw__context_8h_source.html#l00011">draw_context.h:11</a></div></div>
-<div class="ttc" id="atwinklefox_8hpp_html"><div class="ttname"><a href="twinklefox_8hpp.html">twinklefox.hpp</a></div><div class="ttdoc">Twinkling &quot;holiday&quot; lights that fade in and out.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.3-->
@@ -157,7 +156,7 @@ $(function(){initNavTree('_fx_twinkle_fox_8ino_source.html',''); initResizable(t
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_fae673d975293bb8b4e1f63bff51afa7.html">FxTwinkleFox</a></li><li class="navelem"><b>FxTwinkleFox.ino</b></li>
-    <li class="footer">Generated on Sat Dec 28 2024 04:23:54 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Jan 4 2025 07:35:35 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

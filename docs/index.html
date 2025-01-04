@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.8</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.9</span>
    </div>
   </td>
  </tr>
@@ -107,12 +107,12 @@ $(function(){initNavTree('index.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">FastLED Library </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__2home_2runner_2work_2_fast_l_e_d_2_fast_l_e_d_2_r_e_a_d_m_e"></a> <a href="https://www.ardu-badge.com/FastLED"><img src="https://www.ardu-badge.com/badge/FastLED.svg" alt="arduino-library-badge" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/FastLED/FastLED/actions/workflows/build.yml"><img src="https://github.com/FastLED/FastLED/workflows/build/badge.svg" alt="build status" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/FastLED/FastLED/actions/workflows/build_unit_test.yml"><img src="https://github.com/FastLED/FastLED/actions/workflows/build_unit_test.yml/badge.svg" alt="unit tests" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/FastLED/FastLED/actions/workflows/arduino_library_lint.yml"><img src="https://github.com/FastLED/FastLED/actions/workflows/arduino_library_lint.yml/badge.svg" alt="Arduino Library Lint" style="pointer-events: none;" class="inline"/></a> <a href="http://fastled.io/docs"><img src="https://img.shields.io/badge/Docs-Doxygen-blue.svg" alt="Documentation" style="pointer-events: none;" class="inline"/></a> <a href="https://www.reddit.com/r/FastLED/"><img src="https://img.shields.io/badge/reddit-/r/FastLED-orange.svg?logo=reddit" alt="Reddit" style="pointer-events: none;" class="inline"/></a></p>
+<div class="textblock"><p><a class="anchor" id="md__2home_2runner_2work_2_fast_l_e_d_2_fast_l_e_d_2_r_e_a_d_m_e"></a></p>
+<p><a href="https://www.ardu-badge.com/FastLED"><img src="https://www.ardu-badge.com/badge/FastLED.svg" alt="arduino-library-badge" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/FastLED/FastLED/actions/workflows/build.yml"><img src="https://github.com/FastLED/FastLED/workflows/build/badge.svg" alt="build status" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/FastLED/FastLED/actions/workflows/build_unit_test.yml"><img src="https://github.com/FastLED/FastLED/actions/workflows/build_unit_test.yml/badge.svg" alt="unit tests" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/FastLED/FastLED/actions/workflows/arduino_library_lint.yml"><img src="https://github.com/FastLED/FastLED/actions/workflows/arduino_library_lint.yml/badge.svg" alt="Arduino Library Lint" style="pointer-events: none;" class="inline"/></a> <a href="http://fastled.io/docs"><img src="https://img.shields.io/badge/Docs-Doxygen-blue.svg" alt="Documentation" style="pointer-events: none;" class="inline"/></a> <a href="https://www.reddit.com/r/FastLED/"><img src="https://img.shields.io/badge/reddit-/r/FastLED-orange.svg?logo=reddit" alt="Reddit" style="pointer-events: none;" class="inline"/></a></p>
+<p>A robust and mature led driver for Arduino/Esp32/RaspberryPi/Atmega/Teensy and more. Supports nearly every single led chipset in existence.</p>
 <p><a href="https://star-history.com/#fastled/fastled&amp;Date"><img src="https://api.star-history.com/svg?repos=fastled/fastled&amp;type=Date" alt="Star History Chart" class="inline"/>  </a></p>
 <h1><a class="anchor" id="autotoc_md0"></a>
 About</h1>
-<p>The led driver for tiny computers the size of a quarter, more or less.</p>
-<p>esp32, teensy, arduino, raspberri pi, attiny family and more.</p>
 <p>This is a library for easily &amp; efficiently controlling a wide variety of LED chipsets, like the ones sold by Adafruit (NeoPixel, DotStar, LPD8806), Sparkfun (WS2801), and AliExpress. In addition to writing to the LEDs, this library also includes a number of functions for high-performing 8-bit math for manipulating your RGB values, as well as low level classes for abstracting out access to pins and SPI hardware, while still keeping things as fast as possible.</p>
 <p>We have multiple goals with this library:</p>
 <ul>
@@ -124,7 +124,7 @@ About</h1>
 Example</h1>
 <p><em>This is an Arduino Sketch that will run on Arduino Uno/Esp32/Raspberri Pi</em> </p><div class="fragment"><div class="line"> ++</div>
 <div class="line"><span class="comment">// New feature! Overclocking WS2812</span></div>
-<div class="line"><span class="comment">// #define FASTLED_OVERCLOCK 1.2 // 20% overclock ~ 960 khz.</span></div>
+<div class="line"><span class="comment">// #define FASTLED_LED_OVERCLOCK 1.2 // 20% overclock ~ 960 khz.</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="_fast_l_e_d_8h.html">FastLED.h</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#define NUM_LEDS 60</span></div>
 <div class="line"><span class="preprocessor">#define DATA_PIN 6</span></div>
@@ -212,22 +212,26 @@ Compiled Library Size Check</h1>
 <p><a href="https://github.com/FastLED/FastLED/actions/workflows/check_esp32_size.yml"><img src="https://github.com/FastLED/FastLED/actions/workflows/check_esp32_size.yml/badge.svg" alt="esp32dev_binary_size" style="pointer-events: none;" class="inline"/></a></p>
 <p><a href="https://github.com/FastLED/FastLED/actions/workflows/check_teensy41_size.yml"><img src="https://github.com/FastLED/FastLED/actions/workflows/check_teensy41_size.yml/badge.svg" alt="teensy41_binary_size" style="pointer-events: none;" class="inline"/></a></p>
 <h1><a class="anchor" id="autotoc_md12"></a>
-New in 3.9.2!</h1>
-<p><img src="https://github.com/user-attachments/assets/be98fbe6-0ec7-492d-8ed1-b7eb6c627e86" alt="image" class="inline"/> Update: max overclock has been reported at +70%: <a href="https://www.reddit.com/r/FastLED/comments/1gkcb6m/fastled_fastled_led_overclock_17/">https://www.reddit.com/r/FastLED/comments/1gkcb6m/fastled_fastled_led_overclock_17/</a></p>
-<h1><a class="anchor" id="autotoc_md13"></a>
-Getting Started</h1>
+Install</h1>
+<h2><a class="anchor" id="autotoc_md13"></a>
+Arduino IDE</h2>
+<p>After the ArduinoIDE is installed then add the library to your IDE</p>
+<p><img src="https://github.com/user-attachments/assets/b1c02cf9-aba6-4f80-851e-78df914e2501" alt="image" class="inline"/></p>
+<p><img src="https://github.com/user-attachments/assets/508eb700-7dd4-4901-a901-68c56cc4d0e1" alt="image" class="inline"/></p>
 <h2><a class="anchor" id="autotoc_md14"></a>
-Arduino IDE / PlatformIO Dual Repo</h2>
-<p>We've created a custom repo you can try to start your projects. This repo is designed to be used with VSCode + PlatformIO but is also <em>backwards compatible with the Arduino IDE</em>.</p>
-<p>PlatformIO is an extension to VSCode and is generally viewed as a much better experience than the Arduino IDE. You get auto completion tools like intellisense and CoPilot and the ability to install tools like crash decoding. Anything you can do in Arduino IDE you can do with PlatformIO.</p>
-<p>Get started here:</p>
+PlatformIO</h2>
+<p>Follow our guide here. Our template will allow your project to be compiled by both PlatformIO and ArduinoIDE</p>
 <p><a href="https://github.com/FastLED/PlatformIO-Starter">https://github.com/FastLED/PlatformIO-Starter</a></p>
-<h2><a class="anchor" id="autotoc_md15"></a>
-ArduinoIDE</h2>
-<p>When running the Arduino IDE you need to do the additional installation step of installing FastLED in the global Arduino IDE package manager.</p>
-<p>Install the library using either <a href="https://github.com/FastLED/FastLED/releases/latest/">the .zip file from the latest release</a> or by searching for "FastLED" in the libraries manager of the Arduino IDE. <a href="https://docs.arduino.cc/software/ide-v1/tutorials/installing-libraries">See the Arduino documentation on how to install libraries for more information.</a></p>
-<h1><a class="anchor" id="autotoc_md16"></a>
-Development</h1>
+<h1><a class="anchor" id="autotoc_md15"></a>
+New Feature Announcements</h1>
+<h2><a class="anchor" id="autotoc_md16"></a>
+New in 3.9.8 - Massive Teensy 4.1 &amp; 4.0 LED output</h2>
+<p><img src="https://github.com/user-attachments/assets/79dc2801-5161-4d5a-90a2-0126403e215f" alt="New Project" class="inline"/></p>
+<h2><a class="anchor" id="autotoc_md17"></a>
+New in 3.9.2 - Overclocking of WS2812</h2>
+<p><img src="https://github.com/user-attachments/assets/be98fbe6-0ec7-492d-8ed1-b7eb6c627e86" alt="image" class="inline"/> Update: max overclock has been reported at +70%: <a href="https://www.reddit.com/r/FastLED/comments/1gkcb6m/fastled_fastled_led_overclock_17/">https://www.reddit.com/r/FastLED/comments/1gkcb6m/fastled_fastled_led_overclock_17/</a></p>
+<h2><a class="anchor" id="autotoc_md18"></a>
+Development</h2>
 <p><a href="https://github.com/FastLED/FastLED/actions/workflows/build_default.yml"><img src="https://github.com/FastLED/FastLED/actions/workflows/build_default.yml/badge.svg" alt="clone and compile" style="pointer-events: none;" class="inline"/></a></p>
 <p>If you want to make changes to FastLED then please</p>
 <ul>
@@ -244,8 +248,8 @@ Development</h1>
 <li>See <a href="dev/dev.ino">dev/dev.ino</a>. <img src="https://github.com/user-attachments/assets/66f1832d-3cfb-4633-8af8-e66148bcad1b" alt="image" width="1220" class="inline"/></li>
 </ul>
 <p>When changes are made then push to your fork to your repo and git will give you a url to trigger a pull request into the master repo.</p>
-<h2><a class="anchor" id="autotoc_md17"></a>
-Testing other devices</h2>
+<h3><a class="anchor" id="autotoc_md19"></a>
+Testing other devices</h3>
 <ul>
 <li>run [compile](compile) and then select your board</li>
 </ul>
@@ -275,13 +279,13 @@ Testing other devices</h2>
 <div class="line">[22]: yun</div>
 <div class="line">[all]: All boards</div>
 <div class="line">Enter the number of the board you want to use: 0</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md18"></a>
-Help and Support</h1>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md20"></a>
+Help and Support</h2>
 <p>If you need help with using the library, please consider visiting the Reddit community at <a href="https://reddit.com/r/FastLED">https://reddit.com/r/FastLED</a>. There are thousands of knowledgeable FastLED users in that group and a plethora of solutions in the post history.</p>
 <p>If you are looking for documentation on how something in the library works, please see the Doxygen documentation online at <a href="http://fastled.io/docs">http://fastled.io/docs</a>.</p>
 <p>If you run into bugs with the library, or if you'd like to request support for a particular platform or LED chipset, please submit an issue at <a href="http://fastled.io/issues">http://fastled.io/issues</a>.</p>
-<h1><a class="anchor" id="autotoc_md19"></a>
-Supported LED Chipsets</h1>
+<h2><a class="anchor" id="autotoc_md21"></a>
+Supported LED Chipsets</h2>
 <p>Here's a list of all the LED chipsets are supported. More details on the LED chipsets are included <a href="https://github.com/FastLED/FastLED/wiki/Chipset-reference">on our wiki page</a></p>
 <ul>
 <li>Adafruit's DotStars - aka APA102</li>
@@ -303,8 +307,8 @@ Supported LED Chipsets</h1>
 <li>LPD6803 - SPI based chpiset, chip CMODE pin must be set to 1 (inside oscillator mode)</li>
 </ul>
 <p>HL1606, and "595"-style shift registers are no longer supported by the library. The older Version 1 of the library ("FastSPI_LED") has support for these, but is missing many of the advanced features of current versions and is no longer being maintained.</p>
-<h1><a class="anchor" id="autotoc_md20"></a>
-Supported Platforms</h1>
+<h2><a class="anchor" id="autotoc_md22"></a>
+Supported Platforms</h2>
 <p>Right now the library is supported on a variety of arduino compatible platforms. If it's ARM or AVR and uses the arduino software (or a modified version of it to build) then it is likely supported. Note that we have a long list of upcoming platforms to support, so if you don't see what you're looking for here, ask, it may be on the roadmap (or may already be supported). N.B. at the moment we are only supporting the stock compilers that ship with the arduino software. Support for upgraded compilers, as well as using AVR studio and skipping the arduino entirely, should be coming in a near future release.</p>
 <ul>
 <li>Adafruit Trinket &amp; Gemma - Trinket Pro may be supported, but haven't tested to confirm yet</li>
@@ -321,56 +325,31 @@ Supported Platforms</h1>
 <li>The wino board - <a href="http://wino-board.com">http://wino-board.com</a></li>
 </ul>
 <p>What types of platforms are we thinking about supporting in the future? Here's a short list: ChipKit32, Maple, Beagleboard</p>
-<h1><a class="anchor" id="autotoc_md21"></a>
-Special Notes on APA102 and the 'High Definition' Mode in FastLED</h1>
-<p>The APA102 LED driver includes a 5-bit per-LED brightness component. Previously, this feature was not fully utilized, except through a workaround that defined a global brightness affecting all LEDs uniformly rather than individually.</p>
-<p>In FastLED the APA102 chipset will have extra resolution in comparison to the <a class="el" href="class_w_s2812.html" title="WS2812 controller class.">WS2812</a> RGB8 mode.</p>
-<p>There are two modes:</p><ul>
-<li>APA102 "Regular Mode"<ul>
-<li>Has enhanced color resolution when using the "global brightness" factor</li>
-</ul>
-</li>
-<li>APA102HD Mode<ul>
-<li>Applies automatic gamma correction at the driver level using "pseudo 13-bit" color mixing.</li>
-</ul>
-</li>
-</ul>
-<p><b>APA102HD Mode</b></p>
-<p><a href="examples/Apa102HD/">example: examples/APA102HD</a></p>
-<p>By introducing a 5-bit gamma bit-shift algorithm, we now effectively leverage this per-LED brightness control. Faced with the decision to either rewrite the entire <code><a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a></code> library to expose the 5-bit brightness—including adaptations for formats like RGBW—or to retain the existing RGB8 format used by FastLED and implement the enhancement at the driver level, the latter option was chosen. This approach avoids widespread changes and maintains compatibility; if RGB8 suffices for game development, it is adequate for LED development as well.</p>
-<p>The term "Pseudo-13-bit" arises because the additional resolution becomes significant only when all color components are at low values. For example, colors like <code><a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB(255, 255, 254)</a></code> or <code><a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB(255, 1, 1)</a></code> do not benefit from increased resolution due to the dominance of the brighter components. However, in low-light conditions with colors such as <code><a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB(8, 8, 8)</a></code>, where the maximum component value is low, the pseudo-13-bit algorithm significantly enhances resolution—precisely where increased resolution is most desired.</p>
-<p>Gamma correction is applied to preserve the RGB8 format and because future LEDs are expected to support gamma correction inherently. In game development, the 0-255 color values are based on the gamma scale rather than the linear power scale. LEDs like the <a class="el" href="class_w_s2812.html" title="WS2812 controller class.">WS2812</a> operate on a linear power scale, which results in washed-out, undersaturated colors when displaying captured video directly. Implementing software gamma correction for RGB8 severely reduces color resolution.</p>
-<p>To address this, an internal gamma scale mapping is applied:</p>
-<div class="fragment"><div class="line">RGB8 → RGB16 + 5-bit gamma → RGB8 + 5-bit gamma</div>
-</div><!-- fragment --><p>During the conversion back to RGB8, the brightness from the 5-bit gamma is bit-shifted into the RGB components. Each time the 5-bit brightness is shifted right, the RGB components are shifted left. For example:</p>
-<p>Starting with <code><a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4a30447e9f6efa4afdd251f9afc1d5fb44" title="Red, Green, Blue (0012)">RGB(4, 4, 4)</a></code> and a 5-bit brightness value of 31:</p>
-<ul>
-<li>Shift RGB components left, shift 5-bit brightness right:<ul>
-<li><code><a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4a30447e9f6efa4afdd251f9afc1d5fb44" title="Red, Green, Blue (0012)">RGB(8, 8, 8)</a></code>, brightness 15</li>
-<li><code><a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4a30447e9f6efa4afdd251f9afc1d5fb44" title="Red, Green, Blue (0012)">RGB(16, 16, 16)</a></code>, brightness 7</li>
-<li><code><a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4a30447e9f6efa4afdd251f9afc1d5fb44" title="Red, Green, Blue (0012)">RGB(32, 32, 32)</a></code>, brightness 3</li>
-<li><code><a class="el" href="eorder_8h.html#a3c26d076773aa0f331d3066b46dbc6a4a30447e9f6efa4afdd251f9afc1d5fb44" title="Red, Green, Blue (0012)">RGB(64, 64, 64)</a></code>, brightness 1 (final state)</li>
-</ul>
-</li>
-</ul>
-<p>This simplified illustration omits that the actual processing occurs in 16-bit space rather than 8-bit, but the fundamental concept remains the same.</p>
-<p>By truncating the gamma-corrected RGB16 values back to RGB8, the LEDs receive pre-boosted RGB components and pre-dimmed 5-bit brightness values. This method preserves minor color details over a greater range, offering a valuable trade-off and leading to the designation of this mode as "APA102HD."</p>
-<p>In version 3.9.0, the algorithm was completely rewritten to function natively on 8-bit controllers like the <code>__AVR__</code> chipsets without significant performance loss. Previously, accumulating the numerator and denominator during the brightness bit-shifting process introduced extra bits that were ultimately truncated. Testing revealed that equivalent resolution could be achieved using straightforward bit-shifting, which also significantly reduced code size on AVR platforms with the new algorithm.</p>
-<p><b>Further Enhancements in Version 3.9.0</b></p>
-<p>Additionally, version 3.9.0 separated the color temperature from the global brightness scale. Before this update, global brightness was pre-mixed with the component scales—a method suitable for the <a class="el" href="class_w_s2812.html" title="WS2812 controller class.">WS2812</a>'s RGB8 format but not for the APA102's RGB8 plus 5-bit brightness. The update saw the global brightness and color scales separated for non-AVR chipsets. While the <a class="el" href="class_w_s2812.html" title="WS2812 controller class.">WS2812</a> continues to use pre-mixed values for performance reasons on AVR chipsets, the APA102 now performs component mixing within the "pseudo-13-bit space."</p>
-<p>Although APA102HD mode offers the highest dynamic range, the standard APA102 mode also benefits from increased resolution when adjusting global brightness. In this mode, instead of pre-mixing scales and multiplying them against each <code><a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a></code> value, the global brightness is applied to the 5-bit brightness component, and only the color scales are multiplied against the <code><a class="el" href="struct_c_r_g_b.html" title="Representation of an RGB pixel (Red, Green, Blue)">CRGB</a></code> values. This approach is superior because each component of the color scale typically exceeds 127, providing ample high-order bits to preserve color information.</p>
-<p><b>Conclusion</b></p>
-<p>I hope this explanation clarifies the enhancements and the rationale behind these implementation choices. If you have any questions or require further clarification, please do not hesitate to ask.</p>
-<h2><a class="anchor" id="autotoc_md22"></a>
+<h3><a class="anchor" id="autotoc_md23"></a>
+APA102 and the 'High Definition' Mode in FastLED</h3>
+<p>FastLED features driver-level gamma correction for the APA102 and SK9822 chipsets, using our "pseudo-13-bit mixing" algorithm. Read about it here: <a href="https://github.com/FastLED/FastLED/blob/master/APA102.md">https://github.com/FastLED/FastLED/blob/master/APA102.md</a></p>
+<p><img src="https://github.com/user-attachments/assets/999e68ce-454f-4f15-9590-a8d2e8d47a22" alt="image" class="inline"/></p>
+<h1><a class="anchor" id="autotoc_md24"></a>
+Getting Started</h1>
+<h3><a class="anchor" id="autotoc_md25"></a>
+Arduino IDE / PlatformIO Dual Repo</h3>
+<p>We've created a custom repo you can try to start your projects. This repo is designed to be used with VSCode + PlatformIO but is also <em>backwards compatible with the Arduino IDE</em>.</p>
+<p>PlatformIO is an extension to VSCode and is generally viewed as a much better experience than the Arduino IDE. You get auto completion tools like intellisense and CoPilot and the ability to install tools like crash decoding. Anything you can do in Arduino IDE you can do with PlatformIO.</p>
+<p>Get started here:</p>
+<p><a href="https://github.com/FastLED/PlatformIO-Starter">https://github.com/FastLED/PlatformIO-Starter</a></p>
+<h3><a class="anchor" id="autotoc_md26"></a>
+ArduinoIDE</h3>
+<p>When running the Arduino IDE you need to do the additional installation step of installing FastLED in the global Arduino IDE package manager.</p>
+<p>Install the library using either <a href="https://github.com/FastLED/FastLED/releases/latest/">the .zip file from the latest release</a> or by searching for "FastLED" in the libraries manager of the Arduino IDE. <a href="https://docs.arduino.cc/software/ide-v1/tutorials/installing-libraries">See the Arduino documentation on how to install libraries for more information.</a></p>
+<h2><a class="anchor" id="autotoc_md27"></a>
 Porting FastLED to a new platform</h2>
 <p>Information on porting FastLED can be found in the file <a class="el" href="md__2home_2runner_2work_2_fast_l_e_d_2_fast_l_e_d_2_p_o_r_t_i_n_g.html">PORTING.md</a>.</p>
-<h2><a class="anchor" id="autotoc_md23"></a>
+<h2><a class="anchor" id="autotoc_md28"></a>
 What about that name?</h2>
 <p>Wait, what happened to FastSPI_LED and FastSPI_LED2? The library was initially named FastSPI_LED because it was focused on very fast and efficient SPI access. However, since then, the library has expanded to support a number of LED chipsets that don't use SPI, as well as a number of math and utility functions for LED processing across the board. We decided that the name FastLED more accurately represents the totality of what the library provides, everything fast, for LEDs.</p>
-<h2><a class="anchor" id="autotoc_md24"></a>
+<h2><a class="anchor" id="autotoc_md29"></a>
 For more information</h2>
-<p>Check out the official site <a href="http://fastled.io">http://fastled.io</a> for links to documentation, issues, and news</p>
-<p><em>TODO</em> - get candy </p>
+<p>Check out the official site <a href="http://fastled.io">http://fastled.io</a> for links to documentation, issues, and news </p>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"/>
 </div><!-- contents -->
@@ -379,7 +358,7 @@ For more information</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Dec 28 2024 04:23:55 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Jan 4 2025 07:35:37 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['3_209_202_0',['New in 3.9.2!',['../index.html#autotoc_md12',1,'']]]
+  ['1_204_200_20led_20output_0',['New in 3.9.8 - Massive Teensy 4.1 &amp; 4.0 LED output',['../index.html#autotoc_md16',1,'']]]
 ];

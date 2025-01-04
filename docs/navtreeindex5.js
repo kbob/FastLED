@@ -1,5 +1,15 @@
 var NAVTREEINDEX5 =
 {
+"globals.html":[7,1,0],
+"globals.html":[7,1,0,0],
+"globals_a.html":[7,1,0,1],
+"globals_b.html":[7,1,0,2],
+"globals_c.html":[7,1,0,3],
+"globals_d.html":[7,1,0,4],
+"globals_defs.html":[7,1,6],
+"globals_e.html":[7,1,0,5],
+"globals_enum.html":[7,1,4],
+"globals_eval.html":[7,1,5],
 "globals_f.html":[7,1,0,6],
 "globals_func.html":[7,1,1],
 "globals_func.html":[7,1,1,0],
@@ -239,15 +249,5 @@ var NAVTREEINDEX5 =
 "group___palette_classes.html#ga9b4bbbaa572ed85baf5d098dc47a347b":[4,1,0,7],
 "group___palette_classes.html#gae1c82c19302557ba92e9ce0ec2c9ed5b":[4,1,0,8],
 "group___palette_colors.html":[4,1,1],
-"group___palette_colors.html#ga08fe42a864e3a7ee802d89a9b72d97c1":[4,1,1,12],
-"group___palette_colors.html#ga0a1bd774cd65ee7b85a20c11212bbd95":[4,1,1,7],
-"group___palette_colors.html#ga1684ed7eb860c68a915d03e94250e58a":[4,1,1,3],
-"group___palette_colors.html#ga361799a4ba193694ad974079c980430c":[4,1,1,14],
-"group___palette_colors.html#ga565c04e626af4a3ec44bf97edc607b4e":[4,1,1,0],
-"group___palette_colors.html#ga59c2f3e8a12b9eef789c37ae4d5f0182":[4,1,1,10],
-"group___palette_colors.html#ga61f55da5eb81ddc50f7855b26fb0d69b":[4,1,1,9],
-"group___palette_colors.html#ga79c94ea554455e72eabab172cc15456f":[4,1,1,2],
-"group___palette_colors.html#gac3c3f6bd497b7916177d7cb95aa5a76c":[4,1,1,11],
-"group___palette_colors.html#gac46e65aff3dd6519b33e27f0998f17cd":[4,1,1,4],
-"group___palette_colors.html#gae5e137a13a4b6145fe40007328d398f4":[4,1,1,6]
+"group___palette_colors.html#ga08fe42a864e3a7ee802d89a9b72d97c1":[4,1,1,12]
 };

@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.8</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.9</span>
    </div>
   </td>
  </tr>
@@ -484,7 +484,7 @@ $(function(){initNavTree('scale8_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span><span class="preprocessor">#if SCALE16BY8_C == 1</span></div>
 <div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span>    uint16_t result;</div>
 <div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span><span class="preprocessor">#if FASTLED_SCALE8_FIXED == 1</span></div>
-<div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span>    result = (i * (1 + ((uint16_t)scale))) &gt;&gt; 8;</div>
+<div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span>    result = (((uint32_t)(i) * (1 + ((uint32_t)scale))) &gt;&gt; 8);</div>
 <div class="line"><a id="l00477" name="l00477"></a><span class="lineno">  477</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00478" name="l00478"></a><span class="lineno">  478</span>    result = (i * scale) / 256;</div>
 <div class="line"><a id="l00479" name="l00479"></a><span class="lineno">  479</span><span class="preprocessor">#endif</span></div>
@@ -771,7 +771,7 @@ $(function(){initNavTree('scale8_8h_source.html',''); initResizable(true); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_d91669bda445047ed1892ac77a05ddb9.html">lib8tion</a></li><li class="navelem"><a class="el" href="scale8_8h.html">scale8.h</a></li>
-    <li class="footer">Generated on Sat Dec 28 2024 04:23:54 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Jan 4 2025 07:35:36 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

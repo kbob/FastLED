@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.8</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.9</span>
    </div>
   </td>
  </tr>
@@ -153,8 +153,8 @@ $(function(){initNavTree('_fx_sd_card_8ino_source.html',''); initResizable(true)
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#define IS_SERPINTINE true</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><a class="code hl_class" href="classfl_1_1_title.html">Title</a> title(<span class="stringliteral">&quot;SDCard Demo - Mapped Video&quot;</span>);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><a class="code hl_class" href="classfl_1_1_description.html">Description</a> description(<span class="stringliteral">&quot;Video data is streamed off of a SD card and displayed on a LED strip. The video data is mapped to the LED strip using a ScreenMap.&quot;</span>);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><a class="code hl_class" href="classfl_1_1_u_i_title.html">UITitle</a> title(<span class="stringliteral">&quot;SDCard Demo - Mapped Video&quot;</span>);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><a class="code hl_class" href="classfl_1_1_u_i_description.html">UIDescription</a> description(<span class="stringliteral">&quot;Video data is streamed off of a SD card and displayed on a LED strip. The video data is mapped to the LED strip using a ScreenMap.&quot;</span>);</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><a class="code hl_struct" href="struct_c_r_g_b.html">CRGB</a> leds[NUM_LEDS];</div>
@@ -164,8 +164,8 @@ $(function(){initNavTree('_fx_sd_card_8ino_source.html',''); initResizable(true)
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><a class="code hl_class" href="classfl_1_1_video.html">Video</a> video;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><a class="code hl_class" href="classfl_1_1_video.html">Video</a> video2;</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><a class="code hl_class" href="classfl_1_1_slider.html">Slider</a> videoSpeed(<span class="stringliteral">&quot;Video Speed&quot;</span>, 1.0f, -1, 2.0f, 0.01f);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><a class="code hl_class" href="classfl_1_1_number_field.html">NumberField</a> whichVideo(<span class="stringliteral">&quot;Which Video&quot;</span>, 0, 0, 1);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><a class="code hl_class" href="classfl_1_1_u_i_slider.html">UISlider</a> videoSpeed(<span class="stringliteral">&quot;Video Speed&quot;</span>, 1.0f, -1, 2.0f, 0.01f);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><a class="code hl_class" href="classfl_1_1_u_i_number_field.html">UINumberField</a> whichVideo(<span class="stringliteral">&quot;Which Video&quot;</span>, 0, 0, 1);</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keywordtype">bool</span> gError = <span class="keyword">false</span>;</div>
@@ -234,12 +234,12 @@ $(function(){initNavTree('_fx_sd_card_8ino_source.html',''); initResizable(true)
 <div class="ttc" id="aclass_c_fast_l_e_d_html_a730ba7d967e882b4b893689cf333b2eb"><div class="ttname"><a href="class_c_fast_l_e_d.html#a730ba7d967e882b4b893689cf333b2eb">CFastLED::setBrightness</a></div><div class="ttdeci">void setBrightness(uint8_t scale)</div><div class="ttdoc">Set the global brightness scaling.</div><div class="ttdef"><b>Definition</b> <a href="_fast_l_e_d_8h_source.html#l00723">FastLED.h:723</a></div></div>
 <div class="ttc" id="aclass_c_fast_l_e_d_html_a83afdd1e2a21f33ac4f8d2610d6e331b"><div class="ttname"><a href="class_c_fast_l_e_d.html#a83afdd1e2a21f33ac4f8d2610d6e331b">CFastLED::show</a></div><div class="ttdeci">void show(uint8_t scale)</div><div class="ttdoc">Update all our controllers with the current led colors, using the passed in brightness.</div><div class="ttdef"><b>Definition</b> <a href="_fast_l_e_d_8cpp_source.html#l00094">FastLED.cpp:94</a></div></div>
 <div class="ttc" id="aclass_c_fast_l_e_d_html_afd7928d822589740af6e23b2d510cf3f"><div class="ttname"><a href="class_c_fast_l_e_d.html#afd7928d822589740af6e23b2d510cf3f">CFastLED::addLeds</a></div><div class="ttdeci">static CLEDController &amp; addLeds(CLEDController *pLed, struct CRGB *data, int nLedsOrOffset, int nLedsIfOffset=0)</div><div class="ttdoc">Add a CLEDController instance to the world.</div><div class="ttdef"><b>Definition</b> <a href="_fast_l_e_d_8cpp_source.html#l00079">FastLED.cpp:79</a></div></div>
-<div class="ttc" id="aclassfl_1_1_description_html"><div class="ttname"><a href="classfl_1_1_description.html">fl::Description</a></div><div class="ttdef"><b>Definition</b> <a href="ui_8h_source.html#l00152">ui.h:152</a></div></div>
 <div class="ttc" id="aclassfl_1_1_file_system_html"><div class="ttname"><a href="classfl_1_1_file_system.html">fl::FileSystem</a></div><div class="ttdef"><b>Definition</b> <a href="fl_2file__system_8h_source.html#l00041">file_system.h:41</a></div></div>
-<div class="ttc" id="aclassfl_1_1_number_field_html"><div class="ttname"><a href="classfl_1_1_number_field.html">fl::NumberField</a></div><div class="ttdef"><b>Definition</b> <a href="ui_8h_source.html#l00113">ui.h:113</a></div></div>
 <div class="ttc" id="aclassfl_1_1_screen_map_html"><div class="ttname"><a href="classfl_1_1_screen_map.html">fl::ScreenMap</a></div><div class="ttdef"><b>Definition</b> <a href="fl_2screenmap_8h_source.html#l00028">screenmap.h:28</a></div></div>
-<div class="ttc" id="aclassfl_1_1_slider_html"><div class="ttname"><a href="classfl_1_1_slider.html">fl::Slider</a></div><div class="ttdef"><b>Definition</b> <a href="ui_8h_source.html#l00042">ui.h:42</a></div></div>
-<div class="ttc" id="aclassfl_1_1_title_html"><div class="ttname"><a href="classfl_1_1_title.html">fl::Title</a></div><div class="ttdef"><b>Definition</b> <a href="ui_8h_source.html#l00137">ui.h:137</a></div></div>
+<div class="ttc" id="aclassfl_1_1_u_i_description_html"><div class="ttname"><a href="classfl_1_1_u_i_description.html">fl::UIDescription</a></div><div class="ttdef"><b>Definition</b> <a href="ui_8h_source.html#l00152">ui.h:152</a></div></div>
+<div class="ttc" id="aclassfl_1_1_u_i_number_field_html"><div class="ttname"><a href="classfl_1_1_u_i_number_field.html">fl::UINumberField</a></div><div class="ttdef"><b>Definition</b> <a href="ui_8h_source.html#l00113">ui.h:113</a></div></div>
+<div class="ttc" id="aclassfl_1_1_u_i_slider_html"><div class="ttname"><a href="classfl_1_1_u_i_slider.html">fl::UISlider</a></div><div class="ttdef"><b>Definition</b> <a href="ui_8h_source.html#l00042">ui.h:42</a></div></div>
+<div class="ttc" id="aclassfl_1_1_u_i_title_html"><div class="ttname"><a href="classfl_1_1_u_i_title.html">fl::UITitle</a></div><div class="ttdef"><b>Definition</b> <a href="ui_8h_source.html#l00137">ui.h:137</a></div></div>
 <div class="ttc" id="aclassfl_1_1_video_html"><div class="ttname"><a href="classfl_1_1_video.html">fl::Video</a></div><div class="ttdef"><b>Definition</b> <a href="video_8h_source.html#l00030">video.h:30</a></div></div>
 <div class="ttc" id="aclassfl_1_1_video_html_a1782335a1d72248addea492fa965ab8b"><div class="ttname"><a href="classfl_1_1_video.html#a1782335a1d72248addea492fa965ab8b">fl::Video::draw</a></div><div class="ttdeci">void draw(DrawContext context) override</div><div class="ttdef"><b>Definition</b> <a href="video_8cpp_source.html#l00098">video.cpp:98</a></div></div>
 <div class="ttc" id="agroup___color_enums_html_ggadf6bcba67c9573665af20788c4431ae8abb6d30d01c054f65ed9c5a52c2855534"><div class="ttname"><a href="group___color_enums.html#ggadf6bcba67c9573665af20788c4431ae8abb6d30d01c054f65ed9c5a52c2855534">TypicalLEDStrip</a></div><div class="ttdeci">@ TypicalLEDStrip</div><div class="ttdoc">Typical values for SMD5050 LEDs.</div><div class="ttdef"><b>Definition</b> <a href="src_2color_8h_source.html#l00019">color.h:19</a></div></div>
@@ -254,7 +254,7 @@ $(function(){initNavTree('_fx_sd_card_8ino_source.html',''); initResizable(true)
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_c35e3ac77356cdc3fc8e34259008fe74.html">FxSdCard</a></li><li class="navelem"><b>FxSdCard.ino</b></li>
-    <li class="footer">Generated on Sat Dec 28 2024 04:23:54 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Jan 4 2025 07:35:35 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

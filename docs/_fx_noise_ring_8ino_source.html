@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.8</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.9</span>
    </div>
   </td>
  </tr>
@@ -138,12 +138,12 @@ $(function(){initNavTree('_fx_noise_ring_8ino_source.html',''); initResizable(tr
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><a class="code hl_struct" href="struct_c_r_g_b.html">CRGB</a> leds[NUM_LEDS];</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><a class="code hl_class" href="classfl_1_1_slider.html">Slider</a> brightness(<span class="stringliteral">&quot;Brightness&quot;</span>, 1, 0, 1);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><a class="code hl_class" href="classfl_1_1_slider.html">Slider</a> scale(<span class="stringliteral">&quot;Scale&quot;</span>, 4, .1, 4, .1);</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><a class="code hl_class" href="classfl_1_1_slider.html">Slider</a> timeBitshift(<span class="stringliteral">&quot;Time Bitshift&quot;</span>, 5, 0, 16, 1);</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><a class="code hl_class" href="classfl_1_1_slider.html">Slider</a> timescale(<span class="stringliteral">&quot;Time Scale&quot;</span>, 1, .1, 10, .1);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><a class="code hl_class" href="classfl_1_1_u_i_slider.html">UISlider</a> brightness(<span class="stringliteral">&quot;Brightness&quot;</span>, 1, 0, 1);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><a class="code hl_class" href="classfl_1_1_u_i_slider.html">UISlider</a> scale(<span class="stringliteral">&quot;Scale&quot;</span>, 4, .1, 4, .1);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><a class="code hl_class" href="classfl_1_1_u_i_slider.html">UISlider</a> timeBitshift(<span class="stringliteral">&quot;Time Bitshift&quot;</span>, 5, 0, 16, 1);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><a class="code hl_class" href="classfl_1_1_u_i_slider.html">UISlider</a> timescale(<span class="stringliteral">&quot;Time Scale&quot;</span>, 1, .1, 10, .1);</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><a class="code hl_class" href="classfl_1_1_pir_advanced.html">PirAdvanced</a> pir(PIN_PIR, PIR_LATCH_MS, PIR_RISING_TIME, PIR_FALLING_TIME);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><a class="code hl_class" href="classfl_1_1_checkbox.html">Checkbox</a> useDither(<span class="stringliteral">&quot;Use Binary Dither&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><a class="code hl_class" href="classfl_1_1_u_i_checkbox.html">UICheckbox</a> useDither(<span class="stringliteral">&quot;Use Binary Dither&quot;</span>, <span class="keyword">true</span>);</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><a class="code hl_class" href="class_timer.html">Timer</a> timer;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keywordtype">float</span> current_brightness = 0;</div>
@@ -214,10 +214,10 @@ $(function(){initNavTree('_fx_noise_ring_8ino_source.html',''); initResizable(tr
 <div class="ttc" id="aclass_c_l_e_d_controller_html_a2a231accbeb00e6a6080a7e55274a279"><div class="ttname"><a href="class_c_l_e_d_controller.html#a2a231accbeb00e6a6080a7e55274a279">CLEDController::setDither</a></div><div class="ttdeci">CLEDController &amp; setDither(uint8_t ditherMode=BINARY_DITHER)</div><div class="ttdoc">Set the dithering mode for this controller to use.</div><div class="ttdef"><b>Definition</b> <a href="cled__controller_8h_source.html#l00191">cled_controller.h:191</a></div></div>
 <div class="ttc" id="aclass_timer_html"><div class="ttname"><a href="class_timer.html">Timer</a></div><div class="ttdef"><b>Definition</b> <a href="timer_8h_source.html#l00005">timer.h:5</a></div></div>
 <div class="ttc" id="aclass_w_s2811_html"><div class="ttname"><a href="class_w_s2811.html">WS2811</a></div><div class="ttdoc">WS2811 controller class.</div><div class="ttdef"><b>Definition</b> <a href="_fast_l_e_d_8h_source.html#l00234">FastLED.h:234</a></div></div>
-<div class="ttc" id="aclassfl_1_1_checkbox_html"><div class="ttname"><a href="classfl_1_1_checkbox.html">fl::Checkbox</a></div><div class="ttdef"><b>Definition</b> <a href="ui_8h_source.html#l00094">ui.h:94</a></div></div>
-<div class="ttc" id="aclassfl_1_1_pir_advanced_html"><div class="ttname"><a href="classfl_1_1_pir_advanced.html">fl::PirAdvanced</a></div><div class="ttdef"><b>Definition</b> <a href="pir_8h_source.html#l00040">pir.h:40</a></div></div>
+<div class="ttc" id="aclassfl_1_1_pir_advanced_html"><div class="ttname"><a href="classfl_1_1_pir_advanced.html">fl::PirAdvanced</a></div><div class="ttdef"><b>Definition</b> <a href="pir_8h_source.html#l00041">pir.h:41</a></div></div>
 <div class="ttc" id="aclassfl_1_1_screen_map_html"><div class="ttname"><a href="classfl_1_1_screen_map.html">fl::ScreenMap</a></div><div class="ttdef"><b>Definition</b> <a href="fl_2screenmap_8h_source.html#l00028">screenmap.h:28</a></div></div>
-<div class="ttc" id="aclassfl_1_1_slider_html"><div class="ttname"><a href="classfl_1_1_slider.html">fl::Slider</a></div><div class="ttdef"><b>Definition</b> <a href="ui_8h_source.html#l00042">ui.h:42</a></div></div>
+<div class="ttc" id="aclassfl_1_1_u_i_checkbox_html"><div class="ttname"><a href="classfl_1_1_u_i_checkbox.html">fl::UICheckbox</a></div><div class="ttdef"><b>Definition</b> <a href="ui_8h_source.html#l00094">ui.h:94</a></div></div>
+<div class="ttc" id="aclassfl_1_1_u_i_slider_html"><div class="ttname"><a href="classfl_1_1_u_i_slider.html">fl::UISlider</a></div><div class="ttdef"><b>Definition</b> <a href="ui_8h_source.html#l00042">ui.h:42</a></div></div>
 <div class="ttc" id="adither__mode_8h_html_aa5f08faeb733faf0fab65127e79e6b44"><div class="ttname"><a href="dither__mode_8h.html#aa5f08faeb733faf0fab65127e79e6b44">BINARY_DITHER</a></div><div class="ttdeci">#define BINARY_DITHER</div><div class="ttdoc">Enable dithering using binary dithering (only option)</div><div class="ttdef"><b>Definition</b> <a href="dither__mode_8h_source.html#l00013">dither_mode.h:13</a></div></div>
 <div class="ttc" id="adither__mode_8h_html_ac14609ddf64580c4fbbb5e12c4ee5324"><div class="ttname"><a href="dither__mode_8h.html#ac14609ddf64580c4fbbb5e12c4ee5324">DISABLE_DITHER</a></div><div class="ttdeci">#define DISABLE_DITHER</div><div class="ttdoc">Disable dithering.</div><div class="ttdef"><b>Definition</b> <a href="dither__mode_8h_source.html#l00011">dither_mode.h:11</a></div></div>
 <div class="ttc" id="agroup___color_enums_html_ggadf6bcba67c9573665af20788c4431ae8abb6d30d01c054f65ed9c5a52c2855534"><div class="ttname"><a href="group___color_enums.html#ggadf6bcba67c9573665af20788c4431ae8abb6d30d01c054f65ed9c5a52c2855534">TypicalLEDStrip</a></div><div class="ttdeci">@ TypicalLEDStrip</div><div class="ttdoc">Typical values for SMD5050 LEDs.</div><div class="ttdef"><b>Definition</b> <a href="src_2color_8h_source.html#l00019">color.h:19</a></div></div>
@@ -234,7 +234,7 @@ $(function(){initNavTree('_fx_noise_ring_8ino_source.html',''); initResizable(tr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_5ef9feb7298f66ee154d998687951263.html">FxNoiseRing</a></li><li class="navelem"><b>FxNoiseRing.ino</b></li>
-    <li class="footer">Generated on Sat Dec 28 2024 04:23:54 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Jan 4 2025 07:35:35 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->
