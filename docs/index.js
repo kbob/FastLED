@@ -18,20 +18,21 @@ var index =
       [ "PlatformIO", "index.html#autotoc_md14", null ]
     ] ],
     [ "New Feature Announcements", "index.html#autotoc_md15", [
-      [ "New in 3.9.8 - Massive Teensy 4.1 & 4.0 LED output", "index.html#autotoc_md16", null ],
-      [ "New in 3.9.2 - Overclocking of WS2812", "index.html#autotoc_md17", null ],
-      [ "Development", "index.html#autotoc_md18", [
-        [ "Testing other devices", "index.html#autotoc_md19", null ]
+      [ "New in 3.9.9: 16-way Yves I2S parallel driver for the ESP32-S3", "index.html#autotoc_md16", null ],
+      [ "New in 3.9.8 - Massive Teensy 4.1 & 4.0 LED output", "index.html#autotoc_md17", null ],
+      [ "New in 3.9.2 - Overclocking of WS2812", "index.html#autotoc_md18", null ],
+      [ "Development", "index.html#autotoc_md19", [
+        [ "Testing other devices", "index.html#autotoc_md20", null ]
       ] ],
-      [ "Help and Support", "index.html#autotoc_md20", null ],
-      [ "Supported LED Chipsets", "index.html#autotoc_md21", null ],
-      [ "Supported Platforms", "index.html#autotoc_md22", [
-        [ "APA102 and the 'High Definition' Mode in FastLED", "index.html#autotoc_md23", null ]
+      [ "Help and Support", "index.html#autotoc_md21", null ],
+      [ "Supported LED Chipsets", "index.html#autotoc_md22", null ],
+      [ "Supported Platforms", "index.html#autotoc_md23", [
+        [ "APA102 and the 'High Definition' Mode in FastLED", "index.html#autotoc_md24", null ]
       ] ]
     ] ],
-    [ "Getting Started", "index.html#autotoc_md24", [
-      [ "Porting FastLED to a new platform", "index.html#autotoc_md27", null ],
-      [ "What about that name?", "index.html#autotoc_md28", null ],
-      [ "For more information", "index.html#autotoc_md29", null ]
+    [ "Getting Started", "index.html#autotoc_md25", [
+      [ "Porting FastLED to a new platform", "index.html#autotoc_md28", null ],
+      [ "What about that name?", "index.html#autotoc_md29", null ],
+      [ "For more information", "index.html#autotoc_md30", null ]
     ] ]
 ];

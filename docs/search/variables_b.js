@@ -15,10 +15,12 @@ var searchData=
   ['mant_5flo8_12',['mant_lo8',['../union_i_e_e_e754binary32__t.html#a78f17dc24c6f6ae2e5720824493bf533',1,'IEEE754binary32_t']]],
   ['mantissa_13',['mantissa',['../union_i_e_e_e754binary32__t.html#a2275cfe0cacae08983ad44cdf074a7a6',1,'IEEE754binary32_t']]],
   ['mask_5fvalue_14',['MASK_VALUE',['../class_c_pixel_l_e_d_controller.html#a32e69eb58eddbeca00179bb5559ec451',1,'CPixelLEDController']]],
-  ['mdata_15',['mData',['../struct_pixel_controller.html#a54bedae9117a19b242b73682c5d1a182',1,'PixelController']]],
-  ['mlen_16',['mLen',['../struct_pixel_controller.html#a6e1491364f944af0eee408fc8dffef58',1,'PixelController']]],
-  ['mlenremaining_17',['mLenRemaining',['../struct_pixel_controller.html#a329cebe498f2d119cf10e0e6a7b5f7c5',1,'PixelController']]],
-  ['moffsets_18',['mOffsets',['../struct_pixel_controller.html#a5ea77404f9ea28134291af923a79c82f',1,'PixelController']]],
-  ['mperiod_19',['mPeriod',['../class_c_every_n_time.html#a27fdededaf37417018f079336feabbf7',1,'CEveryNTime']]],
-  ['mprevtrigger_20',['mPrevTrigger',['../class_c_every_n_time.html#af886ee09b27d68263dfa1e40d6137ce8',1,'CEveryNTime']]]
+  ['max_5fleds_15',['max_leds',['../structled__strip__config__t.html#a9d2cc8718131d9a9e3dd15d8496e7941',1,'led_strip_config_t']]],
+  ['mdata_16',['mData',['../struct_pixel_controller.html#a54bedae9117a19b242b73682c5d1a182',1,'PixelController']]],
+  ['mem_5fblock_5fsymbols_17',['mem_block_symbols',['../structled__strip__rmt__config__t.html#ae261b7a06d5971e52679eb58b91f4a43',1,'led_strip_rmt_config_t']]],
+  ['mlen_18',['mLen',['../struct_pixel_controller.html#a6e1491364f944af0eee408fc8dffef58',1,'PixelController']]],
+  ['mlenremaining_19',['mLenRemaining',['../struct_pixel_controller.html#a329cebe498f2d119cf10e0e6a7b5f7c5',1,'PixelController']]],
+  ['moffsets_20',['mOffsets',['../struct_pixel_controller.html#a5ea77404f9ea28134291af923a79c82f',1,'PixelController']]],
+  ['mperiod_21',['mPeriod',['../class_c_every_n_time.html#a27fdededaf37417018f079336feabbf7',1,'CEveryNTime']]],
+  ['mprevtrigger_22',['mPrevTrigger',['../class_c_every_n_time.html#af886ee09b27d68263dfa1e40d6137ce8',1,'CEveryNTime']]]
 ];

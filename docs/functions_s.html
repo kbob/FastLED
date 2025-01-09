@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.9</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.10</span>
    </div>
   </td>
  </tr>
@@ -142,6 +142,8 @@ $(function(){initNavTree('functions_s.html',''); initResizable(true); });
 <li>sendTimeCodeQuarterFrame()&#160;:&#160;<a class="el" href="group__output.html#ga359e996d4a9e02142ed5116e5fef7233">MidiInterface&lt; Transport, _Settings, _Platform &gt;</a></li>
 <li>sendTuneRequest()&#160;:&#160;<a class="el" href="group__output.html#ga7303cceabd422631b77a1e6c8f1338c6">MidiInterface&lt; Transport, _Settings, _Platform &gt;</a></li>
 <li>set()&#160;:&#160;<a class="el" href="class_fast_pin.html#a86ecde204528fd900a89c41bcde9a43e">FastPin&lt; PIN &gt;</a>, <a class="el" href="class_pin.html#a2dd81fdd9dd54b9383594f6c15a29058">Pin</a></li>
+<li>set_pixel&#160;:&#160;<a class="el" href="structled__strip__t.html#a634f88b9e82155f97b6262e0b49565ef">led_strip_t</a></li>
+<li>set_pixel_rgbw&#160;:&#160;<a class="el" href="structled__strip__t.html#abe646a862976a83e5eaac972d043787e">led_strip_t</a></li>
 <li>setBrightness()&#160;:&#160;<a class="el" href="class_c_fast_l_e_d.html#a730ba7d967e882b4b893689cf333b2eb">CFastLED</a></li>
 <li>setColorCode()&#160;:&#160;<a class="el" href="struct_c_r_g_b.html#a5d4166493508a1eedc34248d3fe8ad40">CRGB</a></li>
 <li>setCorrection()&#160;:&#160;<a class="el" href="class_c_fast_l_e_d.html#ad266c3e649cc12a6dc49a1e229acc282">CFastLED</a>, <a class="el" href="class_c_l_e_d_controller.html#a80d62b44c6901851fd70de3853661525">CLEDController</a></li>
@@ -179,12 +181,14 @@ $(function(){initNavTree('functions_s.html',''); initResizable(true); });
 <li>SlateGray&#160;:&#160;<a class="el" href="struct_c_r_g_b.html#aeb40a08b7cb90c1e21bd408261558b99ac1b87f3babb84b57e3c3ed532d43dfb2">CRGB</a></li>
 <li>SlateGrey&#160;:&#160;<a class="el" href="struct_c_r_g_b.html#aeb40a08b7cb90c1e21bd408261558b99a1190005afb214be40a6302e82767bcd1">CRGB</a></li>
 <li>Snow&#160;:&#160;<a class="el" href="struct_c_r_g_b.html#aeb40a08b7cb90c1e21bd408261558b99af5a6d928331158fdb7cb84a143b9cc52">CRGB</a></li>
+<li>spi_bus&#160;:&#160;<a class="el" href="structled__strip__spi__config__t.html#a0900424264bc59ab6915c9936532b032">led_strip_spi_config_t</a></li>
 <li>SpringGreen&#160;:&#160;<a class="el" href="struct_c_r_g_b.html#aeb40a08b7cb90c1e21bd408261558b99ac401f99bf21224c369ac76f9770b74b2">CRGB</a></li>
 <li>sSysExMaxSize&#160;:&#160;<a class="el" href="struct_message.html#a06ebe9aea7bf76c87564cc4b6c74f901">Message&lt; SysExMaxSize &gt;</a></li>
 <li>SteelBlue&#160;:&#160;<a class="el" href="struct_c_r_g_b.html#aeb40a08b7cb90c1e21bd408261558b99a6a94dc91b16e639be9016925fc27596f">CRGB</a></li>
 <li>stepAdvanceAndLoadAndScale0()&#160;:&#160;<a class="el" href="struct_pixel_controller.html#acb4a76e70b987649e50290f68648e9d6">PixelController&lt; RGB_ORDER, LANES, MASK &gt;</a></li>
 <li>stepDithering()&#160;:&#160;<a class="el" href="struct_pixel_controller.html#ac7cb7840989882cce60218ac43dbe8ef">PixelController&lt; RGB_ORDER, LANES, MASK &gt;</a></li>
 <li>stop()&#160;:&#160;<a class="el" href="class_a_v_r_software_s_p_i_output.html#a8f9e5393c85f3f44cb3c44718bdd952c">AVRSoftwareSPIOutput&lt; DATA_PIN, CLOCK_PIN, SPI_SPEED &gt;</a></li>
+<li>strip_gpio_num&#160;:&#160;<a class="el" href="structled__strip__config__t.html#a606308f9a50c24ce5ea5d55b26502313">led_strip_config_t</a></li>
 <li>strobe()&#160;:&#160;<a class="el" href="class_fast_pin.html#aca5c32c1304354c79bb502714c72bf3d">FastPin&lt; PIN &gt;</a>, <a class="el" href="class_pin.html#ac4ce6209c47e73e4cbc751d735c56e97">Pin</a></li>
 <li>subFromRGB()&#160;:&#160;<a class="el" href="class_c_pixel_view.html#ac9bc563c153ee6968df3d50648295a07">CPixelView&lt; PIXEL_TYPE &gt;</a></li>
 <li>subtractFromRGB()&#160;:&#160;<a class="el" href="struct_c_r_g_b.html#a986ac62988523a4371f8f90cf844924d">CRGB</a></li>
@@ -197,7 +201,7 @@ $(function(){initNavTree('functions_s.html',''); initResizable(true); });
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Jan 4 2025 07:35:37 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Jan 9 2025 15:46:07 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

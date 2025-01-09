@@ -35,7 +35,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fastled_logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.9</span>
+   <div id="projectname">FastLED<span id="projectnumber">&#160;3.9.10</span>
    </div>
   </td>
  </tr>
@@ -124,7 +124,7 @@ About</h1>
 Example</h1>
 <p><em>This is an Arduino Sketch that will run on Arduino Uno/Esp32/Raspberri Pi</em> </p><div class="fragment"><div class="line"> ++</div>
 <div class="line"><span class="comment">// New feature! Overclocking WS2812</span></div>
-<div class="line"><span class="comment">// #define FASTLED_LED_OVERCLOCK 1.2 // 20% overclock ~ 960 khz.</span></div>
+<div class="line"><span class="comment">// #define FASTLED_OVERCLOCK 1.2 // 20% overclock ~ 960 khz.</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="_fast_l_e_d_8h.html">FastLED.h</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#define NUM_LEDS 60</span></div>
 <div class="line"><span class="preprocessor">#define DATA_PIN 6</span></div>
@@ -225,12 +225,15 @@ PlatformIO</h2>
 <h1><a class="anchor" id="autotoc_md15"></a>
 New Feature Announcements</h1>
 <h2><a class="anchor" id="autotoc_md16"></a>
+New in 3.9.9: 16-way Yves I2S parallel driver for the ESP32-S3</h2>
+<p><img src="https://github.com/user-attachments/assets/982571fc-9b8d-4e58-93be-5bed76a0c53d" alt="perpetualmaniac_an_led_display_in_a_room_lots_of_refaction_of_t_eb7c170a-7b2c-404a-b114-d33794b4954b" class="inline"/></p>
+<h2><a class="anchor" id="autotoc_md17"></a>
 New in 3.9.8 - Massive Teensy 4.1 &amp; 4.0 LED output</h2>
 <p><img src="https://github.com/user-attachments/assets/79dc2801-5161-4d5a-90a2-0126403e215f" alt="New Project" class="inline"/></p>
-<h2><a class="anchor" id="autotoc_md17"></a>
-New in 3.9.2 - Overclocking of WS2812</h2>
-<p><img src="https://github.com/user-attachments/assets/be98fbe6-0ec7-492d-8ed1-b7eb6c627e86" alt="image" class="inline"/> Update: max overclock has been reported at +70%: <a href="https://www.reddit.com/r/FastLED/comments/1gkcb6m/fastled_fastled_led_overclock_17/">https://www.reddit.com/r/FastLED/comments/1gkcb6m/fastled_fastled_led_overclock_17/</a></p>
 <h2><a class="anchor" id="autotoc_md18"></a>
+New in 3.9.2 - Overclocking of WS2812</h2>
+<p><img src="https://github.com/user-attachments/assets/be98fbe6-0ec7-492d-8ed1-b7eb6c627e86" alt="image" class="inline"/> Update: max overclock has been reported at +70%: <a href="https://www.reddit.com/r/FastLED/comments/1gkcb6m/fastled_FASTLED_OVERCLOCK_17/">https://www.reddit.com/r/FastLED/comments/1gkcb6m/fastled_FASTLED_OVERCLOCK_17/</a></p>
+<h2><a class="anchor" id="autotoc_md19"></a>
 Development</h2>
 <p><a href="https://github.com/FastLED/FastLED/actions/workflows/build_default.yml"><img src="https://github.com/FastLED/FastLED/actions/workflows/build_default.yml/badge.svg" alt="clone and compile" style="pointer-events: none;" class="inline"/></a></p>
 <p>If you want to make changes to FastLED then please</p>
@@ -248,7 +251,7 @@ Development</h2>
 <li>See <a href="dev/dev.ino">dev/dev.ino</a>. <img src="https://github.com/user-attachments/assets/66f1832d-3cfb-4633-8af8-e66148bcad1b" alt="image" width="1220" class="inline"/></li>
 </ul>
 <p>When changes are made then push to your fork to your repo and git will give you a url to trigger a pull request into the master repo.</p>
-<h3><a class="anchor" id="autotoc_md19"></a>
+<h3><a class="anchor" id="autotoc_md20"></a>
 Testing other devices</h3>
 <ul>
 <li>run [compile](compile) and then select your board</li>
@@ -260,10 +263,10 @@ Testing other devices</h3>
 <div class="line">[3]: bluepill</div>
 <div class="line">[4]: digix</div>
 <div class="line">[5]: esp01</div>
-<div class="line">[6]: esp32-c2-devkitm-1</div>
-<div class="line">[7]: esp32-c3-devkitm-1</div>
-<div class="line">[8]: esp32-c6-devkitc-1</div>
-<div class="line">[9]: esp32-s3-devkitc-1</div>
+<div class="line">[6]: esp32c2</div>
+<div class="line">[7]: esp32c3</div>
+<div class="line">[8]: esp32c6</div>
+<div class="line">[9]: esp32s3</div>
 <div class="line">[10]: esp32dev</div>
 <div class="line">[11]: esp32dev_i2s</div>
 <div class="line">[12]: esp32dev_idf44</div>
@@ -279,12 +282,12 @@ Testing other devices</h3>
 <div class="line">[22]: yun</div>
 <div class="line">[all]: All boards</div>
 <div class="line">Enter the number of the board you want to use: 0</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md20"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md21"></a>
 Help and Support</h2>
 <p>If you need help with using the library, please consider visiting the Reddit community at <a href="https://reddit.com/r/FastLED">https://reddit.com/r/FastLED</a>. There are thousands of knowledgeable FastLED users in that group and a plethora of solutions in the post history.</p>
 <p>If you are looking for documentation on how something in the library works, please see the Doxygen documentation online at <a href="http://fastled.io/docs">http://fastled.io/docs</a>.</p>
 <p>If you run into bugs with the library, or if you'd like to request support for a particular platform or LED chipset, please submit an issue at <a href="http://fastled.io/issues">http://fastled.io/issues</a>.</p>
-<h2><a class="anchor" id="autotoc_md21"></a>
+<h2><a class="anchor" id="autotoc_md22"></a>
 Supported LED Chipsets</h2>
 <p>Here's a list of all the LED chipsets are supported. More details on the LED chipsets are included <a href="https://github.com/FastLED/FastLED/wiki/Chipset-reference">on our wiki page</a></p>
 <ul>
@@ -307,7 +310,7 @@ Supported LED Chipsets</h2>
 <li>LPD6803 - SPI based chpiset, chip CMODE pin must be set to 1 (inside oscillator mode)</li>
 </ul>
 <p>HL1606, and "595"-style shift registers are no longer supported by the library. The older Version 1 of the library ("FastSPI_LED") has support for these, but is missing many of the advanced features of current versions and is no longer being maintained.</p>
-<h2><a class="anchor" id="autotoc_md22"></a>
+<h2><a class="anchor" id="autotoc_md23"></a>
 Supported Platforms</h2>
 <p>Right now the library is supported on a variety of arduino compatible platforms. If it's ARM or AVR and uses the arduino software (or a modified version of it to build) then it is likely supported. Note that we have a long list of upcoming platforms to support, so if you don't see what you're looking for here, ask, it may be on the roadmap (or may already be supported). N.B. at the moment we are only supporting the stock compilers that ship with the arduino software. Support for upgraded compilers, as well as using AVR studio and skipping the arduino entirely, should be coming in a near future release.</p>
 <ul>
@@ -325,29 +328,31 @@ Supported Platforms</h2>
 <li>The wino board - <a href="http://wino-board.com">http://wino-board.com</a></li>
 </ul>
 <p>What types of platforms are we thinking about supporting in the future? Here's a short list: ChipKit32, Maple, Beagleboard</p>
-<h3><a class="anchor" id="autotoc_md23"></a>
+<h3><a class="anchor" id="autotoc_md24"></a>
 APA102 and the 'High Definition' Mode in FastLED</h3>
 <p>FastLED features driver-level gamma correction for the APA102 and SK9822 chipsets, using our "pseudo-13-bit mixing" algorithm. Read about it here: <a href="https://github.com/FastLED/FastLED/blob/master/APA102.md">https://github.com/FastLED/FastLED/blob/master/APA102.md</a></p>
 <p><img src="https://github.com/user-attachments/assets/999e68ce-454f-4f15-9590-a8d2e8d47a22" alt="image" class="inline"/></p>
-<h1><a class="anchor" id="autotoc_md24"></a>
+<p>Check out thr rust port of this algorithm:</p>
+<p><a href="https://github.com/smart-leds-rs/apa102-spi-rs/pull/15">https://github.com/smart-leds-rs/apa102-spi-rs/pull/15</a></p>
+<h1><a class="anchor" id="autotoc_md25"></a>
 Getting Started</h1>
-<h3><a class="anchor" id="autotoc_md25"></a>
+<h3><a class="anchor" id="autotoc_md26"></a>
 Arduino IDE / PlatformIO Dual Repo</h3>
 <p>We've created a custom repo you can try to start your projects. This repo is designed to be used with VSCode + PlatformIO but is also <em>backwards compatible with the Arduino IDE</em>.</p>
 <p>PlatformIO is an extension to VSCode and is generally viewed as a much better experience than the Arduino IDE. You get auto completion tools like intellisense and CoPilot and the ability to install tools like crash decoding. Anything you can do in Arduino IDE you can do with PlatformIO.</p>
 <p>Get started here:</p>
 <p><a href="https://github.com/FastLED/PlatformIO-Starter">https://github.com/FastLED/PlatformIO-Starter</a></p>
-<h3><a class="anchor" id="autotoc_md26"></a>
+<h3><a class="anchor" id="autotoc_md27"></a>
 ArduinoIDE</h3>
 <p>When running the Arduino IDE you need to do the additional installation step of installing FastLED in the global Arduino IDE package manager.</p>
 <p>Install the library using either <a href="https://github.com/FastLED/FastLED/releases/latest/">the .zip file from the latest release</a> or by searching for "FastLED" in the libraries manager of the Arduino IDE. <a href="https://docs.arduino.cc/software/ide-v1/tutorials/installing-libraries">See the Arduino documentation on how to install libraries for more information.</a></p>
-<h2><a class="anchor" id="autotoc_md27"></a>
+<h2><a class="anchor" id="autotoc_md28"></a>
 Porting FastLED to a new platform</h2>
 <p>Information on porting FastLED can be found in the file <a class="el" href="md__2home_2runner_2work_2_fast_l_e_d_2_fast_l_e_d_2_p_o_r_t_i_n_g.html">PORTING.md</a>.</p>
-<h2><a class="anchor" id="autotoc_md28"></a>
+<h2><a class="anchor" id="autotoc_md29"></a>
 What about that name?</h2>
 <p>Wait, what happened to FastSPI_LED and FastSPI_LED2? The library was initially named FastSPI_LED because it was focused on very fast and efficient SPI access. However, since then, the library has expanded to support a number of LED chipsets that don't use SPI, as well as a number of math and utility functions for LED processing across the board. We decided that the name FastLED more accurately represents the totality of what the library provides, everything fast, for LEDs.</p>
-<h2><a class="anchor" id="autotoc_md29"></a>
+<h2><a class="anchor" id="autotoc_md30"></a>
 For more information</h2>
 <p>Check out the official site <a href="http://fastled.io">http://fastled.io</a> for links to documentation, issues, and news </p>
 </div></div><!-- PageDoc -->
@@ -358,7 +363,7 @@ For more information</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Jan 4 2025 07:35:37 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Jan 9 2025 15:46:07 for FastLED by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 <!-- ... -->

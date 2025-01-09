@@ -6,6 +6,7 @@ var examples =
     [ "TwinkleFox.ino", "_twinkle_fox_8ino-example.html", null ],
     [ "AnalogOutput.ino", "_analog_output_8ino-example.html", null ],
     [ "Blink.ino", "_blink_8ino-example.html", null ],
+    [ "BlinkParallel.ino", "_blink_parallel_8ino-example.html", null ],
     [ "ColorPalette.ino", "_color_palette_8ino-example.html", null ],
     [ "ColorTemperature.ino", "_color_temperature_8ino-example.html", null ],
     [ "Cylon.ino", "_cylon_8ino-example.html", null ],

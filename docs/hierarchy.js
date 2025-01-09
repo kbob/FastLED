@@ -207,6 +207,7 @@ var hierarchy =
     [ "fl::FixedVector< T, N >", "classfl_1_1_fixed_vector.html", null ],
     [ "fl::FixedVector< Key, N >", "classfl_1_1_fixed_vector.html", null ],
     [ "fl::FixedVector< PairKV, N >", "classfl_1_1_fixed_vector.html", null ],
+    [ "led_color_component_format_t::format_layout", "structled__color__component__format__t_1_1format__layout.html", null ],
     [ "FrameBufferBase", "class_frame_buffer_base.html", [
       [ "FrameBuffer", "class_frame_buffer.html", null ]
     ] ],
@@ -221,6 +222,7 @@ var hierarchy =
     [ "I2SClocklessLedDriveresp32S3", "class_i2_s_clockless_led_driveresp32_s3.html", null ],
     [ "IEEE754binary32_t", "union_i_e_e_e754binary32__t.html", null ],
     [ "InterpData< KeyT, ValT >", "struct_interp_data.html", null ],
+    [ "IRmtStrip", "class_i_rmt_strip.html", null ],
     [ "fl::is_base_of< Base, Derived >", "structfl_1_1is__base__of.html", null ],
     [ "fl::is_base_of_v_helper< Base, Derived >", "structfl_1_1is__base__of__v__helper.html", null ],
     [ "fl::is_pod< T >", "structfl_1_1is__pod.html", null ],
@@ -243,12 +245,22 @@ var hierarchy =
     [ "fl::is_same< T, U >", "structfl_1_1is__same.html", null ],
     [ "fl::is_same< T, T >", "structfl_1_1is__same_3_01_t_00_01_t_01_4.html", null ],
     [ "fl::is_same_v_helper< T, U >", "structfl_1_1is__same__v__helper.html", null ],
+    [ "ISpiStripWs2812", "class_i_spi_strip_ws2812.html", null ],
     [ "fl::JsonDocument", "classfl_1_1_json_document.html", null ],
     [ "just8bits", "unionjust8bits.html", null ],
     [ "Key", "struct_key.html", null ],
     [ "KeyboardState", "class_keyboard_state.html", null ],
     [ "fl::LargeBlockAllocator< T >", "classfl_1_1_large_block_allocator.html", null ],
+    [ "led_color_component_format_t", "unionled__color__component__format__t.html", null ],
     [ "led_driver_t", "structled__driver__t.html", null ],
+    [ "led_strip_config_t", "structled__strip__config__t.html", null ],
+    [ "led_strip_encoder_config_t", "structled__strip__encoder__config__t.html", null ],
+    [ "led_strip_encoder_timings_t", "structled__strip__encoder__timings__t.html", null ],
+    [ "led_strip_config_t::led_strip_extra_flags", "structled__strip__config__t_1_1led__strip__extra__flags.html", null ],
+    [ "led_strip_rmt_config_t", "structled__strip__rmt__config__t.html", null ],
+    [ "led_strip_rmt_config_t::led_strip_rmt_extra_config", "structled__strip__rmt__config__t_1_1led__strip__rmt__extra__config.html", null ],
+    [ "led_strip_spi_config_t", "structled__strip__spi__config__t.html", null ],
+    [ "led_strip_t", "structled__strip__t.html", null ],
     [ "LedColumns", "struct_led_columns.html", null ],
     [ "LedRopeInterface", "class_led_rope_interface.html", [
       [ "LedRopeTCL", "class_led_rope_t_c_l.html", null ]
@@ -266,6 +278,7 @@ var hierarchy =
     [ "NOPSPIOutput< _DATA_PIN, _CLOCK_PIN, _SPI_CLOCK_DIVIDER >", "class_n_o_p_s_p_i_output.html", null ],
     [ "ObjectFLED", "class_object_f_l_e_d.html", null ],
     [ "animartrix_detail::oscillators", "structanimartrix__detail_1_1oscillators.html", null ],
+    [ "ISpiStripWs2812::OutputIterator", "class_i_spi_strip_ws2812_1_1_output_iterator.html", null ],
     [ "Painter", "struct_painter.html", null ],
     [ "fl::Pair< Key, Value >", "structfl_1_1_pair.html", null ],
     [ "fl::pair_xy< T >", "structfl_1_1pair__xy.html", null ],
@@ -374,6 +387,10 @@ var hierarchy =
     [ "fl::StrN< FASTLED_STR_INLINED_SIZE >", "classfl_1_1_str_n.html", [
       [ "fl::Str", "classfl_1_1_str.html", null ]
     ] ],
+    [ "fl::StrStream", "classfl_1_1_str_stream.html", null ],
+    [ "fl::StrStreamHelper< T >", "structfl_1_1_str_stream_helper.html", null ],
+    [ "fl::StrStreamHelper< int >", "structfl_1_1_str_stream_helper_3_01int_01_4.html", null ],
+    [ "fl::StrStreamHelper< uint8_t >", "structfl_1_1_str_stream_helper_3_01uint8__t_01_4.html", null ],
     [ "sub4", "structsub4.html", null ],
     [ "Thru", "struct_thru.html", null ],
     [ "Timer", "class_timer.html", null ],

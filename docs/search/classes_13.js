@@ -44,5 +44,9 @@ var searchData=
   ['stringholder_41',['StringHolder',['../classfl_1_1_string_holder.html',1,'fl']]],
   ['strn_42',['StrN',['../classfl_1_1_str_n.html',1,'fl']]],
   ['strn_3c_20fastled_5fstr_5finlined_5fsize_20_3e_43',['StrN&lt; FASTLED_STR_INLINED_SIZE &gt;',['../classfl_1_1_str_n.html',1,'fl']]],
-  ['sub4_44',['sub4',['../structsub4.html',1,'']]]
+  ['strstream_44',['StrStream',['../classfl_1_1_str_stream.html',1,'fl']]],
+  ['strstreamhelper_45',['StrStreamHelper',['../structfl_1_1_str_stream_helper.html',1,'fl']]],
+  ['strstreamhelper_3c_20int_20_3e_46',['StrStreamHelper&lt; int &gt;',['../structfl_1_1_str_stream_helper_3_01int_01_4.html',1,'fl']]],
+  ['strstreamhelper_3c_20uint8_5ft_20_3e_47',['StrStreamHelper&lt; uint8_t &gt;',['../structfl_1_1_str_stream_helper_3_01uint8__t_01_4.html',1,'fl']]],
+  ['sub4_48',['sub4',['../structsub4.html',1,'']]]
 ];
